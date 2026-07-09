@@ -25,9 +25,9 @@ Validation completed after the move:
 Outcome validation is still pending. The stewardship system therefore remains
 `proposed` until a later idea completes the full operating and learning cycle.
 
-## 2026-07-09 — framework feedback stream approved for delivery
+## 2026-07-09 — framework feedback stream delivered
 
-- **Status:** approved for delivery.
+- **Status:** pushed to `origin/main`.
 - **Claim:** Codex operator claimed the maintainer-requested change to define a
   direct framework-feedback stream, its intake and grooming processes, and to
   exercise them with the reported visualization-tooling gap.
@@ -58,6 +58,7 @@ Outcome validation is still pending. The stewardship system therefore remains
   tested with a consumer.
 - On 2026-07-10, the maintainer reviewed and approved the complete coherent
   working tree for commit and push to `origin/main`.
+- Committed the approved work as `577cbfa` and pushed it to `origin/main`.
 
 ## 2026-07-09 — minimal AI agent task process awaiting review
 
