@@ -2,13 +2,15 @@
 
 ## Goal
 
-Run the first recorded end-to-end adaptation cycle of the APSS Framework
-Stewardship System.
+Complete and validate the first evidence-driven improvement cycle of the APSS
+Framework Operations System, from an observed consumer need through an approved
+change and its outcome.
 
 ## Completed bootstrap
 
-- Separated normative and supporting artifacts from stewardship operations.
-- Declared the self-hosting system and its authority.
+- Separated the normative framework, supporting examples, and framework
+  operations at the repository root.
+- Declared `operations/` as the system that improves the framework.
 - Established durable backlog intake and grooming.
 - Validated repository references and declaration structure.
 
@@ -24,8 +26,8 @@ Stewardship System.
 
 ## Next milestone
 
-1. Capture the next maintainer-proposed idea in the backlog.
-2. Groom it to an explicit disposition using the new process.
+1. Select a consumer need with enough evidence to test an improvement.
+2. Groom the linked work to an explicit disposition using the declared process.
 3. If ready and approved, select it into this plan with bounded acceptance and
    validation conditions.
 4. Execute, validate artifact and outcome, compile learning, and apply an

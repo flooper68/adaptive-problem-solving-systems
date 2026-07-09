@@ -1,20 +1,21 @@
 # Adaptive Problem-Solving Systems repository
 
-This repository contains both the Adaptive Problem-Solving Systems (APSS)
-framework and the APSS implementation used to evolve it. The two are kept
-separate so the produced artifacts are not confused with the work and processes
-that produce them.
+This repository contains the Adaptive Problem-Solving Systems (APSS) framework,
+examples of its application, and the operations system that improves it. These
+are separate at the root so the normative framework is not confused with its
+tests or with the work that produces it.
 
-## Use the artifacts
+## Use APSS
 
-- [Framework definition](artifacts/framework/README.md) — the normative APSS
+- [Framework definition](framework/README.md) — the normative APSS
   specification, schema, template, and visualization contract.
-- [Implementation examples](artifacts/examples/README.md) — non-normative
+- [Implementation examples](examples/README.md) — non-normative
   examples that demonstrate how the framework can be applied.
 
 ## Inspect or operate the producing system
 
-- [SYSTEM.md](SYSTEM.md) — declaration of the APSS Framework Stewardship System.
+- [Operations system declaration](operations/SYSTEM.md) — its problem, vision,
+  current goal, strategy, boundary, roles, and adaptive loop.
 - [Current plan](operations/work/PLAN.md) and
   [work log](operations/work/LOG.md) — committed work and durable execution
   history.
@@ -23,6 +24,10 @@ that produce them.
 - [Backlog intake](operations/processes/backlog-intake.md) and
   [grooming](operations/processes/backlog-grooming.md) — the path from an idea
   to an explicit disposition and possible planning commitment.
+- [Framework feedback intake](operations/processes/framework-feedback-intake.md)
+  and [grooming](operations/processes/framework-feedback-grooming.md) — report
+  an experience with APSS, preserve it as evidence, and decide whether it
+  warrants a separate work candidate.
 - [Framework operating loop](operations/processes/framework-loop.md) —
   execution, validation, learning, adaptation, and release orchestration.
 - [Compiled knowledge](operations/knowledge/README.md) — reusable stewardship
@@ -31,11 +36,12 @@ that produce them.
 ## Repository map
 
 ```text
-artifacts/   Outputs produced for APSS consumers
-operations/  Processes, work, evidence, validation, and learning
-SYSTEM.md    Contract connecting the operating system to its artifacts
+framework/   Normative APSS definition produced by the operations system
+examples/    Non-normative applications that explain and test the framework
+operations/  System that improves the framework using evidence and learning
 ```
 
-The framework is the primary artifact. Examples are supporting artifacts. A
-file under `operations/` describes how the repository is run; it is not a
-normative APSS requirement unless the framework artifact explicitly adopts it.
+The repository itself is a container, not an APSS system. `operations/` is the
+declared system; `framework/` is its primary artifact; and `examples/` contains
+supporting artifacts. Operational choices are not normative APSS requirements
+unless the framework explicitly adopts them.

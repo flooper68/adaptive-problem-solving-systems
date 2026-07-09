@@ -21,6 +21,16 @@ whether consumers can understand and apply APSS. A retained summary should say:
 - what outcome was observed; and
 - where the native evidence can be recovered, subject to privacy and access.
 
+## Direct framework feedback
+
+Direct reports from consumers are retained in the
+[`framework-feedback/`](framework-feedback/) stream using the declared
+[intake](../processes/framework-feedback-intake.md) and
+[grooming](../processes/framework-feedback-grooming.md) processes. The report
+preserves what the consumer experienced; grooming records interpretation and a
+disposition. Actionable reports link to separate work candidates rather than
+being silently converted into requirements.
+
 ## External foundations
 
 Research items retain citations and distinguish source claims from APSS

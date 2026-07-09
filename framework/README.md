@@ -13,7 +13,8 @@ method.
 
 This package is the normative framework specification. In this repository it is
 the primary artifact produced by the separately declared
-[APSS Framework Stewardship System](../../SYSTEM.md). Changes to the normative
+[APSS Framework Operations System](../operations/SYSTEM.md). Changes to the
+normative
 package are summarized in [CHANGELOG.md](CHANGELOG.md).
 
 ## Why APSS exists

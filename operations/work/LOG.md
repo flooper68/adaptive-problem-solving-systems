@@ -25,6 +25,40 @@ Validation completed after the move:
 Outcome validation is still pending. The stewardship system therefore remains
 `proposed` until a later idea completes the full operating and learning cycle.
 
+## 2026-07-09 — framework feedback stream approved for delivery
+
+- **Status:** approved for delivery.
+- **Claim:** Codex operator claimed the maintainer-requested change to define a
+  direct framework-feedback stream, its intake and grooming processes, and to
+  exercise them with the reported visualization-tooling gap.
+- **Acceptance:** feedback remains distinct from backlog work; reports have a
+  durable capture format and explicit dispositions; actionable reports can
+  create bidirectionally linked work; the first report is captured and groomed;
+  declarations and repository links remain valid.
+- The maintainer distinguished direct feedback about APSS from backlog work and
+  requested a durable reporting and grooming path.
+- Added a framework-feedback stream that preserves the reported experience,
+  provenance, context, desired outcome, suggested response, and evidence.
+- Added feedback-specific grooming with explicit dispositions and a rule that
+  actionable feedback creates or links separate backlog work.
+- Captured and groomed the first report: APSS specifies visual projections but
+  provides no tool that generates useful visual HTML from system declarations.
+- Dispositioned the report as actionable and captured the linked task
+  `apss.visual-html-generator`; planning priority and implementation scope remain
+  undecided.
+- Validation parsed the stewardship declaration and new report/work
+  frontmatter, checked the new stream against the schema's required stream
+  shape, confirmed all local Markdown links resolve after the concurrent
+  repository-layout change, and found no whitespace errors with
+  `git diff --check`.
+- Manual consistency review found no change to normative APSS semantics: the new
+  mechanism implements stewardship evidence handling, while the visualization
+  generator remains a supporting-tool candidate. Outcome validation remains
+  pending until the process receives another report or the linked tool is
+  tested with a consumer.
+- On 2026-07-10, the maintainer reviewed and approved the complete coherent
+  working tree for commit and push to `origin/main`.
+
 ## 2026-07-09 — minimal AI agent task process awaiting review
 
 - Claimed a bounded task to define how AI agents perform repository work.

@@ -1,15 +1,15 @@
-# APSS stewardship knowledge
+# APSS operations knowledge
 
-Reusable lessons compiled from operating the framework stewardship system.
+Reusable lessons compiled from operating the framework operations system.
 This is operational knowledge, not part of the normative framework artifact.
 
 ## Artifact and operation separation
 
-Keep consumer-facing outputs under `artifacts/` and the work, processes,
-evidence handling, validation, and learning that produce them under
-`operations/`. The root `SYSTEM.md` is the explicit contract connecting the
-two. This makes self-hosting inspectable without implying that every operating
-choice is a universal APSS requirement.
+Keep the normative product under `framework/`, supporting applications under
+`examples/`, and the declared improvement system under `operations/`.
+`operations/SYSTEM.md` explicitly connects the system to its sibling outputs.
+This makes the producer and product boundaries visible without implying that
+every operating choice is a universal APSS requirement.
 
 ## Examples as supporting artifacts
 

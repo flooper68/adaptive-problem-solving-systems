@@ -22,6 +22,9 @@ events still belong in `operations/work/LOG.md`.
 
 ## Items
 
+- [Generate visual HTML from APSS system declarations](visual-html-generator.md)
+  — captured from actionable framework feedback; implementation scope and
+  acceptance conditions require backlog grooming.
 - [Add software-development and research-project examples](software-and-research-examples.md)
   — captured; candidate examples and validation approaches are not yet chosen.
 - [Define reusable processes for producing good evidence](general-evidence-processes.md)
