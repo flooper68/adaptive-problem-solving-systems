@@ -21,6 +21,7 @@ successful resolutions. Detailed file history remains in git.
   reports no whitespace errors.
 - On 2026-07-10, the maintainer reviewed and approved the coherent changes for
   commit and push to `main`.
+- Committed the approved redesign as `507418d` and pushed it to `origin/main`.
 
 ## 2026-07-09 — stewardship bootstrap started
 
