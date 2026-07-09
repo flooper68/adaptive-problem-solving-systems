@@ -16,12 +16,11 @@ Stewardship System.
 
 ### Define a minimal AI agent task process
 
-- Status: approved for delivery.
+- Status: pushed to `origin/main` in commit `45d18a5`.
 - Scope: define claim, execution, logging, human review, commit, and push.
 - Acceptance: the process is concise, connected to stewardship operations, and
   requires human approval before an agent commits or pushes.
-- Delivery: leave the completed changes uncommitted for human review; commit and
-  push only after approval.
+- Delivery: reviewed by the maintainer, committed, and pushed.
 
 ## Next milestone
 
