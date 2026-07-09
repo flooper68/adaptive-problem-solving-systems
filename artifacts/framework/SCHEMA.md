@@ -34,5 +34,5 @@ Files:
 
 - [SYSTEM.template.md](SYSTEM.template.md) — authoring template.
 - [system.schema.json](system.schema.json) — normative structural contract.
-- [examples/cnc-part-production/SYSTEM.md](examples/cnc-part-production/SYSTEM.md)
+- [../examples/cnc-part-production/SYSTEM.md](../examples/cnc-part-production/SYSTEM.md)
   — complete proposed-system example.
