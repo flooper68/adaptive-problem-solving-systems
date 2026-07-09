@@ -74,6 +74,6 @@ visual HTML.
 - **Linked work:** `apss.visual-html-generator`, captured in
   [`operations/work/backlog/visual-html-generator.md`](../../work/backlog/visual-html-generator.md).
 - **Follow-up:** report acknowledged through this retained record. Validate a
-  future implementation using at least the stewardship system and one example,
+  future implementation using at least the operations system and one example,
   then obtain consumer feedback on clarity and usefulness before marking this
   report `addressed`.

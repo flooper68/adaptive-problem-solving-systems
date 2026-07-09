@@ -3,6 +3,13 @@
 Simple history of material framework changes. Git remains the detailed audit
 trail.
 
+## 2026-07-10 — producer and product boundary clarification
+
+Clarified that a repository may act as a container with an operational system
+capsule beside the artifacts it produces. The reference repository now declares
+`operations/` as the system that improves the normative `framework/`, with
+`examples/` as supporting, non-normative artifacts.
+
 ## 2026-07-09 — self-hosting boundary clarification
 
 Clarified that a repository may itself be a root system boundary and may keep

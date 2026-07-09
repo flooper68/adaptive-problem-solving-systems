@@ -63,7 +63,7 @@ validated.”>
 ## Grooming record
 
 Not yet groomed. See
-[`framework-feedback-grooming.md`](../../processes/framework-feedback-grooming.md).
+[`framework-feedback-grooming.md`](framework-feedback-grooming.md).
 ```
 
 Record only the personal information needed to understand and follow up on the

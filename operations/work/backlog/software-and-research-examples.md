@@ -39,7 +39,7 @@ expose domain-specific gaps that the manufacturing example does not reveal.
 - How will each example validate the artifact separately from its real-world
   outcome?
 - Should either example become the first end-to-end outcome validation of the
-  stewardship system?
+  operations system?
 
 ## Grooming log
 

@@ -55,7 +55,7 @@ before external comparison.
 ### 2026-07-09 — classified during stewardship bootstrap
 
 Set to `deferred` because the work is intentionally postponed rather than
-selected into the current plan. Reconsider after the stewardship system has
+selected into the current plan. Reconsider after the operations system has
 completed its first full operating cycle or when an external-foundations claim
 becomes load-bearing for a framework decision.
 

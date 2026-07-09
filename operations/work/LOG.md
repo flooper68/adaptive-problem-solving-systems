@@ -3,6 +3,25 @@
 Durable record of material execution, decisions, deviations, failures, and
 successful resolutions. Detailed file history remains in git.
 
+## 2026-07-10 — framework operations boundary clarified
+
+- The maintainer identified that treating the repository root as the system
+  obscured the purpose, goal, vision, and strategy of framework improvement.
+- Declared `operations/` as the APSS Framework Operations System whose enduring
+  purpose is to improve APSS so it is effective and usable by others.
+- Replaced recurring activity statements with a bounded current goal: complete
+  and validate the first evidence-driven framework improvement cycle.
+- Moved the normative framework and non-normative examples to visible sibling
+  directories at `framework/` and `examples/`; the repository is now explicitly
+  a container rather than a declared system.
+- Clarified the normative capsule guidance so a producing system may explicitly
+  reference artifacts kept outside its operational capsule.
+- Validation confirmed both system declarations satisfy the framework schema,
+  every declared local path and Markdown link resolves, and `git diff --check`
+  reports no whitespace errors.
+- On 2026-07-10, the maintainer reviewed and approved the coherent changes for
+  commit and push to `main`.
+
 ## 2026-07-09 — stewardship bootstrap started
 
 - The maintainer approved separating produced artifacts from the operations

@@ -249,9 +249,12 @@ assumption implied by automation.
 
 ## Standard system capsule
 
-System-owned material is colocated within a declared system boundary; shared or
-external evidence is referenced as a stream. A conventional multi-system
-repository places concrete capsules under `systems/`:
+A system capsule colocates its declaration and the operational material needed
+to run its adaptive loop. Produced artifacts may be kept outside the capsule
+when that makes the producer-product boundary clearer, but their paths,
+ownership, consumers, and validation must remain explicit. Shared or external
+evidence is referenced as a stream. A conventional multi-system repository
+places concrete capsules under `systems/`:
 
 ```text
 systems/
@@ -282,10 +285,18 @@ directory. Cross-system relations use stable IDs, not copied folders or
 duplicate definitions.
 
 When a repository is itself a root system, its root may be the declared system
-boundary. It may group consumer-facing outputs under `artifacts/` and the work,
-processes, validation, streams, and knowledge that produce them under an
-operational directory. This is a strategy choice, not a required APSS layout;
-the declaration must keep every referenced path and artifact boundary explicit.
+boundary. Alternatively, a repository may be a container holding an operational
+system capsule beside its produced artifacts. For example:
+
+```text
+framework/   primary artifact
+examples/    supporting artifacts
+operations/  producing system capsule, including SYSTEM.md
+```
+
+These are strategy choices, not required APSS layouts. The declaration must
+make the actual system boundary, artifact ownership, and every referenced path
+explicit.
 
 ## Lightweight stream declarations
 
