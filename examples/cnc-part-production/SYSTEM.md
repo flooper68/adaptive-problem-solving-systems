@@ -42,8 +42,8 @@ execution:
   invocation: On an approved production request or approved process-improvement trial.
 
 validation:
-  artifact: Inspect the drawing's critical dimensions, material, finish, and visible defects; reject nonconforming parts.
-  outcome: Install a sampled part in the target assembly and run the specified load trial; collect assembly and field feedback for later batches.
+  artifact: Follow processes/validation.md to inspect the drawing's critical dimensions, material, finish, and visible defects and reject nonconforming parts.
+  outcome: Follow processes/validation.md to install a sampled part in the target assembly, run the specified load trial, and collect assembly and field feedback.
 
 streams:
   - id: cad-revisions

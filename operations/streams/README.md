@@ -8,7 +8,14 @@ the detailed provenance record for repository changes.
 
 Backlog items, the current plan, and the work log preserve ideas, dispositions,
 decisions, execution history, and gaps. They are operational evidence, not
-normative framework content.
+normative framework content. The initial APSS
+[source discussion](../work/initial-framework-discussion.md) and its retained
+[compiled output](../work/initial-framework-definition.md) provide separate
+input and expected-output fixtures for a compilation replay. Later-discovered
+contemporaneous source material may be added to the same stream; retrospective
+recollections must be labelled as reconstructions rather than original records.
+Sealed compilation candidates and their provenance reports are retained under
+[`../work/compilations/`](../work/compilations/).
 
 ## Framework usage
 

@@ -3,6 +3,57 @@
 Durable record of material execution, decisions, deviations, failures, and
 successful resolutions. Detailed file history remains in git.
 
+## 2026-07-10 — framework origin and learning path awaiting review
+
+- **Status:** awaiting maintainer review; changes remain uncommitted.
+- **Claim:** The maintainer requested a retained record of the original
+  framework definition and asked whether the route from compiled knowledge to
+  the normative framework was explicit and implemented. The maintainer then
+  clarified that the outcome test must compile the initial output from the
+  initial stream entries.
+- **Acceptance:** Retain the original source discussion and initial definition
+  as separate, self-contained `operations-work` fixtures; define a clean-room
+  compilation replay without answer leakage; define compilation inputs,
+  outputs, provenance, and decision rules; distinguish compilation from
+  approval-controlled adaptation of `framework/`; validate declarations and
+  repository references.
+- Recovered the contemporaneous owner-agent design discussion from the local
+  Codex task archive and retained all 103 messages in
+  `operations/work/initial-framework-discussion.md`, with only trailing spaces
+  normalized. Tool execution, implementation progress, and produced framework
+  content are outside the input boundary.
+- Retained the complete 375-line initial framework-definition text separately
+  in `operations/work/initial-framework-definition.md` as the hidden expected
+  output. Its recorded SHA-256 digest matches the embedded text. Both records
+  belong to `operations-work`; no additional origin stream was introduced.
+- Added the general clean-room comparison rule to the knowledge-compilation
+  process: a fresh compiler receives only source evidence and the process,
+  seals a candidate, and only then may a separate evaluator compare it with a
+  hidden historical output. The initial application remains pending work, not a
+  separate validation definition.
+- Added dedicated knowledge-compilation and framework-adaptation processes and
+  connected them through `operations/SYSTEM.md` and the framework loop.
+  `framework/` is now the declared published compiled-knowledge artifact.
+  Compilation writes a sealed candidate and provenance report; only approved
+  adaptation publishes it.
+- Removed the redundant `operations/knowledge/` artifact. Its statements were
+  already authoritative in `operations/SYSTEM.md`, backlog and compilation
+  processes, and validation. Future operations-specific learning proposes an
+  explicit change to those targets and remains traceable through work evidence
+  and Git rather than a second knowledge destination.
+- Moved artifact and outcome validation definitions under `processes/`, where
+  executable methods belong. Removed the standalone initial-validation document
+  and updated the normative capsule layout and CNC example consistently.
+- Artifact validation confirmed both system declarations conform to the
+  framework schema, all local Markdown links resolve, the input transcript is
+  self-contained, the embedded expected definition contains all 375 source
+  lines with the recorded digest, no reference to `operations/knowledge/`
+  remains, and `git diff --check` reports no whitespace errors.
+- Outcome validation remains pending because this operator already saw the
+  expected output and cannot perform an uncontaminated compiler run. The next
+  valid test is the declared clean-room replay, followed by later observation
+  that an operator selects the correct adaptation target.
+
 ## 2026-07-10 — framework operations boundary clarified
 
 - The maintainer identified that treating the repository root as the system

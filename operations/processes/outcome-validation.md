@@ -6,6 +6,9 @@ systems. Internal consistency alone cannot establish this.
 
 Use one or more of these methods, proportionate to the claim:
 
+- apply the compilation process to retained historical source evidence in a
+  clean context, seal its candidate, and then compare it semantically with the
+  hidden historical output;
 - apply the framework to a real system and record gaps it exposes;
 - create or revise an implementation example and observe where the framework
   is insufficient, ambiguous, or burdensome;

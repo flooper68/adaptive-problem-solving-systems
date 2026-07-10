@@ -18,7 +18,10 @@ For every material change:
    and non-normative, and `operations/` is clearly the system producing them.
 7. Review terminology, required fields, acceptance conditions, and declared
    authority for ambiguity or contradiction.
-8. Record commands, review findings, failures, and unresolved exceptions in the
+8. When the knowledge-compilation process changes, confirm historical
+   comparisons keep input evidence and expected output separate and do not
+   expose the answer to the compiler.
+9. Record commands, review findings, failures, and unresolved exceptions in the
    relevant work item or `operations/work/LOG.md`.
 
 A change passes artifact validation when required automated checks pass, manual

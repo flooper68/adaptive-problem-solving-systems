@@ -7,12 +7,10 @@ apply it effectively. The system uses [`examples/`](../examples/) as supporting
 explanations and validation cases.
 
 - `processes/` defines feedback and backlog intake and grooming, AI agent tasks,
-  the complete framework loop, and release.
+  the complete framework loop, validation, compilation, adaptation, and release.
 - `work/` holds the durable current plan, work log, and uncommitted backlog.
 - `streams/` explains how raw operational evidence is retained, including
   direct framework-feedback reports.
-- `validation/` separates artifact correctness from consumer outcome evidence.
-- `knowledge/` contains reusable lessons compiled from operating the system.
 
 The problem, vision, current goal, strategy, boundary, and authority belong to
 this operations system, not to the repository as a whole. Its implementation

@@ -3,6 +3,13 @@
 Simple history of material framework changes. Git remains the detailed audit
 trail.
 
+## 2026-07-10 — validation process placement
+
+Clarified the conventional capsule layout by placing artifact- and
+outcome-validation implementations under `processes/`. The `validation` fields
+remain required declarations of what is checked; validation evidence remains in
+work records or streams rather than a required directory.
+
 ## 2026-07-10 — producer and product boundary clarification
 
 Clarified that a repository may act as a container with an operational system

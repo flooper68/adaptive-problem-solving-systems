@@ -48,8 +48,8 @@ execution:
   invocation: On an approved work item, material new evidence, a validation failure, or a maintainer-requested review.
 
 validation:
-  artifact: Follow validation/artifact.md to check schema conformance, references, consistency, examples, and review approval.
-  outcome: Follow validation/outcome.md to collect evidence that consumers can understand and successfully apply APSS.
+  artifact: Follow processes/artifact-validation.md to check schema conformance, references, consistency, examples, and review approval.
+  outcome: Follow processes/outcome-validation.md to collect evidence that consumers can understand and successfully apply APSS.
 
 streams:
   - id: operations-work
@@ -83,10 +83,11 @@ uncertainty:
   experimentation: Apply proposed changes to examples, prototypes, or real systems before treating usefulness claims as established.
 
 learning:
-  compilation_process: processes/framework-loop.md
-  compiled_knowledge: knowledge/README.md
-  changelog: knowledge/CHANGELOG.md
-  adaptation_process: processes/framework-loop.md
+  compilation_process: processes/knowledge-compilation.md
+  compiled_knowledge: ../framework/
+  changelog: ../framework/CHANGELOG.md
+  candidate_location: work/compilations/
+  adaptation_process: processes/framework-adaptation.md
 
 authority:
   execution: Authorized operators may capture and groom work, edit artifacts within an approved plan, and run non-destructive validation. AI agents follow processes/ai-agent-tasks.md and require maintainer approval before committing or pushing.
@@ -151,9 +152,16 @@ explicitly adopts them.
 ## Learning and adaptation
 
 Raw evidence remains recoverable through work items, logs, feedback summaries,
-research citations, validation results, and git history. Stable lessons are
-compiled into `knowledge/README.md`. The maintainer approves changes
-to the framework, this declaration, operating processes, or release state.
+research citations, validation results, baseline records, and git history. The
+[knowledge-compilation process](processes/knowledge-compilation.md) synthesizes
+these streams into a candidate framework knowledge artifact. The published
+compiled result is the primary artifact in `../framework/`; compilation stores
+its candidate under `work/compilations/` and does not overwrite the published
+framework. The separate
+[adaptation process](processes/framework-adaptation.md) requires the maintainer
+to approve publication of the candidate. Operations-specific learning changes
+this declaration, its processes, or validation through the same explicit
+adaptation path; it is not kept in a competing compiled-knowledge artifact.
 
 ## Open design gaps
 

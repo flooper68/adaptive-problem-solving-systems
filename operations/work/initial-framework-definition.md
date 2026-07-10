@@ -1,3 +1,39 @@
+---
+id: apss.operations-work.initial-framework-expected-output
+type: expected-output
+status: retained
+artifact_date: 2026-07-09
+recorded: 2026-07-10
+source: Initial framework definition; complete expected text retained below
+evidence_kind: exact historical artifact text
+source_sha256: eaba956bdcda25f9f98ef1dd0569b524ce4a807f3f12f6698c9facb729ca7eb9
+---
+
+# Initial APSS compilation expected output
+
+## Retained source
+
+This record contains the complete original framework-definition document as the
+hidden expected output for a future application of the normal compilation and
+validation processes. The verbatim text is fenced so that its original relative
+links and nested Markdown remain expected artifact content rather than being
+interpreted as links from this stream directory.
+
+The SHA-256 digest of the retained text, including its final newline, is
+`eaba956bdcda25f9f98ef1dd0569b524ce4a807f3f12f6698c9facb729ca7eb9`.
+
+## Test isolation
+
+The contemporaneous source discussion is retained separately in
+[`initial-framework-discussion.md`](initial-framework-discussion.md). During a
+historical comparison, the compiler must not read this expected output, the current
+`framework/`, or later knowledge. Only the evaluator reads this record after a
+candidate has been produced. This avoids testing whether a compiler can copy
+the answer instead of deriving it from the input stream.
+
+## Original definition (verbatim)
+
+````markdown
 # Adaptive Problem-Solving Systems
 
 Adaptive Problem-Solving Systems (APSS) is a domain-independent framework for
@@ -11,11 +47,9 @@ problem-solving systems. It specifies the responsibilities that close the loop;
 it does not prescribe one workflow, storage technology, cadence, or management
 method.
 
-This package is the normative framework specification. In this repository it is
-the primary artifact produced by the separately declared
-[APSS Framework Operations System](../operations/SYSTEM.md). Changes to the
-normative
-package are summarized in [CHANGELOG.md](CHANGELOG.md).
+This package is a framework specification, not yet an APSS instance. A future
+version may operate APSS itself as an adaptive system. Changes to this package
+are summarized in [CHANGELOG.md](CHANGELOG.md).
 
 ## Why APSS exists
 
@@ -249,24 +283,19 @@ assumption implied by automation.
 
 ## Standard system capsule
 
-A system capsule colocates its declaration and the operational material needed
-to run its adaptive loop. Produced artifacts may be kept outside the capsule
-when that makes the producer-product boundary clearer, but their paths,
-ownership, consumers, and validation must remain explicit. Shared or external
-evidence is referenced as a stream. A conventional multi-system repository
-places concrete capsules under `systems/`:
+Concrete APSS instances live under `systems/`. System-owned material is
+colocated; shared or external evidence is referenced as a stream.
 
 ```text
 systems/
   <root-system>/
     SYSTEM.md
     processes/
-      artifact-validation.md
-      outcome-validation.md
     streams/
     work/
       PLAN.md
       LOG.md
+    validation/
     knowledge/
       README.md
       CHANGELOG.md
@@ -284,20 +313,6 @@ ceremonial directories add no value.
 Child systems are physically nested under the owning parent's `subsystems/`
 directory. Cross-system relations use stable IDs, not copied folders or
 duplicate definitions.
-
-When a repository is itself a root system, its root may be the declared system
-boundary. Alternatively, a repository may be a container holding an operational
-system capsule beside its produced artifacts. For example:
-
-```text
-framework/   primary artifact
-examples/    supporting artifacts
-operations/  producing system capsule, including SYSTEM.md
-```
-
-These are strategy choices, not required APSS layouts. The declaration must
-make the actual system boundary, artifact ownership, and every referenced path
-explicit.
 
 ## Lightweight stream declarations
 
@@ -347,8 +362,7 @@ The normative structural contract is
 [system.schema.json](system.schema.json), explained in
 [SCHEMA.md](SCHEMA.md). Start from
 [SYSTEM.template.md](SYSTEM.template.md). A complete physical-domain
-example lives at
-[../examples/cnc-part-production/SYSTEM.md](../examples/cnc-part-production/SYSTEM.md).
+example lives at [examples/cnc-part-production/SYSTEM.md](examples/cnc-part-production/SYSTEM.md).
 
 ## Assessing an existing system
 
@@ -395,3 +409,4 @@ and available resources.
 
 The framework standardizes the questions that make a problem-solving loop
 complete, observable, improvable, and accountable.
+````

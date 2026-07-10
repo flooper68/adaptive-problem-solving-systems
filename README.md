@@ -30,8 +30,9 @@ tests or with the work that produces it.
   warrants a separate work candidate.
 - [Framework operating loop](operations/processes/framework-loop.md) —
   execution, validation, learning, adaptation, and release orchestration.
-- [Compiled knowledge](operations/knowledge/README.md) — reusable operational
-  lessons derived from evidence.
+- [Knowledge compilation](operations/processes/knowledge-compilation.md) and
+  [framework adaptation](operations/processes/framework-adaptation.md) — turn
+  evidence into an approved, published framework artifact.
 
 ## Repository map
 
