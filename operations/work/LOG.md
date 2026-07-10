@@ -3,6 +3,14 @@
 Durable record of material execution, decisions, deviations, failures, and
 successful resolutions. Detailed file history remains in git.
 
+## 2026-07-10 — insight delivery contract
+
+- **Status:** reviewed and approved for delivery by the maintainer.
+- Added visible process announcement and bounded automatic delivery rules to
+  [insight intake](../processes/insight-intake.md); details remain in the plan
+  and Git diff.
+- `git diff --check` passes and the added relative Markdown targets resolve.
+
 ## 2026-07-10 — framework origin reclassified as kickoff session
 
 - **Status:** reviewed, approved, committed as `f9590d7`, and pushed to

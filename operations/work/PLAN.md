@@ -16,6 +16,18 @@ change and its outcome.
 
 ## Current work
 
+### Make completed insight capture self-delivering
+
+- Status: approved for delivery by the maintainer on 2026-07-10.
+- Scope: require agents to announce insight gathering with a direct link to the
+  governing process, and define when completed maintainer-led intake is
+  committed and pushed without a redundant delivery prompt.
+- Acceptance: the intake process makes the workflow visible at invocation,
+  defines a safe and bounded delivery signal consistent with maintainer
+  authority, preserves normal review when that signal is absent, and the
+  current open-problem insight is ready to ship with the approved process
+  change.
+
 ### Preserve the framework origin and clarify learning-to-framework adaptation
 
 - Status: pushed to `origin/main` in commit `a6def80` after maintainer review

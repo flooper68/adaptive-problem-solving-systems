@@ -15,3 +15,11 @@ Use this process when an AI agent performs repository work.
 An agent must not commit or push before human approval, must not call the task
 complete before the approved commit is pushed, and must leave an explicit
 handoff in the log if claimed work cannot be completed.
+
+A specialized process may define an explicit, bounded approval signal so the
+agent does not ask for redundant delivery confirmation. For example,
+[`insight intake`](insight-intake.md) treats maintainer-requested capture plus
+participation through its clarification or review stopping point as approval to
+commit and push that insight record. Such a signal applies only to the artifact
+and delivery scope named by the specialized process; it does not approve
+unrelated changes or later normative adoption.

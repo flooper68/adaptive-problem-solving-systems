@@ -20,6 +20,26 @@ but do not combine materially different interpretations only to reduce file
 count. Search existing insights first and add new evidence or a related record
 without erasing independent provenance.
 
+## Invocation and announcement
+
+When an agent identifies that a conversation or request is insight gathering,
+it must say so before starting the intake. The announcement must name the
+workflow and link directly to this process so the source can see how their
+claim will be preserved, clarified, reviewed, and delivered:
+
+> This is insight gathering. I will follow the
+> [insight-intake process](insight-intake.md).
+
+In a chat interface, use that interface's clickable repository-file form for
+`operations/processes/insight-intake.md` rather than emitting unlinked path
+text.
+
+The announcement is orientation, not a request for permission when the source
+has already asked to capture the insight. If the conversation began under
+another process and produces an independently useful insight, announce the
+transition before extracting it. Continue to distinguish the source's words
+from operator inference.
+
 ## Minimum capture
 
 Create `operations/streams/insights/YYYY-MM-DD-<short-slug>.md`:
@@ -127,3 +147,26 @@ The next possible action is
 [`insight grooming`](insight-grooming.md). If an executable response is
 proposed, capture it separately through [`backlog-intake.md`](backlog-intake.md)
 and link both records.
+
+## Delivery
+
+Once the minimum capture is complete, the clarification grill has reached a
+useful stopping point, and source corrections have been incorporated or their
+unavailability recorded, the gathered information is ready for delivery. Do
+not leave a completed insight only in an agent's working tree.
+
+When the APSS framework maintainer asked for the insight to be captured and
+participated through the clarification stopping point or reviewed the result,
+that participation is approval to deliver the bounded insight record. An AI
+agent must stage only the insight and necessary source-link corrections,
+commit, push the current branch, and report the branch and commit without
+asking for a second delivery confirmation. This is the specialized approval
+signal permitted by [`ai-agent-tasks.md`](ai-agent-tasks.md); it approves
+faithful capture and delivery, not the insight's truth, priority, disposition,
+or adoption.
+
+If the source is not authorized to approve repository delivery, review was
+unavailable, unrelated working-tree changes cannot be safely excluded, or the
+push fails, do not infer approval or broaden the commit. Preserve the record,
+state the blocker, and follow the normal human-review and handoff rules in
+[`ai-agent-tasks.md`](ai-agent-tasks.md).
