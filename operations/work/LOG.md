@@ -5,7 +5,8 @@ successful resolutions. Detailed file history remains in git.
 
 ## 2026-07-10 — insight delivery contract
 
-- **Status:** reviewed and approved for delivery by the maintainer.
+- **Status:** reviewed, approved, committed as `c543cc0`, and pushed to
+  `origin/main`.
 - Added visible process announcement and bounded automatic delivery rules to
   [insight intake](../processes/insight-intake.md); details remain in the plan
   and Git diff.

@@ -18,7 +18,8 @@ change and its outcome.
 
 ### Make completed insight capture self-delivering
 
-- Status: approved for delivery by the maintainer on 2026-07-10.
+- Status: pushed to `origin/main` in commit `c543cc0` after maintainer review
+  and approval on 2026-07-10.
 - Scope: require agents to announce insight gathering with a direct link to the
   governing process, and define when completed maintainer-led intake is
   committed and pushed without a redundant delivery prompt.
