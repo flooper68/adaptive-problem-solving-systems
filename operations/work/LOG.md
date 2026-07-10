@@ -3,9 +3,10 @@
 Durable record of material execution, decisions, deviations, failures, and
 successful resolutions. Detailed file history remains in git.
 
-## 2026-07-10 — working-session capture approved for delivery
+## 2026-07-10 — working-session capture delivered
 
-- **Status:** reviewed and approved for delivery; changes are uncommitted.
+- **Status:** reviewed, approved, committed as `2e30007`, and pushed to
+  `origin/main`.
 - **Claim:** Separate working-session evidence and its insights, questions, and
   decisions from executable backlog work; define a lightweight process for
   conducting and retaining working sessions; and retain the current maintainer-
@@ -50,6 +51,8 @@ successful resolutions. Detailed file history remains in git.
   considering working sessions as a higher-level framework concept. Those ideas
   remain appended to the source session for later exploration and have not
   been prematurely converted into feedback, insight, or backlog records.
+- Committed the approved working-session evidence flow as `2e30007` and pushed
+  it to `origin/main`.
 
 ## 2026-07-10 — unbounded stream-index feedback delivered
 
