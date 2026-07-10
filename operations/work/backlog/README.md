@@ -43,6 +43,10 @@ events still belong in `operations/work/LOG.md`.
 - [Modularize growing concerns from `SYSTEM.md`](modular-system-concerns.md)
   — captured with strategy as the first candidate; extraction thresholds and
   declaration/schema implications require grooming.
+- [Remove the system declaration schema while the framework evolves](relax-system-declaration-schema.md)
+  — captured as removal of the formal schema while retaining the declarative
+  structure; affected surfaces remain to be scoped, and no reconsideration
+  trigger is known yet.
 - [Generate visual HTML from APSS system declarations](visual-html-generator.md)
   — captured from actionable framework feedback; implementation scope and
   acceptance conditions require backlog grooming.
