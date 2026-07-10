@@ -5,8 +5,8 @@ successful resolutions. Detailed file history remains in git.
 
 ## 2026-07-10 — framework origin reclassified as kickoff session
 
-- **Status:** reviewed and approved for delivery by the maintainer on
-  2026-07-10.
+- **Status:** reviewed, approved, committed as `f9590d7`, and pushed to
+  `origin/main` on 2026-07-10.
 - **Claim:** The maintainer clarified that the initial framework definition and
   its source discussion were the project's first working session and should
   live in the working-sessions stream rather than under executable work.
