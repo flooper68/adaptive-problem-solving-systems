@@ -5,7 +5,7 @@ projections for orientation, diagnosis, and improvement. Generate them from
 `SYSTEM.md` frontmatter where practical; if maintained manually, correct them
 whenever they conflict with declarations.
 
-No single diagram should show every relationship. APSS uses three standard
+No single diagram should show every relationship. APSS uses four standard
 views plus a repeatable local-system motif.
 
 ## 1. Hierarchy and ownership
@@ -73,13 +73,34 @@ than as the first view for newcomers.
 ```mermaid
 flowchart LR
     streams["Raw evidence streams"] --> compiler["Compilation process"]
-    compiler --> knowledge["Compiled knowledge"]
+    compiler --> knowledge["Compiled knowledge artifact"]
     knowledge --> proposal["Adaptation proposal"]
     proposal --> approval["Declared approver"]
     approval --> strategy["Strategy / process / subsystem change"]
     strategy --> nextRun["Next execution"]
     nextRun --> streams
 ```
+
+## 4. Stream, work-session, and artifact processing
+
+Purpose: answer “which bounded work processes which inputs, and what does it
+produce?”
+
+Show streams and existing artifacts as inputs to brainstorming, with reviewable
+knowledge or instantiation changes as outputs. Use this view to distinguish the
+session that discusses and compiles a proposal from the streams it reads.
+
+```mermaid
+flowchart LR
+    inputStreams["Input streams"] --> session["Brainstorming\nprocesses/brainstorming.md"]
+    knowledge["Compiled knowledge"] --> session
+    plan["Selected work"] --> session
+    session --> artifact["Reviewable knowledge or instantiation changes"]
+    artifact --> review["Iterative user review"]
+    review --> session
+```
+
+The system declaration and same-named process remain the source of truth.
 
 ## Local-system motif
 
@@ -108,6 +129,7 @@ second required-field list:
 | Hierarchy | `id`, `name`, `parent`, `status` |
 | Artifact flow | `artifact.primary`, `artifact.consumers`, `relations.feeds` |
 | Learning | `streams`, `learning.*`, `authority.adaptation`, `relations.improves` |
+| Work-session processing | `work_sessions.*`, `streams`, `artifact.*` |
 
 It should also report structural problems:
 
@@ -118,6 +140,7 @@ It should also report structural problems:
 - artifacts without consumers or intended outcomes;
 - missing artifact or outcome validation;
 - missing durable plan/work log;
+- missing brainstorming process references;
 - missing compilation or adaptation processes; and
 - declarations that reference nonexistent local files.
 

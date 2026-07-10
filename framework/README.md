@@ -69,7 +69,7 @@ An **adaptive problem-solving system** owns:
 2. stable identity and lifecycle ownership;
 3. roles and adaptation authority;
 4. inputs, constraints, and evidence streams;
-5. a strategy and durable plan;
+5. a strategy, durable plan, and brainstorming work session;
 6. a complete execution and feedback loop;
 7. at least one primary artifact;
 8. a consumer and intended outcome;
@@ -100,6 +100,35 @@ environment. Artifact and outcome must not be conflated: a part may match its
 CAD tolerances and still fail in use; software may pass every test and still not
 help its user.
 
+### Process and work session
+
+A **process** is a reusable method for performing a kind of work. It describes
+how the work is done independently of one invocation.
+
+A system declares the repeatable **work sessions** it can invoke. Each
+declaration has a stable `id`, a concise `description`, and a link to the
+`process` that defines how the work is done. The process filename should match
+the work-session ID where practical.
+
+APSS currently defines one required work session: **brainstorming**. It discusses
+an idea, task, or research topic with the responsible user, reads relevant
+evidence and knowledge, compiles proposed changes directly into the framework
+knowledge or concrete system instantiation, and iterates on those changes with
+the user until they reach an accepted stopping point. Its process is declared as
+`processes/brainstorming.md`.
+
+A concrete work session is one bounded invocation of a declared work session.
+It may be synchronous or asynchronous and may be performed by people, agents,
+machines, or delegated systems. Event-driven and continuous operation can use a
+meaningful invocation or observation boundary, but the linked process must make
+completion or handoff inspectable.
+
+A brainstorming session consumes selected stream evidence, compiled knowledge,
+plans, constraints, or existing artifacts and produces reviewable changes to
+the system's knowledge or instantiation. The authoritative artifact and its
+simple changelog retain the accepted result; raw evidence remains in its source
+streams.
+
 ### Stream, raw evidence, and compiled knowledge
 
 - An **information stream** is a source of observations relevant to the system:
@@ -118,6 +147,12 @@ uncertainty; and approved decisions are decisional artifacts. These roles may
 share one source record or use separate linked records when they need distinct
 lifecycles. Retaining any of them does not by itself make it executable work.
 
+Streams and work sessions therefore have complementary roles: streams make
+inputs and observations available; work sessions deliberately process or act
+on selected inputs; produced evidence may return to declared streams for later
+sessions. A meeting can be both the source named by a stream and a work-session
+invocation, while its retained summary is evidence carried by that stream.
+
 Raw evidence remains available because a later strategy or question may make a
 previously ignored detail important. Compiled knowledge is therefore revisable
 and, where useful, reproducible from old and new evidence. Repository-backed
@@ -128,7 +163,8 @@ simple changelog, not a duplicate manifest for every compilation.
 
 Every APSS instance must implement all of these responsibilities. Their exact
 ordering, cadence, concurrency, tooling, and resource budget belong to the
-system's strategy.
+system's strategy. Work sessions may support this loop, but the system remains
+responsible for every phase whether it combines or separates their processes.
 
 ### 1. Orient and frame
 
@@ -149,7 +185,7 @@ people, or agents.
 
 ### 3. Resolve uncertainty
 
-The system may invoke three general evidence-producing capabilities, using
+The system may invoke three general evidence-producing capabilities with
 domain-specific protocols:
 
 - **Discussion / grilling** — elicit knowledge, context, trade-offs, or judgment
@@ -161,8 +197,9 @@ domain-specific protocols:
   another deliberate test.
 
 These capabilities may be implemented locally or delegated to shared systems.
-The system declaration states how they are invoked and any system-specific
-protocol, such as a particular grill.
+Brainstorming is the current work-session interface for discussing and
+compiling a load-bearing idea, task, or research topic with the responsible
+user; a system-specific protocol may include a particular grill.
 
 ### 4. Execute and produce
 
@@ -273,6 +310,7 @@ systems/
   <root-system>/
     SYSTEM.md
     processes/
+      brainstorming.md
       artifact-validation.md
       outcome-validation.md
     streams/
@@ -288,10 +326,9 @@ systems/
         ...
 ```
 
-Only `SYSTEM.md`, a durable plan, a work log, an execution process, a
-compilation process, validation definitions, and a compiled-knowledge artifact
-are conceptually required. They may share files when that is clearer. Empty
-ceremonial directories add no value.
+Only `SYSTEM.md`, a durable plan, a work log, the brainstorming process,
+execution and validation definitions, and a compiled-knowledge artifact are
+conceptually required. Empty ceremonial directories add no value.
 
 Child systems are physically nested under the owning parent's `subsystems/`
 directory. Cross-system relations use stable IDs, not copied folders or
@@ -328,6 +365,24 @@ streams:
 Systems may add retention, privacy, schema, normalization, or reliability fields
 when their problem requires them. They are not universal framework ceremony.
 
+## Work-session declarations
+
+APSS currently requires only the `brainstorming` work session. Its declaration
+contains a stable ID, description, and same-named linked process:
+
+```yaml
+work_sessions:
+  - id: brainstorming
+    description: Discuss an idea, task, or research topic with the responsible user and iteratively compile reviewable changes into system knowledge or the system instantiation.
+    process: processes/brainstorming.md
+```
+
+The process owns framing, evidence use, discussion, compilation, iterative user
+review, stopping, and any session-specific constraints. The declaration names a
+repeatable kind of work, not a historical invocation. Other system work remains
+implemented through the existing planning, execution, validation, learning, and
+adaptation declarations; additional work sessions are deliberately deferred.
+
 ## Creating a system
 
 1. **Establish the boundary.** Name the distinct problem, consumer, outcome,
@@ -345,13 +400,15 @@ when their problem requires them. They are not universal framework ceremony.
    acceptance method, intended outcome, and outcome-validation method.
 6. **Declare streams and uncertainty routes.** Name the evidence sources and
    how discussion, research, and experimentation are invoked.
-7. **Implement the full loop.** Add durable planning/work logging, execution,
+7. **Implement brainstorming.** Declare the `brainstorming` work session and its
+   same-named process for iterative user discussion and reviewable compilation.
+8. **Implement the full loop.** Add durable planning/work logging, execution,
    both validations, compilation, adaptation, and continuation/termination.
-8. **Create compiled memory.** Give the system a knowledge artifact and simple
+9. **Create compiled memory.** Give the system a knowledge artifact and simple
    changelog.
-9. **Visualize and inspect.** Generate or draw the hierarchy, artifact flow,
+10. **Visualize and inspect.** Generate or draw the hierarchy, artifact flow,
    and learning loop from the declaration; fix missing ownership or dead ends.
-10. **Run it once end to end.** A declared loop that has never produced,
+11. **Run it once end to end.** A declared loop that has never produced,
     validated, learned, and adapted is a design hypothesis, not yet a proven
     adaptive system.
 
@@ -372,6 +429,8 @@ capsule and referenced sources:
 - What is its primary artifact and intended outcome?
 - How does it plan and retain a work log?
 - What is the complete execution/feedback loop?
+- How does its brainstorming work session discuss and compile changes with the
+  responsible user?
 - How are artifact and outcome validated separately?
 - Which evidence streams does it consume and produce?
 - How can it invoke discussion, research, and experimentation?
@@ -386,11 +445,12 @@ a process/capability inside an accountable parent.
 
 ## Visual orientation
 
-APSS uses three complementary projections rather than one overloaded graph:
+APSS uses four complementary projections rather than one overloaded graph:
 
 1. hierarchy and ownership;
 2. artifact flow from producer to consumer; and
-3. evidence, compilation, and adaptation flow.
+3. evidence, compilation, and adaptation flow; and
+4. stream-to-brainstorming processing.
 
 The maps should be generated from `SYSTEM.md` declarations where practical.
 Manual maps are derived navigation aids and must lose to the declarations on
@@ -400,10 +460,10 @@ conflict. Detailed conventions and examples are in
 ## What APSS deliberately does not standardize
 
 APSS does not require a particular project-management method, database, wiki
-tool, communication platform, orchestration engine, schedule, work taxonomy,
-compilation algorithm, experiment type, or validation technique. Those are
-strategy decisions made by each system in response to its problem, constraints,
-and available resources.
+tool, communication platform, orchestration engine, schedule, work or
+additional work-session taxonomy, compilation algorithm, experiment type, or
+validation technique. Those are strategy decisions made by each system in
+response to its problem, constraints, and available resources.
 
 The framework standardizes the questions that make a problem-solving loop
 complete, observable, improvable, and accountable.

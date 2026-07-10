@@ -38,7 +38,7 @@ record with provenance.
    assumptions, participant inference, and operator inference. Identify missing
    steps, causal claims, generalization, and alternative explanations.
 4. **Test the evidence.** Seek corroborating and contradictory evidence
-   proportionate to the claim. Use a working session, research, validation, or
+   proportionate to the claim. Use brainstorming, research, validation, or
    experiment when a missing answer could materially reverse the disposition.
 5. **Assess usefulness and risk.** Record which understanding, compilation,
    decision, or possible response the insight could affect; the cost of being

@@ -12,7 +12,7 @@ approved decision, or executable work merely because it was captured.
 Create an independent insight record when a participant or operator draws a
 coherent conclusion from evidence and that interpretation may need later
 corroboration, challenge, compilation, comparison, or reuse beyond its source
-record. Keep a passing interpretation inside its working session or other
+record. Keep a passing interpretation inside its source discussion or other
 source when it does not need an independent lifecycle.
 
 Use one record for one coherent claim. Related claims may link to each other,
@@ -101,7 +101,7 @@ might affect without implying commitment.>
 ## Grooming record
 
 Not yet groomed. See
-[`insight-grooming.md`](../../processes/insight-grooming.md).
+[`insight-grooming.md`](insight-grooming.md).
 ```
 
 Record direct observations, external claims, participant interpretations, and

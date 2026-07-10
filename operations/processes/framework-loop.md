@@ -13,36 +13,36 @@ When an AI agent performs the work, also follow
    assess them through `framework-feedback-grooming.md`. Preserve feedback as
    evidence; when its disposition is actionable, create or link a distinct work
    candidate through `backlog-intake.md`.
-3. Conduct and retain material collaborative exploration through
-   `working-session.md`. Keep observations, insights, questions, and decisions
-   distinguishable in their source record. Capture independently useful
+3. Use [`brainstorming.md`](brainstorming.md) to discuss an idea, task, or
+   research topic with the maintainer and iteratively compile reviewable changes
+   into the framework or a concrete instantiation. Keep observations, insights,
+   questions, and decisions distinguishable. Capture independently useful
    interpretations through `insight-intake.md` and assess them through
    `insight-grooming.md`. Capture a separate executable response through
    `backlog-intake.md` only when action is proposed; groom those work candidates
    through `backlog-grooming.md`.
 4. The maintainer selects ready, bounded work into `operations/work/PLAN.md` and
    confirms owner, acceptance conditions, authority, and validation approach.
-5. Resolve load-bearing uncertainty through a working session, research, or
+5. Resolve load-bearing uncertainty through brainstorming, research, or
    experimentation. Preserve sources and distinguish evidence from inference.
 6. For normative framework work, run
    [`knowledge-compilation.md`](knowledge-compilation.md) to compile the
-   evidence into a candidate framework artifact and provenance report. For
+   evidence directly into uncommitted framework changes and its changelog. For
    operational or example work, make the smallest coherent changes authorized
    by the plan. Record material decisions and deviations in
    `operations/work/LOG.md`.
-7. Run `operations/processes/artifact-validation.md` against the candidate and other
-   changes. A framework candidate is not publishable while known consistency,
+7. Run [`artifact-validation.md`](artifact-validation.md) against the proposed
+   changes. A framework change is not publishable while known consistency,
    schema, link, example, or review failures remain.
-8. Run or arrange `operations/processes/outcome-validation.md`. Outcome evidence may
-   arrive later than artifact validation; record that gap rather than claiming
-   effectiveness.
-9. Update the compilation report with validation results. Recompile and repeat
-   validation if the evidence changes the candidate. Route operations-specific
-   lessons to the declared process, validation, plan, stream, or system target,
-   and keep raw evidence at its source or durable reference.
+8. Run or arrange [`outcome-validation.md`](outcome-validation.md). Outcome
+   evidence may arrive later than artifact validation; record that gap rather
+   than claiming effectiveness.
+9. Recompile and repeat validation if new evidence changes the proposed
+   knowledge. Route operations-specific lessons to the declared process,
+   validation, plan, stream, or system target, and keep raw evidence at its
+   source or durable reference.
 10. Run [`framework-adaptation.md`](framework-adaptation.md) to review the
-    sealed candidate. The maintainer approves normative publication; only then
-    does the compiled candidate update `framework/` and its changelog.
+    uncommitted changes. The maintainer approves normative publication and use.
 11. Follow `release.md` when publishing a coherent framework version. Otherwise
     record the stopping point, next trigger, or handoff in the plan and log.
 

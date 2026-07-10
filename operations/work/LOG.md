@@ -1,5 +1,32 @@
 # Work log
 
+## 2026-07-10 — work-session framework concept claimed
+
+- **Status:** reviewed and approved by the maintainer; delivered to
+  `origin/main` by the commit containing this entry.
+- **Source:** the maintainer-led brainstorming session defining streams as data
+  inputs and work sessions as bounded processing that produces artifacts and
+  learning evidence.
+- **Scope:** retain and compile the discussion; update the normative definition,
+  schema, template, and visualization; and refactor framework operations and the
+  CNC example to implement the same brainstorming declaration and process.
+- **Acceptance:** the framework defines only `brainstorming`; declarations use
+  `id`, `description`, and `process`; compilation updates the authoritative
+  artifact and simple changelog without a parallel archive or report; commit and
+  push remain pending explicit review.
+- **Result:** used the source discussion to add the normative brainstorming
+  concept, minimal declaration, template, visualization, and changelog entry;
+  added same-named brainstorming processes to Framework Operations and CNC;
+  removed the compilation archive, obsolete working-session process, and
+  redundant root operations README; and removed brainstorming discussions as a
+  declared evidence stream.
+- **Validation:** the JSON schema parses; both system declarations parse as YAML,
+  contain exactly one `brainstorming` entry with only `id`, `description`, and
+  `process`, resolve `processes/brainstorming.md`, and retain valid declared
+  process paths. Changed Markdown links and `git diff --check` pass; the broken
+  insight-grooming link encountered during validation was corrected. Maintainer
+  review passed; outcome validation through later consumer use remains pending.
+
 Durable record of material execution, decisions, deviations, failures, and
 successful resolutions. Detailed file history remains in git.
 

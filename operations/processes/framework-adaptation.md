@@ -2,23 +2,22 @@
 
 ## Purpose
 
-Review a sealed compilation candidate, decide how its learning changes future
-operation, and publish approved normative knowledge to the correct target. This
-process is separate from compilation so producing a candidate cannot silently
-replace the published APSS framework.
+Review uncommitted compiled-knowledge changes, decide how their learning changes
+future operation, and authorize approved normative knowledge in the correct
+target. Compilation and adaptation are distinct responsibilities even when a
+system combines them in one operational process.
 
 ## Inputs and authority
 
-An adaptation starts from linked evidence, a sealed compilation candidate and
-report or an explicit reason no candidate was needed, and a selected work item
-with acceptance and validation conditions. The APSS framework maintainer is the
-adaptation approver. Operators may prepare a proposal and uncommitted edits only
-within their granted scope.
+An adaptation starts from linked evidence, uncommitted changes or an explicit
+reason none are needed, and selected work with acceptance and validation
+conditions. The APSS framework maintainer is the adaptation approver. Operators
+may prepare proposals only within their granted scope.
 
 ## Procedure
 
-1. Review the candidate's lesson, provenance, inference, uncertainty,
-   validation state, and proposed future behavior.
+1. Review the proposed change, relevant source evidence, uncertainty,
+   validation state, and intended future behavior.
 2. Select the smallest correct target:
    - `operations/` for how the framework-producing system works;
    - `examples/` for a non-normative demonstration or test; or
@@ -28,10 +27,9 @@ within their granted scope.
    needed discussion, research, experiment, or outcome observation instead of
    adapting.
 4. Obtain maintainer approval for the target and any normative framework
-   publication. A sealed candidate never substitutes for approval.
-5. Make the smallest coherent change. For an approved normative candidate,
-   publish it into `framework/`, append `framework/CHANGELOG.md`, and keep the
-   definition, schema, template, and visualization guidance consistent as
+   publication. An uncommitted diff never substitutes for approval.
+5. Make the smallest coherent change. For approved normative knowledge, keep
+   `framework/`, its simple changelog, and related guidance consistent as
    applicable.
 6. Run artifact validation and arrange outcome validation. Record delayed
    outcome evidence honestly rather than claiming effectiveness at merge time.

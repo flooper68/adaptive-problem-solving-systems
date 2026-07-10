@@ -10,7 +10,7 @@ vision: People can readily understand and apply APSS to build adaptive problem-s
 purpose: Improve the APSS framework so it is effective and usable by others.
 goals:
   - Complete and validate the first evidence-driven framework improvement cycle, from an observed consumer need through an approved change and its outcome.
-strategy: Treat the framework as the primary product, use examples and real applications as tests of its clarity and usefulness, preserve feedback, working-session evidence, and explicit insights before choosing responses, select bounded executable improvements into a durable plan, validate artifact correctness separately from consumer outcomes, compile what is learned, and require human approval for normative adaptation and release.
+strategy: Treat the framework as the primary product, use examples and real applications as tests of its clarity and usefulness, preserve feedback, material brainstorming evidence, and explicit insights before choosing responses, select bounded executable improvements into a durable plan, validate artifact correctness separately from consumer outcomes, compile what is learned, and require human approval for normative adaptation and release.
 
 constraints:
   - Keep the normative framework distinguishable from operations and non-normative examples.
@@ -48,6 +48,11 @@ execution:
   process: processes/framework-loop.md
   invocation: On an approved work item, material new evidence, a validation failure, or a maintainer-requested review.
 
+work_sessions:
+  - id: brainstorming
+    description: Discuss an APSS idea, task, or research topic with the maintainer and iteratively compile reviewable changes into the framework or a concrete APSS instantiation.
+    process: processes/brainstorming.md
+
 validation:
   artifact: Follow processes/artifact-validation.md to check schema conformance, references, consistency, examples, and review approval.
   outcome: Follow processes/outcome-validation.md to collect evidence that consumers can understand and successfully apply APSS.
@@ -59,12 +64,6 @@ streams:
     access: Read backlog items, the current plan, and the append-only work log.
     consumed_by: processes/framework-loop.md
     grill: null
-  - id: working-sessions
-    purpose: Preserve collaborative exploration and its observations, insights, questions, decisions, and candidate actions without treating them as work commitments.
-    source: Maintainer, contributor, and agent working sessions.
-    access: Retain one topic-focused summary or recoverable source reference per session under streams/working-sessions/ using processes/working-session.md.
-    consumed_by: processes/framework-loop.md
-    grill: Follow processes/working-session.md; when eliciting judgment, ask one load-bearing question at a time and preserve the source's distinctions.
   - id: insights
     purpose: Preserve independently useful interpretations with their source evidence, reasoning, scope, uncertainty, and explicit epistemic disposition.
     source: Maintainer, contributor, validator, consumer, and agent interpretations derived from declared evidence streams.
@@ -91,7 +90,7 @@ streams:
     grill: null
 
 uncertainty:
-  discussion: Follow processes/working-session.md to elicit the problem, intended outcome, constraints, trade-offs, and observed use from the proposer, maintainer, or framework user and retain the result in the working-sessions stream.
+  discussion: Follow processes/brainstorming.md to elicit the problem, intended outcome, constraints, trade-offs, and observed use from the proposer, maintainer, or framework user.
   research: Consult authoritative external sources when terminology, prior art, or empirical claims are load-bearing.
   experimentation: Apply proposed changes to examples, prototypes, or real systems before treating usefulness claims as established.
 
@@ -99,11 +98,10 @@ learning:
   compilation_process: processes/knowledge-compilation.md
   compiled_knowledge: ../framework/
   changelog: ../framework/CHANGELOG.md
-  candidate_location: work/compilations/
   adaptation_process: processes/framework-adaptation.md
 
 authority:
-  execution: Authorized operators may retain working sessions, capture and groom insights and candidate work, edit artifacts within an approved plan, and run non-destructive validation. Only declared authorities may approve insight dispositions, decisions, or work selection. AI agents follow processes/ai-agent-tasks.md and require maintainer approval before committing or pushing.
+  execution: Authorized operators may brainstorm with the maintainer, capture and groom insights and candidate work, edit artifacts within an approved plan, and run non-destructive validation. Only declared authorities may approve insight dispositions, decisions, or work selection. AI agents follow processes/ai-agent-tasks.md and require maintainer approval before committing or pushing.
   adaptation: The APSS framework maintainer approves normative framework changes, release decisions, and changes to the operations system.
 
 health: The operations system must keep the normative framework distinguishable from its own processes and from non-normative examples, retain durable work history, and avoid claiming effectiveness without consumer-outcome evidence.
@@ -144,10 +142,11 @@ results may enter as evidence.
 
 ## Complete loop
 
-Direct feedback enters the framework-feedback stream and is groomed as evidence;
-an actionable disposition may create a linked work candidate. Working sessions
-retain collaborative exploration and distinguish observations, insights,
-questions, decisions, and possible responses. Independently useful insights
+Brainstorming discusses ideas, tasks, and research with the maintainer and
+iteratively compiles reviewable changes into the framework or an APSS
+instantiation. Direct feedback enters the framework-feedback stream and is
+groomed as evidence; an actionable disposition may create a linked work
+candidate. Independently useful insights
 enter their own stream for faithful intake and evidence-aware grooming. Only
 executable responses enter the durable backlog through intake. Backlog grooming
 clarifies their source, expected outcome, evidence, scope, uncertainty, and
@@ -167,17 +166,15 @@ explicitly adopts them.
 
 ## Learning and adaptation
 
-Raw evidence remains recoverable through working-session records, work items,
-logs, feedback summaries, research citations, validation results, baseline
+Raw evidence remains recoverable through work items, logs, feedback summaries,
+research citations, validation results, historical source material, baseline
 records, and git history. Explicit interpretations and their assessment remain
 recoverable through the insight stream. The
 [knowledge-compilation process](processes/knowledge-compilation.md) synthesizes
-these streams into a candidate framework knowledge artifact. The published
-compiled result is the primary artifact in `../framework/`; compilation stores
-its candidate under `work/compilations/` and does not overwrite the published
-framework. The separate
+these streams directly into uncommitted changes to the primary artifact in
+`../framework/` and its simple changelog. The separate
 [adaptation process](processes/framework-adaptation.md) requires the maintainer
-to approve publication of the candidate. Operations-specific learning changes
+to approve publication and later use. Operations-specific learning changes
 this declaration, its processes, or validation through the same explicit
 adaptation path; it is not kept in a competing compiled-knowledge artifact.
 

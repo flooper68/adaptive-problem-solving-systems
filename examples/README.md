@@ -10,4 +10,5 @@ techniques used by one example are not APSS requirements unless the normative
 ## Available examples
 
 - [CNC part production](cnc-part-production/SYSTEM.md) — a proposed physical
-  production system with dimensional and real-use validation.
+  production system with a brainstorming work session plus dimensional and
+  real-use validation processes.

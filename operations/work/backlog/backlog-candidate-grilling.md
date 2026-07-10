@@ -33,7 +33,7 @@ possible next step while preserving the source's original meaning.
 - The normative framework recognizes discussion or grilling as an
   evidence-producing capability and allows source-specific protocols.
 - The later
-  [`working-session process`](../../processes/working-session.md) provides a
+  [`brainstorming process`](../../processes/brainstorming.md) provides a
   general discussion/grilling protocol. Grooming must determine whether any
   backlog-specific protocol remains necessary beyond intake clarification.
 

@@ -41,6 +41,11 @@ execution:
   process: processes/loop.md
   invocation: On an approved production request or approved process-improvement trial.
 
+work_sessions:
+  - id: brainstorming
+    description: Discuss a production idea, task, or research topic with the responsible user and iteratively compile reviewable changes into this APSS instantiation or its manufacturing knowledge.
+    process: processes/brainstorming.md
+
 validation:
   artifact: Follow processes/validation.md to inspect the drawing's critical dimensions, material, finish, and visible defects and reject nonconforming parts.
   outcome: Follow processes/validation.md to install a sampled part in the target assembly, run the specified load trial, and collect assembly and field feedback.

@@ -16,6 +16,21 @@ change and its outcome.
 
 ## Current work
 
+### Define work sessions as the system-owned processing layer
+
+- Status: approved by the maintainer on 2026-07-10 and delivered to
+  `origin/main` by the commit containing this entry.
+- Scope: use the current brainstorming to compile its domain-independent
+  conclusions, define `brainstorming` as the first work session in the normative
+  framework, and exercise it in Framework Operations and the CNC example.
+- Acceptance: streams remain input/evidence channels; `work_sessions` entries
+  contain only an ID, description, and same-named process link; brainstorming
+  iteratively discusses and compiles reviewable changes with the user; other
+  loop responsibilities remain ordinary processes; compilation uses the
+  authoritative artifact and simple changelog without a candidate archive or
+  report; supporting documentation validates; no commit or push occurs before
+  review.
+
 ### Make completed insight capture self-delivering
 
 - Status: pushed to `origin/main` in commit `c543cc0` after maintainer review

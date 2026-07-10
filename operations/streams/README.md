@@ -8,24 +8,17 @@ the detailed provenance record for repository changes.
 
 Backlog items, the current plan, and the work log preserve candidate actions,
 dispositions, decisions made during execution, execution history, and gaps.
-They are operational evidence, not normative framework content. Sealed
-compilation candidates and their provenance reports are retained under
-[`../work/compilations/`](../work/compilations/).
+They are operational evidence, not normative framework content.
 
-## Working sessions
-
-Bounded meetings, discussions, brainstorming exchanges, and asynchronous
-working threads are retained in the [`working-sessions/`](working-sessions/)
-stream through the
-[working-session process](../processes/working-session.md). A session may
-contain observations, insights, questions, decisions, and candidate actions,
-but only an explicitly created response enters the executable backlog.
+## Historical framework sources
 
 The initial APSS
 [kickoff session](working-sessions/2026-07-09-initial-framework-kickoff.md) and
 its separately retained
 [framework definition](working-sessions/2026-07-09-initial-framework-definition.md)
 provide input and hidden expected-output fixtures for a compilation replay.
+These files are archival source material, not an ongoing declared stream or a
+required output of brainstorming.
 Later-discovered contemporaneous source material may be added to the kickoff
 session's source boundary; retrospective recollections must be labelled as
 reconstructions rather than original records.

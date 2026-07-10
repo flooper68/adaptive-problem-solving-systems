@@ -37,6 +37,11 @@ execution:
   process: <path or concise implementation description>
   invocation: <event, schedule, continuous condition, on-demand call, or other trigger>
 
+work_sessions:
+  - id: brainstorming
+    description: Discuss an idea, task, or research topic with the responsible user and iteratively compile reviewable changes into system knowledge or the system instantiation.
+    process: processes/brainstorming.md
+
 validation:
   artifact: <how correctness/acceptance of the output is checked>
   outcome: <how real-world effectiveness for the consumer is checked>
@@ -89,7 +94,8 @@ capability inside its parent. State what is inside and outside its control.
 Describe how the system plans, resolves uncertainty, executes, produces its
 artifact, validates artifact and outcome, captures evidence, compiles knowledge,
 adapts, and invokes the next run. Responsibilities may be reordered, combined,
-parallelized, or asynchronous.
+parallelized, or asynchronous. Explain where brainstorming can clarify or
+compile proposed changes without replacing the other declared processes.
 
 ## Artifact contract
 

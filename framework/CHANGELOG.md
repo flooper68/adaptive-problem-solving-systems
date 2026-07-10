@@ -3,6 +3,15 @@
 Simple history of material framework changes. Git remains the detailed audit
 trail.
 
+## 2026-07-10 — system-owned work sessions
+
+Defined `brainstorming` as the single work session currently required by APSS.
+It discusses an idea, task, or research topic with the responsible user and
+iteratively compiles reviewable changes into framework knowledge or a concrete
+system instantiation. Its declaration contains only an ID, description, and the
+same-named process link. Clarified that streams carry observations and retained
+records; they are not the work that processes them.
+
 ## 2026-07-10 — evidence records and executable work
 
 Clarified that discussion summaries, insights, questions, and decisions are
