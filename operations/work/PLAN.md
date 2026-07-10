@@ -18,8 +18,8 @@ change and its outcome.
 
 ### Preserve the framework origin and clarify learning-to-framework adaptation
 
-- Status: awaiting maintainer review; implementation and artifact validation
-  completed by Codex operator on 2026-07-10.
+- Status: pushed to `origin/main` in commit `a6def80` after maintainer review
+  and approval on 2026-07-10.
 - Scope: retain the earliest recoverable framework definition as provenance,
   retain its original source discussion, define a reproducible
   knowledge-compilation process, and make the separate approval-controlled path
