@@ -22,6 +22,24 @@ events still belong in `operations/work/LOG.md`.
 
 ## Items
 
+- [Refine the knowledge-compilation process](knowledge-compilation-refinement.md)
+  — captured; the failure modes, desired guarantees, and smallest useful
+  refinement remain to be established.
+- [Define a grilling protocol for backlog candidates](backlog-candidate-grilling.md)
+  — captured; should extend the existing intake and grooming processes without
+  adding unnecessary ceremony.
+- [Define a process for reporting current context and state](current-state-reporting.md)
+  — captured; consumers, triggers, and the boundary with plans and logs require
+  grooming.
+- [Create a practical guide for defining a system](system-definition-guide.md)
+  — captured as an extension of the framework's concise creation checklist;
+  format and validation approach remain open.
+- [Compile and maintain a domain dictionary](compiled-domain-dictionary.md)
+  — captured; compilation rules, artifact location, and normative status are
+  unresolved.
+- [Modularize growing concerns from `SYSTEM.md`](modular-system-concerns.md)
+  — captured with strategy as the first candidate; extraction thresholds and
+  declaration/schema implications require grooming.
 - [Generate visual HTML from APSS system declarations](visual-html-generator.md)
   — captured from actionable framework feedback; implementation scope and
   acceptance conditions require backlog grooming.

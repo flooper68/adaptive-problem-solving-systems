@@ -21,6 +21,28 @@ successful resolutions. Detailed file history remains in git.
   this new item be pushed.
 - Committed the approved feedback as `05fc2fc` and pushed it to `origin/main`.
 
+## 2026-07-10 — backlog intake clarification approved for delivery
+
+- **Status:** reviewed by the maintainer and approved for commit and push.
+- **Claim:** Improve backlog intake so an operator asks a few tailored
+  questions about every new proposed item and presents the resulting record for
+  review before any commit or push.
+- **Acceptance:** The intake process preserves low-cost capture, requires a
+  short non-leading clarification conversation, records answers or pending
+  uncertainty with provenance, asks only one question at a time, and requires
+  source review; repository metadata and links remain valid; no commit or push
+  occurs without explicit maintainer approval.
+- Added a clarification-conversation step after minimum capture. It asks two to
+  four questions tailored to the work type, but presents only one at a time and
+  adapts each next question to the preceding answer. It accepts unknowns,
+  separates needs from proposed responses, and avoids imposing grooming-level
+  analysis or overwhelming the source with a question batch.
+- By maintainer direction, the clarification step applies prospectively. The
+  six records captured before this process refinement will not be reopened or
+  grilled solely to satisfy the new rule.
+- The maintainer reviewed the complete uncommitted change and explicitly
+  approved delivery on 2026-07-10.
+
 ## 2026-07-10 — framework origin and learning path delivered
 
 - **Status:** reviewed, approved, committed as `a6def80`, and pushed to
