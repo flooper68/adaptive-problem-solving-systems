@@ -13,8 +13,8 @@ For the question or completed work being compiled, read:
 
 - the current problem, goal, strategy, plan, and published framework knowledge;
 - relevant records from every declared stream, including working sessions,
-  groomed feedback, usage evidence, work history and its framework baseline,
-  and external foundations;
+  insight claims and dispositions, groomed feedback, usage evidence, work
+  history and its framework baseline, and external foundations;
 - artifact- and outcome-validation results; and
 - the raw source or durable reference behind every material claim.
 

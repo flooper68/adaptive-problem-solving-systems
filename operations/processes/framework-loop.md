@@ -8,16 +8,18 @@ When an AI agent performs the work, also follow
 
 1. Read `operations/SYSTEM.md`, the current plan, relevant backlog items, recent
    work log, published framework knowledge, operational meta-knowledge,
-   examples, feedback, and other new evidence.
+   examples, feedback, insights, and other new evidence.
 2. Capture direct consumer reports through `framework-feedback-intake.md` and
    assess them through `framework-feedback-grooming.md`. Preserve feedback as
    evidence; when its disposition is actionable, create or link a distinct work
    candidate through `backlog-intake.md`.
 3. Conduct and retain material collaborative exploration through
    `working-session.md`. Keep observations, insights, questions, and decisions
-   distinguishable in their source record. Capture a separate executable
-   response through `backlog-intake.md` only when action is proposed; groom
-   those work candidates through `backlog-grooming.md`.
+   distinguishable in their source record. Capture independently useful
+   interpretations through `insight-intake.md` and assess them through
+   `insight-grooming.md`. Capture a separate executable response through
+   `backlog-intake.md` only when action is proposed; groom those work candidates
+   through `backlog-grooming.md`.
 4. The maintainer selects ready, bounded work into `operations/work/PLAN.md` and
    confirms owner, acceptance conditions, authority, and validation approach.
 5. Resolve load-bearing uncertainty through a working session, research, or

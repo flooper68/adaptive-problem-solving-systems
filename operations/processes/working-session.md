@@ -49,6 +49,8 @@ broader than a single feedback report or already-bounded work item.
    lifecycle. Route:
    - a consumer's reported experience through
      [`framework-feedback-intake.md`](framework-feedback-intake.md);
+   - an independently reusable or assessable interpretation through
+     [`insight-intake.md`](insight-intake.md);
    - an authorized material decision to its authoritative artifact or work log;
    - a proposed executable response through
      [`backlog-intake.md`](backlog-intake.md), unless declared authority
@@ -71,6 +73,7 @@ participants: [<person, role, or agent>]
 source: <recoverable source or description>
 related_sessions: []
 related_feedback: []
+related_insights: []
 related_work: []
 ---
 

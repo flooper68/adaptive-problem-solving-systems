@@ -3,6 +3,52 @@
 Durable record of material execution, decisions, deviations, failures, and
 successful resolutions. Detailed file history remains in git.
 
+## 2026-07-10 — insight stream and processes approved for delivery
+
+- **Status:** reviewed and approved for delivery; changes are uncommitted.
+- **Claim:** Define an insight stream with source-aware intake, adaptive
+  grilling, evidence-based grooming, and non-executable dispositions; exercise
+  it by retaining the current design session and extracting the maintainer's
+  previously preserved APSS flow insight as the first insight record.
+- **Acceptance:** Insights remain explicit interpretations linked to source
+  evidence rather than feedback or work; intake preserves the source claim and
+  uncertainty before assessment; grooming records scope, supporting and
+  contradictory evidence, confidence, and an explicit non-execution status;
+  actionable responses remain separate work; the operations declaration and
+  loop consume the stream; the first insight links back to its source sessions;
+  schema, paths, links, frontmatter, and whitespace validate.
+- Added separate `insight-intake.md` and `insight-grooming.md` processes. Intake
+  preserves a scoped source interpretation and uses an adaptive, one-question-
+  at-a-time clarification grill; grooming audits the inference and records a
+  non-executable epistemic disposition.
+- Declared and documented the `insights` stream without an exhaustive README
+  index. Integrated insight capture and assessment into working-session routing,
+  the framework loop, knowledge-compilation inputs, authority, and repository
+  navigation.
+- Captured the current design exchange as draft working session
+  `apss.session.insight-stream-design` and linked it bidirectionally with the
+  first retained session and first insight.
+- Extracted `apss.insight.evidence-deliberation-action-learning` as the first
+  `captured`, ungroomed insight. It preserves the maintainer's proposed APSS
+  flow, limiting evidence, possible implications, and the unresolved boundary
+  between a broad session concept and the existing distinct processes.
+- Validation parsed all frontmatter, checked cross-record IDs, validated both
+  system declarations against the schema, resolved declared paths and relative
+  Markdown links, confirmed no backlog item uses `type: insight`, and found no
+  whitespace errors with `git diff --check`.
+- Outcome validation is limited to source review and one intake exercise: the
+  maintainer confirmed that the process works, while later evidence must show
+  whether the lifecycle improves planning or compilation rather than
+  duplicating working-session summaries.
+- Exercised intake with a second insight, `apss.insight.work-log-entries-too-long`.
+  The adaptive grill clarified the concern from raw length to low expected
+  information value, then to a proposed event-index role for the work log. When
+  the maintainer was unsure which events are material, the process retained the
+  uncertainty and stopped without inventing an answer or creating work.
+- The maintainer confirmed that the process works, accepted the complete
+  uncommitted change, and explicitly requested delivery on 2026-07-10. The
+  design session is `retained`; both insights remain `captured` and ungroomed.
+
 ## 2026-07-10 — working-session capture delivered
 
 - **Status:** reviewed, approved, committed as `2e30007`, and pushed to

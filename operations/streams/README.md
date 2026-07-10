@@ -26,6 +26,16 @@ stream through the
 contain observations, insights, questions, decisions, and candidate actions,
 but only an explicitly created response enters the executable backlog.
 
+## Insights
+
+Independently useful interpretations are retained in the
+[`insights/`](insights/) stream through
+[intake](../processes/insight-intake.md) and
+[grooming](../processes/insight-grooming.md). Insight records preserve the
+source claim, inference, scope, supporting and limiting evidence, uncertainty,
+and an epistemic disposition. They may link to compilation, decisions, or
+separate executable responses without becoming those artifacts.
+
 ## Framework usage
 
 Examples, reviews, discussions, and observed applications provide evidence of

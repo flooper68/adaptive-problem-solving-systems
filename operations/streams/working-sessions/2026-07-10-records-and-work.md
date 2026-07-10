@@ -5,10 +5,13 @@ status: retained
 recorded: 2026-07-10
 participants: [APSS framework maintainer, Codex operator]
 source: Maintainer-agent discussion in the current Codex task
-related_sessions: []
+related_sessions:
+  - apss.session.insight-stream-design
 related_feedback: []
+related_insights:
+  - apss.insight.evidence-deliberation-action-learning
 related_work:
-  - "operations/work/LOG.md#2026-07-10--working-session-capture-claimed"
+  - operations/work/LOG.md
 ---
 
 # Separate retained records from executable work
@@ -134,3 +137,11 @@ knowledge compilation remains intentionally unresolved for that later session.
 
 This proposal remains in its source session and has not been converted into a
 feedback report, insight record, or backlog commitment.
+
+## Subsequent routing
+
+On 2026-07-10, the maintainer requested creation of the insight stream and
+process. The proposal was then extracted as
+`apss.insight.evidence-deliberation-action-learning` and linked back to this
+session. It remains a captured, ungroomed insight and has not become feedback,
+compiled knowledge, a normative framework concept, or backlog work.

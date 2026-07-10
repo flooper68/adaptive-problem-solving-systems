@@ -27,6 +27,10 @@ tests or with the work that produces it.
 - [Working sessions](operations/processes/working-session.md) — conduct and
   retain bounded discussions or brainstorming without conflating their
   insights, questions, decisions, and candidate actions.
+- [Insight intake](operations/processes/insight-intake.md) and
+  [grooming](operations/processes/insight-grooming.md) — preserve an explicit
+  interpretation with provenance, then assess its evidence, scope, confidence,
+  and possible propagation without treating it as executable work.
 - [Framework feedback intake](operations/processes/framework-feedback-intake.md)
   and [grooming](operations/processes/framework-feedback-grooming.md) — report
   an experience with APSS, preserve it as evidence, and decide whether it
