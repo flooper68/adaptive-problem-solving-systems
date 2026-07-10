@@ -25,6 +25,10 @@ events still belong in `operations/work/LOG.md`.
 
 ## Items
 
+- [Polish the process-improvement loop](polish-process-improvement-loop.md)
+  — captured as an open-ended improvement task without a known defect; the
+  intended consumers, scope, and observable improvement signals remain to be
+  clarified.
 - [Refine the knowledge-compilation process](knowledge-compilation-refinement.md)
   — captured; the failure modes, desired guarantees, and smallest useful
   refinement remain to be established.
