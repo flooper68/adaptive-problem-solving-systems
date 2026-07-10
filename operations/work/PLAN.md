@@ -24,14 +24,14 @@ change and its outcome.
   retain its original source discussion, define a reproducible
   knowledge-compilation process, and make the separate approval-controlled path
   from compiled learning to normative framework changes explicit.
-- Acceptance: source discussion and expected output are self-contained,
-  separate `operations-work` fixtures; the general compilation and validation
-  processes define how to compare a candidate with a hidden historical output
-  without answer leakage; the initial application remains pending work rather
-  than a separate process; `framework/` is the published compiled-knowledge
-  artifact; only approved adaptation publishes a candidate; no secondary
-  operations knowledge artifact competes with `framework/`; declarations and
-  local references remain valid.
+- Acceptance: the source discussion is retained as the first working session
+  and its expected output is a separate, self-contained fixture in the same
+  stream; the general compilation and validation processes define how to
+  compare a candidate with a hidden historical output without answer leakage;
+  the initial application remains pending work rather than a separate process;
+  `framework/` is the published compiled-knowledge artifact; only approved
+  adaptation publishes a candidate; no secondary operations knowledge artifact
+  competes with `framework/`; declarations and local references remain valid.
 
 ### Define a minimal AI agent task process
 

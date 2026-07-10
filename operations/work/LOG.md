@@ -3,6 +3,27 @@
 Durable record of material execution, decisions, deviations, failures, and
 successful resolutions. Detailed file history remains in git.
 
+## 2026-07-10 — framework origin reclassified as kickoff session
+
+- **Status:** reviewed and approved for delivery by the maintainer on
+  2026-07-10.
+- **Claim:** The maintainer clarified that the initial framework definition and
+  its source discussion were the project's first working session and should
+  live in the working-sessions stream rather than under executable work.
+- Moved the complete 103-message source transcript to
+  `operations/streams/working-sessions/2026-07-09-initial-framework-kickoff.md`
+  and gave it the standard working-session boundary, summary, outcomes, and
+  routing structure without altering the retained transcript.
+- Moved the separately retained framework definition beside the session as its
+  hidden expected-output fixture. It remains outside the compiler's source
+  boundary so the historical replay still tests compilation rather than
+  copying.
+- Updated stream documentation and the historical plan acceptance language to
+  reflect the working-session classification.
+- The maintainer reviewed the result, confirmed that it looked good, and
+  requested delivery. Retained the classification discussion itself as working
+  session `apss.session.framework-origin-classification`.
+
 ## 2026-07-10 — insight stream and processes delivered
 
 - **Status:** reviewed, approved, committed as `719b642`, and pushed to
@@ -162,14 +183,17 @@ successful resolutions. Detailed file history remains in git.
   approval-controlled adaptation of `framework/`; validate declarations and
   repository references.
 - Recovered the contemporaneous owner-agent design discussion from the local
-  Codex task archive and retained all 103 messages in
-  `operations/work/initial-framework-discussion.md`, with only trailing spaces
-  normalized. Tool execution, implementation progress, and produced framework
-  content are outside the input boundary.
-- Retained the complete 375-line initial framework-definition text separately
-  in `operations/work/initial-framework-definition.md` as the hidden expected
-  output. Its recorded SHA-256 digest matches the embedded text. Both records
-  belong to `operations-work`; no additional origin stream was introduced.
+  Codex task archive and retained all 103 messages in the initial framework
+  kickoff record, now at
+  `operations/streams/working-sessions/2026-07-09-initial-framework-kickoff.md`,
+  with only trailing spaces normalized. Tool execution, implementation
+  progress, and produced framework content are outside the input boundary.
+- Retained the complete 375-line initial framework-definition text separately,
+  now at
+  `operations/streams/working-sessions/2026-07-09-initial-framework-definition.md`,
+  as the hidden expected output. Its recorded SHA-256 digest matches the
+  embedded text. The records were subsequently classified as the first
+  working session and its output fixture.
 - Added the general clean-room comparison rule to the knowledge-compilation
   process: a fresh compiler receives only source evidence and the process,
   seals a candidate, and only then may a separate evaluator compare it with a

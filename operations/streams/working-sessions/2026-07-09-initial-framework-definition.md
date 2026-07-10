@@ -4,7 +4,8 @@ type: expected-output
 status: retained
 artifact_date: 2026-07-09
 recorded: 2026-07-10
-source: Initial framework definition; complete expected text retained below
+source_session: apss.operations-work.initial-framework-discussion
+source: Output of the initial APSS framework kickoff; complete expected text retained below
 evidence_kind: exact historical artifact text
 source_sha256: eaba956bdcda25f9f98ef1dd0569b524ce4a807f3f12f6698c9facb729ca7eb9
 ---
@@ -24,12 +25,12 @@ The SHA-256 digest of the retained text, including its final newline, is
 
 ## Test isolation
 
-The contemporaneous source discussion is retained separately in
-[`initial-framework-discussion.md`](initial-framework-discussion.md). During a
-historical comparison, the compiler must not read this expected output, the current
-`framework/`, or later knowledge. Only the evaluator reads this record after a
-candidate has been produced. This avoids testing whether a compiler can copy
-the answer instead of deriving it from the input stream.
+The contemporaneous kickoff session is retained separately in
+[`2026-07-09-initial-framework-kickoff.md`](2026-07-09-initial-framework-kickoff.md).
+During a historical comparison, the compiler must not read this expected
+output, the current `framework/`, or later knowledge. Only the evaluator reads
+this record after a candidate has been produced. This avoids testing whether a
+compiler can copy the answer instead of deriving it from the input stream.
 
 ## Original definition (verbatim)
 

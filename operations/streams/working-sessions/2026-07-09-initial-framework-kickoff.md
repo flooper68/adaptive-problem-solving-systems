@@ -1,30 +1,110 @@
 ---
 id: apss.operations-work.initial-framework-discussion
-type: evidence
+type: working-session
 status: retained
 recorded: 2026-07-10
-source: Original owner-agent design discussion; complete selected transcript retained below
+participants: [APSS framework maintainer, Codex operator]
+source: Original maintainer-agent design discussion; complete selected transcript retained below
+related_sessions: []
+related_feedback: []
+related_insights: []
+related_work:
+  - operations/work/LOG.md
 evidence_kind: contemporaneous discussion transcript
 message_count: 103
 normalization: Trailing spaces removed; message text and line breaks preserved.
 source_sha256: c9685d3c2aa9d821f079cbf1f37466ba611b3daebf0cd8d124e4d651e1382515
 ---
 
-# Initial APSS source discussion
+# Initial APSS framework kickoff
 
-## Scope
+## Frame
 
-This record preserves the original discussion that led to the first APSS
-framework definition. It begins with the development-loop learning problem,
-continues through the broader system model and one-question-at-a-time framework
-grill, and ends when the owner accepts the implementation plan. Tool execution,
-implementation progress, and the produced framework text are excluded.
+This was the first APSS working session and the discussion that kicked off the
+project. It began with a development-loop learning problem, broadened into a
+domain-independent model of adaptive problem-solving systems, and used a
+one-question-at-a-time framework grill to reach an accepted implementation
+plan.
+
+The useful stopping point was agreement on the first framework's concepts,
+boundaries, declarations, and implementation sequence.
+
+## Source boundary
+
+The retained source includes all 103 messages from the recoverable design
+discussion, with only trailing spaces normalized. Tool execution,
+implementation progress, and the produced framework text are excluded from the
+session transcript.
 
 This is retained input for a future application of the normal
-[knowledge-compilation process](../processes/knowledge-compilation.md). The
-compiler may read this record and that process, but must not read the retained
-[expected output](initial-framework-definition.md), the current `framework/`,
-or later compiled knowledge before producing its candidate.
+[knowledge-compilation process](../../processes/knowledge-compilation.md). The
+compiler may read this record and that process, but must not read the session's
+retained [expected output](2026-07-09-initial-framework-definition.md), the
+current `framework/`, or later compiled knowledge before producing its
+candidate.
+
+## Discussion summary
+
+The session started from a concrete need to capture execution problems and
+successful resolutions, compile them into reusable knowledge, and feed that
+knowledge back into future operation. The discussion then generalized the idea
+into a complete adaptive loop with explicit problems, artifacts, consumers,
+outcomes, evidence streams, compilation, validation, and controlled
+adaptation.
+
+The maintainer and operator explored how the model should apply across domains,
+how systems and subsystems differ from processes, what every system must own,
+which concepts belong in a machine-readable declaration, and which choices
+should remain strategy. The maintainer chose lightweight stream declarations,
+durable plans and work logs, recommended rather than mandatory work types, and
+explicit human authority over adaptation.
+
+## Outcomes
+
+### Observations
+
+- Existing delivery systems often retain useful evidence without a reliable
+  route from that evidence to reusable knowledge and changed future behavior.
+- Artifact correctness and real-world outcome effectiveness are distinct and
+  both require validation.
+- A useful cross-domain framework must define responsibilities without forcing
+  one workflow, tool, cadence, or work taxonomy.
+
+### Insights
+
+- A problem-solving system becomes adaptive through a closed evidence,
+  compilation, and adaptation loop, not merely through repeated execution.
+- A subsystem should own a complete loop; otherwise it is better represented
+  as a process or capability within an accountable system.
+- Lightweight, inspectable declarations can make system boundaries, ownership,
+  artifacts, validation, streams, and learning paths explicit.
+
+### Decisions
+
+- Define APSS as a domain-independent framework with a complete adaptive loop.
+- Require durable planning and work logging while keeping detailed work types
+  optional.
+- Keep stream declarations lightweight and allow an optional discussion/grill
+  protocol.
+- Use validated YAML frontmatter plus explanatory Markdown for system
+  declarations.
+- Produce the initial framework package first, then apply it to the originating
+  software project in separately reviewed increments.
+
+### Candidate actions
+
+- Produce the first APSS specification, schema, template, example, and
+  visualization guidance.
+- Retain follow-up research and application work separately from the initial
+  framework increment.
+
+## Routing and review
+
+The maintainer accepted the implementation plan at the end of the session. The
+resulting framework definition is retained separately as a hidden historical
+output fixture so the session can later exercise the normal compilation and
+validation process without answer leakage. The complete transcript below is
+the recoverable source record.
 
 ## Retained transcript
 
