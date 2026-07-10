@@ -3,9 +3,10 @@
 Durable record of material execution, decisions, deviations, failures, and
 successful resolutions. Detailed file history remains in git.
 
-## 2026-07-10 — insight stream and processes approved for delivery
+## 2026-07-10 — insight stream and processes delivered
 
-- **Status:** reviewed and approved for delivery; changes are uncommitted.
+- **Status:** reviewed, approved, committed as `719b642`, and pushed to
+  `origin/main`.
 - **Claim:** Define an insight stream with source-aware intake, adaptive
   grilling, evidence-based grooming, and non-executable dispositions; exercise
   it by retaining the current design session and extracting the maintainer's
@@ -48,6 +49,8 @@ successful resolutions. Detailed file history remains in git.
 - The maintainer confirmed that the process works, accepted the complete
   uncommitted change, and explicitly requested delivery on 2026-07-10. The
   design session is `retained`; both insights remain `captured` and ungroomed.
+- Committed the approved insight evidence flow as `719b642` and pushed it to
+  `origin/main`.
 
 ## 2026-07-10 — working-session capture delivered
 
