@@ -3,6 +3,23 @@
 Durable record of material execution, decisions, deviations, failures, and
 successful resolutions. Detailed file history remains in git.
 
+## 2026-07-10 — unbounded stream-index feedback approved for delivery
+
+- **Status:** reviewed and approved for delivery to `origin/main`.
+- **Claim:** Capture the maintainer's report that a backlog README which links
+  every item becomes less useful as the potentially unbounded collection grows,
+  and retain the possibility that other streams have the same issue.
+- **Acceptance:** Preserve the reported experience separately from a proposed
+  response or work commitment; distinguish the confirmed backlog example from
+  the unassessed reach across other streams; keep unrelated working-tree and
+  index changes out of the delivery.
+- Added received feedback `apss.feedback.unbounded-stream-indexes` without
+  adding it to another exhaustive README index or creating backlog work.
+- Validation confirmed the report's local links resolve and
+  `git diff --check` reports no whitespace errors for the new feedback file.
+- The maintainer reviewed the captured report and explicitly requested that
+  this new item be pushed.
+
 ## 2026-07-10 — framework origin and learning path delivered
 
 - **Status:** reviewed, approved, committed as `a6def80`, and pushed to
