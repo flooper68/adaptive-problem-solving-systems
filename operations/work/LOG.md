@@ -3,9 +3,9 @@
 Durable record of material execution, decisions, deviations, failures, and
 successful resolutions. Detailed file history remains in git.
 
-## 2026-07-10 — unbounded stream-index feedback approved for delivery
+## 2026-07-10 — unbounded stream-index feedback delivered
 
-- **Status:** reviewed and approved for delivery to `origin/main`.
+- **Status:** pushed to `origin/main`.
 - **Claim:** Capture the maintainer's report that a backlog README which links
   every item becomes less useful as the potentially unbounded collection grows,
   and retain the possibility that other streams have the same issue.
@@ -19,6 +19,7 @@ successful resolutions. Detailed file history remains in git.
   `git diff --check` reports no whitespace errors for the new feedback file.
 - The maintainer reviewed the captured report and explicitly requested that
   this new item be pushed.
+- Committed the approved feedback as `05fc2fc` and pushed it to `origin/main`.
 
 ## 2026-07-10 — framework origin and learning path delivered
 
