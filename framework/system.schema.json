@@ -12,7 +12,6 @@
     "parent",
     "problem",
     "vision",
-    "goals",
     "strategy",
     "roles",
     "inputs",
@@ -53,14 +52,6 @@
     "vision": {
       "type": "string",
       "minLength": 1
-    },
-    "goals": {
-      "type": "array",
-      "minItems": 1,
-      "items": {
-        "type": "string",
-        "minLength": 1
-      }
     },
     "strategy": {
       "type": "string",
@@ -103,11 +94,11 @@
     "planning": {
       "type": "object",
       "additionalProperties": true,
-      "required": ["process", "plan", "log"],
+      "required": ["process", "problems", "tasks"],
       "properties": {
         "process": { "type": "string", "minLength": 1 },
-        "plan": { "type": "string", "minLength": 1 },
-        "log": { "type": "string", "minLength": 1 }
+        "problems": { "type": "string", "minLength": 1 },
+        "tasks": { "type": "string", "minLength": 1 }
       }
     },
     "execution": {
@@ -121,9 +112,24 @@
     },
     "work_sessions": {
       "type": "array",
-      "minItems": 1,
-      "maxItems": 1,
-      "items": { "$ref": "#/$defs/workSession" }
+      "minItems": 2,
+      "items": { "$ref": "#/$defs/workSession" },
+      "allOf": [
+        {
+          "contains": {
+            "type": "object",
+            "required": ["id"],
+            "properties": { "id": { "const": "brainstorming" } }
+          }
+        },
+        {
+          "contains": {
+            "type": "object",
+            "required": ["id"],
+            "properties": { "id": { "const": "problem-grooming" } }
+          }
+        }
+      ]
     },
     "validation": {
       "type": "object",
@@ -195,7 +201,9 @@
       "required": ["id", "purpose", "source", "access", "consumed_by"],
       "properties": {
         "id": {
-          "const": "brainstorming"
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*$"
         },
         "purpose": { "type": "string", "minLength": 1 },
         "source": { "type": "string", "minLength": 1 },

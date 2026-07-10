@@ -8,9 +8,7 @@ parent: null
 problem: APSS cannot become reliably effective and usable if the framework evolves without disciplined operations that connect consumer experience, explicit decisions, validated changes, and learning.
 vision: People can readily understand and apply APSS to build adaptive problem-solving systems that improve their intended outcomes.
 purpose: Improve the APSS framework so it is effective and usable by others.
-goals:
-  - Complete and validate the first evidence-driven framework improvement cycle, from an observed consumer need through an approved change and its outcome.
-strategy: Treat the framework as the primary product, use examples and real applications as tests of its clarity and usefulness, preserve feedback, material brainstorming evidence, and explicit insights before choosing responses, select bounded executable improvements into a durable plan, validate artifact correctness separately from consumer outcomes, compile what is learned, and require human approval for normative adaptation and release.
+strategy: STRATEGY.md
 
 constraints:
   - Keep the normative framework distinguishable from operations and non-normative examples.
@@ -40,9 +38,9 @@ artifact:
   intended_outcome: Consumers can define, inspect, operate, validate, and improve complete adaptive problem-solving systems.
 
 planning:
-  process: processes/backlog-grooming.md
-  plan: work/PLAN.md
-  log: work/LOG.md
+  process: processes/problem-grooming.md
+  problems: problems/
+  tasks: tasks/
 
 execution:
   process: processes/framework-loop.md
@@ -52,16 +50,19 @@ work_sessions:
   - id: brainstorming
     description: Discuss an APSS idea, task, or research topic with the maintainer and iteratively compile reviewable changes into the framework or a concrete APSS instantiation.
     process: processes/brainstorming.md
+  - id: problem-grooming
+    description: Use the system strategy to revisit current open problems with the maintainer, update their evidence and strategy, and record an authorized retain, revise, address, or close decision.
+    process: processes/problem-grooming.md
 
 validation:
   artifact: Follow processes/artifact-validation.md to check schema conformance, references, consistency, examples, and review approval.
   outcome: Follow processes/outcome-validation.md to collect evidence that consumers can understand and successfully apply APSS.
 
 streams:
-  - id: operations-work
-    purpose: Preserve candidate actions, planning decisions, execution history, and unresolved execution gaps.
-    source: work/
-    access: Read backlog items, the current plan, and the append-only work log.
+  - id: working-sessions
+    purpose: Preserve material brainstorming and problem-grooming invocations with their decisions, affected files, and stopping points.
+    source: Maintainer-agent discussions and other declared work-session invocations.
+    access: Retain one file per material session under streams/working-sessions/ and link the affected problem and task files.
     consumed_by: processes/framework-loop.md
     grill: null
   - id: insights
@@ -101,7 +102,7 @@ learning:
   adaptation_process: processes/framework-adaptation.md
 
 authority:
-  execution: Authorized operators may brainstorm with the maintainer, capture and groom insights and candidate work, edit artifacts within an approved plan, and run non-destructive validation. Only declared authorities may approve insight dispositions, decisions, or work selection. AI agents follow processes/ai-agent-tasks.md and require maintainer approval before committing or pushing.
+  execution: Authorized operators may brainstorm with the maintainer, capture and groom insights and candidate work, edit artifacts within a selected task, and run non-destructive validation. Only declared authorities may approve insight dispositions, decisions, or task selection. AI agents follow processes/ai-agent-tasks.md and require maintainer approval before committing or pushing.
   adaptation: The APSS framework maintainer approves normative framework changes, release decisions, and changes to the operations system.
 
 health: The operations system must keep the normative framework distinguishable from its own processes and from non-normative examples, retain durable work history, and avoid claiming effectiveness without consumer-outcome evidence.
@@ -127,13 +128,17 @@ its current goal is the bounded first demonstration of the improvement loop.
 After that result is validated, the maintainer replaces it with the next bounded
 goal rather than treating routine operation as a goal.
 
+The independent [system strategy](STRATEGY.md) defines how the system
+pursues that goal and guides problem grooming and work selection.
+
 ## Boundary
 
 The system's operational capsule is this `operations/` directory. It owns the
-processes, work state, evidence handling, validation, knowledge, release history,
-and authority used to improve APSS. Its primary produced artifact is the sibling
-`framework/` directory. The sibling `examples/` directory contains supporting
-applications used to explain and test the framework.
+processes, problem state, task state, session and evidence handling, validation,
+knowledge, release history, and authority used to improve APSS. Its primary
+produced artifact is the sibling `framework/` directory. The sibling
+`examples/` directory contains supporting applications used to explain and
+test the framework.
 
 The repository is a container for the system and its outputs; it is not itself
 declared as an adaptive system. APSS applications owned by other people or
@@ -148,13 +153,15 @@ instantiation. Direct feedback enters the framework-feedback stream and is
 groomed as evidence; an actionable disposition may create a linked work
 candidate. Independently useful insights
 enter their own stream for faithful intake and evidence-aware grooming. Only
-executable responses enter the durable backlog through intake. Backlog grooming
-clarifies their source, expected outcome, evidence, scope, uncertainty, and
-validation approach, then assigns a recorded disposition. The maintainer
-selects ready work into the durable plan. Operators execute the plan, validate
-artifact correctness and consumer outcomes separately, record material
-decisions, and compile reusable learning. Normative adaptations and releases
-require maintainer approval.
+executable responses enter the task collection through intake. Problem
+grooming revisits the goal-relevant gaps and their signals. Task grooming
+clarifies their source, relevant goal and open problem, expected outcome,
+evidence, scope, uncertainty, and validation approach, then assigns a recorded
+disposition. The maintainer selects ready tasks that implement a current problem
+strategy. Operators execute the tasks, validate artifact
+correctness and consumer outcomes separately, update the problem from its
+signal, record material decisions, and compile reusable learning. Normative
+adaptations and releases require maintainer approval.
 
 ## Artifact contract
 
@@ -166,10 +173,10 @@ explicitly adopts them.
 
 ## Learning and adaptation
 
-Raw evidence remains recoverable through work items, logs, feedback summaries,
-research citations, validation results, historical source material, baseline
-records, and git history. Explicit interpretations and their assessment remain
-recoverable through the insight stream. The
+Raw evidence remains recoverable through tasks, working-session records,
+feedback summaries, research citations, validation results, historical source
+material, baseline records, and Git history. Explicit interpretations and their
+assessment remain recoverable through the insight stream. The
 [knowledge-compilation process](processes/knowledge-compilation.md) synthesizes
 these streams directly into uncommitted changes to the primary artifact in
 `../framework/` and its simple changelog. The separate

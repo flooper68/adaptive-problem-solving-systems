@@ -1,14 +1,16 @@
 ---
 id: apss.insight.goals-decompose-into-open-problems
 type: insight
-status: captured
+status: provisional
 captured: 2026-07-10
 source: APSS framework maintainer
 source_records: []
 related_insights:
   - apss.insight.evidence-deliberation-action-learning
 related_work: []
-compiled_into: []
+compiled_into:
+  - framework/README.md
+  - framework/VOCABULARY.md
 ---
 
 # Goals evolve into open problems before becoming tasks
@@ -141,11 +143,92 @@ investigative forms. The uncertainty is retained rather than resolved by
 operator assumption. A concrete planning example may make the useful boundary
 clearer during grooming or later framework design.
 
-The insight remains `captured`: it preserves the proposed goal → open problems
-→ work relationship and the confirmed within-system boundary without claiming
-that the problem taxonomy, record shape, or lifecycle has been established.
+At this intake stopping point, the insight remained `captured`: it preserved the
+proposed goal → open problems → work relationship and the confirmed
+within-system boundary without claiming that the problem taxonomy, record
+shape, or lifecycle had been established.
 
 ## Grooming record
 
-Not yet groomed. See
-[`insight-grooming.md`](../../processes/insight-grooming.md).
+### 2026-07-10 — provisional for lightweight framework use
+
+- **Participants:** APSS framework maintainer and Codex operator.
+- **Evidence consulted:** this insight, the normative planning loop, current
+  operations backlog and plan, and the CNC example plan and validation flow.
+- **Clarified claim and use:** APSS should retain a lightweight open-problem
+  layer between current goals and selected work. For this first version, open
+  problems live in the durable plan with goal, evidence, desired change, and a
+  signal; selected work names the problem it addresses. Separate problem files,
+  a schema object, and an elaborate lifecycle are deliberately excluded.
+- **Inference audit:** the maintainer directly observed the missing traceability
+  and supplied the goal → problem → work interpretation. The claim that the
+  convention improves decisions remains an inference; applying it to Operations
+  and CNC demonstrates coherence but not consumer effectiveness.
+- **Supporting evidence:** current planning retains task motivation but not the
+  evolving gap between a goal and work; both example applications can express
+  that missing relationship without changing their system declarations.
+- **Limiting evidence and alternatives:** small systems may find explicit
+  problem entries burdensome, and direct goal-to-work links remain a plausible
+  simpler alternative. A first-class problem portfolio was rejected for this
+  version as premature complexity.
+- **Confidence and cost of error:** confidence is sufficient for explicit,
+  provisional framework use because the convention is small and reversible.
+  The main risk is added planning ceremony without better selection or outcome
+  assessment.
+- **Disposition:** `provisional`, approved by the maintainer for uncommitted
+  compilation and example application pending review. This is not yet approval
+  to publish the normative change.
+- **Compilation:** proposed in `framework/README.md` and
+  `framework/VOCABULARY.md` with the detailed change retained in Git.
+- **Reconsideration trigger:** review after use in a real planning cycle or when
+  users report that the four-field entry or required work link is ambiguous or
+  burdensome.
+
+### 2026-07-10 — storage model revised after first use
+
+- **New evidence:** embedding two complete problem records alongside current
+  and completed work expanded the Operations plan to 148 lines. During the
+  first problem-grooming session, the maintainer reported that the plan was too
+  long and unstructured and proposed an explicit problem folder plus archived
+  work history.
+- **Revised model:** retain one authoritative file per active problem, link
+  those files from a concise current plan, move closed problems to a problem
+  archive, and rotate old work-log segments when they obscure current state.
+  Treat problem grooming as a work session whose authoritative decisions remain
+  in each affected problem's grooming history; keep only an event link in the
+  work log and leave raw discussion at its source.
+- **Interpretation:** the test supports explicit goal → problem → work
+  traceability but contradicts the earlier implementation choice to put full
+  problem records in the plan. The problem concept and its storage convention
+  therefore need separate validation.
+- **Disposition:** remains `provisional`. The refactored Operations and CNC
+  applications provide the next review surface; usefulness still depends on
+  whether the maintainer can orient and decide more easily with them.
+
+### 2026-07-10 — separate plan removed after task files proved sufficient
+
+- **New evidence:** once goal and system direction moved into
+  `STRATEGY.md`, problem state moved into `problems/`, and
+  executable responses had their own records, the remaining `PLAN.md`
+  duplicated those sources and required synchronized indexes.
+- **Revised model:** strategy owns the current goal and system approach;
+  `problems/` owns active gaps; `tasks/` owns candidate, selected, and
+  executing responses; `work/LOG.md` owns current execution events. Directory
+  contents and task statuses expose current state without a separate plan.
+- **Interpretation:** the simpler model retains goal → problem → task
+  traceability while removing a derived artifact. The P1 MVP task and CNC batch
+  task are the first application surface.
+- **Disposition:** remains `provisional` pending the maintainer's ability to
+  understand and run the whole loop.
+
+### 2026-07-10 — generic work log removed
+
+- **New evidence:** after the plan disappeared, the remaining work log still
+  duplicated current task state, problem-grooming decisions, session history,
+  native evidence, and Git history.
+- **Revised model:** selected and active tasks live at `tasks/`; candidates at
+  `tasks/backlog/`; inactive tasks at `tasks/archive/`. Active task files own
+  resumable state, problem files own problem decisions, and working-session
+  records own material interaction history. No generic work log remains.
+- **Disposition:** remains `provisional` until the maintainer completes and
+  understands the whole loop using this structure.

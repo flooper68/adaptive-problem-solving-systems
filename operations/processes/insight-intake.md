@@ -145,7 +145,7 @@ it does not establish truth, priority, normative status, or authorization.
 
 The next possible action is
 [`insight grooming`](insight-grooming.md). If an executable response is
-proposed, capture it separately through [`backlog-intake.md`](backlog-intake.md)
+proposed, capture it separately through [`task-intake.md`](task-intake.md)
 and link both records.
 
 ## Delivery

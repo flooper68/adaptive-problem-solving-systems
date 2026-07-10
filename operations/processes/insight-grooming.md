@@ -48,7 +48,7 @@ record with provenance.
 7. **Route without conflating.** Link supported or explicitly provisional
    insights into [`knowledge compilation`](knowledge-compilation.md) when
    relevant. Create separate work through
-   [`backlog intake`](backlog-intake.md) only for an executable response, link
+   [`task intake`](task-intake.md) only for an executable response, link
    an authorized decision to its decisional artifact, and leave the insight
    unchanged when no propagation is warranted.
 8. **Close the loop.** Record source acknowledgment, disagreement, or

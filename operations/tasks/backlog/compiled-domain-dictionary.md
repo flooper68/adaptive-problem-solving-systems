@@ -26,8 +26,9 @@ resolution rather than silently choosing one meaning.
 
 - APSS requires each system to compile reusable knowledge with provenance and
   uncertainty preserved.
-- The current framework artifact and operations compilation process do not
-  define a domain-dictionary output or compilation rules for terminology.
+- The proposed `framework/VOCABULARY.md` now gives APSS itself one concise,
+  authoritative terminology surface, but it does not define a generated or
+  domain-specific dictionary output or compilation rules.
 - No evidence yet establishes which dictionary fields or representations are
   useful across domains.
 
@@ -35,6 +36,8 @@ resolution rather than silently choosing one meaning.
 
 - Is a dictionary universally required, recommended when terminology becomes
   material, or specific to selected systems?
+- What should remain in the normative APSS vocabulary, and what belongs in a
+  system-specific compiled domain dictionary?
 - Should it be part of the primary compiled-knowledge artifact, a generated
   projection, or a supporting artifact?
 - Which fields are needed for definitions, aliases, deprecated language,
@@ -56,3 +59,11 @@ resolution rather than silently choosing one meaning.
 Captured from the APSS framework maintainer's proposal that a domain dictionary
 be compiled. No artifact contract or universal framework requirement has been
 approved.
+
+### 2026-07-10 — narrowed by initial APSS vocabulary
+
+The open-problem framework compilation starts a manually maintained normative
+APSS vocabulary with exact framework meanings. This is a smaller and distinct
+result from the candidate's broader generated domain-dictionary concept. The
+candidate remains captured for later grooming rather than treating the initial
+vocabulary as evidence that every system needs such a dictionary.

@@ -6,8 +6,8 @@ normative requirements.
 
 Before approval:
 
-1. Confirm selected work and material decisions are recorded in the plan and
-   work log.
+1. Confirm selected tasks name the problems they address and material decisions
+   are recorded in their task/problem files and working-session records.
 2. Complete artifact validation and record known outcome-validation status.
 3. Update `framework/CHANGELOG.md` for normative changes.
 4. Update example documentation when a framework change would otherwise make
@@ -16,4 +16,4 @@ Before approval:
 6. Obtain APSS framework maintainer approval for the release state.
 
 After approval, preserve the released state through version control and record
-the release or handoff in `operations/work/LOG.md`.
+the release or handoff in the affected task and working-session record.

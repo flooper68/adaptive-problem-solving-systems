@@ -9,6 +9,8 @@ tests or with the work that produces it.
 
 - [Framework definition](framework/README.md) — the normative APSS
   specification, schema, template, and visualization contract.
+- [APSS vocabulary](framework/VOCABULARY.md) — exact meanings and boundaries
+  for recurring framework terms.
 - [Implementation examples](examples/README.md) — non-normative
   examples that demonstrate how the framework can be applied.
 
@@ -16,17 +18,23 @@ tests or with the work that produces it.
 
 - [Operations system declaration](operations/SYSTEM.md) — its problem, vision,
   current goal, strategy, boundary, roles, and adaptive loop.
-- [Current plan](operations/work/PLAN.md) and
-  [work log](operations/work/LOG.md) — committed work and durable execution
-  history.
-- [Backlog](operations/work/backlog/README.md) — captured, ready, or deferred
-  executable candidates that have not been selected into the current plan.
-- [Backlog intake](operations/processes/backlog-intake.md) and
-  [grooming](operations/processes/backlog-grooming.md) — the path from a
-  proposed action to an explicit disposition and possible planning commitment.
-- [Working sessions](operations/processes/working-session.md) — conduct and
-  retain bounded discussions or brainstorming without conflating their
-  insights, questions, decisions, and candidate actions.
+- [Operations strategy](operations/STRATEGY.md) — how the current
+  goal guides problem grooming, problem strategies, and selected work.
+- [Active problems](operations/problems/) — one authoritative file per current
+  gap between the system's goal and current evidence.
+- [Tasks](operations/tasks/) — selected and active tasks at the root, candidates
+  under `backlog/`, and inactive tasks under `archive/`.
+- [Task intake](operations/processes/task-intake.md) and
+  [grooming](operations/processes/task-grooming.md) — the path from a proposed
+  action to an explicit disposition and possible selection.
+- [Working sessions](operations/streams/working-sessions/) — one durable record
+  per material brainstorming or problem-grooming invocation.
+- [Problem grooming](operations/processes/problem-grooming.md) — revisit the
+  current gaps between goals and selected work without automatically creating
+  or prioritizing more work.
+- [Brainstorming work session](operations/processes/brainstorming.md) — discuss
+  and iteratively compile an idea, task, or research topic without conflating
+  its evidence, insights, questions, decisions, and possible actions.
 - [Insight intake](operations/processes/insight-intake.md) and
   [grooming](operations/processes/insight-grooming.md) — preserve an explicit
   interpretation with provenance, then assess its evidence, scope, confidence,
@@ -46,7 +54,7 @@ tests or with the work that produces it.
 ```text
 framework/   Normative APSS definition produced by the operations system
 examples/    Non-normative applications that explain and test the framework
-operations/  System that improves the framework using evidence and learning
+operations/  System problems, work, and processes that improve the framework
 ```
 
 The repository itself is a container, not an APSS system. `operations/` is the

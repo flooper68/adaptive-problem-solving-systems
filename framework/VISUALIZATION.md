@@ -45,14 +45,14 @@ feedback when it materially closes the loop.
 
 ```mermaid
 flowchart LR
-    direction["Direction\nartifact: strategy and goals"]
-    planning["Planning\nartifact: durable plan"]
+    direction["Direction\nartifact: current goal and system strategy"]
+    planning["Planning\nartifacts: problem and task files"]
     delivery["Delivery\nartifact: completed output"]
     consumer["Consumer"]
     learning["Outcome learning\nartifact: validated insight"]
 
     direction -->|"constraints"| planning
-    planning -->|"ready work"| delivery
+    planning -->|"selected tasks"| delivery
     delivery -->|"primary artifact"| consumer
     consumer -.->|"use and feedback"| learning
     learning -->|"strategy evidence"| direction
@@ -86,18 +86,24 @@ flowchart LR
 Purpose: answer “which bounded work processes which inputs, and what does it
 produce?”
 
-Show streams and existing artifacts as inputs to brainstorming, with reviewable
-knowledge or instantiation changes as outputs. Use this view to distinguish the
-session that discusses and compiles a proposal from the streams it reads.
+Show streams and existing artifacts as inputs to work sessions, with their
+authoritative outputs and retained session records. Use this view to distinguish
+the sessions from their evidence sources and current-state artifacts.
 
 ```mermaid
 flowchart LR
-    inputStreams["Input streams"] --> session["Brainstorming\nprocesses/brainstorming.md"]
-    knowledge["Compiled knowledge"] --> session
-    plan["Selected work"] --> session
-    session --> artifact["Reviewable knowledge or instantiation changes"]
+    inputStreams["Input streams"] --> brainstorming["Brainstorming"]
+    knowledge["Compiled knowledge"] --> brainstorming
+    brainstorming --> artifact["Reviewable knowledge or instantiation changes"]
     artifact --> review["Iterative user review"]
-    review --> session
+    review --> brainstorming
+
+    inputStreams --> grooming["Problem grooming"]
+    problemFiles["Active problem files"] --> grooming
+    tasks["Current task files"] --> grooming
+    grooming --> problemFiles
+    grooming --> tasks
+    grooming --> session["Working-session record"]
 ```
 
 The system declaration and same-named process remain the source of truth.
@@ -108,14 +114,16 @@ Every system can be understood through the same compact model:
 
 ```mermaid
 flowchart LR
-    problem["Problem"] --> process["Adaptive execution loop"]
+    problem["System problem"] --> goal["Current goal"]
+    goal --> openProblem["Open problem + strategy"]
+    openProblem --> process["Adaptive execution loop"]
     process --> artifact["Artifact"]
     artifact --> consumer["Consumer"]
     artifact --> artifactCheck["Artifact validation"]
     consumer --> outcomeCheck["Outcome validation"]
     artifactCheck --> learning["Evidence → knowledge → adaptation"]
     outcomeCheck --> learning
-    learning --> process
+    learning --> openProblem
 ```
 
 ## Generation contract
@@ -127,7 +135,7 @@ second required-field list:
 | View | Fields |
 |---|---|
 | Hierarchy | `id`, `name`, `parent`, `status` |
-| Artifact flow | `artifact.primary`, `artifact.consumers`, `relations.feeds` |
+| Artifact flow | `strategy`, `planning.*`, `artifact.primary`, `artifact.consumers`, `relations.feeds` |
 | Learning | `streams`, `learning.*`, `authority.adaptation`, `relations.improves` |
 | Work-session processing | `work_sessions.*`, `streams`, `artifact.*` |
 
@@ -139,7 +147,7 @@ It should also report structural problems:
 - active systems missing required APSS fields;
 - artifacts without consumers or intended outcomes;
 - missing artifact or outcome validation;
-- missing durable plan/work log;
+- missing strategy, problem collection, or task collection;
 - missing brainstorming process references;
 - missing compilation or adaptation processes; and
 - declarations that reference nonexistent local files.

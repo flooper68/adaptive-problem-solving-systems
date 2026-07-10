@@ -30,7 +30,7 @@ The affected consumers and expected value remain to be clarified.
 
 ## Evidence
 
-- The maintainer proposed “polish process improvement loop” during backlog
+- The maintainer proposed “polish process improvement loop” during task
   intake on 2026-07-10.
 - When asked what currently feels unpolished or ineffective, the maintainer
   said they were not sure and characterized this as an open-ended task.

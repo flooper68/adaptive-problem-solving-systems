@@ -39,8 +39,9 @@ current backlog list as an isolated case.
 ### Evidence
 
 - Maintainer report based on reviewing the backlog README.
-- [`operations/work/backlog/README.md`](../../work/backlog/README.md) currently
-  contains an `Items` section linking every retained backlog item.
+- The former `operations/work/backlog/README.md` contained an `Items` section
+  linking every retained backlog item; the task collection has since replaced
+  that index.
 - [`operations/streams/framework-feedback/README.md`](README.md) currently
   contains a `Reports` section, suggesting the same scaling concern may apply
   here; the broader reach has not yet been assessed.

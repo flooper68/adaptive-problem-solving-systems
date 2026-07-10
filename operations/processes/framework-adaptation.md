@@ -34,13 +34,14 @@ may prepare proposals only within their granted scope.
 6. Run artifact validation and arrange outcome validation. Record delayed
    outcome evidence honestly rather than claiming effectiveness at merge time.
 7. Record the decision, evidence links, changed target, validation results, and
-   next trigger in the work log and plan. If the adaptation or its later outcome
+   next trigger in the affected task and working-session record. If the
+   adaptation or its later outcome
    changes the underlying lesson, initiate another evidence-bounded compilation
    rather than silently amending the published framework.
 
 ## Completion condition
 
 Adaptation is complete only when an authorized change affects a subsequent run
-through the plan, strategy, process, stream, validation, knowledge, system
+through task selection, strategy, process, stream, validation, knowledge, system
 structure, example, or normative framework. A proposed or compiled lesson that
 has not changed future behavior remains unapplied learning.

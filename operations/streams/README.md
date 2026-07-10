@@ -6,9 +6,10 @@ the detailed provenance record for repository changes.
 
 ## Stewardship work
 
-Backlog items, the current plan, and the work log preserve candidate actions,
-dispositions, decisions made during execution, execution history, and gaps.
-They are operational evidence, not normative framework content.
+Problem files preserve current gaps and grooming decisions. Task files preserve
+candidate dispositions and resumable execution state. Working-session records
+preserve material interaction history. They are operational evidence, not
+normative framework content.
 
 ## Historical framework sources
 
@@ -17,8 +18,8 @@ The initial APSS
 its separately retained
 [framework definition](working-sessions/2026-07-09-initial-framework-definition.md)
 provide input and hidden expected-output fixtures for a compilation replay.
-These files are archival source material, not an ongoing declared stream or a
-required output of brainstorming.
+These files are archival source material within the ongoing working-session
+stream.
 Later-discovered contemporaneous source material may be added to the kickoff
 session's source boundary; retrospective recollections must be labelled as
 reconstructions rather than original records.
@@ -64,5 +65,5 @@ as evidence that no prior work exists.
 ## Validation evidence
 
 Artifact checks, example conformance, consumer trials, and outcome observations
-are retained in the relevant work item or work log with enough context to
-repeat or challenge the conclusion.
+are retained in the relevant task, problem, session record, or native evidence
+stream with enough context to repeat or challenge the conclusion.

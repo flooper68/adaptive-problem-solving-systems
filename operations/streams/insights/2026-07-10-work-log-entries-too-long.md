@@ -1,14 +1,16 @@
 ---
 id: apss.insight.work-log-entries-too-long
 type: insight
-status: captured
+status: supported
 captured: 2026-07-10
 source: APSS framework maintainer
 source_records:
   - apss.session.insight-stream-design
 related_insights: []
 related_work: []
-compiled_into: []
+compiled_into:
+  - framework/README.md
+  - framework/VOCABULARY.md
 ---
 
 # Work-log entries are too long to be useful
@@ -24,7 +26,7 @@ them less likely to be read or used.
 
 ### Scope
 
-The subject is [`operations/work/LOG.md`](../../work/LOG.md). The maintainer
+The subject was the former `operations/work/LOG.md`. The maintainer
 clarified that its useful role is limited to preserving the knowledge that
 something happened and directing a future person or agent to more detail. It
 remains unclear which events are material enough to index and which source is
@@ -140,5 +142,13 @@ capture, not the truth of the insight or any response to it. The insight remains
 
 ## Grooming record
 
-Not yet groomed. See
-[`insight-grooming.md`](../../processes/insight-grooming.md).
+### 2026-07-10 — supported and resolved through simplification
+
+Further use confirmed the underlying observation: the generic log duplicated
+task state, problem decisions, session history, native evidence, and Git
+history. The maintainer chose to remove it rather than define an event threshold.
+
+The useful distinctions were compiled into the framework: active tasks own
+resumable state, problem files own problem decisions, material working-session
+records own interaction history, and native streams own domain evidence. The
+log-specific questions no longer block current operation.

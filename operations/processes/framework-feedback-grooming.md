@@ -6,9 +6,9 @@ Interpret a framework-feedback report, assess what it establishes, and record
 an explicit response. Grooming preserves the report as evidence while deciding
 whether it warrants work, more observation, or no action.
 
-Feedback grooming is distinct from backlog grooming. It evaluates an observed
+Feedback grooming is distinct from task grooming. It evaluates an observed
 experience; if a change or investigation is warranted, it creates a linked
-backlog candidate whose scope and priority are decided separately.
+task candidate whose scope and priority are decided separately.
 
 ## Invocation and roles
 
@@ -47,8 +47,8 @@ grooming record with provenance.
    remains uncertain.
 7. **Choose a disposition.** Apply one status below and record the rationale.
 8. **Propagate without conflating.** For `actionable` feedback, create or link
-   a backlog item using [`backlog-intake.md`](backlog-intake.md). Link both
-   directions. Backlog planning and prioritization remain separate. Feed stable
+   a task using [`task-intake.md`](task-intake.md). Link both directions. Task
+   selection and prioritization remain separate. Feed stable
    lessons or outcome evidence into validation and knowledge compilation.
 9. **Close the loop.** Record what acknowledgment or follow-up is owed. If
    linked work is later validated, append the result and set the feedback to
@@ -75,7 +75,7 @@ grooming record with provenance.
 - `needs-information` — a load-bearing gap prevents a responsible disposition;
   record the needed evidence and follow-up trigger.
 - `actionable` — the evidence justifies a change or bounded investigation;
-  link a captured or existing backlog item. This is not a priority commitment.
+  link a captured or existing task. This is not a priority commitment.
 - `monitoring` — plausible and retained, but more occurrences or outcome
   evidence are needed; record a reconsideration trigger.
 - `declined` — no response is warranted or the request is outside the system's

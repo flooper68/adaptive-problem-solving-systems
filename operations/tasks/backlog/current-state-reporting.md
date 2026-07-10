@@ -17,17 +17,18 @@ state, unresolved concerns, and next actions.
 
 ## Motivation
 
-Plans, logs, declarations, compiled knowledge, and evidence each preserve a
-different part of operational state. A state-reporting process could make
-reviews, resumptions, and handoffs faster without requiring a consumer to
-reconstruct the situation from every source.
+Strategies, problem and task files, session records, declarations, compiled
+knowledge, and evidence each preserve a different part of operational state. A
+state-reporting process could make reviews, resumptions, and handoffs faster
+without requiring a consumer to reconstruct the situation from every source.
 
 ## Evidence
 
-- APSS requires a durable plan and work log so execution can resume across
-  time, people, and agents.
-- The framework loop requires operators to orient from the declaration, plan,
-  backlog, recent log, and relevant evidence before acting.
+- APSS requires active task files to retain current state and next steps so
+  execution can resume across time, people, and agents.
+- The framework loop requires operators to orient from the declaration,
+  strategy, problem and task files, recent sessions, and relevant evidence before
+  acting.
 - The AI agent task process requires a handoff when claimed work cannot be
   completed, but no general current-state report contract exists.
 - No evidence yet establishes the consumers, cadence, or minimum fields for a
@@ -45,7 +46,8 @@ reconstruct the situation from every source.
 - What are the authoritative sources for each field, and how is staleness made
   visible?
 - How should the report avoid duplicating or becoming a competing source of
-  truth for `SYSTEM.md`, the plan, log, and compiled knowledge?
+  truth for `SYSTEM.md`, strategy, problem/task files, sessions, and compiled
+  knowledge?
 - Which events should trigger a report, and how should its usefulness be
   validated with handoff or resumption scenarios?
 

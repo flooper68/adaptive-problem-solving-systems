@@ -10,5 +10,6 @@ techniques used by one example are not APSS requirements unless the normative
 ## Available examples
 
 - [CNC part production](cnc-part-production/SYSTEM.md) — a proposed physical
-  production system with a brainstorming work session plus dimensional and
-  real-use validation processes.
+  production system whose selected batch task addresses separate conformance
+  and consumer-outcome problems, with brainstorming and problem-grooming work
+  sessions plus dimensional and real-use validation processes.

@@ -1,29 +1,28 @@
-# Backlog intake
+# Task intake
 
 ## Purpose
 
 Capture a potentially valuable executable response without requiring enough
-analysis to plan or prioritize it. Intake preserves the proposed action and its
-source; grooming decides whether and how it should proceed.
+analysis to select or prioritize it. Intake preserves the proposed action and
+its source; grooming decides whether and how it should proceed.
 
 ## When to capture
 
-Create a backlog item when a task, bounded research inquiry, experiment, review,
+Create a task file when a bounded research inquiry, experiment, review,
 remediation, or other action may improve the framework, examples, or
-stewardship operation and is not already committed in the current plan.
+stewardship operation and is not already represented by a task.
 
 A report, observation, insight, question, issue, or decision remains in its
-source record. If it warrants a response, create a separate backlog candidate
+source record. If it warrants a response, create a separate task candidate
 that describes the executable action and links the source. Do not give a record
 an execution lifecycle merely because it may influence future work.
 
-Search `operations/work/backlog/`, `operations/work/PLAN.md`, compiled
-knowledge, and recent logs first. Link new source evidence to an existing
-candidate instead of creating a duplicate.
+Search `operations/tasks/`, compiled knowledge, and recent sessions first. Link
+new source evidence to an existing candidate instead of creating a duplicate.
 
 ## Minimum capture
 
-Create `operations/work/backlog/<short-slug>.md` with this structure:
+Create `operations/tasks/backlog/<short-slug>.md` with this structure:
 
 ```markdown
 ---
@@ -120,4 +119,4 @@ A successfully captured candidate has:
 Material discussion during intake belongs in the item's grooming log or a
 linked record retained through the
 [brainstorming process](brainstorming.md). The next possible action is the
-[backlog grooming process](backlog-grooming.md).
+[task grooming process](task-grooming.md).

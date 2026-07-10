@@ -1,4 +1,4 @@
-# Backlog grooming
+# Task grooming
 
 ## Purpose
 
@@ -10,25 +10,26 @@ change.
 ## Invocation and roles
 
 Groom an item when the maintainer requests it, new evidence makes it timely, a
-dependency is resolved, or planning needs another ready candidate.
+dependency is resolved, or the current problem set needs another ready task.
 
 - An operator facilitates the analysis and updates the durable item.
 - The item owner supplies context or identifies who can.
 - The APSS framework maintainer approves the final disposition and alone
-  selects ready work into `operations/work/PLAN.md`.
+  changes a ready task to `selected`.
 
 Set `status: grooming` while analysis is materially underway.
 
 ## Procedure
 
 1. **Orient.** Read the item, its source, current framework and examples,
-   current plan, compiled knowledge, related backlog items, and relevant work
-   history.
+   current strategy, problem files, compiled knowledge, related task files, and
+   relevant session history.
 2. **Check identity.** Merge duplicate actions, split unrelated actions, and
    preserve links to their original source records and IDs.
-3. **Frame the response.** State the affected consumer, source problem or
-   opportunity, proposed action, expected outcome, and why it belongs within
-   this system's boundary.
+3. **Frame the response.** State the affected consumer, current goal and open
+   problem, its strategy, proposed action, expected outcome, and why it belongs
+   within this system's boundary. If no current open problem represents the
+   evidenced gap, propose a problem file before treating the work as ready.
 4. **Classify the effect.** Identify whether it may change the normative
    framework, a supporting example, stewardship operations, or only current
    understanding. One item may affect several, but the distinction must remain
@@ -41,21 +42,26 @@ Set `status: grooming` while analysis is materially underway.
    affected artifacts, dependencies, risks, validation approach, and an owner.
    Split work that cannot be evaluated or completed as one bounded result.
 7. **Check readiness.** Apply the readiness questions below. Unanswered
-   questions are allowed only when the plan explicitly resolves them before
-   they become dangerous or expensive.
+   questions are allowed only when the task approach explicitly resolves them
+   before they become dangerous or expensive.
 8. **Propose and approve a disposition.** The maintainer records one disposition
    and its rationale. Do not equate desirability with current priority.
 9. **Propagate the result.** Update the item's frontmatter and grooming log.
-   If selected, reference it from the current plan; do not erase the source
-   item or its rejected alternatives.
+   If selected, set `status: selected` and list its problem IDs under
+   `addresses`, then move it from `tasks/backlog/` to the task root. Keep
+   ready or deferred tasks in the backlog and move rejected or merged tasks to
+   `tasks/archive/`. Do not erase the source or its rejected alternatives.
 
 ## Readiness questions
 
-An item is ready only when a planner can answer:
+An item is ready only when the responsible operator can answer:
 
+- Which current open problem does this address, and which goal makes that
+  problem relevant?
+- How does the work implement or test that problem's strategy?
 - What consumer problem or opportunity are we addressing?
 - What observable outcome would make the work worthwhile?
-- Is the proposed scope bounded enough for one plan item?
+- Is the proposed scope bounded enough for one task?
 - Which normative artifact, example, or operating process may change?
 - What evidence supports acting now, and what remains assumption?
 - Which discussion, research, or experiment is still necessary?
@@ -66,7 +72,7 @@ An item is ready only when a planner can answer:
 
 ## Dispositions and states
 
-- `ready` — sufficiently understood to be considered during planning. This is
+- `ready` — sufficiently understood to be considered for selection. This is
   not a commitment or priority promise.
 - `deferred` — potentially valuable but blocked, premature, or deliberately
   postponed. Record a reconsideration trigger, condition, or date.
@@ -76,9 +82,11 @@ An item is ready only when a planner can answer:
 
 `captured` and `grooming` describe candidate work before disposition. They do
 not apply to the source reports, insights, questions, issues, or decisions that
-motivated it. When the maintainer selects a `ready` item into the durable plan,
-set it to `planned`; execution may then use `in-progress`, `completed`, or
-`cancelled`. These execution states do not replace the work log.
+motivated it. Selection sets a ready task to `selected`; execution may then use
+`in-progress`, `awaiting-review`, `closed`, or `cancelled`. Keep candidate
+states under `tasks/backlog/`, selected and active states at the task root, and
+inactive states under `tasks/archive/`. The task owns current state; session
+records own material history.
 
 ## Required durable result
 
@@ -86,10 +94,11 @@ Append a grooming-log entry containing:
 
 - date, participants, and evidence consulted;
 - clarified problem, expected outcome, and scope;
+- the current problem-file reference and relevant goal;
 - important facts, assumptions, and unresolved questions;
 - readiness gaps or acceptance conditions;
 - approved disposition and rationale; and
-- reconsideration trigger, target item, or plan reference when applicable.
+- reconsideration trigger or target task when applicable.
 
 Any normative change still follows the
 [framework operating loop](framework-loop.md) and declared adaptation authority.

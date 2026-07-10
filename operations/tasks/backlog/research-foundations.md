@@ -47,7 +47,7 @@ human-approved APSS change rather than silently rewriting the framework.
 
 ## Log
 
-### 2026-07-09 — planned
+### 2026-07-09 — selected
 
 Deferred by owner during NOTE-015 so the initial framework definition can ship
 before external comparison.
@@ -55,7 +55,7 @@ before external comparison.
 ### 2026-07-09 — classified during stewardship bootstrap
 
 Set to `deferred` because the work is intentionally postponed rather than
-selected into the current plan. Reconsider after the operations system has
+selected as current work. Reconsider after the operations system has
 completed its first full operating cycle or when an external-foundations claim
 becomes load-bearing for a framework decision.
 
@@ -63,5 +63,5 @@ becomes load-bearing for a framework decision.
 
 The maintainer proposed researching and adding scientific-article references on
 adaptive systems. This was added to the existing foundations inquiry instead of
-creating a duplicate backlog item. Its deferred disposition and reconsideration
+creating a duplicate task. Its deferred disposition and reconsideration
 trigger are unchanged.

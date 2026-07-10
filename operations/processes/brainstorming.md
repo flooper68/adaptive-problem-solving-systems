@@ -9,10 +9,11 @@ the result reaches an accepted stopping point.
 
 ## Procedure
 
-1. **Frame.** State the topic, intended result, responsible user, relevant
-   boundary, and what a useful stopping point would be.
+1. **Frame.** State the topic, intended result, responsible user, relevant goal
+   and open problem when applicable, boundary, and what a useful stopping point
+   would be.
 2. **Orient.** Read the current framework or instantiation, relevant streams,
-   prior decisions, plans, feedback, and knowledge. Keep missing context explicit.
+   prior decisions, task files, feedback, and knowledge. Keep missing context explicit.
 3. **Explore.** Elicit observations, interpretations, alternatives, constraints,
    and trade-offs. Ask one load-bearing question at a time and adapt the next
    question to the answer.
@@ -36,7 +37,7 @@ the result reaches an accepted stopping point.
 
 Raw evidence remains in its source streams. Git provides the reviewable diff and
 accepted history; the compiled artifact's changelog summarizes material
-knowledge changes. Do not create a dedicated brainstorming stream, session
-record, compilation record, or manifest. When the original discussion is
-material evidence, reference its native recoverable source from the ordinary
-work log, insight, or decision that needs it.
+knowledge changes. Retain one working-session record with participants,
+affected problems and tasks, material decisions, changed artifacts, and the
+stopping point. Link independently managed insights or decisions rather than
+duplicating their full content.

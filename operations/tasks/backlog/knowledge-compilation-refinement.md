@@ -27,7 +27,7 @@ what a compilation run produced or changed.
 - [`operations/processes/knowledge-compilation.md`](../../processes/knowledge-compilation.md)
   defines inputs, provenance requirements, classification, candidate output,
   validation, and the approval boundary.
-- The current plan describes the first application of the reproducible process
+- The current MVP task describes the first application of the reproducible process
   as pending work.
 - No completed compilation run yet demonstrates which parts of the process need
   refinement in practice.

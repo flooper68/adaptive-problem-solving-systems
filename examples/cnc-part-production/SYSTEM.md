@@ -7,10 +7,7 @@ parent: null
 
 problem: Small production runs need repeatable metal brackets that fit and survive their real assembly load.
 vision: Approved CAD revisions become reliable physical parts with short feedback from field use to manufacturing improvement.
-goals:
-  - Produce the current bracket revision within drawing tolerances.
-  - Confirm the bracket fits the target assembly and survives its specified load.
-strategy: Use a durable production plan, CNC machining, dimensional inspection, assembly/load trials, and feedback-driven updates to tooling and process parameters.
+strategy: STRATEGY.md
 
 roles:
   owner: [manufacturing lead]
@@ -34,8 +31,8 @@ artifact:
 
 planning:
   process: processes/loop.md
-  plan: work/PLAN.md
-  log: work/LOG.md
+  problems: problems/
+  tasks: tasks/
 
 execution:
   process: processes/loop.md
@@ -45,28 +42,37 @@ work_sessions:
   - id: brainstorming
     description: Discuss a production idea, task, or research topic with the responsible user and iteratively compile reviewable changes into this APSS instantiation or its manufacturing knowledge.
     process: processes/brainstorming.md
+  - id: problem-grooming
+    description: Use the system strategy to revisit current production problems, update their evidence and strategy, and record an authorized retain, revise, address, or close decision.
+    process: processes/problem-grooming.md
 
 validation:
   artifact: Follow processes/validation.md to inspect the drawing's critical dimensions, material, finish, and visible defects and reject nonconforming parts.
   outcome: Follow processes/validation.md to install a sampled part in the target assembly, run the specified load trial, and collect assembly and field feedback.
 
 streams:
+  - id: working-sessions
+    purpose: Preserve material production brainstorming and problem-grooming invocations.
+    source: Production discussions and other declared work-session invocations.
+    access: Retain a session record with affected problem and task references when a material session occurs.
+    consumed_by: processes/loop.md
+    grill: null
   - id: cad-revisions
     purpose: Supply the authoritative geometry and tolerance contract.
     source: Approved CAD and drawing system.
-    access: Reference the released revision in the batch plan.
+    access: Reference the released revision in the batch task.
     consumed_by: processes/loop.md
     grill: null
   - id: machine-and-inspection
     purpose: Preserve production parameters, failures, and dimensional evidence.
     source: CNC run notes and inspection records.
-    access: Summarize each batch in work/LOG.md and retain native records by reference.
+    access: Retain native records by reference from the batch task and affected problem.
     consumed_by: processes/loop.md
     grill: null
   - id: assembly-feedback
     purpose: Learn whether conforming parts solve the consumer's actual fit and load problem.
     source: Assembly trials, operator discussions, and field reports.
-    access: Retain the report or a topic summary linked from work/LOG.md.
+    access: Retain the report or a topic summary linked from the batch task and affected problem.
     consumed_by: processes/loop.md
     grill: Ask about fit, rework, installation time, failure mode, load, frequency, and workaround.
 
@@ -82,7 +88,7 @@ learning:
   adaptation_process: processes/loop.md
 
 authority:
-  execution: Operators may execute an approved batch plan within documented machine and safety limits.
+  execution: Operators may execute a selected batch task within documented machine and safety limits.
   adaptation: The manufacturing lead approves changes to tooling, process parameters, validation, or subsystem structure.
 
 health: null
@@ -114,11 +120,15 @@ process or experiment inside this system, not another subsystem by default.
 
 ## Complete loop
 
-The production request updates the durable plan. Operators review current
-knowledge and uncertainty, create or revise the CAM/tooling approach, run the
-part, inspect it, and hand a conforming sample to assembly validation. Machine,
-inspection, and consumer evidence is logged. The compilation step updates the
-manufacturing playbook; approved adaptations change the next plan or process.
+The production request creates or updates a task. Operators use the current
+goal, [system strategy](STRATEGY.md), and evidence to frame open
+problems and their strategies, then select batch or investigative work that
+implements them. They review current knowledge and uncertainty, create
+or revise the CAM/tooling approach, run the part, inspect it, and hand a
+conforming sample to assembly validation. Machine, inspection, and consumer
+evidence updates the problems' signals and is logged. The compilation step
+updates the manufacturing playbook; approved adaptations change the next task
+or process.
 
 Artifact inspection can finish before real-world outcome evidence arrives. The
 batch is conforming only when artifact validation passes; the strategy is
@@ -134,11 +144,11 @@ outcome assumptions need adaptation—not evidence that inspection was useless.
 
 ## Learning and adaptation
 
-The system retains source references and the work log, then compiles recurring
-causes, successful resolutions, stable parameter windows, and validation
-lessons into [knowledge/README.md](knowledge/README.md). The manufacturing lead
-approves changes. A later trusted version could automate bounded parameter
-adjustments, but this example starts human-approved.
+The system retains source references in the affected tasks and problems, then
+compiles recurring causes, successful resolutions, stable parameter windows,
+and validation lessons into [knowledge/README.md](knowledge/README.md). The
+manufacturing lead approves changes. A later trusted version could automate
+bounded parameter adjustments, but this example starts human-approved.
 
 ## Relationships
 

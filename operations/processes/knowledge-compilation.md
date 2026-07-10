@@ -11,7 +11,8 @@ adaptation is approved.
 
 For the question or completed work being compiled, read:
 
-- the current problem, goal, strategy, plan, and published framework knowledge;
+- the current system problem, goal and strategy, open-problem files, task
+  files, and published framework knowledge;
 - relevant records from every declared stream, including insight claims and
   dispositions, groomed feedback, usage evidence, work history and its
   framework baseline, and external foundations;
@@ -35,7 +36,7 @@ research, or experimentation. It is not evidence for a convenient conclusion.
 5. Classify each reusable conclusion by target:
    - domain-independent APSS knowledge belongs in the framework;
    - lessons about running the framework-producing system propose changes to
-     its `SYSTEM.md`, processes, validation, plan, or stream handling; and
+     its `SYSTEM.md`, processes, validation, task handling, or streams; and
    - context-specific demonstrations or observations remain in examples or
      their source evidence unless the framework adopts a general lesson.
 6. Edit the authoritative target directly as an uncommitted change. Keep
@@ -75,4 +76,4 @@ criteria, and expected output until the proposed output is complete. A separate
 evaluator then compares source, output, and expected output for semantic
 coverage, contradictions, unsupported additions, and material omissions. Exact
 prose is not required. Use temporary isolation for the exercise. Retain only
-the evidence needed by the system's ordinary work log or validation stream.
+the evidence needed by the system's working-session or validation stream.

@@ -7,9 +7,7 @@ parent: null # stable system id; null only for a root system
 
 problem: <condition this system exists to change>
 vision: <durable description of what better looks like>
-goals:
-  - <current bounded result>
-strategy: <current theory and approach for reaching the goals>
+strategy: STRATEGY.md # independent system strategy beside SYSTEM.md
 
 roles:
   owner: [<person-role-or-agent>]
@@ -30,8 +28,8 @@ artifact:
 
 planning:
   process: <path or concise implementation description>
-  plan: work/PLAN.md
-  log: work/LOG.md
+  problems: problems/ # active problem files; closed files move to problems/archive/
+  tasks: tasks/ # selected work at root; candidates in backlog/; inactive tasks in archive/
 
 execution:
   process: <path or concise implementation description>
@@ -41,6 +39,9 @@ work_sessions:
   - id: brainstorming
     description: Discuss an idea, task, or research topic with the responsible user and iteratively compile reviewable changes into system knowledge or the system instantiation.
     process: processes/brainstorming.md
+  - id: problem-grooming
+    description: Use the system strategy to revisit current open problems, update their evidence and strategy, and record an authorized retain, revise, address, or close decision.
+    process: processes/problem-grooming.md
 
 validation:
   artifact: <how correctness/acceptance of the output is checked>
@@ -91,11 +92,13 @@ capability inside its parent. State what is inside and outside its control.
 
 ## Complete loop
 
-Describe how the system plans, resolves uncertainty, executes, produces its
-artifact, validates artifact and outcome, captures evidence, compiles knowledge,
-adapts, and invokes the next run. Responsibilities may be reordered, combined,
-parallelized, or asynchronous. Explain where brainstorming can clarify or
-compile proposed changes without replacing the other declared processes.
+Describe how the system strategy informs problem grooming, how each problem's
+strategy guides selected tasks, how the system resolves uncertainty, executes,
+produces its artifact, validates artifact and outcome, captures evidence,
+compiles knowledge, adapts, and invokes the next run. Responsibilities may be
+reordered, combined, parallelized, or asynchronous. Explain where brainstorming
+can clarify or compile proposed changes without replacing the other declared
+processes.
 
 ## Artifact contract
 

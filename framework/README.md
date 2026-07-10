@@ -14,30 +14,33 @@ method.
 This package is the normative framework specification. In this repository it is
 the primary artifact produced by the separately declared
 [APSS Framework Operations System](../operations/SYSTEM.md). Changes to the
-normative
-package are summarized in [CHANGELOG.md](CHANGELOG.md).
+normative package are summarized in [CHANGELOG.md](CHANGELOG.md). Exact
+meanings for recurring terms are consolidated in the normative
+[APSS vocabulary](VOCABULARY.md).
 
 ## Why APSS exists
 
 Many efforts define a goal and an execution process but leave the feedback loop
 implicit. They may produce outputs without checking whether those outputs solve
 the consumer's problem; collect observations without compiling them; or write
-lessons without changing the next plan. The result is activity that repeats
+lessons without changing the next operation. The result is activity that repeats
 without becoming more effective.
 
 APSS makes the complete loop explicit and inspectable:
 
 ```mermaid
 flowchart LR
-    problem["Problem and desired outcome"] --> strategy["Strategy"]
-    strategy --> plan["Durable plan"]
-    plan --> execute["Execute"]
+    problem["System problem and vision"] --> strategy["Goal and system strategy"]
+    strategy --> openProblems["Open problems"]
+    openProblems --> tasks["Selected tasks"]
+    tasks --> execute["Execute"]
     execute --> artifact["Artifact"]
     artifact --> artifactValidation["Validate artifact"]
     artifact --> consumer["Consumer and real-world use"]
     consumer --> outcomeValidation["Validate outcome"]
     artifactValidation --> evidence["Evidence streams"]
     outcomeValidation --> evidence
+    evidence --> openProblems
     evidence --> compile["Compile knowledge"]
     compile --> adapt["Adapt with declared authority"]
     adapt --> strategy
@@ -50,16 +53,36 @@ is part of its strategy and may itself evolve.
 
 ## Core definitions
 
-### Problem, vision, goal, and strategy
+### System problem, vision, goal, strategy, and open problem
 
-- **Problem** — the condition the system exists to change, including the
+- **System problem** — the condition the system exists to change, including the
   affected consumer or environment.
 - **Vision** — the durable description of what better looks like if the problem
   is solved.
 - **Goal** — a current, bounded result that moves the system toward its vision.
-- **Strategy** — the system's current theory and approach for reaching its
-  goals: how it plans, executes, validates, learns, and coordinates its
-  subsystems. Strategy is allowed to change when evidence warrants it.
+  It is stated in the independent system-strategy document.
+- **System strategy** — the system's current theory and approach for reaching
+  its current goal: how it interprets evidence, identifies and chooses among open
+  problems, guides their strategies, plans, executes, validates, learns, and
+  coordinates its subsystems. `SYSTEM.md` links it through `strategy` to the
+  sibling `STRATEGY.md` document. Strategy is allowed to change
+  when evidence warrants it.
+- **Problem strategy** — the current approach for resolving or reducing one
+  open problem. It lives in that problem's file, is informed by the system
+  strategy, guides selected tasks, and changes when its signal or other evidence
+  contradicts the approach.
+- **Open problem** — an evidenced, unresolved condition within the system that
+  obstructs or threatens a current goal. It names a gap, not a proposed
+  solution or an automatically authorized task.
+
+The system problem is the durable reason the system exists; goals bound what
+matters now; open problems retain the current gaps between the present state
+and those goals. Feedback and other evidence may reveal or change an open
+problem. The system strategy governs how the system interprets those inputs and
+chooses problems; each problem strategy describes how to approach its gap.
+Selected tasks implement that strategy, and outcome validation shows whether the
+problem improved. See [VOCABULARY.md](VOCABULARY.md) for the exact boundaries
+among these and related terms.
 
 ### System and subsystem
 
@@ -69,7 +92,8 @@ An **adaptive problem-solving system** owns:
 2. stable identity and lifecycle ownership;
 3. roles and adaptation authority;
 4. inputs, constraints, and evidence streams;
-5. a strategy, durable plan, and brainstorming work session;
+5. an independent system strategy, current open problems with their own
+   strategies, task files with resumable state, and required work sessions;
 6. a complete execution and feedback loop;
 7. at least one primary artifact;
 8. a consumer and intended outcome;
@@ -110,12 +134,18 @@ declaration has a stable `id`, a concise `description`, and a link to the
 `process` that defines how the work is done. The process filename should match
 the work-session ID where practical.
 
-APSS currently defines one required work session: **brainstorming**. It discusses
-an idea, task, or research topic with the responsible user, reads relevant
-evidence and knowledge, compiles proposed changes directly into the framework
-knowledge or concrete system instantiation, and iterates on those changes with
-the user until they reach an accepted stopping point. Its process is declared as
-`processes/brainstorming.md`.
+APSS defines two required work sessions:
+
+- **Brainstorming** discusses an idea, task, or research topic with the
+  responsible user, reads relevant evidence and knowledge, compiles proposed
+  changes directly into the framework knowledge or concrete system
+  instantiation, and iterates until an accepted stopping point. Its process is
+  declared as `processes/brainstorming.md`.
+- **Problem grooming** uses the system strategy to revisit one or more current
+  open problems, evaluates their goal relevance, evidence, framing, strategy,
+  desired change, and signal, then records an authorized retain, revise,
+  address, or close result. Its process is declared as
+  `processes/problem-grooming.md`.
 
 A concrete work session is one bounded invocation of a declared work session.
 It may be synchronous or asynchronous and may be performed by people, agents,
@@ -123,16 +153,30 @@ machines, or delegated systems. Event-driven and continuous operation can use a
 meaningful invocation or observation boundary, but the linked process must make
 completion or handoff inspectable.
 
+Retain one record for a material work-session invocation in a declared
+working-session stream or its native system of record. The record identifies
+the session, date, participants, affected problems and tasks, material evidence
+or decisions, and stopping point. It preserves what happened; problem and task
+files remain authoritative for current state.
+
 A brainstorming session consumes selected stream evidence, compiled knowledge,
-plans, constraints, or existing artifacts and produces reviewable changes to
+tasks, constraints, or existing artifacts and produces reviewable changes to
 the system's knowledge or instantiation. The authoritative artifact and its
 simple changelog retain the accepted result; raw evidence remains in its source
 streams.
 
+A problem-grooming session consumes the system strategy, problem files,
+selected evidence, current tasks, and applicable knowledge. Each affected
+problem file retains the authoritative decision, rationale, and resulting
+framing; affected task files retain their current state and next step. The
+session record or other native recoverable source preserves material discussion
+and links to the changed files. Do not create a second summary when the native
+session record is already durable.
+
 ### Stream, raw evidence, and compiled knowledge
 
 - An **information stream** is a source of observations relevant to the system:
-  work logs, meetings, customer threads, runtime logs, test results, feedback,
+  working-session records, meetings, customer threads, runtime logs, test results, feedback,
   research, experiments, or another system's artifacts.
 - **Raw evidence** is source material kept recoverable whenever possible. It may
   be copied into the system or referenced in an external system of record.
@@ -168,20 +212,113 @@ responsible for every phase whether it combines or separates their processes.
 
 ### 1. Orient and frame
 
-Read the current problem, vision, goals, constraints, parent direction, relevant
-compiled knowledge, and new evidence. Confirm that the system is still solving
-the right problem.
+Read the current system problem, vision, goal and system strategy, open problems
+and their strategies, constraints, parent direction, relevant compiled
+knowledge, and new evidence. Confirm that the system is still solving the right
+problem and that its current problems and approaches remain relevant to its
+goals.
 
-### 2. Plan
+### 2. Groom problems and select tasks
 
-Choose the next work and record a durable plan. Planned work is a bounded action
-that can be performed, stopped, and evaluated, such as a task, research inquiry,
-experiment, review, or remediation. APSS does not force a taxonomy. An issue,
-insight, question, or decision may motivate or shape work, or result from it,
-but is not itself planned merely because it was recorded. When a response needs
-execution, create a linked work candidate that states the action and intended
-result. Every system keeps a work log so execution can resume across time,
-people, or agents.
+The system strategy states the current goal and guides problem selection.
+Maintain one file per active problem under `problems/`:
+
+```markdown
+---
+id: P1
+type: open-problem
+status: open
+opened: YYYY-MM-DD
+---
+
+# <Observed condition obstructing or threatening the goal>
+
+## Goal
+<Current goal from the system strategy.>
+
+## Evidence
+<Observation or recoverable source indicating the gap exists.>
+
+## Desired change
+<What would meaningfully improve.>
+
+## Signal
+<Evidence of worsening, improvement, or sufficient resolution.>
+
+## Strategy
+<Current approach for resolving or reducing this problem.>
+
+## Grooming history
+<Material evidence, decisions, rationale, sources, and next triggers.>
+```
+
+New problems may be proposed when feedback, validation, research, insights,
+changed direction or constraints, or completed work reveals a gap. Feedback is
+evidence, not an automatic problem: problem grooming interprets the evidence and
+frames the condition without embedding a preferred solution.
+
+Groom a problem by asking:
+
+1. Which current goal does it obstruct or threaten?
+2. What evidence indicates that it exists?
+3. What is the impact if it remains unresolved?
+4. What change and signal would demonstrate improvement?
+5. What strategy should approach it, and what evidence would challenge that
+   strategy?
+6. Why address it now rather than another open problem?
+
+Grooming supports three lightweight decisions: address it now, keep it open
+without current work, or close it with a recorded reason. No numerical scoring
+method is required. On closure, record the evidence and reason in the problem
+file, set `status: closed`, and move it under `problems/archive/`.
+
+Maintain one file per executable response under `tasks/`:
+
+```markdown
+---
+id: T1
+type: task
+status: selected
+addresses: [P1]
+owner: <responsible role>
+created: YYYY-MM-DD
+---
+
+# <Action>
+
+## Intended result
+<Observable result this task should produce.>
+
+## Approach
+<How this task implements or tests the problem strategy.>
+
+## Stop condition
+<Acceptance, handoff, or reconsideration condition.>
+
+## Current state
+<What has happened, what remains uncertain, and the next step.>
+```
+
+A task is any bounded executable response, including implementation, research,
+experiment, discussion, review, or remediation. Status in the task file makes
+its state explicit. Keep `selected`, `in-progress`, and `awaiting-review`
+tasks directly under `tasks/`; keep `captured`, `grooming`, `ready`, and
+`deferred` candidates under `tasks/backlog/`; move closed, cancelled,
+rejected, merged, or superseded tasks under `tasks/archive/` with their final
+reason. These folders are the current task collection; APSS does not require a
+separate plan or exhaustive index.
+
+A task may be captured before its problem relationship is clear, but it is not
+ready for selection until it addresses at least one current problem. The system
+strategy informs problem grooming and constrains acceptable problem strategies;
+selected tasks implement or test the addressed problem strategy rather than
+becoming unrelated activity attached only by ID.
+
+An active task file states enough current state and next-step information for
+execution to resume across time, people, or agents. Material session history
+belongs in working-session records; detailed repository history belongs in
+version control; domain evidence remains in its native stream. APSS does not
+require a generic work log that duplicates those sources.
 
 ### 3. Resolve uncertainty
 
@@ -204,8 +341,9 @@ user; a system-specific protocol may include a particular grill.
 ### 4. Execute and produce
 
 Run the system's process and produce the primary artifact plus any supporting
-artifacts. Record material decisions, deviations, failures, and successful
-resolutions in the work log.
+artifacts. Update the task's current state and next step. Retain material
+decisions, deviations, failures, and successful resolutions in the session
+record or appropriate evidence stream.
 
 ### 5. Validate the artifact
 
@@ -234,11 +372,12 @@ more broadly, and how to allocate time, compute, token, or human attention.
 
 ### 9. Adapt
 
-Use validated learning to improve the plan, strategy, processes, streams,
-validation, knowledge, or subsystem structure. Adaptation follows the authority
-declared by the system. The initial safe default is human approval by the
-responsible owner; trusted systems may later receive bounded autonomous
-authority.
+Use validated learning to improve open-problem framing, task selection,
+strategy, goals, processes, streams, validation, knowledge, or subsystem
+structure.
+Adaptation follows the authority declared by the system. The initial safe
+default is human approval by the responsible owner; trusted systems may later
+receive bounded autonomous authority.
 
 ### 10. Continue, stop, or hand off
 
@@ -309,14 +448,23 @@ places concrete capsules under `systems/`:
 systems/
   <root-system>/
     SYSTEM.md
+    STRATEGY.md
     processes/
       brainstorming.md
+      problem-grooming.md
       artifact-validation.md
       outcome-validation.md
     streams/
-    work/
-      PLAN.md
-      LOG.md
+      working-sessions/
+        <session>.md
+    problems/
+      <problem>.md
+      archive/
+    tasks/
+      <selected-or-active-task>.md
+      backlog/
+        <candidate-task>.md
+      archive/
     knowledge/
       README.md
       CHANGELOG.md
@@ -326,9 +474,11 @@ systems/
         ...
 ```
 
-Only `SYSTEM.md`, a durable plan, a work log, the brainstorming process,
-execution and validation definitions, and a compiled-knowledge artifact are
-conceptually required. Empty ceremonial directories add no value.
+Only `SYSTEM.md`, a system strategy, active problem and task files with
+resumable state, the required work-session processes, execution and validation
+definitions, and a compiled-knowledge artifact are conceptually required.
+Create archive directories only when something is actually archived; empty
+ceremonial directories add no value.
 
 Child systems are physically nested under the owning parent's `subsystems/`
 directory. Cross-system relations use stable IDs, not copied folders or
@@ -367,21 +517,24 @@ when their problem requires them. They are not universal framework ceremony.
 
 ## Work-session declarations
 
-APSS currently requires only the `brainstorming` work session. Its declaration
-contains a stable ID, description, and same-named linked process:
+APSS requires `brainstorming` and `problem-grooming`. Each declaration contains
+a stable ID, description, and same-named linked process:
 
 ```yaml
 work_sessions:
   - id: brainstorming
     description: Discuss an idea, task, or research topic with the responsible user and iteratively compile reviewable changes into system knowledge or the system instantiation.
     process: processes/brainstorming.md
+  - id: problem-grooming
+    description: Use the system strategy to revisit current open problems, update their evidence and strategy, and record an authorized retain, revise, address, or close decision.
+    process: processes/problem-grooming.md
 ```
 
 The process owns framing, evidence use, discussion, compilation, iterative user
-review, stopping, and any session-specific constraints. The declaration names a
-repeatable kind of work, not a historical invocation. Other system work remains
-implemented through the existing planning, execution, validation, learning, and
-adaptation declarations; additional work sessions are deliberately deferred.
+review, decision recording, stopping, and any session-specific constraints. The
+declaration names a repeatable kind of work, not a historical invocation. Other
+system work remains implemented through the existing planning, execution,
+validation, learning, and adaptation declarations.
 
 ## Creating a system
 
@@ -391,8 +544,9 @@ adaptation declarations; additional work sessions are deliberately deferred.
 2. **Choose identity and ownership.** Assign a stable ID, select exactly one
    parent, create the capsule under that parent's `subsystems/`, and declare
    cross-system relationships.
-3. **Declare direction.** Write the vision, current goals, constraints, and
-   current strategy.
+3. **Declare direction.** Write the vision and constraints. Define the current
+   goal and system strategy in `STRATEGY.md` beside `SYSTEM.md`, link it from
+   `SYSTEM.md`, and use it to frame and compare current open problems.
 4. **Declare roles and authority.** Name operators, consumers, validators, and
    adaptation approvers. Start human-approved unless autonomy is deliberate and
    justified.
@@ -400,10 +554,12 @@ adaptation declarations; additional work sessions are deliberately deferred.
    acceptance method, intended outcome, and outcome-validation method.
 6. **Declare streams and uncertainty routes.** Name the evidence sources and
    how discussion, research, and experimentation are invoked.
-7. **Implement brainstorming.** Declare the `brainstorming` work session and its
-   same-named process for iterative user discussion and reviewable compilation.
-8. **Implement the full loop.** Add durable planning/work logging, execution,
-   both validations, compilation, adaptation, and continuation/termination.
+7. **Implement required work sessions.** Declare `brainstorming` for iterative
+   user discussion and reviewable compilation and `problem-grooming` for
+   evidence-aware problem decisions. Give each a same-named process.
+8. **Implement the full loop.** Add problem files, task files with resumable
+   state, material session retention, execution, both validations, compilation,
+   adaptation, and continuation or termination.
 9. **Create compiled memory.** Give the system a knowledge artifact and simple
    changelog.
 10. **Visualize and inspect.** Generate or draw the hierarchy, artifact flow,
@@ -424,13 +580,20 @@ example lives at
 An existing system conforms when a reviewer can answer all of these from its
 capsule and referenced sources:
 
-- What problem, vision, and current goal does it own?
+- What system problem and vision does it own, and what current goal is stated in
+  its strategy?
+- Where is its independent system strategy, and how does that strategy guide
+  problem grooming?
+- Which open problems currently obstruct the goal, and which selected tasks
+  implement each problem's strategy?
 - Who owns, operates, consumes, validates, and approves adaptation?
 - What is its primary artifact and intended outcome?
-- How does it plan and retain a work log?
+- How does it groom problems, select tasks, and keep active tasks resumable?
 - What is the complete execution/feedback loop?
 - How does its brainstorming work session discuss and compile changes with the
   responsible user?
+- How does problem grooming retain its evidence, decision, and resulting
+  problem framing without duplicating the raw discussion?
 - How are artifact and outcome validated separately?
 - Which evidence streams does it consume and produce?
 - How can it invoke discussion, research, and experimentation?
@@ -460,10 +623,11 @@ conflict. Detailed conventions and examples are in
 ## What APSS deliberately does not standardize
 
 APSS does not require a particular project-management method, database, wiki
-tool, communication platform, orchestration engine, schedule, work or
-additional work-session taxonomy, compilation algorithm, experiment type, or
-validation technique. Those are strategy decisions made by each system in
-response to its problem, constraints, and available resources.
+tool, communication platform, orchestration engine, schedule, problem-scoring
+method, external problem-management service, work or additional work-session
+taxonomy, compilation algorithm, experiment type, or validation technique.
+Those are strategy decisions made by each system in response to its problem,
+constraints, and available resources.
 
 The framework standardizes the questions that make a problem-solving loop
 complete, observable, improvable, and accountable.

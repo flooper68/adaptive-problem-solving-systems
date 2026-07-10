@@ -4,7 +4,7 @@
 
 Preserve a consumer's experience of APSS as evidence before deciding whether
 the framework or its supporting artifacts should change. A feedback report is
-not a backlog commitment and must not be rewritten to fit a proposed solution.
+not a task commitment and must not be rewritten to fit a proposed solution.
 
 ## When to capture
 

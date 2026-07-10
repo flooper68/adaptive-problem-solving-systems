@@ -53,4 +53,4 @@ communicate while reducing drift from declarations.
 Created as the proposed response to an actionable framework-feedback report.
 The consumer need and existing generation contract are established; scope,
 technical approach, acceptance conditions, and validation participants remain
-for backlog grooming.
+for task grooming.

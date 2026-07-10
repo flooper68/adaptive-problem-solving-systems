@@ -25,6 +25,11 @@ evidence, confounders, failures, and conclusion. Distinguish:
 - evidence that the declared system operated as described; and
 - evidence that adaptation improved a later result.
 
-If outcome evidence is pending, say so in the work log and avoid describing the
-change as proven effective. Delayed outcome validation may close a work item
+When work addresses a current open problem, compare outcome evidence with that
+problem's recorded signal. State whether the problem improved, worsened,
+remained unresolved, or has enough evidence to propose it as solved. Closing a
+problem remains a separate closure decision under declared authority.
+
+If outcome evidence is pending, say so in the task's current state and avoid
+describing the change as proven effective. Delayed outcome validation may close a task
 after artifact release or reopen the strategy when results contradict it.

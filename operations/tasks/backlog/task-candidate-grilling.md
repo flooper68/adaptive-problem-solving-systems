@@ -1,5 +1,5 @@
 ---
-id: apss.backlog-candidate-grilling
+id: apss.task-candidate-grilling
 type: task
 status: captured
 owner: APSS framework maintainer
@@ -7,12 +7,12 @@ created: 2026-07-10
 source: APSS framework maintainer idea intake
 ---
 
-# Define a grilling protocol for backlog candidates
+# Define a grilling protocol for task candidates
 
 ## Idea
 
 Create a structured discussion protocol that helps a person turn an initial
-observation into a well-understood backlog candidate and distinguish ideas,
+observation into a well-understood task candidate and distinguish ideas,
 insights, issues, problems, and proposed solutions.
 
 ## Motivation
@@ -25,17 +25,17 @@ possible next step while preserving the source's original meaning.
 ## Evidence
 
 - At capture,
-  [`operations/processes/backlog-intake.md`](../../processes/backlog-intake.md)
+  [`operations/processes/task-intake.md`](../../processes/task-intake.md)
   defined minimum capture but no interactive elicitation protocol. It now
   includes a short adaptive clarification conversation.
-- [`operations/processes/backlog-grooming.md`](../../processes/backlog-grooming.md)
+- [`operations/processes/task-grooming.md`](../../processes/task-grooming.md)
   defines framing and readiness questions after capture.
 - The normative framework recognizes discussion or grilling as an
   evidence-producing capability and allows source-specific protocols.
 - The later
   [`brainstorming process`](../../processes/brainstorming.md) provides a
   general discussion/grilling protocol. Grooming must determine whether any
-  backlog-specific protocol remains necessary beyond intake clarification.
+  task-specific protocol remains necessary beyond intake clarification.
 
 ## Open questions
 
