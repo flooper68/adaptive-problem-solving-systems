@@ -2,9 +2,10 @@
 
 ## Purpose
 
-Turn a captured idea into an explicit, evidence-aware disposition without
-silently treating it as committed work. Grooming improves decision quality; it
-does not itself authorize a normative framework change.
+Turn a captured candidate action into an explicit, evidence-aware disposition
+without silently treating it as committed work. Grooming improves decision
+quality; it does not itself authorize execution or a normative framework
+change.
 
 ## Invocation and roles
 
@@ -23,11 +24,11 @@ Set `status: grooming` while analysis is materially underway.
 1. **Orient.** Read the item, its source, current framework and examples,
    current plan, compiled knowledge, related backlog items, and relevant work
    history.
-2. **Check identity.** Merge duplicates, split unrelated ideas, and preserve
-   links to their original sources and IDs.
-3. **Frame the need.** State the affected consumer, current problem or
-   opportunity, expected outcome, and why it belongs within this system's
-   boundary.
+2. **Check identity.** Merge duplicate actions, split unrelated actions, and
+   preserve links to their original source records and IDs.
+3. **Frame the response.** State the affected consumer, source problem or
+   opportunity, proposed action, expected outcome, and why it belongs within
+   this system's boundary.
 4. **Classify the effect.** Identify whether it may change the normative
    framework, a supporting example, stewardship operations, or only current
    understanding. One item may affect several, but the distinction must remain
@@ -73,10 +74,11 @@ An item is ready only when a planner can answer:
   pursuing. Preserve the rationale and evidence.
 - `merged` — represented by another durable item. Record the target ID.
 
-`captured` and `grooming` describe work before disposition. When the maintainer
-selects a `ready` item into the durable plan, set it to `planned`; execution may
-then use `in-progress`, `completed`, or `cancelled`. These execution states do
-not replace the work log.
+`captured` and `grooming` describe candidate work before disposition. They do
+not apply to the source reports, insights, questions, issues, or decisions that
+motivated it. When the maintainer selects a `ready` item into the durable plan,
+set it to `planned`; execution may then use `in-progress`, `completed`, or
+`cancelled`. These execution states do not replace the work log.
 
 ## Required durable result
 

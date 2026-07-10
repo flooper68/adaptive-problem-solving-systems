@@ -110,6 +110,14 @@ help its user.
 - **Compiled knowledge** is a reusable synthesis derived from evidence: a wiki,
   playbook, model, set of heuristics, or another knowledge artifact.
 
+A durable record is an implementation choice for retaining one item from or
+about those streams, not another required APSS primitive. Discussion summaries,
+reports, and observations preserve evidence; insights state participant or
+operator inference linked to evidence; questions preserve unresolved
+uncertainty; and approved decisions are decisional artifacts. These roles may
+share one source record or use separate linked records when they need distinct
+lifecycles. Retaining any of them does not by itself make it executable work.
+
 Raw evidence remains available because a later strategy or question may make a
 previously ignored detail important. Compiled knowledge is therefore revisable
 and, where useful, reproducible from old and new evidence. Repository-backed
@@ -130,10 +138,14 @@ the right problem.
 
 ### 2. Plan
 
-Choose the next work and record a durable plan. Every system keeps a work log so
-execution can resume across time, people, or agents. APSS recommends common
-work types—task, issue, insight, question, decision, research, and experiment—
-but does not force a taxonomy.
+Choose the next work and record a durable plan. Planned work is a bounded action
+that can be performed, stopped, and evaluated, such as a task, research inquiry,
+experiment, review, or remediation. APSS does not force a taxonomy. An issue,
+insight, question, or decision may motivate or shape work, or result from it,
+but is not itself planned merely because it was recorded. When a response needs
+execution, create a linked work candidate that states the action and intended
+result. Every system keeps a work log so execution can resume across time,
+people, or agents.
 
 ### 3. Resolve uncertainty
 
@@ -142,7 +154,7 @@ domain-specific protocols:
 
 - **Discussion / grilling** — elicit knowledge, context, trade-offs, or judgment
   from a person or agent. Asynchronous meetings and customer threads qualify;
-  their durable summary becomes an evidence stream.
+  their durable summaries enter declared evidence streams.
 - **Research** — find and synthesize existing external knowledge.
 - **Experimentation** — generate new evidence through prototypes, user trials,
   simulations, benchmarks, feasibility work, formal proof, theorem proving, or

@@ -13,11 +13,14 @@ When an AI agent performs the work, also follow
    assess them through `framework-feedback-grooming.md`. Preserve feedback as
    evidence; when its disposition is actionable, create or link a distinct work
    candidate through `backlog-intake.md`.
-3. Capture other uncommitted ideas through `backlog-intake.md`; groom work
-   candidates through `backlog-grooming.md`.
+3. Conduct and retain material collaborative exploration through
+   `working-session.md`. Keep observations, insights, questions, and decisions
+   distinguishable in their source record. Capture a separate executable
+   response through `backlog-intake.md` only when action is proposed; groom
+   those work candidates through `backlog-grooming.md`.
 4. The maintainer selects ready, bounded work into `operations/work/PLAN.md` and
    confirms owner, acceptance conditions, authority, and validation approach.
-5. Resolve load-bearing uncertainty through declared discussion, research, or
+5. Resolve load-bearing uncertainty through a working session, research, or
    experimentation. Preserve sources and distinguish evidence from inference.
 6. For normative framework work, run
    [`knowledge-compilation.md`](knowledge-compilation.md) to compile the

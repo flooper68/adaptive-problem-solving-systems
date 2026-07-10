@@ -3,6 +3,54 @@
 Durable record of material execution, decisions, deviations, failures, and
 successful resolutions. Detailed file history remains in git.
 
+## 2026-07-10 — working-session capture approved for delivery
+
+- **Status:** reviewed and approved for delivery; changes are uncommitted.
+- **Claim:** Separate working-session evidence and its insights, questions, and
+  decisions from executable backlog work; define a lightweight process for
+  conducting and retaining working sessions; and retain the current maintainer-
+  agent discussion as the first session record.
+- **Acceptance:** APSS distinguishes evidence and decisional records from work;
+  the operations system declares and documents a `working-sessions` stream;
+  backlog intake and grooming apply only to bounded executable candidates; the
+  session process preserves provenance and routes outcomes without silently
+  turning them into commitments; the first record accurately summarizes this
+  discussion; schema, local paths, and Markdown links validate.
+- Added `processes/working-session.md`, which implements the existing APSS
+  discussion/grilling capability as a bounded session with framing,
+  orientation, exploration, explicit outcome classification, participant
+  review, and routing rules.
+- Declared and documented the `working-sessions` stream without adding an
+  exhaustive README index. Added the current maintainer-agent discussion as
+  its first process-driven record with `status: draft` pending this review.
+- Clarified the normative framework boundary among source evidence, inference,
+  uncertainty, decisional artifacts, and executable work. Updated the framework
+  changelog for the semantic change.
+- Narrowed backlog intake and grooming to executable candidate actions. Reports,
+  observations, insights, questions, issues, and decisions stay linked at their
+  source unless an executable response is proposed or directly selected under
+  declared authority.
+- Reclassified eight existing action-shaped backlog candidates from `insight`
+  to `task`; the two bounded research candidates and existing task retain their
+  types. Updated stale evidence in the related backlog-grilling and general-
+  evidence candidates without assigning an unapproved disposition.
+- Validation parsed all Markdown frontmatter, validated both `SYSTEM.md`
+  declarations against the normative schema, resolved declared operations
+  paths, checked repository-relative Markdown links while excluding the two
+  intentionally self-contained historical fixtures, confirmed no backlog item
+  remains `type: insight`, and found no whitespace errors with
+  `git diff --check`.
+- Outcome validation remains limited to this first use: the maintainer
+  confirmed that the process and retained summary look good, while broader
+  usefulness across later sessions remains untested.
+- The maintainer reviewed the process and first session record, confirmed that
+  they look good, and explicitly requested delivery on 2026-07-10. The session
+  is now `retained`.
+- The maintainer supplied follow-up topics about improving insight handling and
+  considering working sessions as a higher-level framework concept. Those ideas
+  remain appended to the source session for later exploration and have not
+  been prematurely converted into feedback, insight, or backlog records.
+
 ## 2026-07-10 — unbounded stream-index feedback delivered
 
 - **Status:** pushed to `origin/main`.

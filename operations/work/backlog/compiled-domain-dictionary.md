@@ -1,6 +1,6 @@
 ---
 id: apss.compiled-domain-dictionary
-type: insight
+type: task
 status: captured
 owner: APSS framework maintainer
 created: 2026-07-10

@@ -1,6 +1,6 @@
 ---
 id: apss.general-evidence-processes
-type: insight
+type: task
 status: captured
 owner: APSS framework maintainer
 created: 2026-07-09
@@ -26,8 +26,10 @@ requiring every system to design basic quality practices from scratch.
 
 - The normative framework identifies research and experimentation as general
   capabilities while explicitly allowing domain-specific protocols.
-- No repository artifact currently defines reusable quality guidance for these
-  capabilities.
+- The operations-specific
+  [`working-session process`](../../processes/working-session.md) now defines a
+  lightweight discussion protocol. No artifact yet establishes reusable,
+  cross-domain quality guidance for all three capabilities.
 - No evidence yet establishes which process patterns are sufficiently general
   across APSS domains.
 

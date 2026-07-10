@@ -1,6 +1,6 @@
 ---
 id: apss.software-and-research-examples
-type: insight
+type: task
 status: captured
 owner: APSS framework maintainer
 created: 2026-07-09

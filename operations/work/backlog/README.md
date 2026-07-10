@@ -1,11 +1,14 @@
 # Framework stewardship backlog
 
-This directory contains durable ideas that have not yet been selected into the
-current plan. Presence here does not imply commitment or priority.
+This directory contains executable candidate actions that have not yet been
+selected into the current plan. Presence here does not imply commitment or
+priority.
 
-Use [backlog intake](../../processes/backlog-intake.md) to capture a new idea and
-[backlog grooming](../../processes/backlog-grooming.md) to clarify it and assign
-an approved disposition.
+Use [backlog intake](../../processes/backlog-intake.md) to capture a proposed
+action and [backlog grooming](../../processes/backlog-grooming.md) to clarify it
+and assign an approved disposition. Reports, observations, insights, questions,
+issues, and decisions remain in their source records; backlog entries link them
+when an executable response is proposed.
 
 ## States
 

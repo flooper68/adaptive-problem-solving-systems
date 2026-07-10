@@ -3,6 +3,14 @@
 Simple history of material framework changes. Git remains the detailed audit
 trail.
 
+## 2026-07-10 — evidence records and executable work
+
+Clarified that discussion summaries, insights, questions, and decisions are
+durable evidence, inference, uncertainty, or decisional records rather than
+work merely because they are retained. Durable plans contain bounded actions
+that can be performed and evaluated; executable responses link back to the
+records that motivated them.
+
 ## 2026-07-10 — validation process placement
 
 Clarified the conventional capsule layout by placing artifact- and

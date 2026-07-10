@@ -20,10 +20,13 @@ tests or with the work that produces it.
   [work log](operations/work/LOG.md) — committed work and durable execution
   history.
 - [Backlog](operations/work/backlog/README.md) — captured, ready, or deferred
-  ideas that have not been selected into the current plan.
+  executable candidates that have not been selected into the current plan.
 - [Backlog intake](operations/processes/backlog-intake.md) and
-  [grooming](operations/processes/backlog-grooming.md) — the path from an idea
-  to an explicit disposition and possible planning commitment.
+  [grooming](operations/processes/backlog-grooming.md) — the path from a
+  proposed action to an explicit disposition and possible planning commitment.
+- [Working sessions](operations/processes/working-session.md) — conduct and
+  retain bounded discussions or brainstorming without conflating their
+  insights, questions, decisions, and candidate actions.
 - [Framework feedback intake](operations/processes/framework-feedback-intake.md)
   and [grooming](operations/processes/framework-feedback-grooming.md) — report
   an experience with APSS, preserve it as evidence, and decide whether it

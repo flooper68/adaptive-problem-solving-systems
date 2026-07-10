@@ -6,9 +6,9 @@ the detailed provenance record for repository changes.
 
 ## Stewardship work
 
-Backlog items, the current plan, and the work log preserve ideas, dispositions,
-decisions, execution history, and gaps. They are operational evidence, not
-normative framework content. The initial APSS
+Backlog items, the current plan, and the work log preserve candidate actions,
+dispositions, decisions made during execution, execution history, and gaps.
+They are operational evidence, not normative framework content. The initial APSS
 [source discussion](../work/initial-framework-discussion.md) and its retained
 [compiled output](../work/initial-framework-definition.md) provide separate
 input and expected-output fixtures for a compilation replay. Later-discovered
@@ -16,6 +16,15 @@ contemporaneous source material may be added to the same stream; retrospective
 recollections must be labelled as reconstructions rather than original records.
 Sealed compilation candidates and their provenance reports are retained under
 [`../work/compilations/`](../work/compilations/).
+
+## Working sessions
+
+Bounded meetings, discussions, brainstorming exchanges, and asynchronous
+working threads are retained in the [`working-sessions/`](working-sessions/)
+stream through the
+[working-session process](../processes/working-session.md). A session may
+contain observations, insights, questions, decisions, and candidate actions,
+but only an explicitly created response enters the executable backlog.
 
 ## Framework usage
 
