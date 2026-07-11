@@ -165,6 +165,13 @@ signal permitted by [`ai-agent-tasks.md`](ai-agent-tasks.md); it approves
 faithful capture and delivery, not the insight's truth, priority, disposition,
 or adoption.
 
+When the current branch is `main`, this approval explicitly includes pushing
+the bounded insight commit directly to `origin/main`. The agent should not
+create a delivery branch or request separate confirmation solely because
+`main` is the repository's default or shared branch. Repository protections,
+failed validation, non-fast-forward state, or inability to isolate the bounded
+changes remain blockers and must not be bypassed.
+
 If the source is not authorized to approve repository delivery, review was
 unavailable, unrelated working-tree changes cannot be safely excluded, or the
 push fails, do not infer approval or broaden the commit. Preserve the record,
