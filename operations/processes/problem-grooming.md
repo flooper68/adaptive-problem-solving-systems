@@ -22,6 +22,22 @@ An operator may gather evidence, facilitate review, and propose updates. The
 APSS framework maintainer approves problem reframing, work selection, accepted
 risk, and closure.
 
+## Strategy scope
+
+Keep strategy changes at the smallest level supported by their evidence:
+
+- The **system strategy** states the goal-level approach that guides problem
+  discovery, comparison, and selection across the system. Change it only when
+  the system's overall approach to its current goal should change.
+- A **problem strategy** states how the system will resolve or reduce one open
+  problem. Put problem-specific decomposition, task sequencing, experiments,
+  and validation there.
+
+Before editing the system strategy, name which other current or future problems
+the proposed change should guide. If the answer is only the problem being
+groomed, update that problem's strategy instead. Do not generalize a useful
+method from one problem without evidence that it belongs at system scope.
+
 ## Procedure
 
 1. **Frame the session.** Name the current goal, the problem or bounded set of
@@ -37,6 +53,8 @@ risk, and closure.
    - whether the statement describes the gap without embedding a solution;
    - whether the problem strategy follows the system strategy and remains
      supported by evidence;
+   - whether proposed strategy changes are scoped to this problem or genuinely
+     change the system's goal-level approach;
    - whether the desired change and signal can distinguish activity from
      improvement; and
    - whether its impact and urgency justify work now relative to other open

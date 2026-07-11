@@ -26,3 +26,8 @@ participation through its clarification or review stopping point as approval to
 commit and push that insight record. Such a signal applies only to the artifact
 and delivery scope named by the specialized process; it does not approve
 unrelated changes or later normative adoption.
+
+[`Brainstorming`](brainstorming.md) treats the maintainer's acceptance of its
+reviewed result or explicit request to finish or end the session as approval to
+commit the bounded session changes and push them to `origin/main`. An unresolved
+question, pause, silence, or request to review the diff is not that signal.

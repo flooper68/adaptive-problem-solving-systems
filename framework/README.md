@@ -257,6 +257,11 @@ changed direction or constraints, or completed work reveals a gap. Feedback is
 evidence, not an automatic problem: problem grooming interprets the evidence and
 frames the condition without embedding a preferred solution.
 
+An open problem is the long-running unit of improvement. It may remain open
+across many working sessions and tasks while its evidence, signal, and strategy
+evolve. Do not turn the whole desired change of a problem into one umbrella
+task.
+
 Groom a problem by asking:
 
 1. Which current goal does it obstruct or threaten?
@@ -299,9 +304,15 @@ created: YYYY-MM-DD
 <What has happened, what remains uncertain, and the next step.>
 ```
 
-A task is any bounded executable response, including implementation, research,
-experiment, discussion, review, or remediation. Status in the task file makes
-its state explicit. Keep `selected`, `in-progress`, and `awaiting-review`
+A task is a bounded executable response that implements or tests part of an
+open problem's strategy, including implementation, research, experiment,
+discussion, review, or remediation. Prefer a task that produces one inspectable
+result in one working session. If it contains several independently reviewable
+results or stopping points, split it before selection. A task must not duplicate
+the whole problem or depend on problem closure as its own stop condition.
+
+Status in the task file makes its state explicit. Keep `selected`,
+`in-progress`, and `awaiting-review`
 tasks directly under `tasks/`; keep `captured`, `grooming`, `ready`, and
 `deferred` candidates under `tasks/backlog/`; move closed, cancelled,
 rejected, merged, or superseded tasks under `tasks/archive/` with their final

@@ -3,6 +3,14 @@
 Simple history of material framework changes. Git remains the detailed audit
 trail.
 
+## 2026-07-11 — problem and task scope clarification
+
+Clarified that an open problem is the long-running unit of improvement and may
+span many sessions and tasks. A task implements or tests one bounded part of a
+problem strategy and should preferably produce one inspectable result in one
+working session. Umbrella work that duplicates the problem or contains several
+independent stopping points should be split before selection.
+
 ## 2026-07-10 — goal-linked open problems and normative vocabulary
 
 Added a lightweight problem layer between the current goal and executable

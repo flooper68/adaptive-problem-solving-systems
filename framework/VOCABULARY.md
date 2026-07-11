@@ -74,6 +74,10 @@ remain there until closed or otherwise inactive. They do not become child
 systems unless they receive an independent boundary, ownership, artifact, and
 complete adaptive lifecycle.
 
+An open problem may remain relevant across many working sessions and tasks. It
+owns the long-running evidence, desired change, signal, and strategy; it is not
+an executable work package.
+
 ### Problem file
 
 The authoritative current record for one open problem: its stable ID, affected
@@ -93,6 +97,12 @@ A bounded executable response stored as one file under `tasks/`, such as
 implementation, research, experiment, discussion, review, or remediation. Its
 file states its status, addressed problems, intended result, approach, owner,
 stop condition, current state, and next step.
+
+A task implements or tests part of an open problem's strategy; it does not
+duplicate the whole problem or use problem closure as its own scope. Prefer a
+task small enough to produce one inspectable result in one working session. If
+it contains several independently reviewable results or stopping points, split
+it before selection.
 
 ### Task collection
 

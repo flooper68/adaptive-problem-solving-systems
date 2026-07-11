@@ -40,7 +40,10 @@ Set `status: grooming` while analysis is materially underway.
    separately.
 6. **Shape candidate work.** Describe the smallest coherent change or inquiry,
    affected artifacts, dependencies, risks, validation approach, and an owner.
-   Split work that cannot be evaluated or completed as one bounded result.
+   Prefer work that can produce one inspectable result in one working session.
+   Split work that has several independently reviewable results or stopping
+   points, duplicates the whole open problem, or cannot be evaluated as one
+   bounded result.
 7. **Check readiness.** Apply the readiness questions below. Unanswered
    questions are allowed only when the task approach explicitly resolves them
    before they become dangerous or expensive.
@@ -61,7 +64,9 @@ An item is ready only when the responsible operator can answer:
 - How does the work implement or test that problem's strategy?
 - What consumer problem or opportunity are we addressing?
 - What observable outcome would make the work worthwhile?
-- Is the proposed scope bounded enough for one task?
+- Can the task produce one inspectable result in one working session?
+- Does it implement or test a bounded part of the problem strategy rather than
+  duplicate the whole problem or depend on problem closure?
 - Which normative artifact, example, or operating process may change?
 - What evidence supports acting now, and what remains assumption?
 - Which discussion, research, or experiment is still necessary?

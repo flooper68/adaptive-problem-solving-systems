@@ -8,8 +8,6 @@ participants: [APSS framework maintainer, Codex operator]
 source: Maintainer-agent discussion in the current Codex task
 related_problems:
   - P1
-related_tasks:
-  - apss.finish-mvp
 ---
 
 # Define open problems and simplify the APSS MVP
@@ -48,7 +46,6 @@ reviewable top-down model that the maintainer can understand and operate.
 - [Framework vocabulary](../../../framework/VOCABULARY.md)
 - [Operations strategy](../../STRATEGY.md)
 - [P1](../../problems/p1-finish-mvp-and-run-loop.md)
-- [MVP task](../../tasks/finish-mvp.md)
 - [CNC example](../../../examples/cnc-part-production/SYSTEM.md)
 
 ## Stopping point

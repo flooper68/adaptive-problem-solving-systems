@@ -62,18 +62,50 @@ run one complete loop now, simplify it until the maintainer can understand and
 use the whole process, and defer the rest. Add complexity later only when more
 use or feedback demonstrates a need for it.
 
-Refine the MVP from top to bottom:
+Inventory the concepts that the normative framework actually defines or
+requires, order them from top to bottom by conceptual dependency, and review
+them one at a time. For each concept, establish the smallest clear definition,
+boundary, relationships, ownership, and—only when it owns durable identity or
+state—lifecycle needed by the complete loop. Retain, simplify, merge, demote,
+defer, or remove it, then propagate the decision through every affected
+normative and supporting surface.
 
-1. clarify the system goal and system strategy;
-2. clarify active problems, their strategies, signals, and grooming;
-3. simplify selected-work and task processes so they implement those problem
-   strategies;
-4. finish execution, artifact and outcome validation, learning, and adaptation;
-   and
-5. retain supporting structure only when the complete loop needs it.
+This is an order of review, not a one-way waterfall. A lower-level review or
+attempted run may reopen an upstream concept.
 
-This is the order of review, not a one-way waterfall. Evidence from a lower
-layer may reopen and revise an upstream problem or strategy.
+### Concept review test
+
+For each concept, determine:
+
+- its concise meaning and purpose in the complete loop;
+- what it is distinct from and which concepts it depends on;
+- which lower-level concepts depend on it;
+- whether it owns durable identity or state and therefore needs a lifecycle;
+- when applicable, what creates, changes, completes, closes, replaces, or
+  reopens it, and who authorizes those transitions;
+- where its authoritative state lives and what evidence validates it; and
+- whether the first complete loop can operate coherently without it.
+
+Avoid creating lifecycle machinery for concepts that are only properties,
+relationships, activities, outputs, assessments, or transitions.
+
+### Validation strategy
+
+Validate the simplified model in three independent ways:
+
+1. Run one real need through a complete loop into an approved adaptation and a
+   subsequent operation changed by that learning.
+2. Give the framework to a reviewer without the session's unstated context and
+   ask them to explain its concepts, relationships, and lifecycles, apply it,
+   and identify avoidable complexity.
+3. Adversarially search for overlapping or circular definitions, multiple
+   sources of truth, ownerless state, unjustified lifecycle machinery,
+   ceremonial artifacts or processes, undefined transitions, unsupported
+   future machinery, and confusion between artifact completion and outcomes.
+
+P1 is not solved merely because its files and schema are consistent. The model
+must survive use, teach-back, and adversarial review, and its learning must
+change a later run.
 
 ## Grooming history
 
@@ -141,10 +173,10 @@ the system strategy, open gaps belong to one problem file each, and executable
 commitments belong to one task file each. A separate `PLAN.md` duplicated that
 state and created synchronization work.
 
-Decision: remove the plan artifact. The [MVP task](../tasks/finish-mvp.md) is
-`in-progress` and addresses P1; candidate and deferred responses live beside
-it under `tasks/` with explicit statuses. This simplifies the P1 surface while
-preserving goal → problem → task traceability.
+Decision: remove the plan artifact. Selected and active responses live under
+`tasks/`; candidate and deferred responses live under `tasks/backlog/` with
+explicit statuses. This simplifies the P1 surface while preserving goal →
+problem → task traceability.
 
 ### 2026-07-10 — generic work log removed and task lifecycle made physical
 
@@ -162,3 +194,25 @@ current state and next step so operators do not need a log to resume.
 The system strategy moved from `processes/strategy.md` to sibling
 `STRATEGY.md`: it defines system-level direction and informs processes rather
 than being one of them.
+
+### 2026-07-11 — concept-by-concept simplification strategy accepted
+
+Source: [conceptual simplification strategy session](../streams/working-sessions/2026-07-11-conceptual-simplification-strategy.md).
+
+The maintainer refined the top-down approach around the framework's
+existing concepts: inventory them, order them by dependency, then define and
+prune them one at a time. Lifecycle machinery is required only for concepts
+with durable identity or state; other concepts should remain ordinary
+properties, relationships, activities, outputs, assessments, or transitions.
+
+The validation combines a complete live loop, explanation and
+teach-back without unstated session context, and adversarial review for hidden
+or unnecessary complexity.
+
+The maintainer also identified that the prior umbrella task duplicated P1 and
+was too large for one working session. It was deleted rather than archived.
+P1 now owns the long-running result and strategy; selected tasks own one
+bounded, session-sized response. The current review supplied enough evidence to
+create one task for every concept identified so far. The system concept review
+is selected; the remaining concept reviews are ready and will be selected in
+dependency order.

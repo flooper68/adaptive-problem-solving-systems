@@ -28,10 +28,19 @@ the result reaches an accepted stopping point.
 6. **Review iteratively.** Present the changes to the maintainer, incorporate
    corrections and further ideas, and repeat exploration and compilation as
    needed. Do not infer approval from exploratory language or silence.
-7. **Close.** Stop when the maintainer accepts the result, explicitly ends the
-   session, or leaves a clear unresolved question or next trigger. Follow the
-   system's declared authority before committing, publishing, or using an
-   adaptation.
+7. **Resolve the stopping point.** If the maintainer leaves an unresolved
+   question or next trigger without accepting the result, record a handoff and
+   leave the changes uncommitted. If the maintainer accepts the result or
+   explicitly asks to finish or end the session, treat that statement as the
+   bounded approval signal for the reviewed session scope.
+8. **Deliver an accepted session.** Run relevant validation, stage only the
+   session-scoped changes, commit them, and push the approved commit to
+   `origin/main`. Record the commit in the working-session record and then set
+   it to `retained` with its close date. A repository-backed session is not
+   finished while its accepted changes exist only in the working tree. If
+   validation, isolation, repository protection, or the push blocks delivery,
+   record the blocker and leave the session awaiting delivery rather than
+   claiming it is closed.
 
 ## Evidence and retention
 
@@ -39,5 +48,5 @@ Raw evidence remains in its source streams. Git provides the reviewable diff and
 accepted history; the compiled artifact's changelog summarizes material
 knowledge changes. Retain one working-session record with participants,
 affected problems and tasks, material decisions, changed artifacts, and the
-stopping point. Link independently managed insights or decisions rather than
-duplicating their full content.
+stopping point and, when accepted, its delivered commit. Link independently
+managed insights or decisions rather than duplicating their full content.
