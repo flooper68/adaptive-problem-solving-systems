@@ -1,11 +1,13 @@
 ---
 id: apss.review-work-session
 type: review
-status: awaiting-delivery
+status: closed
 owner: APSS framework maintainer
 created: 2026-07-11
+closed: 2026-07-11
 addresses: [P1]
 source: Maintainer observation after ending the conceptual simplification session
+delivery: 6702230
 ---
 
 # Review the work session concept
@@ -31,5 +33,5 @@ finished.
 
 ## Current state
 
-The maintainer accepted the process changes and asked to finish the session.
-Validation, commit, and push to `origin/main` are in progress.
+Closed. The maintainer accepted the process change, and commit `6702230`
+delivered the reviewed session scope to `origin/main`.

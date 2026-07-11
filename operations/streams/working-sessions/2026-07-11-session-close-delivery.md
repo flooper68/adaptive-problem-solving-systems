@@ -1,9 +1,11 @@
 ---
 id: apss.session.session-close-delivery
 type: working-session
-status: awaiting-delivery
+status: retained
 recorded: 2026-07-11
 accepted: 2026-07-11
+closed: 2026-07-11
+delivery: 6702230
 participants: [APSS framework maintainer, Codex operator]
 source: Maintainer feedback after ending the prior session
 related_problems:
@@ -38,5 +40,5 @@ recorded.
 ## Current stopping point
 
 The maintainer accepted the process improvement and explicitly asked to finish
-the session. Delivery of the complete reviewed scope to `origin/main` is now in
-progress; the session remains awaiting delivery until the push succeeds.
+the session. Commit `6702230` delivered the complete reviewed scope to
+`origin/main`, exercising the new close rule successfully.

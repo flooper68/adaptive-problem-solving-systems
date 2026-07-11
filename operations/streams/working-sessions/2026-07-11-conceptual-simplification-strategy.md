@@ -4,6 +4,7 @@ type: working-session
 status: retained
 recorded: 2026-07-11
 closed: 2026-07-11
+delivery: 6702230
 participants: [APSS framework maintainer, Codex operator]
 source: Maintainer-agent discussion in the current Codex task
 related_problems:
@@ -80,5 +81,5 @@ identified so far. The system concept review is selected; the remaining reviews
 are ready and will be selected one at a time in dependency order.
 
 The maintainer ended the session at this accepted stopping point. Its changes
-are included in the delivery scope of the linked session-close improvement; the
-next concept session starts with the selected system-concept review.
+were delivered to `origin/main` in commit `6702230`; the next concept session
+starts with the selected system-concept review.
