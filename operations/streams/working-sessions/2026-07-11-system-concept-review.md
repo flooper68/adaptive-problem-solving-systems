@@ -1,12 +1,13 @@
 ---
 id: apss.session.system-concept-review
 type: working-session
-status: active
+status: awaiting-delivery
 recorded: 2026-07-11
 participants: [APS framework maintainer, Codex operator]
 source: Maintainer-agent discussion in the current Codex task
 related_problems: [P1]
 related_tasks: [apss.review-system-concept]
+pending_delivery: a636d22
 ---
 
 # Review the adaptive problem-solving system concept
@@ -507,6 +508,13 @@ Markdown links, removed-file and terminology scans, and diff whitespace.
 
 Delivery is in progress. After the reviewed commit is pushed to `origin/main`,
 record its reference, retain this session, and close and archive the task.
+
+Commit `a636d22` contains the accepted reviewed scope. Its push to `origin/main`
+was blocked by the safety reviewer because the external GitHub remote
+`git@github.com:flooper68/adaptive-problem-solving-systems.git` could not be
+established as trusted and pushing would transmit private workspace contents.
+The session remains awaiting delivery pending the maintainer's explicit
+approval after this risk notice.
 
 ## Main process filename
 

@@ -75,3 +75,8 @@ review.
 The maintainer accepted the reviewed session and explicitly requested delivery
 on 2026-07-12. Final verification passes. Next: commit and push the reviewed
 scope, then close and archive this task with its delivery reference.
+
+Commit `a636d22` contains the accepted scope. The push to the external GitHub
+remote was blocked because its trust could not be established and it would
+transmit private workspace contents. Await explicit maintainer approval after
+the risk notice, then push, close, and archive the task.
