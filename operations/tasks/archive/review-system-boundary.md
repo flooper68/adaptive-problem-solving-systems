@@ -1,10 +1,12 @@
 ---
 id: apss.review-system-boundary
 type: review
-status: awaiting-review
+status: closed
 owner: APS framework maintainer
 agent: Codex operator
 created: 2026-07-11
+closed: 2026-07-12
+delivery: 731f6ae
 addresses: [P1]
 source: Conceptual simplification strategy session
 ---
@@ -56,10 +58,13 @@ boundary section is removed. The root repository README remains the
 authoritative orientation to the repository's `framework/` and `operations/`
 parts.
 
-Current stopping point: compiled changes are awaiting maintainer review.
 Immediate validation passes: `SYSTEM.md` retains every required declaration
 field; all declared strategy, loop, verification, work-session, and stream
 process paths resolve; the active task still references P1; the removed prose
 remains available without duplication in the root README; terminology scans
 show no required boundary field or standalone vocabulary concept; and
 `git diff --check` passes.
+
+The maintainer accepted the reviewed disposition and asked to finish the
+session on 2026-07-12. Commit `731f6ae` contains the accepted framework change.
+This task is closed and archived.

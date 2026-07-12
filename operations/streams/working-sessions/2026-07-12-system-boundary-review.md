@@ -1,8 +1,11 @@
 ---
 id: apss.session.system-boundary-review
 type: working-session
-status: active
+status: retained
 recorded: 2026-07-12
+accepted: 2026-07-12
+closed: 2026-07-12
+delivery: 731f6ae
 participants: [APS framework maintainer, Codex operator]
 source: Maintainer-agent discussion in the current Codex task
 related_problems: [P1]
@@ -32,9 +35,9 @@ questions left to their own downstream reviews.
 - The [declaration contract](../../../framework/SCHEMA.md) does not require a
   boundary field. It permits a short boundary explanation only when needed to
   explain why the declared unit is independently useful.
-- [Framework Operations](../../SYSTEM.md#boundary) uses a local boundary section
-  to distinguish the operating system, its framework output, the containing
-  repository, and external APS applications.
+- The [Framework Operations declaration](../../SYSTEM.md) used a local boundary
+  section at the start of this review to distinguish the operating system, its
+  framework output, the containing repository, and external APS applications.
 
 Current interpretation: the framework does not yet define system boundary as
 an independent vocabulary concept, durable object, or declaration field.
@@ -86,3 +89,10 @@ retains the removed repository-orientation information; current terminology
 requires neither a boundary field nor a standalone vocabulary concept; and
 `git diff --check` passes. The uncommitted proposal is awaiting maintainer
 review.
+
+## Acceptance and delivery
+
+The maintainer accepted the demotion and removals and asked to finish the
+session on 2026-07-12. Final immediate verification passed. Commit `731f6ae`
+contains the accepted framework, task, and working-session scope; the task is
+closed and archived, and the accepted sequence is delivered to `origin/main`.
