@@ -1,7 +1,7 @@
 ---
 id: apss.insight.goals-decompose-into-open-problems
 type: insight
-status: provisional
+status: contested
 captured: 2026-07-10
 source: APSS framework maintainer
 source_records: []
@@ -232,3 +232,20 @@ shape, or lifecycle had been established.
   records own material interaction history. No generic work log remains.
 - **Disposition:** remains `provisional` until the maintainer completes and
   understands the whole loop using this structure.
+
+### 2026-07-12 — goal mechanism contested; problem decomposition retained
+
+- **New evidence:** while preparing the system-problem review, the maintainer
+  reported that the goal → open problem → task model did not produce a clear
+  hierarchy and that goal appeared redundant with each problem's desired change
+  and strategy. See the
+  [feedback report](../framework-feedback/2026-07-12-problem-hierarchy-and-goal-ambiguity.md).
+- **Inference audit:** the original observation supports an evolving problem
+  decomposition between the root problem and tasks, but it does not establish
+  that a separate goal is needed to mediate that hierarchy.
+- **Decision and compilation:** the maintainer removed goal and retained the
+  narrower system problem → smaller problems → tasks model. Every problem has a
+  strategy; task results and learning may revise the hierarchy.
+- **Disposition:** `contested` for the original goal-specific claim. Its
+  problem-decomposition core remains useful and is compiled in revised form;
+  the mechanism named by the title is no longer current APS knowledge.

@@ -1,5 +1,5 @@
 ---
-id: apss.review-problem-grooming
+id: apss.review-open-problem
 type: review
 status: ready
 owner: APS framework maintainer
@@ -8,11 +8,11 @@ addresses: [P1]
 source: Conceptual simplification strategy session
 ---
 
-# Review the problem grooming concept
+# Review the open problem concept
 
 ## Intended result
 
-Give problem grooming the smallest clear definition, boundary, relationships, ownership,
+Give open problem the smallest clear definition, boundary, relationships, ownership,
 and lifecycle needed by the complete loop.
 
 ## Approach
@@ -28,4 +28,8 @@ and downstream questions are captured without expanding this task.
 
 ## Current state
 
-Ready. Select when its higher-level dependencies have been reviewed.
+Ready. The
+[system-problem review](../streams/working-sessions/2026-07-12-system-problem-review.md)
+established that an open problem is a smaller problem in the hierarchy and that
+`open` and `closed` are its only lifecycle states. Review remaining open-problem
+identity and representation details after the hierarchy dependency is accepted.

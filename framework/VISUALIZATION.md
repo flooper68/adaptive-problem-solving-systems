@@ -10,25 +10,30 @@ views plus a repeatable local-system motif.
 
 ## 1. Problem decomposition
 
-Purpose: answer “which larger problems have been decomposed to other systems?”
+Purpose: answer “how has the root system problem been decomposed, and which
+smaller problems have been delegated to child systems?”
 
-Derive edges from links in problem definitions, strategies, or processes. Keep
-the first view to roughly six to eight systems, then allow readers to zoom into
-a selected problem branch.
+Derive within-system edges from whatever decomposition relationships the
+system's process declares. Derive child-system edges from delegation links in
+problem definitions, strategies, or processes. Keep the first view to roughly
+six to eight nodes, then allow readers to zoom into a selected problem branch.
 
 ```mermaid
 flowchart TB
-    root["Product system"]
-    delivery["Delivery system"]
-    quality["Quality system"]
-    devLoop["Development-loop system"]
+    root["System problem + strategy"]
+    delivery["Delivery problem + strategy"]
+    quality["Quality problem + strategy"]
+    devLoop["Development-loop problem + strategy"]
+    child["Child system\nroot problem + strategy"]
 
-    root -->|"delivery problem"| delivery
-    root -->|"quality problem"| quality
-    delivery -->|"development-loop problem"| devLoop
+    root --> delivery
+    root --> quality
+    delivery --> devLoop
+    quality -.->|"delegated"| child
 ```
 
-Node labels contain the system name; edges identify the decomposed problem.
+Node labels name the problem and may include the owning system where needed.
+Edges identify decomposition; delegated edges identify child-system ownership.
 Detail views may add relevant verification signals; do not fill the orientation
 map with unrelated streams and process detail.
 
@@ -42,8 +47,8 @@ feedback when it materially closes the loop.
 
 ```mermaid
 flowchart LR
-    direction["Direction\nartifact: current goal and system strategy"]
-    planning["Planning\nartifacts: problem and task files"]
+    direction["Direction\nartifact: system problem and strategy"]
+    planning["Planning\nartifacts: problem and task state"]
     delivery["Delivery\nartifact: completed output"]
     consumer["Consumer"]
     learning["Outcome learning\nartifact: validated insight"]
@@ -95,9 +100,9 @@ flowchart LR
     review --> brainstorming
 
     inputStreams --> grooming["Problem grooming"]
-    problemFiles["Active problem files"] --> grooming
-    tasks["Current task files"] --> grooming
-    grooming --> problemFiles
+    problems["Active problem state"] --> grooming
+    tasks["Current task state"] --> grooming
+    grooming --> problems
     grooming --> tasks
     grooming --> session["Working-session record"]
 ```
@@ -110,13 +115,15 @@ Every system can be understood through the same compact model:
 
 ```mermaid
 flowchart LR
-    problem["System problem"] --> goal["Current goal"]
-    goal --> openProblem["Open problem + strategy"]
-    openProblem --> process["Adaptive execution loop"]
+    problem["System problem + strategy"] --> openProblem["Smaller problem + strategy"]
+    openProblem --> smallerProblem["Further decomposed problem + strategy"]
+    smallerProblem --> process["Adaptive execution loop"]
     process --> attempt["Solution attempt"]
     attempt --> verification["Verification"]
     verification --> learning["Evidence → knowledge → adaptation"]
+    learning --> problem
     learning --> openProblem
+    learning --> smallerProblem
 ```
 
 ## Generation contract
@@ -127,7 +134,7 @@ rather than maintaining a second required-field list:
 
 | View | Fields |
 |---|---|
-| Problem decomposition | System `name` plus links in problem definitions, strategies, or processes |
+| Problem decomposition | System problem, system-defined problem relationships and strategies, plus child-system links in problems, strategies, or processes |
 | Artifact flow | Contextual artifacts and consumers named by the linked processes or problems |
 | Learning | `process`, `streams`, and linked learning or adaptation sources |
 | Work-session processing | `work_sessions.*`, `streams`, and linked processes |

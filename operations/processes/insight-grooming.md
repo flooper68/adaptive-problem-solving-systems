@@ -47,10 +47,13 @@ record with provenance.
    is scoped to the assessed claim and evidence, not a universal truth label.
 7. **Route without conflating.** Link supported or explicitly provisional
    insights into [`knowledge compilation`](knowledge-compilation.md) when
-   relevant. Create separate work through
-   [`task intake`](task-intake.md) only for an executable response, link
-   an authorized decision to its decisional artifact, and leave the insight
-   unchanged when no propagation is warranted.
+   relevant. When an insight reveals an unrepresented higher-level gap, propose
+   it to [`problem grooming`](problem-grooming.md); insight grooming does not
+   open the problem itself. Create separate work through
+   [`task intake`](task-intake.md) only for an executable response; do not
+   select it until an open problem represents the gap. Link an authorized
+   decision to its decisional artifact, and leave the insight unchanged when no
+   propagation is warranted.
 8. **Close the loop.** Record source acknowledgment, disagreement, or
    unavailable review. Later evidence may reopen grooming without deleting the
    previous assessment.

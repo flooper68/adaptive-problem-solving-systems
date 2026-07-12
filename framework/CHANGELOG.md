@@ -3,6 +3,80 @@
 Simple history of material framework changes. Git remains the detailed audit
 trail.
 
+## 2026-07-12 — goal removed and problem hierarchy clarified
+
+Removed `goal` as a separate APS concept because it duplicated the desired
+change already carried by problems and obscured the relationship among problem
+and strategy. Defined problem generally and made the system problem the root of
+an evolving hierarchy. Evidence and learning decompose it into smaller open
+problems, each with its own desired change, signal, and strategy; tasks perform
+bounded attempts on those strategies and return evidence to the loop. Added
+Framework Operations and P1 as a worked example and delegated child systems
+only when a decomposed problem receives its own boundary and complete loop.
+Left the representation of relationships among smaller problems to each
+system's process: APS requires neither parent fields nor a strict tree.
+
+Defined the minimal problem lifecycle as `open` and `closed`. Tasks supply
+attempt and result evidence but never change problem state merely by finishing.
+Verification compares that evidence with the problem signal. `Solved` remains
+an evidence-based assessment supporting a separate authorized closure decision;
+new evidence may reopen a closed problem.
+
+Separated problem discovery from creation authority. Streams and processes
+retain their own observations, issues, results, and insights; source-specific
+grooming may propose higher-level problems; problem grooming alone decides
+whether to open, merge, revise, defer, or reject those proposals.
+
+Required each problem's chosen system of record to retain a concise history of
+material decisions and their evidence and authority: opening, meaningful
+reframing, strategy or signal changes, closure, and reopening. Routine task
+activity and detailed source evidence remain in their own records.
+
+Required problem-set re-evaluation without prescribing a heartbeat or cadence.
+Each system may implement problem grooming through events, a schedule such as
+cron, continuous processing, or a mixed approach.
+
+Made the evolving problem hierarchy APS's adaptive planning structure and
+separated its maintenance from executable-work grooming. Problem grooming acts
+on proposed and existing problems; task grooming shapes bounded responses and
+their readiness for selection. Systems may combine them operationally but must
+preserve their distinct decisions and authority.
+
+Removed the normative problem-file schema, `problems/` layout, archive path,
+and prescribed identifiers and fields. APS retains only the logical problem
+concepts and recoverability responsibilities; each system chooses its tools,
+views, record shape, and storage.
+
+Made the root system problem constitutive and stable. Clarification and evolving
+interpretation belong to system strategy, while learning revises smaller
+problems and their decomposition. APS defines no root-problem replacement
+transition.
+
+Added recommended process-design questions for surprising outcomes, unexpected
+time or resource use, and regression in the verification value function.
+Processes specialize when and how to ask them; positive answers preserve raw
+evidence for interpretation and later recompilation but do not automatically
+create problems.
+
+Added lightweight learning guidance for material decisions and course
+corrections: compare expected effects with later signals or outcomes, assess
+help or harm, and retain a brief causal hypothesis only when it may inform
+future work. Alternatives and challenging evidence are included only when
+material rather than required as grooming ceremony.
+
+## 2026-07-12 — task organization delegated to each system
+
+Removed normative task-file, folder-layout, and fixed lifecycle-state rules.
+APS defines the task and traceability responsibilities while each system's
+process chooses its task system of record and organization, such as repository
+files, Jira, GitHub, Linear, or a database. Framework Operations separately
+flattened its current task files into `operations/tasks/` and retained
+`operations/tasks/archive/` for inactive material.
+
+Clarified that a task is actual bounded work that iterates on a problem's
+solution, processes information into an inspectable attempt or result, and
+supplies execution and result evidence to verification and future learning.
+
 ## 2026-07-11 — framework renamed to APS
 
 Renamed the method from Adaptive Problem-Solving Systems (APSS) to Adaptive

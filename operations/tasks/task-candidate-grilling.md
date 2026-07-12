@@ -25,15 +25,15 @@ possible next step while preserving the source's original meaning.
 ## Evidence
 
 - At capture,
-  [`operations/processes/task-intake.md`](../../processes/task-intake.md)
+  [`operations/processes/task-intake.md`](../processes/task-intake.md)
   defined minimum capture but no interactive elicitation protocol. It now
   includes a short adaptive clarification conversation.
-- [`operations/processes/task-grooming.md`](../../processes/task-grooming.md)
+- [`operations/processes/task-grooming.md`](../processes/task-grooming.md)
   defines framing and readiness questions after capture.
 - The normative framework recognizes discussion or grilling as an
   evidence-producing capability and allows source-specific protocols.
 - The later
-  [`brainstorming process`](../../processes/brainstorming.md) provides a
+  [`brainstorming process`](../processes/brainstorming.md) provides a
   general discussion/grilling protocol. Grooming must determine whether any
   task-specific protocol remains necessary beyond intake clarification.
 

@@ -72,7 +72,7 @@ visual HTML.
   candidate is justified because the missing tool prevents consumers from
   directly exercising an already documented contract.
 - **Linked work:** `apss.visual-html-generator`, captured in
-  [`operations/tasks/backlog/visual-html-generator.md`](../../tasks/backlog/visual-html-generator.md).
+  [`operations/tasks/visual-html-generator.md`](../../tasks/visual-html-generator.md).
 - **Follow-up:** report acknowledged through this retained record. Validate a
   future implementation using at least the operations system and one example,
   then obtain consumer feedback on clarity and usefulness before marking this

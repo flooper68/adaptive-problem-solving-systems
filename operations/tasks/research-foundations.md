@@ -9,7 +9,7 @@ source: Initial APS framework definition review; APS framework maintainer idea i
 
 # Research established foundations related to APS
 
-## Goal
+## Intended result
 
 Compare the initial APS definition with established problem-solving and
 adaptive-systems literature, then recommend what to adopt, rename, clarify, or

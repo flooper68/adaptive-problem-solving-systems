@@ -27,7 +27,7 @@ requiring every system to design basic quality practices from scratch.
 - The normative framework identifies research and experimentation as general
   capabilities while explicitly allowing domain-specific protocols.
 - The operations-specific
-  [`brainstorming process`](../../processes/brainstorming.md) now defines a
+  [`brainstorming process`](../processes/brainstorming.md) now defines a
   lightweight discussion protocol. No artifact yet establishes reusable,
   cross-domain quality guidance for all three capabilities.
 - No evidence yet establishes which process patterns are sufficiently general

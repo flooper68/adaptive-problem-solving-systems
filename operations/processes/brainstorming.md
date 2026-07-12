@@ -9,11 +9,15 @@ the result reaches an accepted stopping point.
 
 ## Procedure
 
-1. **Frame.** State the topic, intended result, responsible user, relevant goal
-   and open problem when applicable, boundary, and what a useful stopping point
-   would be.
+1. **Frame.** State the topic, intended result, responsible user, relevant
+   problem and its parent when applicable, boundary, and what a useful stopping
+   point would be.
 2. **Orient.** Read the current framework or instantiation, relevant streams,
-   prior decisions, task files, feedback, and knowledge. Keep missing context explicit.
+   prior decisions, task files, feedback, and knowledge. Keep missing context
+   explicit. When relating existing concepts, decisions, or evidence materially
+   helps explain the work, add direct references to their authoritative sources
+   in the affected task, session, problem, or compiled artifact. Prefer useful
+   provenance over citations that merely repeat obvious context.
 3. **Explore.** Elicit observations, interpretations, alternatives, decision boundaries,
    and trade-offs. Ask one load-bearing question at a time and adapt the next
    question to the answer.

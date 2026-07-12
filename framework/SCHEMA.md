@@ -8,12 +8,16 @@ polished.
 The declaration is a small orientation surface:
 
 - `name` identifies the system;
-- `problem` states the condition it exists to change;
+- `problem` states the root condition it exists to change;
 - `verification` links the process that evaluates attempts against the problem;
-- `strategy` links the current direction;
+- `strategy` links the current approach to solving that root problem;
 - `process` links the implementation of the complete loop;
 - `work_sessions` lists the bounded session types the system offers;
 - `streams` declares relevant information sources.
+
+The declared `problem` is constitutive and stable for that system. Evolving
+understanding or clarification belongs in the linked strategy; APS does not
+define a root-problem replacement transition.
 
 APS does not mandate particular work-session types. Each entry has a local
 `id`, description, and defining process. The array may be empty when a system

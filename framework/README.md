@@ -21,18 +21,18 @@ meanings for recurring terms are consolidated in the normative
 
 ## Why APS exists
 
-Many efforts define a goal and an execution process but leave the feedback loop
-implicit. They may produce outputs without checking whether those outputs solve
-the consumer's problem; collect observations without compiling them; or write
-lessons without changing the next operation. The result is activity that repeats
-without becoming more effective.
+Many efforts define a desired result and an execution process but leave the
+feedback loop implicit. They may produce outputs without checking whether those
+outputs solve the consumer's problem; collect observations without compiling
+them; or write lessons without changing the next operation. The result is
+activity that repeats without becoming more effective.
 
 APS makes the complete loop explicit and inspectable:
 
 ```mermaid
 flowchart LR
-    problem["System problem"] --> strategy["Goal and system strategy"]
-    strategy --> openProblems["Open problems"]
+    problem["System problem + system strategy"] --> decompose["Decompose from evidence"]
+    decompose --> openProblems["Smaller problems + strategies"]
     openProblems --> tasks["Selected tasks"]
     tasks --> execute["Execute"]
     execute --> artifact["Artifact"]
@@ -41,10 +41,11 @@ flowchart LR
     consumer --> outcomeValidation["Validate outcome"]
     artifactValidation --> evidence["Evidence streams"]
     outcomeValidation --> evidence
+    evidence --> decompose
     evidence --> openProblems
     evidence --> compile["Compile knowledge"]
     compile --> adapt["Adapt with declared authority"]
-    adapt --> strategy
+    adapt --> problem
 ```
 
 The phases are responsibilities, not a mandatory sequence. A system may run
@@ -54,34 +55,57 @@ is part of its strategy and may itself evolve.
 
 ## Core definitions
 
-### System problem, goal, strategy, and open problem
+### Problem hierarchy and strategy
 
-- **System problem** — the condition the system exists to change, including the
-  affected consumer or environment.
-- **Goal** — a current, bounded result that reduces the system problem. It is
-  stated in the independent system-strategy document.
-- **System strategy** — the system's current theory and approach for reaching
-  its current goal: how it interprets evidence, identifies and chooses among open
-  problems, guides their strategies, plans, executes, validates, learns, and
-  coordinates its subsystems. `SYSTEM.md` links it through `strategy` to the
-  sibling `STRATEGY.md` document. Strategy is allowed to change
-  when evidence warrants it.
+- **Problem** — a condition affecting a consumer or environment that calls for
+  understanding or change. A problem states the condition, not its solution.
+- **Strategy** — the current evidence-informed theory and approach for changing
+  one problem. The system strategy belongs to the root system problem; each
+  smaller problem has its own problem strategy.
+- **System problem** — the stable root problem the system exists to solve. It
+  defines the system's problem-owning boundary and is constitutive of that
+  system.
+- **System strategy** — the system's current theory and approach for solving
+  and interpreting its root problem, including how it uses evidence to
+  decompose problems, compare them, guide their strategies, execute work,
+  verify results, learn, and adapt. `SYSTEM.md` links it through `strategy` to
+  the sibling `STRATEGY.md` document.
+- **Open problem** — an evidenced, unresolved smaller problem produced by
+  decomposing the system problem or another open problem. It names a gap, not a
+  proposed solution or automatically authorized task.
 - **Problem strategy** — the current approach for resolving or reducing one
-  open problem. It lives in that problem's file, is informed by the system
-  strategy, guides selected tasks, and changes when its signal or other evidence
-  contradicts the approach.
-- **Open problem** — an evidenced, unresolved condition within the system that
-  obstructs or threatens a current goal. It names a gap, not a proposed
-  solution or an automatically authorized task.
+  problem. Each open problem owns its strategy; it guides selected tasks and
+  changes when evidence challenges the approach.
 
-The system problem is the durable reason the system exists; goals bound what
-matters now; open problems retain the current gaps between the present state
-and those goals. Feedback and other evidence may reveal or change an open
-problem. The system strategy governs how the system interprets those inputs and
-chooses problems; each problem strategy describes how to approach its gap.
-Selected tasks implement that strategy, and verification shows whether the
-problem improved. See [VOCABULARY.md](VOCABULARY.md) for the exact boundaries
-among these and related terms.
+The problem hierarchy is APS's adaptive planning structure, not a complete plan
+made in advance. The system problem is its root. Evidence and learning reveal,
+revise, split, combine, or close smaller problems, each with its own desired
+change, signal, and strategy. Selected tasks implement or test one of those
+strategies, and their results feed verification and later decomposition. When a
+smaller problem receives an independent boundary and complete loop, it becomes
+the system problem of a child system; otherwise it remains within the current
+system. See [VOCABULARY.md](VOCABULARY.md) for exact boundaries.
+
+The system problem itself is not revised or replaced within APS. Better
+understanding and clarification belong to the system strategy; changes below
+the root belong to the evolving problem decomposition. APS defines no root-
+problem replacement transition.
+
+A useful problem statement names the affected consumer or environment and the
+present condition that needs to change without disguising a desired future or
+preferred solution as the problem.
+
+For example:
+
+- **Root system problem:** the [Framework Operations System](../operations/SYSTEM.md)
+  states that APS cannot become reliably effective and usable while its
+  framework evolves without disciplined, evidence-connected operations.
+- **Smaller problem:** [P1](../operations/problems/p1-finish-mvp-and-run-loop.md)
+  states that the APS MVP is unfinished and has not run its complete loop.
+- **Problem strategy:** P1 reviews existing concepts in dependency order,
+  retaining only what the first complete loop needs.
+- **Tasks:** bounded concept reviews implement that strategy; their results
+  feed verification, learning, and later revisions to the hierarchy.
 
 ### System and subsystem
 
@@ -160,7 +184,7 @@ Retain one record for a material work-session invocation in a declared
 working-session stream or its native system of record. The record identifies
 the session, date, participants, affected problems and tasks, material evidence
 or decisions, and stopping point. It preserves what happened; problem and task
-files remain authoritative for current state.
+systems of record remain authoritative for current state.
 
 The session record or other native recoverable source preserves material
 discussion and links to changed state. Do not create a second summary when the
@@ -196,6 +220,18 @@ and, where useful, reproducible from old and new evidence. Repository-backed
 systems can rely on git for detailed provenance; the compiled artifact needs a
 simple changelog, not a duplicate manifest for every compilation.
 
+As a general process-design best practice, ask at meaningful completion,
+handoff, verification, or grooming points:
+
+- Did anything surprising happen?
+- Did anything take more time or resources than expected?
+- Did anything worsen the verification value function?
+
+Preserve or recoverably reference the underlying raw evidence whenever
+available. A positive answer invites interpretation; it does not automatically
+create a problem or establish why the deviation occurred. Each process defines
+the useful timing, wording, thresholds, context, and evidence handling.
+
 ## The complete adaptive loop
 
 Every APS instance must implement all of these responsibilities. Their exact
@@ -205,124 +241,148 @@ responsible for every phase whether it combines or separates their processes.
 
 ### 1. Orient and frame
 
-Read the current system problem, goal and system strategy, open problems
-and their strategies, relevant direction, relevant compiled
-knowledge, and new evidence. Confirm that the system is still solving the right
-problem and that its current problems and approaches remain relevant to its
-goals.
+Read the current system problem and strategy, the hierarchy of open problems
+and their strategies, relevant compiled knowledge, and new evidence. Confirm
+that the system is still solving the right root problem and that each smaller
+problem remains relevant to the system's evolving decomposition.
 
 ### 2. Groom problems and select tasks
 
-The system strategy states the current goal and guides problem selection.
-Maintain one file per active problem under `problems/`:
-
-```markdown
----
-id: P1
-type: open-problem
-status: open
-opened: YYYY-MM-DD
----
-
-# <Observed condition obstructing or threatening the goal>
-
-## Goal
-<Current goal from the system strategy.>
-
-## Evidence
-<Observation or recoverable source indicating the gap exists.>
-
-## Desired change
-<What would meaningfully improve.>
-
-## Signal
-<Evidence of worsening, improvement, or sufficient resolution.>
-
-## Strategy
-<Current approach for resolving or reducing this problem.>
-
-## Grooming history
-<Material evidence, decisions, rationale, sources, and next triggers.>
-```
+The system strategy guides problem decomposition and selection.
+A system makes each smaller problem's current meaning, evidence, desired change,
+signal, strategy, lifecycle, and material decision history recoverable. These
+are conceptual responsibilities, not a required record schema. The system's
+process chooses identifiers, fields, tools, views, and storage; a problem may
+be represented by a Jira epic, GitHub milestone, Notion item, repository file,
+database record, or another suitable system of record.
 
 New problems may be proposed when feedback, validation, research, insights,
 changed direction, or completed work reveals a gap. Feedback is
-evidence, not an automatic problem: problem grooming interprets the evidence and
-frames the condition without embedding a preferred solution.
+evidence, not an automatic problem: relevant source-specific grooming
+interprets it and may propose a higher-level gap, while problem grooming alone
+decides whether to open or change a problem.
 
-An open problem is the long-running unit of improvement. It may remain open
-across many working sessions and tasks while its evidence, signal, and strategy
-evolve. Do not turn the whole desired change of a problem into one umbrella
-task.
+Problem grooming maintains the problem hierarchy: it acts on proposals and
+reviews existing problems, their strategies, signals, relevance, and priority.
+Task grooming separately shapes candidate actions into bounded executable work
+for open problems and determines readiness for selection. Task grooming does
+not create, reframe, or close problems; problem grooming does not make an
+unshaped action ready merely by prioritizing its problem.
+
+These are distinct decision responsibilities, but APS does not require separate
+meetings, tools, participants, or cadence. A system may implement both in one
+process invocation when it preserves the boundary and authority of each result.
+
+An open problem is a long-running unit in the system's evolving problem
+hierarchy. It may remain open across many working sessions and tasks while its
+evidence, signal, strategy, and decomposition context evolve. Do not turn the
+whole desired change of a problem into one umbrella task.
 
 Groom a problem by asking:
 
-1. Which current goal does it obstruct or threaten?
+1. How does it contribute to decomposing the system problem?
 2. What evidence indicates that it exists?
 3. What is the impact if it remains unresolved?
 4. What change and signal would demonstrate improvement?
 5. What strategy should approach it, and what evidence would challenge that
    strategy?
-6. Why address it now rather than another open problem?
+6. Why address it now rather than another problem in the hierarchy?
 
-Grooming supports three lightweight decisions: address it now, keep it open
-without current work, or close it with a recorded reason. No numerical scoring
-method is required. On closure, record the evidence and reason in the problem
-file, set `status: closed`, and move it under `problems/archive/`.
+For an open problem, grooming supports three lightweight decisions: address it
+now, keep it open without current work, or close it with a recorded reason. No
+numerical scoring method is required. On closure, record the evidence and
+reason in the chosen system of record and remove the problem from the active
+view according to the system's process.
 
-Maintain one file per executable response under `tasks/`:
+### Problem lifecycle and verification
 
-```markdown
----
-id: T1
-type: task
-status: selected
-addresses: [P1]
-owner: <responsible role>
-created: YYYY-MM-DD
----
+Problem creation separates source interpretation from problem authority. Each
+information stream or operating process retains its own relevant observations,
+issues, results, and insights. The grooming appropriate to that source
+interprets those inputs and may propose a higher-level problem to solve. The
+proposal is not yet an open problem: problem grooming decides whether to open a
+new problem, merge it with or use it to revise an existing problem, defer it,
+or reject it.
 
-# <Action>
+APS requires this problem-set re-evaluation responsibility but does not
+prescribe a heartbeat mechanism or cadence. A system may trigger problem
+grooming from events, run it on a schedule such as cron, operate it
+continuously, or combine these approaches according to its problem and process.
 
-## Intended result
-<Observable result this task should produce.>
+Problems have two lifecycle states: **open** and **closed**. A proposal enters
+the problem decomposition only when authorized problem grooming opens it with
+evidence, a desired change, a signal, a strategy, and demonstrated relevance to
+the system problem. APS does not prescribe how proposals or these decisions are
+stored; the system's processes choose their systems of record.
 
-## Approach
-<How this task implements or tests the problem strategy.>
+The chosen problem system of record preserves a concise history of material
+decisions: why the problem was opened, meaningful reframing, changes to its
+strategy or signal, and why it was closed or reopened, with the supporting
+evidence and authority. It need not duplicate routine task activity, detailed
+discussion, or evidence already recoverable from their native sources.
 
-## Stop condition
-<Acceptance, handoff, or reconsideration condition.>
+While the problem is open, tasks implement or test bounded parts of its
+strategy. Task completion supplies attempt and result evidence; it never by
+itself proves improvement or changes the problem's lifecycle. Verification
+compares that evidence with the problem signal. The result may retain or revise
+the problem, its strategy, or its place in the hierarchy.
 
-## Current state
-<What has happened, what remains uncertain, and the next step.>
+**Solved** is an evidence-based assessment that the desired change occurred; it
+is not a lifecycle state. **Closed** is the separate authorized decision to
+remove a problem from active consideration. A problem may close because it was
+solved or for another recorded reason. New evidence may reopen it. Improvement
+of one problem becomes evidence for the broader problem hierarchy but does not
+automatically solve or close another problem. The same distinction applies to
+the root system problem; the system's process defines what root closure does to
+the system.
+
+```mermaid
+flowchart LR
+    evidence["Evidence reveals a possible problem"] --> grooming["Problem grooming"]
+    grooming --> open["Open"]
+    open --> tasks["Tasks test the strategy"]
+    tasks --> verification["Verify against problem signal"]
+    verification --> revise["Retain, revise, split, merge, or restructure"]
+    revise --> open
+    verification --> solved["Solved assessment"]
+    solved --> closure["Authorized closure decision"]
+    open -->|"Other closure reason"| closure
+    closure --> closed["Closed"]
+    closed -->|"New evidence"| grooming
 ```
 
-A task is a bounded executable response that implements or tests part of an
-open problem's strategy, including implementation, research, experiment,
-discussion, review, or remediation. Prefer a task that produces one inspectable
-result in one working session. If it contains several independently reviewable
-results or stopping points, split it before selection. A task must not duplicate
-the whole problem or depend on problem closure as its own stop condition.
+A task is a bounded unit of actual work that iterates on a problem's solution
+by implementing or testing part of its strategy. It processes information into
+an attempt, decision, result, or other inspectable change. Its execution and
+results also become an information source for verification and future learning,
+so later work can adapt from what happened rather than only from what was
+planned.
 
-Status in the task file makes its state explicit. Keep `selected`,
-`in-progress`, and `awaiting-review`
-tasks directly under `tasks/`; keep `captured`, `grooming`, `ready`, and
-`deferred` candidates under `tasks/backlog/`; move closed, cancelled,
-rejected, merged, or superseded tasks under `tasks/archive/` with their final
-reason. These folders are the current task collection; APS does not require a
-separate plan or exhaustive index.
+Tasks include implementation, research, experiment, discussion, review, or
+remediation. Prefer a task that produces one inspectable result in one working
+session. If it contains several independently reviewable results or stopping
+points, split it before selection. A task must not duplicate the whole problem
+or depend on problem closure as its own stop condition.
 
-A task may be captured before its problem relationship is clear, but it is not
-ready for selection until it addresses at least one current problem. The system
-strategy informs problem grooming and constrains acceptable problem strategies;
-selected tasks implement or test the addressed problem strategy rather than
-becoming unrelated activity attached only by ID.
+The system's process chooses how tasks are represented, organized, and tracked.
+A repository may use task files; another system may use Jira, GitHub, Linear, a
+database, or another recoverable system of record. APS does not prescribe a
+folder layout, tool, identifier format, or fixed lifecycle states. The chosen
+representation must preserve enough current state to identify selected work,
+its addressed open problem and strategy, intended result, responsible
+participant, stopping condition, and next step.
 
-An active task file states enough current state and next-step information for
-execution to resume across time, people, or agents. Material session history
-belongs in working-session records; detailed repository history belongs in
-version control; domain evidence remains in its native stream. APS does not
-require a generic work log that duplicates those sources.
+A task candidate may be retained before its problem relationship is clear, but
+it must not be selected until it addresses at least one current problem. The
+system strategy informs problem grooming and constrains acceptable problem
+strategies; selected tasks implement or test the addressed problem strategy
+rather than becoming unrelated activity attached only by an identifier.
+
+The task system of record states enough current state and next-step information
+for execution to resume across time, people, or agents. Material session
+history belongs in working-session records or another declared evidence source;
+detailed change history and domain evidence remain in their native systems.
+APS does not require a generic work log that duplicates those sources.
 
 ### 3. Resolve uncertainty
 
@@ -363,10 +423,17 @@ Run the system's implemented compilation process. The system decides when to
 run it, what evidence to revisit, whether to update incrementally or recompile
 more broadly, and how to allocate time, compute, token, or human attention.
 
+When learning from a material decision or course correction, compare its
+expected effect with later problem-signal or outcome evidence and note whether
+it helped, harmed, or remains uncertain. When the explanation may affect future
+work, retain a brief hypothesis about why. Add an alternative explanation or
+evidence that would challenge it only when material; this reflection is not
+required for every grooming invocation.
+
 ### 8. Adapt
 
-Use validated learning to improve open-problem framing, task selection,
-strategy, goals, processes, streams, validation, knowledge, or subsystem
+Use validated learning to improve open-problem framing or decomposition, task
+selection, strategies, processes, streams, validation, knowledge, or subsystem
 structure.
 Adaptation follows the authority defined by the relevant process.
 
@@ -394,12 +461,17 @@ rate. Health is an optional pattern, not a universal third validation field.
 
 ## Problem decomposition
 
-Each system is identified by its name. APS does not require a separate system
-ID, status, or parent declaration. A hierarchy is a view of problem
-decomposition: when a problem is assigned to another system, the originating
-problem definition, strategy, or process records that link. Lifecycle and
-placement remain choices of those systems and processes rather than universal
-declaration fields.
+Each system owns an evolving problem decomposition rooted in its system
+problem. Smaller problems and their strategies describe the current gaps and
+approaches revealed by evidence. APS does not require parent fields, a strict
+tree, or any particular representation of relationships among those problems;
+the system's process chooses what structure is useful.
+
+When an open problem is assigned to another system, it becomes that child
+system's root problem. The originating problem definition, strategy, or process
+records the link. APS does not require a separate system ID, status, or parent
+declaration; lifecycle and placement remain choices of those systems and
+processes.
 
 Problem-decomposition links explain why a child system exists. Other
 cross-system interactions belong in the problems, strategies, processes, or
@@ -431,13 +503,12 @@ systems/
       loop.md
       verification.md
     streams/
-    problems/
-    tasks/
 ```
 
 Only the minimal `SYSTEM.md` fields are structurally required. The linked
 strategy and process choose the physical layout and implement the remaining
-loop concepts. Empty ceremonial directories add no value.
+loop concepts. Problem and task state may be colocated with the system or kept
+in external systems of record. Empty ceremonial directories add no value.
 
 Child systems may live wherever their own definition and processes require.
 The originating problem definition, strategy, or process links to the child by
@@ -517,6 +588,8 @@ capsule and referenced sources:
 
 - What problem defines the system?
 - Where is its current strategy?
+- How is the root problem decomposed into current smaller problems and their
+  strategies?
 - Which process implements its complete loop?
 - Which bounded work-session types does it offer, if any?
 - How does verification evaluate attempts against the problem?

@@ -22,7 +22,7 @@ new source evidence to an existing candidate instead of creating a duplicate.
 
 ## Minimum capture
 
-Create `operations/tasks/backlog/<short-slug>.md` with this structure:
+Create `operations/tasks/<short-slug>.md` with this structure:
 
 ```markdown
 ---

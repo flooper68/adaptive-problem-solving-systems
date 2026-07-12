@@ -24,7 +24,7 @@ what a compilation run produced or changed.
 
 ## Evidence
 
-- [`operations/processes/knowledge-compilation.md`](../../processes/knowledge-compilation.md)
+- [`operations/processes/knowledge-compilation.md`](../processes/knowledge-compilation.md)
   defines inputs, provenance requirements, classification, candidate output,
   validation, and the approval boundary.
 - The current MVP task describes the first application of the reproducible process

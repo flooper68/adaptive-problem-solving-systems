@@ -1,5 +1,5 @@
 ---
-id: apss.review-goal
+id: apss.review-problem-signal
 type: review
 status: ready
 owner: APS framework maintainer
@@ -8,11 +8,11 @@ addresses: [P1]
 source: Conceptual simplification strategy session
 ---
 
-# Review the goal concept
+# Review the problem signal concept
 
 ## Intended result
 
-Give goal the smallest clear definition, boundary, relationships, ownership,
+Give problem signal the smallest clear definition, boundary, relationships, ownership,
 and lifecycle needed by the complete loop.
 
 ## Approach
@@ -28,4 +28,9 @@ and downstream questions are captured without expanding this task.
 
 ## Current state
 
-Ready. Select when its higher-level dependencies have been reviewed.
+Ready. The
+[system-problem review](../streams/working-sessions/2026-07-12-system-problem-review.md)
+established that verification evaluates task attempts against the problem
+signal and that satisfying the signal may support a solved assessment without
+automatically closing the problem. Review the signal's remaining semantics
+after the problem lifecycle is accepted.

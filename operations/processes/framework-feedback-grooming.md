@@ -46,10 +46,14 @@ grooming record with provenance.
    workaround, supporting and contradictory evidence, assumptions, and what
    remains uncertain.
 7. **Choose a disposition.** Apply one status below and record the rationale.
-8. **Propagate without conflating.** For `actionable` feedback, create or link
-   a task using [`task-intake.md`](task-intake.md). Link both directions. Task
-   selection and prioritization remain separate. Feed stable
-   lessons or outcome evidence into validation and knowledge compilation.
+8. **Propagate without conflating.** For `actionable` feedback about a gap
+   already represented by an open problem, link that problem and create or link
+   a task using [`task-intake.md`](task-intake.md) when a bounded response is
+   useful. When the report reveals an unrepresented higher-level gap, propose
+   it to [`problem grooming`](problem-grooming.md); feedback grooming does not
+   open the problem itself. Link both directions. Problem creation, task
+   selection, and prioritization remain separate. Feed stable lessons or
+   outcome evidence into validation and knowledge compilation.
 9. **Close the loop.** Record what acknowledgment or follow-up is owed. If
    linked work is later validated, append the result and set the feedback to
    `addressed`; do not erase the original experience.

@@ -1,10 +1,5 @@
 # Framework Operations strategy
 
-## Goal
-
-Finish the smallest understandable APS MVP and run one real need through its
-complete loop so validated learning changes a later run.
-
 ## Approach
 
 1. Use the current APS version to operate the Framework Operations System
@@ -22,8 +17,8 @@ complete loop so validated learning changes a later run.
 
 - Prioritize problems that block finishing, understanding, or running the MVP
   loop over problems that add optional capability.
-- Require every open problem to state evidence, a desired change, a strategy,
-  and a human- or system-observable signal.
+- Require every open problem to identify its parent and state evidence, a
+  desired change, a strategy, and a human- or system-observable signal.
 - Select work only when it implements or tests the problem strategy.
 - When two approaches could work, try the smaller reversible one first.
 - Revisit the strategy when feedback shows confusion, unnecessary ceremony, or

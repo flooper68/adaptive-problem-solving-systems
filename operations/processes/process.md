@@ -12,18 +12,22 @@ When an AI agent performs the work, also follow
    insights, and other new evidence.
 2. Capture direct consumer reports through `framework-feedback-intake.md` and
    assess them through `framework-feedback-grooming.md`. Preserve feedback as
-   evidence; when its disposition is actionable, create or link a distinct work
-   candidate through `task-intake.md`.
+   evidence. When grooming identifies a gap already represented by an open
+   problem, link it and propose bounded work through `task-intake.md` when
+   useful. When the gap is not represented, propose it to problem grooming
+   before selecting work.
 3. Use [`brainstorming.md`](brainstorming.md) to discuss an idea, task, or
    research topic with the maintainer and iteratively compile reviewable changes
    into the framework or a concrete instantiation. Keep observations, insights,
    questions, and decisions distinguishable. Capture independently useful
    interpretations through `insight-intake.md` and assess them through
-   `insight-grooming.md`. Capture a separate executable response through
-   `task-intake.md` only when action is proposed; groom those work candidates
-   through `task-grooming.md`.
-4. Follow [`problem-grooming.md`](problem-grooming.md) to revisit goal-relevant
-   open problems in `operations/problems/`, then select ready, bounded tasks in
+   `insight-grooming.md`. Source-specific grooming may propose a higher-level
+   problem without opening one. Capture a separate executable response through
+   `task-intake.md` when action is proposed; do not select it until problem
+   grooming has opened or linked the problem it addresses. Groom work
+   candidates through `task-grooming.md`.
+4. Follow [`problem-grooming.md`](problem-grooming.md) to revisit relevant open
+   problems in `operations/problems/`, then select ready, bounded tasks in
    `operations/tasks/` that state which problems they address and confirm
    owner, acceptance conditions, authority, and validation approach.
 5. Resolve load-bearing uncertainty through brainstorming, research, or

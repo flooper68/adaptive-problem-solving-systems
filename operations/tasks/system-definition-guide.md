@@ -23,9 +23,9 @@ learning loop, and current versus desired state in a useful order.
 
 ## Evidence
 
-- [`framework/README.md`](../../../framework/README.md) contains a concise
+- [`framework/README.md`](../../framework/README.md) contains a concise
   ten-step “Creating a system” checklist.
-- [`framework/SCHEMA.md`](../../../framework/SCHEMA.md) defines the declaration
+- [`framework/SCHEMA.md`](../../framework/SCHEMA.md) defines the declaration
   shape, contract, and authoring template.
 - Framework Operations is the first concrete APS application, but no guided
   walkthrough currently takes a person from an ambiguous starting point to a

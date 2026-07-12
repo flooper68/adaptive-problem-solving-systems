@@ -1,19 +1,19 @@
 ---
-id: apss.review-system-problem
+id: apss.review-goal
 type: review
-status: ready
+status: superseded
 owner: APS framework maintainer
 created: 2026-07-11
 addresses: [P1]
 source: Conceptual simplification strategy session
 ---
 
-# Review the system problem concept
+# Review the goal concept
 
 ## Intended result
 
-Give the system problem concept the smallest clear definition, boundary,
-relationships, ownership, and lifecycle needed by the complete loop.
+Give goal the smallest clear definition, boundary, relationships, ownership,
+and lifecycle needed by the complete loop.
 
 ## Approach
 
@@ -28,4 +28,6 @@ and downstream questions are captured without expanding this task.
 
 ## Current state
 
-Ready. Select after the system concept review confirms its dependency context.
+Superseded on 2026-07-12 by `apss.review-system-problem`. During that review the
+maintainer decided to remove goal completely because it duplicated the desired
+change and strategy carried by problems and obscured the problem hierarchy.

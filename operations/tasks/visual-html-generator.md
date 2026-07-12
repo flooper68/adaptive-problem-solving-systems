@@ -26,8 +26,8 @@ communicate while reducing drift from declarations.
 ## Evidence
 
 - Feedback report
-  [`apss.feedback.visualization-tooling`](../../streams/framework-feedback/2026-07-09-visualization-tooling.md).
-- [`framework/VISUALIZATION.md`](../../../framework/VISUALIZATION.md)
+  [`apss.feedback.visualization-tooling`](../streams/framework-feedback/2026-07-09-visualization-tooling.md).
+- [`framework/VISUALIZATION.md`](../../framework/VISUALIZATION.md)
   says to generate projections from `SYSTEM.md` where practical and specifies
   derivable views and structural diagnostics.
 - The repository currently contains no visualization generator.

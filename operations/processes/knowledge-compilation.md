@@ -11,8 +11,8 @@ adaptation is approved.
 
 For the question or completed work being compiled, read:
 
-- the current system problem, goal and strategy, open-problem files, task
-  files, and published framework knowledge;
+- the current system problem and strategy, open-problem hierarchy, task files,
+  and published framework knowledge;
 - relevant records from every declared stream, including insight claims and
   dispositions, groomed feedback, usage evidence, work history and its
   framework baseline, and external foundations;

@@ -1,5 +1,5 @@
 ---
-id: apss.review-open-problem
+id: apss.review-task
 type: review
 status: ready
 owner: APS framework maintainer
@@ -8,11 +8,11 @@ addresses: [P1]
 source: Conceptual simplification strategy session
 ---
 
-# Review the open problem concept
+# Review the task concept
 
 ## Intended result
 
-Give open problem the smallest clear definition, boundary, relationships, ownership,
+Give task the smallest clear definition, boundary, relationships, ownership,
 and lifecycle needed by the complete loop.
 
 ## Approach
@@ -28,4 +28,9 @@ and downstream questions are captured without expanding this task.
 
 ## Current state
 
-Ready. Select when its higher-level dependencies have been reviewed.
+Ready. The
+[system-problem review](../streams/working-sessions/2026-07-12-system-problem-review.md)
+established that tasks implement or test bounded parts of a problem strategy
+and return evidence to verification; completing a task never solves or closes
+the problem by itself. Review remaining task identity and lifecycle details
+after the problem relationship is accepted.

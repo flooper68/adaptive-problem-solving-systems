@@ -1,5 +1,5 @@
 ---
-id: apss.review-closed
+id: apss.review-solved
 type: review
 status: ready
 owner: APS framework maintainer
@@ -8,11 +8,11 @@ addresses: [P1]
 source: Conceptual simplification strategy session
 ---
 
-# Review the closed concept
+# Review the solved concept
 
 ## Intended result
 
-Give closed the smallest clear definition, boundary, relationships, ownership,
+Give solved the smallest clear definition, boundary, relationships, ownership,
 and lifecycle needed by the complete loop.
 
 ## Approach
@@ -28,4 +28,8 @@ and downstream questions are captured without expanding this task.
 
 ## Current state
 
-Ready. Select when its higher-level dependencies have been reviewed.
+Ready. The maintainer decided in the
+[system-problem review](../streams/working-sessions/2026-07-12-system-problem-review.md)
+that `solved` is an evidence-based assessment, not a lifecycle state or closure
+decision. Review its remaining evidence and reconsideration boundaries after
+the problem lifecycle is accepted.

@@ -5,7 +5,9 @@
 Turn a captured candidate action into an explicit, evidence-aware disposition
 without silently treating it as committed work. Grooming improves decision
 quality; it does not itself authorize execution or a normative framework
-change.
+change. Task grooming does not open, reframe, prioritize, or close problems. If
+the candidate exposes an unrepresented gap, propose it to problem grooming
+before selecting work.
 
 ## Invocation and roles
 
@@ -27,8 +29,8 @@ Set `status: grooming` while analysis is materially underway.
    relevant session history.
 2. **Check identity.** Merge duplicate actions, split unrelated actions, and
    preserve links to their original source records and IDs.
-3. **Frame the response.** State the affected consumer, current goal and open
-   problem, its strategy, proposed action, expected outcome, and why it belongs
+3. **Frame the response.** State the affected consumer, addressed open problem,
+   its parent and strategy, proposed action, expected outcome, and why it belongs
    within this system's boundary. If no current open problem represents the
    evidenced gap, propose a problem file before treating the work as ready.
 4. **Classify the effect.** Identify whether it may change the normative
@@ -52,16 +54,16 @@ Set `status: grooming` while analysis is materially underway.
    and its rationale. Do not equate desirability with current priority.
 9. **Propagate the result.** Update the item's frontmatter and grooming log.
    If selected, set `status: selected` and list its problem IDs under
-   `addresses`, then move it from `tasks/backlog/` to the task root. Keep
-   ready or deferred tasks in the backlog and move rejected or merged tasks to
+   `addresses`. Keep captured, grooming, ready, selected, active, and deferred
+   tasks directly under `tasks/`; move rejected or merged tasks under
    `tasks/archive/`. Do not erase the source or its rejected alternatives.
 
 ## Readiness questions
 
 An item is ready only when the responsible operator can answer:
 
-- Which current open problem does this address, and which goal makes that
-  problem relevant?
+- Which current open problem does this address, and how does that problem
+  decompose its parent?
 - How does the work implement or test that problem's strategy?
 - What consumer problem or opportunity are we addressing?
 - What observable outcome would make the work worthwhile?
@@ -89,10 +91,10 @@ An item is ready only when the responsible operator can answer:
 `captured` and `grooming` describe candidate work before disposition. They do
 not apply to the source reports, insights, questions, issues, or decisions that
 motivated it. Selection sets a ready task to `selected`; execution may then use
-`in-progress`, `awaiting-review`, `closed`, or `cancelled`. Keep candidate
-states under `tasks/backlog/`, selected and active states at the task root, and
-inactive states under `tasks/archive/`. The task owns current state; session
-records own material history.
+`in-progress`, `awaiting-review`, `closed`, or `cancelled`. Keep every current
+task directly under `tasks/` without a backlog subdivision; move inactive tasks
+under `tasks/archive/`. The task owns current state; session records own
+material history.
 
 ## Required durable result
 
@@ -100,7 +102,7 @@ Append a grooming-log entry containing:
 
 - date, participants, and evidence consulted;
 - clarified problem, expected outcome, and scope;
-- the current problem-file reference and relevant goal;
+- the current problem-file and parent-problem references;
 - important facts, assumptions, and unresolved questions;
 - readiness gaps or acceptance conditions;
 - approved disposition and rationale; and

@@ -7,9 +7,12 @@ opened: 2026-07-10
 
 # The APS MVP is unfinished and has not run its complete loop
 
-## Goal
+## Parent problem
 
-Complete and validate the first evidence-driven framework improvement cycle.
+P1 decomposes the [Framework Operations system problem](../SYSTEM.md): APS
+cannot become reliably effective and usable while its framework evolves
+without disciplined operations connecting consumer experience, decisions,
+validated changes, and learning.
 
 ## Evidence
 
@@ -27,12 +30,12 @@ the whole loop as the largest current problem.
 Initial self-use also showed that mixing full problem definitions, completed
 work, and current decisions expanded the plan to 148 lines and the log to 394
 lines. Moving problem detail to one file and archiving older logs improved the
-structure. Further use showed that a separate plan still duplicated the goal in
+structure. Further use showed that a separate plan still duplicated direction in
 the strategy, gaps in problem files, and commitments in task files, so the
 maintainer removed it. The maintainer's usability judgment remains the relevant
 outcome evidence.
 
-The goal-linked open-problem change now supplies a candidate cycle: it began
+The problem-hierarchy change now supplies a candidate cycle: it began
 from an observed maintainer need, produced compiled framework changes and
 example applications, and is being tested through a live problem-grooming
 session. It still lacks approved adaptation, a subsequent affected run, and
@@ -226,3 +229,72 @@ and removed the provisional example directory until the framework is polished.
 The prior CNC material had no real outcome evidence and created synchronization
 work as the declaration changed. Git retains it; future example work is
 deferred until the first complete Operations loop produces validated learning.
+
+### 2026-07-12 — flat task collection selected
+
+Source: current task-collection brainstorming session.
+
+The maintainer reported that the `tasks/backlog/` structure made the task
+collection harder to use and directed that all task files live directly under
+`tasks/`. This reopens the earlier physical-lifecycle convention recorded
+above. The explicit status field already carries candidate, active, and
+inactive state, so folder placement duplicates that information.
+
+Decision: remove the backlog subdivision and keep every current task directly
+under `tasks/`, using status for candidate, selection, and execution state.
+Retain `tasks/archive/` as the useful inactive-material boundary. This directly
+tests P1's strategy of removing ceremony that obstructs maintainer
+understanding and operation.
+
+The maintainer then clarified the framework boundary: task organization is an
+implementation detail of each system's process because real systems may use
+Jira, GitHub, Linear, repository files, or another system of record. The flat
+root plus archive is therefore an Operations choice, not a normative APS rule.
+
+### 2026-07-12 — goal removed and problem hierarchy clarified
+
+Source: [current system-problem review](../streams/working-sessions/2026-07-12-system-problem-review.md)
+and [maintainer feedback](../streams/framework-feedback/2026-07-12-problem-hierarchy-and-goal-ambiguity.md).
+
+The maintainer could not form a coherent top-down model from the separate
+system-problem, goal, open-problem, and strategy definitions. The framework
+also lacked a worked problem-statement example. The maintainer decided to
+remove goal completely because it duplicated the desired change and strategy
+already carried by problems.
+
+Decision: define problem and strategy generally; treat the system problem as
+the root of an evolving hierarchy; relate each smaller problem to a parent and
+give it its own desired change, signal, and strategy; use Framework Operations
+and P1 as the first worked example; and supersede the separate goal review.
+This simplification directly addresses P1's understandability signal.
+
+### 2026-07-12 — problem creation and decision history clarified
+
+Source: [current system-problem review](../streams/working-sessions/2026-07-12-system-problem-review.md)
+and [follow-up feedback](../streams/framework-feedback/2026-07-12-problem-creation-grooming-and-storage.md).
+
+The maintainer decided that streams and processes retain their own issues,
+observations, results, and insights. Relevant source-specific grooming may
+propose higher-level problems, while problem grooming alone decides whether to
+open, merge, revise, defer, or reject them. Each problem's chosen system of
+record must retain a concise history of material decisions, evidence, and
+authority without duplicating task activity or native evidence.
+
+The maintainer also removed normative problem-parent fields and cardinality;
+each system's process chooses whether and how to represent decomposition
+relationships.
+
+The maintainer later established that the root system problem is constitutive
+and stable. Clarification belongs to system strategy, and APS does not define a
+root-problem replacement transition.
+
+The maintainer also proposed surprise, excess resource use, and verification
+regression as possible review signals. The separately
+[groomed insight](../streams/insights/2026-07-12-surprise-cost-and-verification-regression-signals.md)
+is compiled provisionally as recommended framework guidance with process-
+specific implementation details.
+
+The maintainer later proposed learning from decision quality, harmful choices,
+course corrections, and causal hypotheses. That remains a separate
+[groomed insight](../streams/insights/2026-07-12-learning-from-decision-quality-and-course-correction.md),
+compiled provisionally as lightweight framework learning guidance.
