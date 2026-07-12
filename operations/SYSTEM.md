@@ -47,15 +47,3 @@ streams:
     grill: null
 
 ---
-
-# APS Framework Operations System
-
-## Boundary
-
-This `operations/` directory contains the first APS application: the system
-definition and processes used to improve the method itself. The sibling
-`framework/` directory is its contextual output.
-
-The repository is a container for the system and its outputs; it is not itself
-declared as a system. APS applications operated elsewhere remain outside this
-system, although their observed results may enter through its streams.

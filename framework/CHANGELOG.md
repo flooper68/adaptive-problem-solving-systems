@@ -3,6 +3,17 @@
 Simple history of material framework changes. Git remains the detailed audit
 trail.
 
+## 2026-07-12 — system boundary demoted to contextual description
+
+Confirmed that system boundary is not a separate APS concept with its own
+identity, state, lifecycle, or required declaration. A system's root problem
+and complete-loop ownership establish its identity; boundary language may
+remain ordinary contextual description. Removed declaration guidance that
+specifically invited a boundary explanation and removed the duplicated
+Framework Operations boundary section. Retained the existing child-system
+wording, where an independent boundary is descriptive shorthand rather than an
+additional normative object.
+
 ## 2026-07-12 — goal removed and problem hierarchy clarified
 
 Removed `goal` as a separate APS concept because it duplicated the desired

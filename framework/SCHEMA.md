@@ -68,10 +68,8 @@ streams:
 ```
 
 After the frontmatter, add only system-level context that is not clearer in a
-linked source. A short boundary explanation may clarify why this is an
-independent system. The linked process owns the complete loop; problems,
-strategies, and processes own contextual decomposition and implementation
-detail.
+linked source. The linked process owns the complete loop; problems, strategies,
+and processes own contextual decomposition and implementation detail.
 
 Framework Operations is the first concrete application:
 [operations/SYSTEM.md](../operations/SYSTEM.md).
