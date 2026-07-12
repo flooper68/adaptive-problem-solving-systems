@@ -1,10 +1,12 @@
 ---
 id: apss.review-system-concept
 type: review
-status: in-progress
+status: closed
 owner: APS framework maintainer
 agent: Codex operator
 created: 2026-07-11
+closed: 2026-07-12
+delivery: 04cd42a
 addresses: [P1]
 source: Conceptual simplification strategy session
 ---
@@ -73,15 +75,7 @@ concepts. The richer stream-entry shape is explicitly deferred to its own
 review.
 
 The maintainer accepted the reviewed session and explicitly requested delivery
-on 2026-07-12. Final verification passes. Next: commit and push the reviewed
-scope, then close and archive this task with its delivery reference.
-
-Commit `a636d22` contains the accepted scope. The push to the external GitHub
-remote was blocked because its trust could not be established and it would
-transmit private workspace contents. The maintainer explicitly approved the
-push after the risk notice and requested a process clarification eliminating
-redundant delivery confirmation. Commit `28b6945` contains that clarification,
-but the execution platform denied the subsequent push even after explicit
-post-disclosure approval and forbids alternate delivery routes. Next: a
-maintainer runs `git push origin main` outside this restricted environment;
-after confirmed delivery, close and archive this task.
+on 2026-07-12. Final verification passed. The accepted framework scope begins
+at `a636d22`; delivery-process clarification is included in `28b6945`; and the
+complete accepted sequence through `04cd42a` was pushed to `origin/main`. This
+task is closed and archived.

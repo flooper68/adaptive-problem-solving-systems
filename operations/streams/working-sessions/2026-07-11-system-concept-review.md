@@ -1,13 +1,14 @@
 ---
 id: apss.session.system-concept-review
 type: working-session
-status: awaiting-delivery
+status: retained
 recorded: 2026-07-11
+closed: 2026-07-12
 participants: [APS framework maintainer, Codex operator]
 source: Maintainer-agent discussion in the current Codex task
 related_problems: [P1]
 related_tasks: [apss.review-system-concept]
-pending_delivery: 28b6945
+delivery: 04cd42a
 ---
 
 # Review the adaptive problem-solving system concept
@@ -530,6 +531,10 @@ not established as trusted, and the platform forbids alternate delivery
 routes. The accepted commit sequence remains local and the session remains
 `awaiting-delivery`; a maintainer must run `git push origin main` outside this
 restricted environment.
+
+The environment restriction was subsequently removed. Commit `04cd42a` and the
+complete accepted sequence through it were pushed successfully to
+`origin/main` on 2026-07-12. The session is retained and closed.
 
 ## Main process filename
 

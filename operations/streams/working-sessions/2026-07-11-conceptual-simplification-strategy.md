@@ -61,7 +61,7 @@ uncommitted strategy and task changes for maintainer review in Git.
 ## Affected artifacts
 
 - [P1](../../problems/p1-finish-mvp-and-run-loop.md)
-- [Selected system-concept review](../../tasks/review-system-concept.md)
+- [Selected system-concept review](../../tasks/archive/review-system-concept.md)
 - [Ready concept-review tasks](../../tasks/backlog/)
 - [Framework vocabulary](../../../framework/VOCABULARY.md)
 - [Framework definition](../../../framework/README.md)
