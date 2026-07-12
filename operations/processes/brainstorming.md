@@ -32,15 +32,20 @@ the result reaches an accepted stopping point.
    question or next trigger without accepting the result, record a handoff and
    leave the changes uncommitted. If the maintainer accepts the result or
    explicitly asks to finish or end the session, treat that statement as the
-   bounded approval signal for the reviewed session scope.
+   bounded approval signal for the reviewed session scope. That signal also
+   authorizes transmitting the reviewed scope to the repository's configured
+   `origin/main`; do not ask for a separate commit or push confirmation.
 8. **Deliver an accepted session.** Run relevant validation, stage only the
    session-scoped changes, commit them, and push the approved commit to
-   `origin/main`. Record the commit in the working-session record and then set
-   it to `retained` with its close date. A repository-backed session is not
-   finished while its accepted changes exist only in the working tree. If
-   validation, isolation, repository protection, or the push blocks delivery,
-   record the blocker and leave the session awaiting delivery rather than
-   claiming it is closed.
+   the already configured `origin/main` without another prompt. Do not change
+   the remote or destination implicitly. If the execution environment requires
+   a risk disclosure or explicit approval, provide it once; after the
+   maintainer approves, proceed without seeking redundant confirmation. Record
+   the commit in the working-session record and then set it to `retained` with
+   its close date. A repository-backed session is not finished while its
+   accepted changes exist only in the working tree. If validation, isolation,
+   repository protection, or the push blocks delivery, record the blocker and
+   leave the session awaiting delivery rather than claiming it is closed.
 
 ## Evidence and retention
 

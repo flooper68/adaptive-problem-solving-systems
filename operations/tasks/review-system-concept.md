@@ -78,5 +78,7 @@ scope, then close and archive this task with its delivery reference.
 
 Commit `a636d22` contains the accepted scope. The push to the external GitHub
 remote was blocked because its trust could not be established and it would
-transmit private workspace contents. Await explicit maintainer approval after
-the risk notice, then push, close, and archive the task.
+transmit private workspace contents. The maintainer explicitly approved the
+push after the risk notice and requested a process clarification eliminating
+redundant delivery confirmation. Next: commit that clarification, push the
+accepted session, then close and archive this task.

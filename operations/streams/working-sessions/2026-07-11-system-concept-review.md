@@ -516,6 +516,13 @@ established as trusted and pushing would transmit private workspace contents.
 The session remains awaiting delivery pending the maintainer's explicit
 approval after this risk notice.
 
+The maintainer explicitly approved the external push after the risk notice on
+2026-07-12 and requested that the brainstorming process make this delivery
+behavior automatic. The process now states that accepting or ending a reviewed
+session authorizes its commit and transmission to the already configured
+`origin/main` without redundant confirmation; environment-required disclosure
+still occurs once.
+
 ## Main process filename
 
 The maintainer renamed the Framework Operations loop implementation from
