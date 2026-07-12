@@ -2,9 +2,9 @@
 id: apss.task-candidate-grilling
 type: task
 status: captured
-owner: APSS framework maintainer
+owner: APS framework maintainer
 created: 2026-07-10
-source: APSS framework maintainer idea intake
+source: APS framework maintainer idea intake
 ---
 
 # Define a grilling protocol for task candidates
@@ -55,7 +55,7 @@ possible next step while preserving the source's original meaning.
 
 ### 2026-07-10 — captured
 
-Captured from the APSS framework maintainer's proposal for a grilling process
+Captured from the APS framework maintainer's proposal for a grilling process
 that helps derive and clarify executable candidate actions from ideas,
 insights, issues, and problems. Its relationship to the existing intake and
 grooming processes remains open.

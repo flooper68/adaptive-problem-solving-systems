@@ -2,7 +2,7 @@
 id: apss.review-insight
 type: review
 status: ready
-owner: APSS framework maintainer
+owner: APS framework maintainer
 created: 2026-07-11
 addresses: [P1]
 source: Conceptual simplification strategy session
@@ -19,7 +19,7 @@ and lifecycle needed by the complete loop.
 
 Apply the concept review test in
 `operations/problems/p1-finish-mvp-and-run-loop.md`, choose a disposition,
-and propagate accepted changes through affected normative and example surfaces.
+and propagate accepted changes through affected normative and operational surfaces.
 
 ## Stop condition
 

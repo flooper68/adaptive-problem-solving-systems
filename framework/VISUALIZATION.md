@@ -1,44 +1,41 @@
-# Visualizing APSS
+# Visualizing APS
 
-System declarations are the source of truth. Visualizations are derived
-projections for orientation, diagnosis, and improvement. Generate them from
-`SYSTEM.md` frontmatter where practical; if maintained manually, correct them
-whenever they conflict with declarations.
+System declarations and their linked strategies, problems, processes, and
+streams are the sources of truth. Visualizations are derived projections for
+orientation, diagnosis, and improvement. Correct them whenever they conflict
+with those sources.
 
-No single diagram should show every relationship. APSS uses four standard
+No single diagram should show every relationship. APS uses four standard
 views plus a repeatable local-system motif.
 
-## 1. Hierarchy and ownership
+## 1. Problem decomposition
 
-Purpose: answer “what systems exist, where do they belong, and who owns their
-lifecycle?”
+Purpose: answer “which larger problems have been decomposed to other systems?”
 
-Use only `parent` edges. Keep the first view to roughly six to eight top-level
-systems, then allow readers to zoom into a selected branch.
+Derive edges from links in problem definitions, strategies, or processes. Keep
+the first view to roughly six to eight systems, then allow readers to zoom into
+a selected problem branch.
 
 ```mermaid
 flowchart TB
-    root["Root system"]
-    direction["Direction system"]
+    root["Product system"]
     delivery["Delivery system"]
     quality["Quality system"]
-    knowledge["Knowledge system"]
-    devLoop["Dev-loop subsystem"]
+    devLoop["Development-loop system"]
 
-    root --> direction
-    root --> delivery
-    root --> quality
-    root --> knowledge
-    delivery --> devLoop
+    root -->|"delivery problem"| delivery
+    root -->|"quality problem"| quality
+    delivery -->|"development-loop problem"| devLoop
 ```
 
-Node labels should contain the system name. Detail views may add the primary
-artifact; do not fill the orientation map with goals, streams, and metrics.
+Node labels contain the system name; edges identify the decomposed problem.
+Detail views may add relevant verification signals; do not fill the orientation
+map with unrelated streams and process detail.
 
-## 2. Artifact flow
+## 2. Contextual artifact flow
 
-Purpose: answer “how does the larger problem become useful output, and who
-consumes each step?”
+Purpose: when the solution produces artifacts, answer “how do they contribute
+to problem improvement, and who uses them?”
 
 Use producer-to-consumer edges labeled with the artifact. Include outcome
 feedback when it materially closes the loop.
@@ -51,15 +48,14 @@ flowchart LR
     consumer["Consumer"]
     learning["Outcome learning\nartifact: validated insight"]
 
-    direction -->|"constraints"| planning
+    direction -->|"current direction"| planning
     planning -->|"selected tasks"| delivery
     delivery -->|"primary artifact"| consumer
     consumer -.->|"use and feedback"| learning
     learning -->|"strategy evidence"| direction
 ```
 
-This is the recommended default orientation view because it shows why each
-system exists, not only where it is stored.
+Use this view only when artifacts materially help explain the solution.
 
 ## 3. Evidence, compilation, and adaptation
 
@@ -117,39 +113,35 @@ flowchart LR
     problem["System problem"] --> goal["Current goal"]
     goal --> openProblem["Open problem + strategy"]
     openProblem --> process["Adaptive execution loop"]
-    process --> artifact["Artifact"]
-    artifact --> consumer["Consumer"]
-    artifact --> artifactCheck["Artifact validation"]
-    consumer --> outcomeCheck["Outcome validation"]
-    artifactCheck --> learning["Evidence → knowledge → adaptation"]
-    outcomeCheck --> learning
+    process --> attempt["Solution attempt"]
+    attempt --> verification["Verification"]
+    verification --> learning["Evidence → knowledge → adaptation"]
     learning --> openProblem
 ```
 
 ## Generation contract
 
-A generator can derive the views from these declaration fields. It should use
-the normative [system schema](system.schema.json) rather than maintaining a
-second required-field list:
+A generator derives the views from the minimal declaration and its linked
+sources. It should follow the human-readable [declaration contract](SCHEMA.md)
+rather than maintaining a second required-field list:
 
 | View | Fields |
 |---|---|
-| Hierarchy | `id`, `name`, `parent`, `status` |
-| Artifact flow | `strategy`, `planning.*`, `artifact.primary`, `artifact.consumers`, `relations.feeds` |
-| Learning | `streams`, `learning.*`, `authority.adaptation`, `relations.improves` |
-| Work-session processing | `work_sessions.*`, `streams`, `artifact.*` |
+| Problem decomposition | System `name` plus links in problem definitions, strategies, or processes |
+| Artifact flow | Contextual artifacts and consumers named by the linked processes or problems |
+| Learning | `process`, `streams`, and linked learning or adaptation sources |
+| Work-session processing | `work_sessions.*`, `streams`, and linked processes |
 
 It should also report structural problems:
 
-- duplicate IDs;
-- missing parents or relation targets;
-- parent cycles;
-- active systems missing required APSS fields;
-- artifacts without consumers or intended outcomes;
-- missing artifact or outcome validation;
-- missing strategy, problem collection, or task collection;
-- missing brainstorming process references;
-- missing compilation or adaptation processes; and
+- ambiguous system names within the mapped scope;
+- unresolved problem-decomposition targets;
+- decomposition cycles that are not deliberately modeled feedback;
+- systems missing required APS fields;
+- unresolved strategy, loop, verification, work-session, or stream process
+  references;
+- duplicate work-session or stream IDs;
+- linked loop processes that omit verification, learning, or adaptation; and
 - declarations that reference nonexistent local files.
 
 The generated output is disposable. Never edit generated maps as if they were
@@ -158,11 +150,9 @@ the system definition.
 ## Visual discipline
 
 - Start with the smallest useful view; reveal detail by branch or system.
-- Use stable system names and artifact labels, not folder paths, as visible text.
+- Use system names and problem labels, not folder paths, as visible text.
 - Pair edge labels with line styles; do not rely on color alone.
-- Keep lifecycle ownership (`parent`) visually distinct from artifact, evidence,
+- Keep problem-decomposition edges visually distinct from artifact, evidence,
   and governance relationships.
-- Show unresolved or proposed systems explicitly rather than presenting them as
-  active.
-- A diagram with no consumer, validation, or feedback edge is a prompt to check
-  whether the declared loop is actually closed.
+- A diagram with no verification or feedback edge is a prompt to check whether
+  the declared loop is actually closed.

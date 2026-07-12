@@ -1,7 +1,95 @@
-# APSS changelog
+# APS changelog
 
 Simple history of material framework changes. Git remains the detailed audit
 trail.
+
+## 2026-07-11 — framework renamed to APS
+
+Renamed the method from Adaptive Problem-Solving Systems (APSS) to Adaptive
+Problem Solving (APS) so it is simpler to read and say and no longer conflates
+the general method with the systems that instantiate it. Updated the current
+framework, operations, contributor guidance, schema URN, and
+declaration terminology. Stable historical record and task IDs retain their
+existing `apss.*` namespace.
+
+## 2026-07-11 — system declaration identity simplified
+
+Removed `aps_version`, system `id`, `status`, and `parent` from the normative
+declaration contract and live declarations. A system's name is sufficient
+identity. Problem decomposition no longer creates a declaration-level parent
+tree: the originating problem definition, strategy, or process links to the
+named system handling the decomposed problem. Updated schema guidance,
+visualization, and system creation accordingly.
+
+## 2026-07-11 — generic limits concept removed
+
+Removed the generic limits field and terminology from current framework,
+operations, process, task, and application surfaces. Concrete limits now appear by
+their operational role, such as problem context, input, decision boundary,
+operating condition, verification condition, risk, or authority rule.
+
+## 2026-07-11 — system-wide roles removed
+
+Removed the required `roles` block and its universal owner, operator, consumer,
+validator, and adaptation-approver lists. Each process now defines its own
+participants, responsibilities, and applicable decision authority.
+
+## 2026-07-12 — system declaration reduced to loop orientation
+
+Reduced the normative system declaration to `name`, `problem`, `verification`,
+`strategy`, `process`, `work_sessions`, and `streams`. Planning,
+execution, learning, participation, authority, uncertainty handling,
+contextual artifacts, operating conditions, problem decomposition, and other
+relationships now belong to the linked sources that implement them.
+
+Retained `work_sessions` as the system-specific catalog of bounded session
+types, but removed the universal requirement for `brainstorming` and
+`problem-grooming`; an empty catalog is valid. Replaced the fixed artifact and
+outcome validation block with one verification value-function declaration.
+Removed the universal aspirational-future field because it usually restated the
+desired inverse of the problem; longer-horizon direction may live in strategy
+when useful.
+
+Made `verification` a direct process link. Framework Operations now uses the
+single `processes/verification.md` process for immediate correctness checks,
+problem-signal evaluation, and delayed improvement evidence; the separate
+artifact- and outcome-validation processes were superseded.
+
+Renamed the Framework Operations loop implementation to the canonical
+`processes/process.md` path and updated its declaration and stream consumers.
+
+Removed the machine-readable JSON Schema and merged the separate system
+template into `SCHEMA.md`. That document is now the single human-readable
+declaration contract and authoring template while APS is being polished.
+
+## 2026-07-12 — provisional examples deferred
+
+Removed the provisional example directory while the framework is being
+polished. Framework Operations is now the first and only current APS
+application. Cross-domain examples remain deferred until the first complete
+Operations loop has produced validated learning and the framework is stable
+enough for examples to test it without becoming synchronization work.
+
+## 2026-07-11 — APS method and system-instance distinction
+
+Clarified that APS is the general problem-solving method and that an adaptive
+problem-solving system is one concrete instantiation: a problem statement plus
+an iterative loop that plans and performs work, verifies its effect, learns
+from information and outcomes, and adapts later attempts. Replaced the system
+concept's eleven-item identity checklist with this core and made hierarchy a
+means of decomposing a larger problem into child-system problems. Clarified
+that a child owns its loop even when its parent supplies feedback,
+verification, or insights. Left the lifecycle consequence of solving a problem
+to the system's own definition rather than prescribing a universal lifecycle
+process or automatic retirement. Identified information grooming as a general
+responsibility for evidence processing and decision making, with each problem
+or input stream free to implement the grooming it needs. Made artifacts
+contextual to the problem rather than an identity criterion for every system;
+the universal responsibility is to attempt a solution and verify its effect on
+the problem. Defined verification as the loop's qualitative or quantitative
+value function: evaluation of an attempt against the problem that guides later
+optimization. Clarified that loop ownership does not prescribe who performs or
+approves each step; those authorities belong to each system's processes.
 
 ## 2026-07-11 — problem and task scope clarification
 
@@ -29,7 +117,7 @@ improvement, solution, closure, and reopening guidance without adding a
 system-declaration schema object. Defined problem grooming as the second
 required work session: problem files retain its authoritative result, while the
 working-session record retains material discussion and provenance.
-Added the normative APSS vocabulary and demonstrated the convention in
+Added the normative APS vocabulary and demonstrated the convention in
 Framework Operations and the CNC example.
 Corrected the stream-ID schema rule, which had unintentionally required every
 stream to use the ID `brainstorming`.
@@ -42,7 +130,7 @@ use-first simplification strategy and human-feedback outcome verification.
 
 ## 2026-07-10 — system-owned work sessions
 
-Initially defined `brainstorming` as the single required APSS work session.
+Initially defined `brainstorming` as the single required APS work session.
 It discusses an idea, task, or research topic with the responsible user and
 iteratively compiles reviewable changes into framework knowledge or a concrete
 system instantiation. Its declaration contains only an ID, description, and the
@@ -75,13 +163,13 @@ capsule beside the artifacts it produces. The reference repository now declares
 
 Clarified that a repository may itself be a root system boundary and may keep
 consumer-facing artifacts separate from the operations that produce them when
-all declared paths remain explicit. The APSS framework package is now the
+all declared paths remain explicit. The APS framework package is now the
 primary artifact of a root stewardship-system declaration; implementation
 examples are supporting, non-normative artifacts.
 
 ## 2026-07-09 — initial definition
 
-Defined APSS as a domain-independent framework for nested systems that own a
+Defined APS as a domain-independent framework for nested systems that own a
 problem, artifact, consumer outcome, full adaptive loop, evidence streams,
 compiled knowledge, and adaptation authority. Added the declarative system
 schema/template, visualization projections, physical-production example, and

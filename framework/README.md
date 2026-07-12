@@ -1,24 +1,25 @@
-# Adaptive Problem-Solving Systems
+# Adaptive Problem Solving (APS)
 
-Adaptive Problem-Solving Systems (APSS) is a domain-independent framework for
-designing systems that repeatedly solve a defined problem, produce an artifact,
-verify both the artifact and its real-world effect, preserve evidence, compile
-reusable knowledge, and improve how they operate.
+Adaptive Problem Solving (APS) is a domain-independent method for
+designing systems that repeatedly work on a defined problem, verify whether
+their work changes it, learn from evidence, and improve how they solve it.
 
-APSS applies to software delivery, organizations, research, mathematics,
+APS applies to software delivery, organizations, research, mathematics,
 manufacturing, personal workflows, and systems whose job is to improve other
-problem-solving systems. It specifies the responsibilities that close the loop;
-it does not prescribe one workflow, storage technology, cadence, or management
-method.
+problem-solving systems. Each adaptive problem-solving system is a concrete
+instantiation of the method. Systems may form a hierarchy that decomposes a
+larger problem into problems owned by child systems. APS specifies the general
+concepts and responsibilities that close each problem-solving loop; it does not
+prescribe one workflow, storage technology, cadence, or management method.
 
 This package is the normative framework specification. In this repository it is
 the primary artifact produced by the separately declared
-[APSS Framework Operations System](../operations/SYSTEM.md). Changes to the
+[APS Framework Operations System](../operations/SYSTEM.md). Changes to the
 normative package are summarized in [CHANGELOG.md](CHANGELOG.md). Exact
 meanings for recurring terms are consolidated in the normative
-[APSS vocabulary](VOCABULARY.md).
+[APS vocabulary](VOCABULARY.md).
 
-## Why APSS exists
+## Why APS exists
 
 Many efforts define a goal and an execution process but leave the feedback loop
 implicit. They may produce outputs without checking whether those outputs solve
@@ -26,11 +27,11 @@ the consumer's problem; collect observations without compiling them; or write
 lessons without changing the next operation. The result is activity that repeats
 without becoming more effective.
 
-APSS makes the complete loop explicit and inspectable:
+APS makes the complete loop explicit and inspectable:
 
 ```mermaid
 flowchart LR
-    problem["System problem and vision"] --> strategy["Goal and system strategy"]
+    problem["System problem"] --> strategy["Goal and system strategy"]
     strategy --> openProblems["Open problems"]
     openProblems --> tasks["Selected tasks"]
     tasks --> execute["Execute"]
@@ -53,14 +54,12 @@ is part of its strategy and may itself evolve.
 
 ## Core definitions
 
-### System problem, vision, goal, strategy, and open problem
+### System problem, goal, strategy, and open problem
 
 - **System problem** — the condition the system exists to change, including the
   affected consumer or environment.
-- **Vision** — the durable description of what better looks like if the problem
-  is solved.
-- **Goal** — a current, bounded result that moves the system toward its vision.
-  It is stated in the independent system-strategy document.
+- **Goal** — a current, bounded result that reduces the system problem. It is
+  stated in the independent system-strategy document.
 - **System strategy** — the system's current theory and approach for reaching
   its current goal: how it interprets evidence, identifies and chooses among open
   problems, guides their strategies, plans, executes, validates, learns, and
@@ -80,32 +79,45 @@ matters now; open problems retain the current gaps between the present state
 and those goals. Feedback and other evidence may reveal or change an open
 problem. The system strategy governs how the system interprets those inputs and
 chooses problems; each problem strategy describes how to approach its gap.
-Selected tasks implement that strategy, and outcome validation shows whether the
+Selected tasks implement that strategy, and verification shows whether the
 problem improved. See [VOCABULARY.md](VOCABULARY.md) for the exact boundaries
 among these and related terms.
 
 ### System and subsystem
 
-An **adaptive problem-solving system** owns:
+An **adaptive problem-solving system** is one concrete instantiation of APS.
+It owns a problem statement and an iterative loop for solving that problem. In
+that loop it uses strategy to guide work planning and execution, takes in
+information from relevant streams, verifies whether its attempts improve the
+problem, grooms information through evidence-aware processing and decision
+making, compiles reusable knowledge, and adapts a later attempt. Verification
+acts as the loop's value function: it evaluates an attempt against the problem
+and supplies a qualitative or quantitative signal for the next optimization
+step. An attempt may produce an inspectable artifact when the problem context
+calls for one, but a separately named artifact is not part of the system's
+identity.
 
-1. a distinct problem and boundary;
-2. stable identity and lifecycle ownership;
-3. roles and adaptation authority;
-4. inputs, constraints, and evidence streams;
-5. an independent system strategy, current open problems with their own
-   strategies, task files with resumable state, and required work sessions;
-6. a complete execution and feedback loop;
-7. at least one primary artifact;
-8. a consumer and intended outcome;
-9. separate artifact and outcome validation;
-10. compiled knowledge and a process that produces it; and
-11. an adaptation process that changes future operation.
+These are responsibilities of the system, not a required sequence of separate
+processes or components. Each system defines the processes that implement
+them; those processes may be combined, reordered, or supported by other
+participants while the system remains accountable for using the resulting
+evidence and closing its loop.
 
-A **subsystem** is a system whose lifecycle is owned by exactly one parent
-system. It still owns its complete adaptive loop. If an entity cannot justify
-its own artifact, outcome, evidence, learning, and adaptation, model it as a
-**process** or **capability** inside its parent instead of inventing a hollow
-subsystem.
+Loop ownership does not require every action or approval to reside inside the
+system boundary. The system's processes define who performs and authorizes each
+step.
+
+A **subsystem** is a child system used to decompose part of its parent's
+problem. The originating problem definition, strategy, or process links to the
+child; the child does not declare a parent. The child owns its problem-solving
+loop even when the decomposing system supplies feedback, verification, or
+insights. If an entity is only part of how a system operates rather than an
+instantiation responsible for a problem-solving loop, model it as a **process**
+or **capability** instead.
+
+APS does not prescribe a lifecycle process, including whether solving a
+system's problem retires it or causes another transition. The system defines
+how it responds.
 
 ### Artifact and outcome
 
@@ -134,18 +146,9 @@ declaration has a stable `id`, a concise `description`, and a link to the
 `process` that defines how the work is done. The process filename should match
 the work-session ID where practical.
 
-APSS defines two required work sessions:
-
-- **Brainstorming** discusses an idea, task, or research topic with the
-  responsible user, reads relevant evidence and knowledge, compiles proposed
-  changes directly into the framework knowledge or concrete system
-  instantiation, and iterates until an accepted stopping point. Its process is
-  declared as `processes/brainstorming.md`.
-- **Problem grooming** uses the system strategy to revisit one or more current
-  open problems, evaluates their goal relevance, evidence, framing, strategy,
-  desired change, and signal, then records an authorized retain, revise,
-  address, or close result. Its process is declared as
-  `processes/problem-grooming.md`.
+APS does not prescribe particular work-session types. Each system lists the
+types it offers; the linked processes define their behavior. A system with no
+bounded session types declares an empty list.
 
 A concrete work session is one bounded invocation of a declared work session.
 It may be synchronous or asynchronous and may be performed by people, agents,
@@ -159,19 +162,9 @@ the session, date, participants, affected problems and tasks, material evidence
 or decisions, and stopping point. It preserves what happened; problem and task
 files remain authoritative for current state.
 
-A brainstorming session consumes selected stream evidence, compiled knowledge,
-tasks, constraints, or existing artifacts and produces reviewable changes to
-the system's knowledge or instantiation. The authoritative artifact and its
-simple changelog retain the accepted result; raw evidence remains in its source
-streams.
-
-A problem-grooming session consumes the system strategy, problem files,
-selected evidence, current tasks, and applicable knowledge. Each affected
-problem file retains the authoritative decision, rationale, and resulting
-framing; affected task files retain their current state and next step. The
-session record or other native recoverable source preserves material discussion
-and links to the changed files. Do not create a second summary when the native
-session record is already durable.
+The session record or other native recoverable source preserves material
+discussion and links to changed state. Do not create a second summary when the
+native record is already durable.
 
 ### Stream, raw evidence, and compiled knowledge
 
@@ -184,7 +177,7 @@ session record is already durable.
   playbook, model, set of heuristics, or another knowledge artifact.
 
 A durable record is an implementation choice for retaining one item from or
-about those streams, not another required APSS primitive. Discussion summaries,
+about those streams, not another required APS primitive. Discussion summaries,
 reports, and observations preserve evidence; insights state participant or
 operator inference linked to evidence; questions preserve unresolved
 uncertainty; and approved decisions are decisional artifacts. These roles may
@@ -205,15 +198,15 @@ simple changelog, not a duplicate manifest for every compilation.
 
 ## The complete adaptive loop
 
-Every APSS instance must implement all of these responsibilities. Their exact
+Every APS instance must implement all of these responsibilities. Their exact
 ordering, cadence, concurrency, tooling, and resource budget belong to the
 system's strategy. Work sessions may support this loop, but the system remains
 responsible for every phase whether it combines or separates their processes.
 
 ### 1. Orient and frame
 
-Read the current system problem, vision, goal and system strategy, open problems
-and their strategies, constraints, parent direction, relevant compiled
+Read the current system problem, goal and system strategy, open problems
+and their strategies, relevant direction, relevant compiled
 knowledge, and new evidence. Confirm that the system is still solving the right
 problem and that its current problems and approaches remain relevant to its
 goals.
@@ -253,7 +246,7 @@ opened: YYYY-MM-DD
 ```
 
 New problems may be proposed when feedback, validation, research, insights,
-changed direction or constraints, or completed work reveals a gap. Feedback is
+changed direction, or completed work reveals a gap. Feedback is
 evidence, not an automatic problem: problem grooming interprets the evidence and
 frames the condition without embedding a preferred solution.
 
@@ -316,7 +309,7 @@ Status in the task file makes its state explicit. Keep `selected`,
 tasks directly under `tasks/`; keep `captured`, `grooming`, `ready`, and
 `deferred` candidates under `tasks/backlog/`; move closed, cancelled,
 rejected, merged, or superseded tasks under `tasks/archive/` with their final
-reason. These folders are the current task collection; APSS does not require a
+reason. These folders are the current task collection; APS does not require a
 separate plan or exhaustive index.
 
 A task may be captured before its problem relationship is clear, but it is not
@@ -328,7 +321,7 @@ becoming unrelated activity attached only by ID.
 An active task file states enough current state and next-step information for
 execution to resume across time, people, or agents. Material session history
 belongs in working-session records; detailed repository history belongs in
-version control; domain evidence remains in its native stream. APSS does not
+version control; domain evidence remains in its native stream. APS does not
 require a generic work log that duplicates those sources.
 
 ### 3. Resolve uncertainty
@@ -345,60 +338,49 @@ domain-specific protocols:
   another deliberate test.
 
 These capabilities may be implemented locally or delegated to shared systems.
-Brainstorming is the current work-session interface for discussing and
-compiling a load-bearing idea, task, or research topic with the responsible
-user; a system-specific protocol may include a particular grill.
+### 4. Attempt a solution
 
-### 4. Execute and produce
+Run the system's process and make a solution attempt. Retain material
+decisions, deviations, failures, and successful results in the appropriate
+current-state or evidence source. An attempt may produce contextual artifacts.
 
-Run the system's process and produce the primary artifact plus any supporting
-artifacts. Update the task's current state and next step. Retain material
-decisions, deviations, failures, and successful resolutions in the session
-record or appropriate evidence stream.
+### 5. Verify the attempt
 
-### 5. Validate the artifact
+Use the system's value function to evaluate the attempt against its problem.
+When an attempt produces an artifact, check the artifact as an input to that
+evaluation rather than treating artifact completion as problem improvement.
 
-Verify that the output satisfies its specification or acceptance conditions.
-The method depends on the problem: tests, inspection, review, proof checking,
-measurement, tolerance analysis, or another fit-for-purpose check.
-
-### 6. Validate the outcome
-
-Verify separately that the artifact caused the intended effect for its consumer
-or environment. Outcome validation may require observation over time and may be
-asynchronous with artifact validation.
-
-### 7. Capture evidence
+### 6. Capture evidence
 
 Preserve relevant raw observations and provenance through declared streams. Do
 not turn missing information into fact. If a stream lacks context, record the
 gap and invoke discussion, research, or experimentation when the answer is
 load-bearing.
 
-### 8. Compile knowledge
+### 7. Compile knowledge
 
 Run the system's implemented compilation process. The system decides when to
 run it, what evidence to revisit, whether to update incrementally or recompile
 more broadly, and how to allocate time, compute, token, or human attention.
 
-### 9. Adapt
+### 8. Adapt
 
 Use validated learning to improve open-problem framing, task selection,
 strategy, goals, processes, streams, validation, knowledge, or subsystem
 structure.
-Adaptation follows the authority declared by the system. The initial safe
-default is human approval by the responsible owner; trusted systems may later
-receive bounded autonomous authority.
+Adaptation follows the authority defined by the relevant process.
 
-### 10. Continue, stop, or hand off
+### 9. Continue, stop, or hand off
 
-Trigger the next invocation, wait for an event or schedule, hand an artifact to
-another system, or end when the problem is solved. Open-ended systems continue
-while their purpose remains valid.
+Trigger the next invocation, wait for an event or schedule, hand work to
+another system, or end when the problem is solved. The linked process defines
+the applicable behavior.
 
-## Validation has two mandatory dimensions
+## Validation of problem change and contextual artifacts
 
-Every system declares both dimensions even if they run at different times.
+Every system verifies whether its attempts improve its problem. When an attempt
+produces a contextual artifact, the system also verifies that artifact before
+using it as evidence of problem change. The checks may run at different times.
 
 | Dimension | Question | Typical evidence |
 |---|---|---|
@@ -406,112 +388,76 @@ Every system declares both dimensions even if they run at different times.
 | Outcome effectiveness | Did the output solve the consumer's problem? | use, behavior, feedback, field results, longitudinal measures |
 
 An open-ended or continuously operating system may additionally define
-**health/homeostasis** conditions: viability constraints it must maintain while
+**health/homeostasis** conditions: operating conditions it must maintain while
 pursuing outcomes, such as cash flow, safety margin, latency, capacity, or error
 rate. Health is an optional pattern, not a universal third validation field.
 
-## Hierarchy, ownership, and relationships
+## Problem decomposition
 
-Every system has one stable ID independent of its path. A root has no parent;
-every subsystem has exactly one primary parent. The parent owns the subsystem's
-lifecycle: creation, placement, resource boundary, escalation, and retirement.
+Each system is identified by its name. APS does not require a separate system
+ID, status, or parent declaration. A hierarchy is a view of problem
+decomposition: when a problem is assigned to another system, the originating
+problem definition, strategy, or process records that link. Lifecycle and
+placement remain choices of those systems and processes rather than universal
+declaration fields.
 
-Systems may participate across the hierarchy through typed relationships. APSS
-does not close the vocabulary, but common relations include:
+Problem-decomposition links explain why a child system exists. Other
+cross-system interactions belong in the problems, strategies, processes, or
+streams where they affect operation; APS does not require a universal relation
+registry.
 
-- `feeds` — provides evidence or artifacts to another system;
-- `verifies` / `verified_by` — validates another system or is validated by it;
-- `invokes` — calls another system or capability;
-- `depends_on` — requires another system's result;
-- `scheduled_by` — receives its invocation from another system;
-- `governed_by` — operates under another system's authority; and
-- `improves` — adapts another declared target with permission.
+## Process participants and authority
 
-The primary-parent hierarchy answers “who owns this?” Typed relations answer
-“where else does this participate?” This keeps filesystem placement and
-authority unambiguous without pretending the organization is only a tree.
+APS does not require a system-wide role taxonomy or list. Each process defines
+the people, agents, or systems that participate in it and states who performs,
+reviews, validates, or approves its decisions. The same participant may act in
+several processes, and a process may be human-operated, agent-operated,
+automated, or mixed.
 
-## Roles and authority
-
-Every system declares:
-
-- **owner** — accountable for the system's purpose and lifecycle;
-- **operators** — execute the loop;
-- **artifact consumers** — use the primary artifact;
-- **validators** — judge artifact correctness and outcome effectiveness; and
-- **adaptation approvers** — authorize changes to strategy or operation.
-
-The same person or agent may hold multiple roles. Authority is explicit rather
-than inferred. A system can be human-operated, agent-operated, automated, or a
-mixture. Autonomy is a declared permission earned through evidence, not an
-assumption implied by automation.
+Participation does not imply authority. Each process makes its applicable
+decision authority explicit rather than relying on a universal role name.
 
 ## Standard system capsule
 
-A system capsule colocates its declaration and the operational material needed
-to run its adaptive loop. Produced artifacts may be kept outside the capsule
-when that makes the producer-product boundary clearer, but their paths,
-ownership, consumers, and validation must remain explicit. Shared or external
-evidence is referenced as a stream. A conventional multi-system repository
-places concrete capsules under `systems/`:
+A system capsule colocates its declaration with the strategies, processes, and
+stream references needed to find its adaptive loop. One possible layout is:
 
 ```text
 systems/
-  <root-system>/
+  <system>/
     SYSTEM.md
     STRATEGY.md
     processes/
-      brainstorming.md
-      problem-grooming.md
-      artifact-validation.md
-      outcome-validation.md
+      loop.md
+      verification.md
     streams/
-      working-sessions/
-        <session>.md
     problems/
-      <problem>.md
-      archive/
     tasks/
-      <selected-or-active-task>.md
-      backlog/
-        <candidate-task>.md
-      archive/
-    knowledge/
-      README.md
-      CHANGELOG.md
-    subsystems/
-      <child-system>/
-        SYSTEM.md
-        ...
 ```
 
-Only `SYSTEM.md`, a system strategy, active problem and task files with
-resumable state, the required work-session processes, execution and validation
-definitions, and a compiled-knowledge artifact are conceptually required.
-Create archive directories only when something is actually archived; empty
-ceremonial directories add no value.
+Only the minimal `SYSTEM.md` fields are structurally required. The linked
+strategy and process choose the physical layout and implement the remaining
+loop concepts. Empty ceremonial directories add no value.
 
-Child systems are physically nested under the owning parent's `subsystems/`
-directory. Cross-system relations use stable IDs, not copied folders or
-duplicate definitions.
+Child systems may live wherever their own definition and processes require.
+The originating problem definition, strategy, or process links to the child by
+system name; physical nesting is not required.
 
 When a repository is itself a root system, its root may be the declared system
 boundary. Alternatively, a repository may be a container holding an operational
-system capsule beside its produced artifacts. For example:
+system capsule beside its contextual outputs. This repository uses:
 
 ```text
-framework/   primary artifact
-examples/    supporting artifacts
+framework/   normative APS method
 operations/  producing system capsule, including SYSTEM.md
 ```
 
-These are strategy choices, not required APSS layouts. The declaration must
-make the actual system boundary, artifact ownership, and every referenced path
-explicit.
+These are strategy choices, not required APS layouts. Every path referenced by
+the declaration must resolve.
 
 ## Lightweight stream declarations
 
-Streams are heterogeneous, so APSS standardizes only a small interface:
+Streams are heterogeneous, so APS standardizes only a small interface:
 
 ```yaml
 streams:
@@ -528,90 +474,57 @@ when their problem requires them. They are not universal framework ceremony.
 
 ## Work-session declarations
 
-APSS requires `brainstorming` and `problem-grooming`. Each declaration contains
-a stable ID, description, and same-named linked process:
+Each system lists its own work-session types. Every declaration contains a
+local ID, description, and linked process:
 
 ```yaml
 work_sessions:
   - id: brainstorming
     description: Discuss an idea, task, or research topic with the responsible user and iteratively compile reviewable changes into system knowledge or the system instantiation.
     process: processes/brainstorming.md
-  - id: problem-grooming
-    description: Use the system strategy to revisit current open problems, update their evidence and strategy, and record an authorized retain, revise, address, or close decision.
-    process: processes/problem-grooming.md
 ```
 
-The process owns framing, evidence use, discussion, compilation, iterative user
-review, decision recording, stopping, and any session-specific constraints. The
-declaration names a repeatable kind of work, not a historical invocation. Other
-system work remains implemented through the existing planning, execution,
-validation, learning, and adaptation declarations.
+The process owns invocation, participants, evidence use, decisions, outputs,
+stopping or observation boundaries, authority, and retention. The declaration
+names a repeatable kind of work, not a historical invocation. Use an empty list
+when the system has no bounded session types.
 
 ## Creating a system
 
-1. **Establish the boundary.** Name the distinct problem, consumer, outcome,
-   artifact, owner, and why this requires an independent adaptive loop rather
-   than a process inside another system.
-2. **Choose identity and ownership.** Assign a stable ID, select exactly one
-   parent, create the capsule under that parent's `subsystems/`, and declare
-   cross-system relationships.
-3. **Declare direction.** Write the vision and constraints. Define the current
-   goal and system strategy in `STRATEGY.md` beside `SYSTEM.md`, link it from
-   `SYSTEM.md`, and use it to frame and compare current open problems.
-4. **Declare roles and authority.** Name operators, consumers, validators, and
-   adaptation approvers. Start human-approved unless autonomy is deliberate and
-   justified.
-5. **Declare artifacts and validations.** State the primary artifact,
-   acceptance method, intended outcome, and outcome-validation method.
-6. **Declare streams and uncertainty routes.** Name the evidence sources and
-   how discussion, research, and experimentation are invoked.
-7. **Implement required work sessions.** Declare `brainstorming` for iterative
-   user discussion and reviewable compilation and `problem-grooming` for
-   evidence-aware problem decisions. Give each a same-named process.
-8. **Implement the full loop.** Add problem files, task files with resumable
-   state, material session retention, execution, both validations, compilation,
-   adaptation, and continuation or termination.
-9. **Create compiled memory.** Give the system a knowledge artifact and simple
-   changelog.
-10. **Visualize and inspect.** Generate or draw the hierarchy, artifact flow,
-   and learning loop from the declaration; fix missing ownership or dead ends.
-11. **Run it once end to end.** A declared loop that has never produced,
-    validated, learned, and adapted is a design hypothesis, not yet a proven
-    adaptive system.
+1. **Name and frame it.** State the system name and problem.
+2. **Declare verification.** Link the process that evaluates attempts against
+   the problem.
+3. **Declare strategy.** Link the system's current direction.
+4. **Link the loop.** Point `process` to the process that implements planning,
+   execution, learning, adaptation, participation, and authority.
+5. **Declare work-session types.** List the bounded session types the system
+   offers and link each defining process; use an empty list when there are none.
+6. **Declare streams.** Name the information sources used by the loop.
+7. **Connect decomposition when applicable.** Link another named system from
+   the problem, strategy, or process that decomposes work to it.
+8. **Run it once end to end.** A declared loop that has never produced,
+   validated, learned, and adapted is a design hypothesis, not yet a proven
+   adaptive system.
 
-The normative structural contract is
-[system.schema.json](system.schema.json), explained in
-[SCHEMA.md](SCHEMA.md). Start from
-[SYSTEM.template.md](SYSTEM.template.md). A complete physical-domain
-example lives at
-[../examples/cnc-part-production/SYSTEM.md](../examples/cnc-part-production/SYSTEM.md).
+The human-readable declaration contract and template are in
+[SCHEMA.md](SCHEMA.md). Framework Operations is the first concrete application
+of the method.
 
 ## Assessing an existing system
 
 An existing system conforms when a reviewer can answer all of these from its
 capsule and referenced sources:
 
-- What system problem and vision does it own, and what current goal is stated in
-  its strategy?
-- Where is its independent system strategy, and how does that strategy guide
-  problem grooming?
-- Which open problems currently obstruct the goal, and which selected tasks
-  implement each problem's strategy?
-- Who owns, operates, consumes, validates, and approves adaptation?
-- What is its primary artifact and intended outcome?
-- How does it groom problems, select tasks, and keep active tasks resumable?
-- What is the complete execution/feedback loop?
-- How does its brainstorming work session discuss and compile changes with the
-  responsible user?
-- How does problem grooming retain its evidence, decision, and resulting
-  problem framing without duplicating the raw discussion?
-- How are artifact and outcome validated separately?
-- Which evidence streams does it consume and produce?
-- How can it invoke discussion, research, and experimentation?
-- Where is compiled knowledge, and how is it compiled?
-- How does learning change future operation?
-- Which parent owns it, and what cross-system relations exist?
-- If it is open-ended, does it need health/homeostasis conditions?
+- What problem defines the system?
+- Where is its current strategy?
+- Which process implements its complete loop?
+- Which bounded work-session types does it offer, if any?
+- How does verification evaluate attempts against the problem?
+- Which information streams does the loop use?
+- Do the linked processes make planning, execution, learning, adaptation,
+  participation, and authority inspectable?
+- Which problem, strategy, or process links to another system when work is
+  decomposed?
 
 Missing answers are explicit design gaps. Do not invent a subsystem merely to
 fill a diagram: either implement its full adaptive loop or keep the behavior as
@@ -619,26 +532,26 @@ a process/capability inside an accountable parent.
 
 ## Visual orientation
 
-APSS uses four complementary projections rather than one overloaded graph:
+APS uses four complementary projections rather than one overloaded graph:
 
-1. hierarchy and ownership;
+1. problem decomposition;
 2. artifact flow from producer to consumer; and
 3. evidence, compilation, and adaptation flow; and
-4. stream-to-brainstorming processing.
+4. stream-to-work-session processing.
 
-The maps should be generated from `SYSTEM.md` declarations where practical.
-Manual maps are derived navigation aids and must lose to the declarations on
+The maps use the declaration plus linked strategies, problems, processes, and
+streams. They are derived navigation aids and must lose to those sources on
 conflict. Detailed conventions and examples are in
 [VISUALIZATION.md](VISUALIZATION.md).
 
-## What APSS deliberately does not standardize
+## What APS deliberately does not standardize
 
-APSS does not require a particular project-management method, database, wiki
+APS does not require a particular project-management method, database, wiki
 tool, communication platform, orchestration engine, schedule, problem-scoring
 method, external problem-management service, work or additional work-session
 taxonomy, compilation algorithm, experiment type, or validation technique.
 Those are strategy decisions made by each system in response to its problem,
-constraints, and available resources.
+context and available resources.
 
 The framework standardizes the questions that make a problem-solving loop
 complete, observable, improvable, and accountable.

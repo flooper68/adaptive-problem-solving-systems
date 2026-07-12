@@ -11,7 +11,7 @@ system combines them in one operational process.
 
 An adaptation starts from linked evidence, uncommitted changes or an explicit
 reason none are needed, and selected work with acceptance and validation
-conditions. The APSS framework maintainer is the adaptation approver. Operators
+conditions. The APS framework maintainer is the adaptation approver. Operators
 may prepare proposals only within their granted scope.
 
 ## Procedure
@@ -20,8 +20,8 @@ may prepare proposals only within their granted scope.
    validation state, and intended future behavior.
 2. Select the smallest correct target:
    - `operations/` for how the framework-producing system works;
-   - `examples/` for a non-normative demonstration or test; or
-   - `framework/` only for a domain-independent normative APSS change.
+   - a future application for a non-normative demonstration or test; or
+   - `framework/` only for a domain-independent normative APS change.
 3. Record alternatives, uncertainty, compatibility effects, and why the target
    follows from the evidence. If the evidence is insufficient, request the
    needed discussion, research, experiment, or outcome observation instead of
@@ -31,8 +31,8 @@ may prepare proposals only within their granted scope.
 5. Make the smallest coherent change. For approved normative knowledge, keep
    `framework/`, its simple changelog, and related guidance consistent as
    applicable.
-6. Run artifact validation and arrange outcome validation. Record delayed
-   outcome evidence honestly rather than claiming effectiveness at merge time.
+6. Run the declared verification process. Record delayed problem-improvement
+   evidence honestly rather than claiming effectiveness at merge time.
 7. Record the decision, evidence links, changed target, validation results, and
    next trigger in the affected task and working-session record. If the
    adaptation or its later outcome
@@ -43,5 +43,5 @@ may prepare proposals only within their granted scope.
 
 Adaptation is complete only when an authorized change affects a subsequent run
 through task selection, strategy, process, stream, validation, knowledge, system
-structure, example, or normative framework. A proposed or compiled lesson that
+structure, application, or normative framework. A proposed or compiled lesson that
 has not changed future behavior remains unapplied learning.

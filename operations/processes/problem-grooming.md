@@ -14,12 +14,12 @@ Run this process:
 - before selecting the next substantial work;
 - when material feedback, validation, learning, or completed work changes a
   problem's evidence;
-- when a goal, strategy, constraint, or system boundary changes;
+- when a goal, strategy, material condition, or system boundary changes;
 - when an open problem has no current strategy or an unclear signal; or
 - when the maintainer requests a review.
 
 An operator may gather evidence, facilitate review, and propose updates. The
-APSS framework maintainer approves problem reframing, work selection, accepted
+APS framework maintainer approves problem reframing, work selection, accepted
 risk, and closure.
 
 ## Strategy scope

@@ -1,6 +1,6 @@
-# Framework operating loop
+# Framework Operations process
 
-This process operates the APSS Framework Operations System. Responsibilities
+This process operates the APS Framework Operations System. Responsibilities
 may overlap, but none may be silently omitted.
 
 When an AI agent performs the work, also follow
@@ -8,8 +8,8 @@ When an AI agent performs the work, also follow
 
 1. Read `operations/SYSTEM.md`, `operations/STRATEGY.md`, the current problem
    and task files, relevant recent working sessions, published framework
-   knowledge, operational meta-knowledge, examples, feedback, insights, and
-   other new evidence.
+   knowledge, operational meta-knowledge, observed applications, feedback,
+   insights, and other new evidence.
 2. Capture direct consumer reports through `framework-feedback-intake.md` and
    assess them through `framework-feedback-grooming.md`. Preserve feedback as
    evidence; when its disposition is actionable, create or link a distinct work
@@ -22,8 +22,8 @@ When an AI agent performs the work, also follow
    `insight-grooming.md`. Capture a separate executable response through
    `task-intake.md` only when action is proposed; groom those work candidates
    through `task-grooming.md`.
-4. Follow [`problem-grooming.md`](problem-grooming.md) to revisit goal-relevant open
-   problems in `operations/problems/`, then select ready, bounded tasks in
+4. Follow [`problem-grooming.md`](problem-grooming.md) to revisit goal-relevant
+   open problems in `operations/problems/`, then select ready, bounded tasks in
    `operations/tasks/` that state which problems they address and confirm
    owner, acceptance conditions, authority, and validation approach.
 5. Resolve load-bearing uncertainty through brainstorming, research, or
@@ -31,27 +31,23 @@ When an AI agent performs the work, also follow
 6. For normative framework work, run
    [`knowledge-compilation.md`](knowledge-compilation.md) to compile the
    evidence directly into uncommitted framework changes and its changelog. For
-   operational or example work, make the smallest coherent changes authorized
-   by the selected task. Update the task's current state and retain material
-   decisions and deviations in the working-session record or native evidence.
-7. Run [`artifact-validation.md`](artifact-validation.md) against the proposed
-   changes. A framework change is not publishable while known consistency,
-   schema, link, example, or review failures remain.
-8. Run or arrange [`outcome-validation.md`](outcome-validation.md). Compare the
-   evidence with the addressed problem's signal and update, solve, close, or
-   retain the problem under maintainer authority. Outcome evidence may arrive
-   later than artifact validation; record that gap rather than claiming
-   effectiveness.
-9. Recompile and repeat validation if new evidence changes the proposed
+   operational or application work, make the smallest coherent changes
+   authorized by the selected task. Update the task's current state and retain
+   material decisions and deviations in the working-session record or native
+   evidence.
+7. Run [`verification.md`](verification.md). Complete immediate correctness
+   checks, compare available evidence with the addressed problem's signal, and
+   record any delayed observation without claiming effectiveness.
+8. Recompile and repeat verification if new evidence changes the proposed
    knowledge. Route operations-specific lessons to the declared process,
-   validation, task, stream, or system target, and keep raw evidence at its
+   verification, task, stream, or system target, and keep raw evidence at its
    source or durable reference.
-10. Run [`framework-adaptation.md`](framework-adaptation.md) to review the
-    uncommitted changes. The maintainer approves normative publication and use.
-11. Follow `release.md` when publishing a coherent framework version. Otherwise
-    record the stopping point, next trigger, or handoff in the task and session
-    record.
+9. Run [`framework-adaptation.md`](framework-adaptation.md) to review the
+   uncommitted changes. The maintainer approves normative publication and use.
+10. Follow `release.md` when publishing a coherent framework version. Otherwise
+   record the stopping point, next trigger, or handoff in the task and session
+   record.
 
 The process has completed one full adaptive cycle only when evidence has changed
-a subsequent task, strategy, process, validation, stream, knowledge artifact,
+a subsequent task, strategy, process, verification, stream, knowledge artifact,
 or system structure under declared authority.

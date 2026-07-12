@@ -2,23 +2,23 @@
 id: apss.visual-html-generator
 type: task
 status: captured
-owner: APSS framework maintainer
+owner: APS framework maintainer
 created: 2026-07-09
 source: apss.feedback.visualization-tooling
 ---
 
-# Generate visual HTML from APSS system declarations
+# Generate visual HTML from APS system declarations
 
 ## Idea
 
-Provide a repository-supported script that reads one or more APSS `SYSTEM.md`
+Provide a repository-supported script that reads one or more APS `SYSTEM.md`
 declarations, validates their structure and relationships, and generates a
 polished visual HTML representation without making the output a second source
 of truth.
 
 ## Motivation
 
-APSS already defines standard hierarchy, artifact-flow, and learning views plus
+APS already defines standard hierarchy, artifact-flow, and learning views plus
 a generation contract, but consumers currently have to create those views
 manually. Executable tooling would make systems easier to inspect and
 communicate while reducing drift from declarations.

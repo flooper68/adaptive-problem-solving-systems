@@ -9,8 +9,8 @@ its source; grooming decides whether and how it should proceed.
 ## When to capture
 
 Create a task file when a bounded research inquiry, experiment, review,
-remediation, or other action may improve the framework, examples, or
-stewardship operation and is not already represented by a task.
+remediation, or other action may improve the framework, Framework Operations,
+or a future application and is not already represented by a task.
 
 A report, observation, insight, question, issue, or decision remains in its
 source record. If it warrants a response, create a separate task candidate
@@ -29,7 +29,7 @@ Create `operations/tasks/backlog/<short-slug>.md` with this structure:
 id: apss.<stable-id>
 type: task
 status: captured
-owner: APSS framework maintainer
+owner: APS framework maintainer
 created: YYYY-MM-DD
 source: <person, observation, document, validation, or other origin>
 source_records: []
@@ -78,7 +78,7 @@ source has already answered. Prefer questions that clarify:
 
 - the observed situation, affected consumer, and why it matters;
 - what a better outcome would look like;
-- whether the proposed action is one possible response or a constraint on
+- whether the proposed action is one possible response or a requirement limiting
   acceptable responses; and
 - relevant examples, evidence, boundaries, dependencies, or trade-offs.
 

@@ -1,31 +1,31 @@
 ---
 id: apss.software-and-research-examples
 type: task
-status: captured
-owner: APSS framework maintainer
+status: deferred
+owner: APS framework maintainer
 created: 2026-07-09
-source: APSS framework maintainer idea intake
+source: APS framework maintainer idea intake
 ---
 
 # Add software-development and research-project examples
 
 ## Idea
 
-Add implementation examples that apply APSS to developing an application and
+Add implementation examples that apply APS to developing an application and
 to conducting a research project on a bounded topic.
 
 ## Motivation
 
-The current example demonstrates physical production. Software development and
-research would exercise different artifacts, evidence streams, uncertainty
-resolution methods, validation approaches, and adaptation cycles. Together,
-they could make the framework easier to apply in knowledge-work settings and
-expose domain-specific gaps that the manufacturing example does not reveal.
+Framework Operations is the first APS application. Later software-development
+and research applications could test whether the polished framework generalizes
+to knowledge work without forcing unstable concepts into synchronized examples
+now.
 
 ## Evidence
 
-- The framework states that APSS applies to software delivery and research.
-- The repository currently contains only the CNC part production example.
+- The framework states that APS applies to software delivery and research.
+- The repository currently uses Framework Operations as its only concrete APS
+  application.
 - No outcome evidence from software-development or research-project examples
   has been collected yet.
 
@@ -38,13 +38,20 @@ expose domain-specific gaps that the manufacturing example does not reveal.
   example?
 - How will each example validate the artifact separately from its real-world
   outcome?
-- Should either example become the first end-to-end outcome validation of the
-  operations system?
+- Should either application become a later end-to-end verification of whether
+  APS improves its problem outside Framework Operations?
 
 ## Grooming log
 
 ### 2026-07-09 — captured
 
-Captured from the APSS framework maintainer's proposal to add an application-
+Captured from the APS framework maintainer's proposal to add an application-
 development example and a research-project example. No priority, example
 topic, or implementation commitment has been assigned.
+
+### 2026-07-12 — deferred until the framework is polished
+
+The maintainer removed the provisional example directory and decided to use
+Framework Operations as the first application. Reconsider this task after the
+framework is polished and the first complete Operations loop has produced
+validated learning.

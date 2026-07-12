@@ -2,9 +2,9 @@
 id: apss.knowledge-compilation-refinement
 type: task
 status: captured
-owner: APSS framework maintainer
+owner: APS framework maintainer
 created: 2026-07-10
-source: APSS framework maintainer idea intake
+source: APS framework maintainer idea intake
 ---
 
 # Refine the knowledge-compilation process
@@ -47,6 +47,6 @@ what a compilation run produced or changed.
 
 ### 2026-07-10 — captured
 
-Captured from the APSS framework maintainer's proposal to refine knowledge
+Captured from the APS framework maintainer's proposal to refine knowledge
 compilation. The proposal records a direction for improvement, not evidence
 that the current process has failed or approval of a particular design.

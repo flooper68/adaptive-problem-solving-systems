@@ -1,69 +1,25 @@
 ---
-apss_version: "0.1"
-id: apss.framework-operations
-name: APSS Framework Operations System
-status: proposed
-parent: null
+name: APS Framework Operations System
 
-problem: APSS cannot become reliably effective and usable if the framework evolves without disciplined operations that connect consumer experience, explicit decisions, validated changes, and learning.
-vision: People can readily understand and apply APSS to build adaptive problem-solving systems that improve their intended outcomes.
-purpose: Improve the APSS framework so it is effective and usable by others.
+problem: APS cannot become reliably effective and usable if the framework evolves without disciplined operations that connect consumer experience, explicit decisions, validated changes, and learning.
+verification: processes/verification.md
 strategy: STRATEGY.md
-
-constraints:
-  - Keep the normative framework distinguishable from operations and non-normative examples.
-  - Preserve evidence, decisions, and uncertainty instead of presenting assumptions as validated results.
-  - Keep APSS domain-independent while allowing implementations to make domain-specific choices.
-
-roles:
-  owner: [APSS framework maintainer]
-  operators: [APSS framework maintainer, authorized contributors and agents]
-  consumers: [designers and operators of adaptive problem-solving systems]
-  validators: [APSS framework maintainer, framework users applying APSS]
-  adaptation_approvers: [APSS framework maintainer]
-
-inputs:
-  - Working-session evidence, insights, unresolved questions, and authorized decisions.
-  - Bounded candidate tasks, research inquiries, experiments, reviews, and remediations.
-  - Feedback and observed results from applying the framework.
-  - Validation failures and inconsistencies in framework artifacts or examples.
-  - Relevant external research and established practice.
-
-artifact:
-  primary: ../framework/
-  medium: informational
-  supporting:
-    - ../examples/
-  consumers: [designers and operators of adaptive problem-solving systems]
-  intended_outcome: Consumers can define, inspect, operate, validate, and improve complete adaptive problem-solving systems.
-
-planning:
-  process: processes/problem-grooming.md
-  problems: problems/
-  tasks: tasks/
-
-execution:
-  process: processes/framework-loop.md
-  invocation: On an approved work item, material new evidence, a validation failure, or a maintainer-requested review.
+process: processes/process.md
 
 work_sessions:
   - id: brainstorming
-    description: Discuss an APSS idea, task, or research topic with the maintainer and iteratively compile reviewable changes into the framework or a concrete APSS instantiation.
+    description: Discuss an APS idea, task, or research topic with the maintainer and iteratively compile reviewable changes into the framework or a concrete APS instantiation.
     process: processes/brainstorming.md
   - id: problem-grooming
     description: Use the system strategy to revisit current open problems with the maintainer, update their evidence and strategy, and record an authorized retain, revise, address, or close decision.
     process: processes/problem-grooming.md
-
-validation:
-  artifact: Follow processes/artifact-validation.md to check schema conformance, references, consistency, examples, and review approval.
-  outcome: Follow processes/outcome-validation.md to collect evidence that consumers can understand and successfully apply APSS.
 
 streams:
   - id: working-sessions
     purpose: Preserve material brainstorming and problem-grooming invocations with their decisions, affected files, and stopping points.
     source: Maintainer-agent discussions and other declared work-session invocations.
     access: Retain one file per material session under streams/working-sessions/ and link the affected problem and task files.
-    consumed_by: processes/framework-loop.md
+    consumed_by: processes/process.md
     grill: null
   - id: insights
     purpose: Preserve independently useful interpretations with their source evidence, reasoning, scope, uncertainty, and explicit epistemic disposition.
@@ -72,121 +28,34 @@ streams:
     consumed_by: processes/insight-grooming.md
     grill: Follow processes/insight-intake.md; ask one load-bearing question at a time about the source evidence, inference, scope, alternatives, and possible use.
   - id: framework-feedback
-    purpose: Preserve direct consumer reports about understanding, applying, or adopting APSS and explicitly disposition them.
+    purpose: Preserve direct consumer reports about understanding, applying, or adopting APS and explicitly disposition them.
     source: Framework users, maintainers, reviewers, and adopters reporting an experience.
     access: Capture reports under streams/framework-feedback/ and groom them with processes/framework-feedback-grooming.md.
     consumed_by: processes/framework-feedback-grooming.md
     grill: Ask what the reporter attempted, what happened, what they expected, what effect the gap had, and what evidence can be retained.
   - id: framework-usage
-    purpose: Learn whether APSS is understandable and useful when applied.
-    source: Implementation examples, consumer trials, reviews, and observed applications.
+    purpose: Learn whether APS is understandable and useful when applied.
+    source: Framework Operations, consumer trials, reviews, and other observed applications.
     access: Retain durable summaries or references as described in streams/README.md.
-    consumed_by: processes/framework-loop.md
-    grill: Ask what the user attempted, where interpretation was uncertain, what APSS exposed, and whether the resulting change helped.
+    consumed_by: processes/process.md
+    grill: Ask what the user attempted, where interpretation was uncertain, what APS exposed, and whether the resulting change helped.
   - id: external-foundations
-    purpose: Compare APSS choices with established theory and practice.
+    purpose: Compare APS choices with established theory and practice.
     source: Authoritative research and domain references.
     access: Preserve citations and a synthesis in the relevant research work item or retained evidence.
-    consumed_by: processes/framework-loop.md
+    consumed_by: processes/process.md
     grill: null
 
-uncertainty:
-  discussion: Follow processes/brainstorming.md to elicit the problem, intended outcome, constraints, trade-offs, and observed use from the proposer, maintainer, or framework user.
-  research: Consult authoritative external sources when terminology, prior art, or empirical claims are load-bearing.
-  experimentation: Apply proposed changes to examples, prototypes, or real systems before treating usefulness claims as established.
-
-learning:
-  compilation_process: processes/knowledge-compilation.md
-  compiled_knowledge: ../framework/
-  changelog: ../framework/CHANGELOG.md
-  adaptation_process: processes/framework-adaptation.md
-
-authority:
-  execution: Authorized operators may brainstorm with the maintainer, capture and groom insights and candidate work, edit artifacts within a selected task, and run non-destructive validation. Only declared authorities may approve insight dispositions, decisions, or task selection. AI agents follow processes/ai-agent-tasks.md and require maintainer approval before committing or pushing.
-  adaptation: The APSS framework maintainer approves normative framework changes, release decisions, and changes to the operations system.
-
-health: The operations system must keep the normative framework distinguishable from its own processes and from non-normative examples, retain durable work history, and avoid claiming effectiveness without consumer-outcome evidence.
-
-relations:
-  feeds: []
-  verifies: []
-  verified_by: []
-  invokes: []
-  depends_on: []
-  scheduled_by: []
-  governed_by: []
-  improves: []
 ---
 
-# APSS Framework Operations System
-
-## Purpose and direction
-
-This system exists to improve APSS so that other people can understand it,
-apply it, and achieve useful outcomes. Its vision describes that durable future;
-its current goal is the bounded first demonstration of the improvement loop.
-After that result is validated, the maintainer replaces it with the next bounded
-goal rather than treating routine operation as a goal.
-
-The independent [system strategy](STRATEGY.md) defines how the system
-pursues that goal and guides problem grooming and work selection.
+# APS Framework Operations System
 
 ## Boundary
 
-The system's operational capsule is this `operations/` directory. It owns the
-processes, problem state, task state, session and evidence handling, validation,
-knowledge, release history, and authority used to improve APSS. Its primary
-produced artifact is the sibling `framework/` directory. The sibling
-`examples/` directory contains supporting applications used to explain and
-test the framework.
+This `operations/` directory contains the first APS application: the system
+definition and processes used to improve the method itself. The sibling
+`framework/` directory is its contextual output.
 
 The repository is a container for the system and its outputs; it is not itself
-declared as an adaptive system. APSS applications owned by other people or
-organizations remain outside this system's authority, although their observed
-results may enter as evidence.
-
-## Complete loop
-
-Brainstorming discusses ideas, tasks, and research with the maintainer and
-iteratively compiles reviewable changes into the framework or an APSS
-instantiation. Direct feedback enters the framework-feedback stream and is
-groomed as evidence; an actionable disposition may create a linked work
-candidate. Independently useful insights
-enter their own stream for faithful intake and evidence-aware grooming. Only
-executable responses enter the task collection through intake. Problem
-grooming revisits the goal-relevant gaps and their signals. Task grooming
-clarifies their source, relevant goal and open problem, expected outcome,
-evidence, scope, uncertainty, and validation approach, then assigns a recorded
-disposition. The maintainer selects ready tasks that implement a current problem
-strategy. Operators execute the tasks, validate artifact
-correctness and consumer outcomes separately, update the problem from its
-signal, record material decisions, and compile reusable learning. Normative
-adaptations and releases require maintainer approval.
-
-## Artifact contract
-
-The versioned package in `../framework/` is the primary, normative artifact.
-Implementations in `../examples/` are supporting,
-non-normative artifacts: they demonstrate possible applications and provide
-validation evidence, but do not create requirements unless the framework
-explicitly adopts them.
-
-## Learning and adaptation
-
-Raw evidence remains recoverable through tasks, working-session records,
-feedback summaries, research citations, validation results, historical source
-material, baseline records, and Git history. Explicit interpretations and their
-assessment remain recoverable through the insight stream. The
-[knowledge-compilation process](processes/knowledge-compilation.md) synthesizes
-these streams directly into uncommitted changes to the primary artifact in
-`../framework/` and its simple changelog. The separate
-[adaptation process](processes/framework-adaptation.md) requires the maintainer
-to approve publication and later use. Operations-specific learning changes
-this declaration, its processes, or validation through the same explicit
-adaptation path; it is not kept in a competing compiled-knowledge artifact.
-
-## Open design gaps
-
-This system remains `proposed` until it completes and records a full cycle that
-includes selecting work, changing an artifact, validating artifact and outcome,
-compiling learning, and applying an approved adaptation to a subsequent run.
+declared as a system. APS applications operated elsewhere remain outside this
+system, although their observed results may enter through its streams.

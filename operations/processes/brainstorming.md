@@ -2,9 +2,9 @@
 
 ## Purpose
 
-Discuss an APSS idea, task, or research topic with the maintainer, use relevant
+Discuss an APS idea, task, or research topic with the maintainer, use relevant
 evidence and existing knowledge, and compile reviewable changes directly into
-the framework or a concrete APSS instantiation. Iterate with the maintainer until
+the framework or a concrete APS instantiation. Iterate with the maintainer until
 the result reaches an accepted stopping point.
 
 ## Procedure
@@ -14,7 +14,7 @@ the result reaches an accepted stopping point.
    would be.
 2. **Orient.** Read the current framework or instantiation, relevant streams,
    prior decisions, task files, feedback, and knowledge. Keep missing context explicit.
-3. **Explore.** Elicit observations, interpretations, alternatives, constraints,
+3. **Explore.** Elicit observations, interpretations, alternatives, decision boundaries,
    and trade-offs. Ask one load-bearing question at a time and adapt the next
    question to the answer.
 4. **Distinguish.** Keep source evidence, interpretation, unresolved questions,

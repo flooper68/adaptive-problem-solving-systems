@@ -2,9 +2,9 @@
 id: apss.compiled-domain-dictionary
 type: task
 status: captured
-owner: APSS framework maintainer
+owner: APS framework maintainer
 created: 2026-07-10
-source: APSS framework maintainer idea intake
+source: APS framework maintainer idea intake
 ---
 
 # Compile and maintain a domain dictionary
@@ -24,9 +24,9 @@ resolution rather than silently choosing one meaning.
 
 ## Evidence
 
-- APSS requires each system to compile reusable knowledge with provenance and
+- APS requires each system to compile reusable knowledge with provenance and
   uncertainty preserved.
-- The proposed `framework/VOCABULARY.md` now gives APSS itself one concise,
+- The proposed `framework/VOCABULARY.md` now gives APS itself one concise,
   authoritative terminology surface, but it does not define a generated or
   domain-specific dictionary output or compilation rules.
 - No evidence yet establishes which dictionary fields or representations are
@@ -36,7 +36,7 @@ resolution rather than silently choosing one meaning.
 
 - Is a dictionary universally required, recommended when terminology becomes
   material, or specific to selected systems?
-- What should remain in the normative APSS vocabulary, and what belongs in a
+- What should remain in the normative APS vocabulary, and what belongs in a
   system-specific compiled domain dictionary?
 - Should it be part of the primary compiled-knowledge artifact, a generated
   projection, or a supporting artifact?
@@ -56,14 +56,14 @@ resolution rather than silently choosing one meaning.
 
 ### 2026-07-10 — captured
 
-Captured from the APSS framework maintainer's proposal that a domain dictionary
+Captured from the APS framework maintainer's proposal that a domain dictionary
 be compiled. No artifact contract or universal framework requirement has been
 approved.
 
-### 2026-07-10 — narrowed by initial APSS vocabulary
+### 2026-07-10 — narrowed by initial APS vocabulary
 
 The open-problem framework compilation starts a manually maintained normative
-APSS vocabulary with exact framework meanings. This is a smaller and distinct
+APS vocabulary with exact framework meanings. This is a smaller and distinct
 result from the candidate's broader generated domain-dictionary concept. The
 candidate remains captured for later grooming rather than treating the initial
 vocabulary as evidence that every system needs such a dictionary.

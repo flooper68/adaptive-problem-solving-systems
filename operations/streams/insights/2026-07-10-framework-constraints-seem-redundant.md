@@ -1,13 +1,17 @@
 ---
 id: apss.insight.framework-constraints-seem-redundant
 type: insight
-status: captured
+status: supported
 captured: 2026-07-10
 source: APSS framework maintainer
 source_records: []
 related_insights: []
-related_work: []
-compiled_into: []
+related_work: [apss.review-system-concept]
+compiled_into:
+  - framework/README.md
+  - framework/SCHEMA.md
+  - framework/VISUALIZATION.md
+  - operations/SYSTEM.md
 ---
 
 # Constraints defined in the framework seem redundant
@@ -141,3 +145,31 @@ or adoption as a normative framework change.
 
 Not yet groomed. See
 [`insight-grooming.md`](../../processes/insight-grooming.md).
+
+### 2026-07-11 — supported and compiled
+
+Participants: APS framework maintainer and Codex operator. Evidence consulted:
+this insight, the current normative framework, schema, template, Framework
+Operations declaration and processes, current task candidates, and the CNC
+example.
+
+The assessed claim is that APS gains no operational value from naming a generic
+limits concept or field. Real limits still matter, but each is clearer when
+represented by its actual role, such as problem context, an input, a decision
+boundary, an operating condition, a verification condition, a risk, or an
+authority rule.
+
+Direct observation showed inconsistent representation: Framework Operations
+used a top-level field, the template placed the idea under inputs, the schema
+defined no field, and prose used the term for several unrelated roles. The
+alternative explanation—that the concept was merely underspecified—was
+considered, but no distinct lifecycle, decision, or reusable operation was lost
+when each occurrence was rewritten by role. The cost of erroneous removal is
+low because systems can still express every concrete limit in their definitions
+and processes.
+
+The maintainer approved **supported** for framework-wide removal and explicitly
+directed compilation. Current normative, operational, task, process, and example
+surfaces now contain no occurrence of the disputed term. Reconsider if a future
+system encounters an important limit that cannot be represented clearly by its
+actual role without a shared first-class concept.

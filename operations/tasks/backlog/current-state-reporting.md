@@ -2,9 +2,9 @@
 id: apss.current-state-reporting
 type: task
 status: captured
-owner: APSS framework maintainer
+owner: APS framework maintainer
 created: 2026-07-10
-source: APSS framework maintainer idea intake
+source: APS framework maintainer idea intake
 ---
 
 # Define a process for reporting current context and state
@@ -24,7 +24,7 @@ without requiring a consumer to reconstruct the situation from every source.
 
 ## Evidence
 
-- APSS requires active task files to retain current state and next steps so
+- APS requires active task files to retain current state and next steps so
   execution can resume across time, people, and agents.
 - The framework loop requires operators to orient from the declaration,
   strategy, problem and task files, recent sessions, and relevant evidence before
@@ -41,7 +41,7 @@ without requiring a consumer to reconstruct the situation from every source.
 - Is the subject a whole system, a subsystem, a work item, an operating
   session, or each through distinct views?
 - Which fields are essential: objective, boundary, baseline, completed work,
-  current state, decisions, assumptions, constraints, risks, blockers, open
+  current state, decisions, assumptions, risks, blockers, open
   questions, and next actions?
 - What are the authoritative sources for each field, and how is staleness made
   visible?
@@ -55,6 +55,6 @@ without requiring a consumer to reconstruct the situation from every source.
 
 ### 2026-07-10 — captured
 
-Captured from the APSS framework maintainer's proposal to define a process for
+Captured from the APS framework maintainer's proposal to define a process for
 reporting current context and state. Scope and artifact design remain
 intentionally unresolved.

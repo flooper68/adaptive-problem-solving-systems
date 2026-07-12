@@ -19,7 +19,7 @@ evidence.
 - An operator facilitates, seeks clarification when proportionate, and records
   the analysis.
 - The reporter supplies context when available but need not design the fix.
-- The APSS framework maintainer approves the disposition and any escalation.
+- The APS framework maintainer approves the disposition and any escalation.
 
 Set `status: grooming` while analysis is materially underway. Do not edit the
 original report to match the conclusion; append clarifications and the
@@ -38,7 +38,7 @@ grooming record with provenance.
    requirement.
 4. **Classify the scope.** Identify whether the report concerns normative
    semantics, documentation, supporting tooling or examples, stewardship, or
-   something outside APSS's boundary.
+   something outside APS's boundary.
 5. **Check identity and reach.** Link duplicates and related reports without
    deleting independent observations. Note whether the issue is reproducible,
    isolated, recurring, or not yet known.
@@ -58,7 +58,7 @@ grooming record with provenance.
 
 - What was the consumer trying to accomplish?
 - What observable experience or result is actually reported?
-- Is the problem in APSS, its explanation, its supporting artifacts, or its
+- Is the problem in APS, its explanation, its supporting artifacts, or its
   local implementation?
 - What consumer outcome is impaired or improved?
 - Does the repository already promise or describe the missing behavior?

@@ -2,16 +2,16 @@
 id: apss.general-evidence-processes
 type: task
 status: captured
-owner: APSS framework maintainer
+owner: APS framework maintainer
 created: 2026-07-09
-source: APSS framework maintainer idea intake
+source: APS framework maintainer idea intake
 ---
 
 # Define reusable processes for producing good evidence
 
 ## Idea
 
-Define a small set of general process patterns that can be reused across APSS
+Define a small set of general process patterns that can be reused across APS
 implementations, including guidance for conducting good research and good
 experiments.
 
@@ -31,7 +31,7 @@ requiring every system to design basic quality practices from scratch.
   lightweight discussion protocol. No artifact yet establishes reusable,
   cross-domain quality guidance for all three capabilities.
 - No evidence yet establishes which process patterns are sufficiently general
-  across APSS domains.
+  across APS domains.
 
 ## Open questions
 
@@ -49,6 +49,6 @@ requiring every system to design basic quality practices from scratch.
 
 ### 2026-07-09 — captured
 
-Captured from the APSS framework maintainer's proposal for generally useful
+Captured from the APS framework maintainer's proposal for generally useful
 processes such as good research and good experimentation. The scope and
 normative status remain intentionally unresolved for grooming.

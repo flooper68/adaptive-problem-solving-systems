@@ -155,7 +155,7 @@ useful stopping point, and source corrections have been incorporated or their
 unavailability recorded, the gathered information is ready for delivery. Do
 not leave a completed insight only in an agent's working tree.
 
-When the APSS framework maintainer asked for the insight to be captured and
+When the APS framework maintainer asked for the insight to be captured and
 participated through the clarification stopping point or reviewed the result,
 that participation is approval to deliver the bounded insight record. An AI
 agent must stage only the insight and necessary source-link corrections,

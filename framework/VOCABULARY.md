@@ -1,12 +1,53 @@
-# APSS vocabulary
+# APS vocabulary
 
-This vocabulary is the normative reference for recurring APSS terms. The
+This vocabulary is the normative reference for recurring APS terms. The
 framework definition explains how the concepts operate together; this file
 keeps their meanings and boundaries concise. When ordinary domain language
 uses a term differently, a concrete system should state that local meaning
-without silently changing the APSS meaning.
+without silently changing the APS meaning.
 
 ## Direction
+
+### Adaptive Problem Solving (APS)
+
+The domain-independent method for designing systems that iteratively solve a
+defined problem, verify the effect of their work, learn from evidence, and
+adapt later attempts. APS defines general problem-solving concepts and permits
+systems to form a hierarchy for problem decomposition; it is not itself one
+system instance.
+
+### Adaptive problem-solving system
+
+One concrete instantiation of APS. It owns a problem statement and an
+iterative loop that uses strategy, planned work, information inputs,
+verification, information grooming, learning, compiled knowledge, and
+adaptation to solve that problem. Grooming is the general responsibility to
+process relevant information and make decisions from it; a system may implement
+different grooming for each problem or input stream. These are system
+responsibilities rather than a prescribed sequence of separate processes or
+components. Each system defines the processes that implement them. Other
+participants, including a parent system, may supply feedback, verification,
+insights, or other inputs; the system still owns how those inputs close and
+adapt its loop.
+
+Loop ownership does not prescribe who performs or approves each step. Those
+authorities belong to the system's chosen processes.
+
+Artifacts are contextual to the problem being solved. A system may produce one
+or more inspectable artifacts as part of an attempt, but a separately named
+artifact is not an identity criterion for every system.
+
+Verification is the loop's value function: it evaluates a solution attempt
+against the system problem and supplies the signal that guides later
+optimization. The signal may be qualitative or quantitative; APS does not
+require a mathematical score.
+
+APS does not prescribe a universal lifecycle process or consequence when the
+problem is solved; the system defines its response.
+
+The system's name is sufficient declaration identity. APS does not require a
+separate system ID, status, or parent field. A problem definition, strategy, or
+process records any decomposition link to another named system.
 
 ### System problem
 
@@ -15,17 +56,11 @@ including the affected consumer or environment. It defines the system's
 problem-owning boundary and is broader and more stable than a current goal or
 open problem.
 
-### Vision
-
-The durable description of what better looks like if the system problem is
-solved. A vision supplies direction but is not a bounded commitment or an
-acceptance condition.
-
 ### Goal
 
-A current, bounded result that moves the system toward its vision. A goal says
-what result matters now; it does not prescribe the work or assume that the
-gaps preventing that result are already understood. It is stated in the system
+A current, bounded result that reduces the system problem. A goal says what
+result matters now; it does not prescribe the work or assume that the gaps
+preventing that result are already understood. It is stated in the system
 strategy rather than duplicated in `SYSTEM.md`.
 
 ### System strategy
@@ -71,8 +106,8 @@ An evidenced, unresolved condition within a system that obstructs or threatens
 a current goal. It states a gap to understand or change, not a proposed
 solution. Open problems belong to the system's active problem collection and
 remain there until closed or otherwise inactive. They do not become child
-systems unless they receive an independent boundary, ownership, artifact, and
-complete adaptive lifecycle.
+systems unless they receive an independent boundary, ownership, and complete
+problem-solving loop.
 
 An open problem may remain relevant across many working sessions and tasks. It
 owns the long-running evidence, desired change, signal, and strategy; it is not
@@ -83,7 +118,7 @@ an executable work package.
 The authoritative current record for one open problem: its stable ID, affected
 goal, evidence, desired change, signal, strategy, and grooming history. Keeping
 one problem per file gives the problem an inspectable lifecycle without turning
-it into a separate APSS.
+it into a separate APS.
 
 ### Problem strategy
 
@@ -116,7 +151,7 @@ separate plan or exhaustive index unnecessary.
 An observable qualitative or quantitative condition used to judge whether an
 open problem is worsening, improving, or sufficiently resolved. A signal may
 be a measure, repeated observation, validation result, or other fit-for-purpose
-evidence; APSS does not require artificial numerical scoring.
+evidence; APS does not require artificial numerical scoring.
 
 ### Problem grooming
 

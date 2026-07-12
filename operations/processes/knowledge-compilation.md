@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Turn retained evidence into coherent updates to the APSS framework, which is
+Turn retained evidence into coherent updates to the APS framework, which is
 this system's primary compiled-knowledge artifact. Preserve material scope and
 uncertainty in the resulting knowledge, and keep the edits uncommitted until
 adaptation is approved.
@@ -16,7 +16,7 @@ For the question or completed work being compiled, read:
 - relevant records from every declared stream, including insight claims and
   dispositions, groomed feedback, usage evidence, work history and its
   framework baseline, and external foundations;
-- artifact- and outcome-validation results; and
+- verification results; and
 - the raw source or durable reference behind every material claim.
 
 Missing context is an uncertainty to record or resolve through discussion,
@@ -34,11 +34,11 @@ research, or experimentation. It is not evidence for a convenient conclusion.
    which it applies and its validation state. Do not present an unvalidated
    usefulness claim as established knowledge.
 5. Classify each reusable conclusion by target:
-   - domain-independent APSS knowledge belongs in the framework;
+   - domain-independent APS knowledge belongs in the framework;
    - lessons about running the framework-producing system propose changes to
      its `SYSTEM.md`, processes, validation, task handling, or streams; and
-   - context-specific demonstrations or observations remain in examples or
-     their source evidence unless the framework adopts a general lesson.
+   - context-specific demonstrations or observations remain in their source
+     evidence unless the framework adopts a general lesson.
 6. Edit the authoritative target directly as an uncommitted change. Keep
    operations-specific conclusions in the authoritative operational document
    they change rather than creating a second knowledge artifact.

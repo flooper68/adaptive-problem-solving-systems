@@ -18,7 +18,7 @@ participant requests review.
   implement the claim.
 - Relevant consumers or subject-matter validators may provide corroborating or
   contradictory evidence.
-- The APSS framework maintainer approves the disposition for this operations
+- The APS framework maintainer approves the disposition for this operations
   system; normative adoption still requires framework compilation, validation,
   and adaptation approval.
 

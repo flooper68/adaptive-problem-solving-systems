@@ -5,7 +5,7 @@ status: open
 opened: 2026-07-10
 ---
 
-# The APSS MVP is unfinished and has not run its complete loop
+# The APS MVP is unfinished and has not run its complete loop
 
 ## Goal
 
@@ -18,7 +18,7 @@ validation and maintainer review but not a recorded subsequent run improved by
 outcome evidence.
 
 The normative package is already about 1,400 lines across its definition,
-schema, template, visualization, vocabulary, and changelog. It contains several
+declaration contract, visualization, vocabulary, and changelog. It contains several
 concepts and supporting contracts introduced before the first end-to-end loop
 has established which are necessary for a useful initial version. The
 maintainer identified finishing the MVP, simplifying and pruning it, and running
@@ -40,7 +40,7 @@ sufficient outcome evidence.
 
 ## Desired change
 
-The smallest coherent APSS MVP is explicitly bounded, nonessential concepts and
+The smallest coherent APS MVP is explicitly bounded, nonessential concepts and
 surfaces are removed or deferred, the retained pieces are finished and
 consistent, and one real consumer need runs through the complete loop into an
 approved adaptation that changes a later run.
@@ -50,13 +50,13 @@ approved adaptation that changes a later run.
 The MVP boundary identifies what is included and deferred; every included
 responsibility is implemented consistently; and the maintainer can understand
 and run the whole process from one real need through problem grooming, selected
-work, artifact and outcome validation, learning, approved adaptation, and the
+work, verification, learning, approved adaptation, and the
 later operation changed by that learning. The maintainer's direct feedback is
 the initial outcome verification.
 
 ## Strategy
 
-Following the [system strategy](../STRATEGY.md), use the initial APSS
+Following the [system strategy](../STRATEGY.md), use the initial APS
 version to operate the Framework Operations System. Keep only what is needed to
 run one complete loop now, simplify it until the maintainer can understand and
 use the whole process, and defer the rest. Add complexity later only when more
@@ -122,7 +122,7 @@ infer that designation without the maintainer's decision.
 
 Source: maintainer-agent problem-grooming discussion in the current Codex task.
 
-The maintainer identified the largest current gap as finishing the APSS MVP and
+The maintainer identified the largest current gap as finishing the APS MVP and
 running the complete loop, with simplification and pruning as part of finishing
 the initial version. P1 was revised from the narrower absence of a demonstrated
 cycle to include the unfinished and potentially overgrown MVP that must be
@@ -137,7 +137,7 @@ the package is long.
 Source: maintainer-agent problem-grooming discussion in the current Codex task.
 
 The maintainer approved the pruning rule: keep only what is needed to run one
-complete APSS loop now and defer everything else. The problem strategy is to use
+complete APS loop now and defer everything else. The problem strategy is to use
 the initial version on Framework Operations, simplify it for understandability,
 and add complexity later only from observed need and feedback.
 
@@ -216,3 +216,13 @@ bounded, session-sized response. The current review supplied enough evidence to
 create one task for every concept identified so far. The system concept review
 is selected; the remaining concept reviews are ready and will be selected in
 dependency order.
+
+### 2026-07-12 — provisional examples removed
+
+Source: current system-concept brainstorming session.
+
+The maintainer decided that Framework Operations is the first APS application
+and removed the provisional example directory until the framework is polished.
+The prior CNC material had no real outcome evidence and created synchronization
+work as the declaration changed. Git retains it; future example work is
+deferred until the first complete Operations loop produces validated learning.

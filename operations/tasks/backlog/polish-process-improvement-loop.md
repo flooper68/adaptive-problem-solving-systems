@@ -2,9 +2,9 @@
 id: apss.polish-process-improvement-loop
 type: task
 status: captured
-owner: APSS framework maintainer
+owner: APS framework maintainer
 created: 2026-07-10
-source: APSS framework maintainer idea intake
+source: APS framework maintainer idea intake
 source_records: []
 ---
 
@@ -24,7 +24,7 @@ remain to be established during grooming or execution.
 
 ## Motivation
 
-The APSS framework maintainer wants to retain ongoing attention on the quality
+The APS framework maintainer wants to retain ongoing attention on the quality
 of the process-improvement loop without limiting the task to a known defect.
 The affected consumers and expected value remain to be clarified.
 
@@ -46,7 +46,7 @@ The affected consumers and expected value remain to be clarified.
 
 ### 2026-07-10 — captured
 
-Captured from the APSS framework maintainer's proposal.
+Captured from the APS framework maintainer's proposal.
 
 ### 2026-07-10 — initial clarification
 

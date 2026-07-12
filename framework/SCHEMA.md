@@ -1,62 +1,73 @@
-# APSS system declaration schema
+# APS system declaration
 
-[`system.schema.json`](system.schema.json) is the normative machine-readable
-contract for APSS `SYSTEM.md` frontmatter version `0.1`. The Markdown template
-explains how to fill it; when they disagree, the JSON Schema controls structural
-conformance and this framework definition controls APSS semantics.
+This document is the human-readable contract and authoring template for APS
+`SYSTEM.md`. The framework definition controls APS semantics. APS deliberately
+has no separate machine-readable schema while the framework is still being
+polished.
 
-The schema requires the fields needed to identify, operate, validate, learn
-from, and adapt a system. This includes `work_sessions` entries for
-`brainstorming` and `problem-grooming`, each with only an `id`, `description`,
-and linked `process`. Other adaptive-loop responsibilities remain implemented
-through their existing declaration fields rather than being duplicated as
-work-session metadata.
-Current open problems and executable responses are maintained as one file per
-item in the locations named by `planning.problems` and `planning.tasks`.
-Selected and active tasks live at the task root, candidates under `backlog/`,
-and inactive tasks under `archive/`. Their status and relationships remain in
-those files; APSS requires neither a separate plan nor a generic work log.
+The declaration is a small orientation surface:
 
-The required `strategy` string references the system's independent
-`STRATEGY.md` document beside `SYSTEM.md`, which states the current goal. Schema
-validation can verify that the value is a non-empty string; semantic validation
-must resolve the local path and confirm that problem grooming uses it to guide
-problem selection and strategy.
+- `name` identifies the system;
+- `problem` states the condition it exists to change;
+- `verification` links the process that evaluates attempts against the problem;
+- `strategy` links the current direction;
+- `process` links the implementation of the complete loop;
+- `work_sessions` lists the bounded session types the system offers;
+- `streams` declares relevant information sources.
 
-The schema deliberately permits additional properties at every level so a
-system can express domain-specific constraints without waiting for a framework
-revision. Extension authors should use clear names and avoid redefining core
-fields; an `x_` prefix is recommended when collision risk is meaningful.
+APS does not mandate particular work-session types. Each entry has a local
+`id`, description, and defining process. The array may be empty when a system
+has no bounded session types. Continuous and automated processes remain in the
+linked loop without artificial session declarations.
 
-JSON Schema validation covers local structure and types. A system registry or
-map generator must additionally check semantic relationships that one file
-cannot prove:
+Stream entries identify their purpose, source, access method, consuming
+process, and optional source-specific elicitation guidance. Their richer shape
+is retained pending the separate stream-concept review.
 
-- system IDs are globally unique;
-- the primary-parent graph is complete and acyclic;
-- relation targets resolve to declared systems;
-- referenced local files exist;
-- exactly one root exists within a mapped hierarchy;
-- an `active` system has executed its complete loop rather than only declaring
-  it;
-- declared authority and validations are actually followed;
-- the `strategy` path resolves to an independent system-strategy document with
-  a current goal;
-- the problem and task directories resolve; each active problem contains its
-  goal, evidence, desired change, strategy, and signal; and each selected task
-  identifies which problem strategy it implements or tests; and
-- work-session IDs are unique; `processes/brainstorming.md` implements iterative
-  user review and `processes/problem-grooming.md` implements evidence-aware
-  problem disposition and retention as described by their declarations.
+Planning, execution, learning, participation, authority, uncertainty handling,
+contextual artifacts, operating conditions, problem decomposition, and other
+relationships belong in the strategies, problems, processes, verification, or
+streams that own them. Systems may add fields for genuinely contextual needs,
+but should not recreate removed universal fields by habit.
 
-YAML frontmatter can be validated by parsing it to a data object and applying
-the JSON Schema with any standards-compliant validator. APSS does not mandate a
-particular YAML parser or validator implementation. Generated maps should use
-the same schema rather than inventing their own required-field list.
+Declaration review confirms that:
 
-Files:
+- system names are unambiguous within the relevant scope;
+- the strategy, loop process, verification, work-session process, and stream
+  process references resolve;
+- each work-session ID is unique within the system;
+- each stream ID is unique within the system; and
+- the linked process implements a complete problem-solving, verification,
+  learning, and adaptation loop rather than only declaring one.
 
-- [SYSTEM.template.md](SYSTEM.template.md) — authoring template.
-- [system.schema.json](system.schema.json) — normative structural contract.
-- [../examples/cnc-part-production/SYSTEM.md](../examples/cnc-part-production/SYSTEM.md)
-  — complete proposed-system example.
+## Template
+
+```yaml
+---
+name: <system-name>
+
+problem: <condition this system exists to change>
+verification: <path to the process that evaluates attempts against the problem>
+strategy: STRATEGY.md
+process: <path to the process that defines the complete loop>
+
+work_sessions: [] # entries use id, description, and process
+
+streams:
+  - id: <stream-id>
+    purpose: <why the system reads this stream>
+    source: <native source or location>
+    access: <how the evidence is captured or retrieved>
+    consumed_by: <process or responsibility>
+    grill: null # optional source-specific elicitation guidance
+---
+```
+
+After the frontmatter, add only system-level context that is not clearer in a
+linked source. A short boundary explanation may clarify why this is an
+independent system. The linked process owns the complete loop; problems,
+strategies, and processes own contextual decomposition and implementation
+detail.
+
+Framework Operations is the first concrete application:
+[operations/SYSTEM.md](../operations/SYSTEM.md).

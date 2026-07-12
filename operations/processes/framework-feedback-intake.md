@@ -2,13 +2,13 @@
 
 ## Purpose
 
-Preserve a consumer's experience of APSS as evidence before deciding whether
+Preserve a consumer's experience of APS as evidence before deciding whether
 the framework or its supporting artifacts should change. A feedback report is
 not a task commitment and must not be rewritten to fit a proposed solution.
 
 ## When to capture
 
-Capture feedback when someone reports that APSS is unclear, incomplete,
+Capture feedback when someone reports that APS is unclear, incomplete,
 incorrect, burdensome, difficult to apply, or missing a capability, or when
 they describe a useful outcome that should be preserved. Reports may concern
 the normative framework, supporting tools and examples, or the stewardship
@@ -41,7 +41,7 @@ related_work: []
 
 ### Context
 
-<What the reporter was trying to do and relevant environment or constraints.>
+<What the reporter was trying to do and relevant operating conditions.>
 
 ### Observed problem or outcome
 

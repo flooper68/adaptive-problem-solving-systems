@@ -14,14 +14,15 @@ dependency is resolved, or the current problem set needs another ready task.
 
 - An operator facilitates the analysis and updates the durable item.
 - The item owner supplies context or identifies who can.
-- The APSS framework maintainer approves the final disposition and alone
+- The APS framework maintainer approves the final disposition and alone
   changes a ready task to `selected`.
 
 Set `status: grooming` while analysis is materially underway.
 
 ## Procedure
 
-1. **Orient.** Read the item, its source, current framework and examples,
+1. **Orient.** Read the item, its source, current framework and Operations
+   application,
    current strategy, problem files, compiled knowledge, related task files, and
    relevant session history.
 2. **Check identity.** Merge duplicate actions, split unrelated actions, and
@@ -31,7 +32,7 @@ Set `status: grooming` while analysis is materially underway.
    within this system's boundary. If no current open problem represents the
    evidenced gap, propose a problem file before treating the work as ready.
 4. **Classify the effect.** Identify whether it may change the normative
-   framework, a supporting example, stewardship operations, or only current
+   framework, Framework Operations, a future application, or only current
    understanding. One item may affect several, but the distinction must remain
    explicit.
 5. **Resolve load-bearing uncertainty.** Use discussion, research, or a bounded
@@ -67,7 +68,7 @@ An item is ready only when the responsible operator can answer:
 - Can the task produce one inspectable result in one working session?
 - Does it implement or test a bounded part of the problem strategy rather than
   duplicate the whole problem or depend on problem closure?
-- Which normative artifact, example, or operating process may change?
+- Which normative artifact, application, or operating process may change?
 - What evidence supports acting now, and what remains assumption?
 - Which discussion, research, or experiment is still necessary?
 - How will artifact correctness and consumer outcome be validated separately?
@@ -106,4 +107,4 @@ Append a grooming-log entry containing:
 - reconsideration trigger or target task when applicable.
 
 Any normative change still follows the
-[framework operating loop](framework-loop.md) and declared adaptation authority.
+[Framework Operations process](process.md) and declared adaptation authority.

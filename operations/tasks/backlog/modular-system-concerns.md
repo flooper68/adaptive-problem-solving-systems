@@ -2,9 +2,9 @@
 id: apss.modular-system-concerns
 type: task
 status: captured
-owner: APSS framework maintainer
+owner: APS framework maintainer
 created: 2026-07-10
-source: APSS framework maintainer idea intake
+source: APS framework maintainer idea intake
 ---
 
 # Modularize growing concerns from `SYSTEM.md`
@@ -31,8 +31,8 @@ evolve, and keep `SYSTEM.md` focused on system identity and integration.
 - The framework already permits produced artifacts outside the capsule when
   their paths and ownership remain explicit, but it does not define extraction
   rules for declaration concerns such as strategy.
-- Current example declarations keep their strategy inline; no repository
-  example validates the proposed modular layout.
+- Framework Operations links to a separate strategy file, but no additional
+  application validates whether the modular layout generalizes.
 
 ## Open questions
 
@@ -42,7 +42,7 @@ evolve, and keep `SYSTEM.md` focused on system identity and integration.
   required field become a path or structured reference?
 - Should a module use `strategy/README.md`, `strategy/index.md`, or another
   predictable entry contract?
-- How will schema validation, visualization generation, compilation, and tools
+- How will declaration review, visualization generation, compilation, and tools
   resolve modular content?
 - How should authority, provenance, and duplication be handled between the
   declaration and detailed modules?
@@ -55,7 +55,7 @@ evolve, and keep `SYSTEM.md` focused on system identity and integration.
 
 ### 2026-07-10 — captured
 
-Captured from the APSS framework maintainer's proposal to move growing content
+Captured from the APS framework maintainer's proposal to move growing content
 such as strategy from `SYSTEM.md` into a dedicated folder so the setup is more
 visible and extensible. Strategy is the first example, not an approved schema
 change or a decision to create other folders.
