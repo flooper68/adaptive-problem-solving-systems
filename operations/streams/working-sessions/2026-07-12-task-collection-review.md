@@ -1,8 +1,11 @@
 ---
 id: apss.session.task-collection-review
 type: working-session
-status: active
+status: retained
 recorded: 2026-07-12
+accepted: 2026-07-12
+closed: 2026-07-12
+delivery: 7c273aa
 participants: [APS framework maintainer, Codex operator]
 source: Maintainer-agent discussion in the current Codex task
 related_problems: [P1]
@@ -68,3 +71,9 @@ brainstorming orientation step now requires direct references to authoritative
 concept, decision, or evidence sources in affected task, session, problem, or
 compiled files when those references materially help explain the work. It also
 avoids citations that merely repeat obvious context.
+
+## Acceptance and delivery
+
+The maintainer accepted the complete reviewed scope and asked to finish the
+session on 2026-07-12. Final validation passed. Commit `7c273aa` was pushed to
+`origin/main`; this session is retained and closed.

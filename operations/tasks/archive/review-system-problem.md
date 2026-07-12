@@ -1,10 +1,12 @@
 ---
 id: apss.review-system-problem
 type: review
-status: awaiting-review
+status: closed
 owner: APS framework maintainer
 agent: Codex operator
 created: 2026-07-11
+closed: 2026-07-12
+delivery: 7c273aa
 addresses: [P1]
 source: Conceptual simplification strategy session
 ---
@@ -25,36 +27,36 @@ and propagate accepted changes through affected normative and operational surfac
 ## Current sources
 
 - The normative
-  [system-problem definition](../../framework/VOCABULARY.md#system-problem)
+  [system-problem definition](../../../framework/VOCABULARY.md#system-problem)
   defines the root problem, affected consumer or environment, and
   problem-owning boundary.
 - The framework's
-  [problem-hierarchy explanation](../../framework/README.md#problem-hierarchy-and-strategy)
+  [problem-hierarchy explanation](../../../framework/README.md#problem-hierarchy-and-strategy)
   relates the root system problem to smaller open problems and their strategies.
 - The declaration
-  [contract](../../framework/SCHEMA.md#aps-system-declaration) requires
+  [contract](../../../framework/SCHEMA.md#aps-system-declaration) requires
   `problem` as the condition the system exists to change.
-- The [Framework Operations declaration](../SYSTEM.md) supplies the current
+- The [Framework Operations declaration](../../SYSTEM.md) supplies the current
   concrete system-problem statement.
-- [P1](../problems/p1-finish-mvp-and-run-loop.md) demonstrates a smaller open
+- [P1](../../problems/p1-finish-mvp-and-run-loop.md) demonstrates a smaller open
   problem within that broader system problem.
 - The maintainer's
-  [current feedback](../streams/framework-feedback/2026-07-12-problem-hierarchy-and-goal-ambiguity.md)
+  [current feedback](../../streams/framework-feedback/2026-07-12-problem-hierarchy-and-goal-ambiguity.md)
   reports that the framework lacks a worked example and clear problem
   hierarchy and that goal appears redundant.
 - The vocabulary defines the current
-  [open-problem state](../../framework/VOCABULARY.md#open-problem),
-  [problem signal](../../framework/VOCABULARY.md#problem-signal),
-  [task relationship](../../framework/VOCABULARY.md#task),
-  [`solved` assessment](../../framework/VOCABULARY.md#solved), and
-  [`closed` decision](../../framework/VOCABULARY.md#closed).
+  [open-problem state](../../../framework/VOCABULARY.md#open-problem),
+  [problem signal](../../../framework/VOCABULARY.md#problem-signal),
+  [task relationship](../../../framework/VOCABULARY.md#task),
+  [`solved` assessment](../../../framework/VOCABULARY.md#solved), and
+  [`closed` decision](../../../framework/VOCABULARY.md#closed).
 - The Operations
-  [verification process](../processes/verification.md) compares task attempts
+  [verification process](../../processes/verification.md) compares task attempts
   with the addressed problem's signal, while
-  [problem grooming](../processes/problem-grooming.md) authorizes retention,
+  [problem grooming](../../processes/problem-grooming.md) authorizes retention,
   revision, work selection, or closure.
 - The maintainer's queued
-  [creation, grooming, and storage feedback](../streams/framework-feedback/2026-07-12-problem-creation-grooming-and-storage.md)
+  [creation, grooming, and storage feedback](../../streams/framework-feedback/2026-07-12-problem-creation-grooming-and-storage.md)
   challenges normative problem-file storage, asks how problems are created and
   changed, and proposes separating problem grooming from task grooming.
 
@@ -151,3 +153,7 @@ inactive tasks with unique IDs and valid active problem references; and
 
 Current stopping point: the complete uncommitted proposal is awaiting
 maintainer review.
+
+The maintainer accepted the reviewed scope and asked to finish the session on
+2026-07-12. Commit `7c273aa` was pushed to `origin/main`; this task is closed
+and archived.

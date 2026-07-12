@@ -1,10 +1,12 @@
 ---
 id: apss.review-task-collection
 type: review
-status: awaiting-review
+status: closed
 owner: APS framework maintainer
 agent: Codex operator
 created: 2026-07-11
+closed: 2026-07-12
+delivery: 7c273aa
 addresses: [P1]
 source: Conceptual simplification strategy session
 ---
@@ -61,3 +63,7 @@ learning.
 
 Current stopping point: the demoted normative concept and simplified Operations
 layout are uncommitted and awaiting maintainer review.
+
+The maintainer accepted the reviewed scope and asked to finish the session on
+2026-07-12. Commit `7c273aa` was pushed to `origin/main`; this task is closed
+and archived.

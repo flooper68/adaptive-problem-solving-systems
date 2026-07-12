@@ -1,8 +1,11 @@
 ---
 id: apss.session.system-problem-review
 type: working-session
-status: active
+status: retained
 recorded: 2026-07-12
+accepted: 2026-07-12
+closed: 2026-07-12
+delivery: 7c273aa
 participants: [APS framework maintainer, Codex operator]
 source: Maintainer-agent discussion in the current Codex task
 related_problems: [P1]
@@ -170,3 +173,11 @@ maintainer review. The surprise/resource/regression insight is included as
 provisional recommended guidance; the decision-quality insight is included as
 provisional lightweight learning guidance. Both remain subject to validation
 through later use.
+
+## Acceptance and delivery
+
+The maintainer accepted the complete reviewed scope and asked to finish the
+session on 2026-07-12. Final validation passed for normative semantics,
+Operations consistency, current links, task IDs and problem references, and
+diff whitespace. Commit `7c273aa` was pushed to `origin/main`; this session is
+retained and closed.

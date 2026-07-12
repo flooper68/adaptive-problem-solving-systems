@@ -15,6 +15,7 @@ related_work:
 compiled_into:
   - framework/README.md
   - framework/VOCABULARY.md
+delivery: 7c273aa
 ---
 
 # Learning should assess decision quality and explain course corrections
@@ -168,6 +169,5 @@ approved the progressively narrowed interpretation.
 - **Reconsideration trigger:** a later APS cycle shows whether the practice
   improves decisions or instead creates burden or misleading explanations.
 - **Source acknowledgment:** the maintainer approved the simple final boundary.
-- **Delivery:** the insight and compilation are interwoven with the broader
-  active uncommitted framework session and cannot be safely delivered as an
-  isolated insight-only commit; deliver them with the reviewed session scope.
+- **Delivery:** delivered with the accepted framework session in commit
+  `7c273aa`, pushed to `origin/main` on 2026-07-12.

@@ -12,6 +12,7 @@ related_work:
   - apss.review-problem-signal
 compiled_into:
   - framework/README.md
+delivery: 7c273aa
 ---
 
 # Surprise, excess resource use, and verification regression are useful review signals
@@ -173,6 +174,5 @@ correction to the compiled claim, scope, reasoning, evidence, or limitations.
   conclusions.
 - **Source acknowledgment:** the maintainer approved the normative guidance
   target after reviewing the progressively clarified interpretation.
-- **Delivery:** compilation is part of the broader active uncommitted framework
-  session and cannot be safely delivered as an isolated insight-only commit;
-  deliver it with the reviewed session scope.
+- **Delivery:** delivered with the accepted framework session in commit
+  `7c273aa`, pushed to `origin/main` on 2026-07-12.
