@@ -77,12 +77,13 @@ what root closure means for the system's subsequent lifecycle.
 
 ### System strategy
 
-The system's current theory, interpretation, and approach for solving its
-system problem: how it interprets evidence, decomposes and chooses among smaller
-problems and possible responses, guides their strategies, plans, executes,
-validates, learns, and coordinates its subsystems. It is the sibling
-`STRATEGY.md` document linked from `SYSTEM.md` and may change when evidence
-warrants it.
+The system's current theory and approach for solving its system problem: how it
+interprets evidence, decomposes and compares smaller problems and possible
+responses, guides their problem strategies, executes work, verifies results,
+learns, adapts, and coordinates its subsystems. Its scope is system-wide; each
+open problem's problem strategy covers only that problem. It is the sibling
+`STRATEGY.md` document linked from `SYSTEM.md` and changes through adaptation
+when evidence warrants it.
 
 ## Evidence and interpretation
 

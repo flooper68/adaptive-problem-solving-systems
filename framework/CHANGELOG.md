@@ -3,6 +3,24 @@
 Simple history of material framework changes. Git remains the detailed audit
 trail.
 
+## 2026-07-26 — system strategy retained and its definition aligned
+
+Reviewed system strategy against the concept review test and retained it as a
+distinct concept with system-wide scope, its existing representation, and no
+lifecycle machinery. The review raised whether the concept is two things: the
+approach to the root problem, which the general strategy definition already
+covers, and the system's operating model for interpreting evidence, decomposing
+problems, guiding lower strategies, verifying, learning, and adapting. The
+maintainer decided that system strategy legitimately carries both and kept the
+standalone definition rather than demoting it to the root problem's strategy.
+
+Aligned the vocabulary and framework definitions, which previously named
+different responsibilities in different order; used verification for the loop
+stage rather than validation, which APS reserves for artifact and outcome
+validation; stated the scope distinction from problem strategy explicitly; and
+linked strategy change to adaptation. The declaration contract, the `strategy`
+link from `SYSTEM.md`, and the Framework Operations strategy are unchanged.
+
 ## 2026-07-12 — system boundary demoted to contextual description
 
 Confirmed that system boundary is not a separate APS concept with its own

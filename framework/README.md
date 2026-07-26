@@ -65,11 +65,12 @@ is part of its strategy and may itself evolve.
 - **System problem** — the stable root problem the system exists to solve. It
   defines the system's problem-owning boundary and is constitutive of that
   system.
-- **System strategy** — the system's current theory and approach for solving
-  and interpreting its root problem, including how it uses evidence to
-  decompose problems, compare them, guide their strategies, execute work,
-  verify results, learn, and adapt. `SYSTEM.md` links it through `strategy` to
-  the sibling `STRATEGY.md` document.
+- **System strategy** — the system's current theory and approach for solving its
+  system problem, including how it interprets evidence, decomposes and compares
+  smaller problems and possible responses, guides their problem strategies,
+  executes work, verifies results, learns, adapts, and coordinates its
+  subsystems. `SYSTEM.md` links it through `strategy` to the sibling
+  `STRATEGY.md` document.
 - **Open problem** — an evidenced, unresolved smaller problem produced by
   decomposing the system problem or another open problem. It names a gap, not a
   proposed solution or automatically authorized task.
