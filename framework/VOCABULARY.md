@@ -66,10 +66,16 @@ states.
 
 ### Strategy
 
-The current evidence-informed theory and approach for changing one problem. A
-strategy guides work and changes when verification or other evidence challenges
-its assumptions or effectiveness. The system strategy belongs to the root
-system problem; every smaller problem has its own problem strategy.
+The current evidence-informed theory and approach for changing one problem.
+Every problem has one, informed by the system strategy and by the problem's
+decomposition context. A strategy guides the work selected for that problem and
+changes when the problem's signal, verification, or other evidence challenges
+its assumptions or effectiveness. The problem owns it; the system's declared
+authority changes it.
+
+The root system problem's strategy is the system strategy. *Problem strategy*
+is ordinary wording for the strategy of one problem, used where that scope must
+be distinguished from the system's; it is not a separate concept.
 
 ### System problem
 
@@ -121,13 +127,6 @@ investigate a problem; recording it does not by itself make it a problem
 or selected task.
 
 ## Problems and tasks
-
-### Problem strategy
-
-The current approach for resolving or reducing one problem. A problem's
-strategy is informed by the system strategy and relevant decomposition context,
-guides the work selected for that problem, and is revised when its signal or
-other evidence challenges the approach.
 
 ### Task
 

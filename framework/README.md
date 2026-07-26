@@ -60,8 +60,9 @@ is part of its strategy and may itself evolve.
 - **Problem** — a condition affecting a consumer or environment that calls for
   understanding or change. A problem states the condition, not its solution.
 - **Strategy** — the current evidence-informed theory and approach for changing
-  one problem. The system strategy belongs to the root system problem; each
-  smaller problem has its own problem strategy.
+  one problem. Every problem owns one; it guides the work selected for that
+  problem and changes when evidence challenges the approach. The root system
+  problem's strategy is the system strategy.
 - **System problem** — the stable root problem the system exists to solve. It
   defines the system's problem-owning boundary and is constitutive of that
   system.
@@ -71,9 +72,6 @@ is part of its strategy and may itself evolve.
   executes work, verifies results, learns, adapts, and coordinates its
   subsystems. `SYSTEM.md` links it through `strategy` to the sibling
   `STRATEGY.md` document.
-- **Problem strategy** — the current approach for resolving or reducing one
-  problem. Each problem owns its strategy; it guides selected tasks and
-  changes when evidence challenges the approach.
 - **Open and closed** — the two lifecycle states of a problem. Problem grooming
   opens an evidenced proposal into the system's active decomposition and later
   closes it with a recorded reason. A proposal is neither until that decision is

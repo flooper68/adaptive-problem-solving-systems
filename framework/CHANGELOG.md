@@ -3,6 +3,30 @@
 Simple history of material framework changes. Git remains the detailed audit
 trail.
 
+## 2026-07-26 — problem strategy merged into strategy
+
+Removed `problem strategy` as a separate APS concept. The framework defined one
+concept twice: `Strategy` under *Direction* and `Problem strategy` under
+*Problems and tasks*, sixty lines apart, and again as two bullets four apart in
+the README core definitions. The entries differed only in wording — "changing
+one problem" against "resolving or reducing one problem" — and named no
+distinct responsibility, owner, evidence, or lifecycle.
+
+The vocabulary's own shape showed the redundancy. `Problem` and `System
+problem` are a general concept and its specialization; `Strategy` and `System
+strategy` are the same pair. `Problem strategy` was the unspecialized case
+given a second entry of its own, with no analogous `Problem problem`.
+
+The retained `Strategy` entry absorbs what only the removed one stated: every
+problem has a strategy, it is informed by the system strategy and the problem's
+decomposition context, it guides the work selected for that problem, and it
+changes when that problem's signal, verification, or other evidence challenges
+it. Ownership and change authority are now stated where the concept is defined.
+"Problem strategy" remains ordinary wording for the strategy of one problem
+where that scope must be distinguished from the system's, as "open problem" did
+in the preceding change. Framework Operations corrected one grooming bullet
+that scoped a problem's strategy to open problems only.
+
 ## 2026-07-26 — open problem removed as a separate concept
 
 Removed `open problem` as a distinct APS concept. It fused two independent

@@ -34,7 +34,7 @@ Keep strategy changes at the smallest level supported by their evidence:
 - The **system strategy** states the approach to the root system problem and
   guides problem discovery, decomposition, comparison, and selection across the
   system. Change it only when the system's overall approach should change.
-- A **problem strategy** states how the system will resolve or reduce one open
+- A **problem strategy** states how the system will resolve or reduce one
   problem. Put problem-specific decomposition, task sequencing, experiments,
   and validation there.
 
