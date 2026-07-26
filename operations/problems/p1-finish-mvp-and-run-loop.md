@@ -298,3 +298,23 @@ The maintainer later proposed learning from decision quality, harmful choices,
 course corrections, and causal hypotheses. That remains a separate
 [groomed insight](../streams/insights/2026-07-12-learning-from-decision-quality-and-course-correction.md),
 compiled provisionally as lightweight framework learning guidance.
+
+### 2026-07-26 — system strategy retained
+
+Source: [system-strategy review](../streams/working-sessions/2026-07-12-system-strategy-review.md).
+
+The fourth concept review found no structural defect in system strategy: one
+authoritative location, no lifecycle machinery, explicit change authority. The
+load-bearing question was whether the concept conflates the approach to the
+root problem with the system's operating model for running the loop, since the
+general strategy definition already covers the former. The operator recommended
+demoting it; the maintainer decided both belong to one concept in use and that
+splitting or demoting would add complexity rather than remove it.
+
+Decision: retain system strategy, tighten wording only. Unlike the goal removal
+and boundary demotion, this review confirms a concept rather than pruning one,
+which is evidence that the remaining model is approaching its useful minimum
+rather than that the pruning strategy has stalled. The conflation question is
+recorded for the teach-back and adversarial passes of the validation strategy,
+which are better placed to judge whether readers can separate system strategy
+from problem strategy.
