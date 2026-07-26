@@ -346,3 +346,35 @@ root" now say decomposition explicitly. Three definitions that wrongly scoped
 artifact, outcome, and solved evidence to open problems only were corrected as
 a side effect — evidence that the fused term had been hiding errors rather than
 merely costing a word.
+
+### 2026-07-26 — problem strategy merged into strategy
+
+Source: [problem-strategy review](../streams/working-sessions/2026-07-26-problem-strategy-review.md).
+
+The sixth concept review, and the first taken after the problem-lifecycle gate
+cleared. Orientation answered the review test's distinctness question
+immediately: the framework defined the concept twice, as `Strategy` under
+*Direction* and `Problem strategy` under *Problems and tasks*, with no
+difference beyond wording. Ownership and lifecycle were already clean — the
+concept lives in the problem's system of record, has no independent identity,
+and needed no machinery pruned.
+
+Decision: **merge**. One `Strategy` entry now carries the concept and absorbs
+what only the removed entry stated; `System strategy` remains its specialization
+for the root problem; "problem strategy" survives as ordinary wording. This is
+the fourth pruning disposition, after goal removal, boundary demotion, and open
+problem, and the second consecutive one reached by reading the vocabulary's own
+shape rather than the concept's substance — `Problem`/`System problem` and
+`Strategy`/`System strategy` are the same general-plus-specialization pair, and
+`Problem strategy` had no `Problem problem` analogue.
+
+The duplication survived five prior reviews because the two definitions sat in
+different vocabulary sections. That is a review-method observation, not a
+defect in this concept: section-local reading can miss a duplicate that a
+single alphabetical or dependency-ordered pass would catch. Recorded for the
+adversarial pass of the validation strategy.
+
+This review also sharpened, without resolving, the conflation question the
+system-strategy review deferred. With the duplicate removed, `System strategy`
+is visibly the root problem's strategy plus the system-wide operating model.
+The teach-back and adversarial passes remain the right place to judge it.
