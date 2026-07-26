@@ -318,3 +318,31 @@ rather than that the pruning strategy has stalled. The conflation question is
 recorded for the teach-back and adversarial passes of the validation strategy,
 which are better placed to judge whether readers can separate system strategy
 from problem strategy.
+
+### 2026-07-26 — open problem removed; `open` kept as a problem status
+
+Source: [open-problem review](../streams/working-sessions/2026-07-26-open-problem-review.md).
+
+The fifth concept review found no defect in the underlying concept — it has
+genuine durable state, so its lifecycle is justified — but found that the term
+fused a structural predicate (not the root) with a lifecycle predicate
+(currently open). The maintainer read `open` as a status on a problem and asked
+whether that contradicted any current use. It did not: Framework Operations
+already stored `status: open` beside a redundant `type: open-problem`, and the
+problem-grooming process already treated open, closed, and proposed as states
+of one kind of thing.
+
+Decision: **remove** the separate concept. `Open` and `closed` are the two
+lifecycle states of a problem; `open` gains a definition alongside `closed` as
+the authorized grooming decision that admits an evidenced proposal. This is the
+third pruning disposition after goal removal and boundary demotion, and the
+first reached from the maintainer's own reading rather than an operator
+recommendation.
+
+The change was surgical rather than mechanical: about six uses that genuinely
+mean "currently open" were kept as ordinary adjective-plus-noun, ten inert uses
+dropped the adjective, and four uses that leaned on "open" to mean "not the
+root" now say decomposition explicitly. Three definitions that wrongly scoped
+artifact, outcome, and solved evidence to open problems only were corrected as
+a side effect — evidence that the fused term had been hiding errors rather than
+merely costing a word.
