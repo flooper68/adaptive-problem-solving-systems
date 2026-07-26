@@ -71,12 +71,13 @@ is part of its strategy and may itself evolve.
   executes work, verifies results, learns, adapts, and coordinates its
   subsystems. `SYSTEM.md` links it through `strategy` to the sibling
   `STRATEGY.md` document.
-- **Open problem** — an evidenced, unresolved smaller problem produced by
-  decomposing the system problem or another open problem. It names a gap, not a
-  proposed solution or automatically authorized task.
 - **Problem strategy** — the current approach for resolving or reducing one
-  problem. Each open problem owns its strategy; it guides selected tasks and
+  problem. Each problem owns its strategy; it guides selected tasks and
   changes when evidence challenges the approach.
+- **Open and closed** — the two lifecycle states of a problem. Problem grooming
+  opens an evidenced proposal into the system's active decomposition and later
+  closes it with a recorded reason. A proposal is neither until that decision is
+  made, and opening a problem does not authorize a task.
 
 The problem hierarchy is APS's adaptive planning structure, not a complete plan
 made in advance. The system problem is its root. Evidence and learning reveal,
@@ -274,7 +275,7 @@ These are distinct decision responsibilities, but APS does not require separate
 meetings, tools, participants, or cadence. A system may implement both in one
 process invocation when it preserves the boundary and authority of each result.
 
-An open problem is a long-running unit in the system's evolving problem
+A problem is a long-running unit in the system's evolving problem
 hierarchy. It may remain open across many working sessions and tasks while its
 evidence, signal, strategy, and decomposition context evolve. Do not turn the
 whole desired change of a problem into one umbrella task.
@@ -433,7 +434,7 @@ required for every grooming invocation.
 
 ### 8. Adapt
 
-Use validated learning to improve open-problem framing or decomposition, task
+Use validated learning to improve problem framing or decomposition, task
 selection, strategies, processes, streams, validation, knowledge, or subsystem
 structure.
 Adaptation follows the authority defined by the relevant process.
@@ -468,9 +469,9 @@ approaches revealed by evidence. APS does not require parent fields, a strict
 tree, or any particular representation of relationships among those problems;
 the system's process chooses what structure is useful.
 
-When an open problem is assigned to another system, it becomes that child
-system's root problem. The originating problem definition, strategy, or process
-records the link. APS does not require a separate system ID, status, or parent
+When a problem in the decomposition is assigned to another system, it becomes
+that child system's root problem. The originating problem definition, strategy,
+or process records the link. APS does not require a separate system ID, status, or parent
 declaration; lifecycle and placement remain choices of those systems and
 processes.
 

@@ -3,6 +3,33 @@
 Simple history of material framework changes. Git remains the detailed audit
 trail.
 
+## 2026-07-26 — open problem removed as a separate concept
+
+Removed `open problem` as a distinct APS concept. It fused two independent
+predicates: a structural claim that the problem is not the root, and a lifecycle
+claim that the problem is currently open. The lifecycle half never
+distinguished anything, because the root system problem carries the same
+solved-versus-closed distinction; the structural half was already stated by the
+general problem definition and by the system problem from the other side. The
+framework also had no name for a decomposed problem that had been closed, even
+though closure, reopening, and decision history all need to refer to one.
+
+`Open` and `closed` are now simply the two lifecycle states of a problem, and
+`open` is defined alongside `closed` as an authorized problem-grooming decision
+that admits an evidenced proposal to the active decomposition. The long-running
+evidence, desired change, signal, strategy, and material decision history moved
+into the general problem definition, which is where they always applied.
+
+Corrected three definitions that wrongly scoped to open problems only: an
+artifact or outcome may show that any problem improved, and `solved` is an
+assessment made about a problem including at the moment of closure. Kept "open
+problem" as ordinary adjective-plus-noun in the grooming, orientation, and task
+surfaces that genuinely mean a problem currently in the open state, and used
+explicit decomposition wording where the framework previously leaned on "open"
+to mean "not the root". Framework Operations dropped the redundant
+`type: open-problem` field from its problem file, which already carried
+`status: open`.
+
 ## 2026-07-26 — system strategy retained and its definition aligned
 
 Reviewed system strategy against the concept review test and retained it as a

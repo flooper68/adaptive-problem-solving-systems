@@ -1,6 +1,6 @@
 ---
 id: P1
-type: open-problem
+type: problem
 status: open
 opened: 2026-07-10
 ---

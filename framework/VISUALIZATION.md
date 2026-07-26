@@ -115,15 +115,15 @@ Every system can be understood through the same compact model:
 
 ```mermaid
 flowchart LR
-    problem["System problem + strategy"] --> openProblem["Smaller problem + strategy"]
-    openProblem --> smallerProblem["Further decomposed problem + strategy"]
-    smallerProblem --> process["Adaptive execution loop"]
+    problem["System problem + strategy"] --> smallerProblem1["Smaller problem + strategy"]
+    smallerProblem1 --> smallerProblem2["Further decomposed problem + strategy"]
+    smallerProblem2 --> process["Adaptive execution loop"]
     process --> attempt["Solution attempt"]
     attempt --> verification["Verification"]
     verification --> learning["Evidence → knowledge → adaptation"]
     learning --> problem
-    learning --> openProblem
-    learning --> smallerProblem
+    learning --> smallerProblem1
+    learning --> smallerProblem2
 ```
 
 ## Generation contract

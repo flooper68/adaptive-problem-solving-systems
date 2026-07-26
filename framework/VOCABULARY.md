@@ -56,12 +56,20 @@ or change. A problem states the condition, not its desired result, strategy, or
 executable work. Problems form an evolving hierarchy as evidence and learning
 decompose a larger problem into smaller problems.
 
+A problem may remain relevant across many working sessions and tasks. It owns
+the long-running evidence, desired change, signal, strategy, and concise history
+of material decisions that guide and evaluate work on it; it is not an
+executable work package. That history preserves why the problem was opened,
+materially reframed, changed, closed, or reopened without duplicating routine
+task activity or native evidence. `Open` and `closed` are its two lifecycle
+states.
+
 ### Strategy
 
 The current evidence-informed theory and approach for changing one problem. A
 strategy guides work and changes when verification or other evidence challenges
 its assumptions or effectiveness. The system strategy belongs to the root
-system problem; every smaller open problem has its own problem strategy.
+system problem; every smaller problem has its own problem strategy.
 
 ### System problem
 
@@ -71,9 +79,9 @@ system and defines its problem-owning boundary. The system problem is not
 revised or replaced within APS; improved understanding and clarification belong
 to system strategy. When a decomposed problem receives an independent boundary
 and complete loop, it becomes the system problem of a child system; otherwise
-it remains an open problem within the current system. The same solved-versus-
-closed distinction applies to the root problem; the system's process defines
-what root closure means for the system's subsequent lifecycle.
+it remains a problem in the current system's decomposition. The same solved-
+versus-closed distinction applies to the root problem; the system's process
+defines what root closure means for the system's subsequent lifecycle.
 
 ### System strategy
 
@@ -81,7 +89,7 @@ The system's current theory and approach for solving its system problem: how it
 interprets evidence, decomposes and compares smaller problems and possible
 responses, guides their problem strategies, executes work, verifies results,
 learns, adapts, and coordinates its subsystems. Its scope is system-wide; each
-open problem's problem strategy covers only that problem. It is the sibling
+problem strategy covers only that problem. It is the sibling
 `STRATEGY.md` document linked from `SYSTEM.md` and changes through adaptation
 when evidence warrants it.
 
@@ -97,42 +105,26 @@ existence does not make one interpretation or response authoritative.
 
 Evidence about a consumer's, operator's, validator's, or other participant's
 experience of a system or artifact. Feedback may reveal, change, or help close
-an open problem, but a report does not automatically become a problem or
+a problem, but a report does not automatically become a problem or
 authorize work.
 
 ### Insight
 
 An explicit interpretation inferred from evidence. An insight may explain or
-reframe an open problem, but remains distinguishable from its source evidence,
+reframe a problem, but remains distinguishable from its source evidence,
 an authorized decision, and executable work.
 
 ### Question
 
 A statement of unresolved uncertainty. A question may be used to frame or
-investigate an open problem; recording it does not by itself make it a problem
+investigate a problem; recording it does not by itself make it a problem
 or selected task.
 
 ## Problems and tasks
 
-### Open problem
-
-An evidenced, unresolved smaller problem that decomposes the system problem or
-another open problem. It states a gap to understand or change, not a proposed
-solution. Open problems belong to the system's active problem hierarchy and
-remain there until closed or otherwise inactive. They do not become child
-systems unless they receive an independent boundary, ownership, and complete
-problem-solving loop.
-
-An open problem may remain relevant across many working sessions and tasks. It
-owns the long-running evidence, desired change, signal, strategy, and concise
-history of material decisions; it is not an executable work package. `Open` is
-one of the problem's two lifecycle states; the other is `closed`. The history
-preserves why it was opened, materially reframed, changed, closed, or reopened
-without duplicating routine task activity or native evidence.
-
 ### Problem strategy
 
-The current approach for resolving or reducing one problem. An open problem's
+The current approach for resolving or reducing one problem. A problem's
 strategy is informed by the system strategy and relevant decomposition context,
 guides the work selected for that problem, and is revised when its signal or
 other evidence challenges the approach.
@@ -147,7 +139,7 @@ Tasks include implementation, research, experiment, discussion, review, or
 remediation. The task system of record preserves the current state and the
 information needed to understand, perform, stop, and resume it.
 
-A task implements or tests part of an open problem's strategy; it does not
+A task implements or tests part of a problem's strategy; it does not
 duplicate the whole problem or use problem closure as its own scope. Prefer a
 task small enough to produce one inspectable result in one working session. If
 it contains several independently reviewable results or stopping points, split
@@ -162,8 +154,8 @@ prescribe files, folders, or a task-management product.
 
 ### Problem signal
 
-An observable qualitative or quantitative condition used to judge whether an
-open problem is worsening, improving, or sufficiently resolved. A signal may
+An observable qualitative or quantitative condition used to judge whether a
+problem is worsening, improving, or sufficiently resolved. A signal may
 be a measure, repeated observation, validation result, or other fit-for-purpose
 evidence; APS does not require artificial numerical scoring.
 
@@ -222,22 +214,30 @@ Archiving changes visibility, not provenance or meaning.
 ### Artifact
 
 An inspectable output produced by a system. Producing or accepting an artifact
-does not by itself show that an open problem improved or a consumer outcome
+does not by itself show that a problem improved or a consumer outcome
 occurred.
 
 ### Outcome
 
 The change an artifact should cause for its consumer or environment. Outcome
 evidence, not work or artifact completion alone, shows whether the relevant
-open problem improved.
+problem improved.
 
 ### Solved
 
-An assessment that the desired change for an open problem occurred and its
+An assessment that the desired change for a problem occurred and its
 problem signal or equivalent outcome evidence supports the conclusion.
 “Solved” describes the evidenced condition and may be reconsidered when new
 evidence arrives. It is not a lifecycle state and does not itself close the
 problem.
+
+### Open
+
+An authorized decision that the system treats a problem as part of its active
+decomposition. Problem grooming opens a problem when the proposal is evidenced,
+relevant to the system problem, and distinct from current problems; a proposal
+is not open until that decision is made, and opening a problem does not
+authorize a task. `Open` is the first problem lifecycle state.
 
 ### Closed
 
@@ -251,7 +251,7 @@ problem lifecycle state. New evidence may justify reopening the problem.
 ### Learning
 
 A reusable change in understanding derived from evidence and results. Learning
-may revise an open problem or the problem decomposition, strategy, process,
+may revise a problem or the problem decomposition, strategy, process,
 validation method, or other future operation; an observation is not reusable
 learning merely because it was recorded. For material decisions and course corrections,
 learning may compare expected effects with later signals or outcomes and assess
