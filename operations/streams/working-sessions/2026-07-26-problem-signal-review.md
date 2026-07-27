@@ -1,8 +1,11 @@
 ---
 id: apss.session.problem-signal-review
 type: working-session
-status: open
+status: retained
 recorded: 2026-07-26
+accepted: 2026-07-27
+closed: 2026-07-27
+delivery: 0a0cc10
 participants: [APS framework maintainer, Claude Code operator]
 source: Maintainer-agent discussion in the current Claude Code session
 related_problems: [P1]
@@ -219,3 +222,14 @@ Problem-signal evidence: no reading was taken, because P1's current signal
 remains unreadable — which is this review's own finding rather than an
 acceptable result. This change is repository-correct and not yet demonstrated as
 an improvement.
+
+## Acceptance and delivery
+
+The maintainer accepted the reviewed scope on 2026-07-27. Commit `0a0cc10`
+contains the accepted framework and Operations changes and was pushed to
+`origin/main`; the task is closed and archived.
+
+The two questions this session recorded rather than decided remain open: whether
+P1's own signal is rewritten, which belongs to problem grooming, and whether
+`Outcome` should sit next to `Signal` in the vocabulary. The naming candidates
+surveyed above were not opened as problems.
