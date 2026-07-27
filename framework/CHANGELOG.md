@@ -3,6 +3,48 @@
 Simple history of material framework changes. Git remains the detailed audit
 trail.
 
+## 2026-07-26 — problem signal must be readable while the problem is open
+
+Sharpened the problem signal concept, renamed it `Signal`, and widened
+`Outcome` to cover the target it was being confused with.
+
+The old definition — "an observable condition used to judge whether a problem is
+worsening, improving, or sufficiently resolved" — was satisfied by a restated
+goal. It fused three jobs: the indicator observed, the threshold that counts as
+enough, and the reading itself. The threshold job overlapped the problem's
+desired change, which the framework required of every problem but never defined,
+so writers stated the target twice and never named an observation.
+
+Rather than add a second entry, `Outcome` absorbed it. That entry had defined
+itself through an artifact — "the change an artifact should cause" — while
+evidencing itself through a problem, "shows whether the relevant problem
+improved." It is now anchored to the problem in both halves: the change
+resolving a problem should produce for its consumer or environment, of which
+every problem states its *desired outcome*. Artifacts contribute to an outcome
+without constituting one. "Desired change" is retired as framework wording.
+
+The evidence was the framework's own worked example. P1's signal, "the
+maintainer can understand and run the whole process," has no reading while P1
+is open; it becomes observable only once P1 is already resolved. Seven concept
+reviews recorded no value for it, the last two carrying the same sentence
+verbatim.
+
+A signal now must be readable while the problem is open: a value now, another
+on a later attempt, and the two comparable. Readings may be qualitative — a
+teach-back, a consumer judgment — but a reading must be takeable. A signal that
+reads work performed rather than the problem's condition does not distinguish
+activity from improvement.
+
+"Signal" also named two things. Verification was said to "supply the signal that
+guides later optimization" while the problem's signal was the yardstick
+verification compares against. Verification now supplies *evidence*; it *reads*
+the signal. `Solved` reads against a signal reading rather than the signal
+itself. With that collision resolved, the entry is `Signal` rather than `Problem
+signal`, matching `Strategy`; "problem signal" remains ordinary wording for the
+signal of one problem, as "problem strategy" and "open problem" do. Framework Operations propagated the change: verification records the
+value observed or records the signal as unreadable, and problem grooming treats
+a signal no attempt has been able to read as a trigger.
+
 ## 2026-07-26 — problem strategy merged into strategy
 
 Removed `problem strategy` as a separate APS concept. The framework defined one

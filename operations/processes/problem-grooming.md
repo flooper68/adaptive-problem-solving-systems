@@ -19,7 +19,8 @@ Run this process:
 - when material feedback, validation, learning, or completed work changes a
   problem's evidence;
 - when a parent problem, strategy, material condition, or system boundary changes;
-- when an open problem has no current strategy or an unclear signal;
+- when an open problem has no current strategy, an unclear signal, or a signal
+  no attempt has been able to read;
 - when new evidence may justify reopening a closed problem; or
 - when the maintainer requests a review.
 
@@ -49,7 +50,7 @@ method from one problem without evidence that it belongs at system scope.
    or bounded set being reviewed, the trigger, participants, and useful
    stopping point.
 2. **Orient.** Read the system strategy, source-grooming proposals and their
-   evidence, and each relevant problem's statement, desired change, strategy,
+   evidence, and each relevant problem's statement, desired outcome, strategy,
    signal, linked work, streams, knowledge, and material prior sessions.
 3. **Groom one problem at a time.** Ask only the next load-bearing question
    needed to determine:
@@ -64,7 +65,8 @@ method from one problem without evidence that it belongs at system scope.
      supported by evidence;
    - whether proposed strategy changes are scoped to this problem or genuinely
      change the system's root-problem approach;
-   - whether the desired change and signal can distinguish activity from
+   - whether the signal can be read now, whether recent attempts actually read
+     it, and whether it and the desired outcome distinguish activity from
      improvement; and
    - whether its impact and urgency justify work now relative to other open
      problems.
@@ -76,7 +78,7 @@ method from one problem without evidence that it belongs at system scope.
    - **defer or reject proposal** — leave the proposal in its source with the
      reason and reconsideration trigger when applicable;
    - **retain** — the framing remains useful, with or without current work;
-   - **revise** — update the statement, evidence, desired change, strategy, or
+   - **revise** — update the statement, evidence, desired outcome, strategy, or
      signal;
    - **address now** — retain or revise it and select linked tasks through the
      normal task-selection authority; or

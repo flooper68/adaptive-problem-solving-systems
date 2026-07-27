@@ -32,12 +32,15 @@ For every material attempt:
    comparing decisions or results before and after adaptation, or revisiting a
    later run to see whether learning improved it.
 4. Record the context, observation period, evidence, confounders, failures, and
-   conclusion. Compare the result with the addressed problem's signal and state
-   whether the problem improved, worsened, or remains unresolved.
+   conclusion. Take a reading of the addressed problem's signal, record the
+   value observed, compare it with the previous reading, and state whether the
+   problem improved, worsened, or remains unresolved. When no reading can be
+   taken, record that the signal was unreadable rather than restating it; a
+   signal that stays unreadable across attempts is a grooming trigger.
 5. Keep delayed evidence explicit. A correct repository change may be accepted
    while problem improvement remains unverified; do not describe it as proven
    effective until the later evidence exists.
 
 Verification is complete for the current stopping point when immediate checks
-pass, known contradictions are recorded, the current problem signal is
-assessed honestly, and any delayed observation has a clear next trigger.
+pass, known contradictions are recorded, the current problem signal is read and
+reported honestly, and any delayed observation has a clear next trigger.

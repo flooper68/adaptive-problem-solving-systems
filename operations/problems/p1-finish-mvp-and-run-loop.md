@@ -41,7 +41,7 @@ example applications, and is being tested through a live problem-grooming
 session. It still lacks approved adaptation, a subsequent affected run, and
 sufficient outcome evidence.
 
-## Desired change
+## Desired outcome
 
 The smallest coherent APS MVP is explicitly bounded, nonessential concepts and
 surfaces are removed or deferred, the retained pieces are finished and
@@ -378,3 +378,27 @@ This review also sharpened, without resolving, the conflation question the
 system-strategy review deferred. With the duplicate removed, `System strategy`
 is visibly the root problem's strategy plus the system-wide operating model.
 The teach-back and adversarial passes remain the right place to judge it.
+
+### 2026-07-26 — problem signal must be readable; P1's own signal fails it
+
+Source: [problem-signal review](../streams/working-sessions/2026-07-26-problem-signal-review.md).
+
+The seventh concept review found the definition satisfied by a restated goal.
+It fused the indicator observed, the threshold counting as sufficient, and the
+reading itself, and its threshold job overlapped the desired change — a required
+element of every problem that the vocabulary never defined.
+
+The maintainer decided a signal must be readable at any time, "otherwise it does
+not reflect reality." A signal now yields a value now, another on a later
+attempt, and the two must be comparable; readings may be qualitative. The
+missing target concept was resolved by widening `Outcome` to cover it rather
+than adding a second entry, so a problem now states its *desired outcome*, and
+the framework stopped using "signal" for both the yardstick and verification's
+output. With the word freed, the entry became `Signal` rather than `Problem
+signal`, matching `Strategy`.
+
+The evidence was P1 itself. Its signal above is observable only once P1 is
+already resolved, and seven reviews recorded no value for it — the last two
+carrying the same placeholder sentence verbatim. **P1's signal does not satisfy
+the definition this review adopted.** Rewriting it is a problem-grooming
+decision and is left open here rather than taken by a concept review.

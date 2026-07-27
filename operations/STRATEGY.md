@@ -18,7 +18,7 @@
 - Prioritize problems that block finishing, understanding, or running the MVP
   loop over problems that add optional capability.
 - Require every open problem to identify its parent and state evidence, a
-  desired change, a strategy, and a human- or system-observable signal.
+  desired outcome, a strategy, and a human- or system-observable signal.
 - Select work only when it implements or tests the problem strategy.
 - When two approaches could work, try the smaller reversible one first.
 - Revisit the strategy when feedback shows confusion, unnecessary ceremony, or

@@ -38,9 +38,11 @@ or more inspectable artifacts as part of an attempt, but a separately named
 artifact is not an identity criterion for every system.
 
 Verification is the loop's value function: it evaluates a solution attempt
-against the system problem and supplies the signal that guides later
-optimization. The signal may be qualitative or quantitative; APS does not
-require a mathematical score.
+against the system problem and supplies the evidence that guides later
+optimization. That evidence may be qualitative or quantitative; APS does not
+require a mathematical score. Where a problem declares a signal, verification
+reads it; the reading is evidence about the problem, distinct from the signal
+that defines what to observe.
 
 APS does not prescribe a universal lifecycle process or consequence when the
 problem is solved; the system defines its response.
@@ -57,7 +59,7 @@ executable work. Problems form an evolving hierarchy as evidence and learning
 decompose a larger problem into smaller problems.
 
 A problem may remain relevant across many working sessions and tasks. It owns
-the long-running evidence, desired change, signal, strategy, and concise history
+the long-running evidence, desired outcome, signal, strategy, and concise history
 of material decisions that guide and evaluate work on it; it is not an
 executable work package. That history preserves why the problem was opened,
 materially reframed, changed, closed, or reopened without duplicating routine
@@ -151,12 +153,23 @@ selected work, active work, and deferred work. The system's process chooses its
 system of record, organization, views, and lifecycle states; APS does not
 prescribe files, folders, or a task-management product.
 
-### Problem signal
+### Signal
 
-An observable qualitative or quantitative condition used to judge whether a
-problem is worsening, improving, or sufficiently resolved. A signal may
-be a measure, repeated observation, validation result, or other fit-for-purpose
-evidence; APS does not require artificial numerical scoring.
+The observable a system reads to judge whether one problem is worsening,
+improving, or sufficiently changed. A signal must be readable while the problem
+is open: it yields a value now, another value on a later attempt, and the two
+can be compared. An observation available only once the problem is already
+resolved restates the desired outcome and cannot indicate movement toward it.
+
+A signal may be a measure, repeated observation, validation result, teach-back,
+consumer judgment, or other fit-for-purpose evidence. APS requires that a
+reading can actually be taken, not that it be numerical. A signal that reads
+work performed rather than the problem's condition does not distinguish
+activity from improvement. The problem owns its signal and problem grooming
+changes it; verification reads it and may find it uninformative.
+
+*Problem signal* is ordinary wording for the signal of one problem, used where
+that scope must be named; it is not a separate concept.
 
 ### Problem grooming
 
@@ -218,14 +231,21 @@ occurred.
 
 ### Outcome
 
-The change an artifact should cause for its consumer or environment. Outcome
-evidence, not work or artifact completion alone, shows whether the relevant
-problem improved.
+The change in the affected consumer or environment that resolving a problem
+should produce. Every problem states its *desired outcome*: the condition it
+should reach, distinct from the strategy pursuing it and from the signal read to
+judge movement toward it. Problem grooming changes it, and evidence that the
+desired outcome itself was wrong is a reason to reframe the problem rather than
+to retry the work.
+
+Where a system produces artifacts, they contribute to an outcome but do not
+constitute one. Outcome evidence, not work or artifact completion alone, shows
+whether the problem improved.
 
 ### Solved
 
-An assessment that the desired change for a problem occurred and its
-problem signal or equivalent outcome evidence supports the conclusion.
+An assessment that the desired outcome for a problem occurred and a reading of
+its problem signal, or equivalent outcome evidence, supports the conclusion.
 “Solved” describes the evidenced condition and may be reconsidered when new
 evidence arrives. It is not a lifecycle state and does not itself close the
 problem.

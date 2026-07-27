@@ -34,7 +34,7 @@ flowchart TB
 
 Node labels name the problem and may include the owning system where needed.
 Edges identify decomposition; delegated edges identify child-system ownership.
-Detail views may add relevant verification signals; do not fill the orientation
+Detail views may add relevant verification evidence; do not fill the orientation
 map with unrelated streams and process detail.
 
 ## 2. Contextual artifact flow

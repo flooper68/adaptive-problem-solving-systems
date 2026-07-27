@@ -59,6 +59,15 @@ is part of its strategy and may itself evolve.
 
 - **Problem** — a condition affecting a consumer or environment that calls for
   understanding or change. A problem states the condition, not its solution.
+- **Outcome** — the change in the affected consumer or environment that
+  resolving the problem should produce. Every problem states its *desired
+  outcome*: the target, not the approach and not the observation used to judge
+  progress.
+- **Signal** — the observable read to judge whether the problem is
+  worsening, improving, or sufficiently changed. It must be readable while the
+  problem is open, so that a reading taken now can be compared with one taken
+  later. An observation available only after the problem is resolved restates
+  the desired outcome.
 - **Strategy** — the current evidence-informed theory and approach for changing
   one problem. Every problem owns one; it guides the work selected for that
   problem and changes when evidence challenges the approach. The root system
@@ -80,7 +89,7 @@ is part of its strategy and may itself evolve.
 The problem hierarchy is APS's adaptive planning structure, not a complete plan
 made in advance. The system problem is its root. Evidence and learning reveal,
 revise, split, combine, or close smaller problems, each with its own desired
-change, signal, and strategy. Selected tasks implement or test one of those
+outcome, signal, and strategy. Selected tasks implement or test one of those
 strategies, and their results feed verification and later decomposition. When a
 smaller problem receives an independent boundary and complete loop, it becomes
 the system problem of a child system; otherwise it remains within the current
@@ -116,7 +125,7 @@ information from relevant streams, verifies whether its attempts improve the
 problem, grooms information through evidence-aware processing and decision
 making, compiles reusable knowledge, and adapts a later attempt. Verification
 acts as the loop's value function: it evaluates an attempt against the problem
-and supplies a qualitative or quantitative signal for the next optimization
+and supplies qualitative or quantitative evidence for the next optimization
 step. An attempt may produce an inspectable artifact when the problem context
 calls for one, but a separately named artifact is not part of the system's
 identity.
@@ -249,7 +258,7 @@ problem remains relevant to the system's evolving decomposition.
 ### 2. Groom problems and select tasks
 
 The system strategy guides problem decomposition and selection.
-A system makes each smaller problem's current meaning, evidence, desired change,
+A system makes each smaller problem's current meaning, evidence, desired outcome,
 signal, strategy, lifecycle, and material decision history recoverable. These
 are conceptual responsibilities, not a required record schema. The system's
 process chooses identifiers, fields, tools, views, and storage; a problem may
@@ -276,14 +285,15 @@ process invocation when it preserves the boundary and authority of each result.
 A problem is a long-running unit in the system's evolving problem
 hierarchy. It may remain open across many working sessions and tasks while its
 evidence, signal, strategy, and decomposition context evolve. Do not turn the
-whole desired change of a problem into one umbrella task.
+whole desired outcome of a problem into one umbrella task.
 
 Groom a problem by asking:
 
 1. How does it contribute to decomposing the system problem?
 2. What evidence indicates that it exists?
 3. What is the impact if it remains unresolved?
-4. What change and signal would demonstrate improvement?
+4. What change would resolve it, and what signal can be read now and again
+   later to show movement toward that change?
 5. What strategy should approach it, and what evidence would challenge that
    strategy?
 6. Why address it now rather than another problem in the hierarchy?
@@ -311,8 +321,10 @@ continuously, or combine these approaches according to its problem and process.
 
 Problems have two lifecycle states: **open** and **closed**. A proposal enters
 the problem decomposition only when authorized problem grooming opens it with
-evidence, a desired change, a signal, a strategy, and demonstrated relevance to
-the system problem. APS does not prescribe how proposals or these decisions are
+evidence, a desired outcome, a signal, a strategy, and demonstrated relevance to
+the system problem. The signal must be readable while the problem is open. A
+problem whose only stated signal is its desired outcome restated has no
+instrument, and its verification can report activity but not movement. APS does not prescribe how proposals or these decisions are
 stored; the system's processes choose their systems of record.
 
 The chosen problem system of record preserves a concise history of material
@@ -327,7 +339,7 @@ itself proves improvement or changes the problem's lifecycle. Verification
 compares that evidence with the problem signal. The result may retain or revise
 the problem, its strategy, or its place in the hierarchy.
 
-**Solved** is an evidence-based assessment that the desired change occurred; it
+**Solved** is an evidence-based assessment that the desired outcome occurred; it
 is not a lifecycle state. **Closed** is the separate authorized decision to
 remove a problem from active consideration. A problem may close because it was
 solved or for another recorded reason. New evidence may reopen it. Improvement
