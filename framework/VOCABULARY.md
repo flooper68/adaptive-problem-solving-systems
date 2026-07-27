@@ -132,9 +132,12 @@ or selected task.
 
 ### Task
 
-A bounded unit of actual work that iterates on a problem's solution by
-implementing or testing part of its strategy. A task processes information into
-an attempt, decision, result, or other inspectable change. Its execution and
+A bounded unit of actual work that processes information into an attempt,
+decision, result, or other inspectable change. A task may or may not be in
+the context of a problem: most iterate on a problem's solution by
+implementing or testing part of its strategy, and a task that addresses no
+open problem may still be selected when the declared selection authority
+accepts its intended result and stopping condition. Its execution and
 results are also an information source for verification and future learning.
 Tasks include implementation, research, experiment, discussion, review, or
 remediation. The task system of record preserves the current state and the
@@ -187,17 +190,19 @@ continuous, and mixed operation are all valid.
 
 A bounded action that may be considered for execution, such as a task,
 research inquiry, experiment, discussion, review, or remediation. A candidate
-may be captured before its problem relationship is clear, but that gap must be
-resolved before selection.
+may be captured before its problem relationship is clear; selection makes the
+relationship explicit by linking at least one current problem or by accepting
+that the work addresses none.
 
 ### Task grooming
 
 The authority-governed processing of candidate actions into bounded work and a
-readiness disposition for open problems. Task grooming checks scope, problem-
+readiness disposition. Task grooming checks scope, problem-
 strategy relationship, evidence, expected result, dependencies, validation,
 responsibility, and stopping conditions. It does not open, reframe, prioritize,
-or close problems; an unrepresented gap returns to problem grooming before work
-is selected. Problem and task grooming are distinct responsibilities even when
+or close problems; an unrepresented evidenced gap is proposed to problem
+grooming, while work that addresses no problem may still be selected under
+the declared selection authority. Problem and task grooming are distinct responsibilities even when
 a system combines them in one meeting, process, tool, or cadence.
 
 ### Selected task

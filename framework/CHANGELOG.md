@@ -3,6 +3,28 @@
 Simple history of material framework changes. Git remains the detailed audit
 trail.
 
+## 2026-07-27 — a task may or may not be in the context of a problem
+
+Dropped the rule that a task must address at least one current problem before
+selection. The maintainer's evidence is that real operation produces small
+one-off work — chores, fixes, and errands — that has no long-running gap
+behind it, and forcing a problem link would either invent problems or leave
+the work untracked. No new task kind is named for this; the vocabulary simply
+states that a task may or may not be in the context of a problem.
+
+Most tasks still iterate on a problem's solution by implementing or testing
+part of its strategy, and tasks selected for a problem must still do so rather
+than attach by identifier alone. A task without one is selected under the same
+declared selection authority, remains bounded and owned, and is verified
+against its own acceptance conditions instead of a problem signal. Recurring
+or substantial problem-less work is evidence of an unrepresented gap for
+problem grooming, so the escape hatch does not silently erode the hierarchy.
+
+`Task`, `Task candidate`, and `Task grooming` entries and the framework
+definition's task-selection paragraph carry the change; the task system of
+record now needs the addressed problem and strategy only when the task has
+one.
+
 ## 2026-07-26 — problem signal must be readable while the problem is open
 
 Sharpened the problem signal concept, renamed it `Signal`, and widened

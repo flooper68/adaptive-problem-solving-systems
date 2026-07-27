@@ -89,13 +89,16 @@ method from one problem without evidence that it belongs at system scope.
      parent-problem change, or closed with its remaining risk explicitly accepted.
 5. **Update traceability.** Keep concise system-local problem IDs stable while
    the same framing remains recognizable. Update the authoritative file under
-   `problems/`, and ensure selected tasks list the problem ID under
+   `problems/`, and ensure tasks selected for the problem list its ID under
    `addresses`. On reopening, set `status: open` and move the problem from
    `problems/archive/` to `problems/`. Remove or reconsider orphaned tasks when
    their problem closes.
 6. **Record the result.** Append the material evidence, authorized decision,
    rationale, unresolved question, next trigger, and source reference to the
-   problem file's grooming history. Update affected task files with selection,
+   problem file's grooming history. When grooming surfaces a framework-worthy
+   lesson, capture the compilation as a task through
+   [`task-intake.md`](task-intake.md) for a brainstorming session to execute;
+   grooming does not edit the compiled framework. Update affected task files with selection,
    execution state, current state, and next step. Link both from the retained
    working-session record. Do not claim improvement or solution without
    evidence against the signal.

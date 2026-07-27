@@ -274,7 +274,7 @@ decides whether to open or change a problem.
 Problem grooming maintains the problem hierarchy: it acts on proposals and
 reviews existing problems, their strategies, signals, relevance, and priority.
 Task grooming separately shapes candidate actions into bounded executable work
-for open problems and determines readiness for selection. Task grooming does
+and determines readiness for selection. Task grooming does
 not create, reframe, or close problems; problem grooming does not make an
 unshaped action ready merely by prioritizing its problem.
 
@@ -363,9 +363,12 @@ flowchart LR
     closed -->|"New evidence"| grooming
 ```
 
-A task is a bounded unit of actual work that iterates on a problem's solution
-by implementing or testing part of its strategy. It processes information into
-an attempt, decision, result, or other inspectable change. Its execution and
+A task is a bounded unit of actual work that processes information into an
+attempt, decision, result, or other inspectable change. A task may or may not
+be in the context of a problem: most iterate on a problem's solution by
+implementing or testing part of its strategy, and a task that addresses no
+open problem may still be selected when the declared selection authority
+accepts its intended result and stopping condition. Its execution and
 results also become an information source for verification and future learning,
 so later work can adapt from what happened rather than only from what was
 planned.
@@ -381,14 +384,18 @@ A repository may use task files; another system may use Jira, GitHub, Linear, a
 database, or another recoverable system of record. APS does not prescribe a
 folder layout, tool, identifier format, or fixed lifecycle states. The chosen
 representation must preserve enough current state to identify selected work,
-its addressed open problem and strategy, intended result, responsible
-participant, stopping condition, and next step.
+its addressed open problem and strategy when it has one, intended result,
+responsible participant, stopping condition, and next step.
 
-A task candidate may be retained before its problem relationship is clear, but
-it must not be selected until it addresses at least one current problem. The
-system strategy informs problem grooming and constrains acceptable problem
-strategies; selected tasks implement or test the addressed problem strategy
-rather than becoming unrelated activity attached only by an identifier.
+A task candidate may be retained before its problem relationship is clear.
+Selection makes the relationship explicit: a task that addresses current
+problems implements or tests their strategies, while a task may also be
+selected with none. Such a task is still bounded, owned, and verifiable
+against its own acceptance conditions, and recurring or substantial
+problem-less work is evidence of an unrepresented gap for problem grooming.
+The system strategy informs problem grooming and constrains acceptable problem
+strategies; tasks selected for a problem implement or test its strategy rather
+than becoming unrelated activity attached only by an identifier.
 
 The task system of record states enough current state and next-step information
 for execution to resume across time, people, or agents. Material session

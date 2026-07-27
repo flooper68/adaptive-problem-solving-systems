@@ -52,8 +52,10 @@ grooming record with provenance.
    useful. When the report reveals an unrepresented higher-level gap, propose
    it to [`problem grooming`](problem-grooming.md); feedback grooming does not
    open the problem itself. Link both directions. Problem creation, task
-   selection, and prioritization remain separate. Feed stable lessons or
-   outcome evidence into validation and knowledge compilation.
+   selection, and prioritization remain separate. Feed outcome evidence into
+   validation. Capture a stable framework-worthy lesson as a compilation task
+   through [`task-intake.md`](task-intake.md); a brainstorming session
+   executes it.
 9. **Close the loop.** Record what acknowledgment or follow-up is owed. If
    linked work is later validated, append the result and set the feedback to
    `addressed`; do not erase the original experience.

@@ -36,11 +36,14 @@ For every material attempt:
    value observed, compare it with the previous reading, and state whether the
    problem improved, worsened, or remains unresolved. When no reading can be
    taken, record that the signal was unreadable rather than restating it; a
-   signal that stays unreadable across attempts is a grooming trigger.
+   signal that stays unreadable across attempts is a grooming trigger. A
+   task with no addressed problem is verified against its own acceptance
+   conditions; no problem signal is read for it.
 5. Keep delayed evidence explicit. A correct repository change may be accepted
    while problem improvement remains unverified; do not describe it as proven
    effective until the later evidence exists.
 
 Verification is complete for the current stopping point when immediate checks
 pass, known contradictions are recorded, the current problem signal is read and
-reported honestly, and any delayed observation has a clear next trigger.
+reported honestly when the work addresses a problem, and any delayed
+observation has a clear next trigger.

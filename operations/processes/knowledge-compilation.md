@@ -7,6 +7,18 @@ this system's primary compiled-knowledge artifact. Preserve material scope and
 uncertainty in the resulting knowledge, and keep the edits uncommitted until
 adaptation is approved.
 
+## Invocation
+
+This process runs only inside a [`brainstorming`](brainstorming.md) session
+(its Compile step). Grooming processes update their own artifacts — insight
+dispositions, feedback records, problem and task files — and do not edit the
+compiled framework directly. When any other work session or grooming
+invocation surfaces a framework-worthy lesson, capture the compilation as a
+task through [`task-intake.md`](task-intake.md) linking the source evidence;
+a brainstorming session executes that task and compiles the lesson. This
+keeps pending lessons visible in `tasks/` instead of waiting untracked for a
+session.
+
 ## Inputs
 
 For the question or completed work being compiled, read:

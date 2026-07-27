@@ -6,8 +6,9 @@ Turn a captured candidate action into an explicit, evidence-aware disposition
 without silently treating it as committed work. Grooming improves decision
 quality; it does not itself authorize execution or a normative framework
 change. Task grooming does not open, reframe, prioritize, or close problems. If
-the candidate exposes an unrepresented gap, propose it to problem grooming
-before selecting work.
+the candidate exposes an unrepresented evidenced gap, propose it to problem
+grooming; work that responds to no such gap may be selected without an
+addressed problem.
 
 ## Invocation and roles
 
@@ -29,10 +30,12 @@ Set `status: grooming` while analysis is materially underway.
    relevant session history.
 2. **Check identity.** Merge duplicate actions, split unrelated actions, and
    preserve links to their original source records and IDs.
-3. **Frame the response.** State the affected consumer, addressed open problem,
-   its parent and strategy, proposed action, expected outcome, and why it belongs
-   within this system's boundary. If no current open problem represents the
-   evidenced gap, propose a problem file before treating the work as ready.
+3. **Frame the response.** State the affected consumer, the addressed open
+   problem with its parent and strategy — or that the work addresses none —
+   the proposed action, expected outcome, and why it belongs within this
+   system's boundary. If the work responds to an evidenced gap no current
+   open problem represents, propose a problem file before treating it as
+   ready; work responding to no such gap may be ready without one.
 4. **Classify the effect.** Identify whether it may change the normative
    framework, Framework Operations, a future application, or only current
    understanding. One item may affect several, but the distinction must remain
@@ -54,7 +57,7 @@ Set `status: grooming` while analysis is materially underway.
    and its rationale. Do not equate desirability with current priority.
 9. **Propagate the result.** Update the item's frontmatter and grooming log.
    If selected, set `status: selected` and list its problem IDs under
-   `addresses`. Keep captured, grooming, ready, selected, active, and deferred
+   `addresses`, or record that it addresses none. Keep captured, grooming, ready, selected, active, and deferred
    tasks directly under `tasks/`; move rejected or merged tasks under
    `tasks/archive/`. Do not erase the source or its rejected alternatives.
 
@@ -62,9 +65,10 @@ Set `status: grooming` while analysis is materially underway.
 
 An item is ready only when the responsible operator can answer:
 
-- Which current open problem does this address, and how does that problem
-  decompose its parent?
-- How does the work implement or test that problem's strategy?
+- Which current open problem does this address and how does that problem
+  decompose its parent — or does the work address none?
+- How does the work implement or test that problem's strategy, or what bounded
+  need does it meet without one?
 - What consumer problem or opportunity are we addressing?
 - What observable outcome would make the work worthwhile?
 - Can the task produce one inspectable result in one working session?

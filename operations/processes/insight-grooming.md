@@ -45,13 +45,18 @@ record with provenance.
    wrong; confidence; and contexts where it should not be applied.
 6. **Choose a disposition.** Apply one status below with a rationale. The status
    is scoped to the assessed claim and evidence, not a universal truth label.
-7. **Route without conflating.** Link supported or explicitly provisional
-   insights into [`knowledge compilation`](knowledge-compilation.md) when
-   relevant. When an insight reveals an unrepresented higher-level gap, propose
+7. **Route without conflating.** For a supported or explicitly provisional
+   framework-worthy insight, capture the compilation as a task through
+   [`task intake`](task-intake.md) linking the insight; a
+   [`brainstorming`](brainstorming.md) session executes it, where
+   [`knowledge compilation`](knowledge-compilation.md) runs. Grooming itself
+   does not edit the compiled framework. When an insight reveals an unrepresented higher-level gap, propose
    it to [`problem grooming`](problem-grooming.md); insight grooming does not
    open the problem itself. Create separate work through
-   [`task intake`](task-intake.md) only for an executable response; do not
-   select it until an open problem represents the gap. Link an authorized
+   [`task intake`](task-intake.md) only for an executable response; work
+   responding to an evidenced gap is not selected until an open problem
+   represents it, while work responding to no such gap may be selected
+   without one. Link an authorized
    decision to its decisional artifact, and leave the insight unchanged when no
    propagation is warranted.
 8. **Close the loop.** Record source acknowledgment, disagreement, or
