@@ -1,7 +1,9 @@
 ---
 id: apss.review-problem-signal
 type: review
-status: awaiting-review
+status: closed
+closed: 2026-07-27
+delivery: 0a0cc10
 owner: APS framework maintainer
 agent: Claude Code operator
 created: 2026-07-11
@@ -45,13 +47,14 @@ concept has one maintainer-authorized disposition, the affected normative and
 Operations surfaces agree, and downstream questions are captured rather than
 decided here.
 
-Awaiting review. The disposition is **retain, sharpened, renamed**: a signal
-must be readable while the problem is open, and the entry is now `Signal`.
-`Outcome` absorbed the target the signal was being confused with. Changes are
-compiled and uncommitted; validation passes. Next step is maintainer acceptance,
-then delivery. Two questions are recorded rather than decided: whether P1's own
-signal is rewritten, which belongs to problem grooming, and whether `Outcome`
-should move next to `Signal` in the vocabulary.
+Closed. The disposition was **retain, sharpened, renamed**: a signal must be
+readable while the problem is open, and the entry is now `Signal`. `Outcome`
+absorbed the target the signal was being confused with. The maintainer accepted
+the scope on 2026-07-27 and it was delivered in commit `0a0cc10`.
+
+Two questions were recorded rather than decided: whether P1's own signal is
+rewritten, which belongs to problem grooming, and whether `Outcome` should move
+next to `Signal` in the vocabulary.
 
 This file keeps its `apss.review-problem-signal` id and name, as
 `review-problem-strategy` did through the equivalent rename.
