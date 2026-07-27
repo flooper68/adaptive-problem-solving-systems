@@ -1,7 +1,7 @@
 ---
 id: apss.review-vision
 type: review
-status: superseded
+status: closed
 owner: APS framework maintainer
 created: 2026-07-11
 closed: 2026-07-12

@@ -53,7 +53,11 @@ research, or experimentation. It is not evidence for a convenient conclusion.
      evidence unless the framework adopts a general lesson.
 6. Edit the authoritative target directly as an uncommitted change. Keep
    operations-specific conclusions in the authoritative operational document
-   they change rather than creating a second knowledge artifact.
+   they change rather than creating a second knowledge artifact. Within the
+   framework, each definition has one home: the vocabulary carries a concept's
+   exact meaning and boundary, and the framework definition explains how
+   concepts operate together, referencing the vocabulary rather than restating
+   it. Do not compile the same definition into both.
 7. Append a concise entry to the target knowledge artifact's changelog when the
    compilation materially changes it. Raw evidence and detailed provenance stay
    in their source streams, work records, and Git history.

@@ -402,3 +402,60 @@ already resolved, and seven reviews recorded no value for it — the last two
 carrying the same placeholder sentence verbatim. **P1's signal does not satisfy
 the definition this review adopted.** Rewriting it is a problem-grooming
 decision and is left open here rather than taken by a concept review.
+
+### 2026-07-27 — task family cut to two concepts; Operations statuses cut to two
+
+Source: [task-family review](../streams/working-sessions/2026-07-27-task-family-review.md).
+
+The eighth concept review took `Task`, `Task candidate`, and `Selected task`
+together, because both dependents were defined in terms of the parent and their
+disposition turned on one question. The maintainer split that question in two:
+are the statuses local process or framework, and why would the framework need
+these two entries at all.
+
+The framework had already answered the first, deliberately and asymmetrically —
+problem states are normative because they carry decision authority, task states
+are delegated because task workflow follows the tool — and then defined two task
+states as concepts anyway. Two checks showed they were leaking local names:
+no task file ever carried `status: candidate` (Operations used `captured`), and
+five archived tasks carried a `superseded` status the process never documented.
+
+Decision: **remove both, retain and widen `Task`.** The principle is that the
+framework keeps responsibilities, authorities, and boundaries and does not keep
+state names; `Task grooming` passes that test, the two removed entries did not.
+This is the fifth pruning disposition, after goal removal, boundary demotion,
+open problem, and problem strategy.
+
+During review the maintainer asked why `Task collection` was still there, and it
+was removed too — the sixth pruning. Folding the other two entries into `Task`
+had left it as `Task` pluralized plus a delegation statement `Task` now carried,
+and the framework used the term nowhere outside its own heading. Problems have
+no collection concept, the third time a missing analogue on the other half of a
+pair has exposed a redundant entry. This reopens the 2026-07-12 task-collection
+review, which the strategy's non-waterfall clause permits: that demotion was
+correct for what the entry held then, and this session is what made the
+remainder redundant.
+
+`Selected task` had been stale for one day — it still required an open problem
+after the compilation-invocation session removed that rule from three of the
+five siblings and missed the fourth. That is evidence for the disposition
+rather than a defect fixed alongside it: the fragmentation is what let a careful
+session leave a contradiction behind.
+
+Framework Operations separately collapsed twelve task statuses to `open` and
+`closed`, mirroring the problem lifecycle. Six of the eleven documented statuses
+had never been used once. Closure reasons, readiness, deferral, and selection
+became recorded dispositions rather than states — the same demotion `solved`
+received. Whether losing the `captured`/`ready` distinction costs anything is
+the open question the maintainer chose to judge in review.
+
+In iterative review the maintainer then cut deeper than the operator had:
+the `Task` entry was reduced from 28 lines to 8, the definition was
+generalized to "produces an artifact," and selection and authority were
+removed from tasks entirely as non-generic concepts the general loop-ownership
+delegation already covers. Who chooses work, and whether anyone authorizes it,
+is now each system's process choice; Operations' maintainer-selects rule became
+visibly an instance rule. The maintainer also set the compilation principle
+that definitions live in the vocabulary and the framework definition
+references them, recorded in `knowledge-compilation.md` with a captured
+backfill task for the README's remaining duplication.

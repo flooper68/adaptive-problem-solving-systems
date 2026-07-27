@@ -1,7 +1,7 @@
 ---
 id: apss.modular-system-concerns
 type: task
-status: captured
+status: open
 owner: APS framework maintainer
 created: 2026-07-10
 source: APS framework maintainer idea intake

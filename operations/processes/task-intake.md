@@ -28,7 +28,7 @@ Create `operations/tasks/<short-slug>.md` with this structure:
 ---
 id: apss.<stable-id>
 type: task
-status: captured
+status: open
 owner: APS framework maintainer
 created: YYYY-MM-DD
 source: <person, observation, document, validation, or other origin>
@@ -113,7 +113,8 @@ A successfully captured candidate has:
 - links or recoverable provenance for the records that motivated it;
 - a short, one-question-at-a-time clarification conversation with the source,
   with answers recorded or the reason the next answer remains pending;
-- `status: captured`; and
+- `status: open`, with the grooming log showing that it is captured but not yet
+  groomed; and
 - no promise that it will be prioritized or implemented.
 
 Material discussion during intake belongs in the item's grooming log or a

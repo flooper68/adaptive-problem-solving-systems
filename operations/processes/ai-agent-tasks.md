@@ -2,14 +2,16 @@
 
 Use this process when an AI agent performs repository work.
 
-1. **Claim.** Record the task, open problem it addresses, how it implements or
-   tests that problem's strategy, scope, agent, and acceptance condition in the
-   task file and set its status to `in-progress`.
+1. **Claim.** Record the task, the problem it addresses and how it implements or
+   tests that problem's strategy — or that it addresses none — plus scope,
+   agent, and acceptance condition in the task file. The task stays `open`; the
+   claim itself is what makes the work visible.
 2. **Do.** Make the scoped changes and run relevant validation.
 3. **Record.** Update the task's current state and next step. Retain material
    work, validation, and uncertainty in the working-session record.
-4. **Human review.** Present the uncommitted changes for review. Set the status
-   to `awaiting-review` and make any requested revisions.
+4. **Human review.** Present the uncommitted changes for review and make any
+   requested revisions. The uncommitted working tree is what shows the task is
+   awaiting review.
 5. **Deliver.** After explicit human approval, stage the scoped changes, commit,
    push, and report the branch and commit. Set the status to `closed` and
    archive the task with its delivery reference and final reason.

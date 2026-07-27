@@ -1,7 +1,7 @@
 ---
 id: apss.visual-html-generator
 type: task
-status: captured
+status: open
 owner: APS framework maintainer
 created: 2026-07-09
 source: apss.feedback.visualization-tooling

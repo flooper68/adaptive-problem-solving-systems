@@ -1,7 +1,7 @@
 ---
 id: apss.relax-system-declaration-schema
 type: task
-status: merged
+status: closed
 owner: APS framework maintainer
 created: 2026-07-10
 closed: 2026-07-12

@@ -33,10 +33,10 @@ and downstream questions are captured without expanding this task.
 ## Current state
 
 In progress as the seventh concept review under P1, following the
-[problem-strategy review](../streams/working-sessions/2026-07-26-problem-strategy-review.md),
+[problem-strategy review](../../streams/working-sessions/2026-07-26-problem-strategy-review.md),
 which named problem signal as the highest remaining concept in the dependency
 chain. The gate it was waiting on has cleared: the
-[system-problem review](../streams/working-sessions/2026-07-12-system-problem-review.md)
+[system-problem review](../../streams/working-sessions/2026-07-12-system-problem-review.md)
 established that verification evaluates task attempts against the problem
 signal and that satisfying the signal may support a solved assessment without
 automatically closing the problem, and the problem lifecycle is now accepted.

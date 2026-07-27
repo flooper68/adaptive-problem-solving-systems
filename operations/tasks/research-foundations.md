@@ -1,7 +1,7 @@
 ---
 id: apss.research-foundations
 type: research
-status: deferred
+status: open
 owner: APS framework maintainer
 created: 2026-07-09
 source: Initial APS framework definition review; APS framework maintainer idea intake
@@ -55,10 +55,10 @@ before external comparison.
 
 ### 2026-07-09 — classified during stewardship bootstrap
 
-Set to `deferred` because the work is intentionally postponed rather than
-selected as current work. Reconsider after the operations system has
-completed its first full operating cycle or when an external-foundations claim
-becomes load-bearing for a framework decision.
+Deferred: the work is intentionally postponed rather than selected as current
+work. Reconsider after the operations system has completed its first full
+operating cycle or when an external-foundations claim becomes load-bearing for
+a framework decision. The task remains open.
 
 ### 2026-07-09 — maintainer idea added
 

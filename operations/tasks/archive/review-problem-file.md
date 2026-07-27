@@ -1,11 +1,13 @@
 ---
 id: apss.review-problem-file
 type: review
-status: superseded
+status: closed
 owner: APS framework maintainer
 created: 2026-07-11
+closed: 2026-07-12
 addresses: [P1]
 source: Conceptual simplification strategy session
+superseded_by: apss.review-system-problem
 ---
 
 # Review the problem file concept

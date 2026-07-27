@@ -56,7 +56,7 @@ declaration contract, the `strategy` link from `SYSTEM.md`, and the Framework
 Operations strategy were unchanged.
 
 The conflation question is recorded in the
-[working session](../streams/working-sessions/2026-07-12-system-strategy-review.md)
+[working session](../../streams/working-sessions/2026-07-12-system-strategy-review.md)
 as a candidate for reopening if P1's teach-back or adversarial validation shows
 readers cannot separate system strategy from problem strategy.
 

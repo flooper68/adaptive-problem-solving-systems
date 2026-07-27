@@ -3,6 +3,77 @@
 Simple history of material framework changes. Git remains the detailed audit
 trail.
 
+## 2026-07-27 — the task family reduced to Task and Task grooming
+
+Removed the `Task candidate`, `Selected task`, and `Task collection` vocabulary
+entries. `Task` and `Task grooming` are the family's only remaining concepts.
+
+The framework already said twice that APS prescribes no fixed task lifecycle
+states, then defined two of them as concepts. Both entries named positions on a
+workflow rather than distinct kinds of thing, and each showed it: `Task
+candidate` defined a candidate as "a bounded action... such as a task,
+research inquiry, experiment, discussion, review, or remediation" — the list
+`Task` then carried — and named a state its only implementation does not
+have. `Selected task` still required "at least one open problem" a day after
+that rule was dropped, because an edit pass touching three of five siblings
+missed the fourth.
+
+The load-bearing content survived the removal: `Task` now states that work may
+be captured before its problem relationship is clear and that selection is the
+authorized act that commits the task to execution and resolves that
+relationship; the framework definition carries execution-step inheritance. The
+entry was then rewritten for concision in maintainer review — three short
+paragraphs, with elaboration such as session sizing and system-of-record
+responsibilities left to the framework definition alone.
+
+The definition itself was generalized in the same review. It had enumerated
+what a task produces — "an attempt, decision, finding, or change" — and what
+tasks include — "implementation, research, experiment, discussion, review, and
+remediation." The maintainer judged the enumerations too specific to hold in
+general; a task simply produces an artifact. That word already carries the
+needed meaning — `Artifact` is "an inspectable output produced by a system" —
+so the definition now leans on an existing concept instead of re-describing
+it.
+
+A final cut reduced the entry to boundary only. The problem-less selection and
+own-acceptance clauses repeated what the entry's closing paragraph and the
+framework definition already say, and the whole-problem, closure, and
+splitting rules moved to the framework definition beside the sizing
+preference.
+
+The maintainer then removed selection and authority from tasks entirely: they
+are not generic concepts at the task level, and the framework already said so
+in general — "Loop ownership does not prescribe who performs or approves each
+step. Those authorities belong to the system's chosen processes." A declared
+selection authority for tasks was over-specifying that delegation. `Task` now
+states that APS prescribes no task states, no selection or authority
+machinery, no system of record, and no tooling; how work is chosen, and who
+decides, belong to each system's process. `Task grooming` is no longer framed
+as authority-governed and no longer references a declared selection
+authority; its boundary against problem grooming is unchanged. The framework
+definition requires recoverability of current work rather than authorized
+selection, and "opening a problem does not authorize a task" became "does not
+by itself start work on it." The explicit problem relationship survives inside
+recoverability: the system of record carries the addressed problem and
+strategy when the task has one. Problem lifecycle authority — open and closed
+as authorized grooming decisions — is untouched.
+
+`Task collection` went the same way once the other two were folded in. It had
+enumerated candidate, selected, active, and deferred work — contradicting its
+own next sentence — and with that list gone it read as `Task` pluralized plus a
+delegation statement `Task` now carries. The framework never used the term
+outside its own heading, and problems, the other durable groomed thing, have no
+collection concept. Its surviving ruling is now one sentence of `Task`: APS
+names no task states and prescribes no system of record, organization, views,
+files, folders, identifier format, or task-management product.
+
+The principle behind the removal is stated directly: the framework keeps
+responsibilities, authorities, and boundaries, and does not keep state names.
+What APS requires of selection is that the act be authorized and its result
+recoverable, not that a particular state name exist. `Task grooming` passes
+that test and is unchanged; "task candidate" and "selected task" survive as
+ordinary wording.
+
 ## 2026-07-27 — a task may or may not be in the context of a problem
 
 Dropped the rule that a task must address at least one current problem before

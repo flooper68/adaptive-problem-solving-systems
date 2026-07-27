@@ -126,35 +126,20 @@ an authorized decision, and executable work.
 
 A statement of unresolved uncertainty. A question may be used to frame or
 investigate a problem; recording it does not by itself make it a problem
-or selected task.
+or a task.
 
 ## Problems and tasks
 
 ### Task
 
-A bounded unit of actual work that processes information into an attempt,
-decision, result, or other inspectable change. A task may or may not be in
-the context of a problem: most iterate on a problem's solution by
-implementing or testing part of its strategy, and a task that addresses no
-open problem may still be selected when the declared selection authority
-accepts its intended result and stopping condition. Its execution and
-results are also an information source for verification and future learning.
-Tasks include implementation, research, experiment, discussion, review, or
-remediation. The task system of record preserves the current state and the
-information needed to understand, perform, stop, and resume it.
+A bounded unit of work that produces an artifact. What a task does and what it
+produces are themselves evidence for verification and later learning.
 
-A task implements or tests part of a problem's strategy; it does not
-duplicate the whole problem or use problem closure as its own scope. Prefer a
-task small enough to produce one inspectable result in one working session. If
-it contains several independently reviewable results or stopping points, split
-it before selection.
-
-### Task collection
-
-The tasks currently known to and managed by a system, including candidates,
-selected work, active work, and deferred work. The system's process chooses its
-system of record, organization, views, and lifecycle states; APS does not
-prescribe files, folders, or a task-management product.
+A task may or may not be in the context of a problem; most implement or test
+part of one problem's strategy, and work may be captured as a task before that
+relationship is clear. APS prescribes nothing further — no task states, no
+selection or authority machinery, no system of record, no tooling. Each
+system's process decides how its tasks are chosen, represented, and tracked.
 
 ### Signal
 
@@ -186,31 +171,15 @@ revise, address, close, or reopen them. The system's process defines cadence,
 participants, storage, and decision authority; event-driven, scheduled,
 continuous, and mixed operation are all valid.
 
-### Task candidate
-
-A bounded action that may be considered for execution, such as a task,
-research inquiry, experiment, discussion, review, or remediation. A candidate
-may be captured before its problem relationship is clear; selection makes the
-relationship explicit by linking at least one current problem or by accepting
-that the work addresses none.
-
 ### Task grooming
 
-The authority-governed processing of candidate actions into bounded work and a
-readiness disposition. Task grooming checks scope, problem-
-strategy relationship, evidence, expected result, dependencies, validation,
-responsibility, and stopping conditions. It does not open, reframe, prioritize,
-or close problems; an unrepresented evidenced gap is proposed to problem
-grooming, while work that addresses no problem may still be selected under
-the declared selection authority. Problem and task grooming are distinct responsibilities even when
-a system combines them in one meeting, process, tool, or cadence.
-
-### Selected task
-
-A task selected under declared authority. It identifies at least one open
-problem and implements or tests that problem's strategy. Small execution steps
-may inherit that relationship from their containing task rather than repeating
-it.
+The processing of candidate actions into bounded work and a readiness
+disposition. Task grooming checks scope, problem-strategy relationship,
+evidence, expected result, dependencies, validation, responsibility, and
+stopping conditions. It does not open, reframe, prioritize, or close problems;
+an unrepresented evidenced gap is proposed to problem grooming. Problem and
+task grooming are distinct responsibilities even when a system combines them
+in one meeting, process, tool, or cadence.
 
 ### Working-session record
 
@@ -260,8 +229,8 @@ problem.
 An authorized decision that the system treats a problem as part of its active
 decomposition. Problem grooming opens a problem when the proposal is evidenced,
 relevant to the system problem, and distinct from current problems; a proposal
-is not open until that decision is made, and opening a problem does not
-authorize a task. `Open` is the first problem lifecycle state.
+is not open until that decision is made, and opening a problem does not by
+itself start work on it. `Open` is the first problem lifecycle state.
 
 ### Closed
 

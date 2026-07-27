@@ -1,7 +1,7 @@
 ---
 id: apss.review-working-session-record
 type: review
-status: ready
+status: open
 owner: APS framework maintainer
 created: 2026-07-11
 addresses: [P1]

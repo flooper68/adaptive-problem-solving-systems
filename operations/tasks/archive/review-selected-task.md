@@ -1,9 +1,11 @@
 ---
 id: apss.review-selected-task
 type: review
-status: ready
+status: closed
 owner: APS framework maintainer
+agent: Claude Code operator
 created: 2026-07-11
+closed: 2026-07-27
 addresses: [P1]
 source: Conceptual simplification strategy session
 ---
@@ -28,4 +30,13 @@ and downstream questions are captured without expanding this task.
 
 ## Current state
 
-Ready. Select when its higher-level dependencies have been reviewed.
+Closed on 2026-07-27 by the
+[task-family review](../../streams/working-sessions/2026-07-27-task-family-review.md).
+
+Disposition: **remove.** The entry named a workflow position, not a concept,
+and it had been stale for one day: it still required "at least one open
+problem" after the
+[compilation-invocation session](../../streams/working-sessions/2026-07-27-compilation-invocation.md)
+removed that rule from `Task`, `Task candidate`, and `Task grooming` but not
+from this fourth sibling. Selection survives in `Task` as an authorized act.
+"Selected task" survives as ordinary wording.

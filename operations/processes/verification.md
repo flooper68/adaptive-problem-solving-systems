@@ -16,7 +16,7 @@ For every material attempt:
    - confirm the strategy guides problem selection and the linked loop process
      implements planning, execution, verification, learning, and adaptation;
    - confirm active problem files contain their required state and selected
-     tasks reference existing problem IDs;
+     tasks reference existing problem IDs when they address a problem;
    - check Markdown links and local file references;
    - check consistency among the framework definition, vocabulary, declaration
      contract, visualization, and changelog;

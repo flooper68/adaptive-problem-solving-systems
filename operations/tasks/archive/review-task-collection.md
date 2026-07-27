@@ -67,3 +67,16 @@ layout are uncommitted and awaiting maintainer review.
 The maintainer accepted the reviewed scope and asked to finish the session on
 2026-07-12. Commit `7c273aa` was pushed to `origin/main`; this task is closed
 and archived.
+
+## Superseded on 2026-07-27
+
+The
+[task-family review](../../streams/working-sessions/2026-07-27-task-family-review.md)
+removed the `Task collection` entry entirely. Folding `Task candidate` and
+`Selected task` into `Task` left the demoted entry holding only a plural of
+`Task` plus a delegation statement `Task` had absorbed, and the framework used
+the term nowhere outside its own heading. The Operations layout decided here —
+flat `tasks/` with `archive/` as the inactive boundary — is unchanged and now
+rests on `Task` rather than on a separate concept. The demotion was correct for
+what the entry held in July; the later widening is what made the remainder
+redundant.

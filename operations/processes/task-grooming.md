@@ -18,9 +18,7 @@ dependency is resolved, or the current problem set needs another ready task.
 - An operator facilitates the analysis and updates the durable item.
 - The item owner supplies context or identifies who can.
 - The APS framework maintainer approves the final disposition and alone
-  changes a ready task to `selected`.
-
-Set `status: grooming` while analysis is materially underway.
+  selects a task for execution.
 
 ## Procedure
 
@@ -46,7 +44,7 @@ Set `status: grooming` while analysis is materially underway.
    separately.
 6. **Shape candidate work.** Describe the smallest coherent change or inquiry,
    affected artifacts, dependencies, risks, validation approach, and an owner.
-   Prefer work that can produce one inspectable result in one working session.
+   Prefer work that can produce its artifact in one working session.
    Split work that has several independently reviewable results or stopping
    points, duplicates the whole open problem, or cannot be evaluated as one
    bounded result.
@@ -55,11 +53,12 @@ Set `status: grooming` while analysis is materially underway.
    before they become dangerous or expensive.
 8. **Propose and approve a disposition.** The maintainer records one disposition
    and its rationale. Do not equate desirability with current priority.
-9. **Propagate the result.** Update the item's frontmatter and grooming log.
-   If selected, set `status: selected` and list its problem IDs under
-   `addresses`, or record that it addresses none. Keep captured, grooming, ready, selected, active, and deferred
-   tasks directly under `tasks/`; move rejected or merged tasks under
-   `tasks/archive/`. Do not erase the source or its rejected alternatives.
+9. **Propagate the result.** Record the disposition in the item's grooming log
+   and update its current state. On selection, list its problem IDs under
+   `addresses` or record that it addresses none. A task stays `open` under
+   `tasks/` until it is closed; a task closed by grooming — rejected, merged,
+   or duplicated — moves under `tasks/archive/` with its reason. Do not erase
+   the source or its rejected alternatives.
 
 ## Readiness questions
 
@@ -71,7 +70,7 @@ An item is ready only when the responsible operator can answer:
   need does it meet without one?
 - What consumer problem or opportunity are we addressing?
 - What observable outcome would make the work worthwhile?
-- Can the task produce one inspectable result in one working session?
+- Can the task produce its artifact in one working session?
 - Does it implement or test a bounded part of the problem strategy rather than
   duplicate the whole problem or depend on problem closure?
 - Which normative artifact, application, or operating process may change?
@@ -82,23 +81,37 @@ An item is ready only when the responsible operator can answer:
 - Who owns execution, validation, and approval?
 - What acceptance conditions permit the work to stop or be reconsidered?
 
-## Dispositions and states
+## States and dispositions
 
-- `ready` — sufficiently understood to be considered for selection. This is
-  not a commitment or priority promise.
-- `deferred` — potentially valuable but blocked, premature, or deliberately
-  postponed. Record a reconsideration trigger, condition, or date.
-- `rejected` — outside the boundary, unsupported, harmful, or not worth
-  pursuing. Preserve the rationale and evidence.
-- `merged` — represented by another durable item. Record the target ID.
+A task has two states, mirroring the problem lifecycle:
 
-`captured` and `grooming` describe candidate work before disposition. They do
-not apply to the source reports, insights, questions, issues, or decisions that
-motivated it. Selection sets a ready task to `selected`; execution may then use
-`in-progress`, `awaiting-review`, `closed`, or `cancelled`. Keep every current
-task directly under `tasks/` without a backlog subdivision; move inactive tasks
-under `tasks/archive/`. The task owns current state; session records own
-material history.
+- `open` — the task is part of the current task collection. It lives directly
+  under `tasks/`.
+- `closed` — the system will no longer act on it. It moves under
+  `tasks/archive/` with its reason.
+
+Nothing else is a state. Readiness, deferral, selection, and progress are
+*dispositions and events*, recorded in the grooming log and the task's current
+state rather than in the status field, in the same way `solved` is an
+assessment about a problem rather than one of its lifecycle states:
+
+- **Ready** — sufficiently understood to be considered for selection. Not a
+  commitment or priority promise.
+- **Deferred** — potentially valuable but blocked, premature, or deliberately
+  postponed. Record a reconsideration trigger, condition, or date. The task
+  stays `open`, exactly as a problem kept open without current work does.
+- **Selected** — the maintainer committed the task to execution. The working
+  session record and the uncommitted working tree show which task is active;
+  a status field asserting it would be a second source of truth.
+
+Closure records its reason in the task: delivered, rejected as outside the
+boundary or not worth pursuing, merged into another item (`merged_into`), or
+superseded by one (`superseded_by`). A reason is not a state, and the reason
+must survive in the file rather than only in the status name.
+
+These states apply to task files. Insights and feedback records keep their own
+vocabularies in their own processes. The task owns current state; session
+records own material history.
 
 ## Required durable result
 

@@ -6,8 +6,9 @@ requirements.
 
 Before approval:
 
-1. Confirm selected tasks name the problems they address and material decisions
-   are recorded in their task/problem files and working-session records.
+1. Confirm selected tasks name the problems they address — or that they
+   address none — and material decisions are recorded in their task/problem
+   files and working-session records.
 2. Complete verification and record any delayed problem-improvement evidence.
 3. Update `framework/CHANGELOG.md` for normative changes.
 4. Update maintained application documentation when a framework change would

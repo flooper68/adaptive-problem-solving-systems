@@ -1,7 +1,7 @@
 ---
 id: apss.software-and-research-examples
 type: task
-status: deferred
+status: open
 owner: APS framework maintainer
 created: 2026-07-09
 source: APS framework maintainer idea intake
@@ -54,4 +54,4 @@ topic, or implementation commitment has been assigned.
 The maintainer removed the provisional example directory and decided to use
 Framework Operations as the first application. Reconsider this task after the
 framework is polished and the first complete Operations loop has produced
-validated learning.
+validated learning. The task remains open.

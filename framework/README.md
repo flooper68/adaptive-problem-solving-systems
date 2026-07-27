@@ -84,7 +84,7 @@ is part of its strategy and may itself evolve.
 - **Open and closed** — the two lifecycle states of a problem. Problem grooming
   opens an evidenced proposal into the system's active decomposition and later
   closes it with a recorded reason. A proposal is neither until that decision is
-  made, and opening a problem does not authorize a task.
+  made, and opening a problem does not by itself start work on it.
 
 The problem hierarchy is APS's adaptive planning structure, not a complete plan
 made in advance. The system problem is its root. Evidence and learning reveal,
@@ -274,7 +274,7 @@ decides whether to open or change a problem.
 Problem grooming maintains the problem hierarchy: it acts on proposals and
 reviews existing problems, their strategies, signals, relevance, and priority.
 Task grooming separately shapes candidate actions into bounded executable work
-and determines readiness for selection. Task grooming does
+and determines their readiness. Task grooming does
 not create, reframe, or close problems; problem grooming does not make an
 unshaped action ready merely by prioritizing its problem.
 
@@ -363,45 +363,35 @@ flowchart LR
     closed -->|"New evidence"| grooming
 ```
 
-A task is a bounded unit of actual work that processes information into an
-attempt, decision, result, or other inspectable change. A task may or may not
-be in the context of a problem: most iterate on a problem's solution by
-implementing or testing part of its strategy, and a task that addresses no
-open problem may still be selected when the declared selection authority
-accepts its intended result and stopping condition. Its execution and
-results also become an information source for verification and future learning,
-so later work can adapt from what happened rather than only from what was
-planned.
+A [task](VOCABULARY.md#task) is a bounded unit of work that produces an
+artifact, and may or may not be in the context of a problem; the vocabulary
+carries its exact boundary. In the loop, what matters is how tasks are sized
+and left recoverable; how work is chosen, and who decides, belong to each
+system's process.
 
-Tasks include implementation, research, experiment, discussion, review, or
-remediation. Prefer a task that produces one inspectable result in one working
-session. If it contains several independently reviewable results or stopping
-points, split it before selection. A task must not duplicate the whole problem
-or depend on problem closure as its own stop condition.
+Prefer a task that produces its artifact in one working session. If it
+contains several independently reviewable artifacts or stopping points, split
+it. A task never takes a whole problem as its scope or problem closure as its
+stopping condition.
 
-The system's process chooses how tasks are represented, organized, and tracked.
-A repository may use task files; another system may use Jira, GitHub, Linear, a
-database, or another recoverable system of record. APS does not prescribe a
-folder layout, tool, identifier format, or fixed lifecycle states. The chosen
-representation must preserve enough current state to identify selected work,
-its addressed open problem and strategy when it has one, intended result,
-responsible participant, stopping condition, and next step.
+Work may be captured as a task before its problem relationship is clear. A
+task in the context of a problem implements or tests that problem's strategy
+rather than becoming unrelated activity attached only by an identifier, and
+small execution steps inherit the relationship from their containing task. A
+task with no problem is still bounded, owned, and verifiable against its own
+acceptance conditions, and recurring or substantial problem-less work is
+evidence of an unrepresented gap for problem grooming.
 
-A task candidate may be retained before its problem relationship is clear.
-Selection makes the relationship explicit: a task that addresses current
-problems implements or tests their strategies, while a task may also be
-selected with none. Such a task is still bounded, owned, and verifiable
-against its own acceptance conditions, and recurring or substantial
-problem-less work is evidence of an unrepresented gap for problem grooming.
-The system strategy informs problem grooming and constrains acceptable problem
-strategies; tasks selected for a problem implement or test its strategy rather
-than becoming unrelated activity attached only by an identifier.
-
-The task system of record states enough current state and next-step information
-for execution to resume across time, people, or agents. Material session
-history belongs in working-session records or another declared evidence source;
-detailed change history and domain evidence remain in their native systems.
-APS does not require a generic work log that duplicates those sources.
+The system's process chooses how tasks are represented, organized, and
+tracked — task files, Jira, GitHub, Linear, a database, or another recoverable
+system of record. What APS requires is recoverability: enough current state to
+identify current work, its addressed problem and strategy when it has one,
+intended result, responsible participant, stopping condition, and next step,
+so execution can resume across time, people, or agents. Material session
+history belongs in working-session records or another declared evidence
+source; detailed change history and domain evidence remain in their native
+systems. APS does not require a generic work log that duplicates those
+sources.
 
 ### 3. Resolve uncertainty
 
