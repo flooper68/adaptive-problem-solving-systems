@@ -1,7 +1,7 @@
 ---
 id: apss.feedback.stream-archived-folders
 type: framework-feedback
-status: received
+status: groomed
 received: 2026-08-06
 reporter: APS framework maintainer
 source: Maintainer message in the current Claude Code session
@@ -43,7 +43,7 @@ Add an `archived/` folder to the `framework-feedback/` and `insights/`
 streams, and have the declared processes — grooming in particular — move a
 record there after it is groomed. (Operator note: this mirrors the existing
 pattern where closed problems and tasks move under their `archive/`
-directories per [`grooming.md`](../../processes/sessions/grooming.md).)
+directories per [`grooming.md`](../../../processes/sessions/grooming.md).)
 
 ### Evidence
 
@@ -52,7 +52,7 @@ directories per [`grooming.md`](../../processes/sessions/grooming.md).)
   flat directories with mixed lifecycle statuses; `operations/tasks/archive/`
   already exists and receives closed tasks.
 - Related report
-  [`2026-07-10-unbounded-stream-indexes.md`](2026-07-10-unbounded-stream-indexes.md)
+  [`2026-07-10-unbounded-stream-indexes.md`](../2026-07-10-unbounded-stream-indexes.md)
   raised the adjacent concern that unbounded stream collections degrade
   navigation.
 
@@ -68,11 +68,29 @@ recorded, and the stream root then holds only records still awaiting
 grooming.
 
 The suggested response is captured as the linked task candidate
-[`stream-archived-folders.md`](../../tasks/stream-archived-folders.md)
+[`stream-archived-folders.md`](../../../tasks/archive/stream-archived-folders.md)
 (`apss.stream-archived-folders`); capture carries no approval of priority or
 adoption.
 
 ## Grooming record
 
-Not yet groomed. See
-[`grooming.md`](../../processes/sessions/grooming.md).
+### 2026-08-06 — act: executed in the capturing session
+
+- **Participants:** APS framework maintainer and Claude Code operator.
+- **Evidence consulted:** this report with its clarification, the statuses
+  across both stream directories, the established `archive/` pattern for
+  closed problems and tasks, and
+  [`grooming.md`](../../../processes/sessions/grooming.md).
+- **Alignment:** serves the same orientation concern recorded in
+  [unbounded-stream-indexes](../2026-07-10-unbounded-stream-indexes.md) and
+  extends an existing operations pattern rather than adding new lifecycle
+  machinery; archived marks that grooming happened, it is not a new state.
+- **Strongest case against:** every move breaks inbound relative links and
+  adds a mechanical step to each grooming. Accepted: link fixes are one-time
+  per record while the navigation benefit recurs with every visit to the
+  stream.
+- **Disposition:** **act** — approved by the maintainer in session; executed
+  immediately through the linked task
+  [`stream-archived-folders.md`](../../../tasks/archive/stream-archived-folders.md),
+  which created the `archived/` folders, declared the move in the grooming
+  process, and relocated the already-groomed records.

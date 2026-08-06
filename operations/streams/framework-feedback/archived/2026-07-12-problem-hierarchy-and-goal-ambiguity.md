@@ -22,10 +22,10 @@ related_work:
 
 The maintainer was orienting to the current system-problem definition before
 executing its concept review. The sources consulted were the normative
-[definition](../../../framework/VOCABULARY.md#system-problem), the framework's
-[relationship explanation](../../../framework/README.md#problem-hierarchy-and-strategy),
-the [declaration contract](../../../framework/SCHEMA.md), and the concrete
-[Framework Operations problem](../../SYSTEM.md).
+[definition](../../../../framework/VOCABULARY.md#system-problem), the framework's
+[relationship explanation](../../../../framework/README.md#problem-hierarchy-and-strategy),
+the [declaration contract](../../../../framework/SCHEMA.md), and the concrete
+[Framework Operations problem](../../../SYSTEM.md).
 
 ### Observed problem or outcome
 
@@ -59,9 +59,9 @@ information it contributes beyond the problem's desired change and strategy.
 
 Direct maintainer usability report while attempting to understand and prepare
 the system-problem concept review. The current
-[Framework Operations declaration](../../SYSTEM.md) supplies a real system
+[Framework Operations declaration](../../../SYSTEM.md) supplies a real system
 problem but the normative explanation does not present it as a worked example
-or trace its decomposition into [P1](../../problems/p1-finish-mvp-and-run-loop.md).
+or trace its decomposition into [P1](../../../problems/p1-finish-mvp-and-run-loop.md).
 
 ## Grooming record
 
@@ -70,7 +70,7 @@ or trace its decomposition into [P1](../../problems/p1-finish-mvp-and-run-loop.m
 - **Participants:** APS framework maintainer and Codex operator.
 - **Evidence consulted:** this report's linked normative definitions,
   declaration contract, Framework Operations statement, P1, the prior
-  [goal-decomposition insight](../insights/2026-07-10-goals-decompose-into-open-problems.md),
+  [goal-decomposition insight](../../insights/archived/2026-07-10-goals-decompose-into-open-problems.md),
   and the five linked concept-review tasks.
 - **Clarified experience:** the existing pieces do not produce an understandable
   hierarchy or distinct roles for problem, goal, and strategy.
@@ -93,7 +93,7 @@ or trace its decomposition into [P1](../../problems/p1-finish-mvp-and-run-loop.m
 - **Clarification:** the maintainer decided to remove goal completely rather
   than retain it provisionally.
 - **Disposition:** actionable through the already selected
-  [`apss.review-system-problem`](../../tasks/review-system-problem.md); the
+  [`apss.review-system-problem`](../../../tasks/review-system-problem.md); the
   separate goal review is superseded rather than duplicated.
 - **Compiled response:** define problem and strategy generally; make the system
   problem the root of an evolving hierarchy; give every smaller problem its

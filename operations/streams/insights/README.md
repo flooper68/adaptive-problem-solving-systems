@@ -11,5 +11,9 @@ claim and [grooming](../../processes/sessions/grooming.md) to assess its
 scope, inference, evidence, confidence, and disposition. Executable responses
 and compiled knowledge remain linked but separate artifacts.
 
+This directory's root holds only insights still awaiting grooming; once an
+insight's disposition is recorded, grooming moves it to
+[`archived/`](archived/). Archived means groomed, whatever the disposition.
+
 This README describes the stream and intentionally does not maintain an
 exhaustive index. Discover records by their frontmatter and filenames.

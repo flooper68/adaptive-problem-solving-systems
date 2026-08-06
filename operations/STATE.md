@@ -19,6 +19,10 @@ session](streams/working-sessions/2026-08-06-grooming-cadence-declaration.md).
 - Grooming cadence declared (this session): one grooming invocation per
   three working sessions, recorded as an invocation trigger in the grooming
   process; the same-day heartbeat deferral revised in P1's grooming history.
+- Stream archived-folders feedback captured (`b462827`), its **act**
+  disposition executed and delivered — `archived/` folders added to the
+  feedback and insight streams, grooming now moves records there, eleven
+  groomed records relocated, task closed and archived (this delivery).
 - Subsystem merged into child system; relationship model confirmed minimal —
   the last Direction-level concept review, run as the first automated
   brainstorming session (this session).

@@ -140,7 +140,7 @@ clarification grill in `insight-intake.md` — but names "adversarial" exactly
 once, in P1's own validation strategy, where no process references it. The
 operator's reading, that APS concentrates its adversarial weight in
 verification and has almost none in deliberation, is captured as an
-[insight](../insights/2026-07-26-adversarial-review-absent-from-deliberation.md)
+[insight](../insights/archived/2026-07-26-adversarial-review-absent-from-deliberation.md)
 at `status: captured`, with this session's own duplicate-definition finding as
 its primary supporting evidence. The maintainer directed capture and close, so
 the clarification grill was not run and its open questions are recorded

@@ -41,7 +41,7 @@ and propagate accepted changes through affected normative and operational surfac
 - [P1](../../problems/p1-finish-mvp-and-run-loop.md) demonstrates a smaller open
   problem within that broader system problem.
 - The maintainer's
-  [current feedback](../../streams/framework-feedback/2026-07-12-problem-hierarchy-and-goal-ambiguity.md)
+  [current feedback](../../streams/framework-feedback/archived/2026-07-12-problem-hierarchy-and-goal-ambiguity.md)
   reports that the framework lacks a worked example and clear problem
   hierarchy and that goal appears redundant.
 - The vocabulary defines the current

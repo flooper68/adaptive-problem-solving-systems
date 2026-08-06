@@ -61,7 +61,7 @@ deliberate while preserving uncertainty and confounders.
 - The APS framework maintainer proposed assessing good and harmful decisions,
   learning from course correction, and recording a hypothesis about why.
 - The related
-  [evidence–deliberation–action–learning insight](2026-07-10-evidence-deliberation-action-learning.md)
+  [evidence–deliberation–action–learning insight](../2026-07-10-evidence-deliberation-action-learning.md)
   already interprets APS as a recurring flow from evidence and decisions into
   action and later learning.
 - The related

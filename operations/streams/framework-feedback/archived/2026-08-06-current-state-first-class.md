@@ -16,10 +16,10 @@ related_work: [apss.current-state-reporting, apss.session.current-state-concept]
 ### Context
 
 On 2026-08-06 the [learning-loop application
-session](../working-sessions/2026-08-06-learning-loop-application.md) closed
+session](../../working-sessions/2026-08-06-learning-loop-application.md) closed
 the [current-state-reporting
-task](../../tasks/archive/current-state-reporting.md) as delivered: a thin
-root [`STATE.md`](../../STATE.md) plus a `Current state` section in each
+task](../../../tasks/archive/current-state-reporting.md) as delivered: a thin
+root [`STATE.md`](../../../STATE.md) plus a `Current state` section in each
 problem file, date-stamped, refreshed at session delivery, and subordinate to
 the authoritative problem, task, and session files. That was an Operations
 implementation choice; the framework itself used the phrase "current state"
@@ -53,7 +53,7 @@ state should be a first class concept in the framework, it is very useful.")
 ### 2026-08-06 — acted on directly by maintainer direction
 
 The report arrived as the framing direction of the [current-state concept
-brainstorming session](../working-sessions/2026-08-06-current-state-concept.md),
+brainstorming session](../../working-sessions/2026-08-06-current-state-concept.md),
 which compiled the response in the same session: a `Current state` vocabulary
 entry (owned state plus the optional derived current-state view), README
 references, and a changelog entry. Clarification questions were not needed —

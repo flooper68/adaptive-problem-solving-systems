@@ -1,9 +1,10 @@
 ---
 id: apss.stream-archived-folders
 type: task
-status: open
+status: closed
 owner: APS framework maintainer
 created: 2026-08-06
+closed: 2026-08-06
 source: Maintainer feedback in the current Claude Code session
 source_records:
   - apss.feedback.stream-archived-folders
@@ -16,7 +17,7 @@ source_records:
 - Create `archived/` subdirectories in
   `operations/streams/framework-feedback/` and
   `operations/streams/insights/`.
-- Extend [`grooming.md`](../processes/sessions/grooming.md) so that once a
+- Extend [`grooming.md`](../../processes/sessions/grooming.md) so that once a
   stream record's grooming disposition is recorded, the record moves into its
   stream's `archived/` folder — for every disposition, including `keep`,
   because archived means "groomed", not "closed".
@@ -34,7 +35,7 @@ closed problems and tasks.
 ## Motivation
 
 Maintainer feedback
-[`2026-08-06-stream-archived-folders.md`](../streams/framework-feedback/2026-08-06-stream-archived-folders.md):
+[`2026-08-06-stream-archived-folders.md`](../../streams/framework-feedback/archived/2026-08-06-stream-archived-folders.md):
 flat stream folders mix processed and unprocessed records, making orientation
 in the project harder as the streams grow.
 
@@ -61,3 +62,19 @@ in the project harder as the streams grow.
 
 Captured during the same intake as its source feedback record; not yet
 groomed.
+
+### 2026-08-06 — act: selected and executed
+
+The maintainer approved the source feedback's **act** disposition in session
+and selected this task for immediate execution. Executed by the Claude Code
+operator: `archived/` folders created in both streams, the move rule declared
+in [`grooming.md`](../../processes/sessions/grooming.md), eleven already-groomed
+records relocated with their inbound and internal links updated, and both
+stream READMEs updated. The open question about historical statuses was
+resolved by reading each candidate's grooming record: records with a recorded
+disposition moved (including historical statuses `actionable`, `supported`,
+`contested`, `provisional`); the mid-grooming
+`problem-creation-grooming-and-storage` report stayed in the stream root
+because its grooming explicitly continues. Closed and moved under `archive/`
+at session delivery; details in the
+[working-session record](../../streams/working-sessions/2026-08-06-stream-archived-folders.md).

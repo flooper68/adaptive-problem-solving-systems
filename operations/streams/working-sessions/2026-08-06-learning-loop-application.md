@@ -77,11 +77,11 @@ kind-based.
   section; grooming-history entry recording the keep-under-P1 decision and
   heartbeat deferral.
 - Groomed under the new process (first real invocations):
-  [roadmap insight](../insights/2026-07-26-roadmap-concept-may-be-useful.md)
+  [roadmap insight](../insights/archived/2026-07-26-roadmap-concept-may-be-useful.md)
   — **act**, merged into current-state-reporting and executed;
   [current-state-reporting](../../tasks/archive/current-state-reporting.md)
   — **act** then **close: delivered**, moved to `tasks/archive/`;
-  [adversarial-review insight](../insights/2026-07-26-adversarial-review-absent-from-deliberation.md)
+  [adversarial-review insight](../insights/archived/2026-07-26-adversarial-review-absent-from-deliberation.md)
   — recurrence appended, **act**, beat implemented.
 - New insight captured:
   [processes are compiled knowledge](../insights/2026-08-06-processes-are-compiled-knowledge.md).

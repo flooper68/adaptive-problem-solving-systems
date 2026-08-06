@@ -63,7 +63,7 @@ intentionally unresolved.
 ### 2026-08-06 — act, executed, and closed as delivered
 
 Groomed with the [roadmap
-insight](../../streams/insights/2026-07-26-roadmap-concept-may-be-useful.md)
+insight](../../streams/insights/archived/2026-07-26-roadmap-concept-may-be-useful.md)
 merged in as content, in the [learning-loop application
 session](../../streams/working-sessions/2026-08-06-learning-loop-application.md).
 The maintainer answered the open design questions: a durable artifact rather

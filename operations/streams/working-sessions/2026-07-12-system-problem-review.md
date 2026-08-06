@@ -37,11 +37,11 @@ captured without silently deciding them.
   [P1](../../problems/p1-finish-mvp-and-run-loop.md) is its current decomposed
   problem.
 - The prior
-  [goal-decomposition insight](../insights/2026-07-10-goals-decompose-into-open-problems.md)
+  [goal-decomposition insight](../insights/archived/2026-07-10-goals-decompose-into-open-problems.md)
   introduced the goal → open problem → task model but retained uncertainty and
   no observed comparative outcome evidence.
 - The maintainer's current
-  [feedback](../framework-feedback/2026-07-12-problem-hierarchy-and-goal-ambiguity.md)
+  [feedback](../framework-feedback/archived/2026-07-12-problem-hierarchy-and-goal-ambiguity.md)
   reports that the hierarchy is unclear, lacks an example, and makes goal seem
   redundant.
 
@@ -132,7 +132,7 @@ continuous, and mixed implementations are valid.
 The maintainer also proposed that learning assess which decisions helped or
 worsened the problem, what course corrections taught, and a hypothesis about
 why. The separately
-[groomed insight](../insights/2026-07-12-learning-from-decision-quality-and-course-correction.md)
+[groomed insight](../insights/archived/2026-07-12-learning-from-decision-quality-and-course-correction.md)
 is compiled `provisional` as lightweight learning guidance: compare expected
 and observed effects, retain context and confounders, and add a simple causal
 hypothesis only when useful for future work.

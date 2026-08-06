@@ -99,8 +99,12 @@ Every groomed item receives exactly one:
 
 Problems and tasks keep their two lifecycle states, `open` and `closed`.
 A stream record's `status` moves from `captured` or `received` to `groomed`
-(or `closed`); the grooming entry carries the assessment in prose. Existing
-records keep their historical status vocabularies as valid history.
+(or `closed`); the grooming entry carries the assessment in prose. Once the
+disposition is recorded, move the record into its stream's `archived/`
+directory and update links that point to it — archived means groomed,
+whatever the disposition, so the stream root holds only records still
+awaiting grooming. Existing records keep their historical status
+vocabularies as valid history.
 
 ## Completion
 

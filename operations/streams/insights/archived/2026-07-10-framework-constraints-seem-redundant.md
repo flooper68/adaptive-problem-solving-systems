@@ -143,9 +143,6 @@ or adoption as a normative framework change.
 
 ## Grooming record
 
-Not yet groomed. See
-[`grooming.md`](../../processes/sessions/grooming.md).
-
 ### 2026-07-11 — supported and compiled
 
 Participants: APS framework maintainer and Codex operator. Evidence consulted:

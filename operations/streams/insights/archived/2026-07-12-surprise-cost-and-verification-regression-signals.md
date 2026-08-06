@@ -54,14 +54,14 @@ questions, or insights change.
 
 - The APS framework maintainer proposed the three questions while clarifying
   how streams and processes should surface issues for grooming.
-- The current [verification process](../../processes/verification.md) already
+- The current [verification process](../../../processes/verification.md) already
   requires recording confounders, failures, and whether a problem improved,
   worsened, or remained unresolved.
-- The current [problem-grooming process](../../processes/problem-grooming.md)
+- The current [problem-grooming process](../../../processes/problem-grooming.md)
   considers new evidence and strategy challenges but does not yet name this
   heuristic.
 - The normative framework already requires
-  [raw evidence to remain recoverable](../../../framework/README.md#stream-raw-evidence-and-compiled-knowledge)
+  [raw evidence to remain recoverable](../../../../framework/README.md#stream-raw-evidence-and-compiled-knowledge)
   because later strategies or questions may make previously ignored details
   important and compiled knowledge should remain revisable.
 

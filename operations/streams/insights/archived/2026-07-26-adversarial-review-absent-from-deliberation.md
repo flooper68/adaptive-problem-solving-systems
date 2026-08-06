@@ -57,18 +57,18 @@ discriminate. Argument-level defects need argument-level checks.
 
 - "Adversarial" appears exactly once across the normative framework and
   Framework Operations processes: a bullet in
-  [P1's validation strategy](../../problems/p1-finish-mvp-and-run-loop.md)
+  [P1's validation strategy](../../../problems/p1-finish-mvp-and-run-loop.md)
   listing what to hunt for — overlapping or circular definitions, multiple
   sources of truth, ownerless state, unjustified lifecycle machinery,
   ceremonial artifacts, undefined transitions. It is one problem's private
   checklist; no process references it and nothing obliges its use.
 - The socratic method exists and was not carried into brainstorming.
-  [`insight-intake.md`](../../processes/insight-intake.md) has a developed
+  [`insight-intake.md`](../../../processes/insight-intake.md) has a developed
   "adaptive clarification grill" with a six-question bank, proportionality
   guidance, and an explicit rule against steering the source.
-  [`brainstorming.md`](../../processes/brainstorming.md) step 3 is one sentence
+  [`brainstorming.md`](../../../processes/brainstorming.md) step 3 is one sentence
   with no question bank and no stance.
-- [`README.md`](../../../framework/README.md) makes the closest thing to
+- [`README.md`](../../../../framework/README.md) makes the closest thing to
   self-challenge explicitly optional: when learning from a decision, add an
   alternative explanation or challenging evidence "only when material", and the
   reflection "is not required for every grooming invocation".
@@ -99,11 +99,11 @@ discriminate. Argument-level defects need argument-level checks.
 
 ## Possible implications
 
-- Could inform [`review-process`](../../tasks/review-process.md), which owns the
+- Could inform [`review-process`](../../../tasks/review-process.md), which owns the
   process concept and would be the place to decide whether deliberation carries
   an adversarial responsibility at all.
 - Overlaps with the "doctor" proposal in
-  [stream grooming and declaration doctor](../framework-feedback/2026-07-26-stream-grooming-and-declaration-doctor.md).
+  [stream grooming and declaration doctor](../../framework-feedback/2026-07-26-stream-grooming-and-declaration-doctor.md).
   The two are complementary halves: a doctor catches mechanical declaration and
   consistency defects, while adversarial review targets judgment defects that no
   linter can express. Deciding one without the other risks building the easy
@@ -157,7 +157,7 @@ after the first.
 
 Participants: APS framework maintainer, Claude Code operator, in the
 [learning-loop application
-session](../working-sessions/2026-08-06-learning-loop-application.md).
+session](../../working-sessions/2026-08-06-learning-loop-application.md).
 
 The recurrence answered the record's first open question — the gap recurs
 rather than being a one-off. Alignment: serves P1's understand-and-operate
@@ -168,8 +168,8 @@ structural defects, not blind spots; accepted with the limit stated in the
 process text and the maintainer remaining the effective adversary.
 
 Disposition: **act** — a required alignment-and-adversarial beat was added to
-the decide step of [`grooming.md`](../../processes/grooming.md) and as a
-"Challenge" step in [`brainstorming.md`](../../processes/brainstorming.md)
+the decide step of [`grooming.md`](../../../processes/grooming.md) and as a
+"Challenge" step in [`brainstorming.md`](../../../processes/brainstorming.md)
 before compilation, and P1's private adversarial checklist (overlapping
 definitions, circular dependencies, multiple sources of truth, ownerless
 state, unjustified machinery, ceremonial artifacts) was promoted into both.

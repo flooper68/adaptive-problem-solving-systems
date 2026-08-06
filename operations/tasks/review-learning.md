@@ -29,7 +29,7 @@ and downstream questions are captured without expanding this task.
 ## Current state
 
 Ready. The maintainer's
-[decision-quality insight](../streams/insights/2026-07-12-learning-from-decision-quality-and-course-correction.md)
+[decision-quality insight](../streams/insights/archived/2026-07-12-learning-from-decision-quality-and-course-correction.md)
 proposes that learning assess helpful and harmful decisions, course corrections,
 and a hypothesis about why. It is groomed `provisional` and compiled as
 lightweight guidance: compare expected and observed effects, retain context and

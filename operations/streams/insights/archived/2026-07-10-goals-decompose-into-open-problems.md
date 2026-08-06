@@ -239,7 +239,7 @@ shape, or lifecycle had been established.
   reported that the goal → open problem → task model did not produce a clear
   hierarchy and that goal appeared redundant with each problem's desired change
   and strategy. See the
-  [feedback report](../framework-feedback/2026-07-12-problem-hierarchy-and-goal-ambiguity.md).
+  [feedback report](../../framework-feedback/archived/2026-07-12-problem-hierarchy-and-goal-ambiguity.md).
 - **Inference audit:** the original observation supports an evolving problem
   decomposition between the root problem and tasks, but it does not establish
   that a separate goal is needed to mediate that hierarchy.

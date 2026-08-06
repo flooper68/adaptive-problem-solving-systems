@@ -40,7 +40,7 @@ The stopping point is maintainer acceptance of the compiled changes.
    the general form and leaves format, location, and cadence to each system.
 3. **Feedback captured, delivered with the session.** The framing direction is
    preserved as
-   [framework feedback](../framework-feedback/2026-08-06-current-state-first-class.md);
+   [framework feedback](../framework-feedback/archived/2026-08-06-current-state-first-class.md);
    delivery rides with the session scope instead of intake's automatic path
    because the same session compiles the response.
 
@@ -72,7 +72,7 @@ proposing agent reviewed this reasoning.
   optional derived view.
 - [`framework/CHANGELOG.md`](../../../framework/CHANGELOG.md) — entry
   "current state defined as a first-class concept."
-- [Feedback record](../framework-feedback/2026-08-06-current-state-first-class.md)
+- [Feedback record](../framework-feedback/archived/2026-08-06-current-state-first-class.md)
   — the maintainer's report captured with provenance.
 
 ## Open questions
