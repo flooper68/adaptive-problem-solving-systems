@@ -5,6 +5,7 @@ status: retained
 recorded: 2026-08-06
 accepted: 2026-08-06
 closed: 2026-08-06
+delivery: b83bb70
 participants: [APS framework maintainer, Claude Code operator]
 source: Maintainer invocation of the automated session type in the current Claude Code session
 related_problems: [P1]
@@ -134,5 +135,5 @@ brainstorming session, which the maintainer directed to start next.
 
 The maintainer reviewed the compiled scope and explicitly asked to finish the
 session; per the brainstorming process that acceptance approves delivery to
-`origin/main`. The delivery commit is recorded in a follow-up commit per the
-established pattern.
+`origin/main`. Delivered as commit b83bb70; this delivery reference was
+recorded in a follow-up commit per the established pattern.
