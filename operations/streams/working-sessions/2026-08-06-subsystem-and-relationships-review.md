@@ -5,6 +5,7 @@ status: retained
 recorded: 2026-08-06
 accepted: 2026-08-06
 closed: 2026-08-06
+delivery: ca6a082
 participants: [Claude Code operator (executing agent), independent reviewer agent, APS framework maintainer (review)]
 source: First automated brainstorming invocation, maintainer-invoked in the current Claude Code session
 related_problems: [P1]
@@ -224,5 +225,5 @@ stash-pop conflicts in the changelog, `STATE.md`, and P1 by hand before
 delivery resumed. Per the exclusion precedent, the accepted-but-undelivered
 grooming-cadence session scope (its `grooming.md` change, session record,
 and P1 grooming entry) stays uncommitted for its own delivery; `STATE.md`
-lists it as the next step. The delivery commit is recorded in a follow-up
-commit per the established pattern.
+lists it as the next step. Delivered as commit ca6a082; this delivery
+reference was recorded in a follow-up commit per the established pattern.
