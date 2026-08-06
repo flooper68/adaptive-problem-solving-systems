@@ -5,6 +5,7 @@ status: retained
 recorded: 2026-08-06
 accepted: 2026-08-06
 closed: 2026-08-06
+delivery: b3c9fc1
 participants: [APS framework maintainer, Claude Code operator]
 source: Maintainer-agent discussion in the current Claude Code session
 related_problems: [P1]
