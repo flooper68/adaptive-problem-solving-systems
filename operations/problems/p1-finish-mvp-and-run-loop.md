@@ -7,6 +7,23 @@ opened: 2026-07-10
 
 # The APS MVP is unfinished and has not run its complete loop
 
+## Current state
+
+As of 2026-08-06 ([learning-loop application
+session](../streams/working-sessions/2026-08-06-learning-loop-application.md)):
+
+- **Recently:** authority removed from the framework (tenth concept review,
+  seventh pruning); the four grooming processes consolidated into one
+  `grooming.md`; the three intakes consolidated into one `intake.md`; the
+  learning loop wired in (session lessons, alignment/adversarial beat, state
+  snapshots).
+- **In flight:** the learning-loop application session awaiting delivery.
+- **Next:** the last Direction-level concept review
+  (`apss.review-subsystem-and-relationships`); the first full grooming
+  invocation under the consolidated process; heartbeat runs as ordinary
+  grooming invocations before any declaration. P1's own signal rewrite
+  remains open from the problem-signal review.
+
 ## Parent problem
 
 P1 decomposes the [Framework Operations system problem](../SYSTEM.md): APS
@@ -531,3 +548,22 @@ the ruling intends. The framework's concept-to-concept "owns" language and
 the source-of-truth sense of "authoritative" are unaffected; both are flagged
 for the teach-back pass. One Direction-level review remains: subsystem and
 relationships.
+
+### 2026-08-06 — learning-loop work kept under P1
+
+Source: [learning-loop application
+session](../streams/working-sessions/2026-08-06-learning-loop-application.md).
+
+Asked whether the system-learns-from-its-own-operation work should open a
+second problem, the maintainer kept it under P1: it implements strategy
+point 5 (verify the maintainer can understand and operate the whole process)
+and the signal's understand-and-run clause. The alignment and adversarial
+beat was applied to the package itself before this decision; it sorted the
+items into evidence-backed (intake consolidation, snapshots, adversarial
+beat, session lessons) and anticipation-heavy (declaring a heartbeat session
+that has never run), and the maintainer selected the evidence-backed subset.
+
+Decision: **retain and address under P1**. Heartbeat runs as ordinary
+grooming invocations first and may be declared after observed use.
+Reconsideration trigger: if the learning-loop work outgrows P1's signal or
+survives P1's closure, propose it as its own problem.

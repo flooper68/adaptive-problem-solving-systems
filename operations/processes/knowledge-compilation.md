@@ -14,7 +14,7 @@ This process runs only inside a [`brainstorming`](brainstorming.md) session
 dispositions, feedback records, problem and task files — and do not edit the
 compiled framework directly. When any other work session or grooming
 invocation surfaces a framework-worthy lesson, capture the compilation as a
-task through [`task-intake.md`](task-intake.md) linking the source evidence;
+task through [`intake.md`](intake.md) linking the source evidence;
 a brainstorming session executes that task and compiles the lesson. This
 keeps pending lessons visible in `tasks/` instead of waiting untracked for a
 session.

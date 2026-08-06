@@ -16,21 +16,21 @@ work_sessions:
 
 streams:
   - id: working-sessions
-    purpose: Preserve material brainstorming and grooming invocations with their decisions, affected files, and stopping points.
+    purpose: Preserve material brainstorming and grooming invocations with their decisions, affected files, stopping points, and lessons-and-friction notes.
     source: Maintainer-agent discussions and other declared work-session invocations.
     access: Retain one file per material session under streams/working-sessions/ and link the affected problem and task files.
-    consumed_by: processes/process.md
+    consumed_by: [processes/process.md, processes/grooming.md]
     grill: null
   - id: insights
     purpose: Preserve independently useful interpretations with their source evidence, reasoning, scope, uncertainty, and explicit epistemic disposition.
     source: Maintainer, contributor, validator, consumer, and agent interpretations derived from declared evidence streams.
-    access: Capture insights under streams/insights/ with processes/insight-intake.md and assess them with processes/grooming.md.
+    access: Capture insights under streams/insights/ with processes/intake.md and assess them with processes/grooming.md.
     consumed_by: processes/grooming.md
-    grill: Follow processes/insight-intake.md; ask one load-bearing question at a time about the source evidence, inference, scope, alternatives, and possible use.
+    grill: Follow processes/intake.md; ask one load-bearing question at a time about the source evidence, inference, scope, alternatives, and possible use.
   - id: framework-feedback
     purpose: Preserve direct consumer reports about understanding, applying, or adopting APS and explicitly disposition them.
     source: Framework users, maintainers, reviewers, and adopters reporting an experience.
-    access: Capture reports under streams/framework-feedback/ and groom them with processes/grooming.md.
+    access: Capture reports under streams/framework-feedback/ with processes/intake.md and assess them with processes/grooming.md.
     consumed_by: processes/grooming.md
     grill: Ask what the reporter attempted, what happened, what they expected, what effect the gap had, and what evidence can be retained.
   - id: framework-usage

@@ -4,7 +4,7 @@ This directory retains direct reports about using, understanding, or adopting
 APSS. Reports are raw framework-usage evidence, not work commitments or
 normative framework content.
 
-Use [framework feedback intake](../../processes/framework-feedback-intake.md)
+Use [framework feedback intake](../../processes/intake.md)
 to capture a report and
 [grooming](../../processes/grooming.md)
 to assess it. Actionable feedback links to a separate stewardship task

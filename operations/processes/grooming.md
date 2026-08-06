@@ -47,20 +47,26 @@ batch decisions.
    decision; record impact, confidence, remaining uncertainty, and the cost of
    being wrong. Use discussion, research, or a bounded experiment when a
    missing answer could materially reverse the disposition.
-4. **Decide.** The maintainer approves one disposition from the set below with
-   its rationale. Do not equate desirability with priority, and do not claim
-   improvement without evidence against the relevant signal.
+4. **Decide.** Before proposing, the operator runs the alignment and
+   adversarial beat: state which problem and strategy element the proposed
+   disposition serves (or that it serves none), whether it contradicts
+   compiled knowledge or a prior decision, and the strongest case against it —
+   hunting for overlapping or circular definitions, multiple sources of truth,
+   ownerless state, unjustified lifecycle machinery, and ceremonial artifacts.
+   With that on the table, the maintainer approves one disposition from the
+   set below with its rationale. Do not equate desirability with priority, and
+   do not claim improvement without evidence against the relevant signal.
 5. **Propagate without conflating.**
    - An evidenced higher-level gap becomes a problem decision here: open a new
      problem, or use the evidence to revise an existing one. Keep strategy
      changes at the smallest level supported by their evidence — edit the
      system strategy only when the change should guide other problems.
    - An executable response is captured or linked as a task through
-     [`task-intake.md`](task-intake.md). Prefer the smallest bounded work that
+     [`intake.md`](intake.md). Prefer the smallest bounded work that
      fits one working session; work addressing no open problem may still be
      selected when the maintainer accepts that explicitly.
    - A framework-worthy lesson is captured as a compilation task through
-     [`task-intake.md`](task-intake.md); a
+     [`intake.md`](intake.md); a
      [`brainstorming`](brainstorming.md) session executes it. Grooming never
      edits the compiled framework.
    - Link records in both directions, and leave the item unchanged when no
@@ -100,6 +106,10 @@ directions, and any missing answer has an evidence request or next trigger.
 - The item's file is authoritative for its current state and grooming history;
   do not reconstruct either from session records.
 - The working-session record preserves material invocations with participants,
-  decisions, affected files, and the stopping point.
+  decisions, affected files, the stopping point, and a brief closing
+  "Lessons and friction" note on what the session revealed about how the
+  system works ("none" is a valid entry).
+- A material invocation updates the affected problems' `Current state`
+  sections and refreshes [`STATE.md`](../STATE.md) before delivery.
 - Raw transcripts, feedback, and research stay in their native recoverable
   sources, linked when material.

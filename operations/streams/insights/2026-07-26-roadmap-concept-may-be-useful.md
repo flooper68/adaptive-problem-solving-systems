@@ -1,7 +1,7 @@
 ---
 id: apss.insight.roadmap-concept-may-be-useful
 type: insight
-status: captured
+status: groomed
 captured: 2026-07-26
 source: APS framework maintainer
 source_records: []
@@ -163,5 +163,26 @@ are recorded rather than decided here.
 
 ## Grooming record
 
-Not yet groomed. See
-[`grooming.md`](../../processes/grooming.md).
+### 2026-08-06 — act: merged into current-state-reporting and executed
+
+Participants: APS framework maintainer, Claude Code operator, in the
+[learning-loop application
+session](../working-sessions/2026-08-06-learning-loop-application.md).
+
+The maintainer re-raised the need unprompted ("some snapshot of what happened
+recently, what is next") and proposed the shape: a snapshot in each problem
+file plus a root file. That recurrence, plus the record's own suspicion that
+this is the same gap as
+[`current-state-reporting`](../../tasks/archive/current-state-reporting.md),
+supported treating the two as one. Alignment: serves P1's
+understand-and-operate signal; no compiled knowledge contradicted. Strongest
+objection considered: a retained snapshot risks drifting into a second source
+of truth; resolved by keeping it thin, date-stamped, delivery-updated, and
+explicitly subordinate to the authoritative files.
+
+Disposition: **act** — the insight's content (state summary plus a short
+forward slice) was merged into the current-state-reporting task and executed:
+a `Current state` section in each problem file and a root
+[`STATE.md`](../../STATE.md), refreshed at session delivery. The open naming
+question resolved as predicted: no "roadmap" concept; ordinary current-state
+sections. No vocabulary change was made or proposed.

@@ -22,10 +22,10 @@ handoff in the task if claimed work cannot be completed.
 
 A specialized process may define an explicit, bounded approval signal so the
 agent does not ask for redundant delivery confirmation. For example,
-[`insight intake`](insight-intake.md) and
-[`framework feedback intake`](framework-feedback-intake.md) treat
-maintainer-requested capture plus participation through their clarification or
-review stopping point as approval to commit and push that record. Such a
+[`intake`](intake.md) treats
+maintainer-requested capture of an insight or feedback record plus
+participation through its clarification or review stopping point as approval
+to commit and push that record. Such a
 signal applies only to the artifact and delivery scope named by the
 specialized process; it does not approve unrelated changes or later normative
 adoption.

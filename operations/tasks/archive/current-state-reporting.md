@@ -1,7 +1,8 @@
 ---
 id: apss.current-state-reporting
 type: task
-status: open
+status: closed
+closed: 2026-08-06
 owner: APS framework maintainer
 created: 2026-07-10
 source: APS framework maintainer idea intake
@@ -58,3 +59,22 @@ without requiring a consumer to reconstruct the situation from every source.
 Captured from the APS framework maintainer's proposal to define a process for
 reporting current context and state. Scope and artifact design remain
 intentionally unresolved.
+
+### 2026-08-06 — act, executed, and closed as delivered
+
+Groomed with the [roadmap
+insight](../../streams/insights/2026-07-26-roadmap-concept-may-be-useful.md)
+merged in as content, in the [learning-loop application
+session](../../streams/working-sessions/2026-08-06-learning-loop-application.md).
+The maintainer answered the open design questions: a durable artifact rather
+than an on-demand view, colocated with authority — a `Current state` section
+in each problem file plus a thin root `STATE.md` — refreshed as part of
+session delivery by the brainstorming and grooming processes, date-stamped so
+staleness is visible, and explicitly subordinate to problem, task, and
+session files as sources of truth.
+
+Disposition: **close — delivered.** Implemented in the same session:
+[`STATE.md`](../../STATE.md), P1's `Current state` section, and the delivery
+wiring in `brainstorming.md` and `grooming.md`. Validation is behavioral: if
+the snapshot drifts or goes stale, that observation reopens this gap through
+intake.

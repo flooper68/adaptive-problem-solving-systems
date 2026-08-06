@@ -1,7 +1,7 @@
 # Working sessions
 
 This ongoing stream preserves one file per material brainstorming,
-problem-grooming, or other declared work-session invocation. A record identifies
+grooming, or other declared work-session invocation. A record identifies
 the session, participants, affected problems and tasks, material decisions or
 evidence, and stopping point. Problem and task files remain authoritative for
 current state; session records preserve what happened.

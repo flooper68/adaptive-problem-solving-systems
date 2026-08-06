@@ -1,7 +1,7 @@
 ---
 id: apss.insight.adversarial-review-in-deliberation
 type: insight
-status: captured
+status: groomed
 captured: 2026-07-26
 source: Claude Code operator, prompted by the APS framework maintainer's question during the problem-strategy review
 source_records:
@@ -142,7 +142,39 @@ captured and the session finished, so the adaptive clarification grill was not
 run; the open questions above are recorded unanswered rather than resolved. The
 first and fourth are the ones most likely to change the disposition.
 
+### 2026-08-06 — recurrence
+
+The maintainer raised the gap again, unprompted and in nearly the same words
+("we are missing a concept of adversarial review / straw man"), during the
+grooming-consolidation discussion, adding the alignment half explicitly: any
+decision should be reviewed against the problem, strategy, and current
+knowledge. Second independent occurrence of the source question, six weeks
+after the first.
+
 ## Grooming record
 
-Not yet groomed. See
-[`grooming.md`](../../processes/grooming.md).
+### 2026-08-06 — act: alignment and adversarial beat added to deliberation
+
+Participants: APS framework maintainer, Claude Code operator, in the
+[learning-loop application
+session](../working-sessions/2026-08-06-learning-loop-application.md).
+
+The recurrence answered the record's first open question — the gap recurs
+rather than being a one-off. Alignment: serves P1's understand-and-operate
+signal; consistent with the record's own warning against argument-ceremony
+(the response is one beat, not a review stage). Strongest objection
+considered: the same agent proposes and critiques, so the beat catches
+structural defects, not blind spots; accepted with the limit stated in the
+process text and the maintainer remaining the effective adversary.
+
+Disposition: **act** — a required alignment-and-adversarial beat was added to
+the decide step of [`grooming.md`](../../processes/grooming.md) and as a
+"Challenge" step in [`brainstorming.md`](../../processes/brainstorming.md)
+before compilation, and P1's private adversarial checklist (overlapping
+definitions, circular dependencies, multiple sources of truth, ownerless
+state, unjustified machinery, ceremonial artifacts) was promoted into both.
+This resolves the third open question as "a step inside existing processes";
+whether the responsibility belongs in normative APS remains open and stays
+with `apss.review-process`. The beat's first application was to the very
+package that introduced it, which split the package into evidence-backed and
+anticipation-heavy halves and deferred the latter.

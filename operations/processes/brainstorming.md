@@ -23,27 +23,37 @@ the result reaches an accepted stopping point.
    question to the answer.
 4. **Distinguish.** Keep source evidence, interpretation, unresolved questions,
    authorized decisions, and possible actions conceptually separate.
-5. **Compile.** Apply the current conclusions directly as uncommitted changes to
+5. **Challenge.** Before compiling a material conclusion, state which problem
+   and strategy element it serves (or that it serves none), whether it
+   contradicts compiled knowledge or a prior decision, and the strongest case
+   against it — hunting for overlapping or circular definitions, multiple
+   sources of truth, ownerless state, unjustified lifecycle machinery, and
+   ceremonial artifacts. Present the objection with the proposal; the
+   maintainer decides with both in view. Self-review catches structural
+   defects, not blind spots — record when only the proposing agent reviewed.
+6. **Compile.** Apply the current conclusions directly as uncommitted changes to
    the authoritative framework knowledge or system instantiation. For framework
    knowledge, follow [`knowledge-compilation.md`](knowledge-compilation.md); for
    an instantiation, follow its declared compilation process. Brainstorming is
    the only work session that edits the compiled framework; other sessions and
    grooming processes update their own artifacts and capture framework-worthy
-   lessons as tasks through [`task-intake.md`](task-intake.md), which a
+   lessons as tasks through [`intake.md`](intake.md), which a
    brainstorming session executes. Update the
    artifact's simple changelog when its compiled knowledge materially changes.
    Do not create a parallel candidate folder, compilation report, or manifest.
-6. **Review iteratively.** Present the changes to the maintainer, incorporate
+7. **Review iteratively.** Present the changes to the maintainer, incorporate
    corrections and further ideas, and repeat exploration and compilation as
    needed. Do not infer approval from exploratory language or silence.
-7. **Resolve the stopping point.** If the maintainer leaves an unresolved
+8. **Resolve the stopping point.** If the maintainer leaves an unresolved
    question or next trigger without accepting the result, record a handoff and
    leave the changes uncommitted. If the maintainer accepts the result or
    explicitly asks to finish or end the session, treat that statement as the
    bounded approval signal for the reviewed session scope. That signal also
    authorizes transmitting the reviewed scope to the repository's configured
    `origin/main`; do not ask for a separate commit or push confirmation.
-8. **Deliver an accepted session.** Run relevant validation, stage only the
+9. **Deliver an accepted session.** Run relevant validation, refresh the
+   affected problems' `Current state` sections and [`STATE.md`](../STATE.md)
+   as part of the session scope, stage only the
    session-scoped changes, commit them, and push the approved commit to
    the already configured `origin/main` without another prompt. Do not change
    the remote or destination implicitly. If the execution environment requires
@@ -60,6 +70,9 @@ the result reaches an accepted stopping point.
 Raw evidence remains in its source streams. Git provides the reviewable diff and
 accepted history; the compiled artifact's changelog summarizes material
 knowledge changes. Retain one working-session record with participants,
-affected problems and tasks, material decisions, changed artifacts, and the
-stopping point and, when accepted, its delivered commit. Link independently
+affected problems and tasks, material decisions, changed artifacts, the
+stopping point and, when accepted, its delivered commit, and a brief closing
+"Lessons and friction" note on what the session revealed about how the system
+works ("none" is a valid entry) — grooming consumes these notes as evidence.
+Link independently
 managed insights or decisions rather than duplicating their full content.
