@@ -5,6 +5,7 @@ status: retained
 recorded: 2026-08-06
 accepted: 2026-08-06
 closed: 2026-08-06
+delivery: 99014d1
 participants: [APS framework maintainer, Claude Code operator]
 source: Maintainer-agent discussion in the current Claude Code session
 related_problems: []
@@ -73,8 +74,8 @@ to finish and deliver it. By delivery time the concurrent
 subsystem-and-relationships review (`ca6a082`) and grooming-cadence
 (`04eb6bc`) sessions had delivered their scopes, so this session's scope was
 the whole remaining tree. The task is closed and archived with the delivery.
-The delivery commit is recorded in a follow-up commit per the established
-pattern.
+Delivered as commit 99014d1; this delivery reference was recorded in a
+follow-up commit per the established pattern.
 
 ## Lessons and friction
 
