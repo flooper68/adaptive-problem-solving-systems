@@ -150,20 +150,21 @@ and link both records.
 
 ## Delivery
 
-Once the minimum capture is complete, the clarification grill has reached a
-useful stopping point, and source corrections have been incorporated or their
-unavailability recorded, the gathered information is ready for delivery. Do
-not leave a completed insight only in an agent's working tree.
+Delivery is an automatic step of this process, not a separate decision. Once
+the minimum capture is complete, the clarification grill has reached a useful
+stopping point, and source corrections have been incorporated or their
+unavailability recorded, all information is gathered and the agent must
+immediately deliver: stage only the insight and necessary source-link
+corrections, commit, push the current branch, and report the branch and
+commit. Do not pause to ask whether to deliver, and do not leave a completed
+insight only in an agent's working tree.
 
 When the APS framework maintainer asked for the insight to be captured and
 participated through the clarification stopping point or reviewed the result,
-that participation is approval to deliver the bounded insight record. An AI
-agent must stage only the insight and necessary source-link corrections,
-commit, push the current branch, and report the branch and commit without
-asking for a second delivery confirmation. This is the specialized approval
-signal permitted by [`ai-agent-tasks.md`](ai-agent-tasks.md); it approves
-faithful capture and delivery, not the insight's truth, priority, disposition,
-or adoption.
+that participation is the approval that makes this automatic delivery valid.
+This is the specialized approval signal permitted by
+[`ai-agent-tasks.md`](ai-agent-tasks.md); it approves faithful capture and
+delivery, not the insight's truth, priority, disposition, or adoption.
 
 When the current branch is `main`, this approval explicitly includes pushing
 the bounded insight commit directly to `origin/main`. The agent should not

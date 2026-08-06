@@ -81,3 +81,33 @@ The next possible action is
 [`framework feedback grooming`](framework-feedback-grooming.md). If the report
 reveals an urgent safety, security, legal, or data-loss concern, escalate it to
 the maintainer immediately rather than waiting for routine grooming.
+
+## Delivery
+
+Delivery is an automatic step of this process, not a separate decision. Once
+the minimum capture is complete and any clarification from the same
+conversation has been recorded, all information is gathered and the agent must
+immediately deliver: stage only the feedback report and necessary source-link
+corrections, commit, push the current branch, and report the branch and
+commit. Do not pause to ask whether to deliver, and do not leave a completed
+report only in an agent's working tree.
+
+When the APS framework maintainer asked for the feedback to be captured and
+participated through the capture or reviewed the result, that participation is
+the approval that makes this automatic delivery valid. This is the specialized
+approval signal permitted by [`ai-agent-tasks.md`](ai-agent-tasks.md); it
+approves faithful capture and delivery, not the report's validity, priority,
+disposition, or any proposed response.
+
+When the current branch is `main`, this approval explicitly includes pushing
+the bounded feedback commit directly to `origin/main`. The agent should not
+create a delivery branch or request separate confirmation solely because
+`main` is the repository's default or shared branch. Repository protections,
+failed validation, non-fast-forward state, or inability to isolate the bounded
+changes remain blockers and must not be bypassed.
+
+If the reporter is not authorized to approve repository delivery, review was
+unavailable, unrelated working-tree changes cannot be safely excluded, or the
+push fails, do not infer approval or broaden the commit. Preserve the record,
+state the blocker, and follow the normal human-review and handoff rules in
+[`ai-agent-tasks.md`](ai-agent-tasks.md).
