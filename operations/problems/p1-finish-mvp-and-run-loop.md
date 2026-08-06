@@ -488,3 +488,23 @@ concept reviews carry the constraint forward; a captured backfill task
 maintainer to everything — framework package, Operations processes, problem
 files, and stream documentation — with splitting into sessions left to task
 grooming.
+
+### 2026-08-06 — purpose review task closed as superseded
+
+Source: [purpose review session](../streams/working-sessions/2026-08-06-purpose-review.md).
+
+The ninth review session found its question already answered: the vocabulary
+never defined a `Purpose` entry, and the system-concept review's 2026-07-12
+field audit had ruled that the declaration's `purpose` field restates the
+problem and removed it — superseding `review-vision` in the same sweep but
+missing this sibling task. Verification found no conceptual residue: what
+survives is the stream `purpose` property (owned by the information-stream
+review), descriptive headings, and ordinary prose.
+
+Decision: close `apss.review-purpose` as superseded by
+`apss.review-system-concept`, mirroring vision's treatment. No normative
+surface changed; the pruning count stays at six. The missed-sibling pattern —
+a broad decision making open tasks moot without a checklist that asks which
+ones — is recorded for the adversarial validation pass. Two Direction-level
+reviews remain before the order descends: authority, then subsystem and
+relationships.
