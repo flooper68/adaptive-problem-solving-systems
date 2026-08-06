@@ -100,4 +100,4 @@ record for correction through the current Codex task.
 ## Grooming record
 
 Not yet groomed. See
-[`insight-grooming.md`](../../processes/insight-grooming.md).
+[`grooming.md`](../../processes/grooming.md).

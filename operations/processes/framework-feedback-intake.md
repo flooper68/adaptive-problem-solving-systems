@@ -63,7 +63,7 @@ validated.”>
 ## Grooming record
 
 Not yet groomed. See
-[`framework-feedback-grooming.md`](framework-feedback-grooming.md).
+[`grooming.md`](../../processes/grooming.md).
 ```
 
 Record only the personal information needed to understand and follow up on the
@@ -78,7 +78,7 @@ promising prioritization or accepting the reporter's proposed response as the
 only solution.
 
 The next possible action is
-[`framework feedback grooming`](framework-feedback-grooming.md). If the report
+[`grooming`](grooming.md). If the report
 reveals an urgent safety, security, legal, or data-loss concern, escalate it to
 the maintainer immediately rather than waiting for routine grooming.
 

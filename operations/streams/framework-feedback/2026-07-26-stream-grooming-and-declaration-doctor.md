@@ -89,4 +89,4 @@ responses are not independently validated.
 ## Grooming record
 
 Not yet groomed. See
-[`framework-feedback-grooming.md`](../../processes/framework-feedback-grooming.md).
+[`grooming.md`](../../processes/grooming.md).

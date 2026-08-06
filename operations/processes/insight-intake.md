@@ -101,7 +101,7 @@ might affect without implying commitment.>
 ## Grooming record
 
 Not yet groomed. See
-[`insight-grooming.md`](insight-grooming.md).
+[`grooming.md`](../../processes/grooming.md).
 ```
 
 Record direct observations, external claims, participant interpretations, and
@@ -144,7 +144,7 @@ questions. `status: captured` means only that the interpretation is preserved;
 it does not establish truth, priority, normative status, or authorization.
 
 The next possible action is
-[`insight grooming`](insight-grooming.md). If an executable response is
+[`grooming`](grooming.md). If an executable response is
 proposed, capture it separately through [`task-intake.md`](task-intake.md)
 and link both records.
 

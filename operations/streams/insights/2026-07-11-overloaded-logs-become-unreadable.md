@@ -91,4 +91,4 @@ for intake, and the source reviewed the resulting interpretation.
 ## Grooming record
 
 Not yet groomed. See
-[`insight-grooming.md`](../../processes/insight-grooming.md).
+[`grooming.md`](../../processes/grooming.md).

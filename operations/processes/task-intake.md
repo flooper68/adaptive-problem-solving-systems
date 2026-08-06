@@ -120,4 +120,4 @@ A successfully captured candidate has:
 Material discussion during intake belongs in the item's grooming log or a
 linked record retained through the
 [brainstorming process](brainstorming.md). The next possible action is the
-[task grooming process](task-grooming.md).
+[grooming process](grooming.md).

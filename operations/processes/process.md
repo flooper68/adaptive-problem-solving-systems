@@ -11,23 +11,21 @@ When an AI agent performs the work, also follow
    knowledge, operational meta-knowledge, observed applications, feedback,
    insights, and other new evidence.
 2. Capture direct consumer reports through `framework-feedback-intake.md` and
-   assess them through `framework-feedback-grooming.md`. Preserve feedback as
+   assess them through [`grooming.md`](grooming.md). Preserve feedback as
    evidence. When grooming identifies a gap already represented by an open
    problem, link it and propose bounded work through `task-intake.md` when
-   useful. When the gap is not represented, propose it to problem grooming
-   before selecting work.
+   useful. When the gap is not represented, grooming decides whether to open a
+   problem before selecting work.
 3. Use [`brainstorming.md`](brainstorming.md) to discuss an idea, task, or
    research topic with the maintainer and iteratively compile reviewable changes
    into the framework or a concrete instantiation. Keep observations, insights,
    questions, and decisions distinguishable. Capture independently useful
-   interpretations through `insight-intake.md` and assess them through
-   `insight-grooming.md`. Source-specific grooming may propose a higher-level
-   problem without opening one. Capture a separate executable response through
-   `task-intake.md` when action is proposed; selection either links a problem
-   opened or linked by problem grooming or accepts that the work addresses no
-   problem. Groom work candidates through
-   `task-grooming.md`.
-4. Follow [`problem-grooming.md`](problem-grooming.md) to revisit relevant open
+   interpretations through `insight-intake.md`. Capture a separate executable
+   response through `task-intake.md` when action is proposed; selection either
+   links a problem opened or linked by grooming or accepts that the work
+   addresses no problem. Assess captured insights and work candidates through
+   [`grooming.md`](grooming.md).
+4. Follow [`grooming.md`](grooming.md) to revisit relevant open
    problems in `operations/problems/`, then select ready, bounded tasks in
    `operations/tasks/` that state which problems they address — or that they
    address none — and confirm owner, acceptance conditions, authority, and

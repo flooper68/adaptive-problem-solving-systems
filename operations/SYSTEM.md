@@ -10,13 +10,13 @@ work_sessions:
   - id: brainstorming
     description: Discuss an APS idea, task, or research topic with the maintainer and iteratively compile reviewable changes into the framework or a concrete APS instantiation.
     process: processes/brainstorming.md
-  - id: problem-grooming
-    description: Use the system strategy to revisit current open problems with the maintainer, update their evidence and strategy, and record an authorized retain, revise, address, or close decision.
-    process: processes/problem-grooming.md
+  - id: grooming
+    description: Review captured inputs — feedback, insights, task candidates, problems, and verification evidence — with the maintainer and record one approved disposition per item, guided by the system strategy.
+    process: processes/grooming.md
 
 streams:
   - id: working-sessions
-    purpose: Preserve material brainstorming and problem-grooming invocations with their decisions, affected files, and stopping points.
+    purpose: Preserve material brainstorming and grooming invocations with their decisions, affected files, and stopping points.
     source: Maintainer-agent discussions and other declared work-session invocations.
     access: Retain one file per material session under streams/working-sessions/ and link the affected problem and task files.
     consumed_by: processes/process.md
@@ -24,14 +24,14 @@ streams:
   - id: insights
     purpose: Preserve independently useful interpretations with their source evidence, reasoning, scope, uncertainty, and explicit epistemic disposition.
     source: Maintainer, contributor, validator, consumer, and agent interpretations derived from declared evidence streams.
-    access: Capture insights under streams/insights/ with processes/insight-intake.md and assess them with processes/insight-grooming.md.
-    consumed_by: processes/insight-grooming.md
+    access: Capture insights under streams/insights/ with processes/insight-intake.md and assess them with processes/grooming.md.
+    consumed_by: processes/grooming.md
     grill: Follow processes/insight-intake.md; ask one load-bearing question at a time about the source evidence, inference, scope, alternatives, and possible use.
   - id: framework-feedback
     purpose: Preserve direct consumer reports about understanding, applying, or adopting APS and explicitly disposition them.
     source: Framework users, maintainers, reviewers, and adopters reporting an experience.
-    access: Capture reports under streams/framework-feedback/ and groom them with processes/framework-feedback-grooming.md.
-    consumed_by: processes/framework-feedback-grooming.md
+    access: Capture reports under streams/framework-feedback/ and groom them with processes/grooming.md.
+    consumed_by: processes/grooming.md
     grill: Ask what the reporter attempted, what happened, what they expected, what effect the gap had, and what evidence can be retained.
   - id: framework-usage
     purpose: Learn whether APS is understandable and useful when applied.

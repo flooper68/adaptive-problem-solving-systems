@@ -29,7 +29,7 @@ reconstructions rather than original records.
 Independently useful interpretations are retained in the
 [`insights/`](insights/) stream through
 [intake](../processes/insight-intake.md) and
-[grooming](../processes/insight-grooming.md). Insight records preserve the
+[grooming](../processes/grooming.md). Insight records preserve the
 source claim, inference, scope, supporting and limiting evidence, uncertainty,
 and an epistemic disposition. They may link to compilation, decisions, or
 separate executable responses without becoming those artifacts.
@@ -50,7 +50,7 @@ whether consumers can understand and apply APSS. A retained summary should say:
 Direct reports from consumers are retained in the
 [`framework-feedback/`](framework-feedback/) stream using the declared
 [intake](../processes/framework-feedback-intake.md) and
-[grooming](../processes/framework-feedback-grooming.md) processes. The report
+[grooming](../processes/grooming.md) processes. The report
 preserves what the consumer experienced; grooming records interpretation and a
 disposition. Actionable reports link to separate work candidates rather than
 being silently converted into requirements.

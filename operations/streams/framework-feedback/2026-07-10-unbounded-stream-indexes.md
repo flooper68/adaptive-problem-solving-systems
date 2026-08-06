@@ -49,4 +49,4 @@ current backlog list as an isolated case.
 ## Grooming record
 
 Not yet groomed. See
-[`framework-feedback-grooming.md`](../../processes/framework-feedback-grooming.md).
+[`grooming.md`](../../processes/grooming.md).
