@@ -1,8 +1,11 @@
 ---
 id: apss.session.automated-session-type
 type: working-session
-status: active
+status: retained
 recorded: 2026-08-06
+accepted: 2026-08-06
+closed: 2026-08-06
+delivery: 30462aa
 participants: [APS framework maintainer, Claude Code operator]
 source: Maintainer-agent discussion in the current Claude Code session
 related_problems: []
@@ -101,8 +104,13 @@ framed both automated types as an experiment that may not be kept.
   convention and indexes the two new processes.
 - Live pointer updates enumerated in decision 3.
 
-## Stopping point
+## Acceptance and delivery
 
-The compiled changes are uncommitted and awaiting maintainer review together
-with the rest of the session scope. Next trigger: maintainer review of this
-session's uncommitted changes.
+The maintainer reviewed the compiled scope and accepted it with an explicit
+request to finish the session and ship it; per the brainstorming process that
+acceptance approves delivery to `origin/main`. The concurrent
+intake-consolidation scope was delivered separately by its own session during
+this one, so this delivery contains only this session's changes. The
+still-uncommitted `review-authority.md` archive update remains excluded, as in
+prior deliveries. Delivered as commit 30462aa; this delivery reference was
+recorded in a follow-up commit per the established pattern.
