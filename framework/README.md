@@ -193,7 +193,8 @@ Retain one record for a material work-session invocation in a declared
 working-session stream or its native system of record. The record identifies
 the session, date, participants, affected problems and tasks, material evidence
 or decisions, and stopping point. It preserves what happened; problem and task
-systems of record remain authoritative for current state.
+systems of record remain authoritative for
+[current state](VOCABULARY.md#current-state).
 
 The session record or other native recoverable source preserves material
 discussion and links to changed state. Do not create a second summary when the
@@ -251,7 +252,8 @@ responsible for every phase whether it combines or separates their processes.
 ### 1. Orient and frame
 
 Read the current system problem and strategy, the hierarchy of open problems
-and their strategies, relevant compiled knowledge, and new evidence. Confirm
+and their strategies, the [current state](VOCABULARY.md#current-state) of work
+in flight, relevant compiled knowledge, and new evidence. Confirm
 that the system is still solving the right root problem and that each smaller
 problem remains relevant to the system's evolving decomposition.
 
@@ -384,10 +386,14 @@ evidence of an unrepresented gap for problem grooming.
 
 The system's process chooses how tasks are represented, organized, and
 tracked — task files, Jira, GitHub, Linear, a database, or another recoverable
-system of record. What APS requires is recoverability: enough current state to
+system of record. What APS requires is recoverability of
+[current state](VOCABULARY.md#current-state): enough to
 identify current work, its addressed problem and strategy when it has one,
 intended result, responsible participant, stopping condition, and next step,
-so execution can resume across time, people, or agents. Material session
+so execution can resume across time, people, or agents. A system may
+additionally keep a derived, date-stamped current-state view that compiles
+orientation from those records; the authoritative records win on any
+conflict. Material session
 history belongs in working-session records or another declared evidence
 source; detailed change history and domain evidence remain in their native
 systems. APS does not require a generic work log that duplicates those

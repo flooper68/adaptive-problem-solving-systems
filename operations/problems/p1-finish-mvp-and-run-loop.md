@@ -9,15 +9,15 @@ opened: 2026-07-10
 
 ## Current state
 
-As of 2026-08-06 ([learning-loop application
-session](../streams/working-sessions/2026-08-06-learning-loop-application.md)):
+As of 2026-08-06 ([current-state concept
+session](../streams/working-sessions/2026-08-06-current-state-concept.md)):
 
-- **Recently:** authority removed from the framework (tenth concept review,
-  seventh pruning); the four grooming processes consolidated into one
-  `grooming.md`; the three intakes consolidated into one `intake.md`; the
-  learning loop wired in (session lessons, alignment/adversarial beat, state
-  snapshots).
-- **In flight:** the learning-loop application session awaiting delivery.
+- **Recently:** current state promoted to a first-class framework concept —
+  the first evidence-driven addition under strategy point 4 after seven
+  prunings; before that, automated sessions redefined as autonomous
+  brainstorming and authority removed from the framework.
+- **In flight:** two ungroomed stream-declaration feedback records
+  (2026-08-06) await grooming.
 - **Next:** the last Direction-level concept review
   (`apss.review-subsystem-and-relationships`); the first full grooming
   invocation under the consolidated process; heartbeat runs as ordinary

@@ -181,17 +181,37 @@ an unrepresented evidenced gap is proposed to problem grooming. Problem and
 task grooming are distinct responsibilities even when a system combines them
 in one meeting, process, tool, or cadence.
 
+### Current state
+
+The present condition of a system's work: which problems are open and what
+they currently mean, what work is in flight, its intended result, responsible
+participant, stopping condition, and next step. The problem and task systems
+of record own current state and are authoritative for it; working-session
+records and native evidence sources own history and provenance instead. APS
+requires current state to be recoverable so execution can resume across time,
+people, or agents.
+
+A system may additionally keep a **current-state view**: a derived,
+date-stamped snapshot compiled from the authoritative records so a reader can
+orient, resume, or hand off without reconstructing the situation from every
+source. The view is subordinate — on any conflict the authoritative records
+win — and its date makes staleness visible. A view that has drifted is
+evidence for refreshing it, not a second source of truth. APS does not
+prescribe the view's format, location, or refresh cadence; refreshing it at
+meaningful completion or delivery points keeps it trustworthy.
+
 ### Working-session record
 
 The durable record of one material invocation of a declared work session. It
 identifies the session, participants, affected problems and tasks, material
 evidence or decisions, and stopping point. It preserves history and provenance;
-the problem and task systems of record remain authoritative for current state
-and resumption.
+the problem and task systems of record remain authoritative for
+[current state](#current-state) and resumption.
 
 ### Archive
 
-Durable inactive material retained outside the current-state views. Each
+Durable inactive material retained outside the [current state](#current-state)
+and its views. Each
 system's process chooses how inactive material is represented and retrieved.
 Archiving changes visibility, not provenance or meaning.
 

@@ -3,6 +3,32 @@
 Simple history of material framework changes. Git remains the detailed audit
 trail.
 
+## 2026-08-06 — current state defined as a first-class concept
+
+Added `Current state` to the vocabulary. The framework had leaned on the term
+in five places — task recoverability, working-session records, and the
+archive were all defined against it — without saying what it is or who owns
+it: exactly the ownerless-state defect the adversarial checklist hunts.
+
+The entry has two halves. Current state itself is the present condition of a
+system's work — open problems and their current meaning, work in flight, its
+intended result, responsible participant, stopping condition, and next step —
+owned by the problem and task systems of record, which APS already required
+to keep it recoverable. A current-state view is an optional derived,
+date-stamped snapshot compiled from those records for orientation,
+resumption, and handoff; it is subordinate and loses to the authoritative
+records on any conflict, and its date makes staleness visible. APS prescribes
+no view format, location, or refresh cadence. No lifecycle machinery was
+added: current state is a responsibility and an optional derived view, not a
+new durable identity.
+
+The evidence is Framework Operations' own use: the current-state-reporting
+task delivered a root `STATE.md` plus per-problem `Current state` sections,
+and the maintainer reported the pattern very useful and directed its
+promotion into the framework. This is the first evidence-driven addition
+under the add-complexity-only-when-demonstrated strategy, after seven
+pruning dispositions.
+
 ## 2026-08-06 — authority removed from the framework
 
 Removed authority as a framework notion. APS defines no owners, personas, or
