@@ -76,6 +76,12 @@ normative and supporting surface.
 This is an order of review, not a one-way waterfall. A lower-level review or
 attempted run may reopen an upstream concept.
 
+Write every retained surface in plain language. Prefer everyday words over
+specialist vocabulary, define any term the framework must keep, and treat
+wording that a reader stumbles over as avoidable complexity to remove like any
+other. Apply this constraint while propagating each concept decision through
+its affected surfaces.
+
 ### Concept review test
 
 For each concept, determine:
@@ -100,7 +106,8 @@ Validate the simplified model in three independent ways:
    subsequent operation changed by that learning.
 2. Give the framework to a reviewer without the session's unstated context and
    ask them to explain its concepts, relationships, and lifecycles, apply it,
-   and identify avoidable complexity.
+   and identify avoidable complexity, including any wording they had to reread
+   or could not restate in their own words.
 3. Adversarially search for overlapping or circular definitions, multiple
    sources of truth, ownerless state, unjustified lifecycle machinery,
    ceremonial artifacts or processes, undefined transitions, unsupported
@@ -459,3 +466,25 @@ visibly an instance rule. The maintainer also set the compilation principle
 that definitions live in the vocabulary and the framework definition
 references them, recorded in `knowledge-compilation.md` with a captured
 backfill task for the README's remaining duplication.
+
+### 2026-08-06 — plain-language constraint added to the strategy
+
+Source: [plain-language grooming session](../streams/working-sessions/2026-08-06-plain-language-constraint-grooming.md).
+
+The maintainer asked whether the current strategy makes the system simple in
+language as well as in structure, so that its documents are easy to understand.
+Grooming established that the audience is unchanged — the maintainer and
+capable reviewers, not a new consumer group — and that plain wording is a
+writing-quality bar on the surfaces they read. Per the strategy-scope rule, the
+change guides only P1, so it lives in P1's strategy rather than the system
+strategy.
+
+Decision: **revise**. The strategy now requires every retained surface to be
+written in plain language, treating wording a reader stumbles over as avoidable
+complexity to remove like any other. The teach-back validation pass now asks
+the reviewer to flag wording they had to reread or could not restate. Remaining
+concept reviews carry the constraint forward; a captured backfill task
+(`apss.plain-language-backfill`) covers surfaces already written, scoped by the
+maintainer to everything — framework package, Operations processes, problem
+files, and stream documentation — with splitting into sessions left to task
+grooming.
