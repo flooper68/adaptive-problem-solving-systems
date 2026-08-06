@@ -3,6 +3,9 @@ id: apss.session.plain-language-constraint-grooming
 type: working-session
 status: retained
 recorded: 2026-08-06
+accepted: 2026-08-06
+closed: 2026-08-06
+delivery: 93e37f3
 participants: [APS framework maintainer, Claude Code operator]
 source: Maintainer-agent discussion in the current Claude Code session
 related_problems: [P1]
