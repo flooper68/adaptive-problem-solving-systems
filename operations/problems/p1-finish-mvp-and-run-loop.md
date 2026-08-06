@@ -600,3 +600,30 @@ wording in the visualization discipline — left without a referent by the
 authority removal, though predating it — was cleaned up in passing. This
 closes the Direction-level portion of the review order; the review order
 descends next.
+
+### 2026-08-06 — grooming cadence declared: every third working session
+
+Source: [grooming cadence declaration
+session](../streams/working-sessions/2026-08-06-grooming-cadence-declaration.md).
+
+The maintainer proposed running grooming after every three working sessions
+to take in accumulated feedback and insights and reprioritize the next
+steps. The adversarial beat was presented before the decision: the proposal
+revises the same-day heartbeat deferral ("runs as ordinary grooming
+invocations first and may be declared after observed use") before the
+consolidated grooming process has run a full invocation. The supporting
+evidence: several back-to-back working sessions have since accumulated
+ungroomed feedback, insights, and stale tasks, showing that an unforced
+cadence does not happen on its own — the condition the deferral was waiting
+to observe arrived as its absence.
+
+Decision: **revise** the heartbeat deferral — declare the cadence now as a
+grooming invocation trigger (one grooming per three working sessions,
+counted from the working-session records, reset by any grooming
+invocation). The cadence lives only in `processes/sessions/grooming.md`; no
+new session type or artifact is declared, honoring the earlier finding that
+"heartbeat" named a cadence, not an activity. Three sessions have already
+run since the last grooming, so the first cadenced invocation is
+immediately due. Reconsideration trigger: after two cadenced invocations,
+grooming assesses whether the three-session interval fits observed cost and
+backlog size.

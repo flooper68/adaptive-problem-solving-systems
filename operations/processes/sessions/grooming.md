@@ -23,6 +23,13 @@ Groom when the maintainer requests it, before selecting substantial work, when
 new evidence accumulates on an item, when a dependency resolves, when
 verification cannot read a signal, or when an item blocks a consumer.
 
+Grooming also runs on a declared cadence: after every third working session
+since the last grooming invocation, groom the accumulated feedback, insights,
+and task candidates, and reconfirm or reprioritize the next selected work.
+The working-session records under `streams/working-sessions/` are the
+counter; any grooming invocation — cadenced or not — resets it. The cadence
+is a floor, not a gate: the triggers above still invoke grooming earlier.
+
 - An operator gathers evidence, facilitates, proposes updates, and preserves
   provenance and disagreement.
 - The source or reporter clarifies intended meaning when available, but need

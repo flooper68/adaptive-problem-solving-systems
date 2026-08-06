@@ -3,8 +3,8 @@
 A derived view for orientation; problem, task, and session files stay
 authoritative and win on any conflict. Refreshed as part of session delivery.
 
-**As of:** 2026-08-06, [subsystem and relationships review
-session](streams/working-sessions/2026-08-06-subsystem-and-relationships-review.md).
+**As of:** 2026-08-06, [grooming cadence declaration
+session](streams/working-sessions/2026-08-06-grooming-cadence-declaration.md).
 
 ## Open problems
 
@@ -16,6 +16,9 @@ session](streams/working-sessions/2026-08-06-subsystem-and-relationships-review.
 
 ## Recent deliveries
 
+- Grooming cadence declared (this session): one grooming invocation per
+  three working sessions, recorded as an invocation trigger in the grooming
+  process; the same-day heartbeat deferral revised in P1's grooming history.
 - Subsystem merged into child system; relationship model confirmed minimal —
   the last Direction-level concept review, run as the first automated
   brainstorming session (this session).
@@ -26,13 +29,10 @@ session](streams/working-sessions/2026-08-06-subsystem-and-relationships-review.
 
 ## Next
 
-1. Deliver the accepted grooming-cadence declaration session (still
-   uncommitted): one grooming invocation per three working sessions,
-   recorded as an invocation trigger in the grooming process.
-2. First full grooming invocation under the consolidated process —
-   immediately due under that cadence. Pending items: remaining ungroomed
-   insights and feedback, stale task review, and reprioritizing the next
-   selected work.
-3. After two cadenced grooming invocations: assess whether the
+1. First full grooming invocation under the consolidated process —
+   immediately due under the declared cadence. Pending items: remaining
+   ungroomed insights and feedback, stale task review, and reprioritizing
+   the next selected work.
+2. After two cadenced grooming invocations: assess whether the
    three-session interval fits observed cost and backlog size
    (reconsideration trigger recorded in P1).
