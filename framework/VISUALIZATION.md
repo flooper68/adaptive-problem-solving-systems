@@ -67,7 +67,7 @@ Use this view only when artifacts materially help explain the solution.
 Purpose: answer “how does this system learn, and where does that learning
 change future operation?”
 
-Show raw streams, compilation, knowledge artifacts, adaptation authority, and
+Show raw streams, compilation, knowledge artifacts, adaptation, and
 the target process or strategy. Use it during maintenance and redesign rather
 than as the first view for newcomers.
 
@@ -76,8 +76,8 @@ flowchart LR
     streams["Raw evidence streams"] --> compiler["Compilation process"]
     compiler --> knowledge["Compiled knowledge artifact"]
     knowledge --> proposal["Adaptation proposal"]
-    proposal --> approval["Declared approver"]
-    approval --> strategy["Strategy / process / subsystem change"]
+    proposal --> decision["Adaptation decision"]
+    decision --> strategy["Strategy / process / subsystem change"]
     strategy --> nextRun["Next execution"]
     nextRun --> streams
 ```

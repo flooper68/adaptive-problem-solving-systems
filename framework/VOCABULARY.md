@@ -30,8 +30,8 @@ participants, including a parent system, may supply feedback, verification,
 insights, or other inputs; the system still owns how those inputs close and
 adapt its loop.
 
-Loop ownership does not prescribe who performs or approves each step. Those
-authorities belong to the system's chosen processes.
+Loop ownership does not prescribe who performs or approves each step; that
+belongs to each system's chosen processes.
 
 Artifacts are contextual to the problem being solved. A system may produce one
 or more inspectable artifacts as part of an attempt, but a separately named
@@ -72,8 +72,8 @@ The current evidence-informed theory and approach for changing one problem.
 Every problem has one, informed by the system strategy and by the problem's
 decomposition context. A strategy guides the work selected for that problem and
 changes when the problem's signal, verification, or other evidence challenges
-its assumptions or effectiveness. The problem owns it; the system's declared
-authority changes it.
+its assumptions or effectiveness. The problem owns it; who changes it is each
+system's process choice.
 
 The root system problem's strategy is the system strategy. *Problem strategy*
 is ordinary wording for the strategy of one problem, used where that scope must
@@ -114,13 +114,13 @@ existence does not make one interpretation or response authoritative.
 Evidence about a consumer's, operator's, validator's, or other participant's
 experience of a system or artifact. Feedback may reveal, change, or help close
 a problem, but a report does not automatically become a problem or
-authorize work.
+start work.
 
 ### Insight
 
 An explicit interpretation inferred from evidence. An insight may explain or
 reframe a problem, but remains distinguishable from its source evidence,
-an authorized decision, and executable work.
+a decision, and executable work.
 
 ### Question
 
@@ -138,7 +138,7 @@ produces are themselves evidence for verification and later learning.
 A task may or may not be in the context of a problem; most implement or test
 part of one problem's strategy, and work may be captured as a task before that
 relationship is clear. APS prescribes nothing further — no task states, no
-selection or authority machinery, no system of record, no tooling. Each
+selection rules, no system of record, no tooling. Each
 system's process decides how its tasks are chosen, represented, and tracked.
 
 ### Signal
@@ -161,14 +161,14 @@ that scope must be named; it is not a separate concept.
 
 ### Problem grooming
 
-The authority-governed processing of proposed, open, or closed problems. Source-
+The processing of proposed, open, or closed problems. Source-
 specific grooming may propose a problem after interpreting observations,
 issues, results, or insights, but problem grooming decides whether to open it,
 merge it with or use it to revise an existing problem, defer it, or reject it.
 For existing problems, grooming reviews relevance to the problem decomposition,
 evidence, impact, framing, strategy, signal, and priority and may retain,
 revise, address, close, or reopen them. The system's process defines cadence,
-participants, storage, and decision authority; event-driven, scheduled,
+participants, storage, and who decides; event-driven, scheduled,
 continuous, and mixed operation are all valid.
 
 ### Task grooming
@@ -226,7 +226,7 @@ problem.
 
 ### Open
 
-An authorized decision that the system treats a problem as part of its active
+The decision that the system treats a problem as part of its active
 decomposition. Problem grooming opens a problem when the proposal is evidenced,
 relevant to the system problem, and distinct from current problems; a proposal
 is not open until that decision is made, and opening a problem does not by
@@ -234,11 +234,11 @@ itself start work on it. `Open` is the first problem lifecycle state.
 
 ### Closed
 
-An authorized decision that the system will no longer treat a problem as open.
+The decision that the system will no longer treat a problem as open.
 A problem may close because it was solved, disproved, duplicated or replaced,
 moved outside the system boundary, ceased to matter to the system problem, or
-had its remaining risk explicitly accepted. Closure records the reason,
-evidence, and authority and does not imply “solved.” `Closed` is the second
+had its remaining risk explicitly accepted. Closure records the reason and
+its evidence and does not imply “solved.” `Closed` is the second
 problem lifecycle state. New evidence may justify reopening the problem.
 
 ### Learning
@@ -260,7 +260,8 @@ new evidence arrives.
 
 ### Adaptation
 
-An authority-governed change to future operation based on evidence and
-learning. Compilation proposes reusable knowledge; adaptation authorizes and
+A deliberate change to future operation based on evidence and
+learning. Compilation proposes reusable knowledge; adaptation accepts and
 applies a change to task selection, strategy, process, validation, stream,
-artifact, or system structure.
+artifact, or system structure. Who decides an adaptation is each system's
+process choice.

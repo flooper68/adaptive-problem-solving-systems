@@ -508,3 +508,26 @@ a broad decision making open tasks moot without a checklist that asks which
 ones — is recorded for the adversarial validation pass. Two Direction-level
 reviews remain before the order descends: authority, then subsystem and
 relationships.
+
+### 2026-08-06 — authority removed from the framework
+
+Source: [authority review session](../streams/working-sessions/2026-08-06-authority-review.md).
+
+The tenth concept review found authority used normatively across five
+vocabulary entries without ever being defined, one delegation principle
+stating the actual model, and "declared authority" wording left over from a
+declaration model that no longer declares anything. The operator recommended
+the shallow cut: keep the delegation principle, fix the residue. The
+maintainer cut deeper, and grounded it in the model itself: APS defines no
+owners or personas, so there can be no concept of authority — it can be part
+of a specific implementation, but not of the MVP.
+
+Decision: **remove** authority from the framework entirely — the seventh
+pruning disposition. The decisions it qualified are untouched; the framework
+simply no longer implies it defines who may make them. "Process participants"
+now carries the single boundary statement, and instance-level authority rules
+like Operations' maintainer-as-adaptation-approver stay where they are, as
+the ruling intends. The framework's concept-to-concept "owns" language and
+the source-of-truth sense of "authoritative" are unaffected; both are flagged
+for the teach-back pass. One Direction-level review remains: subsystem and
+relationships.

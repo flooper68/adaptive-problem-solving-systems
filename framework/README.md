@@ -44,7 +44,7 @@ flowchart LR
     evidence --> decompose
     evidence --> openProblems
     evidence --> compile["Compile knowledge"]
-    compile --> adapt["Adapt with declared authority"]
+    compile --> adapt["Adapt"]
     adapt --> problem
 ```
 
@@ -137,7 +137,7 @@ participants while the system remains accountable for using the resulting
 evidence and closing its loop.
 
 Loop ownership does not require every action or approval to reside inside the
-system boundary. The system's processes define who performs and authorizes each
+system boundary. The system's processes define who performs and approves each
 step.
 
 A **subsystem** is a child system used to decompose part of its parent's
@@ -280,7 +280,7 @@ unshaped action ready merely by prioritizing its problem.
 
 These are distinct decision responsibilities, but APS does not require separate
 meetings, tools, participants, or cadence. A system may implement both in one
-process invocation when it preserves the boundary and authority of each result.
+process invocation when it keeps the two results distinct.
 
 A problem is a long-running unit in the system's evolving problem
 hierarchy. It may remain open across many working sessions and tasks while its
@@ -306,7 +306,7 @@ view according to the system's process.
 
 ### Problem lifecycle and verification
 
-Problem creation separates source interpretation from problem authority. Each
+Problem creation separates source interpretation from the opening decision. Each
 information stream or operating process retains its own relevant observations,
 issues, results, and insights. The grooming appropriate to that source
 interprets those inputs and may propose a higher-level problem to solve. The
@@ -320,7 +320,7 @@ grooming from events, run it on a schedule such as cron, operate it
 continuously, or combine these approaches according to its problem and process.
 
 Problems have two lifecycle states: **open** and **closed**. A proposal enters
-the problem decomposition only when authorized problem grooming opens it with
+the problem decomposition only when problem grooming opens it with
 evidence, a desired outcome, a signal, a strategy, and demonstrated relevance to
 the system problem. The signal must be readable while the problem is open. A
 problem whose only stated signal is its desired outcome restated has no
@@ -330,7 +330,7 @@ stored; the system's processes choose their systems of record.
 The chosen problem system of record preserves a concise history of material
 decisions: why the problem was opened, meaningful reframing, changes to its
 strategy or signal, and why it was closed or reopened, with the supporting
-evidence and authority. It need not duplicate routine task activity, detailed
+evidence. It need not duplicate routine task activity, detailed
 discussion, or evidence already recoverable from their native sources.
 
 While the problem is open, tasks implement or test bounded parts of its
@@ -340,7 +340,7 @@ compares that evidence with the problem signal. The result may retain or revise
 the problem, its strategy, or its place in the hierarchy.
 
 **Solved** is an evidence-based assessment that the desired outcome occurred; it
-is not a lifecycle state. **Closed** is the separate authorized decision to
+is not a lifecycle state. **Closed** is the separate decision to
 remove a problem from active consideration. A problem may close because it was
 solved or for another recorded reason. New evidence may reopen it. Improvement
 of one problem becomes evidence for the broader problem hierarchy but does not
@@ -357,7 +357,7 @@ flowchart LR
     verification --> revise["Retain, revise, split, merge, or restructure"]
     revise --> open
     verification --> solved["Solved assessment"]
-    solved --> closure["Authorized closure decision"]
+    solved --> closure["Closure decision"]
     open -->|"Other closure reason"| closure
     closure --> closed["Closed"]
     closed -->|"New evidence"| grooming
@@ -443,8 +443,7 @@ required for every grooming invocation.
 
 Use validated learning to improve problem framing or decomposition, task
 selection, strategies, processes, streams, validation, knowledge, or subsystem
-structure.
-Adaptation follows the authority defined by the relevant process.
+structure. Who decides an adaptation belongs to the relevant process.
 
 ### 9. Continue, stop, or hand off
 
@@ -487,16 +486,13 @@ cross-system interactions belong in the problems, strategies, processes, or
 streams where they affect operation; APS does not require a universal relation
 registry.
 
-## Process participants and authority
+## Process participants
 
-APS does not require a system-wide role taxonomy or list. Each process defines
-the people, agents, or systems that participate in it and states who performs,
-reviews, validates, or approves its decisions. The same participant may act in
-several processes, and a process may be human-operated, agent-operated,
-automated, or mixed.
-
-Participation does not imply authority. Each process makes its applicable
-decision authority explicit rather than relying on a universal role name.
+APS defines no owners, personas, roles, or decision authorities. Who
+participates in a process and who makes which decision are choices each
+system's processes state for themselves. A process may be human-operated,
+agent-operated, automated, or mixed, and the same participant may act in
+several processes.
 
 ## Standard system capsule
 
@@ -565,7 +561,7 @@ work_sessions:
 ```
 
 The process owns invocation, participants, evidence use, decisions, outputs,
-stopping or observation boundaries, authority, and retention. The declaration
+stopping or observation boundaries, and retention. The declaration
 names a repeatable kind of work, not a historical invocation. Use an empty list
 when the system has no bounded session types.
 
@@ -576,7 +572,7 @@ when the system has no bounded session types.
    the problem.
 3. **Declare strategy.** Link the system's current direction.
 4. **Link the loop.** Point `process` to the process that implements planning,
-   execution, learning, adaptation, participation, and authority.
+   execution, learning, adaptation, and participation.
 5. **Declare work-session types.** List the bounded session types the system
    offers and link each defining process; use an empty list when there are none.
 6. **Declare streams.** Name the information sources used by the loop.
@@ -604,7 +600,7 @@ capsule and referenced sources:
 - How does verification evaluate attempts against the problem?
 - Which information streams does the loop use?
 - Do the linked processes make planning, execution, learning, adaptation,
-  participation, and authority inspectable?
+  and participation inspectable?
 - Which problem, strategy, or process links to another system when work is
   decomposed?
 

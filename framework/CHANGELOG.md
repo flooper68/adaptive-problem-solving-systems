@@ -3,6 +3,33 @@
 Simple history of material framework changes. Git remains the detailed audit
 trail.
 
+## 2026-08-06 — authority removed from the framework
+
+Removed authority as a framework notion. APS defines no owners, personas, or
+roles, so it has nothing to attach a concept of authority to; who participates
+in a process and who makes which decision are choices each system's processes
+state for themselves. The maintainer ruled this during the authority concept
+review: authority can be part of a specific implementation, but not of the
+MVP framework.
+
+The word never had a vocabulary entry, but it qualified decisions across the
+package: open and closed were "authorized decisions," problem grooming and
+adaptation were "authority-governed," the loop diagram adapted "with declared
+authority," and view 3 showed a "Declared approver." All of those qualifiers
+are gone. The decisions themselves are untouched — problem grooming still
+opens and closes problems, adaptation still accepts and applies changes — the
+framework just no longer implies that it defines who may make them.
+
+The "Process participants and authority" section became "Process
+participants" and now carries the single remaining statement of the boundary.
+"Declared authority" was residue from the earlier declaration model: SCHEMA.md
+had already excluded authority from the declaration, so nothing was declared
+anywhere. The creating-a-system steps, assessment checklist, and work-session
+process responsibilities dropped authority from their lists. Instance-level
+authority statements, such as Framework Operations naming its maintainer as
+adaptation approver, are unaffected — that is exactly where the ruling says
+such rules belong.
+
 ## 2026-07-27 — the task family reduced to Task and Task grooming
 
 Removed the `Task candidate`, `Selected task`, and `Task collection` vocabulary

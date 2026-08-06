@@ -28,7 +28,7 @@ Stream entries identify their purpose, source, access method, consuming
 process, and optional source-specific elicitation guidance. Their richer shape
 is retained pending the separate stream-concept review.
 
-Planning, execution, learning, participation, authority, uncertainty handling,
+Planning, execution, learning, participation, uncertainty handling,
 contextual artifacts, operating conditions, problem decomposition, and other
 relationships belong in the strategies, problems, processes, verification, or
 streams that own them. Systems may add fields for genuinely contextual needs,
