@@ -62,11 +62,11 @@ batch decisions.
      changes at the smallest level supported by their evidence — edit the
      system strategy only when the change should guide other problems.
    - An executable response is captured or linked as a task through
-     [`intake.md`](intake.md). Prefer the smallest bounded work that
+     [`intake.md`](../intake.md). Prefer the smallest bounded work that
      fits one working session; work addressing no open problem may still be
      selected when the maintainer accepts that explicitly.
    - A framework-worthy lesson is captured as a compilation task through
-     [`intake.md`](intake.md); a
+     [`intake.md`](../intake.md); a
      [`brainstorming`](brainstorming.md) session executes it. Grooming never
      edits the compiled framework.
    - Link records in both directions, and leave the item unchanged when no
@@ -110,6 +110,6 @@ directions, and any missing answer has an evidence request or next trigger.
   "Lessons and friction" note on what the session revealed about how the
   system works ("none" is a valid entry).
 - A material invocation updates the affected problems' `Current state`
-  sections and refreshes [`STATE.md`](../STATE.md) before delivery.
+  sections and refreshes [`STATE.md`](../../STATE.md) before delivery.
 - Raw transcripts, feedback, and research stay in their native recoverable
   sources, linked when material.

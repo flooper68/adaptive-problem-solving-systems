@@ -6,7 +6,7 @@ normative framework content.
 
 Use [framework feedback intake](../../processes/intake.md)
 to capture a report and
-[grooming](../../processes/grooming.md)
+[grooming](../../processes/sessions/grooming.md)
 to assess it. Actionable feedback links to a separate stewardship task
 so the reported experience remains distinguishable from a proposed response.
 

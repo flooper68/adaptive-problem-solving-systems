@@ -30,7 +30,7 @@ signal applies only to the artifact and delivery scope named by the
 specialized process; it does not approve unrelated changes or later normative
 adoption.
 
-[`Brainstorming`](brainstorming.md) treats the maintainer's acceptance of its
+[`Brainstorming`](sessions/brainstorming.md) treats the maintainer's acceptance of its
 reviewed result or explicit request to finish or end the session as approval to
 commit the bounded session changes and transmit them to the already configured
 `origin/main` without a separate delivery confirmation. An unresolved question,

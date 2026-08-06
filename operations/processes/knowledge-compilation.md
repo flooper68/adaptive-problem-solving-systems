@@ -9,7 +9,7 @@ adaptation is approved.
 
 ## Invocation
 
-This process runs only inside a [`brainstorming`](brainstorming.md) session
+This process runs only inside a [`brainstorming`](sessions/brainstorming.md) session
 (its Compile step). Grooming processes update their own artifacts — insight
 dispositions, feedback records, problem and task files — and do not edit the
 compiled framework directly. When any other work session or grooming

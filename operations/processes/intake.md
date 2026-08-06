@@ -6,7 +6,7 @@ Preserve a potentially useful input faithfully before assessing it. One
 process captures every input kind: a consumer's experience of APS (framework
 feedback), an interpretation drawn from evidence (insight), and a proposed
 executable response (task candidate). Intake preserves the record, its source,
-and its provenance; [`grooming`](grooming.md) decides what it becomes. A
+and its provenance; [`grooming`](sessions/grooming.md) decides what it becomes. A
 captured record is not established knowledge, an approved decision, or
 committed work merely because it was captured, and it must not be rewritten to
 fit a proposed solution.
@@ -72,7 +72,7 @@ related_work: []
 
 ## Grooming record
 
-Not yet groomed. See [`grooming.md`](../../processes/grooming.md).
+Not yet groomed. See [`grooming.md`](../../processes/sessions/grooming.md).
 ```
 
 Keep the observed experience, desired outcome, and suggested response
@@ -119,7 +119,7 @@ compiled_into: []
 
 ## Grooming record
 
-Not yet groomed. See [`grooming.md`](../../processes/grooming.md).
+Not yet groomed. See [`grooming.md`](../../processes/sessions/grooming.md).
 ```
 
 Record direct observations, external claims, participant interpretations, and
@@ -183,7 +183,7 @@ A captured record has a stable ID, a recoverable source, content another
 operator can understand, its clarification recorded or the pending reason
 noted, and the correct initial status (`received`, `captured`, or `open`). It
 carries no promise of priority, adoption, or implementation. The next possible
-action is [`grooming`](grooming.md). If the input reveals an urgent safety,
+action is [`grooming`](sessions/grooming.md). If the input reveals an urgent safety,
 security, legal, or data-loss concern, escalate to the maintainer immediately
 rather than waiting.
 

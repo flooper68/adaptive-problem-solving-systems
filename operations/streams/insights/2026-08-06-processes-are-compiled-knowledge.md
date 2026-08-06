@@ -89,4 +89,4 @@ Scope is operator inference from the repository's observed conventions.
 
 ## Grooming record
 
-Not yet groomed. See [`grooming.md`](../../processes/grooming.md).
+Not yet groomed. See [`grooming.md`](../../processes/sessions/grooming.md).

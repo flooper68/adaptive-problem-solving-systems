@@ -15,6 +15,6 @@ task, then follow the processes it declares under `operations/processes/`.
 Problems own long-running gaps and strategies; tasks implement one bounded part
 and should normally finish in one working session. Keep changes uncommitted
 while the session is under review. When the maintainer accepts the result or
-asks to finish the session, follow `operations/processes/brainstorming.md`:
+asks to finish the session, follow `operations/processes/sessions/brainstorming.md`:
 validate, commit the reviewed session scope, and push it to `origin/main` before
 reporting the session as finished.

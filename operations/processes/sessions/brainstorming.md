@@ -33,11 +33,11 @@ the result reaches an accepted stopping point.
    defects, not blind spots — record when only the proposing agent reviewed.
 6. **Compile.** Apply the current conclusions directly as uncommitted changes to
    the authoritative framework knowledge or system instantiation. For framework
-   knowledge, follow [`knowledge-compilation.md`](knowledge-compilation.md); for
+   knowledge, follow [`knowledge-compilation.md`](../knowledge-compilation.md); for
    an instantiation, follow its declared compilation process. Brainstorming is
    the only work session that edits the compiled framework; other sessions and
    grooming processes update their own artifacts and capture framework-worthy
-   lessons as tasks through [`intake.md`](intake.md), which a
+   lessons as tasks through [`intake.md`](../intake.md), which a
    brainstorming session executes. Update the
    artifact's simple changelog when its compiled knowledge materially changes.
    Do not create a parallel candidate folder, compilation report, or manifest.
@@ -52,7 +52,7 @@ the result reaches an accepted stopping point.
    authorizes transmitting the reviewed scope to the repository's configured
    `origin/main`; do not ask for a separate commit or push confirmation.
 9. **Deliver an accepted session.** Run relevant validation, refresh the
-   affected problems' `Current state` sections and [`STATE.md`](../STATE.md)
+   affected problems' `Current state` sections and [`STATE.md`](../../STATE.md)
    as part of the session scope, stage only the
    session-scoped changes, commit them, and push the approved commit to
    the already configured `origin/main` without another prompt. Do not change

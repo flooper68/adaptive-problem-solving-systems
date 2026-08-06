@@ -123,4 +123,4 @@ source correction was requested before delivery.
 ## Grooming record
 
 Not yet groomed. See
-[`grooming.md`](../../processes/grooming.md).
+[`grooming.md`](../../processes/sessions/grooming.md).
