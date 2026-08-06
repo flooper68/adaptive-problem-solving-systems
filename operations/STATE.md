@@ -3,8 +3,8 @@
 A derived view for orientation; problem, task, and session files stay
 authoritative and win on any conflict. Refreshed as part of session delivery.
 
-**As of:** 2026-08-06, [learning-loop application
-session](streams/working-sessions/2026-08-06-learning-loop-application.md).
+**As of:** 2026-08-06, [automated-brainstorming revision
+session](streams/working-sessions/2026-08-06-automated-session-precondition-stop.md).
 
 ## Open problems
 
@@ -15,14 +15,17 @@ session](streams/working-sessions/2026-08-06-learning-loop-application.md).
 
 ## Recent deliveries
 
+- Automated sessions redefined as autonomous brainstorming with no
+  preconditions; the experimental types renamed to `automated-brainstorming`
+  and `automated-grooming` (this session).
+- Experimental automated session types defined (`30462aa`).
 - Authority removed from the framework (`b3c9fc1`).
-- Grooming consolidation (`dd63166`); start-simple insight (`a389c07`).
-- Learning-loop application (this session).
 
 ## Next
 
-1. Last Direction-level concept review:
-   `apss.review-subsystem-and-relationships`.
+1. Last Direction-level concept review
+   (`apss.review-subsystem-and-relationships`), runnable as the first
+   automated brainstorming session.
 2. First full grooming invocation under the consolidated process (pending
    items: remaining ungroomed insights and feedback, stale task review).
 3. Heartbeat trial: run 1–2 such invocations before deciding whether to

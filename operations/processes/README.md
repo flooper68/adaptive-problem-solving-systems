@@ -14,8 +14,8 @@ processes support them.
 | Capture inputs (feedback, insights, task candidates) | [`intake.md`](intake.md) |
 | Assess inputs and decide (all kinds, incl. problems) | [`grooming.md`](sessions/grooming.md) |
 | Deliberate and compile changes | [`brainstorming.md`](sessions/brainstorming.md), [`knowledge-compilation.md`](knowledge-compilation.md) |
-| Execute a selected task autonomously (experimental) | [`sessions/automated-session.md`](sessions/automated-session.md) |
-| Propose dispositions autonomously (experimental) | [`sessions/automatic-grooming.md`](sessions/automatic-grooming.md) |
+| Brainstorm autonomously on a named task or topic (experimental) | [`sessions/automated-brainstorming.md`](sessions/automated-brainstorming.md) |
+| Propose dispositions autonomously (experimental) | [`sessions/automated-grooming.md`](sessions/automated-grooming.md) |
 | Check results against signals | [`verification.md`](verification.md) |
 | Adopt and publish | [`framework-adaptation.md`](framework-adaptation.md), [`release.md`](release.md) |
 | Agent conduct and handoffs | [`ai-agent-tasks.md`](ai-agent-tasks.md) |

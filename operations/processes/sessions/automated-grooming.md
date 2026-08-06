@@ -1,4 +1,4 @@
-# Automatic grooming
+# Automated grooming
 
 ## Purpose
 

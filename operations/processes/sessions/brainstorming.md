@@ -34,11 +34,13 @@ the result reaches an accepted stopping point.
 6. **Compile.** Apply the current conclusions directly as uncommitted changes to
    the authoritative framework knowledge or system instantiation. For framework
    knowledge, follow [`knowledge-compilation.md`](../knowledge-compilation.md); for
-   an instantiation, follow its declared compilation process. Brainstorming is
-   the only work session that edits the compiled framework; other sessions and
-   grooming processes update their own artifacts and capture framework-worthy
-   lessons as tasks through [`intake.md`](../intake.md), which a
-   brainstorming session executes. Update the
+   an instantiation, follow its declared compilation process. Brainstorming and
+   [automated brainstorming](automated-brainstorming.md), which runs it
+   autonomously,
+   are the only work sessions that edit the compiled framework; other sessions
+   and grooming processes update their own artifacts and capture
+   framework-worthy lessons as tasks through [`intake.md`](../intake.md),
+   which a brainstorming session executes. Update the
    artifact's simple changelog when its compiled knowledge materially changes.
    Do not create a parallel candidate folder, compilation report, or manifest.
 7. **Review iteratively.** Present the changes to the maintainer, incorporate

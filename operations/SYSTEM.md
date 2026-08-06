@@ -13,12 +13,12 @@ work_sessions:
   - id: grooming
     description: Review captured inputs — feedback, insights, task candidates, problems, and verification evidence — with the maintainer and record one approved disposition per item, guided by the system strategy.
     process: processes/sessions/grooming.md
-  - id: automated
-    description: Execute one maintainer-selected bounded task autonomously, have an independent reviewer agent examine the uncommitted result, and present the changes with the review findings for maintainer approval before delivery. Experimental.
-    process: processes/sessions/automated-session.md
-  - id: automatic-grooming
+  - id: automated-brainstorming
+    description: Run a brainstorming session autonomously on one maintainer-named task or topic, deciding and compiling as the maintainer would, have an independent reviewer agent examine the uncommitted result, and present the changes with the recorded decisions and review findings for maintainer approval before delivery. Experimental.
+    process: processes/sessions/automated-brainstorming.md
+  - id: automated-grooming
     description: Groom captured inputs autonomously into proposed dispositions, have an independent reviewer agent check the proposals, and present them for per-item maintainer approval before recording and delivery. Experimental.
-    process: processes/sessions/automatic-grooming.md
+    process: processes/sessions/automated-grooming.md
 
 streams:
   - id: working-sessions
