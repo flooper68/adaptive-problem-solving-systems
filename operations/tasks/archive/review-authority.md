@@ -1,9 +1,10 @@
 ---
 id: apss.review-authority
 type: review
-status: open
+status: closed
 owner: APS framework maintainer
 created: 2026-07-11
+closed: 2026-08-06
 addresses: [P1]
 source: Conceptual simplification strategy session
 ---
@@ -28,4 +29,11 @@ downstream questions are captured without expanding this task.
 
 ## Current state
 
-Ready. Select after the system and boundary concepts have been reviewed.
+Closed with a **remove** disposition, decided and accepted in the
+[2026-08-06 authority review session](../../streams/working-sessions/2026-08-06-authority-review.md):
+authority is not an APS concept — APS defines no owners or personas, so there
+is nothing for a concept of authority to attach to; it belongs to specific
+implementations. The seventh pruning disposition under P1. The framework
+package, P1's grooming history, and the session record carry the change; the
+"authoritative"-versus-authority wording question is flagged for the
+teach-back validation pass.
