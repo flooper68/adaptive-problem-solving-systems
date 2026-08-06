@@ -91,13 +91,24 @@ it remains a problem in the current system's decomposition. The same solved-
 versus-closed distinction applies to the root problem; the system's process
 defines what root closure means for the system's subsequent lifecycle.
 
+### Child system
+
+A system whose system problem was split off from another system's problem
+with its own independent boundary and complete loop. The originating problem
+definition, strategy, or process records the link; the child does not declare
+a parent. Being a child names only that origin: the child owns its complete
+loop and is an ordinary system in every other way, and APS defines no
+separate subsystem concept. An entity that is only part of how a system
+operates, rather than an instantiation owning its own loop, is a process or
+capability, not a child system.
+
 ### System strategy
 
 The system's current theory and approach for solving its system problem: how it
 interprets evidence, decomposes and compares smaller problems and possible
 responses, guides their problem strategies, executes work, verifies results,
-learns, adapts, and coordinates its subsystems. Its scope is system-wide; each
-problem strategy covers only that problem. It is the sibling
+learns, adapts, and coordinates its child systems. Its scope is
+system-wide; each problem strategy covers only that problem. It is the sibling
 `STRATEGY.md` document linked from `SYSTEM.md` and changes through adaptation
 when evidence warrants it.
 

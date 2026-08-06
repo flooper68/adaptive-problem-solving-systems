@@ -77,7 +77,7 @@ flowchart LR
     compiler --> knowledge["Compiled knowledge artifact"]
     knowledge --> proposal["Adaptation proposal"]
     proposal --> decision["Adaptation decision"]
-    decision --> strategy["Strategy / process / subsystem change"]
+    decision --> strategy["Strategy / process / child-system change"]
     strategy --> nextRun["Next execution"]
     nextRun --> streams
 ```
@@ -159,7 +159,7 @@ the system definition.
 - Start with the smallest useful view; reveal detail by branch or system.
 - Use system names and problem labels, not folder paths, as visible text.
 - Pair edge labels with line styles; do not rely on color alone.
-- Keep problem-decomposition edges visually distinct from artifact, evidence,
-  and governance relationships.
+- Keep problem-decomposition edges visually distinct from artifact and
+  evidence relationships.
 - A diagram with no verification or feedback edge is a prompt to check whether
   the declared loop is actually closed.

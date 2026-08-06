@@ -79,7 +79,7 @@ is part of its strategy and may itself evolve.
   system problem, including how it interprets evidence, decomposes and compares
   smaller problems and possible responses, guides their problem strategies,
   executes work, verifies results, learns, adapts, and coordinates its
-  subsystems. `SYSTEM.md` links it through `strategy` to the sibling
+  child systems. `SYSTEM.md` links it through `strategy` to the sibling
   `STRATEGY.md` document.
 - **Open and closed** — the two lifecycle states of a problem. Problem grooming
   opens an evidenced proposal into the system's active decomposition and later
@@ -116,7 +116,7 @@ For example:
 - **Tasks:** bounded concept reviews implement that strategy; their results
   feed verification, learning, and later revisions to the hierarchy.
 
-### System and subsystem
+### System and child system
 
 An **adaptive problem-solving system** is one concrete instantiation of APS.
 It owns a problem statement and an iterative loop for solving that problem. In
@@ -140,13 +140,12 @@ Loop ownership does not require every action or approval to reside inside the
 system boundary. The system's processes define who performs and approves each
 step.
 
-A **subsystem** is a child system used to decompose part of its parent's
-problem. The originating problem definition, strategy, or process links to the
-child; the child does not declare a parent. The child owns its problem-solving
-loop even when the decomposing system supplies feedback, verification, or
-insights. If an entity is only part of how a system operates rather than an
-instantiation responsible for a problem-solving loop, model it as a **process**
-or **capability** instead.
+A **child system** is a system whose system problem was split off from its
+parent's problem; [VOCABULARY.md](VOCABULARY.md) carries its exact boundary.
+The child owns its problem-solving loop even when the decomposing system
+supplies feedback, verification, or insights. Do not model an entity that is
+only part of how a system operates as a child system; it is a **process** or
+**capability** inside its accountable parent.
 
 APS does not prescribe a lifecycle process, including whether solving a
 system's problem retires it or causes another transition. The system defines
@@ -448,8 +447,9 @@ required for every grooming invocation.
 ### 8. Adapt
 
 Use validated learning to improve problem framing or decomposition, task
-selection, strategies, processes, streams, validation, knowledge, or subsystem
-structure. Who decides an adaptation belongs to the relevant process.
+selection, strategies, processes, streams, validation, knowledge, or
+child-system structure. Who decides an adaptation belongs to the relevant
+process.
 
 ### 9. Continue, stop, or hand off
 
@@ -610,9 +610,9 @@ capsule and referenced sources:
 - Which problem, strategy, or process links to another system when work is
   decomposed?
 
-Missing answers are explicit design gaps. Do not invent a subsystem merely to
-fill a diagram: either implement its full adaptive loop or keep the behavior as
-a process/capability inside an accountable parent.
+Missing answers are explicit design gaps. Do not invent a child system merely
+to fill a diagram: either implement its full adaptive loop or keep the behavior
+as a process/capability inside an accountable parent.
 
 ## Visual orientation
 

@@ -3,6 +3,33 @@
 Simple history of material framework changes. Git remains the detailed audit
 trail.
 
+## 2026-08-06 — subsystem merged into child system; relationship model confirmed minimal
+
+Unified two names for one relationship. The framework called a system created
+by problem decomposition both a "subsystem" (the framework definition's bold
+term and section heading) and a "child system" (the vocabulary's System
+problem entry, the Problem decomposition section, and most of the
+visualization guide). Every use now says "child system" — the term that names
+the origin plainly and was already the majority spelling. The definition also
+states explicitly that being a child names only that origin: the child is an
+ordinary system in every other way, and APS defines no separate subsystem
+concept. A concise `Child system` vocabulary entry now carries the meaning
+and boundary in one place — previously the becoming-a-child condition sat in
+`System problem`, the link rule in `Adaptive problem-solving system`, and the
+process/capability boundary only in the framework definition — and the
+definition's paragraph was trimmed to the operational explanation with a
+vocabulary reference, per the compilation principle that the vocabulary
+carries a concept's exact meaning and boundary.
+
+The system-relationship model itself was reviewed and confirmed as already
+minimal: the originating problem definition, strategy, or process links to the
+child, the child declares no parent, and other cross-system interactions live
+in the problems, strategies, processes, or streams they affect — no relation
+registry, parent fields, or cardinality rules. One piece of orphaned wording
+was cleaned up in passing: the visualization discipline no longer speaks of
+"governance relationships," a distinction left without a referent once
+authority was removed from the framework.
+
 ## 2026-08-06 — current state defined as a first-class concept
 
 Added `Current state` to the vocabulary. The framework had leaned on the term

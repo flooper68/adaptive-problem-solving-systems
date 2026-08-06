@@ -9,20 +9,21 @@ opened: 2026-07-10
 
 ## Current state
 
-As of 2026-08-06 ([current-state concept
-session](../streams/working-sessions/2026-08-06-current-state-concept.md)):
+As of 2026-08-06 ([subsystem and relationships review
+session](../streams/working-sessions/2026-08-06-subsystem-and-relationships-review.md)):
 
-- **Recently:** current state promoted to a first-class framework concept —
-  the first evidence-driven addition under strategy point 4 after seven
-  prunings; before that, automated sessions redefined as autonomous
-  brainstorming and authority removed from the framework.
-- **In flight:** two ungroomed stream-declaration feedback records
-  (2026-08-06) await grooming.
-- **Next:** the last Direction-level concept review
-  (`apss.review-subsystem-and-relationships`); the first full grooming
-  invocation under the consolidated process; heartbeat runs as ordinary
-  grooming invocations before any declaration. P1's own signal rewrite
-  remains open from the problem-signal review.
+- **Recently:** the last Direction-level concept review delivered — subsystem
+  merged into child system, run as the first automated brainstorming
+  invocation (this session); current state promoted to a first-class
+  framework concept, the first evidence-driven addition under strategy
+  point 4 after seven prunings (`dfc62a4`).
+- **In flight:** the grooming-cadence declaration session awaits delivery;
+  two ungroomed stream-declaration feedback records (2026-08-06) await
+  grooming.
+- **Next:** the first full grooming invocation under the consolidated
+  process — now due under the declared cadence of one grooming per three
+  working sessions. P1's own signal rewrite remains open from the
+  problem-signal review.
 
 ## Parent problem
 
@@ -278,7 +279,7 @@ root plus archive is therefore an Operations choice, not a normative APS rule.
 ### 2026-07-12 — goal removed and problem hierarchy clarified
 
 Source: [current system-problem review](../streams/working-sessions/2026-07-12-system-problem-review.md)
-and [maintainer feedback](../streams/framework-feedback/2026-07-12-problem-hierarchy-and-goal-ambiguity.md).
+and [maintainer feedback](../streams/framework-feedback/archived/2026-07-12-problem-hierarchy-and-goal-ambiguity.md).
 
 The maintainer could not form a coherent top-down model from the separate
 system-problem, goal, open-problem, and strategy definitions. The framework
@@ -314,13 +315,13 @@ root-problem replacement transition.
 
 The maintainer also proposed surprise, excess resource use, and verification
 regression as possible review signals. The separately
-[groomed insight](../streams/insights/2026-07-12-surprise-cost-and-verification-regression-signals.md)
+[groomed insight](../streams/insights/archived/2026-07-12-surprise-cost-and-verification-regression-signals.md)
 is compiled provisionally as recommended framework guidance with process-
 specific implementation details.
 
 The maintainer later proposed learning from decision quality, harmful choices,
 course corrections, and causal hypotheses. That remains a separate
-[groomed insight](../streams/insights/2026-07-12-learning-from-decision-quality-and-course-correction.md),
+[groomed insight](../streams/insights/archived/2026-07-12-learning-from-decision-quality-and-course-correction.md),
 compiled provisionally as lightweight framework learning guidance.
 
 ### 2026-07-26 — system strategy retained
@@ -567,3 +568,35 @@ Decision: **retain and address under P1**. Heartbeat runs as ordinary
 grooming invocations first and may be declared after observed use.
 Reconsideration trigger: if the learning-loop work outgrows P1's signal or
 survives P1's closure, propose it as its own problem.
+
+### 2026-08-06 — subsystem merged into child system; relationship model confirmed
+
+Source: [subsystem and relationships review
+session](../streams/working-sessions/2026-08-06-subsystem-and-relationships-review.md),
+the first automated brainstorming invocation.
+
+The eleventh and last Direction-level concept review found no machinery to
+prune — earlier reviews had already removed parent fields, the relation
+registry, and universal cardinality — but found one concept under two names:
+the framework definition bold-defined "subsystem" while the vocabulary,
+the Problem decomposition section, and most of the visualization guide said
+"child system." The same missing-analogue heuristic that exposed prior
+duplicates applied: problem decomposition needs no "subproblem" entry, so
+system decomposition needs no separate subsystem concept.
+
+Proposed disposition, taken autonomously per the session type and pending
+maintainer review: **merge** the term into "child system" everywhere and state
+in the definition that being a child names only the decomposition origin. The
+independent agent review overturned the session's initial no-vocabulary-entry
+choice: the concept's rules were scattered — the becoming-a-child condition
+in `System problem`, the link rule in `Adaptive problem-solving system`, the
+process/capability boundary only in the framework definition — and the
+compilation principle places a concept's meaning and boundary in the
+vocabulary, so a concise `Child system` entry consolidates them and the
+definition paragraph was trimmed to its operational explanation. The
+parent-side link model (child declares no parent) was confirmed as the whole
+relationship model. Orphaned "governance relationships"
+wording in the visualization discipline — left without a referent by the
+authority removal, though predating it — was cleaned up in passing. This
+closes the Direction-level portion of the review order; the review order
+descends next.
