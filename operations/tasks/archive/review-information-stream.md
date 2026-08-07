@@ -6,6 +6,7 @@ owner: APS framework maintainer
 agent: Claude Code operator
 created: 2026-07-11
 closed: 2026-08-07
+delivery: bd6dd52
 addresses: [P1]
 source: Conceptual simplification strategy session
 ---
