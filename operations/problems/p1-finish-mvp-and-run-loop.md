@@ -9,23 +9,26 @@ opened: 2026-07-10
 
 ## Current state
 
-As of 2026-08-07 ([first cadenced grooming
-session](../streams/working-sessions/2026-08-06-first-cadenced-grooming.md)):
+As of 2026-08-07 ([information-stream review
+session](../streams/working-sessions/2026-08-07-information-stream-review.md)):
 
-- **Recently:** the first cadenced grooming invocation ran as automated
-  grooming — all thirteen ungroomed stream records dispositioned and
-  archived, three stale tasks closed, six kept tasks given reconsideration
-  triggers, one task captured (`apss.colocate-system-declaration`), and P1's
-  signal rewritten to be readable at any time, closing the gap open since
-  the problem-signal review.
-- **Signal reading (first under the new signal):** 11 of the concept-review
-  inventory reviewed, 19 review tasks remain; grooming, compilation,
-  adaptation, and delivery have each run at least one real invocation, while
-  teach-back and adversarial verification have not; the maintainer's
-  understand-and-run answer is untested since the consolidation.
-- **Next:** the information-stream concept review (selected; three groomed
-  feedback records supply its evidence), then the start-simple compilation
-  brainstorming session (ready), then `apss.colocate-system-declaration`.
+- **Recently:** the twelfth concept review executed and delivered as the
+  second automated-brainstorming invocation — information stream retained
+  with no lifecycle machinery, its declaration entry cut to `id`,
+  `description`, `process` per the maintainer's groomed feedback, an
+  `Information stream` vocabulary entry added, and stream consumption
+  stated as a responsibility with named propagation targets. The agent
+  reviewer's findings were resolved before delivery; decision 4 (the
+  implied-source sentence) is the one the maintainer might still reverse
+  on later reading.
+- **Signal reading:** 12 of the concept-review inventory reviewed, 18
+  review tasks remain; grooming, compilation, adaptation, and delivery have
+  each run at least one real invocation, while teach-back and adversarial
+  verification have not; the maintainer's understand-and-run answer is
+  untested since the consolidation.
+- **Next:** the start-simple compilation brainstorming session (ready),
+  then `apss.colocate-system-declaration`; after the next cadenced grooming
+  invocation, assess the three-session interval.
 
 ## Parent problem
 
@@ -663,3 +666,29 @@ start-simple compilation session. An independent reviewer agent checked all
 proposals before the maintainer's per-item approval; its four findings were
 accepted and folded in. This is cadenced invocation one of the two after
 which the three-session interval itself is assessed.
+
+### 2026-08-07 — information stream retained; declaration entry cut to three fields
+
+Source: [information-stream review
+session](../streams/working-sessions/2026-08-07-information-stream-review.md),
+the second automated brainstorming invocation. Dispositions were taken
+autonomously per the session type and delivered on the maintainer's finish
+directive after two agent-review passes; each remains reversible by
+follow-up, decision 4 most plausibly.
+
+The twelfth concept review, and the first below Direction level, found the
+concept itself sound — genuinely needed by the loop, no lifecycle machinery,
+authoritative state in the declaration — but its definition scattered and
+its declaration surface overgrown. Proposed dispositions: **retain** the
+concept; cut the stream entry to `id`, `description`, `process`, adopting
+the maintainer's groomed three-field feedback and mirroring `work_sessions`;
+add an `Information stream` vocabulary entry consolidating the definition
+per the compilation principle; state stream consumption as a responsibility
+rather than a permission, with grooming's propagation targets named
+(problems, tasks, compiled knowledge); and codify that a source the
+declaration already implies, such as working-session records, needs no
+separate entry — the one decision extending a ruling the maintainer had
+previously kept operational, flagged for review accordingly. The removed
+`grill` guidance was verified to survive in `intake.md` and
+`streams/README.md` before removal. This resolves SCHEMA.md's note deferring
+the stream shape to this review, open since 2026-07-26.

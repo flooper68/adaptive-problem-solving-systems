@@ -3,6 +3,37 @@
 Simple history of material framework changes. Git remains the detailed audit
 trail.
 
+## 2026-08-07 — information stream defined; stream declarations cut to three fields
+
+The twelfth concept review retained information streams and simplified how
+they are declared. A stream entry now has the same shape as a work-session
+entry — an `id`, a `description` of what the stream carries (mentioning
+source or capture method when relevant), and the `process` that consumes it —
+replacing the five-field shape (`purpose`, `source`, `access`, `consumed_by`,
+`grill`) whose per-stream fields the maintainer reported as unnecessary
+information and a maintenance burden inviting drift. Elicitation guidance the
+optional `grill` field carried belongs to the consuming or capture process.
+The declaration contract's note deferring the stream shape to this review is
+resolved.
+
+Added `Information stream` to the vocabulary, consolidating a definition the
+framework definition had carried only as a bold term in its stream section.
+The entry states the boundary — a stream makes information available, the
+records it carries are the evidence, and acting on them is the deliberate
+work of the processes that consume the stream — plus two rules responding
+to the groomed feedback: a declared stream that no process consumes is a
+declaration defect, not a working input, and grooming what a stream carries
+may propose or revise problems, shape bounded tasks, or feed compiled
+knowledge, with capture alone committing the system to none of these. The
+grooming responsibility in `Adaptive problem-solving system` now explicitly
+covers what every declared stream carries — closing the gap where the
+vocabulary granted only permission to groom per stream — while
+implementation may still differ per problem or stream. A source the
+declaration already implies, such as the records of a declared work session,
+needs no separate entry, matching the delivered Operations example. Streams
+own no lifecycle states; adding or removing an entry is an ordinary
+declaration change.
+
 ## 2026-08-06 — subsystem merged into child system; relationship model confirmed minimal
 
 Unified two names for one relationship. The framework called a system created

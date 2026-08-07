@@ -22,8 +22,9 @@ One concrete instantiation of APS. It owns a problem statement and an
 iterative loop that uses strategy, planned work, information inputs,
 verification, information grooming, learning, compiled knowledge, and
 adaptation to solve that problem. Grooming is the general responsibility to
-process relevant information and make decisions from it; a system may implement
-different grooming for each problem or input stream. These are system
+process relevant information — including what every declared stream
+carries — and make decisions from it; a system may implement different
+grooming for each problem or input stream. These are system
 responsibilities rather than a prescribed sequence of separate processes or
 components. Each system defines the processes that implement them. Other
 participants, including a parent system, may supply feedback, verification,
@@ -113,6 +114,26 @@ system-wide; each problem strategy covers only that problem. It is the sibling
 when evidence warrants it.
 
 ## Evidence and interpretation
+
+### Information stream
+
+A source of observations relevant to the system: working-session records,
+meetings, customer threads, runtime logs, test results, feedback, research,
+experiments, or another system's artifacts. A stream makes information
+available; the records it carries are the evidence, and acting on them is
+the deliberate work of the processes that consume the stream.
+
+A system's declaration lists its relevant streams, each naming the process
+that consumes what it carries; the declaration contract owns the entry's
+field shape. A source the declaration already implies, such as the records
+of a declared work session, needs no separate entry. A declared stream that
+no process consumes is a declaration defect, not a working input. Streams
+own no lifecycle states; adding or removing an entry is an ordinary
+declaration change.
+
+Grooming what a stream carries may propose or revise problems, shape
+bounded tasks, or feed compiled knowledge; capture alone commits the system
+to none of these.
 
 ### Evidence
 

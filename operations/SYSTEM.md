@@ -22,28 +22,16 @@ work_sessions:
 
 streams:
   - id: insights
-    purpose: Preserve independently useful interpretations with their source evidence, reasoning, scope, uncertainty, and explicit epistemic disposition.
-    source: Maintainer, contributor, validator, consumer, and agent interpretations derived from declared evidence streams.
-    access: Capture insights under streams/insights/ with processes/intake.md and assess them with processes/sessions/grooming.md.
-    consumed_by: processes/sessions/grooming.md
-    grill: Follow processes/intake.md; ask one load-bearing question at a time about the source evidence, inference, scope, alternatives, and possible use.
+    description: Independently useful interpretations with their source evidence, reasoning, scope, and uncertainty, captured under streams/insights/ with processes/intake.md.
+    process: processes/sessions/grooming.md
   - id: framework-feedback
-    purpose: Preserve direct consumer reports about understanding, applying, or adopting APS and explicitly disposition them.
-    source: Framework users, maintainers, reviewers, and adopters reporting an experience.
-    access: Capture reports under streams/framework-feedback/ with processes/intake.md and assess them with processes/sessions/grooming.md.
-    consumed_by: processes/sessions/grooming.md
-    grill: Ask what the reporter attempted, what happened, what they expected, what effect the gap had, and what evidence can be retained.
+    description: Direct consumer reports about understanding, applying, or adopting APS, captured under streams/framework-feedback/ with processes/intake.md.
+    process: processes/sessions/grooming.md
   - id: framework-usage
-    purpose: Learn whether APS is understandable and useful when applied.
-    source: Framework Operations, consumer trials, reviews, and other observed applications.
-    access: Retain durable summaries or references as described in streams/README.md.
-    consumed_by: processes/process.md
-    grill: Ask what the user attempted, where interpretation was uncertain, what APS exposed, and whether the resulting change helped.
+    description: Observed applications, trials, and reviews showing whether APS is understandable and useful, retained as durable summaries or references per streams/README.md.
+    process: processes/process.md
   - id: external-foundations
-    purpose: Compare APS choices with established theory and practice.
-    source: Authoritative research and domain references.
-    access: Preserve citations and a synthesis in the relevant research work item or retained evidence.
-    consumed_by: processes/process.md
-    grill: null
+    description: Authoritative research and domain references compared with APS choices, retained as citations and syntheses in the relevant work item or evidence.
+    process: processes/process.md
 
 ---

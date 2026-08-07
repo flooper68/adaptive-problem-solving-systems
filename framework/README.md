@@ -201,9 +201,11 @@ native record is already durable.
 
 ### Stream, raw evidence, and compiled knowledge
 
-- An **information stream** is a source of observations relevant to the system:
-  working-session records, meetings, customer threads, runtime logs, test results, feedback,
-  research, experiments, or another system's artifacts.
+- An **information stream** is a source of observations relevant to the
+  system, from working-session records and runtime logs to feedback,
+  research, or another system's artifacts; the
+  [vocabulary](VOCABULARY.md#information-stream) carries its exact meaning
+  and boundary.
 - **Raw evidence** is source material kept recoverable whenever possible. It may
   be copied into the system or referenced in an external system of record.
 - **Compiled knowledge** is a reusable synthesis derived from evidence: a wiki,
@@ -310,7 +312,9 @@ view according to the system's process.
 Problem creation separates source interpretation from the opening decision. Each
 information stream or operating process retains its own relevant observations,
 issues, results, and insights. The grooming appropriate to that source
-interprets those inputs and may propose a higher-level problem to solve. The
+interprets those inputs and may propose a higher-level problem to solve —
+one of the propagation targets named in the
+[vocabulary](VOCABULARY.md#information-stream). The
 proposal is not yet an open problem: problem grooming decides whether to open a
 new problem, merge it with or use it to revise an existing problem, defer it,
 or reject it.
@@ -539,20 +543,21 @@ the declaration must resolve.
 
 ## Lightweight stream declarations
 
-Streams are heterogeneous, so APS standardizes only a small interface:
+Streams are heterogeneous, so APS standardizes only a small interface — the
+same shape as a work-session entry:
 
 ```yaml
 streams:
   - id: customer-discussions
-    purpose: Learn where the current workflow creates friction.
-    source: Async customer discussion threads.
-    access: External system reference or retained summary.
-    consumed_by: processes/compile-product-knowledge.md
-    grill: processes/customer-feedback-grill.md
+    description: Async customer threads showing where the current workflow creates friction, kept as retained summaries.
+    process: processes/compile-product-knowledge.md
 ```
 
-Systems may add retention, privacy, schema, normalization, or reliability fields
-when their problem requires them. They are not universal framework ceremony.
+The description says what the stream carries and, when relevant, where it
+comes from and how it is captured. The process link names the process that
+consumes what the stream carries. Systems may add retention, privacy, schema,
+normalization, or reliability fields when their problem requires them. They
+are not universal framework ceremony.
 
 ## Work-session declarations
 

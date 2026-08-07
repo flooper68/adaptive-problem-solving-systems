@@ -24,9 +24,9 @@ APS does not mandate particular work-session types. Each entry has a local
 has no bounded session types. Continuous and automated processes remain in the
 linked loop without artificial session declarations.
 
-Stream entries identify their purpose, source, access method, consuming
-process, and optional source-specific elicitation guidance. Their richer shape
-is retained pending the separate stream-concept review.
+Stream entries have the same shape as work-session entries: a local `id`, a
+`description` of what the stream carries — mentioning source or capture
+method when relevant — and the `process` that consumes it.
 
 Planning, execution, learning, participation, uncertainty handling,
 contextual artifacts, operating conditions, problem decomposition, and other
@@ -59,11 +59,8 @@ work_sessions: [] # entries use id, description, and process
 
 streams:
   - id: <stream-id>
-    purpose: <why the system reads this stream>
-    source: <native source or location>
-    access: <how the evidence is captured or retrieved>
-    consumed_by: <process or responsibility>
-    grill: null # optional source-specific elicitation guidance
+    description: <what the stream carries, with source or capture when relevant>
+    process: <path to the process that consumes what the stream carries>
 ---
 ```
 
