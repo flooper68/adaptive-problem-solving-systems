@@ -67,3 +67,10 @@ APS vocabulary with exact framework meanings. This is a smaller and distinct
 result from the candidate's broader generated domain-dictionary concept. The
 candidate remains captured for later grooming rather than treating the initial
 vocabulary as evidence that every system needs such a dictionary.
+
+### 2026-08-07 — keep; reconsideration trigger recorded
+
+Groomed in the
+[first cadenced grooming invocation](../streams/working-sessions/2026-08-06-first-cadenced-grooming.md);
+approved by the maintainer. Kept open without current work — out of P1's MVP
+scope. Reconsider when: terminology confusion is observed in use or feedback.

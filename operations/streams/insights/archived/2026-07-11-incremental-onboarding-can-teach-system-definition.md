@@ -1,7 +1,7 @@
 ---
 id: apss.insight.incremental-onboarding-can-teach-system-definition
 type: insight
-status: captured
+status: groomed
 captured: 2026-07-11
 source: APSS framework maintainer
 source_records: []
@@ -131,5 +131,14 @@ priority, disposition, or implementation.
 
 ## Grooming record
 
-Not yet groomed. See
-[`grooming.md`](../../processes/sessions/grooming.md).
+### 2026-08-07 — keep
+
+- **Participants:** APS framework maintainer, Claude Code operator,
+  independent reviewer agent
+  ([session](../../working-sessions/2026-08-06-first-cadenced-grooming.md)).
+- **Assessment:** the claim is coherent and its executable neighbor
+  ([`apss.system-definition-guide`](../../../tasks/system-definition-guide.md))
+  is open but deferred; sharing and onboarding work is out of scope while P1
+  bounds the MVP. No new evidence has arrived since capture.
+- **Disposition:** **keep** — reconsider when `apss.system-definition-guide`
+  is selected or sharing/adoption work begins.

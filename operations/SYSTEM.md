@@ -21,12 +21,6 @@ work_sessions:
     process: processes/sessions/automated-grooming.md
 
 streams:
-  - id: working-sessions
-    purpose: Preserve material brainstorming and grooming invocations with their decisions, affected files, stopping points, and lessons-and-friction notes.
-    source: Maintainer-agent discussions and other declared work-session invocations.
-    access: Retain one file per material session under streams/working-sessions/ and link the affected problem and task files.
-    consumed_by: [processes/process.md, processes/sessions/grooming.md]
-    grill: null
   - id: insights
     purpose: Preserve independently useful interpretations with their source evidence, reasoning, scope, uncertainty, and explicit epistemic disposition.
     source: Maintainer, contributor, validator, consumer, and agent interpretations derived from declared evidence streams.

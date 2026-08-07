@@ -129,7 +129,7 @@ all. The maintainer's response — that grooming belongs to every input stream,
 that its results should be able to reach problem grooming, the problems,
 compiled knowledge, or task creation, and that a "doctor" should catch process
 issues of this kind — is captured as
-[framework feedback](../framework-feedback/2026-07-26-stream-grooming-and-declaration-doctor.md)
+[framework feedback](../framework-feedback/archived/2026-07-26-stream-grooming-and-declaration-doctor.md)
 at `status: received`. It is evidence, not part of this review's scope, and is
 not groomed here.
 

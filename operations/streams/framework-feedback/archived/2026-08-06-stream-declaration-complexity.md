@@ -1,7 +1,7 @@
 ---
 id: apss.feedback.stream-declaration-complexity
 type: framework-feedback
-status: received
+status: groomed
 received: 2026-08-06
 reporter: APS framework maintainer
 source: Maintainer-agent discussion in the current Claude Code session
@@ -18,12 +18,12 @@ related_work:
 ### Context
 
 The maintainer was reading the `streams` declarations in
-[`operations/SYSTEM.md`](../../SYSTEM.md) and quoted the `external-foundations`
+[`operations/SYSTEM.md`](../../../SYSTEM.md) and quoted the `external-foundations`
 entry, which carries five fields per the template in
-[`framework/SCHEMA.md`](../../../framework/SCHEMA.md): `purpose`, `source`,
+[`framework/SCHEMA.md`](../../../../framework/SCHEMA.md): `purpose`, `source`,
 `access`, `consumed_by`, and `grill`. SCHEMA.md itself notes the entries'
 "richer shape is retained pending the separate stream-concept review"
-([`apss.review-information-stream`](../../tasks/review-information-stream.md),
+([`apss.review-information-stream`](../../../tasks/review-information-stream.md),
 still open).
 
 ### Observed problem or outcome
@@ -52,9 +52,9 @@ or `grill` fields.
 
 Direct maintainer feedback from the current session. Supporting repository
 state at the time of capture: the five-field stream entries in
-[`operations/SYSTEM.md`](../../SYSTEM.md); the matching template and the
+[`operations/SYSTEM.md`](../../../SYSTEM.md); the matching template and the
 "richer shape is retained pending the separate stream-concept review" note in
-[`framework/SCHEMA.md`](../../../framework/SCHEMA.md); the three-field
+[`framework/SCHEMA.md`](../../../../framework/SCHEMA.md); the three-field
 `work_sessions` entry shape in the same files. The suggested response is not
 independently validated.
 
@@ -75,9 +75,26 @@ clarification questions were asked and answered:
 Clarification reached a useful stopping point; no questions remain open.
 Whether the change lands in the `framework/SCHEMA.md` contract, in
 `operations/SYSTEM.md`, or both is left to grooming, likely alongside
-[`apss.review-information-stream`](../../tasks/review-information-stream.md).
+[`apss.review-information-stream`](../../../tasks/review-information-stream.md).
 
 ## Grooming record
 
-Not yet groomed. See
-[`grooming.md`](../../processes/sessions/grooming.md).
+### 2026-08-07 — act: candidate disposition for the information-stream review
+
+- **Participants:** APS framework maintainer, Claude Code operator,
+  independent reviewer agent
+  ([session](../../working-sessions/2026-08-06-first-cadenced-grooming.md)).
+- **Evidence consulted:** the five-field entries in `operations/SYSTEM.md`,
+  the SCHEMA.md template and its "richer shape is retained pending the
+  separate stream-concept review" note, and the three-field `work_sessions`
+  precedent.
+- **Assessment:** the maintainer's proposed shape — name, description, and a
+  process link — mirrors the work-session entry shape and serves P1 strategy
+  point 3 (prefer the smaller model the maintainer can understand). The
+  change lands in the compiled framework (`SCHEMA.md`), which grooming never
+  edits, and SCHEMA.md itself defers the shape to the stream-concept review.
+- **Disposition:** **act** — this record becomes input evidence to
+  [`apss.review-information-stream`](../../../tasks/review-information-stream.md),
+  now the next selected work; the three-field shape is the concrete
+  candidate disposition for that review to adopt and propagate through
+  `framework/SCHEMA.md` and `operations/SYSTEM.md`.

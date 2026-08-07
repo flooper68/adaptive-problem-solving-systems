@@ -56,7 +56,7 @@ and propagate accepted changes through affected normative and operational surfac
   [problem grooming](../../processes/problem-grooming.md) authorizes retention,
   revision, work selection, or closure.
 - The maintainer's queued
-  [creation, grooming, and storage feedback](../../streams/framework-feedback/2026-07-12-problem-creation-grooming-and-storage.md)
+  [creation, grooming, and storage feedback](../../streams/framework-feedback/archived/2026-07-12-problem-creation-grooming-and-storage.md)
   challenges normative problem-file storage, asks how problems are created and
   changed, and proposes separating problem grooming from task grooming.
 

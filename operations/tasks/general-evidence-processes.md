@@ -52,3 +52,10 @@ requiring every system to design basic quality practices from scratch.
 Captured from the APS framework maintainer's proposal for generally useful
 processes such as good research and good experimentation. The scope and
 normative status remain intentionally unresolved for grooming.
+
+### 2026-08-07 — keep; reconsideration trigger recorded
+
+Groomed in the
+[first cadenced grooming invocation](../streams/working-sessions/2026-08-06-first-cadenced-grooming.md);
+approved by the maintainer. Kept open without current work — out of P1's MVP
+scope. Reconsider when: an evidence-quality gap is observed in an invocation, or P1 closes.

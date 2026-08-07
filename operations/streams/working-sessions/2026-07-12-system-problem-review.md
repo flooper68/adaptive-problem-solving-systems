@@ -105,7 +105,7 @@ a strict tree; each system's process chooses useful relationship structures.
 Framework Operations may retain a local relationship as implementation detail.
 
 The maintainer also supplied
-[follow-up feedback](../framework-feedback/2026-07-12-problem-creation-grooming-and-storage.md)
+[follow-up feedback](../framework-feedback/archived/2026-07-12-problem-creation-grooming-and-storage.md)
 about problem creation, change history, problem grooming as a possible
 heartbeat, separation from task grooming, and storage-neutral problem
 representation. These topics are linked to existing downstream review tasks

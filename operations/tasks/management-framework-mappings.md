@@ -48,3 +48,10 @@ overlap or conflict, and avoid presenting renamed prior art as novel.
 Captured from the APS framework maintainer's proposal to research correlations
 with company management frameworks and compile the findings into a wiki. No
 framework set, comparison method, or priority has been approved.
+
+### 2026-08-07 — keep; reconsideration trigger recorded
+
+Groomed in the
+[first cadenced grooming invocation](../streams/working-sessions/2026-08-06-first-cadenced-grooming.md);
+approved by the maintainer. Kept open without current work — out of P1's MVP
+scope. Reconsider when: sharing or adoption work begins.

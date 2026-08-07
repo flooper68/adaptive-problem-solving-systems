@@ -1,7 +1,7 @@
 ---
 id: apss.task-candidate-grilling
 type: task
-status: open
+status: closed
 owner: APS framework maintainer
 created: 2026-07-10
 source: APS framework maintainer idea intake
@@ -25,15 +25,15 @@ possible next step while preserving the source's original meaning.
 ## Evidence
 
 - At capture,
-  [`operations/processes/task-intake.md`](../processes/task-intake.md)
+  [`operations/processes/task-intake.md`](../../processes/task-intake.md)
   defined minimum capture but no interactive elicitation protocol. It now
   includes a short adaptive clarification conversation.
-- [`operations/processes/task-grooming.md`](../processes/task-grooming.md)
+- [`operations/processes/task-grooming.md`](../../processes/task-grooming.md)
   defines framing and readiness questions after capture.
 - The normative framework recognizes discussion or grilling as an
   evidence-producing capability and allows source-specific protocols.
 - The later
-  [`brainstorming process`](../processes/sessions/brainstorming.md) provides a
+  [`brainstorming process`](../../processes/sessions/brainstorming.md) provides a
   general discussion/grilling protocol. Grooming must determine whether any
   task-specific protocol remains necessary beyond intake clarification.
 
@@ -59,3 +59,15 @@ Captured from the APS framework maintainer's proposal for a grilling process
 that helps derive and clarify executable candidate actions from ideas,
 insights, issues, and problems. Its relationship to the existing intake and
 grooming processes remains open.
+
+### 2026-08-07 — closed: superseded
+
+Groomed in the
+[first cadenced grooming invocation](../../streams/working-sessions/2026-08-06-first-cadenced-grooming.md);
+approved by the maintainer. The need this task named is covered: intake now
+runs a short adaptive clarification conversation (one load-bearing question
+at a time), the brainstorming process carries the general discussion/grilling
+protocol, and the per-kind intake and grooming processes this task referenced
+were deleted in the consolidation. No task-specific protocol remains
+necessary beyond what those processes state. **Closed as superseded** by
+`processes/intake.md` and `processes/sessions/brainstorming.md`.

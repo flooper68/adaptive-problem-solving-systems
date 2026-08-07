@@ -95,7 +95,7 @@ history recovers them.
 ## Related records
 
 - Insight: [Always start simple, add only when
-  needed](../insights/2026-08-06-start-simple-add-only-when-needed.md).
+  needed](../insights/archived/2026-08-06-start-simple-add-only-when-needed.md).
 
 ## Open questions
 

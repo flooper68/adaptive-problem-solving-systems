@@ -1,7 +1,7 @@
 ---
 id: apss.feedback.working-sessions-are-streams-automatically
 type: framework-feedback
-status: received
+status: groomed
 received: 2026-08-06
 reporter: APS framework maintainer
 source: Maintainer-agent discussion in the current Claude Code session
@@ -17,15 +17,15 @@ related_work: []
 ### Context
 
 The maintainer recorded this feedback directly. Repository state at the time
-of capture: [`operations/SYSTEM.md`](../../SYSTEM.md) declares
+of capture: [`operations/SYSTEM.md`](../../../SYSTEM.md) declares
 `working-sessions` as the first of five entries in its `streams:` section,
 alongside the `work_sessions:` section that declares the session types
 producing those records. The framework already treats working-session records
 as an information stream by definition — the information-stream definition in
-[`README.md`](../../../framework/README.md) lists "working-session records"
+[`README.md`](../../../../framework/README.md) lists "working-session records"
 as its first example — yet its work-session retention guidance says to retain
 records "in a declared working-session stream or its native system of
-record", and [`SCHEMA.md`](../../../framework/SCHEMA.md) has systems declare
+record", and [`SCHEMA.md`](../../../../framework/SCHEMA.md) has systems declare
 streams explicitly.
 
 ### Observed problem or outcome
@@ -42,14 +42,14 @@ information stream.
 
 Clarified 2026-08-06 with the maintainer: the framework wording is fine as it
 stands. The desired outcome is operational — Framework Operations'
-[`SYSTEM.md`](../../SYSTEM.md) no longer carries a redundant `working-sessions`
+[`SYSTEM.md`](../../../SYSTEM.md) no longer carries a redundant `working-sessions`
 entry in its `streams:` section, because a system that declares work-session
 types produces that information stream automatically.
 
 ### Suggested response
 
 Remove the `working-sessions` entry from the `streams:` section of
-[`operations/SYSTEM.md`](../../SYSTEM.md). The maintainer chose not to capture
+[`operations/SYSTEM.md`](../../../SYSTEM.md). The maintainer chose not to capture
 a task candidate at intake; whether and how to make the change is left to
 grooming of this record.
 
@@ -68,5 +68,20 @@ grooming question.
 
 ## Grooming record
 
-Not yet groomed. See
-[`grooming.md`](../../processes/sessions/grooming.md).
+### 2026-08-07 — act: redundant stream entry removed
+
+- **Participants:** APS framework maintainer, Claude Code operator,
+  independent reviewer agent
+  ([session](../../working-sessions/2026-08-06-first-cadenced-grooming.md)).
+- **Evidence consulted:** `operations/SYSTEM.md`, the working-sessions stream
+  README, and the consolidated grooming process.
+- **Assessment:** the operator note's relocation question resolves to
+  nothing needing relocation — retention (one file per material session
+  under `streams/working-sessions/`) already lives in the stream README, the
+  grooming process already names the session records as its cadence counter,
+  and the loop process consumes session records as evidence regardless of a
+  declared stream entry, which is this record's own point. The edit is an
+  Operations-declaration change, not a compiled-framework change.
+- **Disposition:** **act** — the `working-sessions` entry was removed from
+  the `streams:` section of `operations/SYSTEM.md`, executed with this
+  entry per the maintainer's approval.

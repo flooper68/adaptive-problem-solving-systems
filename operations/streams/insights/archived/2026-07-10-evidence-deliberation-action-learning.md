@@ -1,7 +1,7 @@
 ---
 id: apss.insight.evidence-deliberation-action-learning
 type: insight
-status: captured
+status: closed
 captured: 2026-07-10
 source: APSS framework maintainer
 source_records:
@@ -122,5 +122,20 @@ operator assumption.
 
 ## Grooming record
 
-Not yet groomed. See
-[`grooming.md`](../../processes/sessions/grooming.md).
+### 2026-08-07 — close: superseded by the work-session concept
+
+- **Participants:** APS framework maintainer, Claude Code operator,
+  independent reviewer agent
+  ([session](../../working-sessions/2026-08-06-first-cadenced-grooming.md)).
+- **Evidence consulted:** the framework definition's work-session
+  declarations and its streams-and-work-sessions complementary-roles
+  paragraph.
+- **Assessment:** the central unresolved inference — whether bounded,
+  purposeful evidence-processing activities share a shape worth a concept —
+  was answered after capture: the framework now defines work sessions, has
+  systems declare their session types, and states that streams make inputs
+  available while work sessions deliberately process them. The recurring
+  evidence-interpretation-action-learning flow the claim describes is the
+  framework definition's loop diagram and phases.
+- **Disposition:** **close** — superseded by the work-session concept and the
+  compiled loop description; nothing in the record remains unabsorbed.

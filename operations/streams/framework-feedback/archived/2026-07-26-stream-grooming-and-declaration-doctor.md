@@ -1,7 +1,7 @@
 ---
 id: apss.feedback.stream-grooming-and-declaration-doctor
 type: framework-feedback
-status: received
+status: groomed
 received: 2026-07-26
 reporter: APS framework maintainer
 source: Maintainer-agent discussion in the current Claude Code session, recorded in streams/working-sessions/2026-07-26-problem-strategy-review.md
@@ -21,10 +21,10 @@ related_work:
 
 During the problem-strategy concept review the maintainer asked whether a
 process exists for grooming insights and feedback. Orientation found two
-grooming processes ([`insight-grooming.md`](../../processes/insight-grooming.md),
-[`framework-feedback-grooming.md`](../../processes/framework-feedback-grooming.md))
+grooming processes ([`insight-grooming.md`](../../../processes/insight-grooming.md),
+[`framework-feedback-grooming.md`](../../../processes/framework-feedback-grooming.md))
 and an asymmetry around them: `problem-grooming` is a declared work-session type
-in [`operations/SYSTEM.md`](../../SYSTEM.md) while insight and feedback grooming
+in [`operations/SYSTEM.md`](../../../SYSTEM.md) while insight and feedback grooming
 are not, and the `working-sessions` stream purpose still describes itself as
 preserving brainstorming and problem-grooming invocations only.
 
@@ -35,17 +35,17 @@ Reading the five declared streams together, three of them — `working-sessions`
 ### Observed problem or outcome
 
 - Grooming is uneven across input streams and nothing in APS makes it
-  otherwise. [`VOCABULARY.md`](../../../framework/VOCABULARY.md) states that a
+  otherwise. [`VOCABULARY.md`](../../../../framework/VOCABULARY.md) states that a
   system "may implement different grooming for each problem or input stream" —
   permission, not a responsibility. A system can therefore declare a stream,
   capture into it, and never process what it captured.
 - Where grooming does exist, the framework states only one propagation target.
-  [`README.md`](../../../framework/README.md) problem-lifecycle says
+  [`README.md`](../../../../framework/README.md) problem-lifecycle says
   source-specific grooming "may propose a higher-level problem to solve" and
   says nothing about grooming's other legitimate outputs.
 - Nothing catches this class of inconsistency. It surfaced from an ad-hoc
   question during an unrelated concept review. The declaration review list in
-  [`SCHEMA.md`](../../../framework/SCHEMA.md) checks reference resolution and ID
+  [`SCHEMA.md`](../../../../framework/SCHEMA.md) checks reference resolution and ID
   uniqueness but not whether each declared stream is actually consumed, and the
   stale `working-sessions` purpose line went unnoticed through the
   work-session declaration being added.
@@ -78,15 +78,35 @@ process, or supporting tooling.
 
 Direct maintainer design feedback from the current session. Supporting
 repository state at the time of capture: the five stream entries in
-[`operations/SYSTEM.md`](../../SYSTEM.md); the permissive grooming sentence in
-[`VOCABULARY.md`](../../../framework/VOCABULARY.md); the single stated
-propagation target in [`README.md`](../../../framework/README.md); and the
-declaration review list in [`SCHEMA.md`](../../../framework/SCHEMA.md), which
+[`operations/SYSTEM.md`](../../../SYSTEM.md); the permissive grooming sentence in
+[`VOCABULARY.md`](../../../../framework/VOCABULARY.md); the single stated
+propagation target in [`README.md`](../../../../framework/README.md); and the
+declaration review list in [`SCHEMA.md`](../../../../framework/SCHEMA.md), which
 also records that the stream shape "is retained pending the separate
 stream-concept review". Report and repository observation; the proposed
 responses are not independently validated.
 
 ## Grooming record
 
-Not yet groomed. See
-[`grooming.md`](../../processes/sessions/grooming.md).
+### 2026-08-07 — act: route to the information-stream and process reviews
+
+- **Participants:** APS framework maintainer, Claude Code operator,
+  independent reviewer agent
+  ([session](../../working-sessions/2026-08-06-first-cadenced-grooming.md)).
+- **Evidence consulted:** the consolidated
+  [`grooming.md`](../../../processes/sessions/grooming.md), the vocabulary's
+  system entry, and the two linked review tasks.
+- **Assessment:** at Operations level, two of the three proposals have been
+  overtaken since capture — the consolidated grooming process grooms every
+  input kind and states its propagation targets (problems, tasks, compiled
+  knowledge) in its propagation step. What remains open is framework-level:
+  the vocabulary still says a system "may implement different grooming for
+  each problem or input stream" — permission, not a responsibility — and the
+  proposed "doctor"/declaration-linting check has no owner.
+- **Disposition:** **act** — this record becomes input evidence to
+  [`apss.review-information-stream`](../../../tasks/review-information-stream.md)
+  (grooming as per-stream responsibility versus permission, stated
+  propagation) and to
+  [`apss.review-process`](../../../tasks/review-process.md) (the doctor
+  proposal, which is process/declaration linting). Both tasks link back
+  here. The information-stream review is the next selected work.

@@ -1,7 +1,7 @@
 ---
 id: apss.modular-system-concerns
 type: task
-status: open
+status: closed
 owner: APS framework maintainer
 created: 2026-07-10
 source: APS framework maintainer idea intake
@@ -59,3 +59,18 @@ Captured from the APS framework maintainer's proposal to move growing content
 such as strategy from `SYSTEM.md` into a dedicated folder so the setup is more
 visible and extensible. Strategy is the first example, not an approved schema
 change or a decision to create other folders.
+
+### 2026-08-07 — closed: contradicted by current maintainer direction
+
+Groomed in the
+[first cadenced grooming invocation](../../streams/working-sessions/2026-08-06-first-cadenced-grooming.md);
+approved by the maintainer, sequenced after approval of the colocation
+feedback. The maintainer's groomed
+[colocation feedback](../../streams/framework-feedback/archived/2026-08-06-system-declaration-colocation.md)
+pulls the opposite direction — fold strategy and verification into
+`SYSTEM.md` rather than extracting concerns into dedicated folders — and the
+strategy prefers the smaller reversible change. **Closed as contradicted**;
+its executable successor is
+[`apss.colocate-system-declaration`](../colocate-system-declaration.md).
+Reconsideration trigger: declarations growing past comfortable single-file
+reading after colocation.

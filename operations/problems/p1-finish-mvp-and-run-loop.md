@@ -9,21 +9,23 @@ opened: 2026-07-10
 
 ## Current state
 
-As of 2026-08-06 ([subsystem and relationships review
-session](../streams/working-sessions/2026-08-06-subsystem-and-relationships-review.md)):
+As of 2026-08-07 ([first cadenced grooming
+session](../streams/working-sessions/2026-08-06-first-cadenced-grooming.md)):
 
-- **Recently:** the last Direction-level concept review delivered — subsystem
-  merged into child system, run as the first automated brainstorming
-  invocation (this session); current state promoted to a first-class
-  framework concept, the first evidence-driven addition under strategy
-  point 4 after seven prunings (`dfc62a4`).
-- **In flight:** the grooming-cadence declaration session awaits delivery;
-  two ungroomed stream-declaration feedback records (2026-08-06) await
-  grooming.
-- **Next:** the first full grooming invocation under the consolidated
-  process — now due under the declared cadence of one grooming per three
-  working sessions. P1's own signal rewrite remains open from the
-  problem-signal review.
+- **Recently:** the first cadenced grooming invocation ran as automated
+  grooming — all thirteen ungroomed stream records dispositioned and
+  archived, three stale tasks closed, six kept tasks given reconsideration
+  triggers, one task captured (`apss.colocate-system-declaration`), and P1's
+  signal rewritten to be readable at any time, closing the gap open since
+  the problem-signal review.
+- **Signal reading (first under the new signal):** 11 of the concept-review
+  inventory reviewed, 19 review tasks remain; grooming, compilation,
+  adaptation, and delivery have each run at least one real invocation, while
+  teach-back and adversarial verification have not; the maintainer's
+  understand-and-run answer is untested since the consolidation.
+- **Next:** the information-stream concept review (selected; three groomed
+  feedback records supply its evidence), then the start-simple compilation
+  brainstorming session (ready), then `apss.colocate-system-declaration`.
 
 ## Parent problem
 
@@ -68,11 +70,19 @@ approved adaptation that changes a later run.
 
 ## Signal
 
-The MVP boundary identifies what is included and deferred; every included
-responsibility is implemented consistently; and the maintainer can understand
-and run the whole process from one real need through problem grooming, selected
-work, verification, learning, approved adaptation, and the
-later operation changed by that learning. The maintainer's direct feedback is
+Read at any time, compared across sessions:
+
+1. how many concepts in the review inventory have a recorded disposition and
+   how many remain unreviewed;
+2. which loop responsibilities — grooming, verification, compilation,
+   adaptation, delivery — have run at least one real invocation and which
+   never have; and
+3. the maintainer's current answer to whether they can explain and run the
+   whole process unaided, and where they last stumbled.
+
+Movement toward the desired outcome shows as the unreviewed count falling,
+never-run responsibilities becoming run, and the maintainer's answer
+improving; readings may be qualitative. The maintainer's direct feedback is
 the initial outcome verification.
 
 ## Strategy
@@ -296,7 +306,7 @@ This simplification directly addresses P1's understandability signal.
 ### 2026-07-12 — problem creation and decision history clarified
 
 Source: [current system-problem review](../streams/working-sessions/2026-07-12-system-problem-review.md)
-and [follow-up feedback](../streams/framework-feedback/2026-07-12-problem-creation-grooming-and-storage.md).
+and [follow-up feedback](../streams/framework-feedback/archived/2026-07-12-problem-creation-grooming-and-storage.md).
 
 The maintainer decided that streams and processes retain their own issues,
 observations, results, and insights. Relevant source-specific grooming may
@@ -627,3 +637,29 @@ run since the last grooming, so the first cadenced invocation is
 immediately due. Reconsideration trigger: after two cadenced invocations,
 grooming assesses whether the three-session interval fits observed cost and
 backlog size.
+
+### 2026-08-07 — signal rewritten; backlog groomed in the first cadenced invocation
+
+Source: [first cadenced grooming
+session](../streams/working-sessions/2026-08-06-first-cadenced-grooming.md),
+run as the first automated-grooming invocation.
+
+The signal gap open since the problem-signal review is closed: P1's signal
+was observable only once P1 was already resolved, which that review's own
+definition rejects. The maintainer approved the rewrite to three readings
+readable at any time — review-inventory progress, loop responsibilities run
+versus never run, and the maintainer's current understand-and-run answer —
+comparable across sessions, qualitative readings permitted. The first
+reading is recorded in `Current state`.
+
+The same invocation groomed the accumulated backlog the cadence declaration
+predicted: thirteen stream records dispositioned (six feedback, seven
+insights), three stale tasks closed (`task-candidate-grilling` superseded,
+`polish-process-improvement-loop` unsupported, `modular-system-concerns`
+contradicted by the colocation direction), six kept tasks given explicit
+reconsideration triggers, and `apss.colocate-system-declaration` captured.
+Next selected work: the information-stream concept review, then the
+start-simple compilation session. An independent reviewer agent checked all
+proposals before the maintainer's per-item approval; its four findings were
+accepted and folded in. This is cadenced invocation one of the two after
+which the three-session interval itself is assessed.

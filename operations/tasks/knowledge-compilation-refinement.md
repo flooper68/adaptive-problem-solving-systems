@@ -50,3 +50,10 @@ what a compilation run produced or changed.
 Captured from the APS framework maintainer's proposal to refine knowledge
 compilation. The proposal records a direction for improvement, not evidence
 that the current process has failed or approval of a particular design.
+
+### 2026-08-07 — keep; reconsideration trigger recorded
+
+Groomed in the
+[first cadenced grooming invocation](../streams/working-sessions/2026-08-06-first-cadenced-grooming.md);
+approved by the maintainer. Kept open without current work — out of P1's MVP
+scope. Reconsider when: friction is observed in a compilation invocation.

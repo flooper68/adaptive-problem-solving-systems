@@ -1,7 +1,7 @@
 ---
 id: apss.insight.problem-decomposition-needs-general-best-practices
 type: insight
-status: captured
+status: groomed
 captured: 2026-07-12
 source: APS framework maintainer
 source_records: []
@@ -122,5 +122,15 @@ source correction was requested before delivery.
 
 ## Grooming record
 
-Not yet groomed. See
-[`grooming.md`](../../processes/sessions/grooming.md).
+### 2026-08-07 — keep
+
+- **Participants:** APS framework maintainer, Claude Code operator,
+  independent reviewer agent
+  ([session](../../working-sessions/2026-08-06-first-cadenced-grooming.md)).
+- **Assessment:** the record itself anticipates the limit — adding a
+  normative best-practices section before research would conflict with the
+  MVP strategy of avoiding unsupported complexity, and the research this
+  needs ([`apss.research-foundations`](../../../tasks/research-foundations.md))
+  is deferred until after the first complete loop.
+- **Disposition:** **keep** — reconsider when `apss.research-foundations`
+  resumes after P1's first complete loop.

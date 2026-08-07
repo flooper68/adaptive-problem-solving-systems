@@ -1,7 +1,7 @@
 ---
 id: apss.polish-process-improvement-loop
 type: task
-status: open
+status: closed
 owner: APS framework maintainer
 created: 2026-07-10
 source: APS framework maintainer idea intake
@@ -59,3 +59,16 @@ than remediation for an established defect.
 The maintainer requested capture and delivery without further clarification.
 The remaining questions are retained for later grooming rather than blocking
 intake.
+
+### 2026-08-07 — closed: unsupported
+
+Groomed in the
+[first cadenced grooming invocation](../../streams/working-sessions/2026-08-06-first-cadenced-grooming.md);
+approved by the maintainer. By its own record the task is open-ended, names
+no defect, no affected consumer, and no bounded artifact — it cannot finish
+in one working session and never became more concrete across four weeks. The
+system's declared loop now owns continuous process improvement (grooming on
+cadence, verification, adaptation), so retaining an unbounded polish task
+adds no capability. **Closed as unsupported.** Reopen path: a specific
+observed process defect arrives as feedback or an insight and is groomed on
+its own evidence.

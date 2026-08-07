@@ -84,7 +84,7 @@ kind-based.
   [adversarial-review insight](../insights/archived/2026-07-26-adversarial-review-absent-from-deliberation.md)
   — recurrence appended, **act**, beat implemented.
 - New insight captured:
-  [processes are compiled knowledge](../insights/2026-08-06-processes-are-compiled-knowledge.md).
+  [processes are compiled knowledge](../insights/archived/2026-08-06-processes-are-compiled-knowledge.md).
 
 ## Open questions
 

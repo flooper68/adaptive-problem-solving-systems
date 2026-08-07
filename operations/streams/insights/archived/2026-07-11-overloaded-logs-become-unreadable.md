@@ -1,7 +1,7 @@
 ---
 id: apss.insight.overloaded-logs-become-unreadable
 type: insight
-status: captured
+status: groomed
 captured: 2026-07-11
 source: APSS framework maintainer
 source_records: []
@@ -90,5 +90,15 @@ for intake, and the source reviewed the resulting interpretation.
 
 ## Grooming record
 
-Not yet groomed. See
-[`grooming.md`](../../processes/sessions/grooming.md).
+### 2026-08-07 — keep
+
+- **Participants:** APS framework maintainer, Claude Code operator,
+  independent reviewer agent
+  ([session](../../working-sessions/2026-08-06-first-cadenced-grooming.md)).
+- **Assessment:** a deliberately context-dependent observation; the narrower
+  work-log case is already groomed supported
+  ([archived record](2026-07-10-work-log-entries-too-long.md)) and
+  acted on. The broad claim carries no action on its own.
+- **Disposition:** **keep** as a monitoring heuristic — reconsider when a
+  specific changelog or log is reported unreadable, per the record's own
+  first open question.

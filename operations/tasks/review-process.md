@@ -28,4 +28,11 @@ and downstream questions are captured without expanding this task.
 
 ## Current state
 
-Ready. Select when its higher-level dependencies have been reviewed.
+Ready. Select when its higher-level dependencies have been reviewed. The
+[first cadenced grooming invocation](../streams/working-sessions/2026-08-06-first-cadenced-grooming.md)
+(2026-08-07) routed groomed input evidence here: the "doctor"/declaration-
+linting proposal in
+[stream-grooming-and-declaration-doctor feedback](../streams/framework-feedback/archived/2026-07-26-stream-grooming-and-declaration-doctor.md)
+— whether a repeatable check that catches process and declaration
+inconsistencies is a normative responsibility, an Operations process, or
+supporting tooling.

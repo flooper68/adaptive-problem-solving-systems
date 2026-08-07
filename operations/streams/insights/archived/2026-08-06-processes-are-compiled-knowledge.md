@@ -1,14 +1,15 @@
 ---
 id: apss.insight.processes-are-compiled-knowledge
 type: insight
-status: captured
+status: groomed
 captured: 2026-08-06
 source: APS framework maintainer
 source_records:
-  - ../working-sessions/2026-08-06-grooming-consolidation.md
+  - ../../working-sessions/2026-08-06-grooming-consolidation.md
 related_insights:
   - apss.insight.start-simple-add-only-when-needed
-related_work: []
+related_work:
+  - ../../../tasks/compile-start-simple-principle.md
 compiled_into: []
 ---
 
@@ -89,4 +90,20 @@ Scope is operator inference from the repository's observed conventions.
 
 ## Grooming record
 
-Not yet groomed. See [`grooming.md`](../../processes/sessions/grooming.md).
+### 2026-08-07 — act: assessed supported; joined to the compilation task
+
+- **Participants:** APS framework maintainer, Claude Code operator,
+  independent reviewer agent
+  ([session](../../working-sessions/2026-08-06-first-cadenced-grooming.md)).
+- **Assessment:** **supported within its stated scope.** The immediate
+  application succeeded — seven superseded process files were deleted, not
+  archived, and nothing broke operationally — and the repository observably
+  maintains the records-versus-compiled-artifacts distinction the scope
+  describes. The open question (whether compiled *framework* knowledge
+  consumed by others needs citable releases rather than git history alone)
+  remains unresolved and rides into the compilation task rather than being
+  answered here.
+- **Disposition:** **act** — linked into
+  [`apss.compile-start-simple-principle`](../../../tasks/compile-start-simple-principle.md)
+  so one brainstorming session compiles both principles together
+  ("declare the simplest current version; let history hold the rest").

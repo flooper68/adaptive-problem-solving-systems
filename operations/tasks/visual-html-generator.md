@@ -54,3 +54,10 @@ Created as the proposed response to an actionable framework-feedback report.
 The consumer need and existing generation contract are established; scope,
 technical approach, acceptance conditions, and validation participants remain
 for task grooming.
+
+### 2026-08-07 — keep; reconsideration trigger recorded
+
+Groomed in the
+[first cadenced grooming invocation](../streams/working-sessions/2026-08-06-first-cadenced-grooming.md);
+approved by the maintainer. Kept open without current work — out of P1's MVP
+scope. Reconsider when: P1 closes, or a consumer needs a generated view of a declaration.

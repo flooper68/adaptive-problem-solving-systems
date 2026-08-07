@@ -14,7 +14,5 @@ This directory's root holds only reports still awaiting grooming; once a
 report's disposition is recorded, grooming moves it to
 [`archived/`](archived/). Archived means groomed, whatever the disposition.
 
-## Reports
-
-- [Visualization tooling is missing](archived/2026-07-09-visualization-tooling.md) —
-  actionable; linked to `apss.visual-html-generator`.
+This README describes the stream and intentionally does not maintain an
+exhaustive index. Discover reports by their frontmatter and filenames.

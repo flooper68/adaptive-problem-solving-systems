@@ -54,3 +54,10 @@ learning loop, and current versus desired state in a useful order.
 Captured from the APS framework maintainer's proposal for a step-by-step guide
 to defining a system. The existing concise checklist is treated as a starting
 point rather than duplicated.
+
+### 2026-08-07 — keep; reconsideration trigger recorded
+
+Groomed in the
+[first cadenced grooming invocation](../streams/working-sessions/2026-08-06-first-cadenced-grooming.md);
+approved by the maintainer. Kept open without current work — out of P1's MVP
+scope. Reconsider when: sharing or adoption work begins, or the linked [onboarding insight](../streams/insights/archived/2026-07-11-incremental-onboarding-can-teach-system-definition.md) trigger fires.

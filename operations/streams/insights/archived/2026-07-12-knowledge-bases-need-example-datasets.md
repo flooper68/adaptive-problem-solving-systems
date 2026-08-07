@@ -1,7 +1,7 @@
 ---
 id: apss.insight.knowledge-bases-need-example-datasets
 type: insight
-status: captured
+status: groomed
 captured: 2026-07-12
 source: APS framework maintainer
 source_records: []
@@ -99,5 +99,17 @@ record for correction through the current Codex task.
 
 ## Grooming record
 
-Not yet groomed. See
-[`grooming.md`](../../processes/sessions/grooming.md).
+### 2026-08-07 — keep
+
+- **Participants:** APS framework maintainer, Claude Code operator,
+  independent reviewer agent
+  ([session](../../working-sessions/2026-08-06-first-cadenced-grooming.md)).
+- **Assessment:** both linked executable neighbors —
+  [`apss.review-compiled-knowledge`](../../../tasks/review-compiled-knowledge.md)
+  and
+  [`apss.software-and-research-examples`](../../../tasks/software-and-research-examples.md)
+  — are open but not yet selectable (concept review awaiting its dependency
+  order; example work deferred until the framework is polished). The claim
+  is input to those, not independent work.
+- **Disposition:** **keep** — reconsider when the compiled-knowledge concept
+  review is selected or example work resumes.

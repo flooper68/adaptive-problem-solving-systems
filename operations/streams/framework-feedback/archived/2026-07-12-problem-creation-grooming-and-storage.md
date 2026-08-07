@@ -1,7 +1,7 @@
 ---
 id: apss.feedback.problem-creation-grooming-and-storage
 type: framework-feedback
-status: grooming
+status: closed
 received: 2026-07-12
 reporter: APS framework maintainer
 source: Maintainer-agent discussion in the current Codex task
@@ -23,10 +23,10 @@ related_work:
 
 The maintainer was reviewing the proposed goal-free problem hierarchy and its
 minimal open/closed lifecycle. Existing sources include the normative
-[problem lifecycle](../../../framework/README.md#problem-lifecycle-and-verification),
-the [open-problem definition](../../../framework/VOCABULARY.md#open-problem),
-the Operations [problem-grooming process](../../processes/problem-grooming.md),
-and the current [problem-file convention](../../problems/p1-finish-mvp-and-run-loop.md).
+[problem lifecycle](../../../../framework/README.md#problem-lifecycle-and-verification),
+the [open-problem definition](../../../../framework/VOCABULARY.md#open-problem),
+the Operations [problem-grooming process](../../../processes/problem-grooming.md),
+and the current [problem-file convention](../../../problems/p1-finish-mvp-and-run-loop.md).
 
 ### Observed problem or outcome
 
@@ -158,3 +158,22 @@ process split are proposals, not independently validated requirements.
 - **Disposition:** `actionable`; the reported semantic and implementation
   boundaries are compiled in uncommitted changes. Mark addressed only after
   delivery and subsequent use show the explanation is clear.
+
+### 2026-08-07 — close: addressed
+
+- **Participants:** APS framework maintainer, Claude Code operator,
+  independent reviewer agent
+  ([session](../../working-sessions/2026-08-06-first-cadenced-grooming.md)).
+- **Evidence consulted:** the framework definition's problem-lifecycle
+  section, the vocabulary's problem-grooming and task-grooming entries, and
+  P1's grooming history.
+- **Assessment:** all five boundaries clarified above are compiled and
+  delivered — creation authority (source-specific grooming proposes, problem
+  grooming decides), material decision history, cadence delegation, the
+  problem/task grooming separation, and storage neutrality. The close
+  condition was subsequent use showing the explanation is clear; the
+  available evidence is the absence of recorded confusion about these
+  boundaries across the sessions since (open-problem, task-family, grooming
+  consolidation) — absence of contrary evidence, not positive proof.
+- **Disposition:** **close** — addressed. Reopen if later use shows one of
+  the compiled boundaries is unclear or wrong.

@@ -1,14 +1,14 @@
 ---
 id: apss.insight.start-simple-add-only-when-needed
 type: insight
-status: captured
+status: groomed
 captured: 2026-08-06
 source: APS framework maintainer
 source_records:
-  - ../working-sessions/2026-08-06-grooming-consolidation.md
+  - ../../working-sessions/2026-08-06-grooming-consolidation.md
 related_insights: []
 related_work:
-  - ../../tasks/compile-start-simple-principle.md
+  - ../../../tasks/compile-start-simple-principle.md
 compiled_into: []
 ---
 
@@ -44,7 +44,7 @@ complex imposes its cost immediately and permanently.
 - The four grooming processes shared one skeleton (orient, clarify, assess,
   decide, propagate, record) and differed mainly in disposition vocabularies —
   the duplication existed without evidence that any invocation needed it.
-- [`STRATEGY.md`](../../STRATEGY.md) points 2–4 already encode the same
+- [`STRATEGY.md`](../../../STRATEGY.md) points 2–4 already encode the same
   principle for this system: keep only what one loop needs, add complexity
   only when observed use demonstrates it.
 - Prior concept reviews repeatedly reached pruning dispositions (authority,
@@ -63,7 +63,7 @@ complex imposes its cost immediately and permanently.
 
 - Candidate for compilation into normative framework guidance on defining
   systems and processes; captured as
-  [`compile-start-simple-principle`](../../tasks/compile-start-simple-principle.md)
+  [`compile-start-simple-principle`](../../../tasks/compile-start-simple-principle.md)
   for a brainstorming session to execute after grooming.
 - Supports future grooming of the operations system itself: prefer removing
   or merging declared structure over elaborating it.
@@ -93,5 +93,19 @@ and immediate use were already explicit in the source's own words.
 
 ## Grooming record
 
-Not yet groomed. See
-[`grooming.md`](../../processes/sessions/grooming.md).
+### 2026-08-07 — act: assessed supported; compilation task ready
+
+- **Participants:** APS framework maintainer, Claude Code operator,
+  independent reviewer agent
+  ([session](../../working-sessions/2026-08-06-first-cadenced-grooming.md)).
+- **Assessment:** **supported.** Strategy points 2–4 already encode the
+  principle for this system; seven pruning dispositions found removed
+  structure unmissed; the grooming consolidation held. The record's own
+  limiting note — that the consolidated grooming process had not run an
+  invocation — is cured only by the very invocation recording this entry,
+  so the use-evidence is one invocation deep, not long-run.
+- **Disposition:** **act** — this assessment clears
+  [`apss.compile-start-simple-principle`](../../../tasks/compile-start-simple-principle.md)'s
+  open question; the task is recorded ready for a brainstorming session,
+  compiling this principle together with
+  [[processes-are-compiled-knowledge]].

@@ -32,7 +32,7 @@ Ready. The
 [system-problem review](../streams/working-sessions/2026-07-12-system-problem-review.md)
 established that source-specific grooming may propose higher-level problems but
 problem grooming alone opens, merges, revises, defers, or rejects them. The
-[follow-up feedback](../streams/framework-feedback/2026-07-12-problem-creation-grooming-and-storage.md)
+[follow-up feedback](../streams/framework-feedback/archived/2026-07-12-problem-creation-grooming-and-storage.md)
 also established that cadence is system-specific and may be event-driven,
 scheduled, continuous, or mixed. Problem grooming maintains the hierarchy while
 task grooming separately shapes bounded work and readiness; systems may combine
