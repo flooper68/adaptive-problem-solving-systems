@@ -5,6 +5,7 @@ status: retained
 recorded: 2026-08-06
 accepted: 2026-08-07
 closed: 2026-08-07
+delivery: 5f6a3e5
 participants: [APS framework maintainer, Claude Code operator, independent reviewer agent]
 source: Maintainer invocation of the automated-grooming session type in the current Claude Code session
 related_problems: [P1]
@@ -235,5 +236,5 @@ recorded, its grooming history extended, and its `Current state` plus
 
 The maintainer's per-item disposition approvals are the approval signal for
 delivering exactly the recorded entries and their propagation, per the
-automated-grooming process. Delivery commit recorded in a follow-up commit
-per the established pattern.
+automated-grooming process. Delivered as commit 5f6a3e5; this delivery
+reference was recorded in a follow-up commit per the established pattern.
