@@ -5,6 +5,7 @@ status: closed
 owner: APS framework maintainer
 created: 2026-08-06
 closed: 2026-08-16
+delivery: b51894c
 addresses: [P1]
 source: APS framework maintainer, during the grooming-consolidation session
 source_records:
