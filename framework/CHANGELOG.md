@@ -3,6 +3,42 @@
 Simple history of material framework changes. Git remains the detailed audit
 trail.
 
+## 2026-08-07 — start simple compiled; compiled knowledge is replaced, not archived
+
+Compiled two maintainer principles, groomed as supported insights, into
+normative guidance — the first compilation whose source is the insights
+stream rather than a concept review.
+
+The system-creation steps now carry the start-simple rule: declare the
+simplest structure that does the job and add a distinction, process, field,
+or variant only when evidence such as observed use, feedback, validation, or
+a new problem demonstrates that it is missing. Starting simple is recoverable
+while starting complex imposes its cost immediately; when revising a running
+system the same rule prefers removing or merging structure over elaborating
+it, keeping removals recoverable per the source insight's recorded limit
+that a distinction can be cheap to keep yet expensive to rediscover. The
+principle had lived only in the Operations strategy (points 2–4) while the
+framework applied it through seven pruning dispositions without ever stating
+it for consumers.
+
+The `Compiled knowledge` vocabulary entry gained its boundary against
+records: only the current version of a compiled artifact is operative, and
+process descriptions are compiled knowledge in this sense. Records —
+working-session records, problem histories, insights, feedback — preserve
+what happened as written, with each system's archive choice covering the
+inactive ones; a superseded compiled version is instead replaced,
+recoverable from the records and version history that produced them. The
+framework definition carries the
+operational rule — supersede by replacing, because an archived copy adds a
+parallel source with no job — bounded by two cautions responding to the
+source insight's recorded limits: a system without durable version history
+needs another recovery path first, and whether externally consumed compiled
+knowledge also needs citable releases is a strategy choice APS does not
+prescribe. The evidence is Operations' own use: seven superseded process
+files were deleted rather than archived and nothing broke, while the
+grooming consolidation that occasioned both insights held through its first
+invocations.
+
 ## 2026-08-07 — information stream defined; stream declarations cut to three fields
 
 The twelfth concept review retained information streams and simplified how

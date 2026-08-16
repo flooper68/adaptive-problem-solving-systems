@@ -310,6 +310,14 @@ A reusable synthesis derived from evidence, interpretations, decisions, and
 learning. It preserves material scope and uncertainty and remains revisable as
 new evidence arrives.
 
+Only the current version of a compiled artifact is operative; process
+descriptions are compiled knowledge in this sense. This bounds compiled
+knowledge against records — retained evidence such as working-session records,
+problem histories, insights, and feedback — which preserve what happened as
+written, with each system's [archive](#archive) choice covering the inactive
+ones. A superseded compiled version is replaced, with earlier versions
+recoverable from the records and version history that produced them.
+
 ### Adaptation
 
 A deliberate change to future operation based on evidence and

@@ -9,8 +9,10 @@ source_records:
 related_insights:
   - apss.insight.start-simple-add-only-when-needed
 related_work:
-  - ../../../tasks/compile-start-simple-principle.md
-compiled_into: []
+  - ../../../tasks/archive/compile-start-simple-principle.md
+compiled_into:
+  - ../../../../framework/README.md
+  - ../../../../framework/VOCABULARY.md
 ---
 
 # Processes are compiled knowledge — replace them, never archive them
@@ -104,6 +106,17 @@ Scope is operator inference from the repository's observed conventions.
   remains unresolved and rides into the compilation task rather than being
   answered here.
 - **Disposition:** **act** — linked into
-  [`apss.compile-start-simple-principle`](../../../tasks/compile-start-simple-principle.md)
+  [`apss.compile-start-simple-principle`](../../../tasks/archive/compile-start-simple-principle.md)
   so one brainstorming session compiles both principles together
   ("declare the simplest current version; let history hold the rest").
+
+### 2026-08-07 — compiled into the framework definition and vocabulary
+
+Compiled by the
+[start-simple compilation session](../../working-sessions/2026-08-07-start-simple-compilation.md):
+the `Compiled knowledge` vocabulary entry carries the records-versus-compiled
+boundary, and the framework definition carries the replace-not-archive rule
+with the durable-history precondition this record's scope states. The open
+question — whether externally consumed compiled knowledge needs citable
+releases — is preserved in the compiled wording as an explicit strategy
+choice APS does not prescribe, not resolved.

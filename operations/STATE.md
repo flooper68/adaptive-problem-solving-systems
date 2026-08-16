@@ -3,8 +3,8 @@
 A derived view for orientation; problem, task, and session files stay
 authoritative and win on any conflict. Refreshed as part of session delivery.
 
-**As of:** 2026-08-07, [information-stream review
-session](streams/working-sessions/2026-08-07-information-stream-review.md).
+**As of:** 2026-08-07, [start-simple compilation
+session](streams/working-sessions/2026-08-07-start-simple-compilation.md).
 
 ## Open problems
 
@@ -16,13 +16,20 @@ session](streams/working-sessions/2026-08-07-information-stream-review.md).
 
 ## Recent deliveries
 
+- Start-simple compilation (`apss.compile-start-simple-principle`), run as
+  the third automated-brainstorming invocation and the first compilation
+  sourced from the insights stream: start-simple guidance added to the
+  framework's system-creation steps, the records-versus-compiled boundary
+  added to the `Compiled knowledge` vocabulary entry, and the
+  replace-not-archive rule compiled with its durable-history and
+  citable-release cautions. Two working sessions since the last grooming
+  invocation; the cadence triggers after one more.
 - Information-stream concept review (`apss.review-information-stream`),
   run and delivered as the second automated-brainstorming invocation:
   information stream retained, stream declaration entries cut to
   `id`/`description`/`process`, an `Information stream` vocabulary entry
   added, stream consumption stated as a responsibility with named
-  propagation targets. One working session since the last grooming
-  invocation; the cadence triggers after two more.
+  propagation targets.
 - First cadenced grooming invocation, run as automated grooming: all
   thirteen ungroomed stream records dispositioned and moved to `archived/`;
   three stale tasks closed; six kept tasks given reconsideration triggers;
@@ -30,15 +37,11 @@ session](streams/working-sessions/2026-08-07-information-stream-review.md).
 - Grooming cadence declared (`04eb6bc`): one grooming invocation per three
   working sessions, recorded as an invocation trigger in the grooming
   process.
-- Stream archived-folders feedback executed and delivered (`99014d1`).
 
 ## Next
 
-1. Start-simple compilation brainstorming session
-   (`apss.compile-start-simple-principle`, ready) — compiles both supported
-   principles into framework guidance.
-2. `apss.colocate-system-declaration` (captured) — colocate strategy and
+1. `apss.colocate-system-declaration` (captured) — colocate strategy and
    verification in the system declaration.
-3. After the next cadenced grooming invocation: assess whether the
-   three-session interval fits observed cost and backlog size
-   (reconsideration trigger recorded in P1).
+2. After one more working session: the second cadenced grooming invocation,
+   which also assesses whether the three-session interval fits observed
+   cost and backlog size (reconsideration trigger recorded in P1).

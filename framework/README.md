@@ -171,7 +171,8 @@ help its user.
 ### Process and work session
 
 A **process** is a reusable method for performing a kind of work. It describes
-how the work is done independently of one invocation.
+how the work is done independently of one invocation. A process description is
+[compiled knowledge](VOCABULARY.md#compiled-knowledge).
 
 A system declares the repeatable **work sessions** it can invoke. Each
 declaration has a stable `id`, a concise `description`, and a link to the
@@ -230,6 +231,17 @@ previously ignored detail important. Compiled knowledge is therefore revisable
 and, where useful, reproducible from old and new evidence. Repository-backed
 systems can rely on git for detailed provenance; the compiled artifact needs a
 simple changelog, not a duplicate manifest for every compilation.
+
+Supersede compiled knowledge by replacing it. The records of the work that
+changed it and the system's version history already reconstruct earlier
+versions, so an archived copy of a superseded process or other compiled
+artifact adds a parallel source with no job; records, as the
+[vocabulary](VOCABULARY.md#compiled-knowledge) bounds them, are what preserve
+history. Two cautions bound the rule: a system without durable version
+history needs another recovery path before it discards superseded versions,
+and a system whose compiled knowledge is consumed by others may additionally
+publish citable releases — whether to do so is a strategy choice APS does not
+prescribe.
 
 As a general process-design best practice, ask at meaningful completion,
 handoff, verification, or grooming points:
@@ -592,6 +604,16 @@ when the system has no bounded session types.
 8. **Run it once end to end.** A declared loop that has never produced,
    validated, learned, and adapted is a design hypothesis, not yet a proven
    adaptive system.
+
+Throughout, start simple: declare the simplest structure that does the job,
+and add a distinction, process, field, or variant only when evidence such as
+observed use, feedback, validation, or a new problem demonstrates that it is
+missing. Starting simple is recoverable — structure can be added when a real
+need appears — while starting complex imposes its understanding and
+maintenance cost immediately, before any need is demonstrated. The same rule
+applies when revising a running system: prefer removing or merging declared
+structure over elaborating it, and keep what was removed recoverable, because
+a distinction can be cheap to keep yet expensive to rediscover.
 
 The human-readable declaration contract and template are in
 [SCHEMA.md](SCHEMA.md). Framework Operations is the first concrete application

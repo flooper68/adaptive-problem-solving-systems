@@ -8,8 +8,9 @@ source_records:
   - ../../working-sessions/2026-08-06-grooming-consolidation.md
 related_insights: []
 related_work:
-  - ../../../tasks/compile-start-simple-principle.md
-compiled_into: []
+  - ../../../tasks/archive/compile-start-simple-principle.md
+compiled_into:
+  - ../../../../framework/README.md
 ---
 
 # Always start simple, add only when needed
@@ -63,7 +64,7 @@ complex imposes its cost immediately and permanently.
 
 - Candidate for compilation into normative framework guidance on defining
   systems and processes; captured as
-  [`compile-start-simple-principle`](../../../tasks/compile-start-simple-principle.md)
+  [`compile-start-simple-principle`](../../../tasks/archive/compile-start-simple-principle.md)
   for a brainstorming session to execute after grooming.
 - Supports future grooming of the operations system itself: prefer removing
   or merging declared structure over elaborating it.
@@ -105,7 +106,16 @@ and immediate use were already explicit in the source's own words.
   invocation — is cured only by the very invocation recording this entry,
   so the use-evidence is one invocation deep, not long-run.
 - **Disposition:** **act** — this assessment clears
-  [`apss.compile-start-simple-principle`](../../../tasks/compile-start-simple-principle.md)'s
+  [`apss.compile-start-simple-principle`](../../../tasks/archive/compile-start-simple-principle.md)'s
   open question; the task is recorded ready for a brainstorming session,
   compiling this principle together with
   [[processes-are-compiled-knowledge]].
+
+### 2026-08-07 — compiled into the framework definition
+
+Compiled by the
+[start-simple compilation session](../../working-sessions/2026-08-07-start-simple-compilation.md)
+into the framework definition's system-creation guidance. The open question —
+what observed signal counts as "needed" — is answered in the compiled wording
+by the evidence kinds the Operations strategy already names: observed use,
+feedback, validation, or a new problem.

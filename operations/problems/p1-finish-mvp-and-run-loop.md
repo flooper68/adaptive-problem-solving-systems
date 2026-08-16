@@ -9,26 +9,29 @@ opened: 2026-07-10
 
 ## Current state
 
-As of 2026-08-07 ([information-stream review
-session](../streams/working-sessions/2026-08-07-information-stream-review.md)):
+As of 2026-08-07 ([start-simple compilation
+session](../streams/working-sessions/2026-08-07-start-simple-compilation.md)):
 
-- **Recently:** the twelfth concept review executed and delivered as the
-  second automated-brainstorming invocation — information stream retained
-  with no lifecycle machinery, its declaration entry cut to `id`,
-  `description`, `process` per the maintainer's groomed feedback, an
-  `Information stream` vocabulary entry added, and stream consumption
-  stated as a responsibility with named propagation targets. The agent
-  reviewer's findings were resolved before delivery; decision 4 (the
-  implied-source sentence) is the one the maintainer might still reverse
-  on later reading.
+- **Recently:** the start-simple compilation session executed
+  `apss.compile-start-simple-principle` as the third
+  automated-brainstorming invocation — both supported insights compiled
+  into the framework: start-simple guidance in the system-creation steps,
+  the records-versus-compiled boundary in the `Compiled knowledge`
+  vocabulary entry, and the replace-not-archive rule with its
+  durable-history and citable-release cautions in the framework
+  definition. The decisions the maintainer might most plausibly reverse:
+  no vocabulary mention of start-simple, and naming the open release
+  question in normative text.
 - **Signal reading:** 12 of the concept-review inventory reviewed, 18
-  review tasks remain; grooming, compilation, adaptation, and delivery have
-  each run at least one real invocation, while teach-back and adversarial
+  review tasks remain (unchanged — this session compiled insights rather
+  than reviewing a concept); grooming, compilation, adaptation, and
+  delivery have each run at least one real invocation, compilation now
+  also from the insights stream, while teach-back and adversarial
   verification have not; the maintainer's understand-and-run answer is
   untested since the consolidation.
-- **Next:** the start-simple compilation brainstorming session (ready),
-  then `apss.colocate-system-declaration`; after the next cadenced grooming
-  invocation, assess the three-session interval.
+- **Next:** `apss.colocate-system-declaration`, then the cadenced grooming
+  invocation (due after one more working session), which also assesses the
+  three-session interval.
 
 ## Parent problem
 
@@ -692,3 +695,21 @@ previously kept operational, flagged for review accordingly. The removed
 `grill` guidance was verified to survive in `intake.md` and
 `streams/README.md` before removal. This resolves SCHEMA.md's note deferring
 the stream shape to this review, open since 2026-07-26.
+
+### 2026-08-07 — both supported principles compiled into the framework
+
+Source: [start-simple compilation
+session](../streams/working-sessions/2026-08-07-start-simple-compilation.md),
+the third automated brainstorming invocation, executing
+`apss.compile-start-simple-principle`. The first compilation sourced from
+the insights stream rather than a concept review, exercising the
+grooming-to-compilation pipeline end to end: both insights arrived
+pre-assessed as supported, so the session's autonomous decisions were
+placement and wording. Start-simple was compiled into the system-creation
+guidance only — it defines no term, so it gets no vocabulary entry during a
+pruning phase — with "needed" operationalized as the evidence kinds the
+Operations strategy already names. The processes-are-compiled-knowledge
+principle followed the one-home rule: boundary in the `Compiled knowledge`
+vocabulary entry, replace-not-archive operation in the framework
+definition, both insights' recorded limits preserved as explicit cautions,
+and the citable-release question left open as a named strategy choice.
