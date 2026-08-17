@@ -9,10 +9,10 @@
   "kind": "stream",
   "value": {
     "createdAt": "2026-08-16T17:36:26.145Z",
-    "description": "Imported APS framework-usage stream",
+    "description": "Observed applications, trials, and reviews showing whether APS is understandable and useful, retained as durable summaries or references per streams/README.md.",
     "groomingProcess": "processes/process.md",
     "intakeProcess": null,
     "slug": "framework-usage",
-    "updatedAt": "2026-08-16T17:36:26.145Z"
+    "updatedAt": "2026-08-17T07:00:01.192Z"
   }
 }

@@ -9,10 +9,10 @@
   "kind": "stream",
   "value": {
     "createdAt": "2026-08-16T17:36:23.694Z",
-    "description": "Imported APS external-foundations stream",
+    "description": "Authoritative research and domain references compared with APS choices, retained as citations and syntheses in the relevant work item or evidence.",
     "groomingProcess": "processes/process.md",
     "intakeProcess": null,
     "slug": "external-foundations",
-    "updatedAt": "2026-08-16T17:36:23.694Z"
+    "updatedAt": "2026-08-17T06:59:58.761Z"
   }
 }
