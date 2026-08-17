@@ -105,6 +105,34 @@ value:
       sourceSequence: 8416
       task: null
       type: wiki_updated
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T09:27:09.596Z
+      message: aps-framework-operations/processes/sessions/grooming.md
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-35
+      sourceSequence: 8418
+      task: null
+      type: wiki_updated
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T09:27:12.336Z
+      message: aps-framework-operations/process.html
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-35
+      sourceSequence: 8419
+      task: null
+      type: wiki_updated
   session: session:key:APS-S-35
 ---
 
@@ -147,3 +175,15 @@ aps-framework-operations/problems/p1/current-state.html
 8416 wiki_updated
 
 aps-framework-operations/verification.html
+
+---
+
+8418 wiki_updated
+
+aps-framework-operations/processes/sessions/grooming.md
+
+---
+
+8419 wiki_updated
+
+aps-framework-operations/process.html
