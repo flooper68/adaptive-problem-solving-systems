@@ -385,7 +385,7 @@
       <p>Chaos House is the canonical system of record for APS Framework Operations. The configured R54 repository projection is a one-way backup: it never supplies approval, never writes back into Chaos House, and never substitutes for session, task, problem, record, or wiki history.</p>
 <h2 id="operating-loop">Operating loop</h2>
 <ol>
-<li>Orient from <code>current-state.html</code>, the open problem tree, structured signal readings, the selected task, relevant streams, and the canonical <code>framework/</code> knowledge package.</li>
+<li>Orient from <code>current-state.html</code>, the open problem tree, the project-owned <code>records/problem-state-log.md</code>, the selected task, relevant streams, and the canonical <code>framework/</code> knowledge package.</li>
 <li>Groom when requested or triggered. After every third completed working session since the last grooming invocation, run grooming over accumulated records, task candidates, problem state, and next-work selection.</li>
 <li>Select one bounded task that serves an open problem strategy, or state explicitly that it has no problem.</li>
 <li>Start the task's declared session type before work. Bind every supported action to that session and preserve material evidence and decisions in its transcript.</li>
@@ -395,6 +395,9 @@
 <li>Refresh affected current-state views, task state, problem history, and session record. Close only on the owner's explicit go.</li>
 <li>Let repository backup converge asynchronously. A failed or pending backup is an operational durability condition to surface, not authority to rewrite or roll back accepted domain state.</li>
 </ol>
+<h2 id="problem-state-evidence">Problem-state evidence</h2>
+<p>Historical signal readings and health assessments live in the ordinary project-owned <a href="/p/aps-framework-operations/wiki/records/problem-state-log.md" target="_top"><code>records/problem-state-log.md</code></a>. Verification defines signals; each problem's Current state carries the latest meaning; the log preserves exact history.</p>
+<p>Processes create that page with session-bound <code>write_wiki_file</code> and add later entries with optimistic <code>append_wiki_file</code>. Root judgement is projected to project health with <code>save_project</code>. Evidence never creates work without a separate grooming decision, and this path has no product-level semantics.</p>
 <p>The loop has adapted only when evidence changes a later task, problem strategy, process, verification rule, stream, or compiled framework page and the changed operation produces new evidence.</p>
     </div>
 
