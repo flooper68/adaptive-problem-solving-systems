@@ -232,6 +232,20 @@ value:
       sourceSequence: 8506
       task: task:key:APS-1
       type: task_done
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T09:59:41.798Z
+      message: Session "brainstorming" closed (completed)
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-36
+      sourceSequence: 8512
+      task: task:key:APS-1
+      type: session_closed
   session: session:key:APS-S-36
 ---
 
@@ -328,3 +342,10 @@ Immediate verification complete. Read-back confirmed the approved SCHEMA contrac
 8506 task_done
 
 Published and verified the representation-neutral APS system declaration contract. Repository capsules and Chaos House structured projects are now explicit profiles of one responsibility-level contract; live filename-bound strategy definitions were removed, P1 evidence/current state were refreshed, and the repository backup converged successfully.
+
+
+---
+
+8512 session_closed
+
+Session "brainstorming" closed (completed)
