@@ -175,6 +175,34 @@ value:
       sourceSequence: 8493
       task: null
       type: wiki_updated
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T09:57:43.877Z
+      message: aps-framework-operations/problems/p1/current-state.html
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-36
+      sourceSequence: 8496
+      task: null
+      type: wiki_updated
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T09:57:47.528Z
+      message: aps-framework-operations/problems/p1/current-state.html
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-36
+      sourceSequence: 8497
+      task: null
+      type: wiki_updated
   session: session:key:APS-S-36
 ---
 
@@ -247,3 +275,15 @@ aps-framework-operations/framework/VOCABULARY.md
 8493 wiki_updated
 
 aps-framework-operations/records/problem-state-log.md
+
+---
+
+8496 wiki_updated
+
+aps-framework-operations/problems/p1/current-state.html
+
+---
+
+8497 wiki_updated
+
+aps-framework-operations/problems/p1/current-state.html
