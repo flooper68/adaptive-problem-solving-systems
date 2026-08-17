@@ -13,7 +13,7 @@ value:
   createdBy:
     agent: null
     type: user
-  finishedAt: null
+  finishedAt: 2026-08-17T09:59:27.320Z
   key: APS-1
   keyNumber: 1
   labels:
@@ -27,11 +27,12 @@ value:
   problem: problem:slug:p1
   queuePosition: null
   startedAt: null
-  status: todo
-  summary: null
+  status: done
+  summary: |
+    Published and verified the representation-neutral APS system declaration contract. Repository capsules and Chaos House structured projects are now explicit profiles of one responsibility-level contract; live filename-bound strategy definitions were removed, P1 evidence/current state were refreshed, and the repository backup converged successfully.
   title: Make the system declaration contract representation-neutral
   type: session-type:slug:brainstorming
-  updatedAt: 2026-08-17T09:54:33.224Z
+  updatedAt: 2026-08-17T09:59:27.323Z
 ---
 
 # Make the system declaration contract representation-neutral

@@ -217,6 +217,21 @@ value:
       sourceSequence: 8499
       task: task:key:APS-1
       type: session_note
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T09:59:27.328Z
+      message: |
+        Published and verified the representation-neutral APS system declaration contract. Repository capsules and Chaos House structured projects are now explicit profiles of one responsibility-level contract; live filename-bound strategy definitions were removed, P1 evidence/current state were refreshed, and the repository backup converged successfully.
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-36
+      sourceSequence: 8506
+      task: task:key:APS-1
+      type: task_done
   session: session:key:APS-S-36
 ---
 
@@ -307,3 +322,9 @@ aps-framework-operations/problems/p1/current-state.html
 8499 session_note
 
 Immediate verification complete. Read-back confirmed the approved SCHEMA contract; README and VOCABULARY now define system strategy without filename-bound requirements; remaining SYSTEM.md/STRATEGY.md mentions are the explicit repository profile or historical changelog context. APS-1 is linked to P1. P1 current state and records/problem-state-log.md carry the new reading: understandability improved, inventory and never-run teach-back/adversarial checks unchanged, so P1 remains open. The APS project has no declaration warnings. Repository backup converged with pending false at 7459e04d2b5e1d940df5fed4eeb6982d2480b3c9. Implementation is ready for the owner's task-completion and session-close decision.
+
+---
+
+8506 task_done
+
+Published and verified the representation-neutral APS system declaration contract. Repository capsules and Chaos House structured projects are now explicit profiles of one responsibility-level contract; live filename-bound strategy definitions were removed, P1 evidence/current state were refreshed, and the repository backup converged successfully.
