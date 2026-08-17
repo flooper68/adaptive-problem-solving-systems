@@ -388,6 +388,18 @@
       "entity": {
         "identity": {
           "type": "slug",
+          "value": "key-aps-s-35-record"
+        },
+        "kind": "session-record"
+      },
+      "kind": "session-record",
+      "path": "project-export/.chaos-house/entities/session-records/key-aps-s-35-record.md",
+      "sha256": "73efe1848f1e46f3a43ca84586d9cf12efb8dea3c914ae52946d89a71ea37cf5"
+    },
+    {
+      "entity": {
+        "identity": {
+          "type": "slug",
           "value": "key-aps-s-4-record"
         },
         "kind": "session-record"
@@ -802,7 +814,7 @@
       },
       "kind": "session-transcript",
       "path": "project-export/.chaos-house/entities/session-transcripts/key-aps-s-35-transcript.md",
-      "sha256": "a1acbfa2560b03ef180569d0e6a8500a04dad6a8bfa6a4a8276d0466c3bf83ba"
+      "sha256": "a7427545eeae840267a8b7e0c3d3c05e94f9441576c1c68fef0829b001df9093"
     },
     {
       "entity": {
@@ -1270,7 +1282,7 @@
       },
       "kind": "timeline-event",
       "path": "project-export/.chaos-house/entities/timeline/events.ndjson",
-      "sha256": "d8a75bdd925ed6cb42ae31e69ab4135bfcae4d8a2b6f9ca266b8cebcca4c077a"
+      "sha256": "ed7129c9b4df1b04687d155564076508adc57fad2efd1812a9fee7a465a24293"
     },
     {
       "entity": {
@@ -1690,7 +1702,7 @@
       },
       "kind": "session",
       "path": "project-export/sessions/2026-08-17-aps-s-35.md",
-      "sha256": "20e9ec658af2298c157f47722c3d43b4e528c6ad459110e8899134792c2bc7e1"
+      "sha256": "5ce47d8244900c6d506b153f1c6201d5a5bbd34f6df5b6887b97b9cc399d6eae"
     },
     {
       "entity": {
@@ -2727,8 +2739,8 @@
   },
   "version": 1,
   "watermark": {
-    "endEventSeq": 8423,
+    "endEventSeq": 8426,
     "stale": false,
-    "startEventSeq": 8423
+    "startEventSeq": 8426
   }
 }
