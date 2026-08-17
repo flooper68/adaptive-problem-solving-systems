@@ -46,7 +46,7 @@
       },
       "kind": "project",
       "path": "project-export/.chaos-house/entities/project/aps-framework-operations.json",
-      "sha256": "7f5e84d987fd82623398a222680f7bde22ca4e85f32e501a44add7d76e2043a3"
+      "sha256": "1dabd077947849c1d20005a5e5e2a880689504438947d9025a42a761ba03718c"
     },
     {
       "entity": {
@@ -820,6 +820,18 @@
       "entity": {
         "identity": {
           "type": "slug",
+          "value": "key-aps-s-36-transcript"
+        },
+        "kind": "session-transcript"
+      },
+      "kind": "session-transcript",
+      "path": "project-export/.chaos-house/entities/session-transcripts/key-aps-s-36-transcript.md",
+      "sha256": "289b551a2364afa9ee92f697af4f5a4ef4f9ca5e878759a9eb23c7bea87ec761"
+    },
+    {
+      "entity": {
+        "identity": {
+          "type": "slug",
           "value": "key-aps-s-4-transcript"
         },
         "kind": "session-transcript"
@@ -1282,7 +1294,7 @@
       },
       "kind": "timeline-event",
       "path": "project-export/.chaos-house/entities/timeline/events.ndjson",
-      "sha256": "8ca849d3409d198c70a213d7ef3319d25191167261b165f941aaf83c45d3672e"
+      "sha256": "80e304ceaf9bd2fe6837285e2b61efc6c622dfb5272c7ac64be0fa4debfcb254"
     },
     {
       "entity": {
@@ -1703,6 +1715,18 @@
       "kind": "session",
       "path": "project-export/sessions/2026-08-17-aps-s-35.md",
       "sha256": "5ce47d8244900c6d506b153f1c6201d5a5bbd34f6df5b6887b97b9cc399d6eae"
+    },
+    {
+      "entity": {
+        "identity": {
+          "type": "key",
+          "value": "APS-S-36"
+        },
+        "kind": "session"
+      },
+      "kind": "session",
+      "path": "project-export/sessions/2026-08-17-aps-s-36.md",
+      "sha256": "3275dae9424ada79c9fd7fe0142fbb79d16eda3d12d76ae381928633961fed22"
     },
     {
       "entity": {
@@ -2751,8 +2775,8 @@
   },
   "version": 1,
   "watermark": {
-    "endEventSeq": 8450,
+    "endEventSeq": 8469,
     "stale": false,
-    "startEventSeq": 8450
+    "startEventSeq": 8469
   }
 }
