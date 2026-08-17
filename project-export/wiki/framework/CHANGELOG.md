@@ -1,7 +1,36 @@
 # APS changelog
 
-Simple history of material framework changes. Git remains the detailed audit
-trail.
+Simple history of material framework changes. Chaos House wiki events and
+working-session records provide the detailed audit trail; the repository
+projection provides offsite version history.
+
+## 2026-08-17 — system declaration contract made representation-neutral
+
+Changed the system declaration from one required `SYSTEM.md`/YAML shape to a
+representation-neutral orientation contract. A system still has to make its
+name, stable root problem, strategy, verification, complete-loop process, work
+sessions, and streams recoverable and connected, but it may colocate or split
+them across files, wiki pages, structured records, or another suitable system
+of record.
+
+The evidence is the Framework Operations migration to Chaos House. The same
+system now operates through a project name, four connected problem, strategy,
+verification, and process declarations, and native work-session and stream
+records. That implementation preserves the required APS responsibilities
+without a `SYSTEM.md`, showing that the old file shape was an implementation
+profile presented as a universal contract.
+
+`SCHEMA.md` now states the responsibility-level contract and presents the
+repository capsule and structured project as two valid profiles. The framework
+definition and `System strategy` vocabulary entry no longer define the concept
+through `SYSTEM.md` and `STRATEGY.md` filenames. This resolves the earlier
+colocation feedback at the framework boundary: APS permits colocation or
+separation and requires clear navigation, while each concrete system chooses
+the representation that is easiest to operate in its environment.
+
+No APS concept or lifecycle changed. Chaos House remains the canonical
+Framework Operations system of record; its repository projection remains a
+derived durability mechanism rather than a second writer.
 
 ## 2026-08-07 — start simple compiled; compiled knowledge is replaced, not archived
 
