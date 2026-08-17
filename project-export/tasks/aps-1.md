@@ -6,7 +6,7 @@ entity:
   kind: task
 kind: task
 value:
-  assignedToUser: false
+  assignedToUser: true
   assignee: null
   backlogRank: null
   createdAt: 2026-08-16T17:36:30.288Z
@@ -27,11 +27,11 @@ value:
   problem: null
   queuePosition: null
   startedAt: null
-  status: backlog
+  status: todo
   summary: null
   title: Colocate strategy and verification in the system declaration
   type: session-type:slug:brainstorming
-  updatedAt: 2026-08-16T17:36:30.288Z
+  updatedAt: 2026-08-17T07:00:44.638Z
 ---
 
 # Colocate strategy and verification in the system declaration

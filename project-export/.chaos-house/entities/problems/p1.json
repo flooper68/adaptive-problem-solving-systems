@@ -12,11 +12,11 @@
     "key": "APS-P-2",
     "keyNumber": 2,
     "parent": "problem:slug:root",
-    "priority": null,
+    "priority": 1,
     "rank": null,
     "slug": "p1",
     "status": "open",
     "title": "The APS MVP is unfinished and has not run its complete loop",
-    "updatedAt": "2026-08-16T17:36:28.014Z"
+    "updatedAt": "2026-08-17T07:00:42.976Z"
   }
 }

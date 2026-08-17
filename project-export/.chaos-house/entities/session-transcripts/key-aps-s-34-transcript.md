@@ -315,6 +315,48 @@ value:
       sourceSequence: 7727
       task: null
       type: record_groomed
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T07:00:42.979Z
+      message: Priority of "p1" unset → p1
+      problem: problem:slug:p1
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 7729
+      task: null
+      type: problem_priority_set
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T07:00:44.641Z
+      message: Assigned to the user
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 7730
+      task: task:key:APS-1
+      type: task_assigned
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T07:00:45.686Z
+      message: 'Signal read for "p1" on 2026-08-07: Concept review inventory 12 reviewed; 18 review tasks remain; Loop responsibilities Grooming, compilation, adaptation, and delivery have run; teach-back and adversarial verification have not; Maintainer understand-and-run check Untested since consolidation'
+      problem: problem:slug:p1
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 7731
+      task: null
+      type: reading_recorded
   session: session:key:APS-S-34
 ---
 
@@ -447,3 +489,21 @@ Record from "insights" groomed: Legacy disposition: provisional; the pinned sour
 7727 record_groomed
 
 Record from "framework-feedback" groomed: Legacy disposition: actionable; the pinned source record is under an archived stream path and must not re-enter the live grooming inbox.
+
+---
+
+7729 problem_priority_set
+
+Priority of "p1" unset → p1
+
+---
+
+7730 task_assigned
+
+Assigned to the user
+
+---
+
+7731 reading_recorded
+
+Signal read for "p1" on 2026-08-07: Concept review inventory 12 reviewed; 18 review tasks remain; Loop responsibilities Grooming, compilation, adaptation, and delivery have run; teach-back and adversarial verification have not; Maintainer understand-and-run check Untested since consolidation

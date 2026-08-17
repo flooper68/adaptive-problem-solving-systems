@@ -4,13 +4,25 @@
       "entity": {
         "identity": {
           "type": "slug",
+          "value": "p1-2026-08-07-1"
+        },
+        "kind": "problem-reading"
+      },
+      "kind": "problem-reading",
+      "path": "project-export/.chaos-house/entities/problem-readings/p1-2026-08-07-1.json",
+      "sha256": "8e2a1f5308f6dccdc4c4b77e9ffffa5eaefa0574fbf176f9635db90a5a893718"
+    },
+    {
+      "entity": {
+        "identity": {
+          "type": "slug",
           "value": "p1"
         },
         "kind": "problem"
       },
       "kind": "problem",
       "path": "project-export/.chaos-house/entities/problems/p1.json",
-      "sha256": "139649b2401cdf37b055022414bb5e2c2616bbeb4048da7d229021cb4b680140"
+      "sha256": "eb8307ccf057aed56207bd3a4ffca3f8519a6927b074fafaedc690544ac09fcc"
     },
     {
       "entity": {
@@ -778,7 +790,7 @@
       },
       "kind": "session-transcript",
       "path": "project-export/.chaos-house/entities/session-transcripts/key-aps-s-34-transcript.md",
-      "sha256": "0b89b6637c384e98663e698b94feb9dfa37e459f9bb838dbeadb9abfc2654d48"
+      "sha256": "0c471f35afdfbc46bbb849bb459c2b617b2670e9be1fbb06fcf8a032f41b0118"
     },
     {
       "entity": {
@@ -1246,7 +1258,7 @@
       },
       "kind": "timeline-event",
       "path": "project-export/.chaos-house/entities/timeline/events.ndjson",
-      "sha256": "4a6f19379091688e0643d33dff3249121db427b8222bc71bdd85171ef1c2c109"
+      "sha256": "d0c787e3d71fb7b78d2c0bbb47c28407e15b0f0cba118453d3f48ad2c9302b00"
     },
     {
       "entity": {
@@ -1666,7 +1678,7 @@
       },
       "kind": "task",
       "path": "project-export/tasks/aps-1.md",
-      "sha256": "6db172fb3afafef3dfbcc6c9b0901e0ad83845f6105fd682d05639b235a13d31"
+      "sha256": "044486c376bbe208c967323e1067a82f8135be4a293f7cfe4dabc48ccc0e2b59"
     },
     {
       "entity": {
@@ -4442,8 +4454,8 @@
   },
   "version": 1,
   "watermark": {
-    "endEventSeq": 7727,
+    "endEventSeq": 7731,
     "stale": false,
-    "startEventSeq": 7727
+    "startEventSeq": 7731
   }
 }

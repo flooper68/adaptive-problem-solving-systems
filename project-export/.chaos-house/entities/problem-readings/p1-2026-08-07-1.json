@@ -1,0 +1,35 @@
+{
+  "entity": {
+    "identity": {
+      "type": "slug",
+      "value": "p1-2026-08-07-1"
+    },
+    "kind": "problem-reading"
+  },
+  "kind": "problem-reading",
+  "value": {
+    "components": [
+      {
+        "name": "Concept review inventory",
+        "value": "12 reviewed; 18 review tasks remain"
+      },
+      {
+        "name": "Loop responsibilities",
+        "value": "Grooming, compilation, adaptation, and delivery have run; teach-back and adversarial verification have not"
+      },
+      {
+        "name": "Maintainer understand-and-run check",
+        "value": "Untested since consolidation"
+      }
+    ],
+    "createdAt": "2026-08-17T07:00:45.682Z",
+    "notes": "Imported structured reading from P1 current state at source commit 43b9f691.",
+    "problem": "problem:slug:p1",
+    "readAt": "2026-08-07",
+    "readBy": {
+      "agent": null,
+      "type": "user"
+    },
+    "session": "session:key:APS-S-34"
+  }
+}
