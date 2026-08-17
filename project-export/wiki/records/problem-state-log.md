@@ -72,3 +72,27 @@ Paired append-only timeline event:
 }
 ```
 
+### 2026-08-17T09:56:43Z — verification reading — `APS-S-36`
+
+- **Concept review inventory:** 12 reviewed; 18 review tasks remain. APS-1
+  revised the declaration contract but was not one of the remaining concept
+  review tasks.
+- **Loop responsibilities:** grooming, compilation, adaptation, and delivery
+  have run; teach-back and adversarial verification have not.
+- **Maintainer understand-and-run check:** the migration exposed that APS was
+  confusing a declaration responsibility with one repository representation.
+  The maintainer understood and approved the representation-neutral
+  distinction and the repository/structured-project profiles. A full unaided
+  explanation and end-to-end run remains untested.
+
+**Comparison with 2026-08-07:** improved in the understandability dimension:
+one file-shaped rule that contradicted observed use is removed, and the
+maintainer approved the replacement model. Inventory and never-run validation
+responsibilities are unchanged, so P1 remains open.
+
+**Immediate verification:** exact canonical content was read back; remaining
+`SYSTEM.md` and `STRATEGY.md` references are confined to the explicit
+repository profile or historical changelog context; the APS project reports no
+declaration warnings; and the repository projection converged successfully at
+commit `6134bd321ec43f2e20d2963bc1f7a196d8c2c4c5`.
+
