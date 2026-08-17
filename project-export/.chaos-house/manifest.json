@@ -802,7 +802,7 @@
       },
       "kind": "session-transcript",
       "path": "project-export/.chaos-house/entities/session-transcripts/key-aps-s-35-transcript.md",
-      "sha256": "4bd570aa3c67775b5467f66482a555960db6732641cec0d58316456c42b71bf2"
+      "sha256": "ea365bccaac485e6af5fcfc736c2567ce8095d89550f182e6211a7275e6cc12a"
     },
     {
       "entity": {
@@ -1270,7 +1270,7 @@
       },
       "kind": "timeline-event",
       "path": "project-export/.chaos-house/entities/timeline/events.ndjson",
-      "sha256": "e2849df0dbc27d94d6ae095353589ae43cf0e0635500f1d3189d0e33334a2f89"
+      "sha256": "8d5b609e3ef8782bfb31575beb975abe661534b881cbb583953086caa2d6862f"
     },
     {
       "entity": {
@@ -2668,6 +2668,18 @@
       "entity": {
         "identity": {
           "type": "slug",
+          "value": "wiki-records-problem-state-log-md"
+        },
+        "kind": "wiki-page"
+      },
+      "kind": "wiki-page",
+      "path": "project-export/wiki/records/problem-state-log.md",
+      "sha256": "5f750bb6585983ed6fbe2170190e678f324601a0b86530fe076c290726179994"
+    },
+    {
+      "entity": {
+        "identity": {
+          "type": "slug",
           "value": "wiki-strategy-html"
         },
         "kind": "wiki-page"
@@ -2715,8 +2727,8 @@
   },
   "version": 1,
   "watermark": {
-    "endEventSeq": 8378,
+    "endEventSeq": 8380,
     "stale": false,
-    "startEventSeq": 8378
+    "startEventSeq": 8380
   }
 }
