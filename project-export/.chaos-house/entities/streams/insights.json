@@ -9,10 +9,10 @@
   "kind": "stream",
   "value": {
     "createdAt": "2026-08-16T17:30:56.343Z",
-    "description": "Imported APS insights stream",
-    "groomingProcess": "processes/process.md",
-    "intakeProcess": null,
+    "description": "Independently useful interpretations with their source evidence, reasoning, scope, and uncertainty, captured under streams/insights/ with processes/intake.md.",
+    "groomingProcess": "processes/sessions/grooming.md",
+    "intakeProcess": "processes/intake.md",
     "slug": "insights",
-    "updatedAt": "2026-08-16T17:36:27.204Z"
+    "updatedAt": "2026-08-17T06:59:42.997Z"
   }
 }

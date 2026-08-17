@@ -9,10 +9,10 @@
   "kind": "stream",
   "value": {
     "createdAt": "2026-08-16T17:36:25.047Z",
-    "description": "Imported APS framework-feedback stream",
-    "groomingProcess": "processes/process.md",
-    "intakeProcess": null,
+    "description": "Direct consumer reports about understanding, applying, or adopting APS, captured under streams/framework-feedback/ with processes/intake.md.",
+    "groomingProcess": "processes/sessions/grooming.md",
+    "intakeProcess": "processes/intake.md",
     "slug": "framework-feedback",
-    "updatedAt": "2026-08-16T17:36:25.047Z"
+    "updatedAt": "2026-08-17T06:59:45.913Z"
   }
 }
