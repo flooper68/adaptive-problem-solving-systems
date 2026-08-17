@@ -2779,6 +2779,20 @@ value:
       sourceSequence: 8188
       task: null
       type: wiki_updated
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T09:39:40.755Z
+      message: Task "Promote the proven repository projection to main" created into the backlog (brainstorming)
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 8450
+      task: task:key:APS-58
+      type: task_created
   session: session:key:APS-S-34
 ---
 
@@ -3967,3 +3981,9 @@ aps-framework-operations/framework/README.md
 8188 wiki_updated
 
 aps-framework-operations/framework/SCHEMA.md
+
+---
+
+8450 task_created
+
+Task "Promote the proven repository projection to main" created into the backlog (brainstorming)

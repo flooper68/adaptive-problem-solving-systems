@@ -46,7 +46,7 @@
       },
       "kind": "project",
       "path": "project-export/.chaos-house/entities/project/aps-framework-operations.json",
-      "sha256": "97885d3cc6fbd23bce847e80f1a295bf3f3659974c474ee6f16ea29fcf95ace0"
+      "sha256": "7f5e84d987fd82623398a222680f7bde22ca4e85f32e501a44add7d76e2043a3"
     },
     {
       "entity": {
@@ -802,7 +802,7 @@
       },
       "kind": "session-transcript",
       "path": "project-export/.chaos-house/entities/session-transcripts/key-aps-s-34-transcript.md",
-      "sha256": "0819b5a71c37d591c2c47fb9af35a386d48c85fa0b0e4ef608b189c7e0e4ce6f"
+      "sha256": "48426dc43d5a4b7c175ac70a8492e94c8b2b844788ea0b4a097edafa87f066af"
     },
     {
       "entity": {
@@ -1282,7 +1282,7 @@
       },
       "kind": "timeline-event",
       "path": "project-export/.chaos-house/entities/timeline/events.ndjson",
-      "sha256": "ed7129c9b4df1b04687d155564076508adc57fad2efd1812a9fee7a465a24293"
+      "sha256": "8ca849d3409d198c70a213d7ef3319d25191167261b165f941aaf83c45d3672e"
     },
     {
       "entity": {
@@ -2344,6 +2344,18 @@
       "entity": {
         "identity": {
           "type": "key",
+          "value": "APS-58"
+        },
+        "kind": "task"
+      },
+      "kind": "task",
+      "path": "project-export/tasks/aps-58.md",
+      "sha256": "2e8fbd7ec65fc71b4fb9353ea3cf245b8ef2b817b18e60616fd934c4dcf81503"
+    },
+    {
+      "entity": {
+        "identity": {
+          "type": "key",
           "value": "APS-6"
         },
         "kind": "task"
@@ -2739,8 +2751,8 @@
   },
   "version": 1,
   "watermark": {
-    "endEventSeq": 8426,
+    "endEventSeq": 8450,
     "stale": false,
-    "startEventSeq": 8426
+    "startEventSeq": 8450
   }
 }
