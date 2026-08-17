@@ -1,50 +1,73 @@
-# APS system declaration
+# APS system declaration contract
 
-This document is the human-readable contract and authoring template for APS
-`SYSTEM.md`. The framework definition controls APS semantics. APS deliberately
-has no separate machine-readable schema while the framework is still being
+This document is the human-readable contract for declaring an adaptive
+problem-solving system. It defines the information a declaration must make
+recoverable; it does not prescribe one file, storage technology, or physical
+layout. The framework definition controls APS semantics. APS deliberately has
+no separate machine-readable schema while the framework is still being
 polished.
 
-The declaration is a small orientation surface:
+## Required orientation
 
-- `name` identifies the system;
-- `problem` states the root condition it exists to change;
-- `verification` links the process that evaluates attempts against the problem;
-- `strategy` links the current approach to solving that root problem;
-- `process` links the implementation of the complete loop;
-- `work_sessions` lists the bounded session types the system offers;
-- `streams` declares relevant information sources.
+A system declaration is the smallest orientation surface, or set of connected
+surfaces, from which a reader can find:
 
-The declared `problem` is constitutive and stable for that system. Evolving
-understanding or clarification belongs in the linked strategy; APS does not
-define a root-problem replacement transition.
+- the system's `name`;
+- its stable root `problem`;
+- its current system `strategy`;
+- the `verification` process that evaluates attempts against the problem;
+- the `process` that implements the complete adaptive loop;
+- the bounded `work_sessions` the system offers; and
+- the relevant information `streams` the loop consumes.
 
-APS does not mandate particular work-session types. Each entry has a local
-`id`, description, and defining process. The array may be empty when a system
-has no bounded session types. Continuous and automated processes remain in the
-linked loop without artificial session declarations.
+The declaration may colocate these parts or keep them in separate files, wiki
+pages, database records, or other systems of record. When they are separate,
+the orientation surface or the surrounding tool must connect them clearly.
+Local field names and navigation may differ, but the APS responsibilities and
+their relationships must remain recoverable.
 
-Stream entries have the same shape as work-session entries: a local `id`, a
-`description` of what the stream carries — mentioning source or capture
-method when relevant — and the `process` that consumes it.
+The declared system problem is constitutive and stable for that system.
+Evolving understanding or clarification belongs in the system strategy; APS
+does not define a root-problem replacement transition.
+
+Each work-session entry supplies a local identifier, a concise description,
+and the process that defines the work. A system with no bounded session types
+declares an empty set. Continuous and automated processes remain in the
+complete loop without artificial session declarations.
+
+Each stream entry likewise supplies a local identifier, a description of what
+the stream carries — mentioning source or capture when relevant — and the
+process that consumes it.
 
 Planning, execution, learning, participation, uncertainty handling,
 contextual artifacts, operating conditions, problem decomposition, and other
 relationships belong in the strategies, problems, processes, verification, or
-streams that own them. Systems may add fields for genuinely contextual needs,
-but should not recreate removed universal fields by habit.
+streams that own them. A system may add information for genuine contextual
+needs, but should not recreate removed universal structure by habit.
 
-Declaration review confirms that:
+## Declaration review
 
-- system names are unambiguous within the relevant scope;
-- the strategy, loop process, verification, work-session process, and stream
-  process references resolve;
-- each work-session ID is unique within the system;
-- each stream ID is unique within the system; and
-- the linked process implements a complete problem-solving, verification,
-  learning, and adaptation loop rather than only declaring one.
+Review confirms that:
 
-## Template
+- the system name is unambiguous within the relevant scope;
+- the root problem, strategy, verification, and complete-loop process are
+  present and connected;
+- every declared work session has a unique local identifier, a description,
+  and a resolvable defining process;
+- every declared stream has a unique local identifier, a description, and a
+  resolvable consuming process; and
+- the complete-loop process implements problem solving, verification,
+  learning, and adaptation rather than only naming them.
+
+## Representation profiles
+
+These profiles show valid encodings of the contract. They are examples, not
+additional framework requirements.
+
+### Repository capsule
+
+A repository may use one `SYSTEM.md` orientation file whose links resolve to
+the other parts:
 
 ```yaml
 ---
@@ -52,21 +75,25 @@ name: <system-name>
 
 problem: <condition this system exists to change>
 verification: <path to the process that evaluates attempts against the problem>
-strategy: STRATEGY.md
+strategy: <path to the current system strategy>
 process: <path to the process that defines the complete loop>
 
-work_sessions: [] # entries use id, description, and process
-
-streams:
-  - id: <stream-id>
-    description: <what the stream carries, with source or capture when relevant>
-    process: <path to the process that consumes what the stream carries>
+work_sessions: [] # entries supply id, description, and process
+streams: []       # entries supply id, description, and process
 ---
 ```
 
 After the frontmatter, add only system-level context that is not clearer in a
-linked source. The linked process owns the complete loop; problems, strategies,
-and processes own contextual decomposition and implementation detail.
+linked source.
 
-Framework Operations is the first concrete application:
-[the Framework Operations declaration](../problem.html).
+### Structured project
+
+A project-management or orchestration system may represent the same contract
+through a project name, separate problem, strategy, verification, and process
+declarations, plus native work-session and stream records. The tool's project
+view supplies the connecting orientation surface.
+
+Framework Operations is the first concrete application and uses this
+structured-project profile in Chaos House:
+[APS Framework Operations](../problem.html).
+

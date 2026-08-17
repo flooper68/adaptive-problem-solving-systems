@@ -63,6 +63,20 @@ value:
       sourceSequence: 8480
       task: task:key:APS-1
       type: task_problem_set
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T09:54:43.510Z
+      message: aps-framework-operations/framework/SCHEMA.md
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-36
+      sourceSequence: 8481
+      task: null
+      type: wiki_updated
   session: session:key:APS-S-36
 ---
 
@@ -87,3 +101,9 @@ Draft prepared for owner review. Proposal: revise APS-1 from mandatory colocatio
 8480 task_problem_set
 
 Aimed at problem "p1"
+
+---
+
+8481 wiki_updated
+
+aps-framework-operations/framework/SCHEMA.md
