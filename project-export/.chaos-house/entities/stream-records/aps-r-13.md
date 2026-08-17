@@ -10,8 +10,8 @@ value:
     agent: null
     type: user
   createdAt: 2026-08-16T19:40:51.906Z
-  dispositionNote: null
-  groomed: false
+  dispositionNote: "Legacy disposition: supported; the pinned source record is under an archived stream path and must not re-enter the live grooming inbox."
+  groomed: true
   key: APS-R-13
   keyNumber: 13
   labels:
@@ -21,7 +21,7 @@ value:
   originTask: null
   problem: null
   stream: stream:slug:insights
-  updatedAt: 2026-08-16T19:40:51.906Z
+  updatedAt: 2026-08-17T07:00:15.582Z
 ---
 
 # Constraints defined in the framework seem redundant

@@ -10,8 +10,8 @@ value:
     agent: null
     type: user
   createdAt: 2026-08-16T19:40:36.962Z
-  dispositionNote: null
-  groomed: false
+  dispositionNote: "Legacy disposition: actionable; the pinned source record is under an archived stream path and must not re-enter the live grooming inbox."
+  groomed: true
   key: APS-R-3
   keyNumber: 3
   labels:
@@ -21,7 +21,7 @@ value:
   originTask: null
   problem: null
   stream: stream:slug:framework-feedback
-  updatedAt: 2026-08-16T19:40:36.962Z
+  updatedAt: 2026-08-17T07:00:14.196Z
 ---
 
 # Problem hierarchy and goal relationships are unclear

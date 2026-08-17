@@ -10,8 +10,8 @@ value:
     agent: null
     type: user
   createdAt: 2026-08-16T19:40:45.221Z
-  dispositionNote: null
-  groomed: false
+  dispositionNote: "Legacy disposition: actionable; the pinned source record is under an archived stream path and must not re-enter the live grooming inbox."
+  groomed: true
   key: APS-R-9
   keyNumber: 9
   labels:
@@ -21,7 +21,7 @@ value:
   originTask: null
   problem: null
   stream: stream:slug:framework-feedback
-  updatedAt: 2026-08-16T19:40:45.221Z
+  updatedAt: 2026-08-17T07:00:16.660Z
 ---
 
 # Visualization tooling is missing

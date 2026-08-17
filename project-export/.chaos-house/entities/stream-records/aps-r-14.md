@@ -10,8 +10,8 @@ value:
     agent: null
     type: user
   createdAt: 2026-08-16T19:40:52.918Z
-  dispositionNote: null
-  groomed: false
+  dispositionNote: "Legacy disposition: contested; the pinned source record is under an archived stream path and must not re-enter the live grooming inbox."
+  groomed: true
   key: APS-R-14
   keyNumber: 14
   labels:
@@ -21,7 +21,7 @@ value:
   originTask: null
   problem: null
   stream: stream:slug:insights
-  updatedAt: 2026-08-16T19:40:52.918Z
+  updatedAt: 2026-08-17T07:00:14.278Z
 ---
 
 # Goals evolve into open problems before becoming tasks

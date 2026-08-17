@@ -10,8 +10,8 @@ value:
     agent: null
     type: user
   createdAt: 2026-08-16T19:41:10.402Z
-  dispositionNote: null
-  groomed: false
+  dispositionNote: "Legacy disposition: supported; the pinned source record is under an archived stream path and must not re-enter the live grooming inbox."
+  groomed: true
   key: APS-R-24
   keyNumber: 24
   labels:
@@ -21,7 +21,7 @@ value:
   originTask: null
   problem: null
   stream: stream:slug:insights
-  updatedAt: 2026-08-16T19:41:10.402Z
+  updatedAt: 2026-08-17T07:00:14.535Z
 ---
 
 # Work-log entries are too long to be useful

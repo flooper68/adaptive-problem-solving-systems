@@ -10,8 +10,8 @@ value:
     agent: null
     type: user
   createdAt: 2026-08-16T19:40:31.213Z
-  dispositionNote: null
-  groomed: false
+  dispositionNote: "Legacy disposition: received; the pinned source record is under an archived stream path and must not re-enter the live grooming inbox."
+  groomed: true
   key: APS-R-1
   keyNumber: 1
   labels:
@@ -21,7 +21,7 @@ value:
   originTask: null
   problem: null
   stream: stream:slug:framework-feedback
-  updatedAt: 2026-08-16T19:40:31.213Z
+  updatedAt: 2026-08-17T07:00:12.182Z
 ---
 
 # Current state should be a first-class framework concept

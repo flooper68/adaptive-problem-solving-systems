@@ -10,8 +10,8 @@ value:
     agent: null
     type: user
   createdAt: 2026-08-16T19:40:31.907Z
-  dispositionNote: null
-  groomed: false
+  dispositionNote: "Legacy disposition: closed; the pinned source record is under an archived stream path and must not re-enter the live grooming inbox."
+  groomed: true
   key: APS-R-2
   keyNumber: 2
   labels:
@@ -21,7 +21,7 @@ value:
   originTask: null
   problem: null
   stream: stream:slug:framework-feedback
-  updatedAt: 2026-08-16T19:40:31.907Z
+  updatedAt: 2026-08-17T07:00:15.455Z
 ---
 
 # Problem creation, grooming, task handling, and storage need clearer boundaries

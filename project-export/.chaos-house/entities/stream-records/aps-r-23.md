@@ -10,8 +10,8 @@ value:
     agent: null
     type: user
   createdAt: 2026-08-16T19:41:09.716Z
-  dispositionNote: null
-  groomed: false
+  dispositionNote: "Legacy disposition: provisional; the pinned source record is under an archived stream path and must not re-enter the live grooming inbox."
+  groomed: true
   key: APS-R-23
   keyNumber: 23
   labels:
@@ -21,7 +21,7 @@ value:
   originTask: null
   problem: null
   stream: stream:slug:insights
-  updatedAt: 2026-08-16T19:41:09.716Z
+  updatedAt: 2026-08-17T07:00:13.995Z
 ---
 
 # Surprise, excess resource use, and verification regression are useful review signals

@@ -175,6 +175,146 @@ value:
       sourceSequence: 7710
       task: null
       type: wiki_created
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T07:00:12.187Z
+      message: 'Record from "framework-feedback" groomed: Legacy disposition: received; the pinned source record is under an archived stream path and must not re-enter the live grooming inbox.'
+      problem: null
+      record: stream-record:key:APS-R-1
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 7718
+      task: null
+      type: record_groomed
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T07:00:13.983Z
+      message: 'Record from "insights" groomed: Legacy disposition: closed; the pinned source record is under an archived stream path and must not re-enter the live grooming inbox.'
+      problem: null
+      record: stream-record:key:APS-R-12
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 7719
+      task: null
+      type: record_groomed
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T07:00:13.997Z
+      message: 'Record from "insights" groomed: Legacy disposition: provisional; the pinned source record is under an archived stream path and must not re-enter the live grooming inbox.'
+      problem: null
+      record: stream-record:key:APS-R-23
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 7720
+      task: null
+      type: record_groomed
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T07:00:14.199Z
+      message: 'Record from "framework-feedback" groomed: Legacy disposition: actionable; the pinned source record is under an archived stream path and must not re-enter the live grooming inbox.'
+      problem: null
+      record: stream-record:key:APS-R-3
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 7721
+      task: null
+      type: record_groomed
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T07:00:14.284Z
+      message: 'Record from "insights" groomed: Legacy disposition: contested; the pinned source record is under an archived stream path and must not re-enter the live grooming inbox.'
+      problem: null
+      record: stream-record:key:APS-R-14
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 7722
+      task: null
+      type: record_groomed
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T07:00:14.539Z
+      message: 'Record from "insights" groomed: Legacy disposition: supported; the pinned source record is under an archived stream path and must not re-enter the live grooming inbox.'
+      problem: null
+      record: stream-record:key:APS-R-24
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 7723
+      task: null
+      type: record_groomed
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T07:00:15.460Z
+      message: 'Record from "framework-feedback" groomed: Legacy disposition: closed; the pinned source record is under an archived stream path and must not re-enter the live grooming inbox.'
+      problem: null
+      record: stream-record:key:APS-R-2
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 7724
+      task: null
+      type: record_groomed
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T07:00:15.583Z
+      message: 'Record from "insights" groomed: Legacy disposition: supported; the pinned source record is under an archived stream path and must not re-enter the live grooming inbox.'
+      problem: null
+      record: stream-record:key:APS-R-13
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 7725
+      task: null
+      type: record_groomed
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T07:00:15.812Z
+      message: 'Record from "insights" groomed: Legacy disposition: provisional; the pinned source record is under an archived stream path and must not re-enter the live grooming inbox.'
+      problem: null
+      record: stream-record:key:APS-R-17
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 7726
+      task: null
+      type: record_groomed
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T07:00:16.663Z
+      message: 'Record from "framework-feedback" groomed: Legacy disposition: actionable; the pinned source record is under an archived stream path and must not re-enter the live grooming inbox.'
+      problem: null
+      record: stream-record:key:APS-R-9
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 7727
+      task: null
+      type: record_groomed
   session: session:key:APS-S-34
 ---
 
@@ -247,3 +387,63 @@ aps-framework-operations/verification.html
 7710 wiki_created
 
 aps-framework-operations/framework/CHANGELOG.md
+
+---
+
+7718 record_groomed
+
+Record from "framework-feedback" groomed: Legacy disposition: received; the pinned source record is under an archived stream path and must not re-enter the live grooming inbox.
+
+---
+
+7719 record_groomed
+
+Record from "insights" groomed: Legacy disposition: closed; the pinned source record is under an archived stream path and must not re-enter the live grooming inbox.
+
+---
+
+7720 record_groomed
+
+Record from "insights" groomed: Legacy disposition: provisional; the pinned source record is under an archived stream path and must not re-enter the live grooming inbox.
+
+---
+
+7721 record_groomed
+
+Record from "framework-feedback" groomed: Legacy disposition: actionable; the pinned source record is under an archived stream path and must not re-enter the live grooming inbox.
+
+---
+
+7722 record_groomed
+
+Record from "insights" groomed: Legacy disposition: contested; the pinned source record is under an archived stream path and must not re-enter the live grooming inbox.
+
+---
+
+7723 record_groomed
+
+Record from "insights" groomed: Legacy disposition: supported; the pinned source record is under an archived stream path and must not re-enter the live grooming inbox.
+
+---
+
+7724 record_groomed
+
+Record from "framework-feedback" groomed: Legacy disposition: closed; the pinned source record is under an archived stream path and must not re-enter the live grooming inbox.
+
+---
+
+7725 record_groomed
+
+Record from "insights" groomed: Legacy disposition: supported; the pinned source record is under an archived stream path and must not re-enter the live grooming inbox.
+
+---
+
+7726 record_groomed
+
+Record from "insights" groomed: Legacy disposition: provisional; the pinned source record is under an archived stream path and must not re-enter the live grooming inbox.
+
+---
+
+7727 record_groomed
+
+Record from "framework-feedback" groomed: Legacy disposition: actionable; the pinned source record is under an archived stream path and must not re-enter the live grooming inbox.
