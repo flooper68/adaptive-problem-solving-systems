@@ -77,6 +77,34 @@ value:
       sourceSequence: 8481
       task: null
       type: wiki_updated
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T09:54:52.671Z
+      message: aps-framework-operations/framework/README.md
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-36
+      sourceSequence: 8482
+      task: null
+      type: wiki_updated
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T09:55:04.657Z
+      message: aps-framework-operations/framework/README.md
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-36
+      sourceSequence: 8483
+      task: null
+      type: wiki_updated
   session: session:key:APS-S-36
 ---
 
@@ -107,3 +135,15 @@ Aimed at problem "p1"
 8481 wiki_updated
 
 aps-framework-operations/framework/SCHEMA.md
+
+---
+
+8482 wiki_updated
+
+aps-framework-operations/framework/README.md
+
+---
+
+8483 wiki_updated
+
+aps-framework-operations/framework/README.md

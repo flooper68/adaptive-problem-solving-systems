@@ -12,11 +12,11 @@ larger problem into problems owned by child systems. APS specifies the general
 concepts and responsibilities that close each problem-solving loop; it does not
 prescribe one workflow, storage technology, cadence, or management method.
 
-This package is the normative framework specification. In this repository it is
-the primary artifact produced by the separately declared
-[APS Framework Operations System](../problem.html). Changes to the
-normative package are summarized in [CHANGELOG.md](CHANGELOG.md). Exact
-meanings for recurring terms are consolidated in the normative
+This package is the normative framework specification. In Framework Operations
+it is the primary compiled-knowledge artifact produced by the declared
+[APS Framework Operations System](../problem.html). Changes to the normative
+package are summarized in [CHANGELOG.md](CHANGELOG.md). Exact meanings for
+recurring terms are consolidated in the normative
 [APS vocabulary](VOCABULARY.md).
 
 ## Why APS exists
@@ -79,8 +79,9 @@ is part of its strategy and may itself evolve.
   system problem, including how it interprets evidence, decomposes and compares
   smaller problems and possible responses, guides their problem strategies,
   executes work, verifies results, learns, adapts, and coordinates its
-  child systems. `SYSTEM.md` links it through `strategy` to the sibling
-  `STRATEGY.md` document.
+  child systems. The system declaration makes the strategy recoverable and
+  connected to the root problem; its physical representation is the system's
+  choice.
 - **Open and closed** — the two lifecycle states of a problem. Problem grooming
   opens an evidenced proposal into the system's active decomposition and later
   closes it with a recorded reason. A proposal is neither until that decision is
