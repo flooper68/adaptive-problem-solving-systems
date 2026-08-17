@@ -3,25 +3,448 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>aps-framework-operations — strategy</title>
+    <meta name="artifact-sha" content="—" />
+    <title>Framework Operations strategy</title>
     <style>
-      :root { --bg: #fbfaf9; --surface: #fff; --border: #e2ded8; --text: #23201d; --muted: #6b6560; --accent: #b4552d; --font: system-ui, sans-serif; }
-      [data-theme="dark"] { --bg: #17161a; --surface: #201f24; --border: #35333b; --text: #ece9e4; --muted: #a29d97; --accent: #e0885d; }
-      * { box-sizing: border-box; } body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.65 var(--font); } .page { max-width: 52rem; margin: 0 auto; padding: 1.5rem 1.25rem 5rem; } .topbar { display: flex; justify-content: space-between; padding-bottom: 1rem; border-bottom: 1px solid var(--border); } .wordmark, .meta { color: var(--muted); } .wordmark { font-size: .8rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; } .stub { padding: 1rem; border-left: 3px solid var(--accent); background: var(--surface); } button { font: inherit; }
+      :root {
+        --bg: #fbfaf9;
+        --surface: #ffffff;
+        --surface-alt: #f4f2ef;
+        --border: #e2ded8;
+        --text: #23201d;
+        --text-muted: #6b6560;
+        --accent: #b4552d;
+        --accent-soft: #f6e6dd;
+        --ok: #2f7d54;
+        --ok-soft: #e3f2e9;
+        --danger: #b23a3a;
+        --danger-soft: #f7e4e4;
+        --warn: #96701c;
+        --warn-soft: #f8eed4;
+        --shadow: 0 1px 2px rgb(35 32 29 / 6%);
+        --font-sans:
+          system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+          "Noto Sans", sans-serif;
+        --font-mono:
+          ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+          "Liberation Mono", monospace;
+      }
+
+      [data-theme="dark"] {
+        --bg: #17161a;
+        --surface: #201f24;
+        --surface-alt: #27262c;
+        --border: #35333b;
+        --text: #ece9e4;
+        --text-muted: #a29d97;
+        --accent: #e0885d;
+        --accent-soft: #38271f;
+        --ok: #74c194;
+        --ok-soft: #1f3229;
+        --danger: #e08585;
+        --danger-soft: #372224;
+        --warn: #d9b45c;
+        --warn-soft: #342c17;
+        --shadow: 0 1px 2px rgb(0 0 0 / 40%);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: var(--font-sans);
+        font-size: 16px;
+        line-height: 1.65;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .page {
+        max-width: 52rem;
+        margin: 0 auto;
+        padding: 1.5rem 1.25rem 5rem;
+      }
+
+      /* Header ------------------------------------------------------- */
+
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .wordmark {
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--text-muted);
+      }
+
+      .theme-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0.35rem 0.7rem;
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        background: var(--surface);
+        color: var(--text-muted);
+        font: inherit;
+        font-size: 0.8rem;
+        cursor: pointer;
+      }
+
+      .theme-toggle:hover {
+        color: var(--text);
+        border-color: var(--accent);
+      }
+
+      h1 {
+        margin: 1.75rem 0 0.35rem;
+        font-size: 1.9rem;
+        line-height: 1.2;
+        letter-spacing: -0.015em;
+      }
+
+      .meta {
+        margin: 0 0 2rem;
+        color: var(--text-muted);
+        font-size: 0.9rem;
+      }
+
+      h2 {
+        margin: 2.5rem 0 0.75rem;
+        font-size: 1.25rem;
+        letter-spacing: -0.01em;
+      }
+
+      h3 {
+        margin: 0 0 0.5rem;
+        font-size: 1rem;
+      }
+
+      p {
+        margin: 0 0 0.9rem;
+      }
+
+      a {
+        color: var(--accent);
+        text-underline-offset: 2px;
+      }
+
+      strong {
+        font-weight: 600;
+      }
+
+      ul,
+      ol {
+        margin: 0 0 0.9rem;
+        padding-left: 1.25rem;
+      }
+
+      li {
+        margin-bottom: 0.3rem;
+      }
+
+      code {
+        font-family: var(--font-mono);
+        font-size: 0.85em;
+        background: var(--surface-alt);
+        border: 1px solid var(--border);
+        border-radius: 4px;
+        padding: 0.05em 0.3em;
+      }
+
+      pre {
+        margin: 0 0 1rem;
+        padding: 0.9rem 1rem;
+        background: var(--surface-alt);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        overflow-x: auto;
+      }
+
+      pre code {
+        background: none;
+        border: none;
+        padding: 0;
+        font-size: 0.85rem;
+      }
+
+      /* TL;DR -------------------------------------------------------- */
+
+      .tldr {
+        margin: 0 0 2rem;
+        padding: 1rem 1.15rem;
+        background: var(--accent-soft);
+        border: 1px solid var(--border);
+        border-left: 3px solid var(--accent);
+        border-radius: 8px;
+      }
+
+      .tldr > :last-child {
+        margin-bottom: 0;
+      }
+
+      /* Decision cards ----------------------------------------------- */
+
+      .card {
+        margin: 0 0 1rem;
+        padding: 1rem 1.15rem;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        box-shadow: var(--shadow);
+      }
+
+      .card > :last-child {
+        margin-bottom: 0;
+      }
+
+      .card .alt {
+        margin-top: 0.9rem;
+        padding-top: 0.75rem;
+        border-top: 1px dashed var(--border);
+        color: var(--text-muted);
+        font-size: 0.9rem;
+      }
+
+      /* Dispositions ------------------------------------------------- */
+
+      .card.fixed {
+        border-left: 3px solid var(--ok);
+      }
+
+      .card.refuted {
+        border-left: 3px solid var(--danger);
+      }
+
+      .card.warn {
+        border-left: 3px solid var(--warn);
+      }
+
+      span.fixed,
+      span.refuted,
+      span.warn {
+        display: inline-block;
+        padding: 0.05em 0.5em;
+        border-radius: 999px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        line-height: 1.6;
+      }
+
+      span.fixed {
+        background: var(--ok-soft);
+        color: var(--ok);
+      }
+
+      span.refuted {
+        background: var(--danger-soft);
+        color: var(--danger);
+      }
+
+      span.warn {
+        background: var(--warn-soft);
+        color: var(--warn);
+      }
+
+      /* Wide content ------------------------------------------------- */
+
+      .scroll {
+        margin: 0 0 1rem;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 0.9rem;
+      }
+
+      th,
+      td {
+        padding: 0.5rem 0.7rem;
+        border-bottom: 1px solid var(--border);
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th {
+        color: var(--text-muted);
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+      }
+
+      /* Diagrams ----------------------------------------------------- */
+
+      figure {
+        margin: 0 0 1.5rem;
+        padding: 1rem;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+      }
+
+      figcaption {
+        margin-top: 0.6rem;
+        color: var(--text-muted);
+        font-size: 0.85rem;
+        text-align: center;
+      }
+
+      /* Diagrams inherit the text color and lean on opacity, so a single
+         drawing reads correctly in both themes. */
+      svg.flow {
+        display: block;
+        width: 100%;
+        height: auto;
+        color: var(--text);
+        font-family: var(--font-sans);
+        font-size: 13px;
+      }
+
+      svg.flow .box {
+        fill: currentColor;
+        fill-opacity: 0.05;
+        stroke: currentColor;
+        stroke-opacity: 0.45;
+      }
+
+      svg.flow .edge {
+        fill: none;
+        stroke: currentColor;
+        stroke-opacity: 0.45;
+      }
+
+      svg.flow .label {
+        fill: currentColor;
+      }
+
+      svg.flow .label-muted {
+        fill: currentColor;
+        fill-opacity: 0.6;
+      }
+
+      svg.flow .accent {
+        color: var(--accent);
+      }
+
+      @media (max-width: 640px) {
+        .page {
+          padding: 1rem 0.9rem 4rem;
+        }
+
+        h1 {
+          font-size: 1.5rem;
+        }
+      }
     </style>
+    <script>
+      // Artifacts open light; only an explicit choice, kept in localStorage,
+      // switches them. Runs before paint so there is no flash.
+      (function () {
+        try {
+          var saved = localStorage.getItem("chaos-house-artifact-theme");
+          if (saved === "dark" || saved === "light") {
+            document.documentElement.setAttribute("data-theme", saved);
+          }
+        } catch (e) {
+          /* storage unavailable — stay light */
+        }
+      })();
+    </script>
   </head>
   <body>
-    <main class="page">
-      <header class="topbar"><span class="wordmark">Chaos House</span><button type="button" id="theme-toggle">Dark</button></header>
-      <h1>aps-framework-operations — strategy</h1>
-      <p class="meta">Problem document: strategy</p>
-      <section class="stub">
-        <p><strong>Stub.</strong> This document was scaffolded when the problem was opened and has not been written yet.</p>
-        <p>The current theory of how to move the condition: what is being tried, what is deliberately not being tried, and what would change the approach.</p>
-      </section>
-    </main>
+    <div class="page">
+      <header class="topbar">
+        <span class="wordmark">Chaos House</span>
+        <button
+          type="button"
+          class="theme-toggle"
+          id="theme-toggle"
+          aria-label="Toggle dark mode"
+        >
+          <span id="theme-toggle-label">Dark</span>
+        </button>
+      </header>
+
+      <h1>Framework Operations strategy</h1>
+      <p class="meta">Chaos House — generated from markdown by scripts/wiki-md-to-html.ts</p>
+
+      <nav class="card" aria-label="On this page">
+<h3>On this page</h3>
+<ul>
+<li><a href="#approach">Approach</a></li>
+<li><a href="#guidance-for-problem-grooming">Guidance for problem grooming</a></li>
+<li><a href="#adaptation">Adaptation</a></li>
+</ul>
+</nav>
+<h2 id="approach">Approach</h2>
+<ol>
+<li>Use the current APS version to operate the Framework Operations System
+itself rather than designing only from theory.</li>
+<li>Keep only what is needed to run one complete loop now. Remove or defer other
+concepts, processes, fields, and supporting artifacts.</li>
+<li>Prefer a smaller model the maintainer can understand and run over a broader
+model justified only by anticipated future needs.</li>
+<li>Add complexity later only when observed use, feedback, validation, or a new
+problem demonstrates that it is needed.</li>
+<li>Verify both framework consistency and whether the maintainer can understand
+and operate the whole process.</li>
+</ol>
+<h2 id="guidance-for-problem-grooming">Guidance for problem grooming</h2>
+<ul>
+<li>Prioritize problems that block finishing, understanding, or running the MVP
+loop over problems that add optional capability.</li>
+<li>Require every open problem to identify its parent and state evidence, a
+desired outcome, a strategy, and a human- or system-observable signal.</li>
+<li>Select work only when it implements or tests the problem strategy.</li>
+<li>When two approaches could work, try the smaller reversible one first.</li>
+<li>Revisit the strategy when feedback shows confusion, unnecessary ceremony, or
+a missing responsibility needed to complete the loop.</li>
+</ul>
+<h2 id="adaptation">Adaptation</h2>
+<p>The framework maintainer approves changes to this strategy. Problem grooming,
+verification, and completed loops may propose revisions; the current
+strategy remains authoritative until an approved change replaces it.</p>
+    </div>
+
     <script>
-      (function () { var root = document.documentElement; var button = document.getElementById('theme-toggle'); button.addEventListener('click', function () { var dark = root.getAttribute('data-theme') === 'dark'; root.setAttribute('data-theme', dark ? 'light' : 'dark'); button.textContent = dark ? 'Dark' : 'Light'; }); })();
+      (function () {
+        var root = document.documentElement;
+        var button = document.getElementById("theme-toggle");
+        var label = document.getElementById("theme-toggle-label");
+
+        function render() {
+          label.textContent =
+            root.getAttribute("data-theme") === "dark" ? "Light" : "Dark";
+        }
+
+        button.addEventListener("click", function () {
+          var next =
+            root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+          root.setAttribute("data-theme", next);
+          try {
+            localStorage.setItem("chaos-house-artifact-theme", next);
+          } catch (e) {
+            /* storage unavailable — the choice just won't stick */
+          }
+          render();
+        });
+
+        render();
+      })();
     </script>
   </body>
 </html>

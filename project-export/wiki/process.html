@@ -3,17 +3,468 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>aps-framework-operations — process</title>
-    <style>body{margin:0;background:#fbfaf9;color:#23201d;font:16px/1.65 system-ui,sans-serif}.page{max-width:52rem;margin:0 auto;padding:1.5rem 1.25rem 5rem}.topbar{padding-bottom:1rem;border-bottom:1px solid #e2ded8}.stub{padding:1rem;border-left:3px solid #b4552d;background:#fff}</style>
+    <meta name="artifact-sha" content="—" />
+    <title>Framework Operations process</title>
+    <style>
+      :root {
+        --bg: #fbfaf9;
+        --surface: #ffffff;
+        --surface-alt: #f4f2ef;
+        --border: #e2ded8;
+        --text: #23201d;
+        --text-muted: #6b6560;
+        --accent: #b4552d;
+        --accent-soft: #f6e6dd;
+        --ok: #2f7d54;
+        --ok-soft: #e3f2e9;
+        --danger: #b23a3a;
+        --danger-soft: #f7e4e4;
+        --warn: #96701c;
+        --warn-soft: #f8eed4;
+        --shadow: 0 1px 2px rgb(35 32 29 / 6%);
+        --font-sans:
+          system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+          "Noto Sans", sans-serif;
+        --font-mono:
+          ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+          "Liberation Mono", monospace;
+      }
+
+      [data-theme="dark"] {
+        --bg: #17161a;
+        --surface: #201f24;
+        --surface-alt: #27262c;
+        --border: #35333b;
+        --text: #ece9e4;
+        --text-muted: #a29d97;
+        --accent: #e0885d;
+        --accent-soft: #38271f;
+        --ok: #74c194;
+        --ok-soft: #1f3229;
+        --danger: #e08585;
+        --danger-soft: #372224;
+        --warn: #d9b45c;
+        --warn-soft: #342c17;
+        --shadow: 0 1px 2px rgb(0 0 0 / 40%);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: var(--font-sans);
+        font-size: 16px;
+        line-height: 1.65;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .page {
+        max-width: 52rem;
+        margin: 0 auto;
+        padding: 1.5rem 1.25rem 5rem;
+      }
+
+      /* Header ------------------------------------------------------- */
+
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .wordmark {
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--text-muted);
+      }
+
+      .theme-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0.35rem 0.7rem;
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        background: var(--surface);
+        color: var(--text-muted);
+        font: inherit;
+        font-size: 0.8rem;
+        cursor: pointer;
+      }
+
+      .theme-toggle:hover {
+        color: var(--text);
+        border-color: var(--accent);
+      }
+
+      h1 {
+        margin: 1.75rem 0 0.35rem;
+        font-size: 1.9rem;
+        line-height: 1.2;
+        letter-spacing: -0.015em;
+      }
+
+      .meta {
+        margin: 0 0 2rem;
+        color: var(--text-muted);
+        font-size: 0.9rem;
+      }
+
+      h2 {
+        margin: 2.5rem 0 0.75rem;
+        font-size: 1.25rem;
+        letter-spacing: -0.01em;
+      }
+
+      h3 {
+        margin: 0 0 0.5rem;
+        font-size: 1rem;
+      }
+
+      p {
+        margin: 0 0 0.9rem;
+      }
+
+      a {
+        color: var(--accent);
+        text-underline-offset: 2px;
+      }
+
+      strong {
+        font-weight: 600;
+      }
+
+      ul,
+      ol {
+        margin: 0 0 0.9rem;
+        padding-left: 1.25rem;
+      }
+
+      li {
+        margin-bottom: 0.3rem;
+      }
+
+      code {
+        font-family: var(--font-mono);
+        font-size: 0.85em;
+        background: var(--surface-alt);
+        border: 1px solid var(--border);
+        border-radius: 4px;
+        padding: 0.05em 0.3em;
+      }
+
+      pre {
+        margin: 0 0 1rem;
+        padding: 0.9rem 1rem;
+        background: var(--surface-alt);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        overflow-x: auto;
+      }
+
+      pre code {
+        background: none;
+        border: none;
+        padding: 0;
+        font-size: 0.85rem;
+      }
+
+      /* TL;DR -------------------------------------------------------- */
+
+      .tldr {
+        margin: 0 0 2rem;
+        padding: 1rem 1.15rem;
+        background: var(--accent-soft);
+        border: 1px solid var(--border);
+        border-left: 3px solid var(--accent);
+        border-radius: 8px;
+      }
+
+      .tldr > :last-child {
+        margin-bottom: 0;
+      }
+
+      /* Decision cards ----------------------------------------------- */
+
+      .card {
+        margin: 0 0 1rem;
+        padding: 1rem 1.15rem;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        box-shadow: var(--shadow);
+      }
+
+      .card > :last-child {
+        margin-bottom: 0;
+      }
+
+      .card .alt {
+        margin-top: 0.9rem;
+        padding-top: 0.75rem;
+        border-top: 1px dashed var(--border);
+        color: var(--text-muted);
+        font-size: 0.9rem;
+      }
+
+      /* Dispositions ------------------------------------------------- */
+
+      .card.fixed {
+        border-left: 3px solid var(--ok);
+      }
+
+      .card.refuted {
+        border-left: 3px solid var(--danger);
+      }
+
+      .card.warn {
+        border-left: 3px solid var(--warn);
+      }
+
+      span.fixed,
+      span.refuted,
+      span.warn {
+        display: inline-block;
+        padding: 0.05em 0.5em;
+        border-radius: 999px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        line-height: 1.6;
+      }
+
+      span.fixed {
+        background: var(--ok-soft);
+        color: var(--ok);
+      }
+
+      span.refuted {
+        background: var(--danger-soft);
+        color: var(--danger);
+      }
+
+      span.warn {
+        background: var(--warn-soft);
+        color: var(--warn);
+      }
+
+      /* Wide content ------------------------------------------------- */
+
+      .scroll {
+        margin: 0 0 1rem;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 0.9rem;
+      }
+
+      th,
+      td {
+        padding: 0.5rem 0.7rem;
+        border-bottom: 1px solid var(--border);
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th {
+        color: var(--text-muted);
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+      }
+
+      /* Diagrams ----------------------------------------------------- */
+
+      figure {
+        margin: 0 0 1.5rem;
+        padding: 1rem;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+      }
+
+      figcaption {
+        margin-top: 0.6rem;
+        color: var(--text-muted);
+        font-size: 0.85rem;
+        text-align: center;
+      }
+
+      /* Diagrams inherit the text color and lean on opacity, so a single
+         drawing reads correctly in both themes. */
+      svg.flow {
+        display: block;
+        width: 100%;
+        height: auto;
+        color: var(--text);
+        font-family: var(--font-sans);
+        font-size: 13px;
+      }
+
+      svg.flow .box {
+        fill: currentColor;
+        fill-opacity: 0.05;
+        stroke: currentColor;
+        stroke-opacity: 0.45;
+      }
+
+      svg.flow .edge {
+        fill: none;
+        stroke: currentColor;
+        stroke-opacity: 0.45;
+      }
+
+      svg.flow .label {
+        fill: currentColor;
+      }
+
+      svg.flow .label-muted {
+        fill: currentColor;
+        fill-opacity: 0.6;
+      }
+
+      svg.flow .accent {
+        color: var(--accent);
+      }
+
+      @media (max-width: 640px) {
+        .page {
+          padding: 1rem 0.9rem 4rem;
+        }
+
+        h1 {
+          font-size: 1.5rem;
+        }
+      }
+    </style>
+    <script>
+      // Artifacts open light; only an explicit choice, kept in localStorage,
+      // switches them. Runs before paint so there is no flash.
+      (function () {
+        try {
+          var saved = localStorage.getItem("chaos-house-artifact-theme");
+          if (saved === "dark" || saved === "light") {
+            document.documentElement.setAttribute("data-theme", saved);
+          }
+        } catch (e) {
+          /* storage unavailable — stay light */
+        }
+      })();
+    </script>
   </head>
   <body>
-    <main class="page">
-      <header class="topbar">Chaos House</header>
-      <h1>aps-framework-operations — process</h1>
-      <section class="stub">
-        <p><strong>Stub.</strong> This document was scaffolded when the project was created and has not been written yet.</p>
-        <p>How this project's work is run: who does what, which session types carry it, and the rhythm the work follows.</p>
-      </section>
-    </main>
+    <div class="page">
+      <header class="topbar">
+        <span class="wordmark">Chaos House</span>
+        <button
+          type="button"
+          class="theme-toggle"
+          id="theme-toggle"
+          aria-label="Toggle dark mode"
+        >
+          <span id="theme-toggle-label">Dark</span>
+        </button>
+      </header>
+
+      <h1>Framework Operations process</h1>
+      <p class="meta">Chaos House — generated from markdown by scripts/wiki-md-to-html.ts</p>
+
+      <p>This process operates the APS Framework Operations System. Responsibilities
+may overlap, but none may be silently omitted.</p>
+<p>When an AI agent performs the work, also follow
+<a href="ai-agent-tasks.md"><code>ai-agent-tasks.md</code></a> for claiming, human review, and delivery.</p>
+<ol>
+<li>Read <code>operations/SYSTEM.md</code>, <code>operations/STRATEGY.md</code>, the current problem
+and task files, relevant recent working sessions, published framework
+knowledge, operational meta-knowledge, observed applications, feedback,
+insights, and other new evidence.</li>
+<li>Capture direct consumer reports through <a href="intake.md"><code>intake.md</code></a> and
+assess them through <a href="sessions/grooming.md"><code>grooming.md</code></a>. Preserve feedback as
+evidence. When grooming identifies a gap already represented by an open
+problem, link it and propose bounded work through <code>intake.md</code> when
+useful. When the gap is not represented, grooming decides whether to open a
+problem before selecting work.</li>
+<li>Use <a href="sessions/brainstorming.md"><code>brainstorming.md</code></a> to discuss an idea, task, or
+research topic with the maintainer and iteratively compile reviewable changes
+into the framework or a concrete instantiation. Keep observations, insights,
+questions, and decisions distinguishable. Capture independently useful
+interpretations through <code>intake.md</code>. Capture a separate executable
+response through <code>intake.md</code> when action is proposed; selection either
+links a problem opened or linked by grooming or accepts that the work
+addresses no problem. Assess captured insights and work candidates through
+<a href="sessions/grooming.md"><code>grooming.md</code></a>.</li>
+<li>Follow <a href="sessions/grooming.md"><code>grooming.md</code></a> to revisit relevant open
+problems in <code>operations/problems/</code>, then select ready, bounded tasks in
+<code>operations/tasks/</code> that state which problems they address — or that they
+address none — and confirm owner, acceptance conditions, authority, and
+validation approach.</li>
+<li>Resolve load-bearing uncertainty through brainstorming, research, or
+experimentation. Preserve sources and distinguish evidence from inference.</li>
+<li>For normative framework work, compile the evidence within a brainstorming
+session, whose Compile step runs
+<a href="knowledge-compilation.md"><code>knowledge-compilation.md</code></a> to produce
+uncommitted framework changes and a changelog entry; brainstorming is the
+only venue that edits the compiled framework. For operational or
+application work, make the smallest coherent changes authorized by the
+selected task. Update the task's current state and retain material
+decisions and deviations in the working-session record or native evidence.</li>
+<li>Run <a href="verification.html"><code>verification.md</code></a>. Complete immediate correctness
+checks, compare available evidence with the addressed problem's signal —
+or with the task's own acceptance conditions when it addresses no problem —
+and record any delayed observation without claiming effectiveness.</li>
+<li>Recompile within the brainstorming session and repeat verification if new
+evidence changes the proposed knowledge. Route operations-specific lessons
+to the declared process, verification, task, stream, or system target, and
+keep raw evidence at its source or durable reference.</li>
+<li>Run <a href="framework-adaptation.md"><code>framework-adaptation.md</code></a> to review the
+uncommitted changes. The maintainer approves normative publication and use.</li>
+<li>Follow <code>release.md</code> when publishing a coherent framework version. Otherwise
+record the stopping point, next trigger, or handoff in the task and session
+record.</li>
+</ol>
+<p>The process has completed one full adaptive cycle only when evidence has changed
+a subsequent task, strategy, process, verification, stream, knowledge artifact,
+or system structure under declared authority.</p>
+    </div>
+
+    <script>
+      (function () {
+        var root = document.documentElement;
+        var button = document.getElementById("theme-toggle");
+        var label = document.getElementById("theme-toggle-label");
+
+        function render() {
+          label.textContent =
+            root.getAttribute("data-theme") === "dark" ? "Light" : "Dark";
+        }
+
+        button.addEventListener("click", function () {
+          var next =
+            root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+          root.setAttribute("data-theme", next);
+          try {
+            localStorage.setItem("chaos-house-artifact-theme", next);
+          } catch (e) {
+            /* storage unavailable — the choice just won't stick */
+          }
+          render();
+        });
+
+        render();
+      })();
+    </script>
   </body>
 </html>

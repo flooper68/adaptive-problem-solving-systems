@@ -12,22 +12,22 @@
     "declarations": [
       {
         "path": "problem.html",
-        "status": "stub",
+        "status": "present",
         "stem": "problem"
       },
       {
         "path": "verification.html",
-        "status": "stub",
+        "status": "present",
         "stem": "verification"
       },
       {
         "path": "strategy.html",
-        "status": "stub",
+        "status": "present",
         "stem": "strategy"
       },
       {
         "path": "process.html",
-        "status": "stub",
+        "status": "present",
         "stem": "process"
       }
     ],

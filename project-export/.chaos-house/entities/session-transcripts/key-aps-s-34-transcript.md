@@ -49,6 +49,132 @@ value:
       sourceSequence: 7180
       task: null
       type: session_note
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T06:58:58.022Z
+      message: aps-framework-operations/strategy.html
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 7701
+      task: null
+      type: wiki_updated
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T06:59:01.278Z
+      message: aps-framework-operations/framework/README.md
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 7703
+      task: null
+      type: wiki_created
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T06:59:01.286Z
+      message: aps-framework-operations/framework/VISUALIZATION.md
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 7704
+      task: null
+      type: wiki_created
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T06:59:01.350Z
+      message: aps-framework-operations/framework/SCHEMA.md
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 7705
+      task: null
+      type: wiki_created
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T06:59:01.462Z
+      message: aps-framework-operations/problem.html
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 7706
+      task: null
+      type: wiki_updated
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T06:59:01.598Z
+      message: aps-framework-operations/process.html
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 7707
+      task: null
+      type: wiki_updated
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T06:59:01.605Z
+      message: aps-framework-operations/framework/VOCABULARY.md
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 7708
+      task: null
+      type: wiki_created
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T06:59:01.711Z
+      message: aps-framework-operations/verification.html
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 7709
+      task: null
+      type: wiki_updated
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T06:59:02.025Z
+      message: aps-framework-operations/framework/CHANGELOG.md
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 7710
+      task: null
+      type: wiki_created
   session: session:key:APS-S-34
 ---
 
@@ -67,3 +193,57 @@ APS import audit: source commit/fingerprint matches 43b9f691; 142 imported raw-s
 7180 session_note
 
 Additional cross-project gap: chaos-house-development/reference/aps-vocabulary.md is stale at APS commit 05ef870 while the imported/source project is 43b9f69. The refresh script default still points at nonexistent ~/dev/adaptive-problem-solving-systems; the actual checkout is ~/dev_personal/adaptive-problem-solving-systems. With APS_FRAMEWORK_DIR overridden, the refresh generates successfully. AGENTS.md carries the same stale source path.
+
+---
+
+7701 wiki_updated
+
+aps-framework-operations/strategy.html
+
+---
+
+7703 wiki_created
+
+aps-framework-operations/framework/README.md
+
+---
+
+7704 wiki_created
+
+aps-framework-operations/framework/VISUALIZATION.md
+
+---
+
+7705 wiki_created
+
+aps-framework-operations/framework/SCHEMA.md
+
+---
+
+7706 wiki_updated
+
+aps-framework-operations/problem.html
+
+---
+
+7707 wiki_updated
+
+aps-framework-operations/process.html
+
+---
+
+7708 wiki_created
+
+aps-framework-operations/framework/VOCABULARY.md
+
+---
+
+7709 wiki_updated
+
+aps-framework-operations/verification.html
+
+---
+
+7710 wiki_created
+
+aps-framework-operations/framework/CHANGELOG.md
