@@ -91,6 +91,20 @@ value:
       sourceSequence: 8388
       task: null
       type: wiki_updated
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T09:27:02.536Z
+      message: aps-framework-operations/verification.html
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-35
+      sourceSequence: 8416
+      task: null
+      type: wiki_updated
   session: session:key:APS-S-35
 ---
 
@@ -127,3 +141,9 @@ aps-framework-operations/verification.html
 8388 wiki_updated
 
 aps-framework-operations/problems/p1/current-state.html
+
+---
+
+8416 wiki_updated
+
+aps-framework-operations/verification.html
