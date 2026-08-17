@@ -46,7 +46,7 @@
       },
       "kind": "project",
       "path": "project-export/.chaos-house/entities/project/aps-framework-operations.json",
-      "sha256": "3273e1b3a71b24bb66142b34350ffa6ebe79345f53199d484b853f05a92af5fd"
+      "sha256": "33d08ad6d7a1c747b10362b3b957caa07e6b8f7ba7eb9b6fbf27ab605673d558"
     },
     {
       "entity": {
@@ -796,6 +796,18 @@
       "entity": {
         "identity": {
           "type": "slug",
+          "value": "key-aps-s-35-transcript"
+        },
+        "kind": "session-transcript"
+      },
+      "kind": "session-transcript",
+      "path": "project-export/.chaos-house/entities/session-transcripts/key-aps-s-35-transcript.md",
+      "sha256": "4bd570aa3c67775b5467f66482a555960db6732641cec0d58316456c42b71bf2"
+    },
+    {
+      "entity": {
+        "identity": {
+          "type": "slug",
           "value": "key-aps-s-4-transcript"
         },
         "kind": "session-transcript"
@@ -1258,7 +1270,7 @@
       },
       "kind": "timeline-event",
       "path": "project-export/.chaos-house/entities/timeline/events.ndjson",
-      "sha256": "f52e198990d54d873660d1770ea5cf05e948de016d0cac1e063e1f6165391b69"
+      "sha256": "e2849df0dbc27d94d6ae095353589ae43cf0e0635500f1d3189d0e33334a2f89"
     },
     {
       "entity": {
@@ -1667,6 +1679,18 @@
       "kind": "session",
       "path": "project-export/sessions/2026-08-16-aps-s-34.md",
       "sha256": "11d9d2c21aa617e765c3ff82be3542730d408be8c377667c171d7b2f5be03a9d"
+    },
+    {
+      "entity": {
+        "identity": {
+          "type": "key",
+          "value": "APS-S-35"
+        },
+        "kind": "session"
+      },
+      "kind": "session",
+      "path": "project-export/sessions/2026-08-17-aps-s-35.md",
+      "sha256": "20e9ec658af2298c157f47722c3d43b4e528c6ad459110e8899134792c2bc7e1"
     },
     {
       "entity": {
@@ -2691,8 +2715,8 @@
   },
   "version": 1,
   "watermark": {
-    "endEventSeq": 8188,
+    "endEventSeq": 8378,
     "stale": false,
-    "startEventSeq": 8188
+    "startEventSeq": 8378
   }
 }
