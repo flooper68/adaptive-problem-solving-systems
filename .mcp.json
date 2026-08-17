@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "chaos-house": {
+      "type": "http",
+      "url": "http://100.121.4.25:4321/mcp"
+    }
+  }
+}
