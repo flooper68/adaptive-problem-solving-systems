@@ -2653,6 +2653,76 @@ value:
       sourceSequence: 8075
       task: null
       type: wiki_updated
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T08:00:17.250Z
+      message: aps-framework-operations/strategy.md
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 8123
+      task: null
+      type: wiki_deleted
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T08:00:17.292Z
+      message: aps-framework-operations/verification.md
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 8124
+      task: null
+      type: wiki_deleted
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T08:00:17.337Z
+      message: aps-framework-operations/problems/p1/repository-source.md
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 8125
+      task: null
+      type: wiki_deleted
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T08:00:17.381Z
+      message: aps-framework-operations/repository-import/754bd1689f69abecaa303e2bfba0de05ca2309fb7ad01ccb8afdc1771f30563d.md
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 8126
+      task: null
+      type: wiki_deleted
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T08:00:17.451Z
+      message: aps-framework-operations/repository-import/cutover-2026-08-17.md
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 8127
+      task: null
+      type: wiki_deleted
   session: session:key:APS-S-34
 ---
 
@@ -3785,5 +3855,35 @@ aps-framework-operations/repository-import/cutover-2026-08-17.md
 ---
 
 8075 wiki_updated
+
+aps-framework-operations/repository-import/cutover-2026-08-17.md
+
+---
+
+8123 wiki_deleted
+
+aps-framework-operations/strategy.md
+
+---
+
+8124 wiki_deleted
+
+aps-framework-operations/verification.md
+
+---
+
+8125 wiki_deleted
+
+aps-framework-operations/problems/p1/repository-source.md
+
+---
+
+8126 wiki_deleted
+
+aps-framework-operations/repository-import/754bd1689f69abecaa303e2bfba0de05ca2309fb7ad01ccb8afdc1771f30563d.md
+
+---
+
+8127 wiki_deleted
 
 aps-framework-operations/repository-import/cutover-2026-08-17.md

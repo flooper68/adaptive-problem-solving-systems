@@ -790,7 +790,7 @@
       },
       "kind": "session-transcript",
       "path": "project-export/.chaos-house/entities/session-transcripts/key-aps-s-34-transcript.md",
-      "sha256": "4876fd587862e91384c2f9c7a010f8565a890b76092451120c354632af8081d3"
+      "sha256": "23bf659c0d064329f30359577f55ecd126001c3a06f656bf72af2f0ba8d9ad12"
     },
     {
       "entity": {
@@ -1258,7 +1258,7 @@
       },
       "kind": "timeline-event",
       "path": "project-export/.chaos-house/entities/timeline/events.ndjson",
-      "sha256": "b112c8899d66074bf9351a5c33e18458ffd7649e6f3eebcf93ffc487bec21e29"
+      "sha256": "2391703103565aa37bc9819ff483c8b9d774187dd0500ded449a2deb47f1bde7"
     },
     {
       "entity": {
@@ -2464,18 +2464,6 @@
       "entity": {
         "identity": {
           "type": "slug",
-          "value": "wiki-problems-p1-repository-source-md"
-        },
-        "kind": "wiki-page"
-      },
-      "kind": "wiki-page",
-      "path": "project-export/wiki/problems/p1/repository-source.md",
-      "sha256": "b0787a6b7ab891be27dd18db89643d65072f1009dda6a6b703b24439404bdf55"
-    },
-    {
-      "entity": {
-        "identity": {
-          "type": "slug",
           "value": "wiki-problems-p1-strategy-html"
         },
         "kind": "wiki-page"
@@ -2656,30 +2644,6 @@
       "entity": {
         "identity": {
           "type": "slug",
-          "value": "wiki-repository-import-754bd1689f69abecaa303e2bfba0de05ca2309fb7ad01ccb8afdc1771f30563d-md"
-        },
-        "kind": "wiki-page"
-      },
-      "kind": "wiki-page",
-      "path": "project-export/wiki/repository-import/754bd1689f69abecaa303e2bfba0de05ca2309fb7ad01ccb8afdc1771f30563d.md",
-      "sha256": "f8679de9bdd28d5958763140ceb8e0a94f4cf15ac7707717d6fa88acd3738483"
-    },
-    {
-      "entity": {
-        "identity": {
-          "type": "slug",
-          "value": "wiki-repository-import-cutover-2026-08-17-md"
-        },
-        "kind": "wiki-page"
-      },
-      "kind": "wiki-page",
-      "path": "project-export/wiki/repository-import/cutover-2026-08-17.md",
-      "sha256": "b8f4d7a327d190d4772c33a02bb60ea144156232c3ebb1947482d2f0d660b471"
-    },
-    {
-      "entity": {
-        "identity": {
-          "type": "slug",
           "value": "wiki-strategy-html"
         },
         "kind": "wiki-page"
@@ -2687,18 +2651,6 @@
       "kind": "wiki-page",
       "path": "project-export/wiki/strategy.html",
       "sha256": "b7605e21aa31932a8b7116473b67a05ccbd6966d8795ccdb8228facbdce4bc0d"
-    },
-    {
-      "entity": {
-        "identity": {
-          "type": "slug",
-          "value": "wiki-strategy-md"
-        },
-        "kind": "wiki-page"
-      },
-      "kind": "wiki-page",
-      "path": "project-export/wiki/strategy.md",
-      "sha256": "8ea42b0d207d44080d2a3925dd4b398f27091518aa958785e488c313a8490428"
     },
     {
       "entity": {
@@ -2723,18 +2675,6 @@
       "kind": "wiki-page",
       "path": "project-export/wiki/verification.html",
       "sha256": "fa13b8dfeadb312ff6fbb2f6504a22e68dbd6c6df7287780701cd6cff9c83f6e"
-    },
-    {
-      "entity": {
-        "identity": {
-          "type": "slug",
-          "value": "wiki-verification-md"
-        },
-        "kind": "wiki-page"
-      },
-      "kind": "wiki-page",
-      "path": "project-export/wiki/verification.md",
-      "sha256": "d0266f9f7a0b1996e23594449eb64de5751678b9daa4a29ebcfccb33b4ad4421"
     }
   ],
   "format": "chaos-house-projection",
@@ -2750,8 +2690,8 @@
   },
   "version": 1,
   "watermark": {
-    "endEventSeq": 8075,
+    "endEventSeq": 8127,
     "stale": false,
-    "startEventSeq": 8075
+    "startEventSeq": 8127
   }
 }
