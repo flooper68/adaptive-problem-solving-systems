@@ -790,7 +790,7 @@
       },
       "kind": "session-transcript",
       "path": "project-export/.chaos-house/entities/session-transcripts/key-aps-s-34-transcript.md",
-      "sha256": "e8459270de9f9ae6582a8a48f85615352b7147cc9ce2352f0fc3225f5b620f45"
+      "sha256": "4876fd587862e91384c2f9c7a010f8565a890b76092451120c354632af8081d3"
     },
     {
       "entity": {
@@ -1258,7 +1258,7 @@
       },
       "kind": "timeline-event",
       "path": "project-export/.chaos-house/entities/timeline/events.ndjson",
-      "sha256": "4a84db1878e55bda0b72774c9a2c9fd7ad45aebe22937c40916b9c1be890ac24"
+      "sha256": "b112c8899d66074bf9351a5c33e18458ffd7649e6f3eebcf93ffc487bec21e29"
     },
     {
       "entity": {
@@ -2674,7 +2674,7 @@
       },
       "kind": "wiki-page",
       "path": "project-export/wiki/repository-import/cutover-2026-08-17.md",
-      "sha256": "76598f2068ffe987423a4e04dbca3f66092bda3191f7c972295e0b0f80430329"
+      "sha256": "b8f4d7a327d190d4772c33a02bb60ea144156232c3ebb1947482d2f0d660b471"
     },
     {
       "entity": {
@@ -2750,8 +2750,8 @@
   },
   "version": 1,
   "watermark": {
-    "endEventSeq": 8064,
+    "endEventSeq": 8075,
     "stale": false,
-    "startEventSeq": 8064
+    "startEventSeq": 8075
   }
 }
