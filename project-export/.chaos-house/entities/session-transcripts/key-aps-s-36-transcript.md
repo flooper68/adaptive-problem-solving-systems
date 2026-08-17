@@ -147,6 +147,20 @@ value:
       sourceSequence: 8490
       task: null
       type: wiki_updated
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T09:55:35.162Z
+      message: aps-framework-operations/framework/VOCABULARY.md
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-36
+      sourceSequence: 8491
+      task: null
+      type: wiki_updated
   session: session:key:APS-S-36
 ---
 
@@ -207,3 +221,9 @@ aps-framework-operations/framework/README.md
 8490 wiki_updated
 
 aps-framework-operations/framework/CHANGELOG.md
+
+---
+
+8491 wiki_updated
+
+aps-framework-operations/framework/VOCABULARY.md

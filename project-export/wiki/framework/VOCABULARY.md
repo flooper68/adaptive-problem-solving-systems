@@ -109,8 +109,9 @@ The system's current theory and approach for solving its system problem: how it
 interprets evidence, decomposes and compares smaller problems and possible
 responses, guides their problem strategies, executes work, verifies results,
 learns, adapts, and coordinates its child systems. Its scope is
-system-wide; each problem strategy covers only that problem. It is the sibling
-`STRATEGY.md` document linked from `SYSTEM.md` and changes through adaptation
+system-wide; each problem strategy covers only that problem. The system
+declaration makes it recoverable and connected to the root problem; its
+physical representation is the system's choice. It changes through adaptation
 when evidence warrants it.
 
 ## Evidence and interpretation
