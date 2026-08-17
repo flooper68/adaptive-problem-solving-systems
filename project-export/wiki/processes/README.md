@@ -1,24 +1,16 @@
-# Processes
+# Framework Operations processes
 
-A derived index of the declared processes by loop stage; `SYSTEM.md` and the
-process files themselves stay authoritative. Processes are compiled
-knowledge — superseded versions live in git history, not archives.
+Process descriptions are compiled operational knowledge. Only the current page is operative; prior versions remain recoverable from Chaos House wiki events, session records, and offsite backup rather than from an archive of competing process files.
 
-Work-session processes — one per session type declared in `SYSTEM.md`
-`work_sessions` — live under [`sessions/`](sessions/); the rest of the
-processes support them.
+- `process.md` — the complete operating loop
+- `verification.md` — correctness and problem-signal verification
+- `intake.md` — faithful evidence capture
+- `knowledge-compilation.md` — evidence-to-framework compilation
+- `framework-adaptation.md` — approval and publication of compiled knowledge
+- `ai-agent-tasks.md` — execution through Chaos House tasks and sessions
+- `sessions/brainstorming.md` — interactive framework work
+- `sessions/automated-brainstorming.md` — autonomous proposal plus independent review
+- `sessions/grooming.md` — interactive disposition of records, tasks, and problems
+- `sessions/automated-grooming.md` — autonomous proposals with per-item owner approval
 
-| Loop stage | Process |
-| --- | --- |
-| Orchestrate the whole loop | [`process.md`](process.md) |
-| Capture inputs (feedback, insights, task candidates) | [`intake.md`](intake.md) |
-| Assess inputs and decide (all kinds, incl. problems) | [`grooming.md`](sessions/grooming.md) |
-| Deliberate and compile changes | [`brainstorming.md`](sessions/brainstorming.md), [`knowledge-compilation.md`](knowledge-compilation.md) |
-| Brainstorm autonomously on a named task or topic (experimental) | [`sessions/automated-brainstorming.md`](sessions/automated-brainstorming.md) |
-| Propose dispositions autonomously (experimental) | [`sessions/automated-grooming.md`](sessions/automated-grooming.md) |
-| Check results against signals | [`verification.md`](verification.md) |
-| Adopt and publish | [`framework-adaptation.md`](framework-adaptation.md), [`release.md`](release.md) |
-| Agent conduct and handoffs | [`ai-agent-tasks.md`](ai-agent-tasks.md) |
-
-Current state and next work live in [`../STATE.md`](../STATE.md) and each
-problem file's `Current state` section.
+All canonical state changes use Chaos House actions and session attribution. The R54 Git repository is one-way recovery projection only.

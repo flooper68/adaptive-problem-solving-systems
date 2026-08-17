@@ -371,6 +371,202 @@ value:
       sourceSequence: 7732
       task: null
       type: wiki_updated
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T07:03:17.702Z
+      message: aps-framework-operations/processes/framework-adaptation.md
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 7734
+      task: null
+      type: wiki_updated
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T07:03:19.780Z
+      message: aps-framework-operations/processes/knowledge-compilation.md
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 7735
+      task: null
+      type: wiki_updated
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T07:03:19.917Z
+      message: aps-framework-operations/verification.html
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 7736
+      task: null
+      type: wiki_updated
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T07:03:20.158Z
+      message: aps-framework-operations/processes/intake.md
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 7737
+      task: null
+      type: wiki_updated
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T07:03:20.656Z
+      message: aps-framework-operations/processes/process.md
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 7738
+      task: null
+      type: wiki_updated
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T07:03:20.777Z
+      message: aps-framework-operations/processes/sessions/brainstorming.md
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 7739
+      task: null
+      type: wiki_updated
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T07:03:20.853Z
+      message: aps-framework-operations/processes/README.md
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 7742
+      task: null
+      type: wiki_updated
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T07:03:21.192Z
+      message: aps-framework-operations/processes/verification.md
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 7743
+      task: null
+      type: wiki_updated
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T07:03:21.266Z
+      message: aps-framework-operations/processes/ai-agent-tasks.md
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 7744
+      task: null
+      type: wiki_updated
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T07:03:21.397Z
+      message: aps-framework-operations/processes/sessions/automated-brainstorming.md
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 7745
+      task: null
+      type: wiki_updated
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T07:03:21.619Z
+      message: aps-framework-operations/processes/sessions/automated-grooming.md
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 7748
+      task: null
+      type: wiki_updated
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T07:03:21.637Z
+      message: aps-framework-operations/process.html
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 7749
+      task: null
+      type: wiki_updated
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T07:03:21.690Z
+      message: aps-framework-operations/processes/sessions/grooming.md
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 7750
+      task: null
+      type: wiki_updated
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T07:03:24.358Z
+      message: aps-framework-operations/streams/README.md
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 7751
+      task: null
+      type: wiki_created
   session: session:key:APS-S-34
 ---
 
@@ -527,3 +723,87 @@ Signal read for "p1" on 2026-08-07: Concept review inventory 12 reviewed; 18 rev
 7732 wiki_updated
 
 aps-framework-operations/repository-source/CLAUDE.md
+
+---
+
+7734 wiki_updated
+
+aps-framework-operations/processes/framework-adaptation.md
+
+---
+
+7735 wiki_updated
+
+aps-framework-operations/processes/knowledge-compilation.md
+
+---
+
+7736 wiki_updated
+
+aps-framework-operations/verification.html
+
+---
+
+7737 wiki_updated
+
+aps-framework-operations/processes/intake.md
+
+---
+
+7738 wiki_updated
+
+aps-framework-operations/processes/process.md
+
+---
+
+7739 wiki_updated
+
+aps-framework-operations/processes/sessions/brainstorming.md
+
+---
+
+7742 wiki_updated
+
+aps-framework-operations/processes/README.md
+
+---
+
+7743 wiki_updated
+
+aps-framework-operations/processes/verification.md
+
+---
+
+7744 wiki_updated
+
+aps-framework-operations/processes/ai-agent-tasks.md
+
+---
+
+7745 wiki_updated
+
+aps-framework-operations/processes/sessions/automated-brainstorming.md
+
+---
+
+7748 wiki_updated
+
+aps-framework-operations/processes/sessions/automated-grooming.md
+
+---
+
+7749 wiki_updated
+
+aps-framework-operations/process.html
+
+---
+
+7750 wiki_updated
+
+aps-framework-operations/processes/sessions/grooming.md
+
+---
+
+7751 wiki_created
+
+aps-framework-operations/streams/README.md

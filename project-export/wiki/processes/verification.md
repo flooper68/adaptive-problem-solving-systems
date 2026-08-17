@@ -1,49 +1,12 @@
-# Framework verification
+# Verification
 
-Verification is the Framework Operations value function: it evaluates a
-solution attempt against the system problem and supplies evidence for the next
-iteration. Repository correctness is necessary evidence, but improvement is
-not established until use shows that APS became more understandable or useful.
+Verification separates correctness of the attempted change from movement in the problem condition.
 
-For every material attempt:
+1. Restate the task acceptance conditions and the problem strategy it serves, or state that it addresses no problem.
+2. Check every changed canonical surface in Chaos House: exact wiki content, links, declaration warnings, session-type process resolution, task/problem/record relationships, and any structured state the change claims to update.
+3. Challenge contradictions across `framework/`, project declarations, processes, current-state views, tasks, and retained evidence. A rendered page or valid action result is necessary evidence, not proof of coherence.
+4. Take and record the addressed problem's declared signal reading. Compare it with the prior reading and state improved, worsened, unchanged, unresolved, or unreadable. A repeatedly unreadable signal triggers grooming.
+5. Keep delayed evidence explicit. Acceptance may establish correctness while problem improvement remains unverified.
+6. For durability, inspect the configured repository backup after accepted writes. `succeeded` and `pending: false` confirm projection convergence; they do not approve the content. Exact instance recovery remains a host database/filesystem responsibility.
 
-1. State the attempted change, the problem or problem signal it should affect,
-   the evidence available now, and any observation that must happen later.
-2. Check the current repository:
-   - compare `operations/SYSTEM.md` with `framework/SCHEMA.md`;
-   - resolve every declared strategy, loop, verification, work-session, and
-     stream-process path;
-   - confirm the strategy guides problem selection and the linked loop process
-     implements planning, execution, verification, learning, and adaptation;
-   - confirm active problem files contain their required state and selected
-     tasks reference existing problem IDs when they address a problem;
-   - check Markdown links and local file references;
-   - check consistency among the framework definition, vocabulary, declaration
-     contract, visualization, and changelog;
-   - confirm `framework/` remains normative and `operations/` remains the first
-     concrete application and the system improving it;
-   - review terminology and process-defined authority for ambiguity or
-     contradiction; and
-   - when knowledge compilation changes, keep historical input evidence and
-     expected output isolated from each other.
-3. Evaluate problem improvement with methods proportionate to the claim, such
-   as operating Framework Operations, applying APS in another concrete system,
-   asking a consumer to define or assess a system without unstated help,
-   comparing decisions or results before and after adaptation, or revisiting a
-   later run to see whether learning improved it.
-4. Record the context, observation period, evidence, confounders, failures, and
-   conclusion. Take a reading of the addressed problem's signal, record the
-   value observed, compare it with the previous reading, and state whether the
-   problem improved, worsened, or remains unresolved. When no reading can be
-   taken, record that the signal was unreadable rather than restating it; a
-   signal that stays unreadable across attempts is a grooming trigger. A
-   task with no addressed problem is verified against its own acceptance
-   conditions; no problem signal is read for it.
-5. Keep delayed evidence explicit. A correct repository change may be accepted
-   while problem improvement remains unverified; do not describe it as proven
-   effective until the later evidence exists.
-
-Verification is complete for the current stopping point when immediate checks
-pass, known contradictions are recorded, the current problem signal is read and
-reported honestly when the work addresses a problem, and any delayed
-observation has a clear next trigger.
+Verification is complete for the stopping point when immediate checks pass, contradictions and limits are recorded, the signal is read when applicable, and delayed evidence has a next trigger.

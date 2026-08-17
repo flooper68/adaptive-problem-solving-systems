@@ -1,95 +1,14 @@
 # Knowledge compilation
 
-## Purpose
+Use this process when evidence should change the reusable APS framework rather than remain only in a task, problem, session, or stream record.
 
-Turn retained evidence into coherent updates to the APS framework, which is
-this system's primary compiled-knowledge artifact. Preserve material scope and
-uncertainty in the resulting knowledge, and keep the edits uncommitted until
-adaptation is approved.
+1. Name the claim, intended audience, affected problem/strategy, and why the evidence supports compilation now.
+2. Gather direct source references and preserve scope, uncertainty, disagreement, and limiting evidence.
+3. Identify the one canonical target under `framework/`. Prefer revising an existing home over creating a parallel explanation.
+4. Draft the exact proposed page changes outside the authoritative wiki. Include the corresponding `framework/CHANGELOG.md` entry. A draft is review material, not compiled knowledge.
+5. Challenge overlap, circular definitions, multiple sources of truth, ownerless state, unsupported machinery, and wording that cannot be restated plainly.
+6. Review the complete draft under `framework-adaptation.md`. Compilation alone never authorizes publication.
+7. After explicit maintainer approval, write the approved pages through session-bound `write_wiki_file` or `edit_wiki_file` actions. Keep source evidence in its native records; do not create a candidate framework tree.
+8. Verify exact written content and links, refresh affected current state, and record changed paths, decisions, evidence, limits, and the approval in the working-session record.
 
-## Invocation
-
-This process runs only inside a [`brainstorming`](sessions/brainstorming.md) session
-(its Compile step). Grooming processes update their own artifacts — insight
-dispositions, feedback records, problem and task files — and do not edit the
-compiled framework directly. When any other work session or grooming
-invocation surfaces a framework-worthy lesson, capture the compilation as a
-task through [`intake.md`](intake.md) linking the source evidence;
-a brainstorming session executes that task and compiles the lesson. This
-keeps pending lessons visible in `tasks/` instead of waiting untracked for a
-session.
-
-## Inputs
-
-For the question or completed work being compiled, read:
-
-- the current system problem and strategy, problem hierarchy, task files,
-  and published framework knowledge;
-- relevant records from every declared stream, including insight claims and
-  dispositions, groomed feedback, usage evidence, work history and its
-  framework baseline, and external foundations;
-- verification results; and
-- the raw source or durable reference behind every material claim.
-
-Missing context is an uncertainty to record or resolve through discussion,
-research, or experimentation. It is not evidence for a convenient conclusion.
-
-## Compilation procedure
-
-1. State the compilation question and its evidence boundary: what period, work,
-   outcome, or decision is being synthesized.
-2. Gather the relevant evidence and retain a source link, stable ID, Git object,
-   or other recoverable provenance for each material observation.
-3. Separate direct observations, external source claims, operator inference,
-   and unresolved uncertainty.
-4. Assess whether a lesson is reusable beyond one event. Record the context in
-   which it applies and its validation state. Do not present an unvalidated
-   usefulness claim as established knowledge.
-5. Classify each reusable conclusion by target:
-   - domain-independent APS knowledge belongs in the framework;
-   - lessons about running the framework-producing system propose changes to
-     its `SYSTEM.md`, processes, validation, task handling, or streams; and
-   - context-specific demonstrations or observations remain in their source
-     evidence unless the framework adopts a general lesson.
-6. Edit the authoritative target directly as an uncommitted change. Keep
-   operations-specific conclusions in the authoritative operational document
-   they change rather than creating a second knowledge artifact. Within the
-   framework, each definition has one home: the vocabulary carries a concept's
-   exact meaning and boundary, and the framework definition explains how
-   concepts operate together, referencing the vocabulary rather than restating
-   it. Do not compile the same definition into both.
-7. Append a concise entry to the target knowledge artifact's changelog when the
-   compilation materially changes it. Raw evidence and detailed provenance stay
-   in their source streams, work records, and Git history.
-8. Pass the uncommitted changes to [`framework-adaptation.md`](framework-adaptation.md).
-   Compilation alone does not authorize commit, publication, or later use.
-
-## Output contract
-
-The compiled-knowledge artifact is `../../framework/`, which is also this
-system's primary normative output. Compilation edits it directly and updates
-`../../framework/CHANGELOG.md`; the uncommitted Git diff is the reviewable
-proposal. Maintainer-approved adaptation authorizes the change to be committed
-and used by later work.
-
-There is no secondary operations knowledge artifact. Current operational
-knowledge lives in `../SYSTEM.md` and `../processes/`; observations and
-provenance remain in `../work/` and declared streams. This keeps the published
-framework as the single compiled-knowledge destination.
-
-## Validation
-
-Validate compilation by applying the process to retained evidence and checking
-whether the resulting knowledge preserves the source's material decisions,
-scope, and uncertainty. When a historical compiled output is available, keep it
-hidden from the compiler until the proposed output is complete; otherwise the
-exercise tests copying rather than compilation.
-
-For a historical comparison, use a fresh compiler context containing only the
-declared input evidence, this process, and the compilation instruction. Hide
-the current framework, later operations documents, Git history, acceptance
-criteria, and expected output until the proposed output is complete. A separate
-evaluator then compares source, output, and expected output for semantic
-coverage, contradictions, unsupported additions, and material omissions. Exact
-prose is not required. Use temporary isolation for the exercise. Retain only
-the evidence needed by the system's working-session or validation stream.
+Chaos House wiki events and session records provide per-write attribution. R54 backup Git history is an offsite projection and is not the review or approval record.

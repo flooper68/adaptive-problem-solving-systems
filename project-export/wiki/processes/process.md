@@ -1,59 +1,17 @@
 # Framework Operations process
 
-This process operates the APS Framework Operations System. Responsibilities
-may overlap, but none may be silently omitted.
+Chaos House is the canonical system of record for APS Framework Operations. The configured R54 repository projection is a one-way backup: it never supplies approval, never writes back into Chaos House, and never substitutes for session, task, problem, record, or wiki history.
 
-When an AI agent performs the work, also follow
-[`ai-agent-tasks.md`](ai-agent-tasks.md) for claiming, human review, and delivery.
+## Operating loop
 
-1. Read `operations/SYSTEM.md`, `operations/STRATEGY.md`, the current problem
-   and task files, relevant recent working sessions, published framework
-   knowledge, operational meta-knowledge, observed applications, feedback,
-   insights, and other new evidence.
-2. Capture direct consumer reports through [`intake.md`](intake.md) and
-   assess them through [`grooming.md`](sessions/grooming.md). Preserve feedback as
-   evidence. When grooming identifies a gap already represented by an open
-   problem, link it and propose bounded work through `intake.md` when
-   useful. When the gap is not represented, grooming decides whether to open a
-   problem before selecting work.
-3. Use [`brainstorming.md`](sessions/brainstorming.md) to discuss an idea, task, or
-   research topic with the maintainer and iteratively compile reviewable changes
-   into the framework or a concrete instantiation. Keep observations, insights,
-   questions, and decisions distinguishable. Capture independently useful
-   interpretations through `intake.md`. Capture a separate executable
-   response through `intake.md` when action is proposed; selection either
-   links a problem opened or linked by grooming or accepts that the work
-   addresses no problem. Assess captured insights and work candidates through
-   [`grooming.md`](sessions/grooming.md).
-4. Follow [`grooming.md`](sessions/grooming.md) to revisit relevant open
-   problems in `operations/problems/`, then select ready, bounded tasks in
-   `operations/tasks/` that state which problems they address — or that they
-   address none — and confirm owner, acceptance conditions, authority, and
-   validation approach.
-5. Resolve load-bearing uncertainty through brainstorming, research, or
-   experimentation. Preserve sources and distinguish evidence from inference.
-6. For normative framework work, compile the evidence within a brainstorming
-   session, whose Compile step runs
-   [`knowledge-compilation.md`](knowledge-compilation.md) to produce
-   uncommitted framework changes and a changelog entry; brainstorming is the
-   only venue that edits the compiled framework. For operational or
-   application work, make the smallest coherent changes authorized by the
-   selected task. Update the task's current state and retain material
-   decisions and deviations in the working-session record or native evidence.
-7. Run [`verification.md`](verification.md). Complete immediate correctness
-   checks, compare available evidence with the addressed problem's signal —
-   or with the task's own acceptance conditions when it addresses no problem —
-   and record any delayed observation without claiming effectiveness.
-8. Recompile within the brainstorming session and repeat verification if new
-   evidence changes the proposed knowledge. Route operations-specific lessons
-   to the declared process, verification, task, stream, or system target, and
-   keep raw evidence at its source or durable reference.
-9. Run [`framework-adaptation.md`](framework-adaptation.md) to review the
-   uncommitted changes. The maintainer approves normative publication and use.
-10. Follow `release.md` when publishing a coherent framework version. Otherwise
-   record the stopping point, next trigger, or handoff in the task and session
-   record.
+1. Orient from `current-state.html`, the open problem tree, structured signal readings, the selected task, relevant streams, and the canonical `framework/` knowledge package.
+2. Groom when requested or triggered. After every third completed working session since the last grooming invocation, run grooming over accumulated records, task candidates, problem state, and next-work selection.
+3. Select one bounded task that serves an open problem strategy, or state explicitly that it has no problem.
+4. Start the task's declared session type before work. Bind every supported action to that session and preserve material evidence and decisions in its transcript.
+5. Execute the declared process. Draft proposed compiled-knowledge changes outside the authoritative wiki until the required human approval is present.
+6. Run `verification.md`. Record the addressed problem's signal reading honestly; artifact correctness does not prove problem improvement.
+7. When evidence changes reusable APS knowledge, follow `knowledge-compilation.md` and `framework-adaptation.md`. Accepted knowledge is written once to its canonical `framework/` page through session-bound wiki actions and summarized in `framework/CHANGELOG.md`.
+8. Refresh affected current-state views, task state, problem history, and session record. Close only on the owner's explicit go.
+9. Let repository backup converge asynchronously. A failed or pending backup is an operational durability condition to surface, not authority to rewrite or roll back accepted domain state.
 
-The process has completed one full adaptive cycle only when evidence has changed
-a subsequent task, strategy, process, verification, stream, knowledge artifact,
-or system structure under declared authority.
+The loop has adapted only when evidence changes a later task, problem strategy, process, verification rule, stream, or compiled framework page and the changed operation produces new evidence.

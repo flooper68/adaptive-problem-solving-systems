@@ -382,62 +382,20 @@
       <h1>Framework Operations process</h1>
       <p class="meta">Chaos House — generated from markdown by scripts/wiki-md-to-html.ts</p>
 
-      <p>This process operates the APS Framework Operations System. Responsibilities
-may overlap, but none may be silently omitted.</p>
-<p>When an AI agent performs the work, also follow
-<a href="ai-agent-tasks.md"><code>ai-agent-tasks.md</code></a> for claiming, human review, and delivery.</p>
+      <p>Chaos House is the canonical system of record for APS Framework Operations. The configured R54 repository projection is a one-way backup: it never supplies approval, never writes back into Chaos House, and never substitutes for session, task, problem, record, or wiki history.</p>
+<h2 id="operating-loop">Operating loop</h2>
 <ol>
-<li>Read <code>operations/SYSTEM.md</code>, <code>operations/STRATEGY.md</code>, the current problem
-and task files, relevant recent working sessions, published framework
-knowledge, operational meta-knowledge, observed applications, feedback,
-insights, and other new evidence.</li>
-<li>Capture direct consumer reports through <a href="intake.md"><code>intake.md</code></a> and
-assess them through <a href="sessions/grooming.md"><code>grooming.md</code></a>. Preserve feedback as
-evidence. When grooming identifies a gap already represented by an open
-problem, link it and propose bounded work through <code>intake.md</code> when
-useful. When the gap is not represented, grooming decides whether to open a
-problem before selecting work.</li>
-<li>Use <a href="sessions/brainstorming.md"><code>brainstorming.md</code></a> to discuss an idea, task, or
-research topic with the maintainer and iteratively compile reviewable changes
-into the framework or a concrete instantiation. Keep observations, insights,
-questions, and decisions distinguishable. Capture independently useful
-interpretations through <code>intake.md</code>. Capture a separate executable
-response through <code>intake.md</code> when action is proposed; selection either
-links a problem opened or linked by grooming or accepts that the work
-addresses no problem. Assess captured insights and work candidates through
-<a href="sessions/grooming.md"><code>grooming.md</code></a>.</li>
-<li>Follow <a href="sessions/grooming.md"><code>grooming.md</code></a> to revisit relevant open
-problems in <code>operations/problems/</code>, then select ready, bounded tasks in
-<code>operations/tasks/</code> that state which problems they address — or that they
-address none — and confirm owner, acceptance conditions, authority, and
-validation approach.</li>
-<li>Resolve load-bearing uncertainty through brainstorming, research, or
-experimentation. Preserve sources and distinguish evidence from inference.</li>
-<li>For normative framework work, compile the evidence within a brainstorming
-session, whose Compile step runs
-<a href="knowledge-compilation.md"><code>knowledge-compilation.md</code></a> to produce
-uncommitted framework changes and a changelog entry; brainstorming is the
-only venue that edits the compiled framework. For operational or
-application work, make the smallest coherent changes authorized by the
-selected task. Update the task's current state and retain material
-decisions and deviations in the working-session record or native evidence.</li>
-<li>Run <a href="verification.html"><code>verification.md</code></a>. Complete immediate correctness
-checks, compare available evidence with the addressed problem's signal —
-or with the task's own acceptance conditions when it addresses no problem —
-and record any delayed observation without claiming effectiveness.</li>
-<li>Recompile within the brainstorming session and repeat verification if new
-evidence changes the proposed knowledge. Route operations-specific lessons
-to the declared process, verification, task, stream, or system target, and
-keep raw evidence at its source or durable reference.</li>
-<li>Run <a href="framework-adaptation.md"><code>framework-adaptation.md</code></a> to review the
-uncommitted changes. The maintainer approves normative publication and use.</li>
-<li>Follow <code>release.md</code> when publishing a coherent framework version. Otherwise
-record the stopping point, next trigger, or handoff in the task and session
-record.</li>
+<li>Orient from <code>current-state.html</code>, the open problem tree, structured signal readings, the selected task, relevant streams, and the canonical <code>framework/</code> knowledge package.</li>
+<li>Groom when requested or triggered. After every third completed working session since the last grooming invocation, run grooming over accumulated records, task candidates, problem state, and next-work selection.</li>
+<li>Select one bounded task that serves an open problem strategy, or state explicitly that it has no problem.</li>
+<li>Start the task's declared session type before work. Bind every supported action to that session and preserve material evidence and decisions in its transcript.</li>
+<li>Execute the declared process. Draft proposed compiled-knowledge changes outside the authoritative wiki until the required human approval is present.</li>
+<li>Run <code>verification.md</code>. Record the addressed problem's signal reading honestly; artifact correctness does not prove problem improvement.</li>
+<li>When evidence changes reusable APS knowledge, follow <code>knowledge-compilation.md</code> and <code>framework-adaptation.md</code>. Accepted knowledge is written once to its canonical <code>framework/</code> page through session-bound wiki actions and summarized in <code>framework/CHANGELOG.md</code>.</li>
+<li>Refresh affected current-state views, task state, problem history, and session record. Close only on the owner's explicit go.</li>
+<li>Let repository backup converge asynchronously. A failed or pending backup is an operational durability condition to surface, not authority to rewrite or roll back accepted domain state.</li>
 </ol>
-<p>The process has completed one full adaptive cycle only when evidence has changed
-a subsequent task, strategy, process, verification, stream, knowledge artifact,
-or system structure under declared authority.</p>
+<p>The loop has adapted only when evidence changes a later task, problem strategy, process, verification rule, stream, or compiled framework page and the changed operation produces new evidence.</p>
     </div>
 
     <script>
