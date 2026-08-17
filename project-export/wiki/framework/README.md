@@ -533,10 +533,12 @@ systems/
     streams/
 ```
 
-Only the minimal `SYSTEM.md` fields are structurally required. The linked
-strategy and process choose the physical layout and implement the remaining
-loop concepts. Problem and task state may be colocated with the system or kept
-in external systems of record. Empty ceremonial directories add no value.
+The declaration responsibilities are structurally required, not this layout.
+The same information may be represented by one file, several linked pages,
+structured records, or another clear orientation surface. Strategy and process
+choose the physical layout and implement the remaining loop concepts. Problem
+and task state may be colocated with the system or kept in external systems of
+record. Empty ceremonial directories add no value.
 
 Child systems may live wherever their own definition and processes require.
 The originating problem definition, strategy, or process links to the child by
@@ -616,7 +618,7 @@ applies when revising a running system: prefer removing or merging declared
 structure over elaborating it, and keep what was removed recoverable, because
 a distinction can be cheap to keep yet expensive to rediscover.
 
-The human-readable declaration contract and template are in
+The human-readable declaration contract and representation profiles are in
 [SCHEMA.md](SCHEMA.md). Framework Operations is the first concrete application
 of the method.
 
