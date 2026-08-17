@@ -133,6 +133,20 @@ value:
       sourceSequence: 8419
       task: null
       type: wiki_updated
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T09:29:43.906Z
+      message: "APS side of CH-548 complete pending owner close: migrated the exact P1 reading into records/problem-state-log.md; linked process, Verification, and P1 Current state; preserved unset root/project health; replaced legacy evidence-action semantics with optimistic wiki append and separate grooming decision; final cross-project receipt is chaos-house-development/records/problem-state-migration.md SHA 28bf32906ee4b41bfd2d680e8091b47b4289235fc7627d8bd166aaa2857a68b4."
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-35
+      sourceSequence: 8423
+      task: null
+      type: session_note
   session: session:key:APS-S-35
 ---
 
@@ -187,3 +201,9 @@ aps-framework-operations/processes/sessions/grooming.md
 8419 wiki_updated
 
 aps-framework-operations/process.html
+
+---
+
+8423 session_note
+
+APS side of CH-548 complete pending owner close: migrated the exact P1 reading into records/problem-state-log.md; linked process, Verification, and P1 Current state; preserved unset root/project health; replaced legacy evidence-action semantics with optimistic wiki append and separate grooming decision; final cross-project receipt is chaos-house-development/records/problem-state-migration.md SHA 28bf32906ee4b41bfd2d680e8091b47b4289235fc7627d8bd166aaa2857a68b4.
