@@ -581,6 +581,48 @@ value:
       sourceSequence: 7762
       task: null
       type: wiki_created
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T07:06:20.667Z
+      message: aps-framework-operations/problem.md
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 7770
+      task: null
+      type: wiki_deleted
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T07:06:21.769Z
+      message: aps-framework-operations/process.md
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 7771
+      task: null
+      type: wiki_deleted
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T07:06:21.852Z
+      message: aps-framework-operations/processes/release.md
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 7772
+      task: null
+      type: wiki_updated
   session: session:key:APS-S-34
 ---
 
@@ -827,3 +869,21 @@ aps-framework-operations/streams/README.md
 7762 wiki_created
 
 aps-framework-operations/repository-import/cutover-2026-08-17.md
+
+---
+
+7770 wiki_deleted
+
+aps-framework-operations/problem.md
+
+---
+
+7771 wiki_deleted
+
+aps-framework-operations/process.md
+
+---
+
+7772 wiki_updated
+
+aps-framework-operations/processes/release.md
