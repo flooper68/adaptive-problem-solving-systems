@@ -14,7 +14,7 @@ prescribe one workflow, storage technology, cadence, or management method.
 
 This package is the normative framework specification. In this repository it is
 the primary artifact produced by the separately declared
-[APS Framework Operations System](../operations/SYSTEM.md). Changes to the
+[APS Framework Operations System](../problem.html). Changes to the
 normative package are summarized in [CHANGELOG.md](CHANGELOG.md). Exact
 meanings for recurring terms are consolidated in the normative
 [APS vocabulary](VOCABULARY.md).
@@ -106,10 +106,10 @@ preferred solution as the problem.
 
 For example:
 
-- **Root system problem:** the [Framework Operations System](../operations/SYSTEM.md)
+- **Root system problem:** the [Framework Operations System](../problem.html)
   states that APS cannot become reliably effective and usable while its
   framework evolves without disciplined, evidence-connected operations.
-- **Smaller problem:** [P1](../operations/problems/p1-finish-mvp-and-run-loop.md)
+- **Smaller problem:** [P1](../problems/p1/problem.html)
   states that the APS MVP is unfinished and has not run its complete loop.
 - **Problem strategy:** P1 reviews existing concepts in dependency order,
   retaining only what the first complete loop needs.

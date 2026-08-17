@@ -2723,6 +2723,62 @@ value:
       sourceSequence: 8127
       task: null
       type: wiki_deleted
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T08:07:47.726Z
+      message: aps-framework-operations/framework/README.md
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 8185
+      task: null
+      type: wiki_updated
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T08:07:47.906Z
+      message: aps-framework-operations/framework/README.md
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 8186
+      task: null
+      type: wiki_updated
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T08:07:48.102Z
+      message: aps-framework-operations/framework/README.md
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 8187
+      task: null
+      type: wiki_updated
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T08:07:48.199Z
+      message: aps-framework-operations/framework/SCHEMA.md
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 8188
+      task: null
+      type: wiki_updated
   session: session:key:APS-S-34
 ---
 
@@ -3887,3 +3943,27 @@ aps-framework-operations/repository-import/754bd1689f69abecaa303e2bfba0de05ca230
 8127 wiki_deleted
 
 aps-framework-operations/repository-import/cutover-2026-08-17.md
+
+---
+
+8185 wiki_updated
+
+aps-framework-operations/framework/README.md
+
+---
+
+8186 wiki_updated
+
+aps-framework-operations/framework/README.md
+
+---
+
+8187 wiki_updated
+
+aps-framework-operations/framework/README.md
+
+---
+
+8188 wiki_updated
+
+aps-framework-operations/framework/SCHEMA.md

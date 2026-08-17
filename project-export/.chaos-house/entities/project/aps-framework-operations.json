@@ -31,6 +31,7 @@
         "stem": "process"
       }
     ],
+    "health": null,
     "key": "APS",
     "labels": [
       "repository-import",

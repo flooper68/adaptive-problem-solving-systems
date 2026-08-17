@@ -69,4 +69,4 @@ linked source. The linked process owns the complete loop; problems, strategies,
 and processes own contextual decomposition and implementation detail.
 
 Framework Operations is the first concrete application:
-[operations/SYSTEM.md](../operations/SYSTEM.md).
+[the Framework Operations declaration](../problem.html).
