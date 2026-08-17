@@ -790,7 +790,7 @@
       },
       "kind": "session-transcript",
       "path": "project-export/.chaos-house/entities/session-transcripts/key-aps-s-34-transcript.md",
-      "sha256": "0c471f35afdfbc46bbb849bb459c2b617b2670e9be1fbb06fcf8a032f41b0118"
+      "sha256": "ec39cb4466b11d1dbb91858802663942ca1038182a65815f0de25c1972cd684b"
     },
     {
       "entity": {
@@ -1258,7 +1258,7 @@
       },
       "kind": "timeline-event",
       "path": "project-export/.chaos-house/entities/timeline/events.ndjson",
-      "sha256": "d0c787e3d71fb7b78d2c0bbb47c28407e15b0f0cba118453d3f48ad2c9302b00"
+      "sha256": "547dad9cd8bb8770e49d04fc9f41cdc736e86caf9dd45f042d38391de2e34295"
     },
     {
       "entity": {
@@ -2710,7 +2710,7 @@
       },
       "kind": "wiki-page",
       "path": "project-export/wiki/repository-source/CLAUDE.md",
-      "sha256": "a54ff182c7e8acf56acfd6e4b9c3ff41e2c41a31c9b211b2deb9df75d9a478f9"
+      "sha256": "1ff9f4d858b385557d29e7be47c329f106df6197d1bd5583f45abf685542866b"
     },
     {
       "entity": {
@@ -4454,8 +4454,8 @@
   },
   "version": 1,
   "watermark": {
-    "endEventSeq": 7731,
+    "endEventSeq": 7732,
     "stale": false,
-    "startEventSeq": 7731
+    "startEventSeq": 7732
   }
 }

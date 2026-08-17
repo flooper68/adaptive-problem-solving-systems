@@ -357,6 +357,20 @@ value:
       sourceSequence: 7731
       task: null
       type: reading_recorded
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T07:01:05.059Z
+      message: aps-framework-operations/repository-source/CLAUDE.md
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 7732
+      task: null
+      type: wiki_updated
   session: session:key:APS-S-34
 ---
 
@@ -507,3 +521,9 @@ Assigned to the user
 7731 reading_recorded
 
 Signal read for "p1" on 2026-08-07: Concept review inventory 12 reviewed; 18 review tasks remain; Loop responsibilities Grooming, compilation, adaptation, and delivery have run; teach-back and adversarial verification have not; Maintainer understand-and-run check Untested since consolidation
+
+---
+
+7732 wiki_updated
+
+aps-framework-operations/repository-source/CLAUDE.md
