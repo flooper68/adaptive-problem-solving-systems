@@ -1,0 +1,18 @@
+{
+  "entity": {
+    "identity": {
+      "type": "slug",
+      "value": "questions"
+    },
+    "kind": "stream"
+  },
+  "kind": "stream",
+  "value": {
+    "createdAt": "2026-08-16T17:30:56.343Z",
+    "description": "Unresolved uncertainty: what is not known, written down so it stops being carried in someone's head.",
+    "groomingProcess": "processes/groom-questions.md",
+    "intakeProcess": "processes/intake.md",
+    "slug": "questions",
+    "updatedAt": "2026-08-16T17:30:56.343Z"
+  }
+}

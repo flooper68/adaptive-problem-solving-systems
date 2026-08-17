@@ -1,0 +1,20 @@
+{
+  "entity": {
+    "identity": {
+      "type": "slug",
+      "value": "brainstorming"
+    },
+    "kind": "session-type"
+  },
+  "kind": "session-type",
+  "value": {
+    "agent": null,
+    "createdAt": "2026-08-16T17:35:45.259Z",
+    "description": "Discuss an APS idea, task, or research topic with the maintainer and iteratively compile reviewable changes into the framework or a concrete APS instantiation.",
+    "mode": "manual",
+    "name": "brainstorming",
+    "processPath": "processes/sessions/brainstorming.md",
+    "retiredAt": null,
+    "updatedAt": "2026-08-16T17:35:45.259Z"
+  }
+}

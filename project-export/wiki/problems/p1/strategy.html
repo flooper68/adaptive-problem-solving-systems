@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The APS MVP is unfinished and has not run its complete loop — Strategy</title>
+<style>:root{color-scheme:light dark;--bg:#fbfaf9;--text:#23201d;--surface:#fff;--border:#ded8d1}html[data-theme=dark]{--bg:#17161a;--text:#ece9e4;--surface:#201f24;--border:#35333b}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,sans-serif}.page{max-width:56rem;margin:auto;padding:2rem 1.25rem 5rem}header{display:flex;justify-content:space-between;border-bottom:1px solid var(--border)}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:var(--surface);padding:1rem;border:1px solid var(--border)}button{font:inherit}</style>
+</head>
+<body><main class="page">
+<header><p>Chaos House · legacy APS import</p><button id="theme" type="button">Dark</button></header>
+<h1>The APS MVP is unfinished and has not run its complete loop — Strategy</h1>
+<pre>## Strategy
+
+Following the [system strategy](../STRATEGY.md), use the initial APS
+version to operate the Framework Operations System. Keep only what is needed to
+run one complete loop now, simplify it until the maintainer can understand and
+use the whole process, and defer the rest. Add complexity later only when more
+use or feedback demonstrates a need for it.
+
+Inventory the concepts that the normative framework actually defines or
+requires, order them from top to bottom by conceptual dependency, and review
+them one at a time. For each concept, establish the smallest clear definition,
+boundary, relationships, ownership, and—only when it owns durable identity or
+state—lifecycle needed by the complete loop. Retain, simplify, merge, demote,
+defer, or remove it, then propagate the decision through every affected
+normative and supporting surface.
+
+This is an order of review, not a one-way waterfall. A lower-level review or
+attempted run may reopen an upstream concept.
+
+Write every retained surface in plain language. Prefer everyday words over
+specialist vocabulary, define any term the framework must keep, and treat
+wording that a reader stumbles over as avoidable complexity to remove like any
+other. Apply this constraint while propagating each concept decision through
+its affected surfaces.
+
+### Concept review test
+
+For each concept, determine:
+
+- its concise meaning and purpose in the complete loop;
+- what it is distinct from and which concepts it depends on;
+- which lower-level concepts depend on it;
+- whether it owns durable identity or state and therefore needs a lifecycle;
+- when applicable, what creates, changes, completes, closes, replaces, or
+  reopens it, and who authorizes those transitions;
+- where its authoritative state lives and what evidence validates it; and
+- whether the first complete loop can operate coherently without it.
+
+Avoid creating lifecycle machinery for concepts that are only properties,
+relationships, activities, outputs, assessments, or transitions.
+
+### Validation strategy
+
+Validate the simplified model in three independent ways:
+
+1. Run one real need through a complete loop into an approved adaptation and a
+   subsequent operation changed by that learning.
+2. Give the framework to a reviewer without the session's unstated context and
+   ask them to explain its concepts, relationships, and lifecycles, apply it,
+   and identify avoidable complexity, including any wording they had to reread
+   or could not restate in their own words.
+3. Adversarially search for overlapping or circular definitions, multiple
+   sources of truth, ownerless state, unjustified lifecycle machinery,
+   ceremonial artifacts or processes, undefined transitions, unsupported
+   future machinery, and confusion between artifact completion and outcomes.
+
+P1 is not solved merely because its files and schema are consistent. The model
+must survive use, teach-back, and adversarial review, and its learning must
+change a later run.</pre>
+</main><script>(function(){var r=document.documentElement,b=document.getElementById('theme');b.addEventListener('click',function(){var d=r.getAttribute('data-theme')==='dark';r.setAttribute('data-theme',d?'light':'dark');b.textContent=d?'Dark':'Light'})})()</script></body>
+</html>

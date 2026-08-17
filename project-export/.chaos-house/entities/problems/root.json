@@ -1,0 +1,22 @@
+{
+  "entity": {
+    "identity": {
+      "type": "slug",
+      "value": "root"
+    },
+    "kind": "problem"
+  },
+  "kind": "problem",
+  "value": {
+    "createdAt": "2026-08-16T17:30:56.337Z",
+    "key": "APS-P-1",
+    "keyNumber": 1,
+    "parent": null,
+    "priority": null,
+    "rank": null,
+    "slug": "root",
+    "status": "open",
+    "title": "aps-framework-operations",
+    "updatedAt": "2026-08-16T17:30:56.337Z"
+  }
+}

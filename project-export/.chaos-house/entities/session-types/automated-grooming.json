@@ -1,0 +1,20 @@
+{
+  "entity": {
+    "identity": {
+      "type": "slug",
+      "value": "automated-grooming"
+    },
+    "kind": "session-type"
+  },
+  "kind": "session-type",
+  "value": {
+    "agent": null,
+    "createdAt": "2026-08-16T17:35:44.888Z",
+    "description": "Groom captured inputs autonomously into proposed dispositions, have an independent reviewer agent check the proposals, and present them for per-item maintainer approval before recording and delivery. Experimental.",
+    "mode": "manual",
+    "name": "automated-grooming",
+    "processPath": "processes/sessions/automated-grooming.md",
+    "retiredAt": null,
+    "updatedAt": "2026-08-16T17:35:44.888Z"
+  }
+}

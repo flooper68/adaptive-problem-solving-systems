@@ -1,0 +1,22 @@
+{
+  "entity": {
+    "identity": {
+      "type": "slug",
+      "value": "repository-backup"
+    },
+    "kind": "repository-backup-config"
+  },
+  "kind": "repository-backup-config",
+  "value": {
+    "branch": "chaos-house-backup",
+    "enabled": true,
+    "owner": "flooper68",
+    "repository": "adaptive-problem-solving-systems",
+    "roots": {
+      "repositoryRoot": "project-export",
+      "sessionsRoot": "sessions",
+      "tasksRoot": "tasks",
+      "wikiRoot": "wiki"
+    }
+  }
+}

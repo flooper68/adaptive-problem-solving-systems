@@ -1,0 +1,112 @@
+---
+entity:
+  identity:
+    type: key
+    value: APS-43
+  kind: task
+kind: task
+value:
+  assignedToUser: true
+  assignee: null
+  backlogRank: null
+  createdAt: 2026-08-16T17:37:05.845Z
+  createdBy:
+    agent: null
+    type: user
+  finishedAt: 2026-08-16T19:39:50.737Z
+  key: APS-43
+  keyNumber: 43
+  labels:
+    - repository-import
+    - aps-legacy
+  originSchedule: null
+  originSession: null
+  originTask: null
+  parent: null
+  priority: 3
+  problem: problem:slug:p1
+  queuePosition: null
+  startedAt: null
+  status: done
+  summary: Imported terminal state from repository source.
+  title: Review the adaptive problem-solving system concept
+  type: session-type:slug:brainstorming
+  updatedAt: 2026-08-16T19:39:50.739Z
+---
+
+# Review the adaptive problem-solving system concept
+
+## Intended result
+
+Give the APS system concept the smallest clear definition and boundary needed
+by the complete loop.
+
+## Approach
+
+Apply the concept review test in
+`operations/problems/p1-finish-mvp-and-run-loop.md`, choose a disposition, and
+propagate accepted changes through normative and operational surfaces.
+
+## Stop condition
+
+The concept has one reviewed disposition, affected artifacts are consistent,
+and downstream questions are captured without expanding this task.
+
+## Current state
+
+Awaiting maintainer review.
+
+Proposed disposition: **simplify**. Adaptive Problem Solving (APS) is the general
+method. An adaptive problem-solving system is one concrete instantiation that
+owns a problem statement and an iterative loop. Verification is the loop's
+value function. The system owns closure of its loop while its processes define
+implementation, participation, authority, lifecycle behavior, and contextual
+artifacts. Problem decomposition links to another named system from the problem,
+strategy, or process that performs the decomposition.
+
+The human-readable declaration contract and template are consolidated in
+`framework/SCHEMA.md`. A system declares, in order:
+
+1. `name`;
+2. `problem`;
+3. `verification` as a direct process link;
+4. `strategy`;
+5. the main `process`;
+6. its system-specific `work_sessions` catalog, which may be empty; and
+7. `streams`.
+
+Framework Operations is the first and only current APS application. Its main
+loop is `operations/processes/process.md`; its value function is
+`operations/processes/verification.md`. The machine-readable schema, separate
+template, provisional example directory, fixed system identity and lifecycle
+fields, universal roles, generic limits concept, aspirational-future field,
+fixed validation split, and universal relation registry were removed or
+superseded. The root README now contains only repository purpose and high-level
+structure.
+
+Detailed discussion and intermediate decisions are retained in
+`operations/streams/working-sessions/2026-07-11-system-concept-review.md`.
+
+Validation passes for the declaration contract and field order, declared
+process paths, active task-to-problem references, current Markdown links,
+removed-file references, terminology scans, and diff whitespace. Historical
+records retain old terminology and filenames where they describe prior state.
+
+Downstream concept reviews remain available for the system problem, strategy,
+processes, streams, grooming, tasks, learning, adaptation, and other lower-level
+concepts. The richer stream-entry shape is explicitly deferred to its own
+review.
+
+The maintainer accepted the reviewed session and explicitly requested delivery
+on 2026-07-12. Final verification passed. The accepted framework scope begins
+at `a636d22`; delivery-process clarification is included in `28b6945`; and the
+complete accepted sequence through `04cd42a` was pushed to `origin/main`. This
+task is closed and archived.
+
+---
+
+Repository import provenance: {"sourceCommit":"43b9f6918677ef654578c2276e1c8e4d615fcbf7","sourcePath":"operations/tasks/archive/review-system-concept.md","legacyId":"apss.review-system-concept"}
+
+---
+
+[repository-import:task:apss.review-system-concept@43b9f6918677ef654578c2276e1c8e4d615fcbf7:operations/tasks/archive/review-system-concept.md]

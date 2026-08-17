@@ -1,0 +1,20 @@
+{
+  "entity": {
+    "identity": {
+      "type": "slug",
+      "value": "automated-brainstorming"
+    },
+    "kind": "session-type"
+  },
+  "kind": "session-type",
+  "value": {
+    "agent": null,
+    "createdAt": "2026-08-16T17:35:23.524Z",
+    "description": "Run a brainstorming session autonomously on one maintainer-named task or topic, deciding and compiling as the maintainer would, have an independent reviewer agent examine the uncommitted result, and present the changes with the recorded decisions and review findings for maintainer approval before delivery. Experimental.",
+    "mode": "manual",
+    "name": "automated-brainstorming",
+    "processPath": "processes/sessions/automated-brainstorming.md",
+    "retiredAt": null,
+    "updatedAt": "2026-08-16T17:35:23.524Z"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "entity": {
+    "identity": {
+      "type": "slug",
+      "value": "grooming"
+    },
+    "kind": "session-type"
+  },
+  "kind": "session-type",
+  "value": {
+    "agent": null,
+    "createdAt": "2026-08-16T17:35:45.583Z",
+    "description": "Review captured inputs — feedback, insights, task candidates, problems, and verification evidence — with the maintainer and record one approved disposition per item, guided by the system strategy.",
+    "mode": "manual",
+    "name": "grooming",
+    "processPath": "processes/sessions/grooming.md",
+    "retiredAt": null,
+    "updatedAt": "2026-08-16T17:35:45.583Z"
+  }
+}

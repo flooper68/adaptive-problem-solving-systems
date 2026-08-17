@@ -1,0 +1,18 @@
+{
+  "entity": {
+    "identity": {
+      "type": "slug",
+      "value": "insights"
+    },
+    "kind": "stream"
+  },
+  "kind": "stream",
+  "value": {
+    "createdAt": "2026-08-16T17:30:56.343Z",
+    "description": "Imported APS insights stream",
+    "groomingProcess": "processes/process.md",
+    "intakeProcess": null,
+    "slug": "insights",
+    "updatedAt": "2026-08-16T17:36:27.204Z"
+  }
+}

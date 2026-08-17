@@ -1,0 +1,18 @@
+{
+  "entity": {
+    "identity": {
+      "type": "slug",
+      "value": "external-foundations"
+    },
+    "kind": "stream"
+  },
+  "kind": "stream",
+  "value": {
+    "createdAt": "2026-08-16T17:36:23.694Z",
+    "description": "Imported APS external-foundations stream",
+    "groomingProcess": "processes/process.md",
+    "intakeProcess": null,
+    "slug": "external-foundations",
+    "updatedAt": "2026-08-16T17:36:23.694Z"
+  }
+}

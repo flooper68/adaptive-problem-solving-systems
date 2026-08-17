@@ -1,0 +1,18 @@
+{
+  "entity": {
+    "identity": {
+      "type": "slug",
+      "value": "framework-usage"
+    },
+    "kind": "stream"
+  },
+  "kind": "stream",
+  "value": {
+    "createdAt": "2026-08-16T17:36:26.145Z",
+    "description": "Imported APS framework-usage stream",
+    "groomingProcess": "processes/process.md",
+    "intakeProcess": null,
+    "slug": "framework-usage",
+    "updatedAt": "2026-08-16T17:36:26.145Z"
+  }
+}

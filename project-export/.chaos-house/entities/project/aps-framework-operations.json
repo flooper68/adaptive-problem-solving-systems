@@ -1,0 +1,48 @@
+{
+  "entity": {
+    "identity": {
+      "type": "slug",
+      "value": "aps-framework-operations"
+    },
+    "kind": "project"
+  },
+  "kind": "project",
+  "value": {
+    "createdAt": "2026-08-16T17:30:56.329Z",
+    "declarations": [
+      {
+        "path": "problem.html",
+        "status": "stub",
+        "stem": "problem"
+      },
+      {
+        "path": "verification.html",
+        "status": "stub",
+        "stem": "verification"
+      },
+      {
+        "path": "strategy.html",
+        "status": "stub",
+        "stem": "strategy"
+      },
+      {
+        "path": "process.html",
+        "status": "stub",
+        "stem": "process"
+      }
+    ],
+    "key": "APS",
+    "labels": [
+      "repository-import",
+      "aps-legacy"
+    ],
+    "sequences": {
+      "problem": 2,
+      "record": 24,
+      "session": 34,
+      "task": 57
+    },
+    "slug": "aps-framework-operations",
+    "updatedAt": "2026-08-16T20:20:09.111Z"
+  }
+}
