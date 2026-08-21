@@ -63,6 +63,20 @@ value:
       sourceSequence: 9229
       task: task:key:APS-62
       type: task_edited
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-21T09:40:09.020Z
+      message: Session "grooming" closed (completed)
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-50
+      sourceSequence: 9233
+      task: task:key:APS-62
+      type: session_closed
   session: session:key:APS-S-50
 ---
 
@@ -87,3 +101,9 @@ Item-scope grooming of APS-62 (first use of the quick-groom form from APS-S-49).
 9229 task_edited
 
 {"previous":{"title":"Revisit and nail down the system-level definitions","instructions":"## Why\n\nGrooming APS-S-41 (2026-08-21): the maintainer answered \"no\" to being able to explain and run the whole APS process unaided. Before more concept reviews, the maintainer wants the top-level declarations reviewed and nailed down in a dedicated session, separately from P1's own pages.\n\n## Work\n\nGo through the project's four declarations with the maintainer, one page at a time, in plain language:\n\n1. **Problem** (`problem.html`) — what is the root condition this system exists for?\n2. **Strategy** (`strategy.html`) — approach, grooming guidance, adaptation rule. Still right? Anything ceremonial?\n3. **Verification** (`verification.html`) — is it clear what gets checked, when, and what counts as evidence?\n4. **Process** (`process.html`) — the operating loop. Can the maintainer follow it step by step?\n\nRecord every meaning change as a decision. Wording-only fixes belong to APS-10 (plain-language rewording); note them there instead of doing them here.\n\n## Done when\n\nThe maintainer can explain the system's problem, strategy, verification, and process in their own words, and the four pages say exactly that.\n\n## Context\n\nCreated by grooming APS-S-41 (adaptation decision L3). Sibling task: \"Revisit and nail down P1's definitions\" (do that one first)."},"current":{"title":"Revisit and nail down the system-level definitions","instructions":"## Why\n\nGrooming APS-S-41 (2026-08-21): the maintainer answered \"no\" to being able to explain and run the whole APS process unaided. Before more concept reviews, the maintainer wants the top-level declarations reviewed and nailed down in a dedicated session, separately from P1's own pages.\n\n## Work\n\nGo through the project's four declarations with the maintainer, one page at a time, in plain language:\n\n1. **Problem** (`problem.html`) — what is the root condition this system exists for?\n2. **Strategy** (`strategy.html`) — approach, grooming guidance, adaptation rule. Still right? Anything ceremonial?\n3. **Verification** (`verification.html`) — is it clear what gets checked, when, and what counts as evidence?\n4. **Process** (`process.html`) — the operating loop. Can the maintainer follow it step by step?\n\nRecord every meaning change as a decision. Wording-only fixes belong to APS-10 (plain-language rewording); note them there instead of doing them here.\n\n## Done when\n\nThe maintainer can explain the system's problem, strategy, verification, and process in their own words, and the four pages say exactly that.\n\n## Context\n\nCreated by grooming APS-S-41 (adaptation decision L3). Sibling task: APS-61 \"Revisit and nail down P1's definitions\" — do this one first; the system-level declarations sit above P1 in the hierarchy (grooming APS-S-50, 2026-08-21)."}}
+
+---
+
+9233 session_closed
+
+Session "grooming" closed (completed)
