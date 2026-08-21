@@ -35,6 +35,11 @@ Rules that follow from this:
   wiki paths `framework/…` (README, VOCABULARY, SCHEMA, CHANGELOG,
   VISUALIZATION); processes live under `processes/…`. Use the wiki tools with
   their SHA-guarded edit calls.
+- **Never use the built-in question tool.** Do not call `AskUserQuestion`
+  (or any equivalent structured multiple-choice prompt). When you need a
+  decision from the maintainer, ask in plain chat text and wait for the
+  reply; when a routine call can be made with a stated assumption, make it
+  and say so.
 
 ## This repository
 
