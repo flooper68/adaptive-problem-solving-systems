@@ -2793,6 +2793,48 @@ value:
       sourceSequence: 8450
       task: task:key:APS-58
       type: task_created
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T16:50:02.397Z
+      message: 'Record captured into "framework-feedback": Import-fidelity residuals from the 2026-08-17 migration audit (APS-S-34), not remediated during cutover:'
+      problem: null
+      record: stream-record:key:APS-R-25
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 8857
+      task: null
+      type: record_captured
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T16:50:10.317Z
+      message: 'Record captured into "framework-feedback": Cross-project staleness observed during the 2026-08-17 migration audit (APS-S-34): chaos-house-development/reference/aps'
+      problem: null
+      record: stream-record:key:APS-R-26
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 8858
+      task: null
+      type: record_captured
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-08-17T16:50:25.616Z
+      message: Session "brainstorming" closed (completed)
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-34
+      sourceSequence: 8859
+      task: null
+      type: session_closed
   session: session:key:APS-S-34
 ---
 
@@ -3987,3 +4029,21 @@ aps-framework-operations/framework/SCHEMA.md
 8450 task_created
 
 Task "Promote the proven repository projection to main" created into the backlog (brainstorming)
+
+---
+
+8857 record_captured
+
+Record captured into "framework-feedback": Import-fidelity residuals from the 2026-08-17 migration audit (APS-S-34), not remediated during cutover:
+
+---
+
+8858 record_captured
+
+Record captured into "framework-feedback": Cross-project staleness observed during the 2026-08-17 migration audit (APS-S-34): chaos-house-development/reference/aps
+
+---
+
+8859 session_closed
+
+Session "brainstorming" closed (completed)

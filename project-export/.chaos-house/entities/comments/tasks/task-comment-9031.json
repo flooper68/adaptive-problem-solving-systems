@@ -1,0 +1,20 @@
+{
+  "entity": {
+    "identity": {
+      "type": "slug",
+      "value": "task-comment-9031"
+    },
+    "kind": "task-comment"
+  },
+  "kind": "task-comment",
+  "value": {
+    "actor": {
+      "agent": null,
+      "type": "user"
+    },
+    "createdAt": "2026-08-21T07:31:56.597Z",
+    "message": "Grooming APS-S-41 merged APS-26 (insight), APS-37 (question), and APS-49 (uncertainty) into this task. Review the four capture kinds together — feedback, insight, question, uncertainty — as \"things that arrive in a stream\". Ask whether the loop needs four named kinds or one record with a label.",
+    "sourceSequence": 9031,
+    "target": "task:key:APS-23"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "entity": {
+    "identity": {
+      "type": "slug",
+      "value": "task-comment-9066"
+    },
+    "kind": "task-comment"
+  },
+  "kind": "task-comment",
+  "value": {
+    "actor": {
+      "agent": null,
+      "type": "user"
+    },
+    "createdAt": "2026-08-21T08:25:58.756Z",
+    "message": "The retrospective session type now exists (APS-S-43, processes/sessions/retrospective.md). APS-63 is in substance the first retrospective on grooming: consider running it as a `retrospective` session on grooming.md so its reading and edits land in records/process-state-log.md with expected effects. S-43 changed the last two sentences of grooming step 8 (process lessons now schedule a retrospective instead of a direct edit) and appended a Signal section — keep both when revising the page.",
+    "sourceSequence": 9066,
+    "target": "task:key:APS-63"
+  }
+}

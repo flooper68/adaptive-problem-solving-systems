@@ -1,0 +1,20 @@
+{
+  "entity": {
+    "identity": {
+      "type": "slug",
+      "value": "task-comment-9035"
+    },
+    "kind": "task-comment"
+  },
+  "kind": "task-comment",
+  "value": {
+    "actor": {
+      "agent": null,
+      "type": "user"
+    },
+    "createdAt": "2026-08-21T07:32:04.593Z",
+    "message": "Grooming APS-S-41 merged APS-16 (artifact) into this task. Review archive and artifact together. Archive may be moot in Chaos House (append-only history, no file archiving); if so, close that half with a reason.",
+    "sourceSequence": 9035,
+    "target": "task:key:APS-15"
+  }
+}

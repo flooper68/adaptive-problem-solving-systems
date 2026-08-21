@@ -29,9 +29,9 @@ value:
   startedAt: null
   status: backlog
   summary: null
-  title: Review the feedback concept
+  title: Review the capture concepts (feedback, insight, question, uncertainty)
   type: session-type:slug:brainstorming
-  updatedAt: 2026-08-16T17:36:46.854Z
+  updatedAt: 2026-08-21T07:31:15.838Z
 ---
 
 # Review the feedback concept

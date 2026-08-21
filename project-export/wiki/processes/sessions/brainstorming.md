@@ -19,3 +19,7 @@ Discuss an APS idea, task, or research topic with the maintainer, use relevant e
 ## Evidence and retention
 
 Raw evidence remains in its source streams. Chaos House tasks, sessions, wiki events, problem histories, and framework changelog preserve the material record. Retain participants, affected problems/tasks, decisions, changed paths, validation, stopping point, and lessons/friction in the working-session record.
+
+## Signal
+
+Read by the retrospective from session records: sessions ending in approved, applied changes ÷ sessions run; approved changes reverted later; maintainer corrections of procedure per session.

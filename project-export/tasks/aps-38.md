@@ -13,7 +13,7 @@ value:
   createdBy:
     agent: null
     type: user
-  finishedAt: null
+  finishedAt: 2026-08-21T07:31:26.181Z
   key: APS-38
   keyNumber: 38
   labels:
@@ -27,11 +27,11 @@ value:
   problem: problem:slug:p1
   queuePosition: null
   startedAt: null
-  status: backlog
+  status: cancelled
   summary: null
   title: Review the raw evidence concept
   type: session-type:slug:brainstorming
-  updatedAt: 2026-08-16T17:37:00.947Z
+  updatedAt: 2026-08-21T07:31:26.183Z
 ---
 
 # Review the raw evidence concept

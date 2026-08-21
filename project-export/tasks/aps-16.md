@@ -13,7 +13,7 @@ value:
   createdBy:
     agent: null
     type: user
-  finishedAt: null
+  finishedAt: 2026-08-21T07:31:45.879Z
   key: APS-16
   keyNumber: 16
   labels:
@@ -27,11 +27,11 @@ value:
   problem: problem:slug:p1
   queuePosition: null
   startedAt: null
-  status: backlog
+  status: cancelled
   summary: null
   title: Review the artifact concept
   type: session-type:slug:brainstorming
-  updatedAt: 2026-08-16T17:36:41.248Z
+  updatedAt: 2026-08-21T07:31:45.882Z
 ---
 
 # Review the artifact concept

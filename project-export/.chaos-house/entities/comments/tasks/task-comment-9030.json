@@ -1,0 +1,20 @@
+{
+  "entity": {
+    "identity": {
+      "type": "slug",
+      "value": "task-comment-9030"
+    },
+    "kind": "task-comment"
+  },
+  "kind": "task-comment",
+  "value": {
+    "actor": {
+      "agent": null,
+      "type": "user"
+    },
+    "createdAt": "2026-08-21T07:31:53.945Z",
+    "message": "Grooming APS-S-41 merged APS-38 (raw evidence) into this task. Review both concepts together: evidence and raw evidence. Check first whether \"raw evidence\" still needs to exist now that Chaos House streams/records hold the raw captures.",
+    "sourceSequence": 9030,
+    "target": "task:key:APS-21"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "entity": {
+    "identity": {
+      "type": "slug",
+      "value": "task-comment-9034"
+    },
+    "kind": "task-comment"
+  },
+  "kind": "task-comment",
+  "value": {
+    "actor": {
+      "agent": null,
+      "type": "user"
+    },
+    "createdAt": "2026-08-21T07:32:02.382Z",
+    "message": "Grooming APS-S-41 merged APS-35 (process) and APS-52 (working-session record) into this task. Review execution, process, and working-session record together. Chaos House sessions (typed, with transcript and record) have largely replaced the working-session record — check whether the concept is now just \"session\".",
+    "sourceSequence": 9034,
+    "target": "task:key:APS-22"
+  }
+}

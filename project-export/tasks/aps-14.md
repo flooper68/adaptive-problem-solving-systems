@@ -29,9 +29,9 @@ value:
   startedAt: null
   status: backlog
   summary: null
-  title: Review the adaptation concept
+  title: Review the learning concepts (adaptation, learning, compiled knowledge)
   type: session-type:slug:brainstorming
-  updatedAt: 2026-08-16T17:36:39.220Z
+  updatedAt: 2026-08-21T07:31:17.448Z
 ---
 
 # Review the adaptation concept

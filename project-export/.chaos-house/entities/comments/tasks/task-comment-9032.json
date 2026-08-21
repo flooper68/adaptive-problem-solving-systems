@@ -1,0 +1,20 @@
+{
+  "entity": {
+    "identity": {
+      "type": "slug",
+      "value": "task-comment-9032"
+    },
+    "kind": "task-comment"
+  },
+  "kind": "task-comment",
+  "value": {
+    "actor": {
+      "agent": null,
+      "type": "user"
+    },
+    "createdAt": "2026-08-21T07:31:58.461Z",
+    "message": "Grooming APS-S-41 merged APS-27 (learning) and APS-20 (compiled knowledge) into this task. Review the chain together: learning → compiled knowledge → adaptation. The first real adaptation cycle (APS-R-27 → APS-60 → S-40/S-41) is live evidence to test the definitions against.",
+    "sourceSequence": 9032,
+    "target": "task:key:APS-14"
+  }
+}

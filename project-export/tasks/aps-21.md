@@ -29,9 +29,9 @@ value:
   startedAt: null
   status: backlog
   summary: null
-  title: Review the evidence concept
+  title: Review the evidence concepts (evidence, raw evidence)
   type: session-type:slug:brainstorming
-  updatedAt: 2026-08-16T17:36:45.328Z
+  updatedAt: 2026-08-21T07:31:13.746Z
 ---
 
 # Review the evidence concept

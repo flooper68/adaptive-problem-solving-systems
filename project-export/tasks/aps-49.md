@@ -13,7 +13,7 @@ value:
   createdBy:
     agent: null
     type: user
-  finishedAt: null
+  finishedAt: 2026-08-21T07:31:32.648Z
   key: APS-49
   keyNumber: 49
   labels:
@@ -27,11 +27,11 @@ value:
   problem: problem:slug:p1
   queuePosition: null
   startedAt: null
-  status: backlog
+  status: cancelled
   summary: null
   title: Review the uncertainty concept
   type: session-type:slug:brainstorming
-  updatedAt: 2026-08-16T17:37:08.950Z
+  updatedAt: 2026-08-21T07:31:32.651Z
 ---
 
 # Review the uncertainty concept

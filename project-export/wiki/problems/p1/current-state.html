@@ -11,33 +11,60 @@
 <h1>The APS MVP is unfinished and has not run its complete loop — Current state</h1>
 <pre>## Current state
 
-**APS-S-36 refresh as of 2026-08-17.** APS-1 has published an approved
-representation-neutral system declaration contract using the Chaos House
-migration as observed application evidence. The repository capsule and
-structured-project forms are now profiles of one responsibility-level
-contract, not competing canonical structures. Exact readings and verification
-are preserved at
-[/p/aps-framework-operations/wiki/records/problem-state-log.md#aps-p-2](/p/aps-framework-operations/wiki/records/problem-state-log.md#aps-p-2).
-No root assessment exists, so project health remains unset.
+**APS-S-39 refresh as of 2026-08-17.** The first root grooming (APS-S-38)
+satisfied the grooming process nominally while skipping its substance: it
+took no fresh P1 signal reading, did not test P1 against the strategy's
+grooming guidance (P1's declaration is a bare title and fails it), and passed
+the adaptation step with an unexamined "none needed". The maintainer's
+feedback (APS-R-27) named chaos-house-development's problem grooming as the
+reference experience, and chose to fix the process before re-running it.
 
-As of 2026-08-17 ([APS-S-36](/p/aps-framework-operations/sessions/APS-S-36)):
+As of 2026-08-17
+([APS-S-39](/p/aps-framework-operations/sessions/APS-S-39)):
 
-- **Recently:** APS-1 used the migration to revise the declaration contract.
-  `framework/SCHEMA.md` now requires discoverable APS responsibilities rather
-  than one `SYSTEM.md`/YAML shape; the framework definition, vocabulary, and
-  changelog carry the same decision. Chaos House remains canonical and the
-  repository remains a derived backup.
-- **Signal reading:** 12 concepts reviewed and 18 concept-review tasks remain;
-  grooming, compilation, adaptation, and delivery have run, while teach-back
-  and adversarial verification have not. The maintainer understood and
-  approved the representation-neutral distinction, but a full unaided
-  explain-and-run check remains untested.
-- **Next:** APS-1 implementation and immediate verification are complete,
-  awaiting the maintainer's task-completion and session-close decision. After
-  closure, task grooming selects the next P1 concept review from current
-  evidence.
+- **Recently:** APS-60 revised
+  [processes/sessions/grooming.md](/p/aps-framework-operations/wiki/processes/sessions/grooming.md)
+  so a conforming invocation must read each in-scope signal in-session and
+  append it to the problem state log (new step 3), test every in-scope
+  problem against the strategy's grooming guidance with a disposition for
+  each failure (step 5), and enumerate learnings with a recorded adaptation
+  decision each, including "retain" (step 8). Completion criteria enforce all
+  three. The single process, proportional scopes, and deep-grooming
+  mechanics from APS-59 are unchanged; no session type, template, or health
+  scale was added. The APS-S-38 dispositions stand: APS-R-25 closed,
+  APS-R-26 routed as CH-R-105, APS-58 deferred.
+- **Signal reading:** APS-S-39 verification reading — 12 concepts reviewed,
+  18 concept-review tasks remain; grooming, compilation, adaptation, and
+  delivery have run, teach-back and adversarial verification have not; the
+  maintainer judged the revised process reasonable on review, but its effect
+  on grooming quality is unverified. Unresolved on understandability versus
+  APS-S-36; unchanged otherwise.
+- **Next:** run the next grooming invocation as the experiment under the
+  revised process — root scope, with the P1 signal read in-session, P1
+  tested against the strategy (expected outcome: complete its declaration),
+  and the migration-era learnings enumerated for adaptation — then the
+  maintainer judges whether the experience matches the reference.
+  [APS-21 — Review the evidence concept](/p/aps-framework-operations/tasks/APS-21)
+  stays selected until that run confirms or revises it.
 
 ## Grooming history
+
+### 2026-08-17 — first root grooming in Chaos House; residuals dispositioned
+
+Source: [root grooming session APS-S-38](/p/aps-framework-operations/sessions/APS-S-38),
+the first invocation of the APS-59-revised process.
+
+Scope root; evidence boundary at the close of migration session APS-S-34.
+Three items admitted to deep grooming, each with one maintainer-approved
+disposition: APS-R-25 **closed** (legacy session typing and the missing
+LICENSE import accepted as recorded migration limitations; provenance stays
+recoverable in session bodies and source commit 43b9f69); APS-R-26 **act**
+(routed to chaos-house-development as CH-R-105 in its issues stream);
+next work **selected** (APS-21, the evidence concept review, promoted to todo
+and assigned to the maintainer). Excluded areas: the remaining legacy backlog
+tasks (readmitted as the review order reaches them), APS-58 (own trigger),
+and root health projection (left unset — no defensible root judgement yet).
+No new signal reading was taken; the same-day APS-S-36 reading stands.
 
 ### 2026-07-10 — retained; candidate response identified
 

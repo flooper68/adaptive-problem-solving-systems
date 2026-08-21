@@ -1,0 +1,20 @@
+{
+  "entity": {
+    "identity": {
+      "type": "slug",
+      "value": "task-comment-9033"
+    },
+    "kind": "task-comment"
+  },
+  "kind": "task-comment",
+  "value": {
+    "actor": {
+      "agent": null,
+      "type": "user"
+    },
+    "createdAt": "2026-08-21T07:32:00.409Z",
+    "message": "Grooming APS-S-41 merged APS-29 (outcome) and APS-40 (solved) into this task. Review closed, solved, and outcome together. Chaos House now owns task and problem state (done/cancelled/closed), so check whether any of these words still need their own framework definition.",
+    "sourceSequence": 9033,
+    "target": "task:key:APS-19"
+  }
+}

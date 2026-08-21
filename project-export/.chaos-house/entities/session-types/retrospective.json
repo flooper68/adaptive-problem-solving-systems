@@ -1,0 +1,20 @@
+{
+  "entity": {
+    "identity": {
+      "type": "slug",
+      "value": "retrospective"
+    },
+    "kind": "session-type"
+  },
+  "kind": "session-type",
+  "value": {
+    "agent": null,
+    "createdAt": "2026-08-21T08:25:57.118Z",
+    "description": "Check whether one declared process works as written and as run — ask the maintainer what didn't work, read the session records, take the process reading, and change the process page from evidence with maintainer approval.",
+    "mode": "manual",
+    "name": "retrospective",
+    "processPath": "processes/sessions/retrospective.md",
+    "retiredAt": null,
+    "updatedAt": "2026-08-21T08:25:57.118Z"
+  }
+}

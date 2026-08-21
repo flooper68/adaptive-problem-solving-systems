@@ -11,6 +11,9 @@
     "createdAt": "2026-08-16T17:36:28.014Z",
     "key": "APS-P-2",
     "keyNumber": 2,
+    "layout": {
+      "folder": "problems/p1"
+    },
     "parent": "problem:slug:root",
     "priority": 1,
     "rank": null,

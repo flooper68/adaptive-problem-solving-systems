@@ -39,11 +39,11 @@
     ],
     "sequences": {
       "problem": 2,
-      "record": 24,
-      "session": 36,
-      "task": 58
+      "record": 35,
+      "session": 50,
+      "task": 63
     },
     "slug": "aps-framework-operations",
-    "updatedAt": "2026-08-17T09:48:35.248Z"
+    "updatedAt": "2026-08-21T09:38:12.615Z"
   }
 }

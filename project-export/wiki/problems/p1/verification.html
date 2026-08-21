@@ -11,30 +11,27 @@
 <h1>The APS MVP is unfinished and has not run its complete loop — Verification</h1>
 <pre>## Evidence
 
-The operations system remains `proposed`. Prior framework changes have artifact
-validation and maintainer review but not a recorded subsequent run improved by
-outcome evidence.
+As of 2026-08-21 (grooming APS-S-41):
 
-The normative package is already about 1,400 lines across its definition,
-declaration contract, visualization, vocabulary, and changelog. It contains several
-concepts and supporting contracts introduced before the first end-to-end loop
-has established which are necessary for a useful initial version. The
-maintainer identified finishing the MVP, simplifying and pruning it, and running
-the whole loop as the largest current problem.
+- The normative framework (`framework/` in the wiki: definition, declaration
+  contract, vocabulary, visualization, changelog) still carries concepts and
+  contracts introduced before any end-to-end loop showed which are necessary.
+  12 of the 30 inventoried concepts have a recorded review; 18 review tasks
+  remain open and none has run since the 2026-08-17 migration to Chaos House.
+- Pre-migration self-use already removed duplicated surfaces (a separate plan,
+  oversized logs); the maintainer's usability judgement was and remains the
+  outcome evidence that matters.
+- The first real need has now gone through the whole loop: maintainer
+  feedback on a shallow grooming (APS-R-27) became a task (APS-60), an approved
+  change to the grooming process, and a later grooming run (APS-S-40/S-41)
+  that behaved differently because of it. This is one cycle, not yet a
+  pattern.
+- Teach-back by an uninformed reviewer and adversarial review have never run.
+- Asked directly on 2026-08-21, the maintainer answered "no" to being able to
+  explain and run the whole process unaided, and stumbled on grooming-process
+  jargon ("revise" as a disposition name) in the same session.
 
-Initial self-use also showed that mixing full problem definitions, completed
-work, and current decisions expanded the plan to 148 lines and the log to 394
-lines. Moving problem detail to one file and archiving older logs improved the
-structure. Further use showed that a separate plan still duplicated direction in
-the strategy, gaps in problem files, and commitments in task files, so the
-maintainer removed it. The maintainer's usability judgment remains the relevant
-outcome evidence.
-
-The problem-hierarchy change now supplies a candidate cycle: it began
-from an observed maintainer need, produced compiled framework changes and
-example applications, and is being tested through a live problem-grooming
-session. It still lacks approved adaptation, a subsequent affected run, and
-sufficient outcome evidence.
+Exact readings are in `records/problem-state-log.md`.
 
 ## Desired outcome
 

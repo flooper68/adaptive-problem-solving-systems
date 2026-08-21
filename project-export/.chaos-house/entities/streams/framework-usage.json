@@ -11,8 +11,8 @@
     "createdAt": "2026-08-16T17:36:26.145Z",
     "description": "Observed applications, trials, and reviews showing whether APS is understandable and useful, retained as durable summaries or references per streams/README.md.",
     "groomingProcess": "processes/process.md",
-    "intakeProcess": null,
+    "intakeProcess": "processes/intake.md",
     "slug": "framework-usage",
-    "updatedAt": "2026-08-17T07:00:01.192Z"
+    "updatedAt": "2026-08-21T08:56:26.643Z"
   }
 }

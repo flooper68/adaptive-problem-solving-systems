@@ -29,9 +29,9 @@ value:
   startedAt: null
   status: backlog
   summary: null
-  title: Review the closed concept
+  title: Review the outcome and state concepts (closed, outcome, solved)
   type: session-type:slug:brainstorming
-  updatedAt: 2026-08-16T17:36:43.138Z
+  updatedAt: 2026-08-21T07:31:19.848Z
 ---
 
 # Review the closed concept

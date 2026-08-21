@@ -13,7 +13,7 @@ value:
   createdBy:
     agent: null
     type: user
-  finishedAt: null
+  finishedAt: 2026-08-21T07:31:38.733Z
   key: APS-29
   keyNumber: 29
   labels:
@@ -27,11 +27,11 @@ value:
   problem: problem:slug:p1
   queuePosition: null
   startedAt: null
-  status: backlog
+  status: cancelled
   summary: null
   title: Review the outcome concept
   type: session-type:slug:brainstorming
-  updatedAt: 2026-08-16T17:36:52.182Z
+  updatedAt: 2026-08-21T07:31:38.735Z
 ---
 
 # Review the outcome concept

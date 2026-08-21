@@ -29,9 +29,9 @@ value:
   startedAt: null
   status: backlog
   summary: null
-  title: Review the archive concept
+  title: Review the artifact concepts (archive, artifact)
   type: session-type:slug:brainstorming
-  updatedAt: 2026-08-16T17:36:39.758Z
+  updatedAt: 2026-08-21T07:31:24.620Z
 ---
 
 # Review the archive concept

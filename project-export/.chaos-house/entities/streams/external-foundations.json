@@ -11,8 +11,8 @@
     "createdAt": "2026-08-16T17:36:23.694Z",
     "description": "Authoritative research and domain references compared with APS choices, retained as citations and syntheses in the relevant work item or evidence.",
     "groomingProcess": "processes/process.md",
-    "intakeProcess": null,
+    "intakeProcess": "processes/intake.md",
     "slug": "external-foundations",
-    "updatedAt": "2026-08-17T06:59:58.761Z"
+    "updatedAt": "2026-08-21T08:56:29.806Z"
   }
 }

@@ -13,7 +13,7 @@ value:
   createdBy:
     agent: null
     type: user
-  finishedAt: null
+  finishedAt: 2026-08-21T07:31:44.038Z
   key: APS-52
   keyNumber: 52
   labels:
@@ -27,11 +27,11 @@ value:
   problem: problem:slug:p1
   queuePosition: null
   startedAt: null
-  status: backlog
+  status: cancelled
   summary: null
   title: Review the working-session record concept
   type: session-type:slug:brainstorming
-  updatedAt: 2026-08-16T17:37:10.803Z
+  updatedAt: 2026-08-21T07:31:44.042Z
 ---
 
 # Review the working-session record concept

@@ -8,7 +8,7 @@
   },
   "kind": "repository-backup-config",
   "value": {
-    "branch": "chaos-house-backup",
+    "branch": "main",
     "enabled": true,
     "owner": "flooper68",
     "repository": "adaptive-problem-solving-systems",

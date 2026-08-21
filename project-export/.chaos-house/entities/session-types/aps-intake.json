@@ -1,0 +1,20 @@
+{
+  "entity": {
+    "identity": {
+      "type": "slug",
+      "value": "aps-intake"
+    },
+    "kind": "session-type"
+  },
+  "kind": "session-type",
+  "value": {
+    "agent": null,
+    "createdAt": "2026-08-21T09:02:10.581Z",
+    "description": "Receive inputs from one source, identify each input's kind (framework feedback, insight, usage observation, external foundation, task candidate), and capture each faithfully to its destination. Ends at capture; grooming decides what it becomes.",
+    "mode": "manual",
+    "name": "aps-intake",
+    "processPath": "processes/sessions/intake.md",
+    "retiredAt": null,
+    "updatedAt": "2026-08-21T09:02:10.582Z"
+  }
+}

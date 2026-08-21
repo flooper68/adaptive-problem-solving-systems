@@ -13,7 +13,7 @@ value:
   createdBy:
     agent: null
     type: user
-  finishedAt: null
+  finishedAt: 2026-08-21T07:31:28.369Z
   key: APS-26
   keyNumber: 26
   labels:
@@ -27,11 +27,11 @@ value:
   problem: problem:slug:p1
   queuePosition: null
   startedAt: null
-  status: backlog
+  status: cancelled
   summary: null
   title: Review the insight concept
   type: session-type:slug:brainstorming
-  updatedAt: 2026-08-16T17:36:49.517Z
+  updatedAt: 2026-08-21T07:31:28.371Z
 ---
 
 # Review the insight concept

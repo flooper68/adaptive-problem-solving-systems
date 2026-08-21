@@ -29,9 +29,9 @@ value:
   startedAt: null
   status: backlog
   summary: null
-  title: Review the execution concept
+  title: Review the work concepts (execution, process, working-session record)
   type: session-type:slug:brainstorming
-  updatedAt: 2026-08-16T17:36:46.183Z
+  updatedAt: 2026-08-21T07:31:21.493Z
 ---
 
 # Review the execution concept

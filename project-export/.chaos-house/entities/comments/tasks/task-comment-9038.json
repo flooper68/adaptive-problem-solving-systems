@@ -1,0 +1,20 @@
+{
+  "entity": {
+    "identity": {
+      "type": "slug",
+      "value": "task-comment-9038"
+    },
+    "kind": "task-comment"
+  },
+  "kind": "task-comment",
+  "value": {
+    "actor": {
+      "agent": null,
+      "type": "user"
+    },
+    "createdAt": "2026-08-21T07:35:19.526Z",
+    "message": "Widened by the maintainer at the close of APS-S-41: review the whole grooming process against the S-40 and S-41 experience, not just the \"plan, don't fix\" rule. Lessons to work in: (1) grooming plans fixes as tasks, never edits pages; (2) show the exact text of any proposed change before writing; (3) every step's finding is presented to the maintainer, not just noted — latest inputs, health proposal, problem tree (new / sub-problems / close), and a \"why does this task deserve to exist\" challenge before creating or merging; (4) one kind of decision per batch; (5) plain words — no \"disposition\", \"revise\", \"act/keep/merge/close\". Then re-run grooming and repeat until the maintainer judges it works.",
+    "sourceSequence": 9038,
+    "target": "task:key:APS-63"
+  }
+}

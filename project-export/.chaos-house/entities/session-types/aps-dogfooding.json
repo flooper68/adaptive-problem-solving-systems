@@ -1,0 +1,20 @@
+{
+  "entity": {
+    "identity": {
+      "type": "slug",
+      "value": "aps-dogfooding"
+    },
+    "kind": "session-type"
+  },
+  "kind": "session-type",
+  "value": {
+    "agent": null,
+    "createdAt": "2026-08-21T08:43:35.361Z",
+    "description": "Record one thing noticed while using APS, work out what it means, and apply a small clear change to the affected page in the same sitting.",
+    "mode": "manual",
+    "name": "aps-dogfooding",
+    "processPath": "processes/sessions/dogfooding.md",
+    "retiredAt": null,
+    "updatedAt": "2026-08-21T08:43:35.361Z"
+  }
+}

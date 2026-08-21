@@ -1,0 +1,20 @@
+{
+  "entity": {
+    "identity": {
+      "type": "slug",
+      "value": "task-comment-8669"
+    },
+    "kind": "task-comment"
+  },
+  "kind": "task-comment",
+  "value": {
+    "actor": {
+      "agent": null,
+      "type": "user"
+    },
+    "createdAt": "2026-08-17T11:47:17.446Z",
+    "message": "Post-close durability check: canonical work is complete, but the configured repository projection did not converge. `get_repository_backup` and `preview_repository_backup` both report `integrity-failure: The existing projection manifest is invalid` at remote head `7b8e0c5603740e5f053894da0a69b18b40ed9527`; no proposed file changes were classified. The integrity guard was not bypassed. Canonical Chaos House state remains authoritative; `chaos-house-backup` is stale at event sequence 8512 and needs separate owner-reviewed projection repair.",
+    "sourceSequence": 8669,
+    "target": "task:key:APS-59"
+  }
+}
