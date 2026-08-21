@@ -166,7 +166,7 @@
       },
       "kind": "project",
       "path": "project-export/.chaos-house/entities/project/aps-framework-operations.json",
-      "sha256": "3b05600325e1c6915b53e141e2805ec451ee321a6ca4239395f683d387d565e7"
+      "sha256": "f2a5027a4f75d07288feb6c9f0c60d836e4c03f349d344c3087dcb51fb044710"
     },
     {
       "entity": {
@@ -1336,6 +1336,18 @@
       "entity": {
         "identity": {
           "type": "slug",
+          "value": "key-aps-s-51-transcript"
+        },
+        "kind": "session-transcript"
+      },
+      "kind": "session-transcript",
+      "path": "project-export/.chaos-house/entities/session-transcripts/key-aps-s-51-transcript.md",
+      "sha256": "50364e9d8a018c0bfd5c2f356c76258c683cee84a7899eb4f03bbd985370e694"
+    },
+    {
+      "entity": {
+        "identity": {
+          "type": "slug",
           "value": "key-aps-s-6-transcript"
         },
         "kind": "session-transcript"
@@ -1942,7 +1954,7 @@
       },
       "kind": "timeline-event",
       "path": "project-export/.chaos-house/entities/timeline/events.ndjson",
-      "sha256": "6f3d124d7dbeb83e9c1e67c0ca81dfb73aea05acf2c659d08651971fcc7a0e2a"
+      "sha256": "22754d3312157cfa001abcdd12dc3440aa274d409bb7e89663fcdad5de75c105"
     },
     {
       "entity": {
@@ -2543,6 +2555,18 @@
       "kind": "session",
       "path": "project-export/sessions/2026-08-21-aps-s-50.md",
       "sha256": "3bb39dd18c4ef3d923a6a3d6fd537e243db624ed7a088ea09f857fc0077ee30f"
+    },
+    {
+      "entity": {
+        "identity": {
+          "type": "key",
+          "value": "APS-S-51"
+        },
+        "kind": "session"
+      },
+      "kind": "session",
+      "path": "project-export/sessions/2026-08-21-aps-s-51.md",
+      "sha256": "4d758c58d4aaefd852fd2a56018d5f98ba44d0bb87e8f12d8126bf9df41096ac"
     },
     {
       "entity": {
@@ -3687,8 +3711,8 @@
   },
   "version": 2,
   "watermark": {
-    "endEventSeq": 9233,
+    "endEventSeq": 9248,
     "stale": false,
-    "startEventSeq": 9233
+    "startEventSeq": 9248
   }
 }
