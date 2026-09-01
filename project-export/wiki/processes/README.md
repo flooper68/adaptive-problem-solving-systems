@@ -5,6 +5,7 @@ Process descriptions are compiled operational knowledge. Only the current page i
 - `process.md` — the complete operating loop
 - `verification.md` — correctness and problem-signal verification
 - `intake.md` — identify the input kind and capture it faithfully to its destination
+- `framework-feedback-sweep.md` — gather framework-usage learnings from the other projects' records; run as an `aps-intake` session
 - `knowledge-compilation.md` — evidence-to-framework compilation
 - `framework-adaptation.md` — approval and publication of compiled knowledge
 - `ai-agent-tasks.md` — execution through Chaos House tasks and sessions

@@ -25,7 +25,7 @@ One process per session. The retrospective process itself is reviewed the same w
 
    Write each answer down in the maintainer's words before interpreting it.
 
-3. **Read the sessions.** For each session in the window, read the page as written against the session as run. Count: completed vs interrupted; steps with a note or action vs steps on the page; `process:` notes (maintainer corrections of how the session ran); decisions still standing at the next session vs reversed; duration. For each answer from step 2, say whether the records confirm it, contradict it, or are silent.
+3. **Read the sessions.** For each session in the window, read the page as written against the session as run. Count: completed vs interrupted; steps with a note or action vs steps on the page; `process:` notes (maintainer corrections of how the session ran); decisions still standing at the next session vs reversed; duration. For each answer from step 2, say whether the records confirm it, contradict it, or are silent. Also read every `feedback:` note in the window; for each answer from step 2, say whether it confirms, contradicts, or is silent on it, and count sessions with a `feedback:` note vs without.
 
 4. **Take the reading.** Write one line in the fixed shape used by the log: completed/total · steps covered · corrections · decisions held · expected effects met/missed/unreadable · reported failures. Compare with the previous entry: better, worse, same, or unreadable. Where data is missing, write "unreadable" and why — never estimate.
 
