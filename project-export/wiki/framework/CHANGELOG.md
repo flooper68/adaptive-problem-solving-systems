@@ -4,6 +4,24 @@ Simple history of material framework changes. Chaos House wiki events and
 working-session records provide the detailed audit trail; the repository
 projection provides offsite version history.
 
+## 2026-09-01 — session-close feedback added to the process-design questions
+
+Extended the recommended process-design questions with a fourth — did the
+process as run chafe, fail, or get skipped anywhere — and added session-close
+guidance: ask the participants how the session went and what to improve in
+the process as run, retain the answer verbatim in the session record or a
+declared stream ("nothing" is still a reading), and let whatever mechanism
+the system declares for process adaptation — a retrospective, grooming, or
+another process — consume the answers.
+
+The evidence is operational: process findings in the running Chaos House
+projects reached durable records only when a retrospective or grooming
+happened to ask, while fresh per-session feedback existed at every close and
+nothing collected it. Framework Operations implements the guidance in its
+operating loop and retrospective; the other projects fold the retro question
+into their grooming sittings, and a new framework feedback sweep carries
+framework-relevant findings back to Framework Operations.
+
 ## 2026-08-17 — system declaration contract made representation-neutral
 
 Changed the system declaration from one required `SYSTEM.md`/YAML shape to a
