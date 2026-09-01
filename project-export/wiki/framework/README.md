@@ -250,6 +250,13 @@ handoff, verification, or grooming points:
 - Did anything surprising happen?
 - Did anything take more time or resources than expected?
 - Did anything worsen the verification value function?
+- Did the process as run chafe, fail, or get skipped anywhere?
+
+At a work session's close, additionally ask the participants how the session
+went and what to improve in the process as run; retain the answer verbatim in
+the session record or a declared stream — "nothing" is still a reading.
+Whatever mechanism the system declares for process adaptation — a
+retrospective, grooming, or another process — consumes these answers.
 
 Preserve or recoverably reference the underlying raw evidence whenever
 available. A positive answer invites interpretation; it does not automatically
