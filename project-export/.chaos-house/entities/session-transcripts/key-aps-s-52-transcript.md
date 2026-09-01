@@ -147,6 +147,20 @@ value:
       sourceSequence: 9719
       task: null
       type: session_closed
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-09-01T20:56:45.484Z
+      message: "feedback: \"this one was good, maybe a bit more brainstorming and discussions would be good, the agent went straight to suggestions\" — maintainer's answer to the session-close feedback question, given just after close. Process feedback on brainstorming (Explore step underweighted relative to Draft); for the next retrospective on brainstorming."
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-52
+      sourceSequence: 9720
+      task: null
+      type: session_note
   session: session:key:APS-S-52
 ---
 
@@ -207,3 +221,9 @@ Expected effects of this session's process edits, checkable by the next retrospe
 9719 session_closed
 
 Session "brainstorming" closed (completed)
+
+---
+
+9720 session_note
+
+feedback: "this one was good, maybe a bit more brainstorming and discussions would be good, the agent went straight to suggestions" — maintainer's answer to the session-close feedback question, given just after close. Process feedback on brainstorming (Explore step underweighted relative to Draft); for the next retrospective on brainstorming.
