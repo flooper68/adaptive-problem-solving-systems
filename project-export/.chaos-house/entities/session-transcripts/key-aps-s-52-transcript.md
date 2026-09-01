@@ -105,6 +105,20 @@ value:
       sourceSequence: 9705
       task: null
       type: wiki_updated
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-09-01T20:43:46.001Z
+      message: aps-framework-operations/processes/process.md
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-52
+      sourceSequence: 9706
+      task: null
+      type: wiki_updated
   session: session:key:APS-S-52
 ---
 
@@ -147,3 +161,9 @@ aps-framework-operations/processes/framework-feedback-sweep.md
 9705 wiki_updated
 
 aps-framework-operations/processes/README.md
+
+---
+
+9706 wiki_updated
+
+aps-framework-operations/processes/process.md
