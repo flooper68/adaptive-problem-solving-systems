@@ -119,6 +119,20 @@ value:
       sourceSequence: 9706
       task: null
       type: wiki_updated
+    - actor:
+        agent: null
+        type: user
+      agent: null
+      artifact: null
+      createdAt: 2026-09-01T20:46:14.775Z
+      message: "Expected effects of this session's process edits, checkable by the next retrospective: (1) process.md step 8 — every session close from 2026-09-01 carries one `feedback:` note, so retrospectives stop marking maintainer answers \"silent\" for lack of records; (2) retrospective.md step 3 — the next retrospective reads `feedback:` notes and counts sessions with vs without; (3) framework-feedback-sweep.md — first sweep due by 2026-10-01 or on request, captures at least the retro findings CH/JM/PB grooming produces; grooming checks its due-ness per process.md step 2."
+      problem: null
+      record: null
+      relatedTask: null
+      session: session:key:APS-S-52
+      sourceSequence: 9718
+      task: null
+      type: session_note
   session: session:key:APS-S-52
 ---
 
@@ -167,3 +181,9 @@ aps-framework-operations/processes/README.md
 9706 wiki_updated
 
 aps-framework-operations/processes/process.md
+
+---
+
+9718 session_note
+
+Expected effects of this session's process edits, checkable by the next retrospective: (1) process.md step 8 — every session close from 2026-09-01 carries one `feedback:` note, so retrospectives stop marking maintainer answers "silent" for lack of records; (2) retrospective.md step 3 — the next retrospective reads `feedback:` notes and counts sessions with vs without; (3) framework-feedback-sweep.md — first sweep due by 2026-10-01 or on request, captures at least the retro findings CH/JM/PB grooming produces; grooming checks its due-ness per process.md step 2.
