@@ -1,31 +1,51 @@
 # Adaptive Problem Solving (APS)
 
-This repository develops Adaptive Problem Solving, a general method for systems
-that iteratively solve a defined problem, evaluate progress, learn from
-evidence, and adapt later attempts.
+A framework for designing systems that work on a problem, verify whether their
+work changes it, learn from the evidence, and improve their next attempt.
 
-Its purpose is to make APS understandable, usable across different domains, and
-improvable through evidence from applying the method itself.
+The distinction at its centre is simple: producing a correct artifact is not the
+same as improving the situation it was built for. Software may pass its tests
+and still fail to help its users. APS makes the connection between a problem,
+strategy, work, evidence and adaptation explicit enough to inspect and revise.
+
+It is intended to apply across domains, including software delivery, research,
+organizations and personal workflows. It describes responsibilities and concepts,
+not one mandatory workflow or a software product to install. Its usefulness
+across those settings remains something to establish through application.
+
+## Start reading
+
+The repository's latest published framework snapshot is under
+[`project-export/wiki/framework/`](project-export/wiki/framework/):
+
+1. [Overview](project-export/wiki/framework/README.md) — purpose, core concepts and the complete loop.
+2. [Vocabulary](project-export/wiki/framework/VOCABULARY.md) — the precise meanings of recurring terms.
+3. [Schema](project-export/wiki/framework/SCHEMA.md) — how the framework is represented.
+4. [Visualization](project-export/wiki/framework/VISUALIZATION.md) — conventions for showing a system.
+5. [Changelog](project-export/wiki/framework/CHANGELOG.md) — changes to the specification.
+
+A useful reading question is: **what evidence would change the next attempt?**
+If an activity produces output but never checks outcomes or adapts its approach,
+that part of the loop is still open.
 
 ## Where the work happens
 
-Since 2026-08-17 the APS Framework Operations system runs in the maintainer's
-Chaos House instance (project `aps-framework-operations`), which owns the
-canonical framework documents, problems, tasks, sessions, and streams. This
-repository is the backup that instance pushes to `main`. See `AGENTS.md` for
-how to work with the instance.
+Since 17 August 2026, APS Framework Operations runs in the maintainer's Metis
+(formerly Chaos House) instance, under `aps-framework-operations`. Its wiki is
+the canonical source for the framework, work processes, tasks and session history.
+This GitHub repository is a backup projection; it can lag the live wiki.
 
-## Repository structure
+Metis is an implementation used to operate the work, not a requirement for using
+APS. See [AGENTS.md](AGENTS.md) for contributor instructions and live access.
 
-- [`project-export/`](project-export/wiki/framework/README.md) is the live
-  projection of the Chaos House project: the current framework text under
-  `wiki/framework/`, processes under `wiki/processes/`, plus tasks, sessions,
-  stream records, and the timeline. It is machine-written; do not edit it by
-  hand.
-- [`framework/`](framework/README.md) and [`operations/`](operations/SYSTEM.md)
-  are the pre-migration repository capsule, retained as history. The branch
-  `chaos-house-backup` preserves the last pre-migration state of `main`.
+## Repository map
 
-Operational choices become APS requirements only when the normative framework
-adopts them. Additional applications and examples can be added after the
-framework is sufficiently stable for them to provide useful validation.
+- `project-export/` is machine-written by the repository backup. Do not edit it
+  by hand or rewrite the history it is based on.
+- `framework/` and `operations/` are the pre-migration capsule, retained as history.
+  They are not the current specification.
+- The `chaos-house-backup` branch preserves the frozen pre-migration repository.
+
+Framework and process changes belong in the live wiki and are recorded in the
+framework changelog. Operational choices become framework requirements only
+when the normative specification adopts them.
